@@ -37,11 +37,30 @@
     return isSubfolder ? '../' : '';
   }
 
-  // Get API Base URL (relative or window origin)
-  function getApiUrl(endpoint) {
-    const basePath = getBasePath();
-    return `${basePath}api${endpoint}`;
+  // Get API Base URL (relative for localhost, Render URL for GitHub Pages / remote)
+  function getApiBaseUrl() {
+    if (window.AWARA_API_URL) return window.AWARA_API_URL.replace(/\/$/, '');
+    try {
+      const saved = localStorage.getItem('awara_api_url');
+      if (saved) return saved.replace(/\/$/, '');
+    } catch (e) {}
+
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    if (isLocal) {
+      const basePath = getBasePath();
+      return `${basePath}api`;
+    }
+
+    // Default live Render backend service
+    return 'https://awara-banjara-api.onrender.com/api';
   }
+
+  function getApiUrl(endpoint) {
+    const base = getApiBaseUrl();
+    const cleanEndpoint = endpoint.startsWith('/') ? endpoint : '/' + endpoint;
+    return `${base}${cleanEndpoint}`;
+  }
+  window.getAwaraApiUrl = getApiUrl;
 
   function getAuthHeaders(customHeaders = {}) {
     const token = localStorage.getItem('awara_admin_token');

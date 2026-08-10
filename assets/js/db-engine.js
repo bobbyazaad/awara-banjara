@@ -37,7 +37,7 @@
     return isSubfolder ? '../' : '';
   }
 
-  // Get API Base URL (relative for localhost, Render URL for GitHub Pages / remote)
+  // Get API Base URL (relative for localhost, Render URL for remote/GitHub Pages)
   function getApiBaseUrl() {
     if (window.AWARA_API_URL) return window.AWARA_API_URL.replace(/\/$/, '');
     try {

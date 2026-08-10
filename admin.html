@@ -660,7 +660,7 @@
 <body>
 
   <!-- ADMIN LOGIN MODAL OVERLAY -->
-  <div id="adminLoginModal" class="login-modal-overlay" style="display: flex;">
+  <div id="adminLoginModal" class="login-modal-overlay" style="display: none;">
     <div class="login-modal-card">
       <div class="login-modal-header">
         <img src="assets/images/logo/logo-black-full.png" alt="Awara Banjara Logo" class="login-logo">
@@ -1662,7 +1662,8 @@ Travel Insurance"></textarea>
           if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.uploadImage) {
             json = await window.AwaraDB.uploadImage(file.name, dataUrl);
           } else {
-            const res = await fetch('/api/upload', {
+            const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/upload') : '/api/upload';
+            const res = await fetch(apiUrl, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ filename: file.name, dataUrl: dataUrl })
@@ -1715,26 +1716,15 @@ Travel Insurance"></textarea>
     function switchTab(tabId) {
       if (!tabId) return;
 
-      const buttons = document.querySelectorAll('.tab-bar .tab-btn');
-      buttons.forEach(btn => {
-        const btnTab = btn.getAttribute('data-tab');
-        if (btnTab === tabId || (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(tabId))) {
-          btn.classList.add('active');
-        } else {
-          btn.classList.remove('active');
-        }
-      });
+      document.querySelectorAll('.tab-bar .tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
 
-      const panels = document.querySelectorAll('.tab-panel');
-      panels.forEach(panel => {
-        if (panel.id === 'panel-' + tabId) {
-          panel.classList.add('active');
-          panel.style.display = 'block';
-        } else {
-          panel.classList.remove('active');
-          panel.style.display = 'none';
-        }
-      });
+      const targetBtn = document.querySelector(`.tab-bar .tab-btn[data-tab="${tabId}"]`) || 
+                        document.querySelector(`.tab-bar .tab-btn[onclick*="${tabId}"]`);
+      const targetPanel = document.getElementById(`panel-${tabId}`);
+
+      if (targetBtn) targetBtn.classList.add('active');
+      if (targetPanel) targetPanel.classList.add('active');
 
       if (tabId === 'destinations' && typeof loadAdminDestinations === 'function') {
         loadAdminDestinations();
@@ -1748,7 +1738,7 @@ Travel Insurance"></textarea>
       } else if (tabId === 'postcards' && typeof loadAdminPostcards === 'function') {
         loadAdminPostcards();
       }
-      if (typeof initImageDropzones === 'function') initImageDropzones();
+      initImageDropzones();
     }
     window.switchTab = switchTab;
 
@@ -3183,11 +3173,8 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
         showLoginModal();
         return false;
       }
-
-      // 1. Verify token with live API server if available
       try {
-        const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/auth/verify') : '/api/auth/verify';
-        const res = await fetch(apiUrl, {
+        const res = await fetch('/api/auth/verify', {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         if (res.ok) {
@@ -3199,14 +3186,6 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
         }
       } catch (e) {}
 
-      // 2. Static session verification
-      if (token && token.startsWith('static_session_')) {
-        hideLoginModal();
-        return true;
-      }
-
-      // If token is invalid or expired, clear token and enforce login lock
-      localStorage.removeItem('awara_admin_token');
       showLoginModal();
       return false;
     }
@@ -3255,52 +3234,30 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
       }
 
       try {
-        const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/auth/login') : '/api/auth/login';
-        const res = await fetch(apiUrl, {
+        const res = await fetch('/api/auth/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username, password })
         });
-        if (res.ok) {
-          const json = await res.json();
-          if (json.success && json.token) {
-            localStorage.setItem('awara_admin_token', json.token);
-            if (errorAlert) errorAlert.style.display = 'none';
-            hideLoginModal();
-            showToast('🔑 Login Successful! Control Center Unlocked.');
-            if (typeof loadAdminTrips === 'function') loadAdminTrips();
-            if (typeof loadAdminInquiries === 'function') loadAdminInquiries();
-            if (typeof loadAdminReviews === 'function') loadAdminReviews();
-            return;
-          } else if (json.error) {
-            if (errorAlert) {
-              errorAlert.textContent = json.error;
-              errorAlert.style.display = 'block';
-            }
-            return;
+        const json = await res.json();
+
+        if (res.ok && json.success && json.token) {
+          localStorage.setItem('awara_admin_token', json.token);
+          if (errorAlert) errorAlert.style.display = 'none';
+          hideLoginModal();
+          showToast('🔑 Login Successful! Control Center Unlocked.');
+          if (typeof loadAdminTrips === 'function') loadAdminTrips();
+          if (typeof loadAdminInquiries === 'function') loadAdminInquiries();
+          if (typeof loadAdminReviews === 'function') loadAdminReviews();
+        } else {
+          if (errorAlert) {
+            errorAlert.textContent = json.error || 'Invalid credentials. Access denied.';
+            errorAlert.style.display = 'block';
           }
         }
       } catch (err) {
-        // Express API backend unreachable (e.g., static hosting on GitHub Pages)
-      }
-
-      // Strict Static Authentication Check
-      const validUsernames = ['admin', 'awara', 'bobbyazaad', 'jasmansinghsandhu@outlook.com'];
-      const isUsernameValid = validUsernames.includes(username.toLowerCase());
-      const isPasswordValid = (password === 'AwaraBanjara@2026!');
-
-      if (isUsernameValid && isPasswordValid) {
-        const token = 'static_session_' + Date.now() + '_' + Math.random().toString(36).substring(2);
-        localStorage.setItem('awara_admin_token', token);
-        if (errorAlert) errorAlert.style.display = 'none';
-        hideLoginModal();
-        showToast('🔑 Login Successful! Control Center Unlocked.');
-        if (typeof loadAdminTrips === 'function') loadAdminTrips();
-        if (typeof loadAdminInquiries === 'function') loadAdminInquiries();
-        if (typeof loadAdminReviews === 'function') loadAdminReviews();
-      } else {
         if (errorAlert) {
-          errorAlert.textContent = 'Invalid username or password. Access denied.';
+          errorAlert.textContent = 'Network error. Could not connect to server.';
           errorAlert.style.display = 'block';
         }
       } finally {
@@ -3315,8 +3272,7 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
       const token = localStorage.getItem('awara_admin_token');
       if (token) {
         try {
-          const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/auth/logout') : '/api/auth/logout';
-          await fetch(apiUrl, {
+          await fetch('/api/auth/logout', {
             method: 'POST',
             headers: { 'Authorization': `Bearer ${token}` }
           });
@@ -3324,9 +3280,8 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
       }
       localStorage.removeItem('awara_admin_token');
       showLoginModal();
-      showToast('🔒 Logged out successfully. Master Control locked.');
+      showToast('🔒 Logged out successfully');
     }
-    window.handleAdminLogout = handleAdminLogout;
 
     // Auto-check authentication on page load
     document.addEventListener('DOMContentLoaded', () => {

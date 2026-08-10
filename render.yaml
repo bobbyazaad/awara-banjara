@@ -2,18 +2,8 @@ services:
   - type: web
     name: awara-banjara-api
     env: node
-    plan: free
-    region: singapore
     buildCommand: npm install
     startCommand: npm start
     envVars:
-      - key: PORT
-        value: 10000
-      - key: HOST
-        value: 0.0.0.0
-      - key: ALLOWED_ORIGINS
-        value: "*"
-      - key: ADMIN_USERNAME
-        value: admin
-      - key: ADMIN_PASSWORD
-        value: AwaraBanjara@2026!
+      - key: NODE_ENV
+        value: production

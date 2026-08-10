@@ -11,8 +11,8 @@ const url = require('url');
 const db = require('./db');
 const auth = require('./auth');
 
-const PORT = auth.config.PORT || process.env.PORT || 8085;
-const HOST = auth.config.HOST || process.env.HOST || '0.0.0.0';
+const PORT = process.env.PORT || auth.config.PORT || 8085;
+const HOST = process.env.HOST || auth.config.HOST || '0.0.0.0';
 const PUBLIC_DIR = path.join(__dirname, '..');
 
 // MIME types mapping for static file server

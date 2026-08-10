@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/trips/:category/:trip",
+      "destination": "/trip-detail.html?category=:category&trip=:trip"
+    }
+  ]
+}

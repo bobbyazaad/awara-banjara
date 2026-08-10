@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Placeholder green valley photo">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f4a3c"/>
+      <stop offset="55%" stop-color="#588a63"/>
+      <stop offset="100%" stop-color="#b7d3a3"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g3)"/>
+  <polygon points="0,400 150,250 320,410 480,220 640,420 800,260 800,600 0,600" fill="#1f3327" opacity="0.55"/>
+  <polygon points="0,470 200,360 380,480 560,340 800,470 800,600 0,600" fill="#14211a" opacity="0.6"/>
+</svg>

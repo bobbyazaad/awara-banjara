@@ -1,0 +1,3291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awara Banjara — Master CMS &amp; Control Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FONTAWESOME ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- FLATPICKR CALENDAR PICKER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <style>
+    /* LOGIN MODAL OVERLAY STYLES */
+    .login-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(12, 12, 9, 0.94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .login-modal-card {
+      background: #1c1c16;
+      border: 1px solid rgba(184, 255, 0, 0.2);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(184, 255, 0, 0.1);
+      border-radius: 24px;
+      width: 100%;
+      max-width: 440px;
+      padding: 36px 32px;
+      animation: modalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(0.95) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .login-modal-header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .login-logo {
+      height: 38px;
+      width: auto;
+      filter: invert(1);
+      margin-bottom: 16px;
+    }
+
+    .login-modal-header h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .login-modal-header p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .login-alert {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #fca5a5;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .login-field-group {
+      margin-bottom: 20px;
+    }
+
+    .login-field-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .login-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .login-icon {
+      position: absolute;
+      left: 14px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .login-input-wrap input {
+      width: 100%;
+      background: #14140f;
+      border: 1px solid var(--border-dark);
+      border-radius: 12px;
+      padding: 12px 16px 12px 42px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .login-input-wrap input:focus {
+      outline: none;
+      border-color: var(--accent-lime);
+      box-shadow: 0 0 12px rgba(184, 255, 0, 0.2);
+    }
+
+    .login-pwd-toggle {
+      position: absolute;
+      right: 12px;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 6px;
+      font-size: 14px;
+    }
+
+    .login-pwd-toggle:hover {
+      color: #fff;
+    }
+
+    .login-btn-primary {
+      width: 100%;
+      background: var(--accent-lime);
+      color: var(--bg-dark);
+      border: none;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 16px rgba(184, 255, 0, 0.3);
+    }
+
+    .login-btn-primary:hover {
+      background: var(--accent-lime-hover);
+      transform: translateY(-1px);
+    }
+
+    .login-footer-info {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    :root {
+      --bg-dark: #14140f;
+      --bg-card: #1c1c16;
+      --border-dark: #2a2a22;
+      --accent-lime: #b8ff00;
+      --accent-lime-hover: #a2e000;
+      --text-main: #f5f5ef;
+      --text-muted: #a0a095;
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --radius-sm: 8px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* TOP HEADER & NAVBAR */
+    .cms-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(20, 20, 15, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-dark);
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .cms-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .cms-brand img {
+      height: 32px;
+      width: auto;
+    }
+
+    .cms-brand h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    .cms-brand span {
+      background: var(--accent-lime);
+      color: var(--bg-dark);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .connection-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: #1c1c16;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border-dark);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 10px #22c55e;
+    }
+
+    /* TAB NAVIGATION */
+    .tab-bar {
+      max-width: 1320px;
+      margin: 24px auto 0;
+      padding: 0 24px;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      background: #1c1c16;
+      border: 1px solid var(--border-dark);
+      color: var(--text-muted);
+      padding: 12px 22px;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .tab-btn:hover {
+      background: #26261f;
+      color: #fff;
+    }
+
+    .tab-btn.active {
+      background: var(--accent-lime);
+      color: var(--bg-dark);
+      border-color: var(--accent-lime);
+      box-shadow: 0 4px 20px rgba(184, 255, 0, 0.2);
+    }
+
+    /* TAB CONTENT PANELS */
+    .main-container {
+      max-width: 1320px;
+      margin: 24px auto 0;
+      padding: 0 24px;
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    /* CARDS & SECTIONS */
+    .cms-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .cms-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .cms-card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* FORM STYLES */
+    .cms-form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .cat-checkbox-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border: 1px solid var(--border-dark);
+      border-radius: 20px;
+      background: #1c1c16;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.2s ease;
+    }
+    .cat-checkbox-pill:hover {
+      background: #282820;
+    }
+    .cat-checkbox-pill input {
+      accent-color: var(--accent-lime);
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+    }
+    .cat-checkbox-pill:has(input:checked) {
+      background: var(--accent-lime);
+      border-color: #9ee600;
+      color: #14140f;
+      box-shadow: 0 2px 8px rgba(184, 255, 0, 0.35);
+    }
+
+    .form-group label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: #14140f;
+      border: 1.5px solid var(--border-dark);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent-lime);
+      box-shadow: 0 0 12px rgba(184, 255, 0, 0.2);
+    }
+
+    .form-section-header {
+      grid-column: 1 / -1;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--accent-lime);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px dashed var(--border-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* BUTTONS */
+    .btn-action {
+      background: var(--accent-lime);
+      color: var(--bg-dark);
+      border: none;
+      border-radius: var(--radius-md);
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action:hover {
+      background: var(--accent-lime-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(184, 255, 0, 0.3);
+    }
+
+    .btn-secondary {
+      background: #26261f;
+      color: #fff;
+      border: 1px solid var(--border-dark);
+      border-radius: var(--radius-md);
+      padding: 10px 18px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      background: #33332a;
+    }
+
+    .btn-danger {
+      background: #fee2e2;
+      color: #b91c1c;
+      border: 1px solid #fca5a5;
+      border-radius: var(--radius-sm);
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* TABLES */
+    .table-container {
+      overflow-x: auto;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-dark);
+    }
+
+    .cms-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13px;
+    }
+
+    .cms-table th {
+      background: #14140f;
+      color: var(--text-muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .cms-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid #22221b;
+      color: var(--text-main);
+      vertical-align: middle;
+    }
+
+    .cms-table tr:hover {
+      background: #22221b;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .badge-green { background: #dcfce7; color: #15803d; }
+    .badge-yellow { background: #fef3c7; color: #d97706; }
+    /* IMAGE DRAG AND DROP ZONE */
+    .image-dropzone {
+      border: 2px dashed var(--border-dark);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      background: #14140f;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+      min-height: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .image-dropzone:hover, .image-dropzone.dragover {
+      border-color: var(--accent-lime);
+      background: #1c1c14;
+      box-shadow: 0 0 16px rgba(184, 255, 0, 0.15);
+    }
+
+    .image-dropzone .dz-icon {
+      font-size: 22px;
+    }
+
+    .image-dropzone .dz-prompt {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .image-dropzone .dz-preview {
+      position: relative;
+      width: 100%;
+      display: none;
+    }
+
+    .image-dropzone .dz-preview img {
+      width: 100%;
+      max-height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border-dark);
+    }
+
+    .image-dropzone .dz-remove {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      background: rgba(239, 68, 68, 0.95);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 4px 8px;
+      font-size: 11px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .image-dropzone .dz-remove:hover {
+      background: #dc2626;
+    }
+
+    /* FLATPICKR DARK & LIME THEME OVERRIDES */
+    .flatpickr-calendar {
+      background: #1c1c16 !important;
+      border: 1.5px solid var(--border-dark) !important;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.7) !important;
+      border-radius: var(--radius-md) !important;
+    }
+    .flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange {
+      background: var(--accent-lime) !important;
+      color: #14140f !important;
+      border-color: var(--accent-lime) !important;
+      font-weight: 800 !important;
+    }
+    .flatpickr-day:hover {
+      background: #33332a !important;
+      color: var(--accent-lime) !important;
+    }
+    .flatpickr-months .flatpickr-month, .flatpickr-weekdays {
+      background: #14140f !important;
+    }
+    span.flatpickr-weekday {
+      color: var(--accent-lime) !important;
+      font-weight: 800 !important;
+    }
+    .flatpickr-custom-input {
+      background: #14140f !important;
+      border: 1.5px solid var(--border-dark) !important;
+      border-radius: var(--radius-md) !important;
+      padding: 12px 16px !important;
+      color: #fff !important;
+      font-size: 14px !important;
+      outline: none !important;
+      cursor: pointer !important;
+      width: 100% !important;
+    }
+    .flatpickr-custom-input:focus {
+      border-color: var(--accent-lime) !important;
+      box-shadow: 0 0 12px rgba(184, 255, 0, 0.2) !important;
+    }
+
+    /* SEARCH & FILTERS */
+    .filter-bar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .search-input {
+      flex: 1;
+      min-width: 240px;
+      background: #14140f;
+      border: 1.5px solid var(--border-dark);
+      border-radius: var(--radius-md);
+      padding: 10px 16px;
+      color: #fff;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ADMIN LOGIN MODAL OVERLAY -->
+  <div id="adminLoginModal" class="login-modal-overlay" style="display: none;">
+    <div class="login-modal-card">
+      <div class="login-modal-header">
+        <img src="assets/images/logo/logo-black-full.png" alt="Awara Banjara Logo" class="login-logo">
+        <h2>Master Control Authentication</h2>
+        <p>Enter administrator credentials to unlock the CMS control panel.</p>
+      </div>
+
+      <div id="loginErrorAlert" class="login-alert" style="display: none;"></div>
+
+      <form id="adminLoginForm" onsubmit="handleAdminLogin(event)">
+        <div class="login-field-group">
+          <label for="loginUsername">Admin Username</label>
+          <div class="login-input-wrap">
+            <i class="fa-solid fa-user login-icon"></i>
+            <input type="text" id="loginUsername" placeholder="e.g. admin" required autocomplete="username">
+          </div>
+        </div>
+
+        <div class="login-field-group">
+          <label for="loginPassword">Password</label>
+          <div class="login-input-wrap">
+            <i class="fa-solid fa-key login-icon"></i>
+            <input type="password" id="loginPassword" placeholder="••••••••••••" required autocomplete="current-password">
+            <button type="button" class="login-pwd-toggle" onclick="togglePasswordVisibility()" title="Toggle Password Visibility">
+              <i id="pwdToggleIcon" class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="login-actions">
+          <button type="submit" id="loginSubmitBtn" class="login-btn-primary">
+            Unlock Control Center 🔐
+          </button>
+        </div>
+      </form>
+
+      <div class="login-footer-info">
+        <p>🔒 Zero-Trust Encrypted Session &bull; Awara Banjara v2.0</p>
+        <p style="margin-top: 6px; font-size: 11px; opacity: 0.7;">Default credentials configured in <code>.env</code> file</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP CMS NAVBAR -->
+  <header class="cms-navbar">
+    <div class="cms-brand">
+      <img src="assets/images/logo/logo-black-full.png" alt="Awara Banjara" style="filter: invert(1);">
+      <h1>Control Center</h1>
+      <span>v14.0 CMS</span>
+    </div>
+
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <div id="adminUserBadge" class="connection-status" style="display:none; color: var(--accent-lime); border-color: rgba(184, 255, 0, 0.3);">
+        <span class="status-dot" style="background: var(--accent-lime); box-shadow: 0 0 10px var(--accent-lime);"></span>
+        <span>Admin Active</span>
+      </div>
+
+      <div class="connection-status">
+        <span class="status-dot"></span>
+        <span id="connText">Local Data Engine Active (AwaraDB)</span>
+      </div>
+
+      <button id="adminLogoutBtn" type="button" onclick="handleAdminLogout()" class="tab-btn" style="display:none; padding: 6px 14px; font-size: 13px; background: rgba(239, 68, 68, 0.15); color: #ef4444; border-color: rgba(239, 68, 68, 0.3); cursor: pointer;">
+        <i class="fa-solid fa-right-from-bracket"></i> Logout
+      </button>
+    </div>
+  </header>
+
+  <!-- TAB NAVIGATION BAR -->
+  <nav class="tab-bar">
+    <button type="button" class="tab-btn active" data-tab="trips" onclick="switchTab('trips')">🗺️ Trip Itineraries CMS</button>
+    <button type="button" class="tab-btn" data-tab="destinations" onclick="switchTab('destinations')">🏖️ Home Destinations CMS</button>
+    <button type="button" class="tab-btn" data-tab="reviews" onclick="switchTab('reviews')">⭐ Customer Reviews CMS</button>
+    <button type="button" class="tab-btn" data-tab="postcards" onclick="switchTab('postcards')">📸 Watch &amp; Read CMS (Reels &amp; Blogs)</button>
+    <button type="button" class="tab-btn" data-tab="inquiries" onclick="switchTab('inquiries')">📥 Customer Inquiries &amp; Leads</button>
+    <button type="button" class="tab-btn" data-tab="sql-tools" onclick="switchTab('sql-tools')">📦 Local Data Engine &amp; JSON Tools</button>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <main class="main-container">
+
+    <!-- ========================================================= -->
+    <!-- TAB 1: TRIP ITINERARIES CMS -->
+    <!-- ========================================================= -->
+    <section id="panel-trips" class="tab-panel active">
+      <div class="cms-card">
+        <div class="cms-card-header">
+          <h2 class="cms-card-title" id="formTitle">➕ Full Itinerary Maker &amp; Editor</h2>
+          <button type="button" class="btn-secondary" id="cancelEditBtn" onclick="resetTripForm()" style="display:none;">✕ Cancel Edit</button>
+        </div>
+
+        <form id="tripForm" onsubmit="handleSaveTrip(event)">
+          <input type="hidden" id="editTripId">
+
+          <div class="cms-form-grid">
+            <!-- Basic Info -->
+            <div class="form-section-header">📌 1. Basic Trip Details</div>
+
+            <div class="form-group">
+              <label>Trip Title</label>
+              <input type="text" id="tripTitle" required placeholder="e.g. Spiti Summer Expedition">
+            </div>
+
+            <div class="form-group">
+              <label>Duration</label>
+              <input type="text" id="tripDuration" required placeholder="e.g. 7 Days / 6 Nights">
+            </div>
+
+            <div class="form-group">
+              <label>Base Price</label>
+              <input type="text" id="tripPrice" placeholder="e.g. ₹16,499 (leave blank for On Request)">
+            </div>
+
+            <div class="form-group full-width">
+              <label>Categories (Select All That Apply)</label>
+              <div class="category-pills-selector" id="categoryPillsContainer" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; padding: 12px; border: 1.5px solid var(--border-dark); border-radius: var(--radius-md); background: #14140f;">
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="spiti_tours"> <span>Spiti Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="himachal_tours"> <span>Himachal Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="kashmir_tours"> <span>Kashmir Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="ladakh_tours"> <span>Ladakh Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="heart_of_india_tours"> <span>Heart of India Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="northeast_india_tours"> <span>North-East India Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="south_india_tours"> <span>South India Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="goa_tours"> <span>Goa Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="rajasthan_tours"> <span>Rajasthan Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="uttarakhand_tours"> <span>Uttarakhand Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="international_tours"> <span>International Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="women_only_tours"> <span>Women Only Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="treks"> <span>Treks</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="bike_tours"> <span>Bike Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="festival_tours"> <span>Festival Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="corporate_tours"> <span>Corporate Tours</span></label>
+                <label class="cat-checkbox-pill"><input type="checkbox" name="tripCategory" value="educational_trips"> <span>Educational Trips</span></label>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label>Route &amp; Region</label>
+              <input type="text" id="tripRoute" placeholder="e.g. Shimla — Kalpa — Kaza — Chandra Taal — Manali">
+            </div>
+
+            <div class="form-group full-width">
+              <label>Tags (Comma separated)</label>
+              <input type="text" id="tripTags" placeholder="Group Tour, Motorbike Expedition, High Altitude">
+            </div>
+
+            <!-- Media & Bento Gallery -->
+            <div class="form-section-header">🖼️ 2. Hero &amp; Bento Photo Gallery (5 Images)</div>
+
+            <div class="form-group full-width">
+              <label>Main Card Image (Upload or Paste URL)</label>
+              <div class="image-dropzone" data-target-input="tripImage">
+                <input type="file" accept="image/*" class="dz-file-input" style="display:none;">
+                <div class="dz-preview"><img src="" alt="Preview"><button type="button" class="dz-remove" onclick="removeDzImage('tripImage')">✕ Remove</button></div>
+                <div class="dz-content">
+                  <div class="dz-icon">📸</div>
+                  <div class="dz-prompt"><strong>Drag &amp; Drop Main Image Here</strong> or click to browse</div>
+                </div>
+              </div>
+              <input type="text" id="tripImage" required placeholder="assets/images/destinations/spiti.jpg" style="margin-top:8px;">
+            </div>
+
+            <div class="form-group">
+              <label>Bento 1 (Left Tall Hero)</label>
+              <div class="image-dropzone" data-target-input="bentoImg1">
+                <input type="file" accept="image/*" class="dz-file-input" style="display:none;">
+                <div class="dz-preview"><img src="" alt="Preview"><button type="button" class="dz-remove" onclick="removeDzImage('bentoImg1')">✕ Remove</button></div>
+                <div class="dz-content">
+                  <div class="dz-icon">🖼️</div>
+                  <div class="dz-prompt">Drag &amp; Drop Bento 1 Image</div>
+                </div>
+              </div>
+              <input type="text" id="bentoImg1" placeholder="assets/images/destinations/spiti-bento1.jpg" style="margin-top:8px;">
+            </div>
+
+            <div class="form-group">
+              <label>Bento 2 (Top Mid)</label>
+              <div class="image-dropzone" data-target-input="bentoImg2">
+                <input type="file" accept="image/*" class="dz-file-input" style="display:none;">
+                <div class="dz-preview"><img src="" alt="Preview"><button type="button" class="dz-remove" onclick="removeDzImage('bentoImg2')">✕ Remove</button></div>
+                <div class="dz-content">
+                  <div class="dz-icon">🖼️</div>
+                  <div class="dz-prompt">Drag &amp; Drop Bento 2 Image</div>
+                </div>
+              </div>
+              <input type="text" id="bentoImg2" placeholder="assets/images/destinations/spiti-bento2.jpg" style="margin-top:8px;">
+            </div>
+
+            <div class="form-group">
+              <label>Bento 3 (Bottom Mid)</label>
+              <div class="image-dropzone" data-target-input="bentoImg3">
+                <input type="file" accept="image/*" class="dz-file-input" style="display:none;">
+                <div class="dz-preview"><img src="" alt="Preview"><button type="button" class="dz-remove" onclick="removeDzImage('bentoImg3')">✕ Remove</button></div>
+                <div class="dz-content">
+                  <div class="dz-icon">🖼️</div>
+                  <div class="dz-prompt">Drag &amp; Drop Bento 3 Image</div>
+                </div>
+              </div>
+              <input type="text" id="bentoImg3" placeholder="assets/images/destinations/spiti-bento3.jpg" style="margin-top:8px;">
+            </div>
+
+            <div class="form-group">
+              <label>Bento 4 (Top Right)</label>
+              <div class="image-dropzone" data-target-input="bentoImg4">
+                <input type="file" accept="image/*" class="dz-file-input" style="display:none;">
+                <div class="dz-preview"><img src="" alt="Preview"><button type="button" class="dz-remove" onclick="removeDzImage('bentoImg4')">✕ Remove</button></div>
+                <div class="dz-content">
+                  <div class="dz-icon">🖼️</div>
+                  <div class="dz-prompt">Drag &amp; Drop Bento 4 Image</div>
+                </div>
+              </div>
+              <input type="text" id="bentoImg4" placeholder="assets/images/destinations/spiti-bento4.jpg" style="margin-top:8px;">
+            </div>
+
+            <div class="form-group">
+              <label>Bento 5 (Bottom Right)</label>
+              <div class="image-dropzone" data-target-input="bentoImg5">
+                <input type="file" accept="image/*" class="dz-file-input" style="display:none;">
+                <div class="dz-preview"><img src="" alt="Preview"><button type="button" class="dz-remove" onclick="removeDzImage('bentoImg5')">✕ Remove</button></div>
+                <div class="dz-content">
+                  <div class="dz-icon">🖼️</div>
+                  <div class="dz-prompt">Drag &amp; Drop Bento 5 Image</div>
+                </div>
+              </div>
+              <input type="text" id="bentoImg5" placeholder="assets/images/destinations/spiti-bento5.jpg" style="margin-top:8px;">
+            </div>
+
+            <div class="form-group full-width">
+              <label>About Trip Summary</label>
+              <textarea id="aboutText" rows="3" placeholder="Detailed description of the expedition..."></textarea>
+            </div>
+
+            <!-- Itinerary, Inclusions & Exclusions -->
+            <div class="form-section-header">📋 3. Itinerary, Inclusions &amp; Exclusions</div>
+
+            <div class="form-group full-width">
+              <label>Day-by-Day Itinerary (Format: DAY 1: Title | Details — one per line)</label>
+              <textarea id="itineraryText" rows="5" placeholder="DAY 1: Arrival in Shimla | Meet the group and captain. Briefing for the expedition.
+DAY 2: Shimla to Kalpa | Drive through Kinnaur valley with stunning mountain views."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Inclusions (One per line)</label>
+              <textarea id="inclusionsText" rows="4" placeholder="Accommodation on twin sharing
+All meals (Breakfast & Dinner)
+SUV Transport / Royal Enfield Bike"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Exclusions (One per line)</label>
+              <textarea id="exclusionsText" rows="4" placeholder="Airfare / Train tickets
+Personal snacks & beverages
+Travel Insurance"></textarea>
+            </div>
+
+            <!-- Package Options & Bikes -->
+            <div class="form-section-header">🏷️ 4. Package Options &amp; Bike Options</div>
+
+            <div class="form-group">
+              <label>Package Options (Title: Price | Title: Price)</label>
+              <input type="text" id="packageOptionsText" placeholder="Dual Rider: ₹13,999 | Solo Rider: ₹16,999">
+            </div>
+
+            <div class="form-group">
+              <label>Bike Sub-Package Options (Comma separated)</label>
+              <input type="text" id="subPackageOptionsText" placeholder="Himalayan 411, Himalayan 450 (+₹6,000), Scram 411">
+            </div>
+
+            <!-- Departure Batches Picker -->
+            <div class="form-section-header">📆 5. Departure Batches Builder</div>
+
+            <div class="form-group full-width" style="background:#14140f; padding:18px; border-radius:var(--radius-md); border:1px solid var(--border-dark);">
+              <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap:12px; margin-bottom:12px;">
+                <div>
+                  <label>Start Date</label>
+                  <input type="date" id="batchStartDate" onchange="autoDeriveMonth()">
+                </div>
+                <div>
+                  <label>Month Section</label>
+                  <input type="text" id="batchMonth" readonly placeholder="August 2026">
+                </div>
+                <div>
+                  <label>Status</label>
+                  <select id="batchStatus">
+                    <option value="Available">Available</option>
+                    <option value="Filling Fast">Filling Fast</option>
+                    <option value="Sold Out">Sold Out</option>
+                  </select>
+                </div>
+                <div>
+                  <label>Batch Price</label>
+                  <input type="text" id="batchPrice" placeholder="₹16,499">
+                </div>
+              </div>
+              <button type="button" class="btn-secondary" onclick="addBatchFromPicker()">➕ Add Departure Batch</button>
+
+              <div id="guiBatchesPreview" style="margin-top:14px; display:flex; flex-direction:column; gap:8px;"></div>
+            </div>
+
+            <!-- FAQs & Reviews -->
+            <div class="form-section-header">❓ 6. FAQs &amp; ⭐ Reviews</div>
+
+            <div class="form-group">
+              <label>FAQs (Question? | Answer — one per line)</label>
+              <textarea id="faqsText" rows="3" placeholder="WHAT IS THE BEST TIME? | June to September is ideal."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Customer Reviews (Name | Location | Review Text | Avatar URL)</label>
+              <textarea id="reviewsText" rows="3" placeholder="Rohit Verma | Delhi | Amazing expedition! | assets/images/reviews/pfp-rohit.jpg"></textarea>
+            </div>
+
+            <!-- Feature Toggles -->
+            <div class="form-section-header">⚡ 7. Banners &amp; Feature Flags</div>
+
+            <div class="form-group"><label>Reserve Banner Title</label><input type="text" id="reserveBannerTitle" placeholder="Reserve your seat now!"></div>
+            <div class="form-group"><label>Private Trip Title</label><input type="text" id="customQuoteTitle" placeholder="Private Trip Available"></div>
+
+            <div class="form-group full-width" style="display:flex; gap:20px; flex-wrap:wrap;">
+              <label style="display:inline-flex; align-items:center; gap:8px; cursor:pointer;"><input type="checkbox" id="featReels" checked> Featured in Reels Carousel</label>
+              <label style="display:inline-flex; align-items:center; gap:8px; cursor:pointer;"><input type="checkbox" id="featStack" checked> Featured in Card Stack</label>
+              <label style="display:inline-flex; align-items:center; gap:8px; cursor:pointer;"><input type="checkbox" id="featLemonade" checked> Featured in Lemonade Budget</label>
+            </div>
+          </div>
+
+          <div style="margin-top:24px;">
+            <button type="submit" class="btn-action" id="submitTripBtn">💾 Save Full Itinerary to Supabase</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- ACTIVE TRIPS TABLE CARD -->
+      <div class="cms-card">
+        <div class="cms-card-header">
+          <h2 class="cms-card-title">📋 Active Trips &amp; Itineraries in Supabase</h2>
+          <button class="btn-secondary" onclick="loadAdminTrips()">🔄 Refresh</button>
+        </div>
+
+        <div class="filter-bar">
+          <input type="text" id="tripSearch" class="search-input" placeholder="🔍 Search trips by title, category or route..." onkeyup="filterTripsTable()">
+        </div>
+
+        <div class="table-container">
+          <table class="cms-table">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Duration</th>
+                <th>Price</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="tripsTableBody">
+              <tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">Loading trips...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- TAB: HOME DESTINATIONS CMS -->
+    <!-- ========================================================= -->
+    <section id="panel-destinations" class="tab-panel">
+      <!-- 1. Destination Card Maker / Editor -->
+      <div class="cms-card">
+        <div class="cms-card-header">
+          <h2 class="cms-card-title" id="destFormTitle">➕ Add / Edit Home Destination Card</h2>
+          <button type="button" class="btn-secondary" id="cancelDestEditBtn" onclick="resetDestForm()" style="display:none;">✕ Cancel Edit</button>
+        </div>
+
+        <form id="destForm" onsubmit="handleSaveDestination(event)">
+          <input type="hidden" id="editDestId">
+
+          <div class="cms-form-grid">
+            <div class="form-group">
+              <label>Destination Title</label>
+              <input type="text" id="destTitleInput" required placeholder="e.g. Dubai, Rajasthan, Varanasi, Bali">
+            </div>
+
+            <div class="form-group">
+              <label>Destination Type / Category</label>
+              <select id="destCategoryInput" required style="background:#14140f; border:1.5px solid var(--border-dark); border-radius:var(--radius-md); padding:12px 16px; color:#fff; font-size:14px; width:100%;">
+                <option value="domestic">Domestic Destination</option>
+                <option value="international">International Destination</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Subtitle / Tagline (Optional)</label>
+              <input type="text" id="destSubtitleInput" placeholder="e.g. Land of Kings, City of Gold">
+            </div>
+
+            <div class="form-group">
+              <label>Display Order</label>
+              <input type="number" id="destOrderInput" value="1" min="1" placeholder="e.g. 1, 2, 3...">
+            </div>
+
+            <div class="form-group full-width">
+              <label>Thumbnail Image URL</label>
+              <div class="image-dropzone" data-target-input="destImageUrlInput">
+                <input type="file" accept="image/*" class="dz-file-input" style="display:none;">
+                <div class="dz-preview"><img src="" alt="Preview"><button type="button" class="dz-remove" onclick="removeDzImage('destImageUrlInput')">✕ Remove</button></div>
+                <div class="dz-content">
+                  <div class="dz-icon">🖼️</div>
+                  <div class="dz-prompt"><strong>Drag &amp; Drop Image Here</strong> or click to browse</div>
+                </div>
+              </div>
+              <input type="text" id="destImageUrlInput" required placeholder="assets/images/destinations/domestic/varanasi.jpg or https://..." style="margin-top:8px;">
+              <small style="color:var(--text-muted); display:block; margin-top:6px;">Presets: 
+                <a href="#" onclick="event.preventDefault(); const el=document.getElementById('destImageUrlInput'); el.value='assets/images/destinations/domestic/varanasi.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Varanasi</a> | 
+                <a href="#" onclick="event.preventDefault(); const el=document.getElementById('destImageUrlInput'); el.value='assets/images/destinations/domestic/rajasthan.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Rajasthan</a> | 
+                <a href="#" onclick="event.preventDefault(); const el=document.getElementById('destImageUrlInput'); el.value='assets/images/destinations/domestic/himachal.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Himachal</a> | 
+                <a href="#" onclick="event.preventDefault(); const el=document.getElementById('destImageUrlInput'); el.value='assets/images/destinations/domestic/goa.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Goa</a> | 
+                <a href="#" onclick="event.preventDefault(); const el=document.getElementById('destImageUrlInput'); el.value='assets/images/destinations/domestic/kerala.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Kerala</a> | 
+                <a href="#" onclick="event.preventDefault(); const el=document.getElementById('destImageUrlInput'); el.value='assets/images/destinations/international/dubai.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Dubai</a> | 
+                <a href="#" onclick="event.preventDefault(); const el=document.getElementById('destImageUrlInput'); el.value='assets/images/destinations/international/bhutan.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Bhutan</a> | 
+                <a href="#" onclick="event.preventDefault(); const el=document.getElementById('destImageUrlInput'); el.value='assets/images/destinations/international/nepal.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Nepal</a> | 
+                <a href="#" onclick="event.preventDefault(); const el=document.getElementById('destImageUrlInput'); el.value='assets/images/destinations/international/bali.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Bali</a> | 
+                <a href="#" onclick="event.preventDefault(); const el=document.getElementById('destImageUrlInput'); el.value='assets/images/destinations/international/africa.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Africa</a>
+              </small>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; text-align: right;">
+            <button type="submit" class="btn-primary" id="saveDestBtn">💾 Save Destination Card</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 2. Domestic & International Destinations Table -->
+      <div class="cms-card" style="margin-top: 32px;">
+        <div class="cms-card-header">
+          <h2 class="cms-card-title">🗺️ Active Home Destination Cards</h2>
+          <button class="btn-secondary" onclick="loadAdminDestinations()">🔄 Refresh List</button>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table class="cms-table">
+            <thead>
+              <tr>
+                <th>Thumbnail</th>
+                <th>Title &amp; Subtitle</th>
+                <th>Category</th>
+                <th>Order</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="destinationsTableBody">
+              <tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">Loading destination cards...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- TAB: WATCH & READ CMS (REELS & BLOGS) -->
+    <!-- ========================================================= -->
+    <section id="panel-postcards" class="tab-panel">
+      <!-- Section Header -->
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:24px;">
+        <h2 style="font-size:24px; font-weight:800; color:#fff;">📸 Watch &amp; Read CMS (Instagram Reels &amp; Travel Blogs)</h2>
+        <div style="display:flex; gap:10px;">
+          <button type="button" class="btn-secondary active" id="btnShowReelsCms" onclick="switchPostcardsSubTab('reels')" style="background:var(--accent-lime); color:#14140f; font-weight:800; border:none; padding:8px 16px; border-radius:8px; cursor:pointer;">🎬 Instagram Reels</button>
+          <button type="button" class="btn-secondary" id="btnShowBlogsCms" onclick="switchPostcardsSubTab('blogs')" style="background:rgba(255,255,255,0.1); color:#fff; font-weight:700; border:1px solid rgba(255,255,255,0.2); padding:8px 16px; border-radius:8px; cursor:pointer;">📖 Travel Blogs</button>
+        </div>
+      </div>
+
+      <!-- 1. INSTAGRAM REELS SUB-SECTION -->
+      <div id="subtab-reels">
+        <div class="cms-card">
+          <div class="cms-card-header">
+            <h2 class="cms-card-title" id="reelFormTitle">➕ Add / Edit Instagram Reel or Video</h2>
+            <button type="button" class="btn-secondary" id="cancelReelEditBtn" onclick="resetReelForm()" style="display:none;">✕ Cancel Edit</button>
+          </div>
+
+          <form id="reelForm" onsubmit="handleSaveReel(event)">
+            <input type="hidden" id="editReelId">
+            <div class="cms-form-grid">
+              <div class="form-group">
+                <label>Reel Title *</label>
+                <input type="text" id="reelTitleInput" required placeholder="e.g. Spiti Valley Winter 4x4 Road Trip">
+              </div>
+              <div class="form-group">
+                <label>Author / Subtitle</label>
+                <input type="text" id="reelAuthorInput" placeholder="e.g. Awara Banjara Community or @awarabanjara">
+              </div>
+              <div class="form-group full-width">
+                <label>Instagram Reel or Video Link (URL) *</label>
+                <input type="url" id="reelVideoUrlInput" required placeholder="https://www.instagram.com/reel/C3X1y90vX1Y/ or https://www.instagram.com/p/...">
+                <small style="color:var(--text-muted); display:block; margin-top:4px;">Paste any Instagram Reel/Post link. The system automatically converts it to an embeddable player!</small>
+              </div>
+              <div class="form-group full-width">
+                <label>Cover / Thumbnail Image URL *</label>
+                <div class="image-dropzone" data-target-input="reelImageUrlInput">
+                  <input type="file" accept="image/*" class="dz-file-input" style="display:none;">
+                  <div class="dz-preview"><img src="" alt="Preview"><button type="button" class="dz-remove" onclick="removeDzImage('reelImageUrlInput')">✕ Remove</button></div>
+                  <div class="dz-content">
+                    <div class="dz-icon">🖼️</div>
+                    <div class="dz-prompt"><strong>Drag &amp; Drop Reel Cover Image</strong> or click to browse</div>
+                  </div>
+                </div>
+                <input type="text" id="reelImageUrlInput" required placeholder="assets/images/destinations/domestic/spiti.jpg or https://..." style="margin-top:8px;">
+                <small style="color:var(--text-muted); display:block; margin-top:4px;">Presets: 
+                  <a href="#" onclick="event.preventDefault(); const el=document.getElementById('reelImageUrlInput'); el.value='assets/images/destinations/domestic/spiti.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Spiti</a> | 
+                  <a href="#" onclick="event.preventDefault(); const el=document.getElementById('reelImageUrlInput'); el.value='assets/images/destinations/domestic/rajasthan.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Rajasthan</a> | 
+                  <a href="#" onclick="event.preventDefault(); const el=document.getElementById('reelImageUrlInput'); el.value='assets/images/trips/gonbo-rangjon.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Gonbo Rangjon</a> | 
+                  <a href="#" onclick="event.preventDefault(); const el=document.getElementById('reelImageUrlInput'); el.value='assets/images/destinations/domestic/kashmir.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Kashmir</a>
+                </small>
+              </div>
+            </div>
+            <div style="margin-top: 20px; text-align: right;">
+              <button type="submit" class="btn-primary" id="saveReelBtn">💾 Save Instagram Reel</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="cms-card" style="margin-top: 24px;">
+          <div class="cms-card-header">
+            <h2 class="cms-card-title">🎬 Active Instagram Reels</h2>
+            <button class="btn-secondary" onclick="loadAdminPostcards()">🔄 Refresh Reels</button>
+          </div>
+          <div style="overflow-x: auto;">
+            <table class="cms-table">
+              <thead>
+                <tr>
+                  <th>Thumbnail</th>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>Instagram Link</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="reelsTableBody">
+                <tr><td colspan="5" style="text-align:center; padding:20px; color:var(--text-muted);">Loading reels...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. TRAVEL BLOGS SUB-SECTION -->
+      <div id="subtab-blogs" style="display:none;">
+        <div class="cms-card">
+          <div class="cms-card-header">
+            <h2 class="cms-card-title" id="blogFormTitle">➕ Add / Edit Travel Blog Article</h2>
+            <button type="button" class="btn-secondary" id="cancelBlogEditBtn" onclick="resetBlogForm()" style="display:none;">✕ Cancel Edit</button>
+          </div>
+
+          <form id="blogForm" onsubmit="handleSaveBlog(event)">
+            <input type="hidden" id="editBlogId">
+            <div class="cms-form-grid">
+              <div class="form-group">
+                <label>Blog Title *</label>
+                <input type="text" id="blogTitleInput" required placeholder="e.g. Zanskar Full Circuit Experience">
+              </div>
+              <div class="form-group">
+                <label>Subtitle / Tagline</label>
+                <input type="text" id="blogSubtitleInput" placeholder="e.g. Raw Himalayan Trails &amp; Monasteries">
+              </div>
+              <div class="form-group">
+                <label>Category</label>
+                <select id="blogCategoryInput">
+                  <option value="Travel Guide">Travel Guide</option>
+                  <option value="Field Guide">Field Guide</option>
+                  <option value="Expedition Story">Expedition Story</option>
+                  <option value="Wilderness Guide">Wilderness Guide</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Author Name</label>
+                <input type="text" id="blogAuthorInput" value="Team Awara Banjara" placeholder="e.g. Ananya Sharma">
+              </div>
+              <div class="form-group">
+                <label>Estimated Read Time</label>
+                <input type="text" id="blogReadTimeInput" value="5 min read" placeholder="e.g. 5 min read">
+              </div>
+              <div class="form-group full-width">
+                <label>Cover / Header Image URL *</label>
+                <div class="image-dropzone" data-target-input="blogImageUrlInput">
+                  <input type="file" accept="image/*" class="dz-file-input" style="display:none;">
+                  <div class="dz-preview"><img src="" alt="Preview"><button type="button" class="dz-remove" onclick="removeDzImage('blogImageUrlInput')">✕ Remove</button></div>
+                  <div class="dz-content">
+                    <div class="dz-icon">🖼️</div>
+                    <div class="dz-prompt"><strong>Drag &amp; Drop Blog Cover Image</strong> or click to browse</div>
+                  </div>
+                </div>
+                <input type="text" id="blogImageUrlInput" required placeholder="assets/images/postcards/zanskar-full-circuit.jpg" style="margin-top:8px;">
+                <small style="color:var(--text-muted); display:block; margin-top:4px;">Presets: 
+                  <a href="#" onclick="event.preventDefault(); const el=document.getElementById('blogImageUrlInput'); el.value='assets/images/postcards/zanskar-full-circuit.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Zanskar</a> | 
+                  <a href="#" onclick="event.preventDefault(); const el=document.getElementById('blogImageUrlInput'); el.value='assets/images/postcards/jibhi-tirthan-odyssey.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Jibhi Tirthan</a> | 
+                  <a href="#" onclick="event.preventDefault(); const el=document.getElementById('blogImageUrlInput'); el.value='assets/images/postcards/thailand-enchanted-land.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Thailand</a> | 
+                  <a href="#" onclick="event.preventDefault(); const el=document.getElementById('blogImageUrlInput'); el.value='assets/images/postcards/african-dream-vacation.jpg'; el.dispatchEvent(new Event('input'));" style="color:var(--accent-lime); font-weight:700;">Africa</a>
+                </small>
+              </div>
+              <div class="form-group full-width">
+                <label>Blog Article Content (Markdown or Paragraphs) *</label>
+                <textarea id="blogContentInput" rows="7" required placeholder="Write your travel story here. Use ### for subheadings and - for bullet points..."></textarea>
+              </div>
+            </div>
+            <div style="margin-top: 20px; text-align: right;">
+              <button type="submit" class="btn-primary" id="saveBlogBtn">💾 Save Travel Blog</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="cms-card" style="margin-top: 24px;">
+          <div class="cms-card-header">
+            <h2 class="cms-card-title">📖 Active Travel Blogs</h2>
+            <button class="btn-secondary" onclick="loadAdminPostcards()">🔄 Refresh Blogs</button>
+          </div>
+          <div style="overflow-x: auto;">
+            <table class="cms-table">
+              <thead>
+                <tr>
+                  <th>Thumbnail</th>
+                  <th>Title &amp; Subtitle</th>
+                  <th>Category</th>
+                  <th>Author</th>
+                  <th>Read Time</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="blogsTableBody">
+                <tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">Loading blogs...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- TAB 2: CUSTOMER INQUIRIES & LEADS -->
+    <!-- ========================================================= -->
+    <section id="panel-inquiries" class="tab-panel">
+      <div class="cms-card">
+        <div class="cms-card-header" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+          <h2 class="cms-card-title">📥 Customer Inquiries &amp; Bookings Lead Table</h2>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <button class="btn-secondary" onclick="loadAdminInquiries()">🔄 Refresh Inquiries</button>
+            <button class="btn-primary" onclick="exportInquiriesToCSV()" style="background:#d6ff3f; color:#14140f; font-weight:800; border:none; padding:10px 18px; border-radius:var(--radius-md); cursor:pointer;">📊 Download Excel (.CSV)</button>
+          </div>
+        </div>
+
+        <div class="filter-bar">
+          <input type="text" id="inqSearch" class="search-input" placeholder="🔍 Search by customer name, phone, or trip title..." onkeyup="filterInquiriesTable()">
+        </div>
+
+        <div class="table-container">
+          <table class="cms-table">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Contact Phone</th>
+                <th>Trip &amp; Date</th>
+                <th>Price &amp; Options</th>
+                <th>Travelers</th>
+                <th>Message</th>
+                <th>Date Submitted</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="inquiriesTableBody">
+              <tr><td colspan="8" style="text-align:center; padding:20px; color:var(--text-muted);">Loading inquiries...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- TAB 3: CUSTOMER REVIEWS CMS -->
+    <!-- ========================================================= -->
+    <section id="panel-reviews" class="tab-panel">
+      <div class="cms-card">
+        <div class="cms-card-header">
+          <h2 class="cms-card-title" id="reviewFormTitle">➕ Add / Edit Customer Review</h2>
+          <button type="button" class="btn-secondary" id="cancelReviewEditBtn" onclick="resetReviewForm()" style="display:none;">✕ Cancel Edit</button>
+        </div>
+
+        <form id="reviewForm" onsubmit="handleSaveReview(event)">
+          <input type="hidden" id="editReviewId">
+
+          <div class="cms-form-grid">
+            <div class="form-group">
+              <label>Customer Name</label>
+              <input type="text" id="revCustomerName" required placeholder="e.g. Ravi Modi">
+            </div>
+
+            <div class="form-group">
+              <label>Trip Type Tag (e.g. Joined Group Trip)</label>
+              <select id="revTripTag">
+                <option value="Joined Group Trip">Joined Group Trip</option>
+                <option value="Joined Bike Trip">Joined Bike Trip</option>
+                <option value="Joined Trek">Joined Trek</option>
+                <option value="Joined Women Trip">Joined Women Trip</option>
+                <option value="Joined Solo Trip">Joined Solo Trip</option>
+                <option value="Joined Couple Trip">Joined Couple Trip</option>
+                <option value="Joined Custom Trip">Joined Custom Trip</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label>Select Specific Trip (Links review directly to that trip page when clicked!)</label>
+              <select id="revTripSelect" onchange="onReviewTripSelected(this)">
+                <option value="">-- Choose From Active Trips --</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Booked Trip Name (Display Label)</label>
+              <input type="text" id="revTripName" required placeholder="e.g. Spiti Valley Bike Trip">
+            </div>
+
+            <div class="form-group">
+              <label>Specific Trip Page URL (Destination Page)</label>
+              <input type="text" id="revTripUrl" placeholder="e.g. trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116.html">
+            </div>
+
+            <div class="form-group">
+              <label>Rating (1 to 5 Stars)</label>
+              <select id="revRating" required>
+                <option value="5">⭐⭐⭐⭐⭐ (5 Stars)</option>
+                <option value="4">⭐⭐⭐⭐ (4 Stars)</option>
+                <option value="3">⭐⭐⭐ (3 Stars)</option>
+                <option value="2">⭐⭐ (2 Stars)</option>
+                <option value="1">⭐ (1 Star)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Customer Avatar Photo URL (Optional)</label>
+              <div class="image-dropzone" data-target-input="revAvatarUrl">
+                <input type="file" accept="image/*" class="dz-file-input" style="display:none;">
+                <div class="dz-preview"><img src="" alt="Preview"><button type="button" class="dz-remove" onclick="removeDzImage('revAvatarUrl')">✕ Remove</button></div>
+                <div class="dz-content">
+                  <div class="dz-icon">🖼️</div>
+                  <div class="dz-prompt"><strong>Drag &amp; Drop Avatar Image</strong> or click to browse</div>
+                </div>
+              </div>
+              <input type="text" id="revAvatarUrl" placeholder="e.g. assets/images/reviews/pfp-ananya.jpg" style="margin-top:8px;">
+            </div>
+
+            <div class="form-group full-width">
+              <label>Trip Gallery / Photo URLs (Optional — Add multiple photo URLs, 1 per line. Leave empty for NO photo!)</label>
+              <textarea id="revImagesText" rows="3" placeholder="https://image1.jpg&#10;https://image2.jpg&#10;(Leave empty if no trip photo is needed)"></textarea>
+            </div>
+
+            <div class="form-group full-width">
+              <label>Customer Review Story / Feedback</label>
+              <textarea id="revText" rows="3" required placeholder="Enter customer's full story or review feedback..."></textarea>
+            </div>
+          </div>
+
+          <div style="margin-top: 20px; display: flex; gap: 12px;">
+            <button type="submit" class="btn-primary" id="saveReviewBtn">💾 Save Customer Review</button>
+            <button type="button" class="btn-secondary" onclick="resetReviewForm()">Reset Form</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- REVIEWS TABLE -->
+      <div class="cms-card">
+        <div class="cms-card-header">
+          <h2 class="cms-card-title">⭐ Published Customer Reviews</h2>
+          <button type="button" class="btn-secondary" onclick="loadAdminReviews()">🔄 Refresh List</button>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table class="cms-table">
+            <thead>
+              <tr>
+                <th>Customer</th>
+                <th>Trip Name</th>
+                <th>Rating</th>
+                <th>Review Story</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="reviewsTableBody">
+              <tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">Loading customer reviews...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- TAB 4: LOCAL DATA ENGINE & JSON BACKUP / RESTORE TOOLS -->
+    <!-- ========================================================= -->
+    <section id="panel-sql-tools" class="tab-panel">
+      <div class="cms-card">
+        <div class="cms-card-header">
+          <h2 class="cms-card-title">📦 Local Data Engine &amp; JSON Backup / Restore Tools</h2>
+        </div>
+
+        <p style="font-size:14px; color:var(--text-muted); margin-bottom:20px;">
+          Your platform is running 100% standalone on the high-speed <strong>Local Data Engine (`AwaraDB`)</strong> backed by <code>/data/*.json</code> files.
+        </p>
+
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+          <div style="background:#14140f; border:1px solid var(--border-dark); border-radius:12px; padding:20px;">
+            <h3 style="font-size:16px; font-weight:800; color:var(--accent-lime); margin-bottom:6px;">1. Export All Data JSON</h3>
+            <p style="font-size:12px; color:var(--text-muted); margin-bottom:14px;">Downloads complete bundle (trips, destinations, reviews, inquiries, site_config).</p>
+            <button class="btn-primary" onclick="exportFullJSONBundle()">📥 Download Full JSON Backup</button>
+          </div>
+
+          <div style="background:#14140f; border:1px solid var(--border-dark); border-radius:12px; padding:20px;">
+            <h3 style="font-size:16px; font-weight:800; color:var(--accent-lime); margin-bottom:6px;">2. Import Restore JSON</h3>
+            <p style="font-size:12px; color:var(--text-muted); margin-bottom:14px;">Restore or update dataset from a saved JSON backup bundle file.</p>
+            <input type="file" id="importJsonFileInput" accept=".json" style="display:none;" onchange="handleImportJSONFile(event)">
+            <button class="btn-secondary" onclick="document.getElementById('importJsonFileInput').click()">📤 Upload &amp; Restore JSON</button>
+          </div>
+
+          <div style="background:#14140f; border:1px solid var(--border-dark); border-radius:12px; padding:20px;">
+            <h3 style="font-size:16px; font-weight:800; color:#fff; margin-bottom:6px;">3. Export trips.json</h3>
+            <p style="font-size:12px; color:var(--text-muted); margin-bottom:14px;">Download current trips dataset file for /data/trips.json</p>
+            <button class="btn-secondary" onclick="exportTableJSON('trips')">📋 Download trips.json</button>
+          </div>
+
+          <div style="background:#14140f; border:1px solid var(--border-dark); border-radius:12px; padding:20px;">
+            <h3 style="font-size:16px; font-weight:800; color:#fff; margin-bottom:6px;">4. Export reviews.json</h3>
+            <p style="font-size:12px; color:var(--text-muted); margin-bottom:14px;">Download current customer reviews dataset file for /data/reviews.json</p>
+            <button class="btn-secondary" onclick="exportTableJSON('reviews')">📋 Download reviews.json</button>
+          </div>
+
+          <div style="background:#14140f; border:1px solid var(--border-dark); border-radius:12px; padding:20px;">
+            <h3 style="font-size:16px; font-weight:800; color:#fff; margin-bottom:6px;">5. Export destinations.json</h3>
+            <p style="font-size:12px; color:var(--text-muted); margin-bottom:14px;">Download home destination cards file for /data/destinations.json</p>
+            <button class="btn-secondary" onclick="exportTableJSON('destinations')">📋 Download destinations.json</button>
+          </div>
+        </div>
+
+        <div style="margin-top:28px; padding-top:20px; border-top:1px solid var(--border-dark); display:flex; justify-content:space-between; align-items:center;">
+          <span style="font-size:13px; color:var(--text-muted);">Cache Diagnostics: Need to reset local state?</span>
+          <button class="btn-danger" onclick="purgeAllCache()">🧹 Clear Local Cache</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LOCAL DATA ENGINE SCRIPTS -->
+  <script src="assets/js/db-engine.js?v=6.0"></script>
+  <script src="assets/js/site-config-loader.js?v=11.0"></script>
+
+  <script>
+    function escapeHtml(str) {
+      if (str === null || str === undefined) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    let activeTrips = [];
+    let activeInquiries = [];
+    let guiBatches = [];
+
+    let datePickerInstance = null;
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Attach tab switching listeners
+      document.querySelectorAll('.tab-bar .tab-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const tabId = this.getAttribute('data-tab');
+          if (tabId) switchTab(tabId);
+        });
+      });
+
+      loadAdminTrips();
+      loadAdminInquiries();
+      loadAdminDestinations();
+      if (typeof loadAdminReviews === 'function') loadAdminReviews();
+      if (typeof populateReviewTripSelect === 'function') populateReviewTripSelect(true);
+      initImageDropzones();
+      initCalendarPicker();
+    });
+
+    function initCalendarPicker() {
+      if (typeof flatpickr !== 'undefined') {
+        datePickerInstance = flatpickr("#batchStartDate", {
+          theme: "dark",
+          dateFormat: "Y-m-d",
+          altInput: true,
+          altFormat: "d F Y (D)",
+          altInputClass: "flatpickr-custom-input",
+          minDate: "today",
+          onChange: function(selectedDates, dateStr) {
+            autoDeriveMonth(dateStr);
+          }
+        });
+      }
+    }
+
+    /* =========================================================
+       DRAG AND DROP IMAGE ZONE ENGINE
+       ========================================================= */
+    function initImageDropzones() {
+      document.querySelectorAll('.image-dropzone').forEach(dz => {
+        const targetInputId = dz.getAttribute('data-target-input');
+        const inputEl = document.getElementById(targetInputId);
+        const fileInput = dz.querySelector('.dz-file-input');
+        const previewContainer = dz.querySelector('.dz-preview');
+        const previewImg = previewContainer ? previewContainer.querySelector('img') : null;
+        const contentEl = dz.querySelector('.dz-content');
+
+        // Click on zone to browse file
+        dz.addEventListener('click', (e) => {
+          if (e.target.classList.contains('dz-remove')) return;
+          if (fileInput) fileInput.click();
+        });
+
+        // File picked via file input
+        if (fileInput) {
+          fileInput.addEventListener('change', function() {
+            if (this.files && this.files[0]) {
+              handleFile(this.files[0], inputEl, previewImg, previewContainer, contentEl);
+            }
+          });
+        }
+
+        // Dragover & Dragenter
+        ['dragenter', 'dragover'].forEach(eventName => {
+          dz.addEventListener(eventName, (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            dz.classList.add('dragover');
+          }, false);
+        });
+
+        // Dragleave & Drop
+        ['dragleave', 'drop'].forEach(eventName => {
+          dz.addEventListener(eventName, (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            dz.classList.remove('dragover');
+          }, false);
+        });
+
+        // Handle Dropped File
+        dz.addEventListener('drop', (e) => {
+          const dt = e.dataTransfer;
+          const files = dt ? dt.files : null;
+          if (files && files[0]) {
+            handleFile(files[0], inputEl, previewImg, previewContainer, contentEl);
+          }
+        });
+
+        // Sync preview when input value changes manually
+        if (inputEl) {
+          inputEl.addEventListener('input', function() {
+            updateDzPreview(this.value, previewImg, previewContainer, contentEl);
+          });
+          // Initial sync
+          if (inputEl.value) {
+            updateDzPreview(inputEl.value, previewImg, previewContainer, contentEl);
+          }
+        }
+      });
+    }
+
+    function handleFile(file, inputEl, previewImg, previewContainer, contentEl) {
+      if (!file || !file.type || !file.type.startsWith('image/')) {
+        alert('Please drop or select a valid image file!');
+        return;
+      }
+
+      // 1. INSTANTLY update location input field under dropzone
+      const rawName = (file.name || 'uploaded_image').replace(/[^a-zA-Z0-9.\-_]/g, '_');
+      const baseName = rawName.includes('.') ? rawName.substring(0, rawName.lastIndexOf('.')) : rawName;
+      const ext = (rawName.includes('.') ? rawName.substring(rawName.lastIndexOf('.') + 1) : 'jpg').toLowerCase();
+      const timeStamp = Date.now();
+      const initialPath = `assets/images/trips/img_${timeStamp}_${baseName}.${ext}`;
+
+      if (inputEl) {
+        inputEl.value = initialPath;
+        inputEl.dispatchEvent(new Event('input'));
+      }
+
+      // 2. Render local image preview
+      const reader = new FileReader();
+      reader.onload = async function(e) {
+        const dataUrl = e.target.result;
+        updateDzPreview(dataUrl, previewImg, previewContainer, contentEl);
+
+        // 3. Upload file to backend server -> saves into assets/images/trips/
+        try {
+          let json = null;
+          if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.uploadImage) {
+            json = await window.AwaraDB.uploadImage(file.name, dataUrl);
+          } else {
+            const res = await fetch('/api/upload', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ filename: file.name, dataUrl: dataUrl })
+            });
+            if (res.ok) json = await res.json();
+          }
+
+          if (json && json.success && json.relativePath) {
+            if (inputEl) {
+              inputEl.value = json.relativePath;
+              inputEl.dispatchEvent(new Event('input'));
+            }
+            showToast(`📸 Location updated: ${json.relativePath}`);
+            return;
+          }
+        } catch (err) {
+          console.warn('Backend upload endpoint unreachable, keeping instant path.', err);
+        }
+
+        showToast(`📸 Location updated: ${initialPath}`);
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function updateDzPreview(url, previewImg, previewContainer, contentEl) {
+      if (url && url.trim()) {
+        if (previewImg) previewImg.src = url.trim();
+        if (previewContainer) previewContainer.style.display = 'block';
+        if (contentEl) contentEl.style.display = 'none';
+      } else {
+        if (previewContainer) previewContainer.style.display = 'none';
+        if (contentEl) contentEl.style.display = 'flex';
+      }
+    }
+
+    function removeDzImage(inputId) {
+      const inputEl = document.getElementById(inputId);
+      if (inputEl) {
+        inputEl.value = '';
+        inputEl.dispatchEvent(new Event('input'));
+      }
+      const dz = document.querySelector(`.image-dropzone[data-target-input="${inputId}"]`);
+      if (dz) {
+        const previewContainer = dz.querySelector('.dz-preview');
+        const contentEl = dz.querySelector('.dz-content');
+        updateDzPreview('', null, previewContainer, contentEl);
+      }
+    }
+
+    function switchTab(tabId) {
+      if (!tabId) return;
+
+      document.querySelectorAll('.tab-bar .tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+
+      const targetBtn = document.querySelector(`.tab-bar .tab-btn[data-tab="${tabId}"]`) || 
+                        document.querySelector(`.tab-bar .tab-btn[onclick*="${tabId}"]`);
+      const targetPanel = document.getElementById(`panel-${tabId}`);
+
+      if (targetBtn) targetBtn.classList.add('active');
+      if (targetPanel) targetPanel.classList.add('active');
+
+      if (tabId === 'destinations' && typeof loadAdminDestinations === 'function') {
+        loadAdminDestinations();
+      } else if (tabId === 'inquiries' && typeof loadAdminInquiries === 'function') {
+        loadAdminInquiries();
+      } else if (tabId === 'trips' && typeof loadAdminTrips === 'function') {
+        loadAdminTrips();
+      } else if (tabId === 'reviews' && typeof loadAdminReviews === 'function') {
+        loadAdminReviews();
+        if (typeof populateReviewTripSelect === 'function') populateReviewTripSelect(true);
+      } else if (tabId === 'postcards' && typeof loadAdminPostcards === 'function') {
+        loadAdminPostcards();
+      }
+      initImageDropzones();
+    }
+    window.switchTab = switchTab;
+
+    /* =========================================================
+       TRIP ITINERARIES CMS (TAB 1)
+       ========================================================= */
+    async function loadAdminTrips() {
+      const tbody = document.getElementById('tripsTableBody');
+      if (!tbody) return;
+
+      try {
+        if (typeof window.AwaraDB !== 'undefined') {
+          activeTrips = await window.AwaraDB.getTrips(true);
+        } else {
+          const res = await fetch('data/trips.json');
+          activeTrips = await res.json();
+        }
+      } catch (e) { activeTrips = []; }
+
+      renderTripsTable(activeTrips);
+      if (typeof populateReviewTripSelect === 'function') {
+        populateReviewTripSelect(true);
+      }
+    }
+
+    function getSelectedCategories() {
+      const checkboxes = document.querySelectorAll('input[name="tripCategory"]:checked');
+      const selected = Array.from(checkboxes).map(cb => cb.value);
+      return selected.length > 0 ? selected.join(', ') : 'spiti_tours';
+    }
+
+    function setSelectedCategories(catVal) {
+      const checkboxes = document.querySelectorAll('input[name="tripCategory"]');
+      checkboxes.forEach(cb => cb.checked = false);
+
+      if (!catVal) return;
+
+      let catList = [];
+      if (Array.isArray(catVal)) {
+        catList = catVal.map(c => String(c).trim());
+      } else if (typeof catVal === 'string') {
+        const raw = catVal.trim();
+        if (raw.startsWith('[') && raw.endsWith(']')) {
+          try { catList = JSON.parse(raw).map(c => String(c).trim()); } catch(e) {}
+        }
+        if (catList.length === 0) {
+          catList = raw.split(',').map(c => c.trim());
+        }
+      }
+
+      checkboxes.forEach(cb => {
+        const val = cb.value;
+        const isMatched = catList.some(c => {
+          const cLow = c.toLowerCase();
+          if (cLow === val.toLowerCase()) return true;
+          if (val === 'bike_tours' && (cLow === 'bike_trips' || cLow === 'bike_tours')) return true;
+          if (val === 'festival_tours' && (cLow === 'group_trips' || cLow === 'festival_tours')) return true;
+          if (val === 'women_only_tours' && (cLow === 'women_trips' || cLow === 'women_only_tours')) return true;
+          return false;
+        });
+        if (isMatched) cb.checked = true;
+      });
+    }
+
+    function renderCategoryBadges(catVal) {
+      if (!catVal) return '<span class="badge badge-blue">tour</span>';
+      let catList = [];
+      if (Array.isArray(catVal)) {
+        catList = catVal;
+      } else if (typeof catVal === 'string') {
+        const raw = catVal.trim();
+        if (raw.startsWith('[') && raw.endsWith(']')) {
+          try { catList = JSON.parse(raw); } catch(e) {}
+        }
+        if (catList.length === 0) {
+          catList = raw.split(',').map(c => c.trim());
+        }
+      }
+      return catList.map(c => `<span class="badge badge-blue" style="margin-right:3px; margin-bottom:3px; display:inline-block;">${c}</span>`).join('');
+    }
+
+    function renderTripsTable(trips) {
+      const tbody = document.getElementById('tripsTableBody');
+      if (!tbody) return;
+
+      if (!trips || trips.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">No active trips found. Add one above!</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = trips.map(t => `
+        <tr>
+          <td><img src="${t.image_url || t.image || 'assets/images/placeholder-card-1.svg'}" style="width:48px; height:36px; border-radius:6px; object-fit:cover;"></td>
+          <td><strong>${t.title}</strong><br><small style="color:var(--text-muted);">${t.route || 'Himalayan Route'}</small></td>
+          <td>${renderCategoryBadges(t.category)}</td>
+          <td>${t.duration || 'N/A'}</td>
+          <td><strong>${t.price || 'N/A'}</strong></td>
+          <td>
+            <button class="btn-secondary" style="padding:4px 10px; font-size:12px;" onclick="editTrip(${t.id})">✏️ Edit</button>
+            <button class="btn-danger" style="margin-left:4px;" onclick="deleteTrip(${t.id})">🗑️ Delete</button>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function filterTripsTable() {
+      const q = document.getElementById('tripSearch').value.toLowerCase().trim();
+      const filtered = activeTrips.filter(t => 
+        (t.title && t.title.toLowerCase().includes(q)) ||
+        (t.category && t.category.toLowerCase().includes(q)) ||
+        (t.route && t.route.toLowerCase().includes(q))
+      );
+      renderTripsTable(filtered);
+    }
+
+    function editTrip(id) {
+      const t = activeTrips.find(x => String(x.id) === String(id));
+      if (!t) return;
+
+      document.getElementById('editTripId').value = t.id;
+      document.getElementById('tripTitle').value = t.title || '';
+      document.getElementById('tripDuration').value = t.duration || '';
+      document.getElementById('tripPrice').value = t.price || '';
+      setSelectedCategories(t.category);
+      document.getElementById('tripRoute').value = t.route || '';
+      document.getElementById('tripTags').value = Array.isArray(t.tags) ? t.tags.join(', ') : (t.tags || '');
+      document.getElementById('tripImage').value = t.image_url || t.image || '';
+      document.getElementById('bentoImg1').value = t.bento_img_1 || '';
+      document.getElementById('bentoImg2').value = t.bento_img_2 || '';
+      document.getElementById('bentoImg3').value = t.bento_img_3 || '';
+      document.getElementById('bentoImg4').value = t.bento_img_4 || '';
+      document.getElementById('bentoImg5').value = t.bento_img_5 || '';
+      document.getElementById('aboutText').value = t.about_text || '';
+
+      ['tripImage', 'bentoImg1', 'bentoImg2', 'bentoImg3', 'bentoImg4', 'bentoImg5'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.dispatchEvent(new Event('input'));
+      });
+
+      // Populate Itinerary Textarea
+      if (t.itinerary) {
+        let itinList = t.itinerary;
+        if (typeof itinList === 'string') {
+          try { itinList = JSON.parse(itinList); } catch (e) { itinList = []; }
+        }
+        if (Array.isArray(itinList)) {
+          document.getElementById('itineraryText').value = itinList.map((item, idx) => {
+            const dayNum = item.day || (idx + 1);
+            const title = item.title || item.day_title || item.name || '';
+            const details = item.details || (Array.isArray(item.points) ? item.points.join('. ') : (item.text || item.description || title));
+            return `DAY ${dayNum}: ${title} | ${details}`;
+          }).join('\n');
+        }
+      }
+
+      // Populate Inclusions Textarea
+      if (t.inclusions) {
+        let incList = t.inclusions;
+        if (typeof incList === 'string') {
+          try { incList = JSON.parse(incList); } catch (e) { incList = []; }
+        }
+        if (Array.isArray(incList)) {
+          document.getElementById('inclusionsText').value = incList.join('\n');
+        }
+      }
+
+      // Populate Exclusions Textarea
+      if (t.exclusions) {
+        let excList = t.exclusions;
+        if (typeof excList === 'string') {
+          try { excList = JSON.parse(excList); } catch (e) { excList = []; }
+        }
+        if (Array.isArray(excList)) {
+          document.getElementById('exclusionsText').value = excList.join('\n');
+        }
+      }
+
+      // Populate Package Options
+      if (t.package_options) {
+        let pkgList = t.package_options;
+        if (typeof pkgList === 'string') {
+          try { pkgList = JSON.parse(pkgList); } catch (e) { pkgList = []; }
+        }
+        if (Array.isArray(pkgList)) {
+          document.getElementById('packageOptionsText').value = pkgList.map(p => `${p.title}: ${p.price}`).join(' | ');
+        }
+      }
+
+      // Populate Bike Sub-package Options
+      if (t.sub_package_options) {
+        document.getElementById('subPackageOptionsText').value = typeof t.sub_package_options === 'string' ? t.sub_package_options : JSON.stringify(t.sub_package_options);
+      }
+
+      // Populate FAQs Textarea
+      if (t.faqs) {
+        let faqList = t.faqs;
+        if (typeof faqList === 'string') {
+          try { faqList = JSON.parse(faqList); } catch (e) { faqList = []; }
+        }
+        if (Array.isArray(faqList)) {
+          document.getElementById('faqsText').value = faqList.map(f => `${f.question} | ${f.answer}`).join('\n');
+        }
+      }
+
+      // Populate Reviews Textarea
+      if (t.reviews) {
+        let revList = t.reviews;
+        if (typeof revList === 'string') {
+          try { revList = JSON.parse(revList); } catch (e) { revList = []; }
+        }
+        if (Array.isArray(revList)) {
+          document.getElementById('reviewsText').value = revList.map(r => `${r.name} | ${r.location} | ${r.text} | ${r.avatar || ''}`).join('\n');
+        }
+      }
+
+      // Populate Feature Flags
+      if (document.getElementById('reserveBannerTitle')) document.getElementById('reserveBannerTitle').value = t.reserve_banner_title || '';
+      if (document.getElementById('customQuoteTitle')) document.getElementById('customQuoteTitle').value = t.custom_quote_title || '';
+
+      if (document.getElementById('featReels')) document.getElementById('featReels').checked = t.is_featured_reels !== false;
+      if (document.getElementById('featStack')) document.getElementById('featStack').checked = t.is_featured_stack !== false;
+      if (document.getElementById('featLemonade')) document.getElementById('featLemonade').checked = t.is_featured_lemonade !== false;
+
+      // Sync image dropzone previews
+      ['tripImage', 'bentoImg1', 'bentoImg2', 'bentoImg3', 'bentoImg4', 'bentoImg5'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.dispatchEvent(new Event('input'));
+      });
+
+      document.getElementById('formTitle').textContent = `✏️ Edit Trip (#${t.id}: ${t.title})`;
+      document.getElementById('submitTripBtn').textContent = '💾 Update Trip in Supabase';
+      document.getElementById('cancelEditBtn').style.display = 'inline-block';
+
+      if (t.departure_dates) {
+        try { guiBatches = typeof t.departure_dates === 'string' ? JSON.parse(t.departure_dates) : t.departure_dates; }
+        catch (e) { guiBatches = []; }
+      } else { guiBatches = []; }
+
+      renderGuiBatches();
+      document.getElementById('tripForm').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function resetTripForm() {
+      document.getElementById('editTripId').value = '';
+      document.getElementById('tripForm').reset();
+      document.getElementById('formTitle').textContent = '➕ Full Itinerary Maker & Editor';
+      document.getElementById('submitTripBtn').textContent = '💾 Save Full Itinerary to Supabase';
+      document.getElementById('cancelEditBtn').style.display = 'none';
+      guiBatches = [];
+
+      // Reset image dropzones
+      ['tripImage', 'bentoImg1', 'bentoImg2', 'bentoImg3', 'bentoImg4', 'bentoImg5'].forEach(id => {
+        removeDzImage(id);
+      });
+
+      renderGuiBatches();
+    }
+
+    async function handleSaveTrip(e) {
+      e.preventDefault();
+      const editId = document.getElementById('editTripId').value;
+      const title = document.getElementById('tripTitle').value.trim();
+      const duration = document.getElementById('tripDuration').value.trim();
+      const price = document.getElementById('tripPrice').value.trim();
+      const category = getSelectedCategories();
+      const route = document.getElementById('tripRoute').value.trim();
+      const tags = document.getElementById('tripTags').value.trim();
+      const image_url = document.getElementById('tripImage').value.trim();
+
+      const bento_img_1 = document.getElementById('bentoImg1').value.trim();
+      const bento_img_2 = document.getElementById('bentoImg2').value.trim();
+      const bento_img_3 = document.getElementById('bentoImg3').value.trim();
+      const bento_img_4 = document.getElementById('bentoImg4').value.trim();
+      const bento_img_5 = document.getElementById('bentoImg5').value.trim();
+      const about_text = document.getElementById('aboutText').value.trim();
+
+      const itinerary = parseItineraryText(document.getElementById('itineraryText').value);
+      const inclusions = parseLines(document.getElementById('inclusionsText').value);
+      const exclusions = parseLines(document.getElementById('exclusionsText').value);
+      const package_options = parsePackageOptionsText(document.getElementById('packageOptionsText').value);
+      const sub_package_options = document.getElementById('subPackageOptionsText').value.trim();
+      const departure_dates = guiBatches;
+      const faqs = parseFaqsText(document.getElementById('faqsText').value);
+      const reviews = parseReviewsText(document.getElementById('reviewsText').value);
+
+      const reserve_banner_title = document.getElementById('reserveBannerTitle').value.trim();
+      const custom_quote_title = document.getElementById('customQuoteTitle').value.trim();
+
+      const is_featured_reels = document.getElementById('featReels').checked;
+      const is_featured_stack = document.getElementById('featStack').checked;
+      const is_featured_lemonade = document.getElementById('featLemonade').checked;
+
+      const payload = {
+        title, duration, price, category, route, tags, image_url,
+        bento_img_1, bento_img_2, bento_img_3, bento_img_4, bento_img_5,
+        about_text, itinerary, inclusions, exclusions,
+        package_options, sub_package_options, departure_dates, faqs, reviews,
+        reserve_banner_title, custom_quote_title,
+        is_featured_reels, is_featured_stack, is_featured_lemonade
+      };
+
+      if (editId) payload.id = Number(editId);
+      if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.buildSeoTripUrl) {
+        payload.link = window.AwaraDB.buildSeoTripUrl(payload);
+      }
+
+      if (typeof window.AwaraDB !== 'undefined') {
+        await window.AwaraDB.saveTrip(payload);
+        alert('✅ Trip itinerary saved successfully to Local Data Engine!');
+        resetTripForm();
+        loadAdminTrips();
+        if (typeof populateReviewTripSelect === 'function') populateReviewTripSelect(true);
+      } else {
+        alert('✅ Saved locally!');
+        if (typeof populateReviewTripSelect === 'function') populateReviewTripSelect(true);
+      }
+    }
+
+    async function deleteTrip(id) {
+      if (!confirm('Are you sure you want to delete this trip itinerary?')) return;
+      if (typeof window.AwaraDB !== 'undefined') {
+        await window.AwaraDB.deleteTrip(id);
+      }
+      loadAdminTrips();
+      if (typeof populateReviewTripSelect === 'function') populateReviewTripSelect(true);
+    }
+
+    /* DEPARTURE BATCH PICKER HELPERS */
+    function autoDeriveMonth(customDateStr) {
+      const start = customDateStr || document.getElementById('batchStartDate').value;
+      if (start) {
+        const parts = start.split('-');
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        if (parts.length === 3) {
+          const mIdx = parseInt(parts[1], 10) - 1;
+          document.getElementById('batchMonth').value = `${months[mIdx]} ${parts[0]}`;
+        }
+      }
+    }
+
+    function addBatchFromPicker() {
+      const start = document.getElementById('batchStartDate').value;
+      const month = document.getElementById('batchMonth').value || 'August 2026';
+      const status = document.getElementById('batchStatus').value;
+      const price = document.getElementById('batchPrice').value || document.getElementById('tripPrice').value || '₹16,499';
+
+      if (!start) { alert('Please select a start date!'); return; }
+
+      const d = new Date(start);
+      const formatted = `${d.getDate()}th ${d.toLocaleString('default', { month: 'long' })}`;
+
+      let monthGroup = guiBatches.find(m => m.month === month);
+      if (!monthGroup) {
+        monthGroup = { month: month, dates: [] };
+        guiBatches.push(monthGroup);
+      }
+
+      monthGroup.dates.push({ id: `b_${Date.now()}`, range: formatted, startDate: start, status: status, price: price });
+      renderGuiBatches();
+    }
+
+    function renderGuiBatches() {
+      const prev = document.getElementById('guiBatchesPreview');
+      if (!prev) return;
+      if (!guiBatches || guiBatches.length === 0) {
+        prev.innerHTML = '<div style="font-size:12px; color:var(--text-muted); italic">No departure batches added yet.</div>';
+        return;
+      }
+
+      prev.innerHTML = guiBatches.map((m, mIdx) => `
+        <div style="background:#1c1c16; padding:10px; border-radius:8px; border:1px solid var(--border-dark);">
+          <strong style="color:var(--accent-lime); font-size:13px;">🗓️ ${m.month}</strong>
+          <div style="display:flex; flex-direction:column; gap:4px; margin-top:6px;">
+            ${(m.dates || []).map((d, dIdx) => `
+              <div style="display:flex; justify-content:space-between; font-size:12px; background:#14140f; padding:4px 8px; border-radius:4px;">
+                <span><strong>${d.range}</strong> — ${d.status} (${d.price})</span>
+                <span style="color:#ef4444; cursor:pointer; font-weight:800;" onclick="removeBatch(${mIdx}, ${dIdx})">✕</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function removeBatch(mIdx, dIdx) {
+      if (guiBatches[mIdx] && guiBatches[mIdx].dates) {
+        guiBatches[mIdx].dates.splice(dIdx, 1);
+        if (guiBatches[mIdx].dates.length === 0) guiBatches.splice(mIdx, 1);
+      }
+      renderGuiBatches();
+    }
+
+    /* =========================================================
+       CUSTOMER INQUIRIES CMS (TAB 2)
+       ========================================================= */
+    async function loadAdminInquiries() {
+      const tbody = document.getElementById('inquiriesTableBody');
+      if (!tbody) return;
+
+      try {
+        if (typeof window.AwaraDB !== 'undefined') {
+          activeInquiries = await window.AwaraDB.getInquiries();
+        } else {
+          activeInquiries = JSON.parse(localStorage.getItem('awara_local_bookings') || '[]');
+        }
+      } catch (e) { activeInquiries = []; }
+
+      renderInquiriesTable(activeInquiries);
+    }
+
+    function renderInquiriesTable(inquiries) {
+      const tbody = document.getElementById('inquiriesTableBody');
+      if (!tbody) return;
+
+      if (!inquiries || inquiries.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="8" style="text-align:center; padding:20px; color:var(--text-muted);">No customer inquiries found.</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = inquiries.map(inq => {
+        const name = inq.customer_name || inq.name || 'Guest User';
+        const phone = inq.phone || 'N/A';
+        const email = inq.email && inq.email !== 'N/A' ? inq.email : '';
+        const trip = inq.trip_title || inq.tripName || 'General Inquiry';
+        const date = inq.selected_date || inq.travel_date || inq.date || 'Flexible';
+        const pkg = inq.selected_package || inq.package_option || 'Standard Package';
+        const subPkg = inq.selected_sub_package || inq.sub_package_option || 'N/A';
+        const price = inq.price || 'On Request';
+        const travelers = inq.travelers_count || 1;
+        const msg = inq.message || inq.special_requests || '—';
+        const inqId = inq.inquiry_id || inq.id || '';
+        
+        let dateFormatted = 'Recent';
+        if (inq.created_at || inq.timestamp) {
+          try {
+            dateFormatted = new Date(inq.created_at || inq.timestamp).toLocaleDateString('en-IN', {
+              month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit'
+            });
+          } catch(e) {}
+        }
+
+        return `
+          <tr>
+            <td><strong>${escapeHtml(name)}</strong><br><small style="color:var(--text-muted);">${escapeHtml(email)}</small></td>
+            <td><a href="tel:${escapeHtml(phone)}" style="color:var(--accent-lime); font-weight:700;">${escapeHtml(phone)}</a></td>
+            <td><strong>${escapeHtml(trip)}</strong><br><small style="color:var(--text-muted);">🗓️ ${escapeHtml(date)}</small></td>
+            <td>${escapeHtml(price)}<br><small style="color:var(--accent-lime);">📦 ${escapeHtml(pkg)}${subPkg !== 'N/A' ? ' | 🏍️ ' + escapeHtml(subPkg) : ''}</small></td>
+            <td><strong>${travelers}</strong> traveler(s)</td>
+            <td style="max-width:220px; font-size:12px; color:var(--text-muted);">${escapeHtml(msg)}</td>
+            <td style="font-size:11px; color:var(--text-muted);">${dateFormatted}</td>
+            <td>
+              <button class="btn-danger" style="padding:6px 12px; font-size:12px;" onclick="deleteInquiry('${inqId}')">🗑️ Delete</button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function exportInquiriesToCSV() {
+      const data = activeInquiries && activeInquiries.length > 0 ? activeInquiries : [];
+      if (data.length === 0) {
+        alert('No customer inquiries available to export.');
+        return;
+      }
+
+      const headers = [
+        'Inquiry ID',
+        'Customer Name',
+        'Phone Number',
+        'Email Address',
+        'Trip Title',
+        'Travel Date / Selected Batch',
+        'Package Option',
+        'Vehicle / Bike Option',
+        'Price',
+        'Travelers Count',
+        'Message / Special Requests',
+        'Submission Timestamp'
+      ];
+
+      const rows = data.map(inq => [
+        inq.inquiry_id || inq.id || '',
+        inq.customer_name || inq.name || 'Guest User',
+        inq.phone || '',
+        inq.email || '',
+        inq.trip_title || inq.tripName || 'General Inquiry',
+        inq.selected_date || inq.travel_date || inq.date || 'Flexible',
+        inq.selected_package || inq.package_option || 'Standard Package',
+        inq.selected_sub_package || inq.sub_package_option || 'N/A',
+        inq.price || 'On Request',
+        inq.travelers_count || 1,
+        (inq.message || inq.special_requests || '').replace(/[\r\n]+/g, ' '),
+        inq.created_at || inq.timestamp || ''
+      ]);
+
+      let csvContent = '\uFEFF'; // UTF-8 BOM for Microsoft Excel compatibility
+      csvContent += headers.map(h => `"${String(h).replace(/"/g, '""')}"`).join(',') + '\r\n';
+      
+      rows.forEach(row => {
+        csvContent += row.map(val => `"${String(val).replace(/"/g, '""')}"`).join(',') + '\r\n';
+      });
+
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      const dateStr = new Date().toISOString().split('T')[0];
+      link.setAttribute('download', `Awara_Banjara_Leads_${dateStr}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    }
+
+    function filterInquiriesTable() {
+      const q = document.getElementById('inqSearch').value.toLowerCase().trim();
+
+      const filtered = activeInquiries.filter(inq => {
+        return !q || (inq.customer_name && inq.customer_name.toLowerCase().includes(q)) ||
+                     (inq.name && inq.name.toLowerCase().includes(q)) ||
+                     (inq.phone && inq.phone.includes(q)) ||
+                     (inq.trip_title && inq.trip_title.toLowerCase().includes(q));
+      });
+
+      renderInquiriesTable(filtered);
+    }
+
+    async function updateInquiryStatus(inquiryId, newStatus) {
+      if (typeof window.AwaraDB !== 'undefined') {
+        await window.AwaraDB.updateInquiryStatus(inquiryId, newStatus);
+      }
+      loadAdminInquiries();
+    }
+
+    async function deleteInquiry(inquiryId) {
+      if (!confirm('Delete this inquiry record?')) return;
+      if (typeof window.AwaraDB !== 'undefined') {
+        await window.AwaraDB.deleteInquiry(inquiryId);
+      }
+      loadAdminInquiries();
+    }
+
+    /* =========================================================
+       LOCAL DATA ENGINE & JSON BACKUP / RESTORE HELPERS
+       ========================================================= */
+    async function exportFullJSONBundle() {
+      if (typeof window.AwaraDB === 'undefined') return;
+      const bundle = await window.AwaraDB.exportAllDataJSON();
+      const str = JSON.stringify(bundle, null, 2);
+      const blob = new Blob([str], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `awara_backup_bundle_${Date.now()}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    async function exportTableJSON(tableName) {
+      if (typeof window.AwaraDB === 'undefined') return;
+      let data = [];
+      if (tableName === 'trips') data = await window.AwaraDB.getTrips(true);
+      else if (tableName === 'destinations') data = await window.AwaraDB.getDestinations(true);
+      else if (tableName === 'reviews') data = await window.AwaraDB.getReviews(true);
+
+      const str = JSON.stringify(data, null, 2);
+      const blob = new Blob([str], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${tableName}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function handleImportJSONFile(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = async function(e) {
+        try {
+          const bundle = JSON.parse(e.target.result);
+          if (typeof window.AwaraDB !== 'undefined') {
+            const ok = await window.AwaraDB.importAllDataJSON(bundle);
+            if (ok) {
+              alert('✅ JSON Data imported successfully! Reloading CMS...');
+              location.reload();
+            } else {
+              alert('❌ Failed to parse JSON data bundle.');
+            }
+          }
+        } catch (err) {
+          alert('Error parsing JSON file: ' + err.message);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function copyTripsSQL() {
+      const sql = `CREATE TABLE IF NOT EXISTS public.trips (
+    id bigint GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+    title text NOT NULL,
+    duration text NOT NULL,
+    price text NOT NULL,
+    category text DEFAULT 'spiti_tours' NOT NULL,
+    route text,
+    tags text,
+    image_url text NOT NULL,
+    link text DEFAULT 'trip-detail.html',
+    bento_img_1 text,
+    bento_img_2 text,
+    bento_img_3 text,
+    bento_img_4 text,
+    bento_img_5 text,
+    about_text text,
+    itinerary jsonb DEFAULT '[]'::jsonb,
+    inclusions jsonb DEFAULT '[]'::jsonb,
+    exclusions jsonb DEFAULT '[]'::jsonb,
+    package_options jsonb DEFAULT '[]'::jsonb,
+    sub_package_options text DEFAULT 'none',
+    departure_dates jsonb DEFAULT '[]'::jsonb,
+    faqs jsonb DEFAULT '[]'::jsonb,
+    reviews jsonb DEFAULT '[]'::jsonb,
+    reserve_banner_title text,
+    reserve_banner_sub text,
+    custom_quote_title text,
+    custom_quote_sub text,
+    whatsapp_number text DEFAULT '+91-9103910523',
+    is_featured_reels boolean DEFAULT true,
+    is_featured_stack boolean DEFAULT true,
+    is_featured_lemonade boolean DEFAULT true,
+    featured_order integer DEFAULT 0,
+    created_at timestamp with time zone DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+ALTER TABLE public.trips ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Allow public select on trips" ON public.trips FOR SELECT USING (true);
+CREATE POLICY "Allow public insert on trips" ON public.trips FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update on trips" ON public.trips FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete on trips" ON public.trips FOR DELETE USING (true);`;
+      copyToClipboard(sql, 'trips Table SQL');
+    }
+
+    function copySiteConfigSQL() {
+      const sql = `CREATE TABLE IF NOT EXISTS public.site_config (
+    key text PRIMARY KEY,
+    value text NOT NULL,
+    updated_at timestamp with time zone DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+
+INSERT INTO public.site_config (key, value) VALUES
+    ('site_phone', '+91- 9103910523'),
+    ('whatsapp_number', '+91-9103910523'),
+    ('announcement_bar', '✨ Escape the ordinary — Explore handpicked Himalayan group trips!'),
+    ('hero_headline', 'Awara Banjara'),
+    ('hero_subtitle', 'Curated Himalayan Escapes, Motorbike Expeditions & Offbeat Group Trips')
+ON CONFLICT (key) DO NOTHING;
+
+ALTER TABLE public.site_config ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Allow public select on site_config" ON public.site_config FOR SELECT USING (true);
+CREATE POLICY "Allow public insert on site_config" ON public.site_config FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update on site_config" ON public.site_config FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete on site_config" ON public.site_config FOR DELETE USING (true);`;
+      copyToClipboard(sql, 'site_config Table SQL');
+    }
+
+    function copyInquiriesSQL() {
+      const sql = `CREATE TABLE IF NOT EXISTS public.trip_inquiries (
+    id bigint GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+    inquiry_id text UNIQUE NOT NULL,
+    trip_id text NOT NULL,
+    trip_title text NOT NULL,
+    price text NOT NULL,
+    selected_date text NOT NULL,
+    selected_package text,
+    selected_sub_package text,
+    customer_name text NOT NULL,
+    phone text NOT NULL,
+    email text,
+    travelers_count integer DEFAULT 1,
+    message text,
+    status text DEFAULT 'new',
+    created_at timestamp with time zone DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+
+ALTER TABLE public.trip_inquiries ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Allow public select on trip_inquiries" ON public.trip_inquiries FOR SELECT USING (true);
+CREATE POLICY "Allow public insert on trip_inquiries" ON public.trip_inquiries FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update on trip_inquiries" ON public.trip_inquiries FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete on trip_inquiries" ON public.trip_inquiries FOR DELETE USING (true);`;
+      copyToClipboard(sql, 'trip_inquiries Table SQL');
+    }
+
+    function copyDestinationsSQL() {
+      const sql = `CREATE TABLE IF NOT EXISTS public.destinations (
+    id bigint PRIMARY KEY,
+    title text NOT NULL,
+    category text NOT NULL DEFAULT 'domestic',
+    image_url text,
+    subtitle text,
+    display_order integer DEFAULT 1,
+    is_active boolean DEFAULT true,
+    created_at timestamp with time zone DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+
+INSERT INTO public.destinations (id, title, category, image_url, subtitle, display_order, is_active) VALUES
+    (1, 'Varanasi', 'domestic', 'assets/images/destinations/domestic/varanasi.jpg', 'Spiritual Capital', 1, true),
+    (2, 'Rajasthan', 'domestic', 'assets/images/destinations/domestic/rajasthan.jpg', 'Land of Kings', 2, true),
+    (3, 'Himachal', 'domestic', 'assets/images/destinations/domestic/himachal.jpg', 'Himalayan Escapes', 3, true),
+    (4, 'Goa', 'domestic', 'assets/images/destinations/domestic/goa.jpg', 'Coastal Vibes', 4, true),
+    (5, 'Kerala', 'domestic', 'assets/images/destinations/domestic/kerala.jpg', 'Gods Own Country', 5, true),
+    (6, 'Dubai', 'international', 'assets/images/destinations/international/dubai.jpg', 'City of Gold', 1, true),
+    (7, 'Bhutan', 'international', 'assets/images/destinations/international/bhutan.jpg', 'Thunder Dragon Land', 2, true),
+    (8, 'Nepal', 'international', 'assets/images/destinations/international/nepal.jpg', 'Himalayan Kingdom', 3, true),
+    (9, 'Bali', 'international', 'assets/images/destinations/international/bali.jpg', 'Island of Gods', 4, true),
+    (10, 'Africa', 'international', 'assets/images/destinations/international/africa.jpg', 'Wild Safari Expedition', 5, true)
+ON CONFLICT (id) DO NOTHING;
+
+ALTER TABLE public.destinations ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Allow public select on destinations" ON public.destinations FOR SELECT USING (true);
+CREATE POLICY "Allow public insert on destinations" ON public.destinations FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update on destinations" ON public.destinations FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR DELETE USING (true);`;
+      copyToClipboard(sql, 'destinations Table SQL');
+    }
+
+    function copyToClipboard(text, title) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert(`✅ ${title} copied to clipboard!\n\nPaste into Supabase Dashboard -> SQL Editor and click RUN.`);
+      }).catch(() => prompt(`Copy ${title}:`, text));
+    }
+
+    function purgeAllCache() {
+      if (confirm('Clear all local CMS backup caches and custom trips?')) {
+        for (let i = localStorage.length - 1; i >= 0; i--) {
+          const key = localStorage.key(i);
+          if (key && (key.startsWith('trip_custom_') || key === 'site_config_cache' || key === 'awara_local_bookings')) {
+            localStorage.removeItem(key);
+          }
+        }
+        localStorage.clear();
+        alert('🧹 All local caches, backup trips, and stored data purged!');
+        location.reload();
+      }
+    }
+
+    /* PARSERS */
+    function parseLines(str) {
+      if (!str) return [];
+      return str.split('\n').map(s => s.trim()).filter(Boolean);
+    }
+    function parseItineraryText(str) {
+      if (!str) return [];
+      return str.split('\n').map((line, idx) => {
+        const parts = line.split('|');
+        const titlePart = parts[0] ? parts[0].replace(/^DAY\s*\d+:\s*/i, '').trim() : `Day ${idx + 1}`;
+        const detailsPart = parts[1] ? parts[1].trim() : (parts[0] || '').trim();
+        return { day: idx + 1, title: titlePart, details: detailsPart };
+      }).filter(x => x.title || x.details);
+    }
+    function parsePackageOptionsText(str) {
+      if (!str) return [];
+      return str.split('|').map(item => {
+        const p = item.split(':');
+        return { title: p[0] ? p[0].trim() : 'Option', price: p[1] ? p[1].trim() : '₹13,999' };
+      });
+    }
+    function parseFaqsText(str) {
+      if (!str) return [];
+      return str.split('\n').map(line => {
+        const p = line.split('|');
+        return { question: p[0] ? p[0].trim() : '', answer: p[1] ? p[1].trim() : '' };
+      }).filter(x => x.question);
+    }
+    function parseReviewsText(str) {
+      if (!str) return [];
+      return str.split('\n').map(line => {
+        const p = line.split('|');
+        return { name: p[0] ? p[0].trim() : 'Customer', location: p[1] ? p[1].trim() : '', text: p[2] ? p[2].trim() : '', avatar: p[3] ? p[3].trim() : '' };
+      }).filter(x => x.text);
+    }
+    /* =========================================================
+       HOME DESTINATIONS CMS & TABLE MANAGER
+       ========================================================= */
+    let activeDestinations = [];
+
+    async function loadAdminDestinations() {
+      const tbody = document.getElementById('destinationsTableBody');
+      if (!tbody) return;
+
+      tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">Loading destination cards...</td></tr>';
+
+      if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.getDestinations) {
+        try {
+          activeDestinations = await window.AwaraDB.getDestinations();
+        } catch (e) {
+          activeDestinations = [];
+        }
+      }
+
+      renderDestinationsTable(activeDestinations);
+    }
+
+    function renderDestinationsTable(dests) {
+      const tbody = document.getElementById('destinationsTableBody');
+      if (!tbody) return;
+
+      if (!dests || dests.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">No destination cards found. Use the form above to add one!</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = dests.map(d => {
+        const catBadge = d.category === 'international' ? 'badge-purple' : 'badge-blue';
+        const catLabel = d.category === 'international' ? '🌍 International' : '🏔️ Domestic';
+        const imgPath = d.image_url || 'assets/images/placeholder-card-1.svg';
+
+        return `
+          <tr>
+            <td>
+              <img src="${imgPath}" alt="${d.title}" style="width:60px; height:45px; object-fit:cover; border-radius:8px;" onerror="this.onerror=null;this.src='assets/images/placeholder-card-1.svg'">
+            </td>
+            <td>
+              <strong>${d.title}</strong>
+              <br><small style="color:var(--text-muted);">${d.subtitle || 'Home Destination Card'}</small>
+            </td>
+            <td><span class="badge ${catBadge}">${catLabel}</span></td>
+            <td><strong>#${d.display_order || 1}</strong></td>
+            <td><span class="badge badge-green">Active</span></td>
+            <td>
+              <button class="btn-secondary" style="padding:4px 10px; font-size:12px;" onclick="editDestination('${d.id}')">✏️ Edit</button>
+              <button class="btn-danger" style="margin-left:4px; padding:4px 8px; font-size:12px;" onclick="deleteDestinationCard('${d.id}')">🗑️</button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    async function handleSaveDestination(e) {
+      e.preventDefault();
+      const saveBtn = document.getElementById('saveDestBtn');
+      if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = '💾 Saving...'; }
+
+      const id = document.getElementById('editDestId').value;
+      const title = document.getElementById('destTitleInput').value.trim();
+      const category = document.getElementById('destCategoryInput').value;
+      const subtitle = document.getElementById('destSubtitleInput').value.trim();
+      const display_order = parseInt(document.getElementById('destOrderInput').value || '1', 10);
+      const image_url = document.getElementById('destImageUrlInput').value.trim();
+
+      const payload = {
+        id: id ? (isNaN(id) ? id : parseInt(id, 10)) : Date.now(),
+        title,
+        category,
+        subtitle: subtitle || (category === 'international' ? 'International Destination' : 'Domestic Destination'),
+        display_order: isNaN(display_order) ? 1 : display_order,
+        image_url,
+        is_active: true
+      };
+
+      try {
+        if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.saveDestination) {
+          await window.AwaraDB.saveDestination(payload);
+        }
+        showToast('✅ Destination card saved successfully!');
+        resetDestForm();
+        await loadAdminDestinations();
+      } catch (err) {
+        showToast('⚠️ Notice: Saved to local storage!');
+      } finally {
+        if (saveBtn) { saveBtn.disabled = false; saveBtn.textContent = '💾 Save Destination Card'; }
+      }
+    }
+
+    function editDestination(id) {
+      const d = activeDestinations.find(x => String(x.id) === String(id));
+      if (!d) return;
+
+      document.getElementById('editDestId').value = d.id;
+      document.getElementById('destTitleInput').value = d.title || '';
+      document.getElementById('destCategoryInput').value = d.category || 'domestic';
+      document.getElementById('destSubtitleInput').value = d.subtitle || '';
+      document.getElementById('destOrderInput').value = d.display_order || 1;
+      document.getElementById('destImageUrlInput').value = d.image_url || '';
+      const destImgEl = document.getElementById('destImageUrlInput');
+      if (destImgEl) destImgEl.dispatchEvent(new Event('input'));
+
+      document.getElementById('destFormTitle').textContent = `✏️ Editing Destination: "${d.title}"`;
+      document.getElementById('cancelDestEditBtn').style.display = 'inline-block';
+      window.scrollTo({ top: document.getElementById('panel-destinations').offsetTop - 60, behavior: 'smooth' });
+    }
+
+    async function deleteDestinationCard(id) {
+      if (!confirm('Are you sure you want to delete this destination card from the home page?')) return;
+
+      try {
+        if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.deleteDestination) {
+          await window.AwaraDB.deleteDestination(id);
+        }
+        showToast('🗑️ Destination card deleted!');
+      } catch (e) {}
+
+      loadAdminDestinations();
+    }
+
+    function resetDestForm() {
+      document.getElementById('editDestId').value = '';
+      document.getElementById('destTitleInput').value = '';
+      document.getElementById('destCategoryInput').value = 'domestic';
+      document.getElementById('destSubtitleInput').value = '';
+      document.getElementById('destOrderInput').value = '1';
+      document.getElementById('destImageUrlInput').value = '';
+      removeDzImage('destImageUrlInput');
+
+      document.getElementById('destFormTitle').textContent = '➕ Add / Edit Home Destination Card';
+      document.getElementById('cancelDestEditBtn').style.display = 'none';
+    }
+
+    /* =========================================================
+       CUSTOMER REVIEWS CMS & TABLE MANAGER
+       ========================================================= */
+    let activeReviews = [];
+
+    async function loadAdminReviews() {
+      const tbody = document.getElementById('reviewsTableBody');
+      if (!tbody) return;
+
+      tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">Loading customer reviews...</td></tr>';
+
+      // Populate trip select dropdown
+      await populateReviewTripSelect();
+
+      if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.getReviews) {
+        try {
+          activeReviews = await window.AwaraDB.getReviews(true);
+        } catch (e) {
+          activeReviews = [];
+        }
+      }
+
+      renderReviewsTable(activeReviews);
+    }
+
+    async function populateReviewTripSelect(forceRefresh = true) {
+      const selectEl = document.getElementById('revTripSelect');
+      if (!selectEl) return;
+
+      let trips = [];
+      if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.getTrips) {
+        try {
+          trips = await window.AwaraDB.getTrips(forceRefresh);
+        } catch (e) {
+          trips = [];
+        }
+      }
+
+      selectEl.innerHTML = '<option value="">-- Choose From Active Trips --</option>' + trips.map(t => {
+        const url = window.AwaraDB ? window.AwaraDB.buildSeoTripUrl(t) : `trip-detail.html?id=${t.id}`;
+        return `<option value="${t.id}" data-url="${url}" data-title="${t.title}">${t.title} (ID: ${t.id})</option>`;
+      }).join('');
+    }
+
+    function onReviewTripSelected(selectEl) {
+      if (!selectEl) return;
+      const selectedOption = selectEl.options[selectEl.selectedIndex];
+      if (!selectedOption || !selectedOption.value) return;
+
+      const title = selectedOption.getAttribute('data-title');
+      const url = selectedOption.getAttribute('data-url');
+
+      if (title) document.getElementById('revTripName').value = title;
+      if (url) document.getElementById('revTripUrl').value = url;
+    }
+
+    function renderReviewsTable(reviews) {
+      const tbody = document.getElementById('reviewsTableBody');
+      if (!tbody) return;
+
+      if (!reviews || reviews.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">No customer reviews found. Use the form above to create one!</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = reviews.map(r => {
+        const ratingNum = parseInt(r.rating, 10) || 5;
+        const stars = '⭐'.repeat(ratingNum);
+        const avatar = r.avatar_url || 'assets/images/placeholder-avatar.svg';
+
+        return `
+          <tr>
+            <td>
+              <div style="display:flex; align-items:center; gap:10px;">
+                <img src="${avatar}" alt="${r.customer_name}" style="width:38px; height:38px; border-radius:50%; object-fit:cover; border:1px solid var(--border-dark);" onerror="this.onerror=null;this.src='assets/images/placeholder-avatar.svg'">
+                <div>
+                  <strong>${r.customer_name}</strong>
+                  <br><small style="color:var(--text-muted);">${r.trip_tag || 'Joined Group Trip'}</small>
+                </div>
+              </div>
+            </td>
+            <td><strong>${r.trip_name || 'General Trip'}</strong></td>
+            <td><span style="font-size:12px;">${stars}</span></td>
+            <td style="max-width:300px; font-size:13px; color:var(--text-muted);">${r.review_text}</td>
+            <td><span class="badge badge-green">Published</span></td>
+            <td>
+              <button class="btn-secondary" style="padding:4px 10px; font-size:12px;" onclick="editReview('${r.id}')">✏️ Edit</button>
+              <button class="btn-danger" style="margin-left:4px; padding:4px 8px; font-size:12px;" onclick="deleteReviewCard('${r.id}')">🗑️</button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    async function handleSaveReview(e) {
+      e.preventDefault();
+      const saveBtn = document.getElementById('saveReviewBtn');
+      if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = '💾 Saving...'; }
+
+      const id = document.getElementById('editReviewId').value;
+      const customer_name = document.getElementById('revCustomerName').value.trim();
+      const trip_tag = document.getElementById('revTripTag').value;
+      const trip_name = document.getElementById('revTripName').value.trim();
+      const trip_url = document.getElementById('revTripUrl').value.trim();
+      const selectEl = document.getElementById('revTripSelect');
+      const trip_id = selectEl ? selectEl.value : '';
+      const rating = parseInt(document.getElementById('revRating').value, 10);
+      const avatar_url = document.getElementById('revAvatarUrl').value.trim();
+      const imagesText = document.getElementById('revImagesText').value;
+      const imagesList = parseLines(imagesText);
+      const cover_image = imagesList.length > 0 ? imagesList[0] : '';
+      const review_text = document.getElementById('revText').value.trim();
+
+      const payload = {
+        id: id || ('rev_' + Date.now()),
+        customer_name,
+        trip_id,
+        trip_tag,
+        trip_name,
+        trip_url,
+        rating,
+        avatar_url: avatar_url || 'assets/images/placeholder-avatar.svg',
+        cover_image,
+        images: imagesList,
+        review_text,
+        featured: true,
+        created_at: new Date().toISOString()
+      };
+
+      try {
+        if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.saveReview) {
+          await window.AwaraDB.saveReview(payload);
+        }
+        localStorage.removeItem('awara_reviews_cache');
+        showToast('✅ Review saved & updated across trip and review pages!');
+        resetReviewForm();
+        await loadAdminReviews();
+      } catch (err) {
+        showToast('⚠️ Notice: Saved to local storage!');
+      } finally {
+        if (saveBtn) { saveBtn.disabled = false; saveBtn.textContent = '💾 Save Customer Review'; }
+      }
+    }
+
+    function editReview(id) {
+      const r = activeReviews.find(x => String(x.id) === String(id));
+      if (!r) return;
+
+      document.getElementById('editReviewId').value = r.id;
+      document.getElementById('revCustomerName').value = r.customer_name || '';
+      document.getElementById('revTripTag').value = r.trip_tag || 'Joined Group Trip';
+      document.getElementById('revTripName').value = r.trip_name || '';
+      document.getElementById('revTripUrl').value = r.trip_url || '';
+      document.getElementById('revRating').value = r.rating || 5;
+      document.getElementById('revAvatarUrl').value = r.avatar_url || '';
+      const revAvatarEl = document.getElementById('revAvatarUrl');
+      if (revAvatarEl) revAvatarEl.dispatchEvent(new Event('input'));
+      
+      const imagesList = (Array.isArray(r.images) && r.images.length > 0) ? r.images : (r.cover_image ? [r.cover_image] : []);
+      document.getElementById('revImagesText').value = imagesList.join('\n');
+      document.getElementById('revText').value = r.review_text || '';
+
+      document.getElementById('reviewFormTitle').textContent = `✏️ Editing Review by "${r.customer_name}"`;
+      document.getElementById('cancelReviewEditBtn').style.display = 'inline-block';
+      window.scrollTo({ top: document.getElementById('panel-reviews').offsetTop - 60, behavior: 'smooth' });
+    }
+
+    async function deleteReviewCard(id) {
+      if (!confirm('Are you sure you want to delete this customer review?')) return;
+
+      try {
+        if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.deleteReview) {
+          await window.AwaraDB.deleteReview(id);
+        }
+        showToast('🗑️ Customer review deleted!');
+      } catch (e) {}
+
+      loadAdminReviews();
+    }
+
+    function resetReviewForm() {
+      document.getElementById('editReviewId').value = '';
+      document.getElementById('revCustomerName').value = '';
+      document.getElementById('revTripTag').value = 'Joined Group Trip';
+      document.getElementById('revTripSelect').value = '';
+      document.getElementById('revTripName').value = '';
+      document.getElementById('revTripUrl').value = '';
+      document.getElementById('revRating').value = '5';
+      document.getElementById('revAvatarUrl').value = '';
+      removeDzImage('revAvatarUrl');
+      document.getElementById('revImagesText').value = '';
+      document.getElementById('revText').value = '';
+
+      document.getElementById('reviewFormTitle').textContent = '➕ Add / Edit Customer Review';
+      document.getElementById('cancelReviewEditBtn').style.display = 'none';
+    }
+
+    /* =========================================================
+       WATCH & READ CMS: INSTAGRAM REELS & BLOGS
+       ========================================================= */
+    let activePostcards = [];
+
+    function switchPostcardsSubTab(sub) {
+      const btnReels = document.getElementById('btnShowReelsCms');
+      const btnBlogs = document.getElementById('btnShowBlogsCms');
+      const tabReels = document.getElementById('subtab-reels');
+      const tabBlogs = document.getElementById('subtab-blogs');
+
+      if (sub === 'reels') {
+        btnReels.style.background = 'var(--accent-lime)';
+        btnReels.style.color = '#14140f';
+        btnBlogs.style.background = 'rgba(255,255,255,0.1)';
+        btnBlogs.style.color = '#fff';
+        tabReels.style.display = 'block';
+        tabBlogs.style.display = 'none';
+      } else {
+        btnBlogs.style.background = 'var(--accent-lime)';
+        btnBlogs.style.color = '#14140f';
+        btnReels.style.background = 'rgba(255,255,255,0.1)';
+        btnReels.style.color = '#fff';
+        tabBlogs.style.display = 'block';
+        tabReels.style.display = 'none';
+      }
+    }
+    window.switchPostcardsSubTab = switchPostcardsSubTab;
+
+    async function loadAdminPostcards() {
+      try {
+        if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.getPostcards) {
+          activePostcards = await window.AwaraDB.getPostcards(true);
+        } else {
+          const res = await fetch('data/awarabanjara.json');
+          const json = await res.json();
+          activePostcards = json.postcards || [];
+        }
+      } catch (e) {
+        activePostcards = [];
+      }
+      renderReelsTable();
+      renderBlogsTable();
+    }
+    window.loadAdminPostcards = loadAdminPostcards;
+
+    function renderReelsTable() {
+      const tbody = document.getElementById('reelsTableBody');
+      if (!tbody) return;
+
+      const reels = activePostcards.filter(p => p.type === 'reel');
+      if (reels.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:20px; color:var(--text-muted);">No Instagram reels found. Add one above!</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = reels.map(r => `
+        <tr>
+          <td><img src="${r.image_url || 'assets/images/placeholder-card-1.svg'}" style="width:60px; height:40px; object-fit:cover; border-radius:6px;"></td>
+          <td><strong>${r.title}</strong></td>
+          <td>${r.author || 'Awara Banjara'}</td>
+          <td><a href="${r.video_url || r.embed_url}" target="_blank" style="color:var(--accent-lime); font-size:12px;">🔗 Open Instagram</a></td>
+          <td>
+            <div style="display:flex; gap:6px;">
+              <button class="btn-action edit" onclick="editReel('${r.id}')">✏️ Edit</button>
+              <button class="btn-action delete" onclick="deletePostcardItem('${r.id}')">🗑️ Delete</button>
+            </div>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function renderBlogsTable() {
+      const tbody = document.getElementById('blogsTableBody');
+      if (!tbody) return;
+
+      const blogs = activePostcards.filter(p => p.type === 'blog');
+      if (blogs.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" style="text-align:center; padding:20px; color:var(--text-muted);">No travel blogs found. Add one above!</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = blogs.map(b => `
+        <tr>
+          <td><img src="${b.image_url || 'assets/images/placeholder-card-1.svg'}" style="width:60px; height:40px; object-fit:cover; border-radius:6px;"></td>
+          <td>
+            <strong>${b.title}</strong>
+            ${b.subtitle ? `<div style="font-size:11px; color:var(--text-muted);">${b.subtitle}</div>` : ''}
+          </td>
+          <td><span style="font-size:11px; background:rgba(255,255,255,0.1); padding:2px 8px; border-radius:10px;">${b.category || 'Guide'}</span></td>
+          <td>${b.author || 'Team Awara Banjara'}</td>
+          <td>${b.read_time || '5 min read'}</td>
+          <td>
+            <div style="display:flex; gap:6px;">
+              <button class="btn-action edit" onclick="editBlog('${b.id}')">✏️ Edit</button>
+              <button class="btn-action delete" onclick="deletePostcardItem('${b.id}')">🗑️ Delete</button>
+            </div>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    async function handleSaveReel(e) {
+      e.preventDefault();
+      const saveBtn = document.getElementById('saveReelBtn');
+      if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = '⏳ Saving Reel...'; }
+
+      const id = document.getElementById('editReelId').value || ('post_' + Date.now());
+      const title = document.getElementById('reelTitleInput').value.trim();
+      const author = document.getElementById('reelAuthorInput').value.trim() || 'Awara Banjara Community';
+      const video_url = document.getElementById('reelVideoUrlInput').value.trim();
+      const image_url = document.getElementById('reelImageUrlInput').value.trim();
+
+      let cleanUrl = video_url.split('?')[0].replace(/\/$/, '');
+      const embed_url = cleanUrl.includes('/embed') ? cleanUrl : cleanUrl + '/embed';
+
+      const payload = {
+        id,
+        type: 'reel',
+        title,
+        subtitle: 'Watch on Instagram',
+        category: 'Instagram Reel',
+        author,
+        video_url,
+        embed_url,
+        image_url,
+        read_time: '1 min watch',
+        featured_in_watch_read: true
+      };
+
+      try {
+        if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.savePostcard) {
+          await window.AwaraDB.savePostcard(payload);
+        }
+        showToast('✅ Instagram Reel saved successfully!');
+        resetReelForm();
+        await loadAdminPostcards();
+      } catch (err) {
+        showToast('⚠️ Notice: Error saving reel');
+      } finally {
+        if (saveBtn) { saveBtn.disabled = false; saveBtn.textContent = '💾 Save Instagram Reel'; }
+      }
+    }
+    window.handleSaveReel = handleSaveReel;
+
+    function editReel(id) {
+      const r = activePostcards.find(x => String(x.id) === String(id));
+      if (!r) return;
+
+      document.getElementById('editReelId').value = r.id;
+      document.getElementById('reelTitleInput').value = r.title || '';
+      document.getElementById('reelAuthorInput').value = r.author || '';
+      document.getElementById('reelVideoUrlInput').value = r.video_url || r.embed_url || '';
+      document.getElementById('reelImageUrlInput').value = r.image_url || '';
+      const reelImgEl = document.getElementById('reelImageUrlInput');
+      if (reelImgEl) reelImgEl.dispatchEvent(new Event('input'));
+
+      document.getElementById('reelFormTitle').textContent = `✏️ Editing Reel "${r.title}"`;
+      document.getElementById('cancelReelEditBtn').style.display = 'inline-block';
+      window.scrollTo({ top: document.getElementById('panel-postcards').offsetTop - 60, behavior: 'smooth' });
+    }
+    window.editReel = editReel;
+
+    function resetReelForm() {
+      document.getElementById('editReelId').value = '';
+      document.getElementById('reelTitleInput').value = '';
+      document.getElementById('reelAuthorInput').value = '';
+      document.getElementById('reelVideoUrlInput').value = '';
+      document.getElementById('reelImageUrlInput').value = '';
+      removeDzImage('reelImageUrlInput');
+
+      document.getElementById('reelFormTitle').textContent = '➕ Add / Edit Instagram Reel or Video';
+      document.getElementById('cancelReelEditBtn').style.display = 'none';
+    }
+    window.resetReelForm = resetReelForm;
+
+    async function handleSaveBlog(e) {
+      e.preventDefault();
+      const saveBtn = document.getElementById('saveBlogBtn');
+      if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = '⏳ Saving Blog...'; }
+
+      const id = document.getElementById('editBlogId').value || ('post_' + Date.now());
+      const title = document.getElementById('blogTitleInput').value.trim();
+      const subtitle = document.getElementById('blogSubtitleInput').value.trim();
+      const category = document.getElementById('blogCategoryInput').value;
+      const author = document.getElementById('blogAuthorInput').value.trim() || 'Team Awara Banjara';
+      const read_time = document.getElementById('blogReadTimeInput').value.trim() || '5 min read';
+      const image_url = document.getElementById('blogImageUrlInput').value.trim();
+      const content = document.getElementById('blogContentInput').value;
+
+      const payload = {
+        id,
+        type: 'blog',
+        title,
+        subtitle,
+        category,
+        author,
+        read_time,
+        image_url,
+        content,
+        featured_in_watch_read: true
+      };
+
+      try {
+        if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.savePostcard) {
+          await window.AwaraDB.savePostcard(payload);
+        }
+        showToast('✅ Travel Blog saved successfully!');
+        resetBlogForm();
+        await loadAdminPostcards();
+      } catch (err) {
+        showToast('⚠️ Notice: Error saving blog');
+      } finally {
+        if (saveBtn) { saveBtn.disabled = false; saveBtn.textContent = '💾 Save Travel Blog'; }
+      }
+    }
+    window.handleSaveBlog = handleSaveBlog;
+
+    function editBlog(id) {
+      const b = activePostcards.find(x => String(x.id) === String(id));
+      if (!b) return;
+
+      document.getElementById('editBlogId').value = b.id;
+      document.getElementById('blogTitleInput').value = b.title || '';
+      document.getElementById('blogSubtitleInput').value = b.subtitle || '';
+      document.getElementById('blogCategoryInput').value = b.category || 'Travel Guide';
+      document.getElementById('blogAuthorInput').value = b.author || '';
+      document.getElementById('blogReadTimeInput').value = b.read_time || '';
+      document.getElementById('blogImageUrlInput').value = b.image_url || '';
+      const blogImgEl = document.getElementById('blogImageUrlInput');
+      if (blogImgEl) blogImgEl.dispatchEvent(new Event('input'));
+      document.getElementById('blogContentInput').value = b.content || '';
+
+      document.getElementById('blogFormTitle').textContent = `✏️ Editing Blog "${b.title}"`;
+      document.getElementById('cancelBlogEditBtn').style.display = 'inline-block';
+      switchPostcardsSubTab('blogs');
+      window.scrollTo({ top: document.getElementById('panel-postcards').offsetTop - 60, behavior: 'smooth' });
+    }
+    window.editBlog = editBlog;
+
+    function resetBlogForm() {
+      document.getElementById('editBlogId').value = '';
+      document.getElementById('blogTitleInput').value = '';
+      document.getElementById('blogSubtitleInput').value = '';
+      document.getElementById('blogCategoryInput').value = 'Travel Guide';
+      document.getElementById('blogAuthorInput').value = 'Team Awara Banjara';
+      document.getElementById('blogReadTimeInput').value = '5 min read';
+      document.getElementById('blogImageUrlInput').value = '';
+      removeDzImage('blogImageUrlInput');
+      document.getElementById('blogContentInput').value = '';
+
+      document.getElementById('blogFormTitle').textContent = '➕ Add / Edit Travel Blog Article';
+      document.getElementById('cancelBlogEditBtn').style.display = 'none';
+    }
+    window.resetBlogForm = resetBlogForm;
+
+    async function deletePostcardItem(id) {
+      if (!confirm('Are you sure you want to delete this item?')) return;
+      try {
+        if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.deletePostcard) {
+          await window.AwaraDB.deletePostcard(id);
+        }
+        showToast('🗑️ Item deleted!');
+      } catch (e) {}
+      loadAdminPostcards();
+    }
+    window.deletePostcardItem = deletePostcardItem;
+
+    function copyReviewsSQL() {
+      const sql = `-- Supabase DDL: Customer Reviews Table
+CREATE TABLE IF NOT EXISTS public.reviews (
+  id text PRIMARY KEY,
+  customer_name text NOT NULL,
+  trip_name text,
+  rating integer DEFAULT 5,
+  review_text text NOT NULL,
+  avatar_url text,
+  cover_image text,
+  featured boolean DEFAULT true,
+  created_at timestamp with time zone DEFAULT now()
+);
+
+ALTER TABLE public.reviews ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Allow public select" ON public.reviews FOR SELECT USING (true);
+CREATE POLICY "Allow public insert" ON public.reviews FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update" ON public.reviews FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
+`;
+      navigator.clipboard.writeText(sql);
+      showToast('📋 Copied reviews table SQL DDL to clipboard!');
+    }
+
+    // =========================================================
+    // CMS AUTHENTICATION CONTROLLER & SESSION STATE MANAGER
+    // =========================================================
+    function togglePasswordVisibility() {
+      const pwdInput = document.getElementById('loginPassword');
+      const icon = document.getElementById('pwdToggleIcon');
+      if (!pwdInput) return;
+
+      if (pwdInput.type === 'password') {
+        pwdInput.type = 'text';
+        if (icon) icon.className = 'fa-solid fa-eye-slash';
+      } else {
+        pwdInput.type = 'password';
+        if (icon) icon.className = 'fa-solid fa-eye';
+      }
+    }
+
+    async function checkAdminAuth() {
+      const token = localStorage.getItem('awara_admin_token');
+      if (!token) {
+        showLoginModal();
+        return false;
+      }
+      try {
+        const res = await fetch('/api/auth/verify', {
+          headers: { 'Authorization': `Bearer ${token}` }
+        });
+        if (res.ok) {
+          const json = await res.json();
+          if (json.authenticated) {
+            hideLoginModal();
+            return true;
+          }
+        }
+      } catch (e) {}
+
+      showLoginModal();
+      return false;
+    }
+
+    function showLoginModal() {
+      const modal = document.getElementById('adminLoginModal');
+      if (modal) modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      const logoutBtn = document.getElementById('adminLogoutBtn');
+      const userBadge = document.getElementById('adminUserBadge');
+      if (logoutBtn) logoutBtn.style.display = 'none';
+      if (userBadge) userBadge.style.display = 'none';
+    }
+
+    function hideLoginModal() {
+      const modal = document.getElementById('adminLoginModal');
+      if (modal) modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+      const logoutBtn = document.getElementById('adminLogoutBtn');
+      const userBadge = document.getElementById('adminUserBadge');
+      if (logoutBtn) logoutBtn.style.display = 'inline-flex';
+      if (userBadge) userBadge.style.display = 'inline-flex';
+    }
+
+    async function handleAdminLogin(e) {
+      if (e) e.preventDefault();
+      const usernameInput = document.getElementById('loginUsername');
+      const passwordInput = document.getElementById('loginPassword');
+      const errorAlert = document.getElementById('loginErrorAlert');
+      const submitBtn = document.getElementById('loginSubmitBtn');
+
+      const username = usernameInput ? usernameInput.value.trim() : '';
+      const password = passwordInput ? passwordInput.value : '';
+
+      if (!username || !password) {
+        if (errorAlert) {
+          errorAlert.textContent = 'Please enter both username and password.';
+          errorAlert.style.display = 'block';
+        }
+        return;
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '⚡ Verifying Credentials...';
+      }
+
+      try {
+        const res = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, password })
+        });
+        const json = await res.json();
+
+        if (res.ok && json.success && json.token) {
+          localStorage.setItem('awara_admin_token', json.token);
+          if (errorAlert) errorAlert.style.display = 'none';
+          hideLoginModal();
+          showToast('🔑 Login Successful! Control Center Unlocked.');
+          if (typeof loadAdminTrips === 'function') loadAdminTrips();
+          if (typeof loadAdminInquiries === 'function') loadAdminInquiries();
+          if (typeof loadAdminReviews === 'function') loadAdminReviews();
+        } else {
+          if (errorAlert) {
+            errorAlert.textContent = json.error || 'Invalid credentials. Access denied.';
+            errorAlert.style.display = 'block';
+          }
+        }
+      } catch (err) {
+        if (errorAlert) {
+          errorAlert.textContent = 'Network error. Could not connect to server.';
+          errorAlert.style.display = 'block';
+        }
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = 'Unlock Control Center 🔐';
+        }
+      }
+    }
+
+    async function handleAdminLogout() {
+      const token = localStorage.getItem('awara_admin_token');
+      if (token) {
+        try {
+          await fetch('/api/auth/logout', {
+            method: 'POST',
+            headers: { 'Authorization': `Bearer ${token}` }
+          });
+        } catch (e) {}
+      }
+      localStorage.removeItem('awara_admin_token');
+      showLoginModal();
+      showToast('🔒 Logged out successfully');
+    }
+
+    // Auto-check authentication on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      checkAdminAuth();
+    });
+  </script>
+</body>
+</html>

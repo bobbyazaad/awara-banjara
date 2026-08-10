@@ -1,0 +1,14 @@
+{
+  "name": "awara-banjara-backend",
+  "version": "2.0.0",
+  "description": "Awara Banjara Local Node.js Express REST API & Database Server",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.2"
+  }
+}

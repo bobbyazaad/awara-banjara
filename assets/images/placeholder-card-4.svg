@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Placeholder desert road photo">
+  <defs>
+    <linearGradient id="g4b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a3d5c"/>
+      <stop offset="55%" stop-color="#a56b6b"/>
+      <stop offset="100%" stop-color="#e8b98a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g4b)"/>
+  <polygon points="0,430 180,290 360,440 540,260 800,430 800,600 0,600" fill="#3a2438" opacity="0.55"/>
+</svg>

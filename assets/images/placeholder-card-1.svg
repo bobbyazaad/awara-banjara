@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Placeholder mountain photo">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#33475b"/>
+      <stop offset="60%" stop-color="#6a8caf"/>
+      <stop offset="100%" stop-color="#c9dbe8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g1)"/>
+  <polygon points="0,420 140,260 260,400 420,180 560,410 700,240 800,400 800,600 0,600" fill="#22303d" opacity="0.6"/>
+  <polygon points="0,480 180,340 340,470 520,300 680,460 800,350 800,600 0,600" fill="#16202a" opacity="0.7"/>
+</svg>

@@ -1,0 +1,11 @@
+# Awara Banjara Robots.txt
+User-agent: *
+Allow: /
+
+# Admin and Internal paths
+Disallow: /admin.html
+Disallow: /.tmp/
+Disallow: /scratch/
+
+# Sitemap location
+Sitemap: https://awarabanjara.in/sitemap.xml

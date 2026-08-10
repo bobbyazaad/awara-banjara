@@ -1,0 +1,37 @@
+[
+  {
+    "id": "pkg_101",
+    "title": "Spiti Valley High Altitude Expedition",
+    "category": "group",
+    "duration": "7 Days / 6 Nights",
+    "startingPrice": 13999,
+    "currency": "INR",
+    "heroImage": "assets/images/destinations/domestic/spiti.jpg",
+    "gallery": [
+      "assets/images/destinations/domestic/spiti.jpg"
+    ],
+    "description": "High altitude group expedition across Spiti Valley.",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Manali",
+        "details": "Check-in and trip briefing."
+      }
+    ],
+    "inclusions": [
+      "Stays",
+      "Meals",
+      "Transport"
+    ],
+    "exclusions": [
+      "Personal Expenses"
+    ],
+    "upcomingBatches": [
+      {
+        "startDate": "2026-09-01",
+        "endDate": "2026-09-07",
+        "slotsLeft": 6
+      }
+    ]
+  }
+]

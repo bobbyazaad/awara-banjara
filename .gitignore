@@ -1,0 +1,24 @@
+# Environment variables & secrets
+.env
+*.env.local
+
+# Dependency directories
+node_modules/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Temporary, scratch, design content & raw screen artifacts
+.tmp/
+scratch/
+screens/
+AwaraBanjara Website Content/
+AWARA/
+dist/
+build/
+
+# Large media assets (>50MB / raw video files exceeding GitHub limits)
+assets/videos/reels/
+*.mov
+*.gif

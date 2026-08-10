@@ -1,0 +1,8 @@
+# Apache Rewrite Rules for Awara Banjara Dynamic SEO URLs
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^trips/([^/]+)/([^/]+)/?$ trip-detail.html?category=$1&trip=$2 [L,QSA]
+</IfModule>

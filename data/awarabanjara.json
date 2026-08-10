@@ -1,0 +1,4294 @@
+{
+  "trips": [
+    {
+      "title": "Kashmir Winter Realm Expedition",
+      "duration": "6 Days / 5 Nights",
+      "price": "",
+      "category": "kashmir_tours",
+      "route": "Srinagar — Gulmarg — Drung — Pahalgam — Aru Valley — Betaab Valley — Chandanwari — Yusmarg / Doodhpathri — Srinagar",
+      "tags": "Winter Expedition, Snow Experience, Houseboat Stay, Valley Exploration, Group Tour",
+      "image_url": "assets/images/trips/img_1786216504243_img_1786216398063_Gulmarg__A_delight_for_travelers_on_a_wanderlust_.jpg",
+      "bento_img_1": "assets/images/trips/img_1786216511109_img_1786216398063_Gulmarg__A_delight_for_travelers_on_a_wanderlust_.jpg",
+      "bento_img_2": "assets/images/trips/img_1786216513677_img_1786216421857_Gulmarg__Kashmir.jpg",
+      "bento_img_3": "assets/images/trips/img_1786216516823_kalam_valley.jpg",
+      "bento_img_4": "assets/images/trips/img_1786216519953_My_-__Gulmarg_kashmir____Facebook.jpg",
+      "bento_img_5": "assets/images/trips/img_1786216523374_My_-__Welcome_to_sonmarg_kashmir_____Winter_wonderland_kashmir____Facebook.jpg",
+      "about_text": "Embark on a magical winter journey through the heart of Kashmir. Experience the perfect blend of tranquility and snow-filled adventure, featuring an iconic houseboat stay on Dal Lake, thrilling rides on Asia’s highest Gondola in Gulmarg, frozen wonders at Drung Waterfall, and scenic exploration of Pahalgam's valleys alongside a trek to Yusmarg.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Srinagar Arrival & Lake Sightseeing",
+          "details": "Arrive in Srinagar, check into your floating houseboat, explore the historic Mughal Gardens (Shalimar & Nishat), and unwind with a serene 1-hour sunset Shikara ride."
+        },
+        {
+          "day": 2,
+          "title": "Scenic Drive to Gulmarg & Gondola Adventure",
+          "details": "Travel to snow-bound Gulmarg, experience the world-famous Phase 1 Gondola cable car ride, discover high-altitude golf grounds, and indulge in optional winter snow sports."
+        },
+        {
+          "day": 3,
+          "title": "Excursion to Drung Waterfall & Transit to Pahalgam",
+          "details": "Witness the dramatic frozen cascades of Drung Waterfall via local ATV before journeying through Pampore's saffron fields and Anantnag toward Pahalgam."
+        },
+        {
+          "day": 4,
+          "title": "Pahalgam Valley Exploration & Return to Srinagar",
+          "details": "Discover the picturesque vistas of Aru Valley, Betaab Valley, and Chandanwari before making your evening return journey back to Srinagar."
+        },
+        {
+          "day": 5,
+          "title": "Snow Trek to Yusmarg / Doodhpathri",
+          "details": "Hike through pine-forested trails from Nilnag Lake up to Yusmarg (Meadow of Jesus), or trek through Doodhpathri during heavy snowfall conditions, returning to Srinagar for the night."
+        },
+        {
+          "day": 6,
+          "title": "Farewell Srinagar",
+          "details": "Enjoy breakfast at the hotel before checking out and heading to the airport with cherished winter memories."
+        }
+      ],
+      "inclusions": [
+        "Intercity transfers and local sightseeing in private vehicles",
+        "5 Nights Accommodation (1 Night Houseboat, 1 Night Gulmarg, 1 Night Pahalgam, 2 Nights Srinagar Hotel)",
+        "9 Meals in total (5 Breakfasts & 4 Dinners)",
+        "Local transfers for Aru and Betaab Valley tours",
+        "Gulmarg Gondola Phase 1 cable car ticket",
+        "1-Hour Shikara ride on Dal Lake",
+        "Dedicated Awara Banjara Trip Captain",
+        "Basic First-Aid & Medical Kit",
+        "Inner Line Permits and local clearance fees",
+        "Srinagar Airport Pickup"
+      ],
+      "exclusions": [
+        "5% GST extra",
+        "Airfare or railway ticket charges",
+        "Srinagar Airport drop-off",
+        "Personal meals, beverages, snacks, or water beyond included menus",
+        "Pony, horse, or local ATV charges (e.g., Drung Waterfall access)",
+        "Personal expenses (laundry, tips, portage, monument fees)",
+        "Costs arising from weather delays, landslides, or unforeseen natural causes"
+      ],
+      "package_options": [
+        {
+          "title": "Double Occupancy",
+          "price": "On Request"
+        },
+        {
+          "title": "Triple Occupancy",
+          "price": "On Request"
+        },
+        {
+          "title": "Quad Occupancy",
+          "price": "On Request"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "month": "January 2027",
+          "dates": [
+            {
+              "id": "b_1786216596845",
+              "range": "8th January",
+              "startDate": "2027-01-08",
+              "status": "Available",
+              "price": "₹16,499"
+            },
+            {
+              "id": "b_1786216599289",
+              "range": "15th January",
+              "startDate": "2027-01-15",
+              "status": "Available",
+              "price": "₹16,499"
+            },
+            {
+              "id": "b_1786216601706",
+              "range": "22th January",
+              "startDate": "2027-01-22",
+              "status": "Available",
+              "price": "₹16,499"
+            },
+            {
+              "id": "b_1786216603988",
+              "range": "29th January",
+              "startDate": "2027-01-29",
+              "status": "Available",
+              "price": "₹16,499"
+            }
+          ]
+        },
+        {
+          "month": "February 2027",
+          "dates": [
+            {
+              "id": "b_1786216607023",
+              "range": "5th February",
+              "startDate": "2027-02-05",
+              "status": "Available",
+              "price": "₹16,499"
+            },
+            {
+              "id": "b_1786216609005",
+              "range": "12th February",
+              "startDate": "2027-02-12",
+              "status": "Available",
+              "price": "₹16,499"
+            },
+            {
+              "id": "b_1786216610956",
+              "range": "19th February",
+              "startDate": "2027-02-19",
+              "status": "Available",
+              "price": "₹16,499"
+            },
+            {
+              "id": "b_1786216613505",
+              "range": "26th February",
+              "startDate": "2027-02-26",
+              "status": "Available",
+              "price": "₹16,499"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "WHAT IS THE AGE LIMIT FOR THIS TRIP?",
+          "answer": "The recommended age group for our winter group departure is 18 to 42 years due to the active pacing."
+        },
+        {
+          "question": "WHAT HAPPENS IN CASE OF HEAVY SNOWFALL ON ROADWAYS?",
+          "answer": "In case of heavy snow blockage between Tanmarg and Gulmarg, local 4x4 snow-chained vehicles will be arranged."
+        },
+        {
+          "question": "IS DRUNG WATERFALL GUARANTEED TO BE FROZEN?",
+          "answer": "Visits to Drung Waterfall depend on local freezing conditions and local authority ATV access permissions."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "vFaiz Akhtar",
+          "location": "Delhi",
+          "text": "Unbelievable winter magic! The houseboat stay and Gondola ride were flawlessly organized.",
+          "avatar": "assets/images/reviews/faiz.jpg"
+        },
+        {
+          "name": "Shobhita Bhavanam",
+          "location": "Hyderabad",
+          "text": "Kashmir in winter is breathtaking. Awara Banjara's team took care of every detail and made us feel right at home.",
+          "avatar": "assets/images/reviews/shobhita.jpg"
+        }
+      ],
+      "reserve_banner_title": "",
+      "custom_quote_title": "",
+      "is_featured_reels": true,
+      "is_featured_stack": true,
+      "is_featured_lemonade": true,
+      "link": "trips/kashmir-tours-kashmir-winter-realm-expedition-1786216631459.html",
+      "id": 1786216631459,
+      "updated_at": "2026-08-08T19:17:11.478Z",
+      "created_at": "2026-08-08T19:17:11.478Z"
+    },
+    {
+      "id": 115,
+      "title": "Kashmir Slow-Paced Expedition",
+      "duration": "8 Days / 7 Nights",
+      "price": "₹30,800",
+      "image_url": "assets/images/trips/trip_115_image_url.jpg",
+      "link": "trips/kashmir-tours-kashmir-slow-paced-expedition-115.html",
+      "created_at": "2026-08-02T11:40:47.807763+00:00",
+      "category": "kashmir_tours",
+      "route": "Srinagar – Doodhpathri – Pahalgam – Gulmarg – Sonmarg – Srinagar",
+      "tags": "Group Tour, Offbeat Kashmir, Slow Travel, Houseboat Stay, Gondola Ride, Sightseeing",
+      "bento_img_1": "assets/images/trips/trip_115_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_115_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_115_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_115_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_115_bento_img_5.jpg",
+      "about_text": "Embark on a slow-paced, immersive journey through the untamed beauty of Kashmir with Awara Banjara Adventure. Moving away from rushed, \"check-list\" tourism, this expedition focuses on offbeat trails, soulful local interactions, and raw Himalayan landscapes. From exploring Srinagar's historical monuments, vibrant floating markets, and iconic Dal Lake houseboats to witnessing the pristine meadows of Doodhpathri, Pahalgam's valleys, Gulmarg's high-altitude snow peaks via Gondola, and Sonmarg's gleaming Thajiwas Glacier—this trip brings you closer to the soul of Kashmir alongside a like-minded community of travelers.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Srinagar Arrival & City Sightseeing",
+          "details": "Welcome to Srinagar Airport and transfer to your hotel for check-in. Explore Srinagar's rich heritage with visits to the historical Shankaracharya Temple, Mughal Gardens (Nishant Bagh, Chashme Shahi, Botanical Garden, Pari Mahal), Hazratbal Shrine, Jamia Masjid, and local markets for shopping and snacks. Dinner and overnight stay in Srinagar."
+        },
+        {
+          "day": 2,
+          "title": "Doodhpathri Day Trip",
+          "details": "Embark on a day trip to Doodhpathri, the \"Valley of Milk,\" a bowl-shaped valley in the Pir Panjal range with beautiful natural meadows. (Optional trip to Yusmarg is available). Return to Srinagar for dinner and overnight stay."
+        },
+        {
+          "day": 3,
+          "title": "Travel to Pahalgam via Martand Sun Temple",
+          "details": "Check out from the hotel and drive to Pahalgam. En route, visit apple and apricot gardens, the historic Martand Sun Temple, and enjoy a scenic drive along the Lidder River. Check into your hotel in Pahalgam and explore the local market in the evening. Dinner and overnight stay in Pahalgam."
+        },
+        {
+          "day": 4,
+          "title": "Aru Valley & Betaab Valley Visit",
+          "details": "Dedicated day for sightseeing in Pahalgam via local union taxis. Visit scenic Aru Valley, the iconic Betaab Valley, Chandanwari (subject to snow conditions), and the local market in the evening. Dinner and overnight stay in Pahalgam."
+        },
+        {
+          "day": 5,
+          "title": "Travel to Gulmarg & Enjoy Activities",
+          "details": "Check out and travel through the scenic town of Tangmarg to Gulmarg. Check into your hotel and head out to enjoy the Gondola Ride (Phase 1 & Phase 2 to the mountain top) and snow activities like skiing, snowboarding, snowmobiling, sledging, and horse riding. Dinner and overnight stay in Gulmarg."
+        },
+        {
+          "day": 6,
+          "title": "Travel to Sonmarg & Visit",
+          "details": "Check out and travel to Sonmarg, the \"Meadow of Gold.\" Take a walk or horseback trip to the majestic Thajiwas Glacier amidst snowy meadows. Dinner and overnight stay in Sonmarg."
+        },
+        {
+          "day": 7,
+          "title": "Travel to Srinagar & Houseboat Stay",
+          "details": "Check out from Sonmarg and travel back to Srinagar. Check into a houseboat at Dal Lake, enjoy a complimentary 1-hour Shikara ride, and visit the floating market. Dinner and overnight stay on the houseboat at Dal Lake."
+        },
+        {
+          "day": 8,
+          "title": "Flyback to Hometown",
+          "details": "Enjoy breakfast, check out from the houseboat, and transfer to Srinagar Airport according to your flight timings for your return journey home."
+        }
+      ],
+      "inclusions": [
+        "Stay in 3/4 Star Hotel & Houseboat",
+        "Breakfast & Dinner at the Property",
+        "Airport Transfers from Srinagar",
+        "Complementary 1hr Shikara Ride",
+        "Sightseeing & Activities as per Itinerary",
+        "Private Vehicle for Sightseeing",
+        "Experienced Driver cum Guide",
+        "Toll, Parking Charges & Permits",
+        "24x7 Support throughout the Journey"
+      ],
+      "exclusions": [
+        "5% GST",
+        "Anything not Specified in Inclusions",
+        "Additional Arrangement Cost During Road Blockages",
+        "Any Paid Activities",
+        "Entry Fees of Any",
+        "Union Taxi Cost for Pahalgam & Zero Point (Sonmarg) Visit",
+        "Extra costs due to emergencies or unforeseen circumstances"
+      ],
+      "package_options": [
+        {
+          "price": "₹30,800",
+          "title": "Tour Package"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785670807013",
+              "price": "30,800",
+              "range": "4th September",
+              "status": "Available",
+              "startDate": "2026-09-04"
+            },
+            {
+              "id": "b_1785670813771",
+              "price": "30,800",
+              "range": "18th September",
+              "status": "Filling Fast",
+              "startDate": "2026-09-18"
+            },
+            {
+              "id": "b_1785670816655",
+              "price": "30,800",
+              "range": "25th September",
+              "status": "Filling Fast",
+              "startDate": "2026-09-25"
+            },
+            {
+              "id": "b_1785670825921",
+              "price": "30,800",
+              "range": "11th September",
+              "status": "Sold Out",
+              "startDate": "2026-09-11"
+            }
+          ],
+          "month": "September 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "We aren't a traditional travel agency; we are a community. Our trips focus on slow travel, local stories, and building a \"hype squad\" on the road. Expect raw beauty, offbeat trails, and a group of strangers who leave as family.",
+          "question": "What is the \"Awara Banjara\" experience all about?"
+        },
+        {
+          "answer": "Our typical tribe consists of travelers aged 18 to 35. We curate our itineraries for those who enjoy high-energy exploration, shared stays, and a bit of adventure.",
+          "question": "Is there an age limit for the trips?"
+        },
+        {
+          "answer": "Absolutely! A large percentage of our banjaras join solo. Safety—especially for solo female travelers—is our top priority. Our Trip Captains are trained to ensure a secure and inclusive environment for everyone.",
+          "question": "I’m a solo traveler. Is it safe for me?"
+        },
+        {
+          "answer": "To lock your seat, you only need to pay a 10% non-refundable token amount. The remaining balance can be settled comfortably upon your arrival at the starting point of the trip.",
+          "question": "How do I book my spot?"
+        },
+        {
+          "answer": "The 10% booking token is non-refundable as it goes toward securing your permits and stay. For cancellations of the remaining amount, please refer to our detailed Terms & Conditions page.",
+          "question": "What is the cancellation policy?"
+        },
+        {
+          "answer": "Your Trip Captain is your storyteller, logistics manager, and resident photographer. They aren’t just guides; they are part of the group, ensuring everything runs smoothly while keeping the energy high.",
+          "question": "What is the role of a Trip Captain?"
+        },
+        {
+          "answer": "While we help facilitate these experiences at the best local rates, adventure activities are typically not included in the base package price. This allows you the flexibility to choose only the thrills you want!",
+          "question": "Are adventure activities (Paragliding, Rafting, ATV) included?"
+        },
+        {
+          "answer": "In the mountains, nature calls the shots. In case of Force Majeure (landslides, heavy snow, or government restrictions), we will try our best to provide an alternative plan. However, any additional costs arising from such situations are to be borne by the traveler.",
+          "question": "What happens in case of bad weather or roadblocks?"
+        },
+        {
+          "answer": "Layers are your best friend! Even in summer, nights can be chilly. For winter trips, heavy woolens, thermal wear, and waterproof shoes are a must. We will send a detailed packing checklist to your WhatsApp group before the trip.",
+          "question": "What should I pack for Kashmir?"
+        },
+        {
+          "answer": "In remote areas like parts of Kashmir, connectivity can be patchy. We recommend carrying a postpaid SIM (BSNL or Airtel usually work best). Think of it as a \"digital detox\"—the best connections are the ones made with people, not towers!",
+          "question": "Will I have network connectivity?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Aarav Sharma",
+          "text": "The Kashmir expedition was absolute magic! From staying on Dal Lake to riding the Gondola in Gulmarg, everything was executed flawlessly by Awara Banjara.",
+          "avatar": "assets/images/reviews/pfp-aarav.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Meera Patel",
+          "text": "Traveling solo to Kashmir felt daunting at first, but the group and Trip Captain became family instantly. Best week of my life!",
+          "avatar": "assets/images/reviews/pfp-meera.jpg",
+          "location": "Mumbai"
+        },
+        {
+          "name": "Rohan Iyer",
+          "text": "Slow-paced travel at its finest. Doodhpathri and Sonmarg were stunning beyond words. Highly recommend Awara Banjara to everyone!",
+          "avatar": "assets/images/reviews/pfp-rohan.jpg",
+          "location": "Bangalore"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null,
+      "updated_at": "2026-08-08T15:18:47.910Z"
+    },
+    {
+      "id": 122,
+      "title": "Ziro Festival Rhythm Expedition: Arunachal Pradesh",
+      "duration": "7 Days / 6 Nights",
+      "price": "On Request",
+      "image_url": "assets/images/trips/trip_122_image_url.jpg",
+      "link": "trips/northeast-india-tours-ziro-festival-rhythm-expedition-arunachal-pradesh-122.html",
+      "created_at": "2026-08-05T15:28:43.312697+00:00",
+      "category": "northeast_india_tours, festival_tours",
+      "route": "Guwahati — Ziro Valley — Apatani Hamlets — Guwahati",
+      "tags": "Festival Expedition, Music & Nature, Tribal Immersion, Wilderness Camping, North-East India",
+      "bento_img_1": "assets/images/trips/trip_122_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_122_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_122_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_122_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_122_bento_img_5.jpg",
+      "about_text": "Journey into the misty, pine-scented sanctuaries of Ziro Valley, where golden paddy fields meet the raw, soul-stirring rhythms of independent music. Nestled at 5,500 feet, this 7-day overland odyssey immerses you in the heart of Arunachal Pradesh during its harvest season. \nLive under starlit skies in wilderness camps, experience the sustainable heritage of the ancient Apatani tribe, and gather around late-night bonfires amidst bamboo groves and indie melodies. Crafted for wanderers seeking genuine cultural depth and high-altitude harmony, this expedition seamlessly blends raw nomadic energy with curated Banjara hospitality.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Overland Passage from Guwahati to Ziro",
+          "details": "Meet your Banjara trip captains in Guwahati and embark on a scenic overland drive across winding Himalayan foothills, arriving at our serene valley gateway by dusk."
+        },
+        {
+          "day": 2,
+          "title": "Descent into Ziro Valley & Festival Twilight",
+          "details": "Settle into our curated alpine campsite amidst golden rice terraces, soak in the warm Apatani hospitality, and enter the festival grounds as dusk sets over the Donyi-Polo bamboo stages."
+        },
+        {
+          "day": 3,
+          "title": "Apatani Heritage Walk & Festival Grooves",
+          "details": "Wander through ancient bamboo hamlets and pine groves with local tribal guides, explore sacred sights, and immerse yourself in an evening of global indie soundscapes."
+        },
+        {
+          "day": 4,
+          "title": "High-Altitude Melody & Starlit Solitude",
+          "details": "Spend a soul-stirring day at the festival grounds, witnessing world-class sustainable bamboo architecture, before gathering for intimate acoustic campsite jamming under the stars."
+        },
+        {
+          "day": 5,
+          "title": "Tribal Paddy Fishing & Local Flavors",
+          "details": "Try traditional Apatani paddy field fishing, savor authentic regional delicacies and kiwi wine, and celebrate your final evening under the golden canopy of Ziro Valley."
+        },
+        {
+          "day": 6,
+          "title": "Return Traverse to Guwahati",
+          "details": "Bid farewell to the valley of music and trace the winding roads back toward Guwahati, unwinding at a curated hotel stay for a restful evening."
+        },
+        {
+          "day": 7,
+          "title": "Homeward Journey from Guwahati",
+          "details": "Enjoy a relaxed morning breakfast with the group before departing with unforgettable memories of mountain rhythms and tribal warmth."
+        }
+      ],
+      "inclusions": [
+        "Overland transfers and local sightseeing in comfortable Tempo Traveler/SUV (Guwahati to Guwahati)",
+        "1 Night hotel stay in Guwahati and 5 Nights stay in twin-sharing wilderness alpine tents in Ziro Valley",
+        "MAP Meal Plan (14 Curated Meals including Breakfasts, Lunches, and Dinners throughout)",
+        "Inner Line Permits (ILP) and environmental clearances for Arunachal Pradesh",
+        "Guided Apatani village walk and tribal home immersion tour",
+        "Traditional paddy field fishing experience in Ziro Valley",
+        "Expedition Captain & Lead support throughout the journey",
+        "Evening campfires at the campsite (subject to weather conditions)",
+        "24x7 Emergency Medical Kit & Oxygen Cylinder support"
+      ],
+      "exclusions": [
+        "5% GST extra",
+        "Airfare, train tickets, or transit to and from Guwahati",
+        "Festival Entry Passes (to be purchased separately)",
+        "Lunches/snacks during long highway transit days",
+        "Optional visits (such as Nara Abba Kiwi Winery tasting session or personal monument entries)",
+        "Personal expenses, laundry, tips, or phone bills",
+        "Expenses incurred due to unexpected landslides, roadblocks, or weather delays"
+      ],
+      "package_options": [
+        {
+          "price": "On Request",
+          "title": "Double Occupancy"
+        },
+        {
+          "price": "On Request",
+          "title": "Triple Occupancy"
+        },
+        {
+          "price": "On Request",
+          "title": "Quad Occupancy"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [],
+      "faqs": [
+        {
+          "answer": "Yes, domestic travelers require an Inner Line Permit (ILP), which will be completely processed by our team prior to departure.",
+          "question": "DO I NEED PERMITS TO ENTER ZIRO VALLEY?"
+        },
+        {
+          "answer": "Expect comfortable hotel stays in Guwahati paired with secure, weather-proof alpine tented camping in the heart of Ziro Valley.",
+          "question": "WHAT IS THE ACCOMMODATION STYLE DURING THE FESTIVAL?"
+        },
+        {
+          "answer": "Pack a warm fleece/jacket for cold valley nights, a sturdy raincoat or poncho for rain, power banks (20,000 mAh+), and a flashlight or headlamp for campsite navigation.",
+          "question": "WHAT PACKING ESSENTIALS ARE RECOMMENDED FOR ZIRO?"
+        },
+        {
+          "answer": "Absolutely; our expeditions are curated to offer a safe, inclusive, and community-driven space for both solo wanderers and small groups.",
+          "question": "IS THE TRIP SUITABLE FOR SOLO TRAVELERS AND GROUPS?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rohan Khetade",
+          "text": "An incredible blend of music, wilderness camping, and raw tribal culture. Awara Banjara executed the logistics effortlessly!",
+          "avatar": "assets/images/reviews/pfp-rohan.jpg",
+          "location": "Mumbai"
+        },
+        {
+          "name": "Ananya Sharma",
+          "text": "The campsite jam sessions and Apatani village walks were pure magic. A truly soul-stirring North-East experience!",
+          "avatar": "assets/images/reviews/pfp-ananya.jpg",
+          "location": "Delhi"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 114,
+      "title": "Meghalaya-Kaziranga : Backpacking Trip",
+      "duration": "6 Nights / 7 Days",
+      "price": "₹27,900",
+      "image_url": "assets/images/trips/trip_114_image_url.jpg",
+      "link": "trips/northeast-india-tours-meghalaya-kaziranga-backpacking-trip-114.html",
+      "created_at": "2026-08-02T10:56:13.24701+00:00",
+      "category": "northeast_india_tours",
+      "route": "Guwahati — Shillong — Shnongpdeng (Dawki) — Mawlynnong — Cherrapunji — Kaziranga — Guwahati",
+      "tags": "Backpacking, Group Tour, Waterfall Trekking, Living Root Bridges, Wildlife Safari, Meghalaya, Kaziranga",
+      "bento_img_1": "assets/images/trips/trip_114_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_114_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_114_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_114_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_114_bento_img_5.jpg",
+      "about_text": "Welcome to the land of clouds and the home of the giants. This isn't your typical sightseeing tour; it’s a deep dive into the rainforests of the Khasi Hills and the tall grasslands of the Brahmaputra floodplains.\n\nAt Awara Banjara, we believe the North East is a feeling, not just a destination. We’ll take you walking on bridges made of living roots, swimming in crystal-clear natural pools, and sitting around bonfires in the middle of the jungle. Whether you're a solo traveler or coming with friends, you're joining a tribe that values raw experiences and slow, soulful travel.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Guwahati Arrival transfer to Shillong",
+          "details": "The group will assemble at the pick-up point in Guwahati where a brief introduction by the trip captain will be provided. Afterwards, we'll head to Shillong which is a dreamy hill station nestled in the heart of Meghalaya, popularly known as the \"Scotland of the East\". Upon reaching Shillong, we'll check into our hotels and spend leisure time amidst nature. In the evening, we will head to the main market in Shillong to explore its lively cafes and sightseeing spots. Standard Check-In time is 01:00 PM."
+        },
+        {
+          "day": 2,
+          "title": "Shillong to Shnongpdeng",
+          "details": "After early morning breakfast, we'll head towards Dawki River (Umngot River), famous for its turquoise water that resembles a glass surface. En route, we'd visit Krang Suri Falls, where you can immerse yourself in its stunning turquoise waters. Upon arrival in Dawki, we'll check into our riverside camps in Shnongpdeng. In the evening, we'll host a bonfire (subject to weather condition), followed by dinner and an overnight stay in camps."
+        },
+        {
+          "day": 3,
+          "title": "Dawki to Cherrapunji",
+          "details": "Post breakfast, we'll indulge in thrilling adventure activities like Cliff Jumping, Boating, Snorkeling, and Kayaking in the sparkling river. Afterward, we'll head towards Cherrapunji. En route, we'll be traversing the Indo-Bangla Border as we visit Mawlynnong which holds the title of Asia's cleanest village and offers breathtaking views of the neighboring Bangladesh plains. Upon arrival in Cherrapunji, check into our hotels and spend the night soaking in bliss."
+        },
+        {
+          "day": 4,
+          "title": "Trek to Double Decker Bridge",
+          "details": "After early morning breakfast, visit Seven Sister Falls and Mawsmai Caves made of limestone with stunning stalactites. Next, visit the Single Root Bridge, explore Nongriat Village and Tyrna Village. Then start our trek to the iconic Double Decker Living Root Bridge and crystal-clear blue pools. Afterward, head back to the hotel for an overnight stay in Cherrapunji."
+        },
+        {
+          "day": 5,
+          "title": "Cherrapunji to Shillong",
+          "details": "After early morning breakfast, check out of our hotel and head towards Shillong. En route, visit Nohkalikai waterfall (tallest plunge waterfall in Meghalaya at 1,115 ft), Garden of Caves, Laitlum Canyons panoramic viewpoint, and Elephant Falls. Upon arrival in Shillong, check into our hotel where we will spend the night."
+        },
+        {
+          "day": 6,
+          "title": "Shillong to Kaziranga",
+          "details": "Embark on a scenic drive from Shillong to Kaziranga National Park traversing picturesque views of the valley and deep jungles. En route, visit the beautiful Umiam Lake surrounded by Sylvan hills. Upon arrival, check into our resorts set amidst lush flora and fauna. Spend the rest of the day rejuvenating and indulging in recreational activities within property premises."
+        },
+        {
+          "day": 7,
+          "title": "Early Morning Safari",
+          "details": "Kaziranga to Guwahati"
+        }
+      ],
+      "inclusions": [
+        "Pickup & Drop according to fixed timing from Guwahati",
+        "Transportation for local sightseeing in Tempo Traveler/SUV",
+        "2 Nights hotel accommodation in Shillong",
+        "2 Nights hotel accommodation in Cherrapunji",
+        "1 Night riverside camp accommodation in Shnongpdeng",
+        "1 Night resort accommodation in Kaziranga",
+        "CP Meal Plan (7 Meals total: Day 2 Breakfast & Dinner; Days 3-7 Breakfast)",
+        "Water Activities: Cliff Jumping, Snorkeling, Boating, Kayaking",
+        "Early morning Jeep Safari in Kaziranga National Park",
+        "Bonfire (Subject to weather conditions)",
+        "Trip Captain present throughout the trip",
+        "Parking charges, toll taxes, and entry tickets",
+        "Local Guide for Double Decker Living Root Bridge Trek",
+        "Travel Insurance covering journey from base to base",
+        "First Aid kits & Driver allowances"
+      ],
+      "exclusions": [
+        "5% GST",
+        "Airfare or Train tickets to/from Guwahati",
+        "Early check-in (Before 1:00 PM) & Late Check-out (After 11:00 AM)",
+        "Personal expenses (Telephone, Laundry, Internet, etc.)",
+        "Any extra meals or beverages not mentioned in inclusions",
+        "Any extra excursions or sightseeing apart from the itinerary",
+        "Any entry fees for museums, parks, or optional activities",
+        "Room Heater Charges",
+        "Expenses incurred due to delays, flight cancellations, landslides, weather, or political closures (Strikes/Bandh)"
+      ],
+      "package_options": [
+        {
+          "price": "₹27,900",
+          "title": "Solo Traveler"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785667755898",
+              "price": "27,900",
+              "range": "7th November",
+              "status": "Available",
+              "startDate": "2026-11-07"
+            },
+            {
+              "id": "b_1785667764780",
+              "price": "27,900",
+              "range": "14th November",
+              "status": "Available",
+              "startDate": "2026-11-14"
+            },
+            {
+              "id": "b_1785667768714",
+              "price": "27,900",
+              "range": "21th November",
+              "status": "Available",
+              "startDate": "2026-11-21"
+            },
+            {
+              "id": "b_1785667771266",
+              "price": "27,900",
+              "range": "28th November",
+              "status": "Available",
+              "startDate": "2026-11-28"
+            }
+          ],
+          "month": "November 2026"
+        },
+        {
+          "dates": [
+            {
+              "id": "b_1785667786835",
+              "price": "27,900",
+              "range": "5th December",
+              "status": "Available",
+              "startDate": "2026-12-05"
+            },
+            {
+              "id": "b_1785667789934",
+              "price": "27,900",
+              "range": "12th December",
+              "status": "Available",
+              "startDate": "2026-12-12"
+            },
+            {
+              "id": "b_1785667792916",
+              "price": "27,900",
+              "range": "19th December",
+              "status": "Available",
+              "startDate": "2026-12-19"
+            },
+            {
+              "id": "b_1785667804050",
+              "price": "27,900",
+              "range": "26th December",
+              "status": "Available",
+              "startDate": "2026-12-26"
+            }
+          ],
+          "month": "December 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "Our journey begins and ends in Guwahati. Fly into Lokpriya Gopinath Bordoloi International Airport (GAU) or arrive at Guwahati Railway Station. We coordinate a common pickup point at the airport or Khanapara.",
+          "question": "How do I reach the starting point?"
+        },
+        {
+          "answer": "For Indian citizens, no Inner Line Permit (ILP) is required to visit Meghalaya or Assam. You just need to carry a valid Government-issued photo ID (Aadhaar, Voter ID, or Driving License).",
+          "question": "Is there a permit required for Meghalaya or Assam?"
+        },
+        {
+          "answer": "November to April is ideal for Kaziranga Safari (park closed May to October) and clear waters in Dawki. September to October is great for chasing massive waterfalls in Meghalaya.",
+          "question": "What is the best time for this \"Forests & Falls\" combo?"
+        },
+        {
+          "answer": "It is a physically demanding trek involving approximately 3,500 steps one way (2–3 hours down, 3–4 hours back up). Basic fitness is recommended.",
+          "question": "How difficult is the Double Decker Root Bridge trek?"
+        },
+        {
+          "answer": "We offer an early morning Jeep Safari, which is great for covering more ground and spotting One-Horned Rhinos, wild buffaloes, and tigers.",
+          "question": "What kind of Safari happens in Kaziranga?"
+        },
+        {
+          "answer": "Yes, in designated spots like Krang Suri (life jackets mandatory). Please dress modestly while walking through the local villages.",
+          "question": "Can I swim in the waterfalls?"
+        },
+        {
+          "answer": "Meghalaya: Rain poncho, sturdy trekking shoes, quick-dry towel. Kaziranga: Earthy/dull-colored clothes (khaki, olive, brown). General: Power bank, insect repellent, motion sickness meds.",
+          "question": "What should I pack for this trip?"
+        },
+        {
+          "answer": "Excellent 4G/5G in Shillong & Guwahati. Decent network in Cherrapunji & Kaziranga. Poor or no network in Dawki & Nongriat village.",
+          "question": "Will I have a mobile network?"
+        },
+        {
+          "answer": "Expect a mix of Assamese and Khasi cuisine (rice, dal, local vegetables, Jadoh, Masor Tenga). Vegetarian and vegan options are always available.",
+          "question": "What is the food like?"
+        },
+        {
+          "answer": "We keep our groups small and intimate, usually between 10 to 16 travelers.",
+          "question": "How many people are in a typical group?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Ananya Sharma",
+          "text": "The trip to Meghalaya and Kaziranga was pure magic! Walking on the living root bridges and catching the early morning safari in Kaziranga were huge highlights. Our trip captain was super organized and kept the energy high throughout.",
+          "avatar": "assets/images/reviews/pfp-ananya.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Rahul Verma",
+          "text": "Awara Banjara truly delivers on raw and authentic travel experiences. Dawki river camping and cliff jumping were absolutely thrilling. Loved meeting an amazing group of solo travelers!",
+          "avatar": "assets/images/reviews/pfp-rahul.jpg",
+          "location": "Bangalore"
+        },
+        {
+          "name": "Priya Nair",
+          "text": "Perfectly paced 7-day trip! From the mystical Mawsmai caves and Nohkalikai falls to spotting the One-Horned Rhino in Kaziranga, every single day had something incredible to offer. Highly recommend!",
+          "avatar": "assets/images/reviews/pfp-priya.jpg",
+          "location": "Mumbai"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 107,
+      "title": "Kashmir Great Lakes Trek",
+      "duration": "7 Days / 6 Nights",
+      "price": "₹16,499",
+      "image_url": "assets/images/trips/trip_107_image_url.jpg",
+      "link": "trips/kashmir-tours-kashmir-great-lakes-trek-107.html",
+      "created_at": "2026-08-02T07:17:22.782784+00:00",
+      "category": "kashmir_tours",
+      "route": "Srinagar — Sonamarg — Nichnai — Vishansar Lake — Gadsar Lake — Zaj Pass — Satsar Lake — Gangabal Lake — Naranag — Srinagar",
+      "tags": "Kashmir Trek, Great Lakes, High Altitude Trek, Himalayan Trek, Group Trek",
+      "bento_img_1": "assets/images/trips/trip_107_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_107_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_107_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_107_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_107_bento_img_5.jpg",
+      "about_text": "Awara Banjara brings you the iconic Kashmir Great Lakes Trek—a thrilling 7-day high-altitude trekking expedition starting from Srinagar. Traverse through lush alpine meadows, cross high mountain passes like Nichnai and Gadsar, and witness turquoise alpine lakes including Vishansar, Gadsar, Satsar, and Gangabal at the foot of Mount Harmukh with expert guides and safety equipment.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Srinagar to Sonamarg (Drive) → Trek to Nichnai",
+          "details": "Drive from Srinagar to Sonamarg (9,186 ft) and begin the 12 km trek to Nichnai (11,500 ft) taking approx 5–6 hours."
+        },
+        {
+          "day": 2,
+          "title": "Nichnai to Vishansar Lake",
+          "details": "Trek through alpine meadows and cross Nichnai Pass to reach the stunning Vishansar Lake."
+        },
+        {
+          "day": 3,
+          "title": "Vishansar Lake to Gadsar Lake",
+          "details": "Pass by Kishansar Lake and cross Gadsar Pass (the highest point of the trek) to descend to Gadsar Lake."
+        },
+        {
+          "day": 4,
+          "title": "Gadsar Lake to Satsar Lake (via Zaj Pass)",
+          "details": "Trek through rugged terrains and cross Zaj Pass to reach the collection of seven lakes at Satsar."
+        },
+        {
+          "day": 5,
+          "title": "Satsar Lake to Gangabal Lake",
+          "details": "Descend towards the twin lakes of Gangabal and Nundkol lying at the foot of Mount Harmukh."
+        },
+        {
+          "day": 6,
+          "title": "Gangabal Lake to Naranag",
+          "details": "Final descent through pine forests from Gangabal Lake down to Naranag village."
+        },
+        {
+          "day": 7,
+          "title": "Naranag to Srinagar (Drive Back)",
+          "details": "Drive back from Naranag to Srinagar, concluding the trek."
+        }
+      ],
+      "inclusions": [],
+      "exclusions": [],
+      "package_options": [
+        {
+          "price": "₹16,499",
+          "title": "Trek Package"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785654743408",
+              "price": "16,499",
+              "range": "28th August",
+              "status": "Available",
+              "startDate": "2026-08-28"
+            }
+          ],
+          "month": "August 2026"
+        },
+        {
+          "dates": [
+            {
+              "id": "b_1785654765872",
+              "price": "16,499",
+              "range": "4th September",
+              "status": "Available",
+              "startDate": "2026-09-04"
+            },
+            {
+              "id": "b_1785654777456",
+              "price": "16,499",
+              "range": "18th September",
+              "status": "Filling Fast",
+              "startDate": "2026-09-18"
+            }
+          ],
+          "month": "September 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "The Kashmir Great Lakes trek covers roughly 65–75 km over 6 trekking days.",
+          "question": "WHAT IS THE TOTAL TREKKING DISTANCE?"
+        },
+        {
+          "answer": "The highest point is Gadsar Pass at approximately 13,750 ft.",
+          "question": "WHAT IS THE MAXIMUM ALTITUDE OF THIS TREK?"
+        },
+        {
+          "answer": "Yes, high-altitude trekking tents, sleeping bags, and all vegetarian meals during the trek are included.",
+          "question": "ARE MEALS AND TENTS INCLUDED?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Aarav Sharma",
+          "text": "The Kashmir Great Lakes trek was a dream come true. The views at Vishansar and Gadsar lakes were breathtaking!",
+          "avatar": "assets/images/reviews/pfp-aarav.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Meera Patel",
+          "text": "Excellent trek leaders and support team. Awara Banjara managed camp setups and food perfectly high up in the mountains.",
+          "avatar": "assets/images/reviews/pfp-meera.jpg",
+          "location": "Mumbai"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 108,
+      "title": "Kasol & Manali: Offbeat Himalayan Escape",
+      "duration": "6 Days / 5 Nights",
+      "price": "₹6,999",
+      "image_url": "assets/images/trips/trip_108_image_url.jpg",
+      "link": "trips/himachal-tours-kasol-manali-offbeat-himalayan-escape-108.html",
+      "created_at": "2026-08-02T07:47:22.8632+00:00",
+      "category": "himachal_tours",
+      "route": "Delhi — Manali — Atal Tunnel — Sissu — Solang Valley — Kullu — Kasol — Manikaran — Delhi",
+      "tags": "Himachal, Kasol, Manali, Offbeat Escape, Budget Trip, Group Tour",
+      "bento_img_1": "assets/images/trips/trip_108_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_108_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_108_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_108_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_108_bento_img_5.jpg",
+      "about_text": "Escape to the heart of Himachal with Awara Banjara's 6-Day Offbeat Himalayan Escape. Traverse through the serene Parvati Valley in Kasol, explore the snow-capped high-altitude landscapes of Sissu via the iconic Atal Tunnel, indulge in thrilling adventure sports in Kullu, and soak in the soothing Manikaran Hot Springs. Designed for travelers seeking the perfect balance of adventure, culture, and relaxation with a vibrant community vibe.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Delhi to Manali (Overnight Volvo)",
+          "details": "Evening departure from Delhi by comfortable AC Volvo bus. Overnight journey through winding Himalayan roads under starlit skies."
+        },
+        {
+          "day": 2,
+          "title": "Arrival in Manali & Local Sightseeing",
+          "details": "Arrive in Manali, check-in to your stay, and explore local spots including Hadimba Temple, Jogini Waterfall hike, Mall Road, and Old Manali cafes."
+        },
+        {
+          "day": 3,
+          "title": "Manali to Sissu & Solang Valley (via Atal Tunnel)",
+          "details": "Drive through the world-famous Atal Tunnel to Sissu in Lahaul Valley. Enjoy snowy vistas and head to Solang Valley for adventure activities."
+        },
+        {
+          "day": 4,
+          "title": "Kullu Valley Exploration & Adventure Sports",
+          "details": "Head towards Kullu Valley for thrilling white-water rafting, paragliding, and visiting local handloom factories."
+        },
+        {
+          "day": 5,
+          "title": "Kasol & Manikaran Sahib Exploration → Overnight Departure",
+          "details": "Drive to Kasol, visit the famous Manikaran Sahib Gurudwara & Hot Springs, explore Kasol Market/cafes, and board the overnight Volvo back to Delhi."
+        },
+        {
+          "day": 6,
+          "title": "Arrival in Delhi",
+          "details": "Reach Delhi in the morning with unforgettable Himalayan memories."
+        }
+      ],
+      "inclusions": [
+        "Delhi to Delhi AC Volvo Transfers",
+        "Accommodation on Twin/Triple Sharing Basis in Handpicked Scenic Stays",
+        "Daily Breakfast & Dinner at Stays",
+        "Local Transfers & Sightseeing in Private Vehicle / Tempo Traveller",
+        "Visit to Atal Tunnel, Sissu, Solang Valley, Kullu & Kasol",
+        "Experienced Trip Captain / Tour Guide"
+      ],
+      "exclusions": [
+        "Lunch Meals & Personal Cafe Expenses",
+        "Adventure Activities (River Rafting, Paragliding, Zip-lining)",
+        "5% GST & Travel Insurance",
+        "Any Personal Expenses, Shopping, or Tips",
+        "Costs arising from Unforeseen Weather or Roadblocks"
+      ],
+      "package_options": [
+        {
+          "price": "₹6,999",
+          "title": "Quad Sharing"
+        },
+        {
+          "price": "₹7,999",
+          "title": "Triple Sharing"
+        },
+        {
+          "price": "₹9,499",
+          "title": "Double Sharing"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785656463114",
+              "price": "6,999",
+              "range": "7th August",
+              "status": "Sold Out",
+              "startDate": "2026-08-07"
+            },
+            {
+              "id": "b_1785656471479",
+              "price": "6,999",
+              "range": "14th August",
+              "status": "Filling Fast",
+              "startDate": "2026-08-14"
+            },
+            {
+              "id": "b_1785656479729",
+              "price": "6,999",
+              "range": "21th August",
+              "status": "Filling Fast",
+              "startDate": "2026-08-21"
+            },
+            {
+              "id": "b_1785656484479",
+              "price": "6,999",
+              "range": "28th August",
+              "status": "Available",
+              "startDate": "2026-08-28"
+            }
+          ],
+          "month": "August 2026"
+        },
+        {
+          "dates": [
+            {
+              "id": "b_1785656493131",
+              "price": "6,999",
+              "range": "4th September",
+              "status": "Available",
+              "startDate": "2026-09-04"
+            },
+            {
+              "id": "b_1785656495262",
+              "price": "6,999",
+              "range": "11th September",
+              "status": "Available",
+              "startDate": "2026-09-11"
+            },
+            {
+              "id": "b_1785656514800",
+              "price": "6,999",
+              "range": "25th September",
+              "status": "Filling Fast",
+              "startDate": "2026-09-25"
+            },
+            {
+              "id": "b_1785656525545",
+              "price": "6,999",
+              "range": "18th September",
+              "status": "Available",
+              "startDate": "2026-09-18"
+            }
+          ],
+          "month": "September 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "Overnight AC Volvo transfers between Delhi & Manali/Kasol, plus private local vehicles for all sightseeing.",
+          "question": "WHAT IS INCLUDED IN THE TRANSPORTATION?"
+        },
+        {
+          "answer": "No, activities like rafting and paragliding are optional third-party services and payable directly at the activity site.",
+          "question": "ARE ADVENTURE ACTIVITIES IN KULLU & SOLANG INCLUDED?"
+        },
+        {
+          "answer": "Absolutely! Most of our travelers are solo or small group travelers looking for a community experience.",
+          "question": "CAN SOLO TRAVELERS JOIN THIS TRIP?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Aniket Sharma",
+          "text": "Incredible 6-day trip! The visit to Sissu through Atal Tunnel and the vibes in Kasol were unmatched for ₹6,999.",
+          "avatar": "assets/images/reviews/pfp-aniket.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Riya Kapoor",
+          "text": "Super well-organized trip by Awara Banjara. Stays were clean, food was good, and the trip captain kept the energy high throughout!",
+          "avatar": "assets/images/reviews/pfp-riya.jpg",
+          "location": "Chandigarh"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 100,
+      "title": "Zanskar Moto-Passage: The Monolith Circuit",
+      "duration": "6 Days / 5 Nights",
+      "price": "₹16,499",
+      "image_url": "assets/images/trips/trip_100_image_url.jpg",
+      "link": "trips/ladakh-tours-zanskar-moto-passage-the-monolith-circuit-100.html",
+      "created_at": "2026-08-01T10:33:21.680299+00:00",
+      "category": "ladakh_tours",
+      "route": "Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa",
+      "tags": "High Altitude, Zanskar, Monasteries, Valleys, Motorcycling, Expedition",
+      "bento_img_1": "assets/images/trips/trip_100_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_100_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_100_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_100_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_100_bento_img_5.jpg",
+      "about_text": "Embark on an exhilarating high-altitude adventure into the heart of the raw and mystical Zanskar Valley. Starting from Manali, this 4-day motorcycle expedition takes you through the world-famous Atal Tunnel, across the towering Shinku La Pass (16,580 ft), and deep into one of the most remote corners of the Himalayas.\n\nOn this journey, you'll ride past the legendary monolith peak of Gonbo Rangjon—revered as the sacred mountain of Zanskar—and trek to the breathtaking cliffside Phuktal Monastery, built directly into a massive natural cave. Designed for thrill-seekers and culture enthusiasts alike, this route blends rugged mountain passes, serene Himalayan valleys, and rich Tibetan Buddhist heritage into an unforgettable motorcycling circuit.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Overnight Journey from Delhi to Manali",
+          "details": "Board the evening Volvo / private transport from Delhi and travel overnight to Manali."
+        },
+        {
+          "day": 2,
+          "title": "Arrival in Manali to Sissu & Jispa",
+          "details": "Arrive in Manali, collect bikes, and ride through the Atal Tunnel into Lahaul Valley via Sissu to Jispa."
+        },
+        {
+          "day": 3,
+          "title": "Jispa to Gonbo Rangjon via Shinku La Pass",
+          "details": "Conquer Shinku La Pass (16,580 ft) entring Zanskar and camp near the sacred monolith peak of Gonbo Rangjon."
+        },
+        {
+          "day": 4,
+          "title": "Gonbo Rangjon to Phuktal Monastery & Back to Jispa",
+          "details": "Ride toward Purne, trek to the cliffside Phuktal Cave Monastery, and return over Shinku La Pass to Jispa."
+        },
+        {
+          "day": 5,
+          "title": "Jispa to Manali & Overnight Travel to Delhi",
+          "details": "Ride back through Lahaul Valley and Atal Tunnel to Manali; board the evening Volvo back to Delhi."
+        },
+        {
+          "day": 6,
+          "title": "Arrival in Delhi",
+          "details": "Arrive back in Delhi early morning with unforgettable Himalayan memories."
+        }
+      ],
+      "inclusions": [
+        "Volvo / Transit Transport between Delhi and Manali",
+        "Royal Enfield Himalayan / Expedition Bike (Manali to Manali)",
+        "Accommodation on twin/triple sharing in Guesthouses/Camps",
+        "Daily Breakfast & Dinner",
+        "Inner Line Permits & Environmental Fees",
+        "Experienced Road Captain & Technical Support Crew",
+        "Support Vehicle with First Aid & Emergency Oxygen Cylinder"
+      ],
+      "exclusions": [
+        "Fuel for motorcycles",
+        "Meals during Delhi-Manali transit & lunches on all days",
+        "Personal travel & medical insurance",
+        "Refundable security deposit for rental bike",
+        "Anything not mentioned in inclusions"
+      ],
+      "package_options": [
+        {
+          "price": "₹16,499",
+          "title": "Dual Rider"
+        },
+        {
+          "price": "₹19,499",
+          "title": "Solo Rider"
+        }
+      ],
+      "sub_package_options": "Himalayan 411, Himalayan 450",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785580249696",
+              "price": "16,499",
+              "range": "7th August",
+              "status": "Sold Out",
+              "startDate": "2026-08-07"
+            },
+            {
+              "id": "b_1785580255593",
+              "price": "16,499",
+              "range": "14th August",
+              "status": "Filling Fast",
+              "startDate": "2026-08-14"
+            },
+            {
+              "id": "b_1785580262610",
+              "price": "16,499",
+              "range": "21th August",
+              "status": "Sold Out",
+              "startDate": "2026-08-21"
+            },
+            {
+              "id": "b_1785580266778",
+              "price": "16,499",
+              "range": "28th August",
+              "status": "Sold Out",
+              "startDate": "2026-08-28"
+            }
+          ],
+          "month": "August 2026"
+        },
+        {
+          "dates": [
+            {
+              "id": "b_1785580275893",
+              "price": "16,499",
+              "range": "4th September",
+              "status": "Available",
+              "startDate": "2026-09-04"
+            },
+            {
+              "id": "b_1785580280959",
+              "price": "16,499",
+              "range": "11th September",
+              "status": "Filling Fast",
+              "startDate": "2026-09-11"
+            },
+            {
+              "id": "b_1785580284810",
+              "price": "16,499",
+              "range": "18th September",
+              "status": "Filling Fast",
+              "startDate": "2026-09-18"
+            },
+            {
+              "id": "b_1785580290843",
+              "price": "16,499",
+              "range": "25th September",
+              "status": "Sold Out",
+              "startDate": "2026-09-25"
+            }
+          ],
+          "month": "September 2026"
+        },
+        {
+          "dates": [
+            {
+              "id": "b_1785580315295",
+              "price": "16,499",
+              "range": "2th October",
+              "status": "Available",
+              "startDate": "2026-10-02"
+            },
+            {
+              "id": "b_1785580320509",
+              "price": "16,499",
+              "range": "9th October",
+              "status": "Filling Fast",
+              "startDate": "2026-10-09"
+            },
+            {
+              "id": "b_1785580326910",
+              "price": "16,499",
+              "range": "16th October",
+              "status": "Available",
+              "startDate": "2026-10-16"
+            },
+            {
+              "id": "b_1785580333476",
+              "price": "16,499",
+              "range": "23th October",
+              "status": "Sold Out",
+              "startDate": "2026-10-23"
+            },
+            {
+              "id": "b_1785580339393",
+              "price": "16,499",
+              "range": "30th October",
+              "status": "Available",
+              "startDate": "2026-10-30"
+            }
+          ],
+          "month": "October 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "June to September is the best window as Shinku La Pass is open and weather conditions are favorable for riding.",
+          "question": "WHAT IS THE BEST TIME FOR THIS TRIP?"
+        },
+        {
+          "answer": "Basic to intermediate riding experience is recommended, as the route includes off-road terrain, gravel, and high-altitude mountain passes.",
+          "question": "DO I NEED PRIOR OFF-ROAD RIDING EXPERIENCE?"
+        },
+        {
+          "answer": "Yes, our backup vehicle carries emergency oxygen cylinders, a first-aid medical kit, and a trained road crew.",
+          "question": "IS OXYGEN/MEDICAL SUPPORT AVAILABLE?"
+        },
+        {
+          "answer": "The initial drive and stay in Jispa help you acclimatize before crossing Shinku La Pass (16,580 ft) into Zanskar.",
+          "question": "WHAT IS THE ACCLIMATIZATION REQUIREMENT?"
+        },
+        {
+          "answer": "Yes, all inner line permits, environmental fees, and wildlife passes are arranged and included by the team.",
+          "question": "ARE INNER LINE PERMITS INCLUDED?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rohit Verma",
+          "text": "Absolutely surreal experience riding through Shinku La to Gonbo Rangjon! The team managed oxygen, backup, and stays seamlessly.",
+          "avatar": "assets/images/reviews/pfp-rohit.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Ananya Sharma",
+          "text": "The trek to Phuktal Monastery was the highlight of my year. Super well-organized 6-day circuit from Delhi and back.",
+          "avatar": "assets/images/reviews/pfp-ananya.jpg",
+          "location": "Chandigarh"
+        },
+        {
+          "name": "Vikramaditya Singh",
+          "text": "Flawless execution by Awara Banjara! The Himalayan bikes were in top condition and the road captain knew every corner of Zanskar.",
+          "avatar": "assets/images/reviews/pfp-vikram.jpg",
+          "location": "Jaipur"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 110,
+      "title": "Dev Roopa Trek: Path of the Gods Expedition",
+      "duration": "8 Days / 7 Nights",
+      "price": "₹15,499",
+      "image_url": "assets/images/trips/trip_110_image_url.png",
+      "link": "trips/himachal-tours-dev-roopa-trek-path-of-the-gods-expedition-110.html",
+      "created_at": "2026-08-02T08:03:19.073626+00:00",
+      "category": "himachal_tours",
+      "route": "Delhi — Manali — Malana Dam — Behali — Mota Grahan — Dev Roopa — Bhuntar — Delhi",
+      "tags": "Dev Roopa, Parvati Valley, High Altitude Trek, Offbeat Trek, Himalayan Treks, Group Trek",
+      "bento_img_1": "assets/images/trips/trip_110_bento_img_1.png",
+      "bento_img_2": "assets/images/trips/trip_110_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_110_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_110_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_110_bento_img_5.jpg",
+      "about_text": "Awara Banjara brings you the sacred \"Path of the Gods: Dev Roopa Expedition\"—an 8-day high-altitude trekking experience in the heart of Himachal Pradesh. Starting from Delhi to Manali, trek through Malana Dam, Behali, and Mota Grahan before reaching the pristine, sacred alpine meadow of Dev Roopa. Enjoy expert guidance, camp under the stars, and experience an exclusive community vibe with top-tier safety standards.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Overnight Journey from Delhi to Manali",
+          "details": "Board the AC Volvo bus from Delhi for an overnight journey to Manali."
+        },
+        {
+          "day": 2,
+          "title": "Arrival in Manali, Registration & Acclimatization Walk",
+          "details": "Arrive in Manali, check-in to your stay, register for the trek, and go on a short acclimatization walk."
+        },
+        {
+          "day": 3,
+          "title": "Manali → Malana Dam → Behali Campsite (Trek Begins)",
+          "details": "Drive from Manali to Malana Dam and begin the trek towards Behali campsite."
+        },
+        {
+          "day": 4,
+          "title": "Trek from Behali to Mota Grahan",
+          "details": "Trek through scenic trails and pine forests to reach the riverbed campsite at Mota Grahan."
+        },
+        {
+          "day": 5,
+          "title": "Mota Grahan → Dev Roopa → Mota Grahan (Summit Day)",
+          "details": "Trek to the sacred alpine plateau of Dev Roopa. Explore the expansive grasslands and descend back to Mota Grahan."
+        },
+        {
+          "day": 6,
+          "title": "Mota Grahan → Behali",
+          "details": "Descend back through the valley from Mota Grahan to Behali campsite."
+        },
+        {
+          "day": 7,
+          "title": "Final Descent to Roadhead → Drive to Bhuntar → Overnight Volvo to Delhi",
+          "details": "Final trek down to the roadhead, drive to Bhuntar, and board the overnight Volvo back to Delhi."
+        },
+        {
+          "day": 8,
+          "title": "Arrival in Delhi",
+          "details": "Reach Delhi in the morning with unforgettable memories of the Dev Roopa Expedition."
+        }
+      ],
+      "inclusions": [
+        "Delhi to Manali & Bhuntar to Delhi AC Volvo Transfers",
+        "Accommodation in Handpicked Stays & High-Altitude Dome Tents",
+        "All Meals during Trekking Days (Breakfast, Lunch, Dinner)",
+        "Certified Trek Leaders, Support Staff & Porters",
+        "Forest Permits & Environmental Fees",
+        "First Aid Kit & Emergency Oxygen Support"
+      ],
+      "exclusions": [
+        "Personal Backpack Offloading Charges",
+        "5% GST & Travel Insurance",
+        "Personal Expenses, Tips, Shopping & Meals during Transit",
+        "Any extra expense caused by unforeseen weather conditions or landslides"
+      ],
+      "package_options": [
+        {
+          "price": "₹15,499",
+          "title": "Trek Package"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785657294954",
+              "price": "15,499",
+              "range": "7th August",
+              "status": "Available",
+              "startDate": "2026-08-07"
+            },
+            {
+              "id": "b_1785657299519",
+              "price": "15,499",
+              "range": "14th August",
+              "status": "Available",
+              "startDate": "2026-08-14"
+            },
+            {
+              "id": "b_1785657302818",
+              "price": "15,499",
+              "range": "21th August",
+              "status": "Available",
+              "startDate": "2026-08-21"
+            },
+            {
+              "id": "b_1785657305619",
+              "price": "15,499",
+              "range": "28th August",
+              "status": "Available",
+              "startDate": "2026-08-28"
+            }
+          ],
+          "month": "August 2026"
+        },
+        {
+          "dates": [
+            {
+              "id": "b_1785657317853",
+              "price": "15,499",
+              "range": "4th September",
+              "status": "Available",
+              "startDate": "2026-09-04"
+            },
+            {
+              "id": "b_1785657320068",
+              "price": "15,499",
+              "range": "11th September",
+              "status": "Available",
+              "startDate": "2026-09-11"
+            },
+            {
+              "id": "b_1785657322751",
+              "price": "15,499",
+              "range": "18th September",
+              "status": "Available",
+              "startDate": "2026-09-18"
+            },
+            {
+              "id": "b_1785657325018",
+              "price": "15,499",
+              "range": "25th September",
+              "status": "Available",
+              "startDate": "2026-09-25"
+            }
+          ],
+          "month": "September 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "",
+          "question": "Delhi to Manali & Bhuntar to Delhi AC Volvo Transfers"
+        },
+        {
+          "answer": "",
+          "question": "Accommodation in Handpicked Stays & High-Altitude Dome Tents"
+        },
+        {
+          "answer": "",
+          "question": "All Meals during Trekking Days (Breakfast, Lunch, Dinner)"
+        },
+        {
+          "answer": "",
+          "question": "Certified Trek Leaders, Support Staff & Porters"
+        },
+        {
+          "answer": "",
+          "question": "Forest Permits & Environmental Fees"
+        },
+        {
+          "answer": "",
+          "question": "First Aid Kit & Emergency Oxygen Support"
+        }
+      ],
+      "reviews": [],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 117,
+      "title": "Ladakh: High Passes & Blue Waters Expedition",
+      "duration": "6 Days / 5 Nights",
+      "price": "₹17,600",
+      "image_url": "assets/images/trips/trip_117_image_url.jpg",
+      "link": "trips/ladakh-tours-ladakh-high-passes-blue-waters-expedition-117.html",
+      "created_at": "2026-08-04T11:07:11.287705+00:00",
+      "category": "ladakh_tours",
+      "route": "Leh — Khardung La — Nubra Valley (Hunder & Turtuk) — Shyok River — Pangong Tso — Chang La — Leh",
+      "tags": "Group Tour, High Altitude, Ladakh, Pangong Lake, Khardung La, Himalayan Expedition",
+      "bento_img_1": "assets/images/trips/trip_117_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_117_bento_img_2.avif",
+      "bento_img_3": "assets/images/trips/trip_117_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_117_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_117_bento_img_5.jpg",
+      "about_text": "Experience the magical landscape of Ladakh across 6 days and 5 nights. Journey through the highest motorable passes like Khardung La and Chang La, explore the cold desert of Nubra Valley and Hunder, visit the last northern village of Turtuk, and marvel at the changing blues of Pangong Tso via the scenic Shyok River route. Complete with visits to Diskit Monastery, Leh Palace, Shanti Stupa, and Leh Market.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Leh & Local Exploration",
+          "details": "Arrive in Leh and rest for acclimitization. Later, explore Leh Palace, Shanti Stupa, and the vibrant Leh Market."
+        },
+        {
+          "day": 2,
+          "title": "Leh to Nubra Valley via Khardung La Pass",
+          "details": "Drive over the world-famous Khardung La Pass into Nubra Valley. Visit Diskit Monastery and experience the sand dunes of Hunder."
+        },
+        {
+          "day": 3,
+          "title": "Excursion to Turtuk Village",
+          "details": "Take a day trip to Turtuk, one of the northernmost villages in India near the Line of Control, known for its apricot orchards and rich Baltic culture."
+        },
+        {
+          "day": 4,
+          "title": "Nubra Valley to Pangong Tso via Shyok River Route",
+          "details": "Drive along the scenic Shyok River route to the famous high-altitude Pangong Tso Lake. Overnight stay at the lake campsite."
+        },
+        {
+          "day": 5,
+          "title": "Pangong Tso to Leh via Chang La Pass",
+          "details": "Witness the stunning sunrise over Pangong Tso, then drive back to Leh crossing the high-altitude Chang La Pass."
+        },
+        {
+          "day": 6,
+          "title": "Airport Departure",
+          "details": "Transfer to Leh airport for your onward journey home with unforgettable Himalayan memories."
+        }
+      ],
+      "inclusions": [
+        "Accommodation for 5 Nights (Hotels/Campsites on sharing basis)",
+        "Breakfast and Dinner at all stay locations",
+        "Non-AC SUV / Tempo Traveler for all transfers and sightseeing",
+        "Inner Line Permits and Wildlife / Red Cross fees for Ladakh",
+        "Driver allowances, toll taxes, fuel, and parking charges",
+        "First Aid Kit & Oxygen Cylinder Support during high-pass travel"
+      ],
+      "exclusions": [
+        "Airfare or Train tickets to/from Leh",
+        "Lunch on all days and personal snacks/beverages",
+        "Camel ride in Hunder sand dunes or ATV ride charges",
+        "Entry fees to monasteries, palaces, and monuments",
+        "Personal expenses such as laundry, phone calls, tips",
+        "Travel or Health Insurance",
+        "Expenses caused by sudden weather changes, landslides, or road closures"
+      ],
+      "package_options": [
+        {
+          "price": "₹17,499",
+          "title": "Group Tour(Min. 6 Pax)"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785840903041",
+              "price": "17,600",
+              "range": "14th August",
+              "status": "Available",
+              "startDate": "2026-08-14"
+            },
+            {
+              "id": "b_1785840908922",
+              "price": "17,600",
+              "range": "21th August",
+              "status": "Available",
+              "startDate": "2026-08-21"
+            },
+            {
+              "id": "b_1785840912404",
+              "price": "17,600",
+              "range": "28th August",
+              "status": "Available",
+              "startDate": "2026-08-28"
+            }
+          ],
+          "month": "August 2026"
+        },
+        {
+          "dates": [
+            {
+              "id": "b_1785840952988",
+              "price": "17,600",
+              "range": "4th September",
+              "status": "Available",
+              "startDate": "2026-09-04"
+            },
+            {
+              "id": "b_1785840956437",
+              "price": "17,600",
+              "range": "11th September",
+              "status": "Available",
+              "startDate": "2026-09-11"
+            },
+            {
+              "id": "b_1785840958805",
+              "price": "17,600",
+              "range": "18th September",
+              "status": "Available",
+              "startDate": "2026-09-18"
+            },
+            {
+              "id": "b_1785840961155",
+              "price": "17,600",
+              "range": "25th September",
+              "status": "Available",
+              "startDate": "2026-09-25"
+            },
+            {
+              "id": "b_1785840966005",
+              "price": "17,600",
+              "range": "25th September",
+              "status": "Available",
+              "startDate": "2026-09-25"
+            }
+          ],
+          "month": "September 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "Yes, taking complete rest on Day 1 is crucial to prevent altitude sickness (AMS).",
+          "question": "IS ACCLIMATIZATION NECESSARY IN LEH?"
+        },
+        {
+          "answer": "Inner Line Permits (ILP) are required and will be arranged by Awara Banjara.",
+          "question": "WHAT PERMITS ARE REQUIRED FOR TURTUK & PANGONG?"
+        },
+        {
+          "answer": "Postpaid BSNL, Airtel, and Jio work in Leh, but network is very limited in Nubra and Pangong.",
+          "question": "IS MOBILE NETWORK AVAILABLE IN NUBRA & PANGONG?"
+        },
+        {
+          "answer": "May to September offers clear roads, pleasant weather, and accessible passes.",
+          "question": "WHAT IS THE BEST TIME TO VISIT LADAKH?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Siddharth Joshi",
+          "text": "Unbelievable Ladakh trip! The Shyok river drive and night stay at Pangong Tso were surreal.",
+          "avatar": "assets/images/reviews/pfp-rohit.jpg",
+          "location": "Mumbai"
+        },
+        {
+          "name": "Sneha Kapoor",
+          "text": "Very well managed by Awara Banjara team. Proper guidance on acclimatization made the journey comfortable.",
+          "avatar": "assets/images/reviews/pfp-rohit.jpg",
+          "location": "Delhi"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 116,
+      "title": "Spiti Circuit & Chandratal Lake Moto-Expedition",
+      "duration": "10 Days / 9 Nights",
+      "price": "₹22,499",
+      "image_url": "assets/images/trips/trip_116_image_url.jpg",
+      "link": "trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116.html",
+      "created_at": "2026-08-04T07:31:43.331308+00:00",
+      "category": "spiti_tours",
+      "route": "Delhi — Manali — Jibhi — Sangla — Kalpa — Kaza — Chandratal — Manali — Delhi",
+      "tags": "Group Tour, Motorbike Expedition, High Altitude, Spiti Circuit, Road Trip, Volvo Package",
+      "bento_img_1": "assets/images/trips/trip_116_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_116_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_116_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_116_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_116_bento_img_5.jpg",
+      "about_text": "",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Delhi to Manali (Volvo Transfer)",
+          "details": "Board an overnight Volvo bus from Delhi to Manali. Settle in for a comfortable journey towards the mountains."
+        },
+        {
+          "day": 2,
+          "title": "Manali to Jibhi",
+          "details": "Arrive in Manali, collect and test-ride bikes for riders, and transfer to Jibhi/Gushaini. Check in, explore the valley, dinner, and overnight stay."
+        },
+        {
+          "day": 3,
+          "title": "Jibhi Local Exploration",
+          "details": "Enjoy a relaxed morning exploring Jibhi's waterfalls and local cafes before preparing for the high-altitude leg ahead."
+        },
+        {
+          "day": 4,
+          "title": "Jibhi to Sangla Valley",
+          "details": "Drive 8 hours via Rampur to Sangla Valley. Visit Chitkul, the last inhabited village of India near the Indo-China border."
+        },
+        {
+          "day": 5,
+          "title": "Sangla Valley to Kalpa",
+          "details": "Ride 4-5 hours to Kalpa. Visit the famous Suicide Point, witness the breathtaking sunset over the Kinner Kailash range, and stay overnight."
+        },
+        {
+          "day": 6,
+          "title": "Kalpa to Kaza (Spiti Valley)",
+          "details": "Drive along the Hindustan-Tibet Highway. See Khab confluence, Reo Purgyil view, Malling Nallah, and the 500-year-old mummy at Gue. Overnight in Kaza."
+        },
+        {
+          "day": 7,
+          "title": "Kaza High Altitude Villages Exploration",
+          "details": "Visit the world's highest post office at Hikkim, highest motorable village at Komic, and Langza Buddha statue under Chau Chau Kang Nelda peak."
+        },
+        {
+          "day": 8,
+          "title": "Kaza to Chandratal Lake",
+          "details": "Drive via Key Monastery, Kibber village, Chicham Bridge, and Kunzum Pass. Trek the last 1 km to the crescent-shaped Chandratal Lake. Overnight at campsite."
+        },
+        {
+          "day": 9,
+          "title": "Chandratal to Manali",
+          "details": "Ride 7-8 hours from Chandratal to Manali passing Batal, Chattru, and through the iconic Atal Tunnel. Overnight in Manali."
+        },
+        {
+          "day": 10,
+          "title": "Manali to Delhi Departure",
+          "details": "Self-exploration in Manali during the day. Board the overnight Volvo bus back to Delhi in the evening."
+        }
+      ],
+      "inclusions": [
+        "Delhi to Manali & Manali to Delhi Volvo Bus Tickets",
+        "Accommodation for 9 Nights (Hotels & Campsite on sharing basis)",
+        "Breakfast and Dinner at all stay locations",
+        "Royal Enfield Bike with Fuel / SUV Transfer (as per chosen package)",
+        "Experienced Trip Captain & Support Staff / Mechanic",
+        "Permits and Inner Line Clearance for Spiti Region",
+        "First Aid Kit & Oxygen Cylinder Support"
+      ],
+      "exclusions": [
+        "Airfare or Train tickets to/from Delhi",
+        "Lunch on all days and Nako stopover meal",
+        "Personal expenses, laundry, snacks, and extra beverages",
+        "Riding gear rental (helmets, jackets, knee guards, etc.)",
+        "Monastery entry fees or monument charges",
+        "Travel or Health Insurance",
+        "Expenses incurred due to unexpected weather, landslides, or road closures"
+      ],
+      "package_options": [
+        {
+          "price": "₹22,499",
+          "title": "Dual Rider"
+        },
+        {
+          "price": "₹28,499",
+          "title": "Solo Rider"
+        }
+      ],
+      "sub_package_options": "Himalayan 411, Himalayan 450",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785828114832",
+              "price": "22,499",
+              "range": "14th August",
+              "status": "Available",
+              "startDate": "2026-08-14"
+            },
+            {
+              "id": "b_1785828121779",
+              "price": "22,499",
+              "range": "21th August",
+              "status": "Available",
+              "startDate": "2026-08-21"
+            },
+            {
+              "id": "b_1785828125094",
+              "price": "22,499",
+              "range": "28th August",
+              "status": "Available",
+              "startDate": "2026-08-28"
+            }
+          ],
+          "month": "August 2026"
+        },
+        {
+          "dates": [
+            {
+              "id": "b_1785828134544",
+              "price": "22,499",
+              "range": "4th September",
+              "status": "Available",
+              "startDate": "2026-09-04"
+            },
+            {
+              "id": "b_1785828137810",
+              "price": "22,499",
+              "range": "11th September",
+              "status": "Available",
+              "startDate": "2026-09-11"
+            },
+            {
+              "id": "b_1785828140244",
+              "price": "22,499",
+              "range": "18th September",
+              "status": "Available",
+              "startDate": "2026-09-18"
+            },
+            {
+              "id": "b_1785828143260",
+              "price": "22,499",
+              "range": "25th September",
+              "status": "Available",
+              "startDate": "2026-09-25"
+            }
+          ],
+          "month": "September 2026"
+        },
+        {
+          "dates": [
+            {
+              "id": "b_1785828153494",
+              "price": "22,499",
+              "range": "2th October",
+              "status": "Available",
+              "startDate": "2026-10-02"
+            },
+            {
+              "id": "b_1785828155794",
+              "price": "22,499",
+              "range": "9th October",
+              "status": "Available",
+              "startDate": "2026-10-09"
+            },
+            {
+              "id": "b_1785828160143",
+              "price": "22,499",
+              "range": "16th October",
+              "status": "Available",
+              "startDate": "2026-10-16"
+            },
+            {
+              "id": "b_1785828162727",
+              "price": "22,499",
+              "range": "23th October",
+              "status": "Available",
+              "startDate": "2026-10-23"
+            },
+            {
+              "id": "b_1785828165927",
+              "price": "22,499",
+              "range": "30th October",
+              "status": "Available",
+              "startDate": "2026-10-30"
+            }
+          ],
+          "month": "October 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "June to September is ideal for the full circuit including Chandratal and Kunzum Pass.",
+          "question": "WHAT IS THE BEST TIME TO VISIT SPITI?"
+        },
+        {
+          "answer": "Network is limited beyond Kalpa; BSNL works best, Airtel/Jio have intermittent coverage in Kaza.",
+          "question": "IS MOBILE NETWORK AVAILABLE IN SPITI?"
+        },
+        {
+          "answer": "Prior riding experience on hilly terrains is strongly recommended due to dirt tracks and water crossings.",
+          "question": "CAN BEGINNER RIDERS JOIN THIS TRIP?"
+        },
+        {
+          "answer": "Heavy woolens, thermals, windproof jackets, and waterproof boots as night temperatures drop drastically.",
+          "question": "WHAT CLOTHING SHOULD I PACK?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Aman Sharma",
+          "text": "The full circuit trip was unbelievable! Crossing Kunzum Pass and camping at Chandratal were unforgettable highlights.",
+          "avatar": "assets/images/reviews/pfp-rohit.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Priya Rajput",
+          "text": "Amazingly managed group trip. The trip captain kept us safe and energetic throughout the high altitudes!",
+          "avatar": "assets/images/reviews/pfp-rohit.jpg",
+          "location": "Jaipur"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 118,
+      "title": "Buran Ghati: Where The Trail Ends",
+      "duration": "7 Days / 6 Nights",
+      "price": "On Request",
+      "image_url": "assets/images/trips/trip_118_image_url.jpg",
+      "link": "trips/himachal-tours-buran-ghati-where-the-trail-ends-118.html",
+      "created_at": "2026-08-05T05:30:06.030748+00:00",
+      "category": "himachal_tours",
+      "route": "Shimla — Janglik — Dayara Thachh — Litham — Chandernahan — Dhunda — Buran Pass — Barua — Shimla",
+      "tags": "Himalayan Trek, High Altitude, Pass Crossing, Snow Rappelling, Shimla, Kinnaur, Adventure",
+      "bento_img_1": "assets/images/trips/trip_118_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_118_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_118_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_118_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_118_bento_img_5.jpg",
+      "about_text": "Buran Ghati is the boundary where Shimla’s lush soul meets Kinnaur’s rugged spirit. Known as the \"Untouched Frontier,\" this 7-day high-altitude trek takes you from the historic wooden homes of Janglik to the vast Dayara Meadows, sacred Chandernahan glacial lakes, and base camp at Dhunda. Experience the thrilling technical descent down vertical snow walls using ropes before concluding in the fairytale village of Barua.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Drive from Shimla to Janglik",
+          "details": "Drive through Pabbar Valley and apple orchards to Janglik village. Stay in a traditional wooden homestay and explore local village life."
+        },
+        {
+          "day": 2,
+          "title": "Trek from Janglik to Dayara Thachh",
+          "details": "Ascend through dense oak and pine forests until the trees give way to the expansive golden-green Dayara Thachh meadows. Camp under the stars."
+        },
+        {
+          "day": 3,
+          "title": "Trek from Dayara to Litham Campsite",
+          "details": "Walk across undulating grasslands and small stream crossings to Litham. Enjoy dramatic views of the Pabbar River confluence and glacier."
+        },
+        {
+          "day": 4,
+          "title": "Acclimatization Excursion to Chandernahan Lakes",
+          "details": "Steep ascent to the sacred Chandernahan glacial lakes. Reach the Fifth Lake for acclimatization and return to Litham campsite."
+        },
+        {
+          "day": 5,
+          "title": "Trek from Litham to Dhunda Base Camp",
+          "details": "Ascend into the rugged alpine landscape of Dhunda at the base of Buran Pass. Receive safety briefings on snow-wall navigation."
+        },
+        {
+          "day": 6,
+          "title": "Cross Buran Pass (15,000 ft) & Descend to Barua",
+          "details": "Tackle the summit push and rappel down the vertical snow wall on the Kinnaur side. Descend into Barua village through orchards."
+        },
+        {
+          "day": 7,
+          "title": "Drive from Barua back to Shimla",
+          "details": "Enjoy a final breakfast in Barua before driving back through the mountains to Shimla, arriving by late evening."
+        }
+      ],
+      "inclusions": [
+        "Round-trip transport from Shimla to Janglik and Barua back to Shimla",
+        "Accommodation in traditional homestay (Day 1) and alpine tents (Days 2-6)",
+        "All vegetarian meals (Breakfast, Lunch, Dinner) prepared fresh on the trail",
+        "Morning/Evening tea with mountain snacks at campsites",
+        "Certified Local Trek Leader, experienced guides, and kitchen support staff",
+        "High-quality camping gear: weatherproof tents, sleeping bags, and mattresses",
+        "Himachal Pradesh Forest Department entry fees and trekking permits",
+        "Safety gear including technical ropes, harnesses, first-aid kit, oximeter, and emergency oxygen cylinder",
+        "Guided walk and cultural tour in Janglik village"
+      ],
+      "exclusions": [
+        "Travel Insurance covering high-altitude trekking and medical evacuation",
+        "Backpack offloading charges (₹400 per bag/day, max 10kg)",
+        "Transit meals during the drive on Day 1 and Day 7",
+        "Personal trekking gear (hiking shoes, poles, jackets, headlamps)",
+        "Tips for guides, porters, and support staff",
+        "Emergency evacuation expenses or charges arising from unexpected road closures and weather delays",
+        "Hotel stay in Shimla before Day 1 or after Day 7"
+      ],
+      "package_options": [
+        {
+          "price": "₹13,999",
+          "title": "On Request"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [],
+      "faqs": [
+        {
+          "answer": "It is a Moderate to Difficult high-altitude crossover trek reaching 15,000 ft. Previous high-altitude trekking experience is recommended.",
+          "question": "HOW DIFFICULT IS THE BURAN GHATI TREK?"
+        },
+        {
+          "answer": "Summer (May-June) offers dramatic snow walls and rappelling, while Autumn (September-October) offers clear skies and golden meadows.",
+          "question": "WHAT IS THE BEST TIME FOR THIS TREK?"
+        },
+        {
+          "answer": "Network is completely unavailable once you leave Janglik. Plan to disconnect and carry a power bank for cameras.",
+          "question": "IS THERE MOBILE NETWORK ON THE TRAIL?"
+        },
+        {
+          "answer": "On pass day, a near-vertical snow drop on the Kinnaur side requires technical ropes and harnesses managed by our certified guides.",
+          "question": "WHAT IS THE \"SNOW WALL\" RAPPEL?"
+        },
+        {
+          "answer": "Pick-up is at 8:00 AM from Old Bus Stand Shimla on Day 1. It is recommended to reach Shimla on Day 0.",
+          "question": "HOW DO I REACH THE START POINT?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Karan Malhotra",
+          "text": "Rappelling down the snow wall at 15,000 feet was an incredible rush! Awara Banjara's safety team made us feel totally confident.",
+          "avatar": "assets/images/reviews/pfp-rohit.jpg",
+          "location": "Chandigarh"
+        },
+        {
+          "name": "Ananya Sharma",
+          "text": "The meadows at Dayara Thachh and the lakes at Chandernahan were out of this world. Highly recommend this trek!",
+          "avatar": "assets/images/reviews/pfp-rohit.jpg",
+          "location": "Delhi"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 121,
+      "title": "Ladakh Overland: Srinagar to Manali via Umling La & Tso Moriri",
+      "duration": "11 Days / 10 Nights",
+      "price": "On Request",
+      "image_url": "assets/images/trips/trip_121_image_url.jpg",
+      "link": "trips/ladakh-tours-ladakh-overland-srinagar-to-manali-via-umling-la-tso-moriri-121.html",
+      "created_at": "2026-08-05T10:18:46.875073+00:00",
+      "category": "ladakh_tours, bike_tours",
+      "route": "Srinagar — Kargil — Leh — Khardung La — Nubra Valley — Pangong Tso — Hanle — Umling La — Tso Moriri — Sarchu — Manali",
+      "tags": "Motorbike Expedition, High Altitude, Himalayan Circuit, Overland Odyssey, Group Tour",
+      "bento_img_1": "assets/images/trips/trip_121_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_121_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_121_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_121_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_121_bento_img_5.jpg",
+      "about_text": "Cross the high-altitude frontier where ancient trade paths meet the raw, unyielding beauty of the Trans-Himalayas. This 11-day overland traverse takes you from the lush, pine-scented vales of Srinagar across legendary high passes into the cold desert sanctuaries of Ladakh, before dropping down into the pine forests of Manali. \n\nExperience the nomadic quietude of Hanle’s stargazing skies, gaze into the sapphire expanse of Tso Moriri, ride through the stark expanse of the More Plains, and stand at Umling La—the highest motorable road on Earth. Crafted for wanderers seeking true high-altitude immersion, this route blends raw mountain grit with seamless Banjara hospitality.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Srinagar Arrival & Kashmiri Dusk",
+          "details": "Land in the summer capital, settle into your stays along the serene valley, meet your expedition leaders, and enjoy an evening orientation under the mountain twilight."
+        },
+        {
+          "day": 2,
+          "title": "Across the Zoji La to Kargil",
+          "details": "Leave the green meadows of Sonamarg behind and climb the rugged switchbacks of Zoji La (3,528m). Descend through Drass, the gateway to Ladakh, and unwind in historic Kargil."
+        },
+        {
+          "day": 3,
+          "title": "Trans-Himalayan Crossing to Leh",
+          "details": "Traverse Namika La and Fotu La, witness the lunar landscapes of Lamayuru, pay respects at Pathar Sahib Gurudwara, and watch the sacred confluence of the Indus and Zanskar rivers before reaching Leh."
+        },
+        {
+          "day": 4,
+          "title": "High Pass to the Valley of Flowers",
+          "details": "Ascend the iconic Khardung La (5,359m) into the stark expanse of Nubra Valley. Pay homage at Diskit Monastery and watch the dusk settle over the cold desert dunes of Hunder."
+        },
+        {
+          "day": 5,
+          "title": "Along the Shyok to Pangong Tso",
+          "details": "Follow the winding turquoise path of the Shyok River through remote hamlets, breaking out onto the surreal, multi-hued shoreline of Pangong Tso for an lakeside wilderness stay."
+        },
+        {
+          "day": 6,
+          "title": "Frontier Trails to Starlit Hanle",
+          "details": "Journey past the Rezang La War Memorial and cross Loma Bridge into the serene high-altitude plateau of Hanle, home to dark sky reserves and ancient stillness."
+        },
+        {
+          "day": 7,
+          "title": "Summit of the World — Umling La Excursion",
+          "details": "Ride to the roof of the planet over Photi La to reach Umling La (5,640m). Gaze over the desolate Tibetan borderlands and explore Demchok before returning to Hanle."
+        },
+        {
+          "day": 8,
+          "title": "Sacred Waters of Tso Moriri to Leh",
+          "details": "Traverse the wild, high plains to the quiet shores of Kyagar Tso and Tso Moriri. Soak in the solitude of Changthang before tracing the Indus back to Leh."
+        },
+        {
+          "day": 9,
+          "title": "Crossing the Great Plains to Sarchu",
+          "details": "Ride out across Tanglang La (5,328m) and navigate the endless horizon of the More Plains. Descend through the 21 hairpin bends of Gata Loops to camp under the stars in Sarchu."
+        },
+        {
+          "day": 10,
+          "title": "Baralacha La to the Manali Valley",
+          "details": "Conquer Baralacha La (4,850m) past the emerald waters of Suraj Tal. Trace through Jispa, Keylong, and the engineering marvel of the Atal Tunnel into lush Manali."
+        },
+        {
+          "day": 11,
+          "title": "Manali Solitude & Homeward Journey",
+          "details": "Spend a relaxed morning exploring Old Manali’s pine-shaded cafes or sacred springs before boarding your evening Volvo transfer towards Delhi."
+        }
+      ],
+      "inclusions": [
+        "Volvo transfers between Delhi and Manali (for Tempo & SUV sub-packages)",
+        "9 Days Bike Rent with fuel (for Biking packages)",
+        "10 Nights stay in curated boutique stays, wilderness camps, and local homestays",
+        "18 Gourmet Himalayan Meals (Breakfast & Dinner throughout the route)",
+        "Complete riding gear set (Helmets, Riding Jackets, Gloves, and Knee Guards)",
+        "Expedition Captain & Lead Mechanic support throughout",
+        "Backup vehicle with spare tires and essential toolkits",
+        "Inner Line Permits and environmental clearances for restricted zones",
+        "24x7 Emergency Medical Kit and Oxygen Cylinder onboard",
+        "Comprehensive Adventure Medical Insurance (base to base)"
+      ],
+      "exclusions": [
+        "5% GST extra",
+        "Airfare, train tickets, or transit to Srinagar / from Delhi",
+        "Lunches, personal snacks, and beverages along the highway",
+        "Refundable bike security deposit (₹5,000)",
+        "Entry fees for monasteries, monuments, or personal activities (Camel safari, ATV)",
+        "Personal expenses, laundry, tips, or phone bills",
+        "Expenses incurred due to unexpected landslides, roadblocks, or weather delays"
+      ],
+      "package_options": [
+        {
+          "price": "On Request",
+          "title": "Dual Rider"
+        },
+        {
+          "price": "On Request",
+          "title": "Solo Rider"
+        },
+        {
+          "price": "On Request",
+          "title": "Tempo Traveler / SUV Seat"
+        }
+      ],
+      "sub_package_options": "Himalayan 450, Himalayan 411,",
+      "departure_dates": [],
+      "faqs": [
+        {
+          "answer": "June through September offers clear passes, open high-altitude lakes, and optimal riding conditions across the circuit.",
+          "question": "WHAT IS THE BEST TIME FOR THIS OVERLAND EXPEDITION?"
+        },
+        {
+          "answer": "While not mandatory, comfortable riding posture and familiarity with long hours in the saddle are highly recommended due to high passes like Umling La.",
+          "question": "DO I NEED PREVIOUS HIGH ALTITUDE RIDING EXPERIENCE?"
+        },
+        {
+          "answer": "All Inner Line Permits and frontier clearances are processed by our team prior to departure; you only need to carry valid government photo IDs.",
+          "question": "HOW ARE PERMITS HANDLED FOR FRONTIER AREAS LIKE HANLE & UMLING LA?"
+        },
+        {
+          "answer": "Expect comfortable hotel stays in Srinagar, Kargil, and Leh, paired with authentic Changthang homestays in Hanle and weather-proof wilderness camps in Pangong and Sarchu.",
+          "question": "WHAT IS THE ACCOMMODATION STYLE DURING THE EXPEDITION?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Aarav Sharma",
+          "text": "An unforgettable traverse across the highest pass on Earth. Awara Banjara curated the perfect balance of raw adventure and warm mountain stays.",
+          "avatar": "assets/images/reviews/pfp-aarav.jpg",
+          "location": "Chandigarh"
+        },
+        {
+          "name": "Meera Sen",
+          "text": "The Hanle night sky and Tso Moriri solitude were pure magic. Seamless execution and exceptional captain guidance throughout the circuit!",
+          "avatar": "assets/images/reviews/pfp-meera.jpg",
+          "location": "Bengaluru"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 111,
+      "title": "Spiti : The Highland Circuit (Group Trip)",
+      "duration": "7 Days / 6 Nights",
+      "price": "₹12,499",
+      "image_url": "assets/images/trips/trip_111_image_url.jpg",
+      "link": "trips/spiti-tours-spiti-the-highland-circuit-group-trip-111.html",
+      "created_at": "2026-08-02T08:18:57.366181+00:00",
+      "category": "spiti_tours",
+      "route": "Delhi — Manali — Kaza — Langza — Komic — Hikkim — Key Monastery — Chicham Bridge — Kunzum Pass — Chandratal — Manali — Delhi",
+      "tags": "Spiti Valley, Highland Circuit, Shared Ride, Road Trip, Group Tour",
+      "bento_img_1": "assets/images/trips/trip_111_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_111_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_111_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_111_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_111_bento_img_5.jpg",
+      "about_text": "Experience the raw beauty of Spiti Valley with Awara Banjara's Spiti Highland Circuit expedition. Starting with an overnight AC Volvo journey from Delhi to Manali, traverse through high mountain passes, ancient monasteries, and iconic villages including Langza, Komic, and Hikkim. Visit the magnificent Key Monastery, cross Asia's highest bridge at Chicham, and camp near the crescent-shaped Chandratal Lake before returning back via Manali. Designed for adventure lovers seeking an unforgettable Himalayan road trip experience.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Delhi to Manali (Overnight Volvo)",
+          "details": "Board a premium overnight Volvo coach departing from Delhi in the late evening. Relax in executive reclining seats on the overnight highway journey to Manali."
+        },
+        {
+          "day": 2,
+          "title": "Manali Arrival & Local Exploration",
+          "details": "Arrive in Manali, check-in to stay, acclimatize, and explore local cafes and sights around Old Manali and Mall Road."
+        },
+        {
+          "day": 3,
+          "title": "Manali to Kaza",
+          "details": "Drive from Manali across Atal Tunnel / Kunzum Pass into the rugged landscape of Spiti Valley to reach Kaza."
+        },
+        {
+          "day": 4,
+          "title": "Langza, Komic & Hikkim Highland Circuit",
+          "details": "Visit the highest villages: Langza (Fossil Village), Komic (highest motorable village), and Hikkim (world's highest post office), along with iconic Key Monastery and Chicham Bridge."
+        },
+        {
+          "day": 5,
+          "title": "Kaza to Chandratal Lake",
+          "details": "Drive from Kaza over Kunzum Pass to reach the pristine, crescent-shaped Chandratal Lake for an overnight campsite stay under the stars."
+        },
+        {
+          "day": 6,
+          "title": "Chandratal to Delhi Transit (via Manali)",
+          "details": "Drive back from Chandratal to Manali and board the evening overnight Volvo coach towards Delhi."
+        },
+        {
+          "day": 7,
+          "title": "Arrival in Delhi",
+          "details": "Reach Delhi in the morning with lifelong memories of the Highland Circuit."
+        }
+      ],
+      "inclusions": [
+        "Delhi to Manali & Return AC Volvo Bus Tickets",
+        "5 Nights Accommodation (Hotels / Homestays in Kaza & Alpine Camps at Chandratal)",
+        "Daily Breakfast & Dinner at Stays",
+        "Shared Local Vehicle (Tempo Traveller / SUV) for Spiti Circuit Transfers & Sightseeing",
+        "Trip Captain / Experienced Driver for High-Altitude Terrain",
+        "Inner Line Permits / Environmental Fees"
+      ],
+      "exclusions": [
+        "Lunch Meals & Personal Expenses at Cafes",
+        "Personal Shopping, Tips, Portages & Bottled Water",
+        "5% GST & Travel Insurance",
+        "Costs arising from roadblocks, landslides, or extreme weather stay extensions"
+      ],
+      "package_options": [
+        {
+          "price": "₹12,499",
+          "title": "Quad Sharing"
+        },
+        {
+          "price": "₹13,999",
+          "title": "Triple Sharing"
+        },
+        {
+          "price": "₹16,499",
+          "title": "Double Sharing"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785658289763",
+              "price": "12,499",
+              "range": "7th August",
+              "status": "Available",
+              "startDate": "2026-08-07"
+            },
+            {
+              "id": "b_1785658300995",
+              "price": "12,499",
+              "range": "14th August",
+              "status": "Filling Fast",
+              "startDate": "2026-08-14"
+            },
+            {
+              "id": "b_1785658304981",
+              "price": "12,499",
+              "range": "21th August",
+              "status": "Filling Fast",
+              "startDate": "2026-08-21"
+            },
+            {
+              "id": "b_1785658310030",
+              "price": "12,499",
+              "range": "28th August",
+              "status": "Filling Fast",
+              "startDate": "2026-08-28"
+            }
+          ],
+          "month": "August 2026"
+        },
+        {
+          "dates": [
+            {
+              "id": "b_1785658319680",
+              "price": "12,499",
+              "range": "4th September",
+              "status": "Filling Fast",
+              "startDate": "2026-09-04"
+            },
+            {
+              "id": "b_1785658322078",
+              "price": "12,499",
+              "range": "11th September",
+              "status": "Filling Fast",
+              "startDate": "2026-09-11"
+            },
+            {
+              "id": "b_1785658325613",
+              "price": "12,499",
+              "range": "18th September",
+              "status": "Filling Fast",
+              "startDate": "2026-09-18"
+            },
+            {
+              "id": "b_1785658331328",
+              "price": "12,499",
+              "range": "25th September",
+              "status": "Available",
+              "startDate": "2026-09-25"
+            }
+          ],
+          "month": "September 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "The trip spans 7 Days / 6 Nights starting and ending in Delhi.",
+          "question": "WHAT IS THE TRIP DURATION?"
+        },
+        {
+          "answer": "Yes, round-trip overnight AC Volvo bus transfers from Delhi to Manali are included.",
+          "question": "IS TRANSPORT INCLUDED FROM DELHI?"
+        },
+        {
+          "answer": "Key Monastery, Chicham Bridge, Hikkim, Komic, Langza, and Chandratal Lake.",
+          "question": "WHAT ARE THE HIGHLIGHTS OF THIS CIRCUIT?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Karan Patel",
+          "text": "The Spiti Highland Circuit was super well-organized. Visiting Hikkim and camping at Chandratal for ₹12,499 was incredible value!",
+          "avatar": "assets/images/reviews/pfp-karan.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Neha Gupta",
+          "text": "Great group, comfortable stays, and an awesome driver who navigated the Spiti roads effortlessly. Highly recommend Awara Banjara!",
+          "avatar": "assets/images/reviews/pfp-neha.jpg",
+          "location": "Chandigarh"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 112,
+      "title": "Spiti : The Highland Circuit (Moto Expedition)",
+      "duration": "7 Days / 6 Nights",
+      "price": "₹22,499",
+      "image_url": "assets/images/trips/trip_112_image_url.jpg",
+      "link": "trips/spiti-tours-spiti-the-highland-circuit-moto-expedition-112.html",
+      "created_at": "2026-08-02T08:50:14.758486+00:00",
+      "category": "spiti_tours",
+      "route": "Delhi — Manali — Kaza — Langza — Komic — Hikkim — Key Monastery — Chicham Bridge — Kunzum Pass — Chandratal — Manali — Delhi",
+      "tags": "Spiti Valley, Motorbike Expedition, Highland Circuit, Road Trip, Group Tour, Bike Tour",
+      "bento_img_1": "assets/images/trips/trip_112_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_112_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_112_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_112_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_112_bento_img_5.jpg",
+      "about_text": "Gear up for the ultimate Himalayan ride with Awara Banjara's Spiti Highland Circuit Motorbike Expedition. Starting with an overnight AC Volvo journey from Delhi to Manali, take the handlebars across treacherous passes, high-altitude alpine terrain, and remote Spiti villages including Langza, Komic, and Hikkim. Visit the magnificent Key Monastery, ride across Asia's highest bridge at Chicham, and camp near the mystical Chandratal Lake before riding back into Manali. Designed for passionate riders seeking high-octane adventure and iconic mountain landscapes.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Delhi to Manali (Overnight Volvo)",
+          "details": "Board a premium overnight Volvo coach departing from Delhi in the late evening. Relax in executive reclining seats on the overnight highway journey to Manali."
+        },
+        {
+          "day": 2,
+          "title": "Manali Arrival, Bike Allocation & Test Ride",
+          "details": "Arrive in Manali, check-in, meet your ride captain, receive your motorbike allocation, and go on a short local test ride for briefing."
+        },
+        {
+          "day": 3,
+          "title": "Ride Manali to Kaza",
+          "details": "Ride out from Manali across Atal Tunnel / Kunzum Pass into the rugged high-altitude desert terrain of Spiti Valley to reach Kaza."
+        },
+        {
+          "day": 4,
+          "title": "Langza, Komic & Hikkim Highland Ride",
+          "details": "Ride through high-altitude circuit routes visiting Langza (Fossil Village), Komic (highest motorable village), Hikkim (world's highest post office), Key Monastery, and Chicham Bridge."
+        },
+        {
+          "day": 5,
+          "title": "Kaza to Chandratal Lake",
+          "details": "Ride from Kaza over Kunzum Pass to reach the crescent-shaped Chandratal Lake for an overnight campsite stay under the stars."
+        },
+        {
+          "day": 6,
+          "title": "Chandratal to Manali Ride → Overnight Volvo to Delhi",
+          "details": "Ride back from Chandratal to Manali, drop off your motorbikes, and board the evening overnight Volvo coach back to Delhi."
+        },
+        {
+          "day": 7,
+          "title": "Arrival in Delhi",
+          "details": "Reach Delhi in the morning with lifelong memories of your Spiti Moto Expedition."
+        }
+      ],
+      "inclusions": [
+        "Delhi to Manali & Return AC Volvo Bus Tickets",
+        "5 Nights Accommodation (Hotels / Homestays in Kaza & Alpine Camps at Chandratal)",
+        "Royal Enfield Motorbike (500cc / Himalayan 411 as per selection) with Fuel",
+        "Backup Vehicle / Support Van with Mechanic & Spare Parts",
+        "Riding Gears (Helmet, Knee Guards, Elbow Guards for Rider & Pillion)",
+        "Daily Breakfast & Dinner at Stays",
+        "Inner Line Permits, Wildlife Fees & Environmental Charges",
+        "Road Captain / Experienced Trip Captain leading the convoy"
+      ],
+      "exclusions": [
+        "Lunch Meals & Personal Cafe Expenses",
+        "Refundable Security Deposit for Motorbike",
+        "Personal Riding Apparel (Jackets, Gloves, Riding Boots)",
+        "5% GST & Travel Insurance",
+        "Costs arising from personal damages to motorbikes, roadblocks, landslides, or weather delays"
+      ],
+      "package_options": [
+        {
+          "price": "₹22,499",
+          "title": "Dual Rider"
+        },
+        {
+          "price": "₹27,499",
+          "title": "Solo Rider"
+        }
+      ],
+      "sub_package_options": "Himalayan 411, Himalayan 450",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785660080040",
+              "price": "22,499",
+              "range": "14th August",
+              "status": "Filling Fast",
+              "startDate": "2026-08-14"
+            },
+            {
+              "id": "b_1785660087448",
+              "price": "22,499",
+              "range": "21th August",
+              "status": "Available",
+              "startDate": "2026-08-21"
+            },
+            {
+              "id": "b_1785660090347",
+              "price": "22,499",
+              "range": "28th August",
+              "status": "Available",
+              "startDate": "2026-08-28"
+            }
+          ],
+          "month": "August 2026"
+        },
+        {
+          "dates": [
+            {
+              "id": "b_1785660098710",
+              "price": "22,499",
+              "range": "4th September",
+              "status": "Filling Fast",
+              "startDate": "2026-09-04"
+            },
+            {
+              "id": "b_1785660101194",
+              "price": "22,499",
+              "range": "11th September",
+              "status": "Filling Fast",
+              "startDate": "2026-09-11"
+            },
+            {
+              "id": "b_1785660107224",
+              "price": "22,499",
+              "range": "18th September",
+              "status": "Available",
+              "startDate": "2026-09-18"
+            },
+            {
+              "id": "b_1785660115740",
+              "price": "22,499",
+              "range": "25th September",
+              "status": "Sold Out",
+              "startDate": "2026-09-25"
+            }
+          ],
+          "month": "September 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "Yes, fuel for the entire itinerary route is included for both Dual Rider and Solo Rider packages.",
+          "question": "IS FUEL INCLUDED IN THE BIKE PACKAGE?"
+        },
+        {
+          "answer": "Standard options include Royal Enfield Himalayan 411 / Scram 411, with Himalayan 450 upgrade options.",
+          "question": "WHAT BIKE MODELS ARE PROVIDED FOR THE EXPEDITION?"
+        },
+        {
+          "answer": "Yes, a valid Indian / International Driving License for 2-Wheelers is strictly mandatory.",
+          "question": "IS A DRIVING LICENSE REQUIRED?"
+        },
+        {
+          "answer": "A support backup vehicle carrying luggage, a professional mechanic, spare parts, and emergency oxygen is included throughout the ride.",
+          "question": "WHAT SUPPORT IS PROVIDED ON THE RIDE?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Vikramaditya Singh",
+          "text": "Riding through Kunzum Pass and Chicham Bridge with Awara Banjara was a dream come true! Backup support and bikes were in top condition.",
+          "avatar": "assets/images/reviews/pfp-vikram.jpg",
+          "location": "Jaipur"
+        },
+        {
+          "name": "Sameer Khan",
+          "text": "Flawlessly organized moto expedition. The road captain made sure everyone stayed safe on the rough Spiti tracks.",
+          "avatar": "assets/images/reviews/pfp-sameer.jpg",
+          "location": "Mumbai"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 119,
+      "title": "Uttarakhand : Backpacking Odyssey",
+      "duration": "8 Days / 7 Nights",
+      "price": "₹21,900",
+      "image_url": "assets/images/trips/trip_119_image_url.jpg",
+      "link": "trips/uttarakhand-tours-uttarakhand-backpacking-odyssey-119.html",
+      "created_at": "2026-08-05T08:16:24.162012+00:00",
+      "category": "uttarakhand_tours",
+      "route": "Delhi — Joshimath — Auli — Chopta — Tungnath — Deoria Tal — Rishikesh — Delhi",
+      "tags": "Uttarakhand, Trekking, Backpacking, Auli, Chopta, Rishikesh, River Rafting",
+      "bento_img_1": "assets/images/trips/trip_119_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_119_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_119_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_119_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_119_bento_img_5.jpg",
+      "about_text": "Forget the typical tourist trails. We’re taking you deep into the Garhwal Himalayas for an experience that spans from 1,120 ft to 13,123 ft. At Awara Banjara, we believe Uttarakhand is best explored on foot and in good company. Whether we're summiting the world’s highest Shiva temple at Tungnath, catching the sunrise over Nanda Devi from the Auli meadows, or cliff-jumping into the emerald waters of the Ganges, this trip is about pushing your limits and finding your tribe.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Delhi to Joshimath (505 kms)",
+          "details": "Pick up at Botanical Garden Metro Station at 8:30 PM. Briefing by Trip Captain and overnight journey."
+        },
+        {
+          "day": 2,
+          "title": "Joshimath Arrival & Leisure Day",
+          "details": "Scenic drive along Badrinath road viewing Ganga's confluences. Check-in and evening leisure walk in Joshimath."
+        },
+        {
+          "day": 3,
+          "title": "Joshimath to Auli (12 kms) & Return",
+          "details": "Early morning trip to Auli. Experience the chair car ride and explore snow-clad peaks of Nanda Devi."
+        },
+        {
+          "day": 4,
+          "title": "Joshimath to Chopta (145 kms)",
+          "details": "Drive to Chopta, check into campsites, unwind with nature and enjoy evening snacks."
+        },
+        {
+          "day": 5,
+          "title": "Trek to Tungnath Temple & Chandrashila Summit",
+          "details": "4km trek to World's Highest Shiva Temple (12,106 ft) and Chandrashila Summit (12,110 ft)."
+        },
+        {
+          "day": 6,
+          "title": "Deoria Tal Trek & Proceed to Rishikesh",
+          "details": "Trek to pristine Deoria Tal lake via Sari Village, then drive to Rishikesh by evening."
+        },
+        {
+          "day": 7,
+          "title": "Rafting & Rishikesh Sightseeing",
+          "details": "Exciting river rafting on Ganga, visit Ram Jhula & Janki Setu, experience Ganga Aarti, then overnight drive to Delhi."
+        },
+        {
+          "day": 8,
+          "title": "Arrival in Delhi",
+          "details": "Return to Delhi in the early morning. Tour ends with fond memories."
+        }
+      ],
+      "inclusions": [
+        "Accommodations on sharing basis as per Itinerary",
+        "Transportation: Surface transfer via Tempo Traveler/Innova",
+        "Meal Plans: MAPI Plan - Veg Meals (Total 11 Meals)",
+        "Sightseeing as per Itinerary",
+        "Packed Lunch for Tungnath Trek",
+        "Entry fees at Tungnath",
+        "Snacks on Day 4 (veg only)",
+        "River Rafting in Rishikesh",
+        "Chair Lift in Auli",
+        "Joshimath to Chair Lift Station (Auli) and Return via Local Cab",
+        "Trip captain present at all times during the tour",
+        "Toll taxes, parking charges & driver allowances",
+        "All necessary permits & First Aid Kits"
+      ],
+      "exclusions": [
+        "5% GST",
+        "Early check-in (Before 1:00 PM) & Late Check-out (After 11:00 AM)",
+        "Any additional expenses of personal nature",
+        "Entry tickets at exploration sites not mentioned in inclusions",
+        "Additional accommodation/food costs incurred due to travel delays",
+        "Any lunch and meals not specified in Inclusions"
+      ],
+      "package_options": [
+        {
+          "price": "₹21,900",
+          "title": "Standard Sharing"
+        },
+        {
+          "price": "₹25,950",
+          "title": "Premium Sharing"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [],
+      "faqs": [
+        {
+          "answer": "It is easy-to-moderate and perfect for first-timers! The trail to Tungnath is well-paved, with a steeper last 1.5 km to Chandrashila summit.",
+          "question": "How difficult is the Tungnath-Chandrashila trek?"
+        },
+        {
+          "answer": "Winter (Dec–Feb) for snow and skiing, Spring/Summer (Mar–Jun) for blooming meadows, and Autumn (Oct–Nov) for clear peak views.",
+          "question": "What is the best time for this trip?"
+        },
+        {
+          "answer": "Yes, high-buoyancy life jackets and helmets are provided along with professional guide briefings.",
+          "question": "I don't know how to swim. Can I still do River Rafting in Rishikesh?"
+        },
+        {
+          "answer": "Hostels/riverside camps in Rishikesh, Swiss tents/cottages in Chopta, and homestays/guesthouses in Auli/Joshimath.",
+          "question": "What kind of stays should I expect?"
+        },
+        {
+          "answer": "Network is patchy (Jio/BSNL work best) and electricity is solar-limited. Carrying a 20,000mAh power bank is recommended.",
+          "question": "Will I get mobile network and electricity in Chopta?"
+        },
+        {
+          "answer": "3-layer clothing (thermal, fleece, waterproof jacket), sturdy trekking shoes, sunscreen, lip balm, and a reusable water bottle.",
+          "question": "What should I pack for Chopta/Auli?"
+        },
+        {
+          "answer": "ATMs are available in Rishikesh and Joshimath, but NOT in Chopta or Auli. Carry sufficient cash.",
+          "question": "Is there an ATM available?"
+        },
+        {
+          "answer": "Comfortable high-clearance vehicles like Bolero, Scorpio, or Tempo Traveler suited for mountain roads.",
+          "question": "How do we travel between these places?"
+        },
+        {
+          "answer": "The itinerary is paced for acclimatization and Trip Captains carry first-aid kits. Stay hydrated and avoid heavy meals.",
+          "question": "What if I get Altitude Sickness (AMS)?"
+        },
+        {
+          "answer": "Yes! Most travelers join solo and are paired with same-gender roommates/tentmates.",
+          "question": "Can I join solo?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Ankit Sharma",
+          "text": "The trek to Tungnath and river rafting in Rishikesh was an unforgettable experience!",
+          "avatar": "assets/images/reviews/pfp-ankit.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Priya Patel",
+          "text": "Amazing Trip Captains and great stay arrangements in Chopta. Loved every bit of it!",
+          "avatar": "assets/images/reviews/pfp-priya.jpg",
+          "location": "Mumbai"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 103,
+      "title": "Spiti : Winter 4X4 Expedition",
+      "duration": "8 Days / 7 Nights",
+      "price": "₹25,499",
+      "image_url": "assets/images/trips/trip_103_image_url.jpg",
+      "link": "trips/spiti-tours-spiti-winter-4x4-expedition-103.html",
+      "created_at": "2026-08-01T16:46:13.584415+00:00",
+      "category": "spiti_tours",
+      "route": "Shimla — Kinnaur — Chitkul — Gue — Dhankar Monastery — Hikkim — Komic — Langza — Kibber — Key Monastery — Chicham Bridge — Kalpa",
+      "tags": "Winter Expedition, 4x4 Expedition, Spiti Valley, High Altitude",
+      "bento_img_1": "assets/images/trips/trip_103_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_103_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_103_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_103_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_103_bento_img_5.jpg",
+      "about_text": "Embark on an exhilarating 8-day winter expedition across the snow-draped landscapes of Spiti Valley in a 4x4 vehicle. Beginning with an overnight drive from Delhi to Shimla, the journey traverses through Kinnaur and Sangla Valley to Chitkul, the last village near the Indo-Tibetan border. Experience the frozen wonders of Spiti, including ancient monasteries at Gue, Tabo, and Dhankar, and explore iconic high-altitude villages like Hikkim, Komic, Langza, and Kibber. Cross the breathtaking Chicham Bridge and visit the iconic Key Monastery before returning via Kalpa with views of the majestic Kinner Kailash peak.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Delhi to Shimla",
+          "details": "Overnight travel / transit to Shimla."
+        },
+        {
+          "day": 2,
+          "title": "Shimla to Chitkul via Sangla",
+          "details": "Drive through Sangla valley to Chitkul."
+        },
+        {
+          "day": 3,
+          "title": "Chitkul to Tabo via Nako & Gue",
+          "details": "En route visit Nako village and Gue Monastery."
+        },
+        {
+          "day": 4,
+          "title": "Tabo to Kaza via Dhankar",
+          "details": "Exploration of Tabo and Dhankar Monasteries en route to Kaza."
+        },
+        {
+          "day": 5,
+          "title": "Kaza High-Altitude Sightseeing",
+          "details": "Visit Hikkim, Komic, Langza, Kibber, Key Monastery, and Chicham Bridge."
+        },
+        {
+          "day": 6,
+          "title": "Kaza to Kalpa",
+          "details": "Scenic drive returning towards Kinnaur valley with views of Kinner Kailash."
+        },
+        {
+          "day": 7,
+          "title": "Kalpa to Shimla",
+          "details": "Drive back to Shimla from Kalpa."
+        },
+        {
+          "day": 8,
+          "title": "Morning Arrival in Delhi",
+          "details": "Return back to Delhi in the morning."
+        }
+      ],
+      "inclusions": [
+        "Volvo Bus / Transit transfer from Delhi to Shimla & Return",
+        "Transportation in 4x4 Vehicle for the entire Spiti circuit from Shimla to Shimla",
+        "Accommodation on sharing basis in hotels/homestays",
+        "MAP Meal Plan (Breakfast and Dinner) starting from Day 2 Dinner to Day 8 Breakfast",
+        "Experienced Trip Leader and Local Drivers",
+        "All inner line permits, toll taxes, parking fees, and driver allowances",
+        "First Aid Medical Kit with Oxygen Cylinder Support"
+      ],
+      "exclusions": [
+        "Airfare / Train tickets to and from Delhi",
+        "Lunch, personal snacks, and beverages",
+        "Personal expenses (laundry, tips, phone calls, room heaters, etc.)",
+        "Entry fees to monasteries, monuments, or video camera permits",
+        "Travel insurance and medical emergency expenses",
+        "Costs incurred due to natural calamities, landslides, heavy snowfall, or road closures",
+        "Anything not explicitly mentioned in the inclusions"
+      ],
+      "package_options": [
+        {
+          "price": "₹35,499",
+          "title": "Double Sharing"
+        },
+        {
+          "price": "₹25,499",
+          "title": "Triple Sharing"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785602594703",
+              "price": "25,499",
+              "range": "8th January",
+              "status": "Available",
+              "startDate": "2027-01-08"
+            },
+            {
+              "id": "b_1785602603018",
+              "price": "25,499",
+              "range": "15th January",
+              "status": "Available",
+              "startDate": "2027-01-15"
+            },
+            {
+              "id": "b_1785602622584",
+              "price": "25,499",
+              "range": "22th January",
+              "status": "Available",
+              "startDate": "2027-01-22"
+            },
+            {
+              "id": "b_1785602646302",
+              "price": "25,499",
+              "range": "29th January",
+              "status": "Available",
+              "startDate": "2027-01-29"
+            }
+          ],
+          "month": "January 2027"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "The trip is 8 Days and 7 Nights starting and ending in Delhi.",
+          "question": "WHAT IS THE DURATION OF THE TRIP?"
+        },
+        {
+          "answer": "Transit from Delhi to Shimla and back is via Volvo Bus, and the entire Spiti circuit is covered in 4x4 vehicles.",
+          "question": "WHAT IS THE MODE OF TRANSPORTATION?"
+        },
+        {
+          "answer": "MAP Meal Plan is included (Breakfast and Dinner), starting from Dinner on Day 2 to Breakfast on Day 8.",
+          "question": "WHAT MEALS ARE INCLUDED IN THE PACKAGE?"
+        },
+        {
+          "answer": "Key spots include Chitkul, Gue Monastery, Tabo, Dhankar, Kaza, Hikkim, Komic, Langza, Kibber, Key Monastery, Chicham Bridge, and Kalpa.",
+          "question": "WHAT ARE THE KEY ATTRACTIONS COVERED?"
+        },
+        {
+          "answer": "Yes, a First Aid Medical Kit with Oxygen Cylinder support is carried throughout the expedition.",
+          "question": "IS MEDICAL AND OXYGEN SUPPORT AVAILABLE?"
+        },
+        {
+          "answer": "Lunches, personal expenses, entry fees to monasteries/monuments, travel insurance, and costs arising from unexpected road closures or natural events.",
+          "question": "WHAT IS NOT INCLUDED IN THE PRICE?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rohit Verma",
+          "text": "Amazing winter expedition! The 4x4 drive made navigating the frozen Spiti roads super smooth and safe.",
+          "avatar": "assets/images/reviews/pfp-rohit.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Ananya Sharma",
+          "text": "Unforgettable experience! Seeing Key Monastery and Chicham Bridge covered in snow was absolute magic. Great team and execution.",
+          "avatar": "assets/images/reviews/pfp-ananya.jpg",
+          "location": "Chandigarh"
+        },
+        {
+          "name": "Siddharth Nair",
+          "text": "Flawless itinerary and top-notch trip leadership. Handling the extreme cold was so much easier thanks to the cozy stays and support.",
+          "avatar": "assets/images/reviews/pfp-siddharth.jpg",
+          "location": "Mumbai"
+        },
+        {
+          "name": "Priya Patel",
+          "text": "The winter views of Kinnaur and Spiti are unmatched. Driving in a 4x4 through snow-covered landscapes was a dream come true!",
+          "avatar": "assets/images/reviews/pfp-priya.jpg",
+          "location": "Ahmedabad"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 104,
+      "title": "Udaipur & Kumbhalgarh Expedition",
+      "duration": "3 Days / 2 Nights",
+      "price": "₹6,999",
+      "image_url": "assets/images/trips/trip_104_image_url.jpg",
+      "link": "trips/rajasthan-tours-udaipur-kumbhalgarh-expedition-104.html",
+      "created_at": "2026-08-01T17:17:23.131272+00:00",
+      "category": "rajasthan_tours",
+      "route": "Udaipur — Lake Pichola — City Palace — Kumbhalgarh Fort — Saheliyon Ki Bari — Fateh Sagar Lake",
+      "tags": "Royal Rajasthan, Cultural Tour, Weekend Getaway, Forts & Palaces, Lake City",
+      "bento_img_1": "assets/images/trips/trip_104_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_104_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_104_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_104_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_104_bento_img_5.jpg",
+      "about_text": "Explore the romantic City of Lakes and the majestic grand fortresses of Rajasthan on this 3-day immersive getaway. Uncover the regal heritage of Udaipur with visits to the iconic City Palace, peaceful boat rides on Lake Pichola, and scenic sunsets at Fateh Sagar Lake. Venture into the Aravalli hills to witness the world's second-longest wall at the formidable Kumbhalgarh Fort. Designed for culture lovers and weekend wanderers, this trip offers the perfect blend of royal architecture, vibrant local culture, and stunning landscapes.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Delhi to Udaipur",
+          "details": "Overnight Volvo Bus / Train journey from Delhi to Udaipur."
+        },
+        {
+          "day": 2,
+          "title": "Arrival in Udaipur & Lake City Sightseeing",
+          "details": "Arrive in Udaipur, check in to hotel. Visit City Palace, Jagdish Temple, and enjoy a sunset boat ride at Lake Pichola. Evening at leisure near Lal Ghat."
+        },
+        {
+          "day": 3,
+          "title": "Udaipur to Kumbhalgarh Fort Day Excursion",
+          "details": "Day trip to Kumbhalgarh Fort to explore its massive walls and palaces. Return to Udaipur in the evening for sunset at Fateh Sagar Lake."
+        },
+        {
+          "day": 4,
+          "title": "Saheliyon Ki Bari, Shopping & Overnight Departure to Delhi",
+          "details": "Visit Saheliyon Ki Bari and Bagore Ki Haveli. Explore local markets for handicrafts before taking an overnight Volvo Bus / Train back to Delhi."
+        },
+        {
+          "day": 5,
+          "title": "Early Morning Arrival in Delhi",
+          "details": "Arrive back in Delhi in the early morning."
+        }
+      ],
+      "inclusions": [
+        "Accommodation in 3-star standard / heritage hotels on sharing basis",
+        "MAP Meal Plan (Breakfast & Dinner)",
+        "AC Vehicle for transfers and sightseeing as per itinerary",
+        "Driver allowances, fuel charges, toll taxes, and parking fees",
+        "Experienced Tour Leader / Local Guide support"
+      ],
+      "exclusions": [
+        "Any train/flight fares to and from Udaipur",
+        "Monument entry tickets, boating fees, and camera charges",
+        "Lunches, personal beverages, and extra food orders",
+        "Personal expenses like shopping, laundry, tips, room heater/extras",
+        "Travel insurance and emergency medical costs",
+        "Anything not specifically listed under inclusions"
+      ],
+      "package_options": [
+        {
+          "price": "₹6,999",
+          "title": "Triple Sharing"
+        },
+        {
+          "price": "₹7,499",
+          "title": "Double Sharing"
+        },
+        {
+          "price": "₹7,999",
+          "title": "Single Occupancy"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785604601860",
+              "price": "6,999",
+              "range": "7th August",
+              "status": "Available",
+              "startDate": "2026-08-07"
+            },
+            {
+              "id": "b_1785604607026",
+              "price": "6,999",
+              "range": "14th August",
+              "status": "Available",
+              "startDate": "2026-08-14"
+            },
+            {
+              "id": "b_1785604610527",
+              "price": "6,999",
+              "range": "21th August",
+              "status": "Available",
+              "startDate": "2026-08-21"
+            },
+            {
+              "id": "b_1785604614826",
+              "price": "6,999",
+              "range": "28th August",
+              "status": "Available",
+              "startDate": "2026-08-28"
+            }
+          ],
+          "month": "August 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "The trip starts and ends in Udaipur.",
+          "question": "WHAT IS THE STARTING AND ENDING POINT OF THE TRIP?"
+        },
+        {
+          "answer": "No, entry fees for City Palace, Kumbhalgarh Fort, and Lake Pichola boat rides are to be paid directly.",
+          "question": "ARE MONUMENT ENTRY FEES AND BOATING INCLUDED?"
+        },
+        {
+          "answer": "Clean, comfortable 3-star standard or heritage-style hotels with modern amenities.",
+          "question": "WHAT TYPE OF ACCOMMODATION IS PROVIDED?"
+        },
+        {
+          "answer": "Yes, this itinerary is fully guided and suitable for solo travelers, couples, friends, and families.",
+          "question": "IS THIS TRIP SUITABLE FOR FAMILIES AND SOLO TRAVELERS?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Harshvardhan Singh",
+          "text": "Kumbhalgarh Fort was breathtaking! The whole trip was well organized and smooth from day one.",
+          "avatar": "assets/images/reviews/pfp-harsh.jpg",
+          "location": "Jaipur"
+        },
+        {
+          "name": "Neha Gupta",
+          "text": "Loved the sunset at Fateh Sagar and the boat ride on Lake Pichola. Perfect weekend getaway!",
+          "avatar": "assets/images/reviews/pfp-neha.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Karan Mehta",
+          "text": "Great value for money. Hotels were super clean and the local guide gave us amazing historical insights.",
+          "avatar": "assets/images/reviews/pfp-karan.jpg",
+          "location": "Ahmedabad"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 113,
+      "title": "Hamta Pass and Chandratal Trek",
+      "duration": "5 Days / 4 Nights",
+      "price": "₹9,499",
+      "image_url": "assets/images/trips/trip_113_image_url.jpg",
+      "link": "trips/himachal-tours-hamta-pass-and-chandratal-trek-113.html",
+      "created_at": "2026-08-02T10:30:28.098553+00:00",
+      "category": "himachal_tours",
+      "route": "Manali — Jobra — Chika — Balu Ka Ghera — Hampta Pass — Shea Goru — Chatru — Chandratal — Manali",
+      "tags": "Hamta Pass, Chandratal, High Altitude Trek, Crossover Trek, Himalayan Treks, Group Trek",
+      "bento_img_1": "assets/images/trips/trip_113_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_113_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_113_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_113_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_113_bento_img_5.jpg",
+      "about_text": "Experience one of the most dramatic crossover treks in the Indian Himalayas—the breathtaking Hamta Pass & Chandratal Trek with Awara Banjara. This adventure takes you from the lush green valleys of Kullu to the stark, desert-like landscapes of Spiti, offering a complete Himalayan transformation in just a few days. Starting from Manali, trek through thick pine forests, flower-filled meadows, glacier streams, and tower over the landscape at Hamta Pass (14,100 ft) before concluding at the magical crescent-shaped Chandratal Lake.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Manali Arrival",
+          "details": "Drive to Jobra (45 mins drive)"
+        },
+        {
+          "day": 2,
+          "title": "Chika to Balu Ka Ghera Trek (8.5 Kms",
+          "details": "6 hrs)"
+        },
+        {
+          "day": 3,
+          "title": "Balu Ka Ghera to Shea Goru Trek via Hampta Pass (7 Kms",
+          "details": "9 hrs)"
+        },
+        {
+          "day": 4,
+          "title": "Shea Goru to Chatru Trek (7 Kms",
+          "details": "5 hrs)"
+        },
+        {
+          "day": 5,
+          "title": "Drive from Chatru to Manali (63 Kms",
+          "details": "2.5 Hrs)"
+        }
+      ],
+      "inclusions": [
+        "4 Nights of Tented Accommodation on double/triple sharing basis",
+        "Surface transfer from Manali to Manali by Sumo / Bolero (or Delhi transport if package chosen)",
+        "All Veg meals from Day 1 lunch to Day 5 breakfast",
+        "Morning / Evening Tea / Coffee with light snacks",
+        "Camping logistics (Tent, Sleeping bags, Mattresses, Dining tent, Toilet tent)",
+        "Qualified and Experienced Trek leader and support staff",
+        "All necessary forest permits and fees",
+        "Trekking Equipment (Gaiters, Micro Spikes, and Rope if required)",
+        "Basic First Aid kit with Oximeter and Oxygen Cylinder",
+        "Cloak Room facility available at base camp for extra luggage"
+      ],
+      "exclusions": [
+        "Any expenses of a personal nature",
+        "Transportation from Manali Bus Stand to Mall Road & back",
+        "Meals during transit",
+        "Travel and medical insurance of any kind",
+        "Any fees and permits for Foreigners",
+        "Unscheduled delay due to landslides, Force Majeure, or evacuation charges",
+        "Backpack offloading charges (₹1,500 up to 10 kg optional)"
+      ],
+      "package_options": [
+        {
+          "price": "₹9,499",
+          "title": "Trek Package"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785666270845",
+              "price": "9,499",
+              "range": "4th September",
+              "status": "Available",
+              "startDate": "2026-09-04"
+            },
+            {
+              "id": "b_1785666277767",
+              "price": "9,499",
+              "range": "11th September",
+              "status": "Available",
+              "startDate": "2026-09-11"
+            },
+            {
+              "id": "b_1785666282734",
+              "price": "9,499",
+              "range": "18th September",
+              "status": "Available",
+              "startDate": "2026-09-18"
+            },
+            {
+              "id": "b_1785666285384",
+              "price": "9,499",
+              "range": "25th September",
+              "status": "Available",
+              "startDate": "2026-09-25"
+            }
+          ],
+          "month": "September 2026"
+        },
+        {
+          "dates": [
+            {
+              "id": "b_1785666291301",
+              "price": "9,499",
+              "range": "2th October",
+              "status": "Available",
+              "startDate": "2026-10-02"
+            },
+            {
+              "id": "b_1785666293984",
+              "price": "9,499",
+              "range": "9th October",
+              "status": "Available",
+              "startDate": "2026-10-09"
+            },
+            {
+              "id": "b_1785666297386",
+              "price": "9,499",
+              "range": "16th October",
+              "status": "Available",
+              "startDate": "2026-10-16"
+            },
+            {
+              "id": "b_1785666299951",
+              "price": "9,499",
+              "range": "23th October",
+              "status": "Available",
+              "startDate": "2026-10-23"
+            },
+            {
+              "id": "b_1785666302752",
+              "price": "9,499",
+              "range": "30th October",
+              "status": "Available",
+              "startDate": "2026-10-30"
+            }
+          ],
+          "month": "October 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "June to September is the ideal window as the pass is accessible and Chandratal Lake is open.",
+          "question": "WHAT IS THE BEST TIME TO DO THE HAMTA PASS TREK?"
+        },
+        {
+          "answer": "It is rated as a Moderate-level trek, suitable for fit beginners as well as experienced trekkers.",
+          "question": "WHAT IS THE DIFFICULTY LEVEL OF THE TREK?"
+        },
+        {
+          "answer": "Hamta Pass sits at an altitude of approximately 14,100 feet (4,270 meters) above sea level.",
+          "question": "HOW HIGH IS HAMTA PASS?"
+        },
+        {
+          "answer": "Yes, a drive and visit to Chandratal Lake from Chatru is included, subject to weather conditions.",
+          "question": "IS CHANDRATAL LAKE INCLUDED IN THIS TREK?"
+        },
+        {
+          "answer": "No prior experience is required, but a basic level of physical fitness and regular stamina prep is recommended.",
+          "question": "IS PRIOR TREKKING EXPERIENCE MANDATORY?"
+        },
+        {
+          "answer": "Camping in high-altitude dome tents with sleeping bags and mattresses at scenic locations like Chika and Balu Ka Ghera.",
+          "question": "WHAT TYPE OF ACCOMMODATION IS PROVIDED?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Aakash Verma",
+          "text": "Crossing Hamta Pass at 14,100 ft was an incredible experience! Awara Banjara's trek leaders and campsite arrangements were top class.",
+          "avatar": "assets/images/reviews/pfp-aakash.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Divya Sharma",
+          "text": "The shift from green Kullu valley to desert Spiti at Chandratal Lake blew my mind. Super well organized and safe trek for solo travelers!",
+          "avatar": "assets/images/reviews/pfp-divya.jpg",
+          "location": "Chandigarh"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 120,
+      "title": "Bir Billing Escape: Paragliding, Rajgundha Valley & Prashar Lake",
+      "duration": "3 Days / 2 Nights",
+      "price": "On Request",
+      "image_url": "assets/images/trips/trip_120_image_url.jpg",
+      "link": "trips/himachal-tours-bir-billing-escape-paragliding-rajgundha-valley-prashar-lake-120.html",
+      "created_at": "2026-08-05T08:37:45.624959+00:00",
+      "category": "himachal_tours",
+      "route": "Delhi — Bir — Billing — Rajgundha Valley — Hanumangarh — Prashar Lake — Mandi — Delhi",
+      "tags": "Himachal, Paragliding, Bir Billing, Prashar Lake, Rajgundha, Weekend Getaway, Trekking, Camping",
+      "bento_img_1": "assets/images/trips/trip_120_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_120_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_120_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_120_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_120_bento_img_5.jpg",
+      "about_text": "Trade the routine for high-altitude adrenaline and high-mountain peace on this 3-day Himalayan getaway. Your adventure kicks off at Billing—the world’s second-highest paragliding site—where you'll launch into the air for a breath-taking aerial flight over the Dhauladhar ranges. Back on the ground, immerse yourself in Bir’s vibrant culture with warm bonfires, cozy Tibetan cafés, and front-row seats to the valley's legendary sunsets at the landing site. From there, we leave the usual tourist trail behind to venture into Rajgundha Valley, an untouched village surrounded by terraced fields, dense oak forests, and star-lit night skies. The trip rounds off at the mystical Prashar Lake, sitting at 2,730 meters alongside its 14th-century pagoda-style temple and a mysterious floating island. It’s the ultimate blend of thrill, culture, and quiet alpine magic packed into a single weekend.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Delhi To Bir",
+          "details": "Overnight Journey"
+        },
+        {
+          "day": 2,
+          "title": "Arrival In Bir",
+          "details": "Paragliding & Café Hopping"
+        },
+        {
+          "day": 3,
+          "title": "Bir To Rajgundha Valley",
+          "details": "Hanumangarh Trek"
+        },
+        {
+          "day": 4,
+          "title": "Rajgundha To Prashar Lake",
+          "details": "The Mystical Floating Island & Departure"
+        },
+        {
+          "day": 5,
+          "title": "Reach back to Delhi by morning",
+          "details": "Arrive back in Delhi by early morning with trip memories."
+        }
+      ],
+      "inclusions": [
+        "Entire travel as per itinerary (Delhi → Bir | Mandi → Delhi in Semi-Sleeper Volvo; internal transfers in Sumo/Tempo)",
+        "4 meals during the trip: Breakfast (Day 1 to 3) and Dinner on Day 2",
+        "Accommodation for 2 nights (1N in Swiss Camps at Bir, 1N homestay/camps in Rajgundha)",
+        "Paragliding charges",
+        "Bonfire",
+        "Dedicated team captain throughout the trip",
+        "Driver charges, toll taxes, parking, and other vehicle-related expenses"
+      ],
+      "exclusions": [
+        "GST (5%)",
+        "Tips to helper, cook, guide or any staff",
+        "Any costing involved due to natural calamities or forced circumstances",
+        "Anything not mentioned in the inclusions"
+      ],
+      "package_options": [],
+      "sub_package_options": "",
+      "departure_dates": [],
+      "faqs": [
+        {
+          "answer": "Delhi to Delhi (Overnight Volvo bus).",
+          "question": "What is the pickup and drop location?"
+        },
+        {
+          "answer": "Yes, paragliding charges at Billing are included in the package.",
+          "question": "Is paragliding included in the cost?"
+        },
+        {
+          "answer": "1 night in Swiss Camps in Bir and 1 night in a local homestay/campsite in Rajgundha.",
+          "question": "What kind of accommodation is provided?"
+        },
+        {
+          "answer": "4 meals total: Breakfast on Day 1, Day 2, and Day 3, plus Dinner on Day 2.",
+          "question": "What meals are included?"
+        },
+        {
+          "answer": "It is an easy-to-moderate 3 km trek from Chinna Pass, suitable for beginners.",
+          "question": "How difficult is the Hanumangarh trek?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Yash",
+          "text": "My trip to Himachal was truly unforgettable. Stunning mountain views, flawless planning, and great support from our captain throughout the journey!",
+          "avatar": "assets/images/reviews/pfp-yash.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Arpan Kapoor",
+          "text": "It was a really good trip! Both captains were caring, enthusiastic, and kept the vibe high.",
+          "avatar": "assets/images/reviews/pfp-arpan.jpg",
+          "location": "Delhi"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 105,
+      "title": "Escape to Zanskar - Group Trip",
+      "duration": "6 Days / 5 Nights",
+      "price": "₹11,499",
+      "image_url": "assets/images/trips/trip_105_image_url.jpg",
+      "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
+      "created_at": "2026-08-01T17:45:30.495451+00:00",
+      "category": "ladakh_tours",
+      "route": "Delhi — Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa — Delhi",
+      "tags": "Zanskar Valley, High Altitude, Himalayan Expedition, Monolith Circuit, Group Tour",
+      "bento_img_1": "assets/images/trips/trip_105_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_105_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_105_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_105_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_105_bento_img_5.jpg",
+      "about_text": "Embark on an extraordinary journey through the rugged and mystical landscapes of Zanskar. Starting with an overnight transit from Delhi to Manali, this expedition takes you past the iconic Atal Tunnel into the pristine valleys of Lahaul and Zanskar. Discover the awe-inspiring holy monolith of Gonbo Rangjon, trek to the cliffside Phuktal Gompa monk monastery, and stay in scenic high-altitude Himalayan halts like Sissu and Jispa. Perfect for adventure seekers looking to experience the raw, untouched beauty of Zanskar.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Delhi to Manali",
+          "details": "Board a premium overnight Volvo coach departing from Delhi in the late evening."
+        },
+        {
+          "day": 2,
+          "title": "Manali Local Exploration",
+          "details": "Arrive in Manali, check in to accommodations, and explore local sights & cafes. Briefing for the expedition."
+        },
+        {
+          "day": 3,
+          "title": "Manali to Gonbo Rangjon",
+          "details": "Drive through Atal Tunnel, Sissu, and Darcha towards the majestic holy monolith of Gonbo Rangjon."
+        },
+        {
+          "day": 4,
+          "title": "Gonbo Rangjon to Phuktal Gompa & Jispa",
+          "details": "Day trek to the iconic cliffside Phuktal Monastery, then drive back towards Jispa."
+        },
+        {
+          "day": 5,
+          "title": "Jispa to Manali & Delhi",
+          "details": "Drive from Jispa back to Manali. Board the evening overnight Volvo coach to Delhi."
+        },
+        {
+          "day": 6,
+          "title": "Arrival in Delhi",
+          "details": "Early morning arrival in Delhi."
+        }
+      ],
+      "inclusions": [
+        "Overnight Volvo Bus transfer from Delhi to Manali & Return",
+        "Transportation in SUV / Tempo Traveler for the entire Zanskar circuit from Manali",
+        "Accommodation on sharing basis in hotels, guest houses & high-altitude campsites",
+        "MAP Meal Plan (Breakfast and Dinner) as specified in itinerary",
+        "Experienced Trip Leader and Local Drivers",
+        "All inner line permits, toll taxes, parking fees, and driver allowances",
+        "First Aid Medical Kit with Oxygen Cylinder Support"
+      ],
+      "exclusions": [
+        "Airfare / Train tickets to and from Delhi",
+        "Lunches, snacks, and personal beverages",
+        "Personal expenses (laundry, tips, phone calls, room heaters, etc.)",
+        "Monastery / Monument entry fees and camera charges",
+        "Travel insurance and emergency evacuation / medical expenses",
+        "Costs arising from unexpected natural events, landslides, or road closures",
+        "Anything not explicitly mentioned in the inclusions"
+      ],
+      "package_options": [
+        {
+          "price": "₹11,499",
+          "title": "Quad Sharing"
+        },
+        {
+          "price": "₹12,499",
+          "title": "Triple Sharing"
+        },
+        {
+          "price": "₹14,999",
+          "title": "Double Sharing"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785606206286",
+              "price": "11,499",
+              "range": "7th August",
+              "status": "Available",
+              "startDate": "2026-08-07"
+            },
+            {
+              "id": "b_1785606211053",
+              "price": "11,499",
+              "range": "14th August",
+              "status": "Available",
+              "startDate": "2026-08-14"
+            },
+            {
+              "id": "b_1785606215803",
+              "price": "11,499",
+              "range": "21th August",
+              "status": "Available",
+              "startDate": "2026-08-21"
+            },
+            {
+              "id": "b_1785606224135",
+              "price": "11,499",
+              "range": "28th August",
+              "status": "Sold Out",
+              "startDate": "2026-08-28"
+            }
+          ],
+          "month": "August 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "answer": "The trip starts and ends in Delhi with overnight Volvo transfers to Manali.",
+          "question": "WHAT IS THE STARTING AND ENDING POINT OF THE TRIP?"
+        },
+        {
+          "answer": "Yes, a day trek is required to reach the cliffside Phuktal Gompa from the road head.",
+          "question": "IS TREKKING REQUIRED ON THIS TRIP?"
+        },
+        {
+          "answer": "A mix of hotels/guesthouses in Manali & Jispa, along with high-altitude campsites near Gonbo Rangjon.",
+          "question": "WHAT KIND OF ACCOMMODATION IS PROVIDED?"
+        },
+        {
+          "answer": "Breakfast and Dinner (MAP Plan) are included starting from Day 2 dinner to Day 5 breakfast.",
+          "question": "WHAT MEALS ARE INCLUDED IN THE PACKAGE?"
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Abhishek Sharma",
+          "text": "Camping near Gonbo Rangjon under the night sky was a spiritual experience. Outstanding trip!",
+          "avatar": "assets/images/reviews/pfp-abhishek.jpg",
+          "location": "Chandigarh"
+        },
+        {
+          "name": "Ritu Kapoor",
+          "text": "The trek to Phuktal Monastery was challenging but completely worth it. Very well managed by Awara Banjara.",
+          "avatar": "assets/images/reviews/pfp-ritu.jpg",
+          "location": "Delhi"
+        },
+        {
+          "name": "Vikramaditya Roy",
+          "text": "Zanskar is pure magic! Driving through Sissu and Darcha to Gonbo Rangjon was an unforgettable road trip.",
+          "avatar": "assets/images/reviews/pfp-vikram.jpg",
+          "location": "Kolkata"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null
+    },
+    {
+      "id": 106,
+      "title": "Spiti : Full Summer Circuit",
+      "duration": "8 Days / 7 Nights",
+      "price": "₹16,499",
+      "image_url": "assets/images/trips/trip_106_image_url.jpg",
+      "link": "trips/spiti-tours-spiti-full-summer-circuit-106.html",
+      "created_at": "2026-08-02T04:35:18.715013+00:00",
+      "category": "spiti_tours, bike_tours, corporate_tours",
+      "route": "Delhi — Shimla — Sangla — Chitkul — Nako — Gue — Tabo — Dhankar — Kaza — Key — Kibber — Chandratal — Batal — Chhatru — Atal Tunnel — Manali — Delhi",
+      "tags": "Spiti Valley, Summer Expedition, Circuit Tour, Road Trip, Group Tour",
+      "bento_img_1": "assets/images/trips/trip_106_bento_img_1.jpg",
+      "bento_img_2": "assets/images/trips/trip_106_bento_img_2.jpg",
+      "bento_img_3": "assets/images/trips/trip_106_bento_img_3.jpg",
+      "bento_img_4": "assets/images/trips/trip_106_bento_img_4.jpg",
+      "bento_img_5": "assets/images/trips/trip_106_bento_img_5.jpg",
+      "about_text": "Awara Banjara brings you the ultimate Spiti Valley Full Summer Circuit—an immersive 8-day expedition starting from Delhi and traversing through Shimla, Kinnaur, Kaza, Chandratal Lake, and Manali. Experience high-altitude mountain passes, ancient monasteries, remote border villages, and stunning Himalayan landscapes with expert-led guidance and community vibes.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Delhi to Shimla (340 km",
+          "details": "8–9 hours)"
+        },
+        {
+          "day": 2,
+          "title": "Shimla to Chitkul / Sangla Valley",
+          "details": "Drive via Kinnaur Valley along the Sutlej River towards Chitkul, the last inhabited village near the Indo-Tibet border."
+        },
+        {
+          "day": 3,
+          "title": "Sangla to Tabo (via Nako & Gue)",
+          "details": "Visit Nako Lake, Nako Village, and the 500-year-old Mummy at Gue Monastery before entering Tabo."
+        },
+        {
+          "day": 4,
+          "title": "Tabo to Kaza (via Dhankar)",
+          "details": "Explore 1,000-year-old Tabo Monastery, then drive to Dhankar Monastery perched on a cliff before heading to Kaza."
+        },
+        {
+          "day": 5,
+          "title": "Kaza Local Sightseeing",
+          "details": "Visit the highest villages & iconic spots: Hikkim (World's Highest Post Office), Komic (Highest Village connected by motorable road), and Langza (Fossil Village)."
+        },
+        {
+          "day": 6,
+          "title": "Kaza to Chandratal (via Key & Kibber)",
+          "details": "Visit iconic Key Monastery and Chicham Bridge (Asia's highest bridge). Drive over Kunzum Pass to reach the crescent-shaped Chandratal Lake."
+        },
+        {
+          "day": 7,
+          "title": "Chandratal to Manali (via Batal, Chhatru & Atal Tunnel)",
+          "details": "Cross rugged dirt tracks of Batal and Chhatru, pass through Atal Tunnel, and reach Manali."
+        },
+        {
+          "day": 8,
+          "title": "Arrival in Delhi",
+          "details": "Over-night drive back from Manali to Delhi, concluding the circuit expedition."
+        }
+      ],
+      "inclusions": [
+        "Volvo Transfers (Delhi – Shimla & Delhi - Manali) in comfortable AC Volvo bus",
+        "5 Nights Stay in handpicked scenic properties across Spiti",
+        "Meals Included (5 Breakfast & 5 Dinner)",
+        "All Local Transfers & Sightseeing in a private vehicle",
+        "Campfire Evening in Chandratal (Weather Permitting)",
+        "Welcome Drink on Arrival at Tapra Farm Stay"
+      ],
+      "exclusions": [
+        "Lunch Meals (midday meals to explore local cafes)",
+        "Personal Expenses (shopping, snacks, tips, personal calls)",
+        "Optional Adventure Activities (rafting, paragliding, zip-lining, skiing)",
+        "5% GST, Travel Insurance & any unmentioned costs"
+      ],
+      "package_options": [
+        {
+          "title": "Triple Sharing",
+          "price": "₹16,499"
+        },
+        {
+          "title": "Double Sharing",
+          "price": "₹18,499"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "dates": [
+            {
+              "id": "b_1785644267302",
+              "price": "16,499",
+              "range": "7th August",
+              "status": "Sold Out",
+              "startDate": "2026-08-07"
+            },
+            {
+              "id": "b_1785644276115",
+              "price": "16,499",
+              "range": "14th August",
+              "status": "Filling Fast",
+              "startDate": "2026-08-14"
+            },
+            {
+              "id": "b_1785644282216",
+              "price": "16,499",
+              "range": "21th August",
+              "status": "Filling Fast",
+              "startDate": "2026-08-21"
+            },
+            {
+              "id": "b_1785644292348",
+              "price": "16,499",
+              "range": "28th August",
+              "status": "Available",
+              "startDate": "2026-08-28"
+            }
+          ],
+          "month": "August 2026"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "WHAT IS THE BOOKING AMOUNT TO CONFIRM A SLOT?",
+          "answer": "₹1000/- advance per head is required to confirm your booking, and the remaining balance is to be paid upon check-in at the hotel."
+        },
+        {
+          "question": "IS THE ADVANCE BOOKING AMOUNT REFUNDABLE?",
+          "answer": "No, the advance token amount is strictly non-refundable as it is used to pre-book your stays and transport."
+        },
+        {
+          "question": "CAN I TRANSFER MY BOOKING TO SOMEONE ELSE?",
+          "answer": "Yes, if you cannot travel, you may transfer your seat to a friend or family member at no extra cost, provided you inform us at least 7 days before the departure date."
+        },
+        {
+          "question": "WHAT HAPPENS IN CASE OF ROADBLOCKS OR BAD WEATHER?",
+          "answer": "Mountains are unpredictable. In case of landslides, heavy snowfall, or roadblocks (e.g., Atal Tunnel or Rohtang Pass closure), Awara Banjara reserves the right to change the itinerary for group safety. Any additional costs arising from unplanned stay extensions will be borne by the traveler."
+        },
+        {
+          "question": "ARE ADVENTURE ACTIVITIES INCLUDED IN THE PACKAGE?",
+          "answer": "Adventure activities like rafting, paragliding, zip-lining, or skiing are optional third-party services and are payable on-site if you choose to participate."
+        },
+        {
+          "question": "ARE LUNCH MEALS INCLUDED IN THE PACKAGE?",
+          "answer": "Lunch meals are not included to give you the freedom to explore local cafes and regional flavors during daytime travel."
+        },
+        {
+          "question": "WHAT IS THE NO-SHOW POLICY?",
+          "answer": "If a traveler fails to arrive at the designated pickup point at the scheduled time, it will be treated as a \"No-Show,\" and no refund will be provided."
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Rohit Verma",
+          "location": "Delhi",
+          "text": "Amazing expedition! Driving through Kinnaur and Spiti Valley with Awara Banjara was an unbelievable experience. The stays and arrangements were top-notch.",
+          "avatar": "assets/images/reviews/pfp-rohit.jpg"
+        },
+        {
+          "name": "Ananya Sharma",
+          "location": "Chandigarh",
+          "text": "The Spiti summer circuit was smooth, scenic, and super well organized. Our trip captain made sure everyone felt safe and had the best time.",
+          "avatar": "assets/images/reviews/pfp-ananya.jpg"
+        },
+        {
+          "name": "Priya Nair",
+          "location": "Mumbai",
+          "text": "Chandratal Lake camp night was the highlight of my trip! Everything mentioned in the itinerary was covered seamlessly. Highly recommend!",
+          "avatar": "assets/images/reviews/pfp-priya.jpg"
+        },
+        {
+          "name": "Siddharth Malhotra",
+          "location": "Bangalore",
+          "text": "Great group vibes, awesome local stays, and flawless execution from Delhi to Delhi. Spiti Valley with Awara Banjara is a must-do!",
+          "avatar": "assets/images/reviews/pfp-siddharth.jpg"
+        }
+      ],
+      "reserve_banner_title": "",
+      "reserve_banner_sub": null,
+      "custom_quote_title": "",
+      "custom_quote_sub": null,
+      "whatsapp_number": null,
+      "is_featured_reels": true,
+      "is_featured_stack": true,
+      "is_featured_lemonade": true,
+      "updated_at": "2026-08-10T13:01:22.357Z"
+    }
+  ],
+  "destinations": [
+    {
+      "id": 1,
+      "title": "Varanasi",
+      "category": "domestic",
+      "image_url": "assets/images/destinations/domestic/varanasi.jpg",
+      "subtitle": "Spiritual Capital",
+      "display_order": 1,
+      "is_active": true,
+      "created_at": "2026-08-07T13:30:09.960682+00:00"
+    },
+    {
+      "id": 2,
+      "title": "Rajasthan",
+      "category": "domestic",
+      "image_url": "assets/images/destinations/domestic/rajasthan.jpg",
+      "subtitle": "Land of Kings",
+      "display_order": 2,
+      "is_active": true,
+      "created_at": "2026-08-07T13:30:09.960682+00:00"
+    },
+    {
+      "id": 3,
+      "title": "Himachal",
+      "category": "domestic",
+      "image_url": "assets/images/destinations/domestic/himachal.jpg",
+      "subtitle": "Himalayan Escapes",
+      "display_order": 3,
+      "is_active": true,
+      "created_at": "2026-08-07T13:30:09.960682+00:00"
+    },
+    {
+      "id": 4,
+      "title": "Goa",
+      "category": "domestic",
+      "image_url": "assets/images/destinations/domestic/goa.jpg",
+      "subtitle": "Coastal Vibes",
+      "display_order": 4,
+      "is_active": true,
+      "created_at": "2026-08-07T13:30:09.960682+00:00"
+    },
+    {
+      "id": 5,
+      "title": "Kerala",
+      "category": "domestic",
+      "image_url": "assets/images/destinations/domestic/kerala.jpg",
+      "subtitle": "Gods Own Country",
+      "display_order": 5,
+      "is_active": true,
+      "created_at": "2026-08-07T13:30:09.960682+00:00"
+    },
+    {
+      "id": 6,
+      "title": "Dubai",
+      "category": "international",
+      "image_url": "assets/images/destinations/international/dubai.jpg",
+      "subtitle": "City of Gold",
+      "display_order": 1,
+      "is_active": true,
+      "created_at": "2026-08-07T13:30:09.960682+00:00"
+    },
+    {
+      "id": 7,
+      "title": "Bhutan",
+      "category": "international",
+      "image_url": "assets/images/destinations/international/bhutan.jpg",
+      "subtitle": "Thunder Dragon Land",
+      "display_order": 2,
+      "is_active": true,
+      "created_at": "2026-08-07T13:30:09.960682+00:00"
+    },
+    {
+      "id": 8,
+      "title": "Nepal",
+      "category": "international",
+      "image_url": "assets/images/destinations/international/nepal.jpg",
+      "subtitle": "Himalayan Kingdom",
+      "display_order": 3,
+      "is_active": true,
+      "created_at": "2026-08-07T13:30:09.960682+00:00"
+    },
+    {
+      "id": 9,
+      "title": "Bali",
+      "category": "international",
+      "image_url": "assets/images/destinations/international/bali.jpg",
+      "subtitle": "Island of Gods",
+      "display_order": 4,
+      "is_active": true,
+      "created_at": "2026-08-07T13:30:09.960682+00:00"
+    },
+    {
+      "id": 10,
+      "title": "Africa",
+      "category": "international",
+      "image_url": "assets/images/destinations/international/africa.jpg",
+      "subtitle": "Wild Safari Expedition",
+      "display_order": 5,
+      "is_active": true,
+      "created_at": "2026-08-07T13:30:09.960682+00:00"
+    },
+    {
+      "id": "1786356247569",
+      "title": "test",
+      "category": "domestic",
+      "subtitle": "test",
+      "display_order": 6,
+      "image_url": "assets/images/destinations/international/africa.jpg",
+      "is_active": true
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev_1786356219853",
+      "customer_name": "test final",
+      "trip_name": "Kashmir Winter Realm Expedition",
+      "trip_url": "trips/kashmir-tours-kashmir-winter-realm-expedition-1786216631459.html",
+      "rating": 5,
+      "date_text": "Recently",
+      "review_text": "testtest final",
+      "avatar_url": "assets/images/placeholder-avatar.svg",
+      "featured": true,
+      "created_at": "2026-08-10T10:03:39.861Z"
+    },
+    {
+      "id": "rev_1786214097781",
+      "customer_name": "test",
+      "trip_name": "Escape to Zanskar - Group Trip",
+      "trip_url": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
+      "rating": 5,
+      "date_text": "Recently",
+      "review_text": "test",
+      "avatar_url": "assets/images/placeholder-avatar.svg",
+      "featured": true,
+      "created_at": "2026-08-08T18:34:57.798Z"
+    },
+    {
+      "id": "rev_1786203435729",
+      "customer_name": "test",
+      "trip_name": "Udaipur & Kumbhalgarh Expedition",
+      "trip_url": "trips/rajasthan-tours-udaipur-kumbhalgarh-expedition-104.html",
+      "rating": 5,
+      "date_text": "Recently",
+      "review_text": "test",
+      "avatar_url": "assets/images/placeholder-avatar.svg",
+      "featured": true,
+      "created_at": "2026-08-08T15:37:15.742Z"
+    },
+    {
+      "id": "rev_201",
+      "customer_name": "Heli Shah",
+      "trip_tag": "private",
+      "trip_name": "Spiti Full Summer Circuit",
+      "trip_url": "trips/spiti-tours-spiti-full-summer-circuit-106.html",
+      "rating": 5,
+      "date_text": "1 month ago",
+      "review_text": "",
+      "avatar_url": "",
+      "featured": true,
+      "created_at": "2026-07-08T10:00:00Z"
+    },
+    {
+      "id": "rev_202",
+      "customer_name": "Jainy Gandhi",
+      "trip_tag": "private",
+      "trip_name": "Spiti Highland Circuit Group Trip",
+      "trip_url": "trips/spiti-tours-spiti-the-highland-circuit-group-trip-111.html",
+      "rating": 5,
+      "date_text": "1 month ago",
+      "review_text": "My bucketlist trip just got ticked. So happy to complete it with Awara Banjara experiences, everything was very well managed and the views from homestays were 10/10. Chandra Taal lake was breathtaking!",
+      "avatar_url": "assets/images/reviews/pfp-ananya.jpg",
+      "featured": true,
+      "created_at": "2026-07-10T12:00:00Z"
+    },
+    {
+      "id": "rev_203",
+      "customer_name": "Divya mehta",
+      "trip_tag": "private",
+      "trip_name": "Escape to Zanskar Group Trip",
+      "trip_url": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
+      "rating": 5,
+      "date_text": "1 month ago",
+      "review_text": "I would like to express my sincere appreciation to the Awara Banjara team for their excellent support and guidance throughout the travel process. They were professional, responsive, supportive...",
+      "avatar_url": "",
+      "featured": true,
+      "created_at": "2026-07-12T14:30:00Z"
+    },
+    {
+      "id": "rev_204",
+      "customer_name": "Dhruvi Shah",
+      "trip_tag": "private",
+      "trip_name": "Spiti Winter 4x4 Expedition",
+      "trip_url": "trips/spiti-tours-spiti-winter-4x4-expedition-103.html",
+      "rating": 5,
+      "date_text": "1 month ago",
+      "review_text": "The spiti valley road trip with Awara Banjara was very good. It was my first ever solo trip but it did not feel like one as everyone in the group was very welcoming and hospitable...",
+      "avatar_url": "",
+      "featured": true,
+      "created_at": "2026-07-15T16:00:00Z"
+    },
+    {
+      "id": "rev_205",
+      "customer_name": "Dabhi Mann",
+      "trip_tag": "private",
+      "trip_name": "Bir Billing Paragliding & Valley Escape",
+      "trip_url": "trips/himachal-tours-bir-billing-escape-paragliding-rajgundha-valley-prashar-lake-120.html",
+      "rating": 5,
+      "date_text": "1 month ago",
+      "review_text": "Bir was peaceful and the homestay felt like home-cooked comfort food after long days of paragliding and valley walks. Fantastic trip leads!",
+      "avatar_url": "",
+      "featured": true,
+      "created_at": "2026-07-18T09:15:00Z"
+    },
+    {
+      "id": "rev_206",
+      "customer_name": "RIYA JAYESH GADA",
+      "trip_tag": "private",
+      "trip_name": "Kashmir Great Lakes Trek",
+      "trip_url": "trips/kashmir-tours-kashmir-great-lakes-trek-107.html",
+      "rating": 5,
+      "date_text": "1 month ago",
+      "review_text": "Trekking through the 7 alpine lakes in Kashmir was pure magic! Everything was seamless, safe, and exceptionally organized.",
+      "avatar_url": "",
+      "featured": true,
+      "created_at": "2026-07-20T11:45:00Z"
+    },
+    {
+      "id": "rev_207",
+      "customer_name": "Ananya Sharma",
+      "trip_tag": "bike",
+      "trip_name": "Zanskar Moto Passage",
+      "trip_url": "trips/ladakh-tours-zanskar-moto-passage-the-monolith-circuit-100.html",
+      "rating": 5,
+      "date_text": "2 weeks ago",
+      "review_text": "The whole Zanskar trip was handled beautifully — great riders, warm homestays and a trip leader who knew every turn of the route. Unforgettable Himalayan experience!",
+      "avatar_url": "assets/images/reviews/pfp-ananya.jpg",
+      "featured": true,
+      "created_at": "2026-07-25T14:00:34Z"
+    },
+    {
+      "id": "rev_208",
+      "customer_name": "Karan Mehta",
+      "trip_tag": "bike",
+      "trip_name": "Spiti Circuit Moto Expedition",
+      "trip_url": "trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116.html",
+      "rating": 5,
+      "date_text": "3 weeks ago",
+      "review_text": "Best stay for anyone looking for a quiet, beautiful getaway — the whole crew knew the mountains and valleys inside out.",
+      "avatar_url": "assets/images/reviews/pfp-karan.jpg",
+      "featured": true,
+      "created_at": "2026-07-22T14:01:27Z"
+    }
+  ],
+  "inquiries": [
+    {
+      "id": "INQ_1786367425930",
+      "inquiry_id": "INQ_1786367425930",
+      "name": "test",
+      "customer_name": "test",
+      "phone": "9000000009",
+      "email": "test@gmail.com",
+      "travel_date": "14th August",
+      "selected_date": "14th August",
+      "selected_package": "Dual Rider",
+      "selected_sub_package": "Himalayan 411",
+      "price": "₹22,499 (Dual Rider)",
+      "travelers_count": 2,
+      "trip_title": "Spiti Circuit & Chandratal Lake Moto-Expedition",
+      "special_requests": "[Package: Dual Rider] [Bike: Himalayan 411] test",
+      "message": "[Package: Dual Rider] [Bike: Himalayan 411] test",
+      "created_at": "2026-08-10T13:10:25.948Z",
+      "status": "new"
+    },
+    {
+      "id": "INQ_1786292760841",
+      "inquiry_id": "INQ_1786292760841",
+      "name": "test",
+      "customer_name": "test",
+      "phone": "9000000009",
+      "email": "test@gmail.com",
+      "travel_date": "14th August",
+      "selected_date": "14th August",
+      "selected_package": "Dual Rider",
+      "selected_sub_package": "Himalayan 411",
+      "price": "₹22,499 (Dual Rider)",
+      "travelers_count": 5,
+      "trip_title": "Spiti : The Highland Circuit (Moto Expedition)",
+      "special_requests": "[Package: Dual Rider] [Bike: Himalayan 411] test",
+      "message": "[Package: Dual Rider] [Bike: Himalayan 411] test",
+      "created_at": "2026-08-09T16:26:00.873Z",
+      "status": "new"
+    },
+    {
+      "id": "INQ_1786215002889",
+      "inquiry_id": "INQ_1786215002889",
+      "name": "test",
+      "customer_name": "test",
+      "phone": "+91-9000000009",
+      "email": "test@gmail.com",
+      "travel_date": "2026-08-27",
+      "selected_date": "2026-08-27",
+      "selected_package": "Custom Package",
+      "selected_sub_package": "none",
+      "price": "On Request",
+      "travelers_count": 6,
+      "trip_title": "Africa",
+      "special_requests": "test",
+      "message": "test",
+      "created_at": "2026-08-08T18:50:02.893Z",
+      "status": "new"
+    },
+    {
+      "id": "INQ_1786214966990",
+      "inquiry_id": "INQ_1786214966990",
+      "name": "test",
+      "customer_name": "test",
+      "phone": "+91-9000000009",
+      "email": "test@gmail.com",
+      "travel_date": "2026-08-20",
+      "selected_date": "2026-08-20",
+      "selected_package": "Custom Package",
+      "selected_sub_package": "none",
+      "price": "On Request",
+      "travelers_count": 5,
+      "trip_title": "Himachal",
+      "special_requests": "test",
+      "message": "test",
+      "created_at": "2026-08-08T18:49:27.056Z",
+      "status": "new"
+    },
+    {
+      "id": "INQ_1786213483280",
+      "inquiry_id": "INQ_1786213483280",
+      "name": "test 1",
+      "customer_name": "test 1",
+      "phone": "9524124356",
+      "email": "test@gmail.com",
+      "travel_date": "14th August",
+      "selected_date": "14th August",
+      "selected_package": "Group Tour(Min. 6 Pax)",
+      "selected_sub_package": "N/A",
+      "price": "₹17,600 (Group Tour(Min. 6 Pax))",
+      "travelers_count": 5,
+      "trip_title": "Ladakh: High Passes & Blue Waters Expedition",
+      "special_requests": "[Package: Group Tour(Min. 6 Pax)] test",
+      "message": "[Package: Group Tour(Min. 6 Pax)] test",
+      "created_at": "2026-08-08T18:24:43.289Z",
+      "status": "new"
+    },
+    {
+      "id": "INQ_test303",
+      "inquiry_id": "INQ_test303",
+      "name": "Divya Kapoor",
+      "customer_name": "Divya Kapoor",
+      "phone": "+91-9811223344",
+      "email": "divya@example.com",
+      "travel_date": "15th August",
+      "selected_date": "15th August",
+      "selected_package": "Standard Package",
+      "selected_sub_package": "N/A",
+      "price": "₹24,999",
+      "travelers_count": 3,
+      "trip_title": "Kashmir Slow Paced Expedition",
+      "special_requests": "Checking availability for 3 people.",
+      "message": "Checking availability for 3 people.",
+      "created_at": "2026-08-08T18:21:26.188Z",
+      "status": "Pending"
+    },
+    {
+      "id": "INQ_1786213120630",
+      "inquiry_id": "INQ_1786213120630",
+      "name": "test",
+      "customer_name": "test",
+      "phone": "9524124356",
+      "email": "test@gmail.com",
+      "travel_date": "On Request Departure Date",
+      "selected_date": "On Request Departure Date",
+      "selected_package": "Dual Rider",
+      "selected_sub_package": "Himalayan 450",
+      "price": "On Request (Dual Rider)",
+      "travelers_count": 6,
+      "trip_title": "Ladakh Overland: Srinagar to Manali via Umling La & Tso Moriri",
+      "special_requests": "[Package: Dual Rider] [Bike: Himalayan 450] test",
+      "message": "[Package: Dual Rider] [Bike: Himalayan 450] test",
+      "created_at": "2026-08-08T18:18:40.637Z",
+      "status": "new"
+    },
+    {
+      "id": "INQ_test202",
+      "inquiry_id": "INQ_test202",
+      "name": "Aarav Mehta",
+      "customer_name": "Aarav Mehta",
+      "phone": "+91-9876001122",
+      "email": "aarav.mehta@example.com",
+      "travel_date": "1st August",
+      "selected_date": "1st August",
+      "selected_package": "Standard Package",
+      "selected_sub_package": "Dual Rider - Himalayan 450",
+      "price": "₹16,499",
+      "travelers_count": 2,
+      "trip_title": "Spiti Summer Circuit",
+      "special_requests": "Booking for 2 adults. Please confirm availability.",
+      "message": "Booking for 2 adults. Please confirm availability.",
+      "created_at": "2026-08-08T18:17:33.468Z",
+      "status": "Pending"
+    },
+    {
+      "id": "inq_1786213010349_h376",
+      "name": "Guest User",
+      "phone": "+91-9988776655",
+      "email": "rohan.sharma@example.com",
+      "travel_date": "Flexible",
+      "travelers_count": 2,
+      "trip_title": "Ladakh High Passes Expedition",
+      "special_requests": "Planning trip with friend. Please send full PDF itinerary.",
+      "created_at": "2026-08-08T18:16:50.350Z",
+      "status": "Pending"
+    },
+    {
+      "id": "inq_1786201264276_qpv9",
+      "name": "Jasman Backend Lead Test",
+      "phone": "+91-9876543210",
+      "email": "jasman@example.com",
+      "travel_date": "20 October 2026",
+      "travelers_count": 3,
+      "trip_title": "Spiti Valley Winter Expedition",
+      "special_requests": "Express REST API Lead Submission Test",
+      "created_at": "2026-08-08T15:01:04.276Z",
+      "status": "Pending"
+    },
+    {
+      "inquiry_id": "inq_1001",
+      "customer_name": "Vikram Sethi",
+      "email": "vikram.sethi@gmail.com",
+      "phone": "+91 98765 43210",
+      "travelers_count": 4,
+      "selected_package": "Spiti Summer Circuit",
+      "message": "Looking to book for 4 adults in late June.",
+      "status": "pending",
+      "timestamp": "2026-08-01T10:30:00Z"
+    }
+  ],
+  "site_config": {
+    "site_phone": "+91- 9103910523",
+    "whatsapp_number": "+91-9103910523",
+    "hero_headline": "Awara Banjara",
+    "hero_subtitle": "Curated Himalayan Escapes, Motorbike Expeditions & Offbeat Group Trips",
+    "announcement_bar": "✨ Escape the ordinary — Explore handpicked Himalayan group trips!",
+    "home_destinations": "[{\"id\":1,\"title\":\"Varanasi\",\"category\":\"domestic\",\"image_url\":\"assets/images/destinations/domestic/varanasi.jpg\",\"subtitle\":\"Spiritual Capital\",\"display_order\":1,\"is_active\":true,\"created_at\":\"2026-08-07T13:30:09.960682+00:00\"},{\"id\":6,\"title\":\"Dubai\",\"category\":\"international\",\"image_url\":\"assets/images/destinations/international/dubai.jpg\",\"subtitle\":\"City of Gold\",\"display_order\":1,\"is_active\":true,\"created_at\":\"2026-08-07T13:30:09.960682+00:00\"},{\"id\":2,\"title\":\"Rajasthan\",\"category\":\"domestic\",\"image_url\":\"assets/images/destinations/domestic/rajasthan.jpg\",\"subtitle\":\"Land of Kings\",\"display_order\":2,\"is_active\":true,\"created_at\":\"2026-08-07T13:30:09.960682+00:00\"},{\"id\":7,\"title\":\"Bhutan\",\"category\":\"international\",\"image_url\":\"assets/images/destinations/international/bhutan.jpg\",\"subtitle\":\"Thunder Dragon Land\",\"display_order\":2,\"is_active\":true,\"created_at\":\"2026-08-07T13:30:09.960682+00:00\"},{\"id\":8,\"title\":\"Nepal\",\"category\":\"international\",\"image_url\":\"assets/images/destinations/international/nepal.jpg\",\"subtitle\":\"Himalayan Kingdom\",\"display_order\":3,\"is_active\":true,\"created_at\":\"2026-08-07T13:30:09.960682+00:00\"},{\"id\":3,\"title\":\"Himachal\",\"category\":\"domestic\",\"image_url\":\"assets/images/destinations/domestic/himachal.jpg\",\"subtitle\":\"Himalayan Escapes\",\"display_order\":3,\"is_active\":true,\"created_at\":\"2026-08-07T13:30:09.960682+00:00\"},{\"id\":4,\"title\":\"Goa\",\"category\":\"domestic\",\"image_url\":\"assets/images/destinations/domestic/goa.jpg\",\"subtitle\":\"Coastal Vibes\",\"display_order\":4,\"is_active\":true,\"created_at\":\"2026-08-07T13:30:09.960682+00:00\"},{\"id\":9,\"title\":\"Bali\",\"category\":\"international\",\"image_url\":\"assets/images/destinations/international/bali.jpg\",\"subtitle\":\"Island of Gods\",\"display_order\":4,\"is_active\":true,\"created_at\":\"2026-08-07T13:30:09.960682+00:00\"},{\"id\":5,\"title\":\"Kerala\",\"category\":\"domestic\",\"image_url\":\"assets/images/destinations/domestic/kerala.jpg\",\"subtitle\":\"Gods Own Country\",\"display_order\":5,\"is_active\":true,\"created_at\":\"2026-08-07T13:30:09.960682+00:00\"},{\"id\":10,\"title\":\"Africa\",\"category\":\"international\",\"image_url\":\"assets/images/destinations/international/africa.jpg\",\"subtitle\":\"Wild Safari Expedition\",\"display_order\":5,\"is_active\":true,\"created_at\":\"2026-08-07T13:30:09.960682+00:00\"}]"
+  },
+  "packages": [
+    {
+      "id": "pkg_101",
+      "title": "Spiti Valley High Altitude Expedition",
+      "category": "group",
+      "duration": "7 Days / 6 Nights",
+      "startingPrice": 13999,
+      "currency": "INR",
+      "heroImage": "assets/images/destinations/domestic/spiti.jpg",
+      "gallery": [
+        "assets/images/destinations/domestic/spiti.jpg"
+      ],
+      "description": "High altitude group expedition across Spiti Valley.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Manali",
+          "details": "Check-in and trip briefing."
+        }
+      ],
+      "inclusions": [
+        "Stays",
+        "Meals",
+        "Transport"
+      ],
+      "exclusions": [
+        "Personal Expenses"
+      ],
+      "upcomingBatches": [
+        {
+          "startDate": "2026-09-01",
+          "endDate": "2026-09-07",
+          "slotsLeft": 6
+        }
+      ]
+    }
+  ],
+  "postcards": [
+    {
+      "id": "post_1786367230415",
+      "type": "blog",
+      "title": "Beyond the Horizon: The Unforgiving Beauty of Zanskar Valley",
+      "subtitle": "Glaciers, cliffside monasteries, and the wild trans-Himalayan trail.",
+      "category": "Travel Guide",
+      "author": "Team Awara Banjara",
+      "read_time": "5 min read",
+      "image_url": "assets/images/postcards/zanskar-full-circuit.jpg",
+      "content": "### Into the Realm of White Copper\n\nThere are places in the Himalayas that invite you in, and then there is Zanskar—a high-altitude desert world that demands your absolute presence. Tucked deep within the Kargil district of Ladakh, Zanskar feels like a landscape carved by giants and forgotten by time. \n\nCrossing high mountain passes like **Singe La** and **Pensi La**, the modern world slowly fades away into endless sweeps of grey rock, pristine turquoise rivers, and dramatic canyons.\n\n---\n\n### Iconic Landmarks & Sacred Trails\n\nTo explore Zanskar is to move between raw wilderness and deeply rooted spiritual heritage:\n\n* **Phuktal Monastery:** Built around a natural cave on a sheer cliffside in the Lungnak Valley, this honeycombed monastery looks almost unreal, accessible only by foot along the Tsarap River.\n* **Drang Drung Glacier:** Visible right from the top of Pensi La, this massive sea of ice stretches across the mountains like a frozen highway.\n* **Karsha & Stongdey Gompas:** Perched high on hills overlooking the valley floor, these ancient monasteries offer sweeping panoramas and a quiet glance into monastic life.\n* **Zangla Palace:** The hauntingly peaceful ruins of an ancient royal castle overlooking the village of Zangla.\n\n---\n\n### The Soul of the Valley: Life in the High Himalayas\n\nWhile the landscape takes your breath away, it is the resilience and warmth of the Zanskari people that stays with you. Life here revolves around the seasons—brief, intense summers spent farming and gathering supplies, followed by long, severe winters when snow isolates the entire valley.\n\nWhether sitting down in a traditional glass-room home for butter tea or sharing a simple meal of *dal-chawal* with young monks at a gompa, hospitality here is shared without hesitation.\n\n---\n\n### Essential Travel Tips for the Journey\n\n1. **Best Time to Visit:** Mid-May to late September, when the high mountain passes are clear of heavy snow.\n2. **Acclimatization:** Zanskar sits at high altitudes (above 3,500 meters). Ensure you spend at least two days in Leh or Kargil before heading deeper into the valley.\n3. **Connectivity:** Expect minimal to no cellular network outside Padum. Prepare to unplug completely and take in the silence of the mountains.",
+      "featured_in_watch_read": true,
+      "updated_at": "2026-08-10T13:07:10.428Z",
+      "created_at": "2026-08-10T13:07:10.428Z"
+    },
+    {
+      "id": "post_1786367010689",
+      "type": "reel",
+      "title": "test",
+      "subtitle": "Watch on Instagram",
+      "category": "Instagram Reel",
+      "author": "test",
+      "video_url": "https://www.instagram.com/p/DbYc29oNdd4/",
+      "embed_url": "https://www.instagram.com/p/DbYc29oNdd4/embed",
+      "image_url": "assets/images/destinations/domestic/kashmir.jpg",
+      "read_time": "1 min watch",
+      "featured_in_watch_read": true,
+      "updated_at": "2026-08-10T13:03:30.705Z",
+      "created_at": "2026-08-10T13:03:30.705Z"
+    },
+    {
+      "id": "post_101",
+      "type": "reel",
+      "title": "test",
+      "subtitle": "Watch on Instagram",
+      "category": "Instagram Reel",
+      "image_url": "assets/images/destinations/domestic/spiti.jpg",
+      "video_url": "https://www.instagram.com/reel/DbYc29oNdd4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "embed_url": "https://www.instagram.com/reel/DbYc29oNdd4/embed",
+      "read_time": "1 min watch",
+      "author": "Awara Banjara Community",
+      "author_avatar": "assets/images/reviews/pfp-ananya.jpg",
+      "content": "Experience frozen waterfalls, -20°C temperatures, and high altitude winter mountain passes with Awara Banjara.",
+      "featured_in_watch_read": true,
+      "created_at": "2026-08-01T10:00:00Z",
+      "updated_at": "2026-08-10T12:32:19.280Z"
+    },
+    {
+      "id": "post_102",
+      "type": "reel",
+      "title": "Riding Through Kunzum Pass & Chicham Bridge",
+      "subtitle": "Watch on Instagram",
+      "category": "Instagram Reel",
+      "image_url": "assets/images/destinations/domestic/rajasthan.jpg",
+      "video_url": "https://www.instagram.com/reel/C2a3b4c5d6e/",
+      "embed_url": "https://www.instagram.com/reel/C2a3b4c5d6e/embed",
+      "read_time": "1 min watch",
+      "author": "Himalayan Bikers",
+      "author_avatar": "assets/images/reviews/pfp-karan.jpg",
+      "content": "Crossing Asia's highest suspension bridge on two wheels.",
+      "featured_in_watch_read": true,
+      "created_at": "2026-08-02T11:00:00Z"
+    },
+    {
+      "id": "post_103",
+      "type": "reel",
+      "title": "Sunset Over Gonbo Rangjon Monolith",
+      "subtitle": "Watch on Instagram",
+      "category": "Instagram Reel",
+      "image_url": "assets/images/trips/gonbo-rangjon.jpg",
+      "video_url": "https://www.instagram.com/reel/C4d5e6f7g8h/",
+      "embed_url": "https://www.instagram.com/reel/C4d5e6f7g8h/embed",
+      "read_time": "1 min watch",
+      "author": "Zanskar Trail Leads",
+      "author_avatar": "assets/images/reviews/pfp-rohit.jpg",
+      "content": "Golden hour glow at the sacred God's Mountain in Zanskar Valley.",
+      "featured_in_watch_read": true,
+      "created_at": "2026-08-03T12:00:00Z"
+    },
+    {
+      "id": "post_104",
+      "type": "reel",
+      "title": "Camping Under Kashmir Alpine Lakes Sky",
+      "subtitle": "Watch on Instagram",
+      "category": "Instagram Reel",
+      "image_url": "assets/images/destinations/domestic/kashmir.jpg",
+      "video_url": "https://www.instagram.com/reel/C5e6f7g8h9i/",
+      "embed_url": "https://www.instagram.com/reel/C5e6f7g8h9i/embed",
+      "read_time": "1 min watch",
+      "author": "Kashmir Expeditions",
+      "author_avatar": "assets/images/reviews/pfp-priya.jpg",
+      "content": "Trekking through the 7 pristine alpine lakes of Kashmir.",
+      "featured_in_watch_read": true,
+      "created_at": "2026-08-04T13:00:00Z"
+    },
+    {
+      "id": "post_105",
+      "type": "blog",
+      "title": "Zanskar Full Circuit Experience",
+      "subtitle": "Raw Himalayan Trails & Monasteries",
+      "category": "Travel Guide",
+      "image_url": "assets/images/postcards/zanskar-full-circuit.jpg",
+      "video_url": "",
+      "embed_url": "",
+      "read_time": "5 min read",
+      "author": "Ananya Sharma",
+      "author_avatar": "assets/images/reviews/pfp-ananya.jpg",
+      "content": "Crossing the high passes of Zanskar Valley is an odyssey that transforms how you see the Himalayas. From the monolithic spire of Gonbo Rangjon to the cliffside monastery of Phuktal Gompa, every turn reveals ancient homestays, glacial streams, and legendary hospitality.\n\n### Essential Highlights\n- **Gonbo Rangjon Monolith**: Camping under starlit skies near the sacred mountain.\n- **Phuktal Monastery**: A breathtaking 12th-century structure built into a giant cave cliff.\n- **Shinku La Pass**: Riding across the high altitude motorable pass connection.",
+      "featured_in_watch_read": true,
+      "created_at": "2026-08-05T14:00:00Z"
+    },
+    {
+      "id": "post_106",
+      "type": "blog",
+      "title": "Jibhi–Tirthan: An 8 Day Odyssey",
+      "subtitle": "Pine Cottages & Alpine Trout Streams",
+      "category": "Field Guide",
+      "image_url": "assets/images/postcards/jibhi-tirthan-odyssey.jpg",
+      "video_url": "",
+      "embed_url": "",
+      "read_time": "4 min read",
+      "author": "Team Awara Banjara",
+      "author_avatar": "assets/images/reviews/pfp-rohit.jpg",
+      "content": "Tucked deep inside Himachal's Seraj Valley lies Jibhi and Tirthan Valley — a haven of wooden pine cottages, roaring trout streams, and serene alpine meadows.\n\n### Highlights\n- **Jalori Pass & Serolsar Lake**: Trek through dense oak forests to the crystal lake.\n- **Choie Waterfall**: A hidden forest cascade perfect for quiet reflection.",
+      "featured_in_watch_read": true,
+      "created_at": "2026-08-06T15:00:00Z"
+    },
+    {
+      "id": "post_107",
+      "type": "blog",
+      "title": "Thailand: The Enchanted Land",
+      "subtitle": "Tropical Islands & Cultural Markets",
+      "category": "Expedition Story",
+      "image_url": "assets/images/postcards/thailand-enchanted-land.jpg",
+      "video_url": "",
+      "embed_url": "",
+      "read_time": "6 min read",
+      "author": "Priya Nair",
+      "author_avatar": "assets/images/reviews/pfp-priya.jpg",
+      "content": "From the emerald waters of Railay Beach to hidden sea caves in Phuket and vibrant night markets in Chiang Mai, Thailand is a dream world for curious souls.\n\n### Highlights\n- **Railay Beach & Phi Phi Islands**: Island hopping in turquoise lagoons.\n- **Chiang Mai Temples**: Cultural immersion in northern Thailand.",
+      "featured_in_watch_read": true,
+      "created_at": "2026-08-07T16:00:00Z"
+    },
+    {
+      "id": "post_108",
+      "type": "blog",
+      "title": "The African Dream Vacation",
+      "subtitle": "Serengeti Safaris & Blue Waters",
+      "category": "Wilderness Guide",
+      "image_url": "assets/images/postcards/african-dream-vacation.jpg",
+      "video_url": "",
+      "embed_url": "",
+      "read_time": "7 min read",
+      "author": "Karan Mehta",
+      "author_avatar": "assets/images/reviews/pfp-karan.jpg",
+      "content": "Witnessing the Great Migration across the golden savannah of Serengeti before relaxing on the turquoise beaches of Zanzibar.\n\n### Highlights\n- **Ngorongoro Crater Safari**: Wildlife spotting in an ancient volcanic caldera.\n- **Zanzibar Spice Island**: Relaxing in Stone Town and crystal clear ocean shores.",
+      "featured_in_watch_read": true,
+      "created_at": "2026-08-08T17:00:00Z"
+    }
+  ]
+}

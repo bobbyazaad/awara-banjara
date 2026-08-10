@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Placeholder hero photo of Himalayan mountains">
+  <defs>
+    <linearGradient id="skyHero" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5b3a29"/>
+      <stop offset="55%" stop-color="#9c6b45"/>
+      <stop offset="100%" stop-color="#d8a86a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#skyHero)"/>
+  <polygon points="0,650 220,420 380,600 560,340 760,610 980,380 1180,640 1400,360 1600,620 1600,900 0,900" fill="#3d2818" opacity="0.55"/>
+  <polygon points="0,750 260,540 480,700 720,480 940,720 1180,520 1400,700 1600,560 1600,900 0,900" fill="#2a1c11" opacity="0.65"/>
+  <text x="50%" y="94%" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f3e9dc" opacity="0.7">Placeholder photo — replace with real trip imagery</text>
+</svg>

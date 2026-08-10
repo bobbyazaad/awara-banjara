@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(magick -version)",
+      "Bash(sips --help)",
+      "Bash(sips -c 257 1300 --cropOffset 6000 0 resized.png --out slice_4_test.png)",
+      "Bash(sips -g pixelHeight slice_4_test.png)",
+      "Bash(chmod +x /private/tmp/claude-502/-Users-parththakral-Desktop-awara-banjara/0c2f5209-5250-4a3d-a1ff-53d3d5c2c245/scratchpad/slice.sh)",
+      "Bash(rm -f /private/tmp/claude-502/-Users-parththakral-Desktop-awara-banjara/0c2f5209-5250-4a3d-a1ff-53d3d5c2c245/scratchpad/slices/*.png)",
+      "Bash(/private/tmp/claude-502/-Users-parththakral-Desktop-awara-banjara/0c2f5209-5250-4a3d-a1ff-53d3d5c2c245/scratchpad/slice.sh \"/Users/parththakral/Desktop/awara banjara/screens/Awara Banjara-Home 1.png\" /private/tmp/claude-502/-Users-parththakral-Desktop-awara-banjara/0c2f5209-5250-4a3d-a1ff-53d3d5c2c245/scratchpad/slices/home 1300 1500)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(python3 -c \"import playwright; print\\('playwright python ok'\\)\")",
+      "Bash(npx --yes playwright install chromium --with-deps)",
+      "Bash(mkdir -p /private/tmp/claude-502/-Users-parththakral-Desktop-awara-banjara/0c2f5209-5250-4a3d-a1ff-53d3d5c2c245/scratchpad/shots)",
+      "Bash(node check_home.js '/Users/parththakral/Desktop/awara banjara/index.html' /private/tmp/claude-502/-Users-parththakral-Desktop-awara-banjara/0c2f5209-5250-4a3d-a1ff-53d3d5c2c245/scratchpad/shots)",
+      "Bash(npm init *)",
+      "Bash(python3 -c \"from PIL import Image; print\\('PIL ok'\\)\")",
+      "Bash(node /private/tmp/claude-502/-Users-parththakral-Desktop-awara-banjara/0c2f5209-5250-4a3d-a1ff-53d3d5c2c245/scratchpad/check_home.js '/Users/parththakral/Desktop/awara banjara/index.html' /private/tmp/claude-502/-Users-parththakral-Desktop-awara-banjara/0c2f5209-5250-4a3d-a1ff-53d3d5c2c245/scratchpad/shots)",
+      "Bash(node /private/tmp/claude-502/-Users-parththakral-Desktop-awara-banjara/0c2f5209-5250-4a3d-a1ff-53d3d5c2c245/scratchpad/debug_stack.js '/Users/parththakral/Desktop/awara banjara/index.html')",
+      "Bash(sed -i '' 's/process.argv\\\\[1\\\\]/process.argv[2]/' /private/tmp/claude-502/-Users-parththakral-Desktop-awara-banjara/0c2f5209-5250-4a3d-a1ff-53d3d5c2c245/scratchpad/check_stack.js)",
+      "Bash(node /private/tmp/claude-502/-Users-parththakral-Desktop-awara-banjara/0c2f5209-5250-4a3d-a1ff-53d3d5c2c245/scratchpad/check_stack.js unused '/Users/parththakral/Desktop/awara banjara/index.html' /private/tmp/claude-502/-Users-parththakral-Desktop-awara-banjara/0c2f5209-5250-4a3d-a1ff-53d3d5c2c245/scratchpad/shots)"
+    ]
+  }
+}

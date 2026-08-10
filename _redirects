@@ -1,0 +1,2 @@
+# Netlify Clean URL Rewrites for Dynamic Trip Detail Pages
+/trips/:category/:trip  /trip-detail.html?category=:category&trip=:trip  200

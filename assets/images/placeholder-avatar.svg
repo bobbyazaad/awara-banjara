@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Placeholder avatar">
+  <defs>
+    <linearGradient id="ga" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cfd8c8"/>
+      <stop offset="100%" stop-color="#9fae8f"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#ga)"/>
+  <circle cx="100" cy="80" r="34" fill="#ffffff" opacity="0.55"/>
+  <ellipse cx="100" cy="165" rx="55" ry="40" fill="#ffffff" opacity="0.55"/>
+</svg>

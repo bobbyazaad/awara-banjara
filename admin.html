@@ -660,7 +660,7 @@
 <body>
 
   <!-- ADMIN LOGIN MODAL OVERLAY -->
-  <div id="adminLoginModal" class="login-modal-overlay" style="display: none;">
+  <div id="adminLoginModal" class="login-modal-overlay" style="display: flex;">
     <div class="login-modal-card">
       <div class="login-modal-header">
         <img src="assets/images/logo/logo-black-full.png" alt="Awara Banjara Logo" class="login-logo">
@@ -1715,15 +1715,26 @@ Travel Insurance"></textarea>
     function switchTab(tabId) {
       if (!tabId) return;
 
-      document.querySelectorAll('.tab-bar .tab-btn').forEach(btn => btn.classList.remove('active'));
-      document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+      const buttons = document.querySelectorAll('.tab-bar .tab-btn');
+      buttons.forEach(btn => {
+        const btnTab = btn.getAttribute('data-tab');
+        if (btnTab === tabId || (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(tabId))) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
 
-      const targetBtn = document.querySelector(`.tab-bar .tab-btn[data-tab="${tabId}"]`) || 
-                        document.querySelector(`.tab-bar .tab-btn[onclick*="${tabId}"]`);
-      const targetPanel = document.getElementById(`panel-${tabId}`);
-
-      if (targetBtn) targetBtn.classList.add('active');
-      if (targetPanel) targetPanel.classList.add('active');
+      const panels = document.querySelectorAll('.tab-panel');
+      panels.forEach(panel => {
+        if (panel.id === 'panel-' + tabId) {
+          panel.classList.add('active');
+          panel.style.display = 'block';
+        } else {
+          panel.classList.remove('active');
+          panel.style.display = 'none';
+        }
+      });
 
       if (tabId === 'destinations' && typeof loadAdminDestinations === 'function') {
         loadAdminDestinations();
@@ -1737,7 +1748,7 @@ Travel Insurance"></textarea>
       } else if (tabId === 'postcards' && typeof loadAdminPostcards === 'function') {
         loadAdminPostcards();
       }
-      initImageDropzones();
+      if (typeof initImageDropzones === 'function') initImageDropzones();
     }
     window.switchTab = switchTab;
 
@@ -3172,6 +3183,8 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
         showLoginModal();
         return false;
       }
+
+      // 1. Verify token with live API server if available
       try {
         const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/auth/verify') : '/api/auth/verify';
         const res = await fetch(apiUrl, {
@@ -3186,12 +3199,14 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
         }
       } catch (e) {}
 
-      // Fallback for static environments (e.g. GitHub Pages) without Node API server
-      if (token) {
+      // 2. Static session verification
+      if (token && token.startsWith('static_session_')) {
         hideLoginModal();
         return true;
       }
 
+      // If token is invalid or expired, clear token and enforce login lock
+      localStorage.removeItem('awara_admin_token');
       showLoginModal();
       return false;
     }
@@ -3269,12 +3284,10 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
         // Express API backend unreachable (e.g., static hosting on GitHub Pages)
       }
 
-      // Static Client Fallback Authentication for GitHub Pages
+      // Strict Static Authentication Check
       const validUsernames = ['admin', 'awara', 'bobbyazaad', 'jasmansinghsandhu@outlook.com'];
-      const validPasswords = ['AwaraBanjara@2026!', 'admin'];
-      
       const isUsernameValid = validUsernames.includes(username.toLowerCase());
-      const isPasswordValid = validPasswords.includes(password);
+      const isPasswordValid = (password === 'AwaraBanjara@2026!');
 
       if (isUsernameValid && isPasswordValid) {
         const token = 'static_session_' + Date.now() + '_' + Math.random().toString(36).substring(2);
@@ -3302,7 +3315,8 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
       const token = localStorage.getItem('awara_admin_token');
       if (token) {
         try {
-          await fetch('/api/auth/logout', {
+          const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/auth/logout') : '/api/auth/logout';
+          await fetch(apiUrl, {
             method: 'POST',
             headers: { 'Authorization': `Bearer ${token}` }
           });
@@ -3310,8 +3324,9 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
       }
       localStorage.removeItem('awara_admin_token');
       showLoginModal();
-      showToast('🔒 Logged out successfully');
+      showToast('🔒 Logged out successfully. Master Control locked.');
     }
+    window.handleAdminLogout = handleAdminLogout;
 
     // Auto-check authentication on page load
     document.addEventListener('DOMContentLoaded', () => {

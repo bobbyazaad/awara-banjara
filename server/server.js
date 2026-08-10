@@ -506,12 +506,13 @@ function startServer(portToTry) {
 }
 
 server.on('error', (err) => {
-  if (err.code === 'EADDRINUSE') {
+  if (err.code === 'EADDRINUSE' && !process.env.PORT) {
     currentPort += 1;
     console.warn(`⚠️ Port in use, retrying on port ${currentPort}...`);
     startServer(currentPort);
   } else {
     console.error('❌ Server error:', err);
+    process.exit(1);
   }
 });
 

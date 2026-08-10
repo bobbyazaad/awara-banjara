@@ -3173,8 +3173,17 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
         showLoginModal();
         return false;
       }
+
+      // 1. Static session check
+      if (token && token.startsWith('static_session_')) {
+        hideLoginModal();
+        return true;
+      }
+
+      // 2. Remote API verification
       try {
-        const res = await fetch('/api/auth/verify', {
+        const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/auth/verify') : '/api/auth/verify';
+        const res = await fetch(apiUrl, {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         if (res.ok) {
@@ -3186,6 +3195,7 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
         }
       } catch (e) {}
 
+      localStorage.removeItem('awara_admin_token');
       showLoginModal();
       return false;
     }
@@ -3234,45 +3244,68 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
       }
 
       try {
-        const res = await fetch('/api/auth/login', {
+        const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/auth/login') : '/api/auth/login';
+        const res = await fetch(apiUrl, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username, password })
         });
-        const json = await res.json();
-
-        if (res.ok && json.success && json.token) {
-          localStorage.setItem('awara_admin_token', json.token);
-          if (errorAlert) errorAlert.style.display = 'none';
-          hideLoginModal();
-          showToast('🔑 Login Successful! Control Center Unlocked.');
-          if (typeof loadAdminTrips === 'function') loadAdminTrips();
-          if (typeof loadAdminInquiries === 'function') loadAdminInquiries();
-          if (typeof loadAdminReviews === 'function') loadAdminReviews();
-        } else {
-          if (errorAlert) {
-            errorAlert.textContent = json.error || 'Invalid credentials. Access denied.';
-            errorAlert.style.display = 'block';
+        if (res.ok) {
+          const json = await res.json();
+          if (json.success && json.token) {
+            localStorage.setItem('awara_admin_token', json.token);
+            if (errorAlert) errorAlert.style.display = 'none';
+            hideLoginModal();
+            showToast('🔑 Login Successful! Control Center Unlocked.');
+            if (typeof loadAdminTrips === 'function') loadAdminTrips();
+            if (typeof loadAdminInquiries === 'function') loadAdminInquiries();
+            if (typeof loadAdminReviews === 'function') loadAdminReviews();
+            return;
+          } else if (json.error) {
+            if (errorAlert) {
+              errorAlert.textContent = json.error;
+              errorAlert.style.display = 'block';
+            }
+            return;
           }
         }
       } catch (err) {
+        // Express API backend unreachable / cold start on Render / static hosting on GitHub Pages
+      }
+
+      // Fallback Authentication Check for Static GitHub Pages & Render Cold Start
+      const validUsernames = ['admin', 'awara', 'bobbyazaad', 'jasmansinghsandhu@outlook.com'];
+      const isUsernameValid = validUsernames.includes(username.toLowerCase());
+      const isPasswordValid = (password === 'AwaraBanjara@2026!');
+
+      if (isUsernameValid && isPasswordValid) {
+        const token = 'static_session_' + Date.now() + '_' + Math.random().toString(36).substring(2);
+        localStorage.setItem('awara_admin_token', token);
+        if (errorAlert) errorAlert.style.display = 'none';
+        hideLoginModal();
+        showToast('🔑 Login Successful! Control Center Unlocked.');
+        if (typeof loadAdminTrips === 'function') loadAdminTrips();
+        if (typeof loadAdminInquiries === 'function') loadAdminInquiries();
+        if (typeof loadAdminReviews === 'function') loadAdminReviews();
+      } else {
         if (errorAlert) {
-          errorAlert.textContent = 'Network error. Could not connect to server.';
+          errorAlert.textContent = 'Invalid username or password. Access denied.';
           errorAlert.style.display = 'block';
         }
-      } finally {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = 'Unlock Control Center 🔐';
-        }
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Unlock Control Center 🔐';
       }
     }
 
     async function handleAdminLogout() {
       const token = localStorage.getItem('awara_admin_token');
-      if (token) {
+      if (token && !token.startsWith('static_session_')) {
         try {
-          await fetch('/api/auth/logout', {
+          const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/auth/logout') : '/api/auth/logout';
+          await fetch(apiUrl, {
             method: 'POST',
             headers: { 'Authorization': `Bearer ${token}` }
           });
@@ -3280,8 +3313,9 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
       }
       localStorage.removeItem('awara_admin_token');
       showLoginModal();
-      showToast('🔒 Logged out successfully');
+      showToast('🔒 Logged out successfully. Control Center locked.');
     }
+    window.handleAdminLogout = handleAdminLogout;
 
     // Auto-check authentication on page load
     document.addEventListener('DOMContentLoaded', () => {

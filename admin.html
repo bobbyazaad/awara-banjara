@@ -3173,7 +3173,8 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
         return false;
       }
       try {
-        const res = await fetch('/api/auth/verify', {
+        const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/auth/verify') : '/api/auth/verify';
+        const res = await fetch(apiUrl, {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         if (res.ok) {
@@ -3239,7 +3240,8 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
       }
 
       try {
-        const res = await fetch('/api/auth/login', {
+        const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/auth/login') : '/api/auth/login';
+        const res = await fetch(apiUrl, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username, password })

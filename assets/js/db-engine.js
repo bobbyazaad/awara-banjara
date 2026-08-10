@@ -78,32 +78,18 @@
     async getTrips(forceRefresh = false) {
       const isLocallyModified = localStorage.getItem('awara_trips_modified') === 'true';
 
-      // 1. If locally modified, prioritize in-memory or localStorage cache first
-      if (isLocallyModified) {
-        if (inMemoryTrips && inMemoryTrips.length > 0) return inMemoryTrips;
-        try {
-          const stored = localStorage.getItem('awara_trips_cache');
-          if (stored) {
-            const parsed = JSON.parse(stored);
-            if (Array.isArray(parsed) && parsed.length > 0) {
-              inMemoryTrips = parsed;
-              return inMemoryTrips;
-            }
-          }
-        } catch (e) {}
-      }
-
-      // 2. Try Express REST API
+      // 1. Try Express REST API
       try {
         const res = await fetch(getApiUrl(`/trips?includeInactive=true&_t=${Date.now()}`));
         if (res.ok) {
           const json = await res.json();
           if (json.success && Array.isArray(json.data) && json.data.length > 0) {
-            if (!isLocallyModified) {
+            if (!isLocallyModified || forceRefresh) {
               inMemoryTrips = json.data;
               try { localStorage.setItem('awara_trips_cache', JSON.stringify(json.data)); } catch (e) {}
+              if (forceRefresh) localStorage.removeItem('awara_trips_modified');
             }
-            return (isLocallyModified && inMemoryTrips && inMemoryTrips.length > 0) ? inMemoryTrips : json.data;
+            return (isLocallyModified && !forceRefresh && inMemoryTrips && inMemoryTrips.length > 0) ? inMemoryTrips : json.data;
           }
         }
       } catch (err) {}
@@ -112,7 +98,7 @@
         return inMemoryTrips;
       }
 
-      // 3. Check localStorage cache
+      // 2. Check localStorage cache
       try {
         const stored = localStorage.getItem('awara_trips_cache');
         if (stored) {
@@ -124,7 +110,7 @@
         }
       } catch (e) {}
 
-      // 4. Fallback to static JSON file
+      // 3. Fallback to static JSON file
       try {
         const basePath = getBasePath();
         const res = await fetch(`${basePath}data/trips.json?_t=${Date.now()}`);
@@ -135,7 +121,7 @@
               inMemoryTrips = jsonTrips;
               try { localStorage.setItem('awara_trips_cache', JSON.stringify(jsonTrips)); } catch (e) {}
             }
-            return (isLocallyModified && inMemoryTrips && inMemoryTrips.length > 0) ? inMemoryTrips : jsonTrips;
+            return (isLocallyModified && !forceRefresh && inMemoryTrips && inMemoryTrips.length > 0) ? inMemoryTrips : jsonTrips;
           }
         }
       } catch (err) {}
@@ -230,7 +216,7 @@
         payload.link = this.buildSeoTripUrl(payload);
       }
 
-      // 1. Always update local state & cache first to guarantee persistence
+      // 1. Update local state & cache first to ensure immediate responsiveness
       let trips = inMemoryTrips && inMemoryTrips.length > 0 ? [...inMemoryTrips] : [];
       if (trips.length === 0) {
         try {
@@ -262,13 +248,9 @@
         });
         if (res.ok) {
           const json = await res.json();
-          if (json.success && Array.isArray(json.data)) {
-            inMemoryTrips = json.data;
-            try {
-              localStorage.setItem('awara_trips_cache', JSON.stringify(json.data));
-              localStorage.removeItem('awara_trips_modified');
-            } catch (e) {}
-            notifyCmsUpdate();
+          if (json.success) {
+            localStorage.removeItem('awara_trips_modified');
+            await this.getTrips(true);
             return json;
           }
         }
@@ -281,7 +263,7 @@
      * Delete a trip itinerary by ID
      */
     async deleteTrip(id) {
-      // 1. Always update local state & cache first
+      // 1. Update local state & cache first
       let trips = inMemoryTrips && inMemoryTrips.length > 0 ? [...inMemoryTrips] : [];
       if (trips.length === 0) {
         try {
@@ -305,13 +287,10 @@
         });
         if (res.ok) {
           const json = await res.json();
-          if (json.success && Array.isArray(json.data)) {
-            inMemoryTrips = json.data;
-            try {
-              localStorage.setItem('awara_trips_cache', JSON.stringify(json.data));
-              localStorage.removeItem('awara_trips_modified');
-            } catch (e) {}
-            notifyCmsUpdate();
+          if (json.success) {
+            localStorage.removeItem('awara_trips_modified');
+            await this.getTrips(true);
+            return json;
           }
         }
       } catch (err) {}
@@ -325,31 +304,18 @@
     async getDestinations(forceRefresh = false) {
       const isLocallyModified = localStorage.getItem('awara_destinations_modified') === 'true';
 
-      if (isLocallyModified) {
-        if (inMemoryDestinations && inMemoryDestinations.length > 0) return inMemoryDestinations;
-        try {
-          const stored = localStorage.getItem('awara_destinations');
-          if (stored) {
-            const parsed = JSON.parse(stored);
-            if (Array.isArray(parsed) && parsed.length > 0) {
-              inMemoryDestinations = parsed;
-              return inMemoryDestinations;
-            }
-          }
-        } catch (e) {}
-      }
-
       // Try REST API
       try {
         const res = await fetch(getApiUrl(`/destinations?_t=${Date.now()}`));
         if (res.ok) {
           const json = await res.json();
           if (json.success && Array.isArray(json.data) && json.data.length > 0) {
-            if (!isLocallyModified) {
+            if (!isLocallyModified || forceRefresh) {
               inMemoryDestinations = json.data;
               try { localStorage.setItem('awara_destinations', JSON.stringify(json.data)); } catch (e) {}
+              if (forceRefresh) localStorage.removeItem('awara_destinations_modified');
             }
-            return (isLocallyModified && inMemoryDestinations && inMemoryDestinations.length > 0) ? inMemoryDestinations : json.data;
+            return (isLocallyModified && !forceRefresh && inMemoryDestinations && inMemoryDestinations.length > 0) ? inMemoryDestinations : json.data;
           }
         }
       } catch (err) {}
@@ -381,7 +347,7 @@
               inMemoryDestinations = jsonDests;
               try { localStorage.setItem('awara_destinations', JSON.stringify(jsonDests)); } catch (e) {}
             }
-            return (isLocallyModified && inMemoryDestinations && inMemoryDestinations.length > 0) ? inMemoryDestinations : jsonDests;
+            return (isLocallyModified && !forceRefresh && inMemoryDestinations && inMemoryDestinations.length > 0) ? inMemoryDestinations : jsonDests;
           }
         }
       } catch (err) {}
@@ -426,13 +392,10 @@
         });
         if (res.ok) {
           const json = await res.json();
-          if (json.success && Array.isArray(json.data)) {
-            inMemoryDestinations = json.data;
-            try {
-              localStorage.setItem('awara_destinations', JSON.stringify(json.data));
-              localStorage.removeItem('awara_destinations_modified');
-            } catch (e) {}
-            notifyCmsUpdate();
+          if (json.success) {
+            localStorage.removeItem('awara_destinations_modified');
+            await this.getDestinations(true);
+            return json;
           }
         }
       } catch (err) {}
@@ -466,13 +429,10 @@
         });
         if (res.ok) {
           const json = await res.json();
-          if (json.success && Array.isArray(json.data)) {
-            inMemoryDestinations = json.data;
-            try {
-              localStorage.setItem('awara_destinations', JSON.stringify(json.data));
-              localStorage.removeItem('awara_destinations_modified');
-            } catch (e) {}
-            notifyCmsUpdate();
+          if (json.success) {
+            localStorage.removeItem('awara_destinations_modified');
+            await this.getDestinations(true);
+            return json;
           }
         }
       } catch (err) {}
@@ -506,13 +466,10 @@
         });
         if (res.ok) {
           const json = await res.json();
-          if (json.success && Array.isArray(json.data)) {
-            inMemoryReviews = json.data;
-            try {
-              localStorage.setItem('awara_reviews_cache', JSON.stringify(json.data));
-              localStorage.removeItem('awara_reviews_modified');
-            } catch (e) {}
-            notifyCmsUpdate();
+          if (json.success) {
+            localStorage.removeItem('awara_reviews_modified');
+            await this.getReviews(true);
+            return json;
           }
         }
       } catch (err) {}
@@ -525,20 +482,6 @@
      */
     async getReviews(forceRefresh = false) {
       const isLocallyModified = localStorage.getItem('awara_reviews_modified') === 'true';
-
-      if (isLocallyModified) {
-        if (inMemoryReviews && inMemoryReviews.length > 0) return inMemoryReviews;
-        try {
-          const stored = localStorage.getItem('awara_reviews_cache');
-          if (stored) {
-            const parsed = JSON.parse(stored);
-            if (Array.isArray(parsed) && parsed.length > 0) {
-              inMemoryReviews = parsed;
-              return inMemoryReviews;
-            }
-          }
-        } catch (e) {}
-      }
 
       // Try REST API
       try {

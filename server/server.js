@@ -336,6 +336,15 @@ function triggerPrerender() {
     return sendJSON(res, 200, { success: true, count: postcards.length, data: postcards });
   }
 
+  if (pathname.startsWith('/api/postcards/') && method === 'GET') {
+    const id = pathname.replace('/api/postcards/', '');
+    const item = db.getPostcardById(id);
+    if (item) {
+      return sendJSON(res, 200, { success: true, data: item });
+    }
+    return sendJSON(res, 404, { success: false, error: 'Postcard not found' });
+  }
+
   if (pathname === '/api/postcards' && method === 'POST') {
     if (!requireAuth(req, res)) return;
     try {

@@ -591,22 +591,17 @@
     async getPostcards(forceRefresh = false) {
       const isLocallyModified = localStorage.getItem('awara_postcards_modified') === 'true';
 
-      if (isLocallyModified) {
-        try {
-          const cached = localStorage.getItem('awara_postcards_cache');
-          if (cached) return JSON.parse(cached);
-        } catch (e) {}
-      }
-
+      // 1. Try Express REST API
       try {
         const res = await fetch(getApiUrl(`/postcards?_t=${Date.now()}`));
         if (res.ok) {
           const json = await res.json();
           if (json.success && Array.isArray(json.data)) {
-            if (!isLocallyModified) {
+            if (!isLocallyModified || forceRefresh) {
               try { localStorage.setItem('awara_postcards_cache', JSON.stringify(json.data)); } catch (e) {}
+              if (forceRefresh) localStorage.removeItem('awara_postcards_modified');
             }
-            return isLocallyModified ? (JSON.parse(localStorage.getItem('awara_postcards_cache') || '[]') || json.data) : json.data;
+            return (isLocallyModified && !forceRefresh) ? (JSON.parse(localStorage.getItem('awara_postcards_cache') || '[]') || json.data) : json.data;
           }
         }
       } catch (err) {}
@@ -618,16 +613,17 @@
         } catch (e) {}
       }
 
-      // Fallback: load awarabanjara.json
+      // 2. Fallback: load data/postcards.json
       try {
-        const rawRes = await fetch(`data/awarabanjara.json?_t=${Date.now()}`);
-        if (rawRes.ok) {
-          const rawData = await rawRes.json();
-          if (Array.isArray(rawData.postcards)) {
+        const basePath = getBasePath();
+        const res = await fetch(`${basePath}data/postcards.json?_t=${Date.now()}`);
+        if (res.ok) {
+          const jsonPostcards = await res.json();
+          if (Array.isArray(jsonPostcards)) {
             if (!isLocallyModified) {
-              try { localStorage.setItem('awara_postcards_cache', JSON.stringify(rawData.postcards)); } catch (e) {}
+              try { localStorage.setItem('awara_postcards_cache', JSON.stringify(jsonPostcards)); } catch (e) {}
             }
-            return rawData.postcards;
+            return (isLocallyModified && !forceRefresh) ? (JSON.parse(localStorage.getItem('awara_postcards_cache') || '[]') || jsonPostcards) : jsonPostcards;
           }
         }
       } catch (err) {}
@@ -669,12 +665,10 @@
         });
         if (res.ok) {
           const json = await res.json();
-          if (json.success && Array.isArray(json.data)) {
-            try {
-              localStorage.setItem('awara_postcards_cache', JSON.stringify(json.data));
-              localStorage.removeItem('awara_postcards_modified');
-            } catch (e) {}
-            notifyCmsUpdate();
+          if (json.success) {
+            localStorage.removeItem('awara_postcards_modified');
+            await this.getPostcards(true);
+            return json;
           }
         }
       } catch (err) {}
@@ -705,12 +699,10 @@
         });
         if (res.ok) {
           const json = await res.json();
-          if (json.success && Array.isArray(json.data)) {
-            try {
-              localStorage.setItem('awara_postcards_cache', JSON.stringify(json.data));
-              localStorage.removeItem('awara_postcards_modified');
-            } catch (e) {}
-            notifyCmsUpdate();
+          if (json.success) {
+            localStorage.removeItem('awara_postcards_modified');
+            await this.getPostcards(true);
+            return json;
           }
         }
       } catch (err) {}

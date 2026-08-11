@@ -54,8 +54,117 @@ function getCategorySlug(category) {
   return slugify(cleanCat) || 'group-tours';
 }
 
-// Pre-render a single trip static HTML page
-function prerenderTrip(trip) {
+// Helper: strip everything except lowercase alphanumerics, for loose name matching
+function cleanStr(s) {
+  if (!s) return '';
+  return String(s).toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+function loadReviews() {
+  const reviewsPath = path.join(ROOT_DIR, 'data', 'reviews.json');
+  try {
+    if (fs.existsSync(reviewsPath)) {
+      return JSON.parse(fs.readFileSync(reviewsPath, 'utf-8'));
+    }
+  } catch (e) {}
+  return [];
+}
+
+// Find the customer reviews relevant to this trip, matching (in order of preference)
+// by trip_id, by trip_url containing this trip's id, or by a loosely-cleaned trip_name
+// comparison. Falls back to category/keyword matches, then any review, so a page never
+// ends up with an empty reviews section as long as reviews exist somewhere.
+function matchReviewsForTrip(trip, allReviews) {
+  const tripId = String(trip.id);
+  const cTitle = cleanStr(trip.title);
+  const catName = (trip.category || '').split(',')[0].replace(/_tours/gi, ' Tours').replace(/_/g, ' ').trim() || 'Himalayan Tours';
+  const cCat = catName.toLowerCase();
+  const hasText = (r) => !!((r.review_text || r.text || '').trim());
+
+  let matched = allReviews.filter((r) => {
+    if (!hasText(r)) return false;
+    const rTripId = String(r.trip_id || '');
+    const rTripUrl = r.trip_url || '';
+    const cName = cleanStr(r.trip_name || '');
+    if (rTripId && rTripId === tripId) return true;
+    if (rTripUrl && (rTripUrl.includes(`-${tripId}.html`) || rTripUrl.includes(`id=${tripId}`))) return true;
+    if (cTitle && (cName === cTitle || cTitle.includes(cName) || cName.includes(cTitle))) return true;
+    return false;
+  });
+
+  if (matched.length === 0) {
+    const keywords = ['spiti', 'zanskar', 'kashmir', 'himachal', 'ladakh'];
+    matched = allReviews.filter((r) => {
+      if (!hasText(r)) return false;
+      const rName = (r.trip_name || '').toLowerCase();
+      const rCat = (r.category || '').toLowerCase();
+      if (cCat && (rCat.includes(cCat) || rName.includes(cCat))) return true;
+      return keywords.some((kw) => cTitle.includes(kw) && rName.includes(kw));
+    });
+  }
+
+  if (matched.length === 0) {
+    matched = allReviews.filter(hasText);
+  }
+
+  return matched.slice(0, 4);
+}
+
+function renderReviewCards(matchedReviews, trip, fileName) {
+  const starSvg = '<svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
+
+  const cards = matchedReviews.map((rev) => {
+    const name = rev.customer_name || rev.name || 'Verified Traveler';
+    const initial = name.trim() ? name.trim()[0].toUpperCase() : 'A';
+    const avatarUrl = (rev.avatar_url || rev.avatar || '').trim();
+    const avatarHtml = (avatarUrl && !avatarUrl.includes('placeholder'))
+      ? `<img src="${fixAssetPath(avatarUrl)}" alt="${name}" class="rev-avatar-img">`
+      : `<div class="avatar-circle-initial" style="background-color: #0284c7;">${initial}</div>`;
+
+    const rating = parseInt(rev.rating, 10) || 5;
+    const dateText = rev.date_text || '1 month ago';
+    const tripTag = rev.trip_tag || 'private';
+    const text = (rev.review_text || rev.text || '').trim();
+
+    return `<article class="review-card-modern">
+  <div class="rev-card-header">
+    ${avatarHtml}
+    <div class="rev-header-info">
+      <div class="rev-author-name-row">
+        <strong class="rev-author-name">${name}</strong>
+        <span class="rev-trip-tag">${tripTag}</span>
+      </div>
+      <div class="rev-booked-row">
+        <span class="booked-label">Booked:</span>
+        <a href="${fileName}" class="booked-trip-link"><strong>${trip.title || ''}</strong> <span class="arrow">↗</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="rev-rating-date-row">
+    <div class="stars">${starSvg.repeat(rating)}</div>
+    <span class="rev-date-text">${dateText}</span>
+  </div>
+  <p class="rev-quote-body">"${text}" <span class="read-more">Read More</span></p>
+</article>`;
+  });
+
+  return `<div class="reviews-grid">\n${cards.join('\n')}\n</div>`;
+}
+
+function injectReviews(page, trip, allReviews, fileName) {
+  const gridHtml = renderReviewCards(matchReviewsForTrip(trip, allReviews), trip, fileName);
+  // The template has used both class names across revisions - try both, each is a
+  // no-op if that particular wrapper isn't present in this copy of the template.
+  page = page.replace(/<div class="reviews-mini-grid">[\s\S]*?<\/div>\s*<\/section>/, `${gridHtml}\n</section>`);
+  page = page.replace(/<div class="reviews-grid">[\s\S]*?<\/div>\s*<\/section>/, `${gridHtml}\n</section>`);
+  return page;
+}
+
+// Pre-render a single trip static HTML page. `allReviews` is optional - pass it when
+// rendering many trips in a batch (prerenderAllTrips) to avoid re-reading reviews.json
+// once per trip; omitted, it's loaded fresh so standalone calls (e.g. right after a
+// single trip save) still get reviews injected correctly.
+function prerenderTrip(trip, allReviews) {
   if (!trip || !trip.id) return null;
   if (!fs.existsSync(MASTER_FILE)) return null;
   if (!fs.existsSync(TRIPS_DIR)) {
@@ -248,15 +357,20 @@ function prerenderTrip(trip) {
     `<div class="share-trip-info">\n          <h4>${trip.title || ''}</h4>\n          <p>${trip.route || ''}</p>\n        </div>`
   );
 
+  // 10. Customer reviews relevant to this trip
+  page = injectReviews(page, trip, allReviews || loadReviews(), fileName);
+
   fs.writeFileSync(filePath, page, 'utf-8');
   console.log(`🖼️ Pre-rendered static trip page: trips/${fileName}`);
   return `trips/${fileName}`;
 }
 
-// Pre-render all trips in an array
+// Pre-render all trips in an array. Loads reviews.json once for the whole batch rather
+// than once per trip (prerenderTrip does that itself when called standalone).
 function prerenderAllTrips(tripsArr) {
   if (!Array.isArray(tripsArr)) return;
-  tripsArr.forEach(t => prerenderTrip(t));
+  const allReviews = loadReviews();
+  tripsArr.forEach(t => prerenderTrip(t, allReviews));
 }
 
 module.exports = {

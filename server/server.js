@@ -10,6 +10,7 @@ const path = require('path');
 const url = require('url');
 const db = require('./db');
 const auth = require('./auth');
+const prerender = require('./prerender');
 
 const PORT = process.env.PORT || auth.config.PORT || 8085;
 const HOST = process.env.HOST || auth.config.HOST || '0.0.0.0';
@@ -162,12 +163,12 @@ const server = http.createServer(async (req, res) => {
 
 function triggerPrerender() {
   try {
-    const { exec } = require('child_process');
-    exec('python3 scripts/generate-static-trips.py', { cwd: path.join(__dirname, '..') }, (err) => {
-      if (err) console.error('⚠️ Auto pre-render script error:', err.message);
-      else console.log('✨ Auto-regenerated static trip HTML pages from CMS update');
-    });
-  } catch (err) {}
+    const trips = db.getTrips(true);
+    prerender.prerenderAllTrips(trips);
+    console.log(`✨ Auto-regenerated ${trips.length} static trip HTML page(s) from CMS update`);
+  } catch (err) {
+    console.error('⚠️ Auto pre-render error:', err.message);
+  }
 }
 
   if (pathname === '/api/trips' && method === 'POST') {
@@ -255,10 +256,7 @@ function triggerPrerender() {
     try {
       const payload = await parseRequestBody(req);
       const saved = db.saveReview(payload);
-      try {
-        const { exec } = require('child_process');
-        exec('python3 scripts/generate-static-trips.py', { cwd: path.join(__dirname, '..') });
-      } catch (err) {}
+      triggerPrerender();
       return sendJSON(res, 200, { success: true, message: 'Review saved successfully', data: saved });
     } catch (e) {
       return sendJSON(res, 500, { success: false, error: e.message });
@@ -271,10 +269,7 @@ function triggerPrerender() {
       const id = pathname.replace('/api/reviews/', '');
       const success = db.deleteReview(id);
       if (success) {
-        try {
-          const { exec } = require('child_process');
-          exec('python3 scripts/generate-static-trips.py', { cwd: path.join(__dirname, '..') });
-        } catch (err) {}
+        triggerPrerender();
         return sendJSON(res, 200, { success: true, message: 'Review deleted successfully' });
       }
       return sendJSON(res, 404, { success: false, error: 'Review not found' });

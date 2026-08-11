@@ -3867,6 +3867,25 @@
   ],
   "inquiries": [
     {
+      "id": "INQ_1786468751791",
+      "inquiry_id": "INQ_1786468751791",
+      "name": "MOBILE_Test",
+      "customer_name": "MOBILE_Test",
+      "phone": "9929988299",
+      "email": "test@gmail.com",
+      "travel_date": "19th December",
+      "selected_date": "19th December",
+      "selected_package": "Solo Traveler",
+      "selected_sub_package": "N/A",
+      "price": "₹27,900 (Solo Traveler)",
+      "travelers_count": 5,
+      "trip_title": "Meghalaya-Kaziranga : Backpacking Trip",
+      "special_requests": "[Package: Solo Traveler] MOBILE_TEST",
+      "message": "[Package: Solo Traveler] MOBILE_TEST",
+      "created_at": "2026-08-11T17:19:12.357Z",
+      "status": "new"
+    },
+    {
       "id": "INQ_1786429755205",
       "inquiry_id": "INQ_1786429755205",
       "name": "Claude test",

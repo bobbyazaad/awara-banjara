@@ -3618,10 +3618,19 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
     }
     window.handleAdminLogout = handleAdminLogout;
 
-    // Auto-check authentication on page load
-    document.addEventListener('DOMContentLoaded', () => {
+    // Auto-check authentication on page load. Some hosts (e.g. Hostinger's CDN/build
+    // layer) can delay this script's execution until after DOMContentLoaded has already
+    // fired, in which case the listener below would never run and the CMS would stay
+    // unlocked with no real session - every write then silently 401s. Guard against that
+    // by checking document.readyState directly instead of only listening for the event.
+    function initAdminAuthCheck() {
       checkAdminAuth();
-    });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAdminAuthCheck);
+    } else {
+      initAdminAuthCheck();
+    }
   </script>
 </body>
 </html>

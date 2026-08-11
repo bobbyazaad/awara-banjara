@@ -788,8 +788,8 @@
     "exclusions": [],
     "package_options": [
       {
-        "price": "₹16,499",
-        "title": "Trek Package"
+        "title": "Trek Package",
+        "price": "₹16,499"
       }
     ],
     "sub_package_options": "",
@@ -828,37 +828,41 @@
     ],
     "faqs": [
       {
-        "answer": "The Kashmir Great Lakes trek covers roughly 65–75 km over 6 trekking days.",
-        "question": "WHAT IS THE TOTAL TREKKING DISTANCE?"
+        "question": "WHAT IS THE TOTAL TREKKING DISTANCE?",
+        "answer": "The Kashmir Great Lakes trek covers roughly 65–75 km over 6 trekking days."
       },
       {
-        "answer": "The highest point is Gadsar Pass at approximately 13,750 ft.",
-        "question": "WHAT IS THE MAXIMUM ALTITUDE OF THIS TREK?"
+        "question": "WHAT IS THE MAXIMUM ALTITUDE OF THIS TREK?",
+        "answer": "The highest point is Gadsar Pass at approximately 13,750 ft."
       },
       {
-        "answer": "Yes, high-altitude trekking tents, sleeping bags, and all vegetarian meals during the trek are included.",
-        "question": "ARE MEALS AND TENTS INCLUDED?"
+        "question": "ARE MEALS AND TENTS INCLUDED?",
+        "answer": "Yes, high-altitude trekking tents, sleeping bags, and all vegetarian meals during the trek are included."
       }
     ],
     "reviews": [
       {
         "name": "Aarav Sharma",
+        "location": "Delhi",
         "text": "The Kashmir Great Lakes trek was a dream come true. The views at Vishansar and Gadsar lakes were breathtaking!",
-        "avatar": "assets/images/reviews/pfp-aarav.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-aarav.jpg"
       },
       {
         "name": "Meera Patel",
+        "location": "Mumbai",
         "text": "Excellent trek leaders and support team. Awara Banjara managed camp setups and food perfectly high up in the mountains.",
-        "avatar": "assets/images/reviews/pfp-meera.jpg",
-        "location": "Mumbai"
+        "avatar": "assets/images/reviews/pfp-meera.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-11T06:59:46.404Z"
   },
   {
     "id": 108,

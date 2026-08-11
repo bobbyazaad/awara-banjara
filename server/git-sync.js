@@ -84,6 +84,9 @@ async function ensureBranchExists() {
     body: JSON.stringify({ ref: `refs/heads/${SYNC_BRANCH}`, sha: refInfo.object.sha })
   });
   if (!createRes.ok) {
+    // 422 here almost always means another server instance won the race and created
+    // the branch a moment ago - that's success from this instance's point of view too.
+    if (createRes.status === 422) return true;
     console.warn(`⚠️ Git-sync: could not create branch '${SYNC_BRANCH}' (HTTP ${createRes.status})`);
     return false;
   }
@@ -128,19 +131,25 @@ async function putRemoteFile(filename, content, sha) {
 async function pullLatestOnBoot() {
   if (!enabled) return;
   console.log(`🔄 Git-sync: pulling latest CMS data from '${SYNC_BRANCH}' branch...`);
+
+  // Fetch all files in parallel, not sequentially - some hosts (Hostinger's Node.js
+  // Web App runtime included) expect listen() to be called within a few seconds of
+  // startup, and 8 sequential GitHub API round-trips can eat into that budget enough
+  // to trip a "didn't call listen() in time" warning.
+  const results = await Promise.allSettled(DATA_FILES.map((filename) => getRemoteFile(filename)));
+
   let pulled = 0;
-  for (const filename of DATA_FILES) {
-    try {
-      const remote = await getRemoteFile(filename);
-      if (remote) {
-        fs.mkdirSync(DATA_DIR, { recursive: true });
-        fs.writeFileSync(path.join(DATA_DIR, filename), remote.content, 'utf-8');
-        pulled++;
-      }
-    } catch (e) {
-      console.warn(`⚠️ Git-sync: failed to pull data/${filename} -`, e.message);
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  results.forEach((result, i) => {
+    const filename = DATA_FILES[i];
+    if (result.status === 'fulfilled' && result.value) {
+      fs.writeFileSync(path.join(DATA_DIR, filename), result.value.content, 'utf-8');
+      pulled++;
+    } else if (result.status === 'rejected') {
+      console.warn(`⚠️ Git-sync: failed to pull data/${filename} -`, result.reason.message);
     }
-  }
+  });
+
   if (pulled > 0) {
     console.log(`✅ Git-sync: pulled ${pulled} data file(s) from GitHub`);
   } else {
@@ -166,7 +175,20 @@ async function doSync() {
       try {
         const remote = await getRemoteFile(filename);
         if (remote && remote.content === localContent) continue; // unchanged
-        await putRemoteFile(filename, localContent, remote ? remote.sha : undefined);
+        try {
+          await putRemoteFile(filename, localContent, remote ? remote.sha : undefined);
+        } catch (e) {
+          // Multiple server instances can boot around the same time and race to push
+          // the same file - a "sha required"/conflict error here usually just means
+          // another instance's push landed first. Re-fetch the current sha and retry
+          // once before giving up.
+          if (/HTTP 409|HTTP 422/.test(e.message)) {
+            const latest = await getRemoteFile(filename);
+            await putRemoteFile(filename, localContent, latest ? latest.sha : undefined);
+          } else {
+            throw e;
+          }
+        }
         pushed++;
       } catch (e) {
         console.warn(`⚠️ Git-sync: failed to push data/${filename} -`, e.message);

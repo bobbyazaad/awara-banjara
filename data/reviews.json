@@ -1,19 +1,5 @@
 [
   {
-    "customer_name": "NODE_PRERENDER_PROD_TEST",
-    "review_text": "confirming node prerender port works in production",
-    "rating": 5,
-    "trip_name": "Spiti Full Summer Circuit",
-    "trip_id": 106,
-    "id": "rev_1786471137758",
-    "updated_at": "2026-08-11T17:58:57.758Z",
-    "trip_url": "tour-packages.html",
-    "date_text": "Recently",
-    "avatar_url": "",
-    "featured": true,
-    "created_at": "2026-08-11T17:58:57.758Z"
-  },
-  {
     "id": "rev_201",
     "customer_name": "Heli Shah",
     "trip_tag": "private",

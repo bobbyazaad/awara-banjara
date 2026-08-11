@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
 """
 AwaraBanjara — Automated Sitemap Sync Script
-Fetches active trips from Supabase and updates sitemap.xml with full SEO URLs.
+Reads active trips from the local Node/JSON database (data/trips.json) and
+updates sitemap.xml with full SEO URLs.
 """
 
 import os
 import re
 import json
-import urllib.request
-import ssl
-
-SUPABASE_URL = "https://ahtvuswpdewnszktqkpp.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFodHZ1c3dwZGV3bnN6a3Rxa3BwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODUzMTM5ODEsImV4cCI6MjEwMDg4OTk4MX0.ssA8hMNsWzPGoSUKBi0hUioEfN0GcgI5bCcajz1cZsQ"
 
 def slugify(text):
     if not text:
@@ -26,15 +22,10 @@ def get_cat_slug(cat):
     return slugify(clean) or 'group-tours'
 
 def sync_sitemap():
-    ssl._create_default_https_context = ssl._create_unverified_context
-    endpoint = f"{SUPABASE_URL}/rest/v1/trips?select=*"
-    headers = {
-        "apikey": SUPABASE_KEY,
-        "Authorization": f"Bearer {SUPABASE_KEY}"
-    }
-    req = urllib.request.Request(endpoint, headers=headers)
-    with urllib.request.urlopen(req) as resp:
-        trips = json.loads(resp.read().decode('utf-8'))
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    trips_path = os.path.join(base_dir, "data", "trips.json")
+    with open(trips_path, 'r', encoding='utf-8') as f:
+        trips = json.load(f)
 
     trip_urls = []
     for t in trips:

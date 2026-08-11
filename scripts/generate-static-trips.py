@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
 """
 AwaraBanjara — Static Trip Pre-rendering Generator for Social & Crawler SEO
-Fetches all trips from Supabase and creates static pre-rendered HTML copies inside `trips/` directory.
+Reads all trips from the local Node/JSON database (data/trips.json) and
+creates static pre-rendered HTML copies inside the `trips/` directory.
 """
 
 import os
 import re
 import json
-import urllib.request
-import ssl
-
-SUPABASE_URL = "https://ahtvuswpdewnszktqkpp.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFodHZ1c3dwZGV3bnN6a3Rxa3BwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODUzMTM5ODEsImV4cCI6MjEwMDg4OTk4MX0.ssA8hMNsWzPGoSUKBi0hUioEfN0GcgI5bCcajz1cZsQ"
 
 def clean_str(s):
     if not s:
@@ -31,22 +27,10 @@ def get_category_slug(cat):
     return slugify(clean) or 'group-tours'
 
 def fetch_trips():
-    ssl._create_default_https_context = ssl._create_unverified_context
-    endpoint = f"{SUPABASE_URL}/rest/v1/trips?select=*"
-    headers = {
-        "apikey": SUPABASE_KEY,
-        "Authorization": f"Bearer {SUPABASE_KEY}"
-    }
-    try:
-        req = urllib.request.Request(endpoint, headers=headers)
-        with urllib.request.urlopen(req) as resp:
-            return json.loads(resp.read().decode('utf-8'))
-    except Exception as e:
-        print(f"⚠️ Supabase fetch notice ({e}), loading local fallback trips.json...")
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        json_path = os.path.join(base_dir, "data", "trips.json")
-        with open(json_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    json_path = os.path.join(base_dir, "data", "trips.json")
+    with open(json_path, 'r', encoding='utf-8') as f:
+        return json.load(f)
 
 def generate_static_files():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -63,7 +47,7 @@ def generate_static_files():
         template_content = f.read()
 
     trips = fetch_trips()
-    print(f"📦 Fetched {len(trips)} trip(s) from Supabase. Generating static pre-rendered pages...")
+    print(f"📦 Loaded {len(trips)} trip(s) from local database. Generating static pre-rendered pages...")
 
     reviews_json_path = os.path.join(base_dir, "data", "reviews.json")
     all_reviews = []

@@ -1,3 +1,14 @@
+# Single Render web service that serves both the static site and the /api/* backend
+# (server/server.js) from one origin. assets/js/db-engine.js relies on this: it calls the
+# API via a same-origin relative path, so the deployed URL for this service doesn't need to
+# match any hardcoded string anywhere else in the codebase.
+#
+# IMPORTANT — data persistence: server/db.js stores all CMS data (trips, inquiries, reviews,
+# uploaded images) as JSON files on local disk via fs.writeFileSync. Render's filesystem is
+# EPHEMERAL on every deploy/restart unless this service has a paid persistent Disk attached
+# (Render Dashboard -> service -> Disks, mounted at the repo root or a path your code writes
+# to). Without a Disk, any trip edits, image uploads, or customer inquiries submitted in
+# production will be lost the next time the service redeploys or restarts.
 services:
   - type: web
     name: awara-banjara-api
@@ -7,3 +18,11 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: ADMIN_USERNAME
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false

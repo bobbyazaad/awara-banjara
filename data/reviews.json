@@ -1,41 +1,5 @@
 [
   {
-    "id": "rev_1786356219853",
-    "customer_name": "test final",
-    "trip_name": "Kashmir Winter Realm Expedition",
-    "trip_url": "trips/kashmir-tours-kashmir-winter-realm-expedition-1786216631459.html",
-    "rating": 5,
-    "date_text": "Recently",
-    "review_text": "testtest final",
-    "avatar_url": "assets/images/placeholder-avatar.svg",
-    "featured": true,
-    "created_at": "2026-08-10T10:03:39.861Z"
-  },
-  {
-    "id": "rev_1786214097781",
-    "customer_name": "test",
-    "trip_name": "Escape to Zanskar - Group Trip",
-    "trip_url": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
-    "rating": 5,
-    "date_text": "Recently",
-    "review_text": "test",
-    "avatar_url": "assets/images/placeholder-avatar.svg",
-    "featured": true,
-    "created_at": "2026-08-08T18:34:57.798Z"
-  },
-  {
-    "id": "rev_1786203435729",
-    "customer_name": "test",
-    "trip_name": "Udaipur & Kumbhalgarh Expedition",
-    "trip_url": "trips/rajasthan-tours-udaipur-kumbhalgarh-expedition-104.html",
-    "rating": 5,
-    "date_text": "Recently",
-    "review_text": "test",
-    "avatar_url": "assets/images/placeholder-avatar.svg",
-    "featured": true,
-    "created_at": "2026-08-08T15:37:15.742Z"
-  },
-  {
     "id": "rev_201",
     "customer_name": "Heli Shah",
     "trip_tag": "private",

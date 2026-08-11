@@ -254,12 +254,12 @@ function triggerPrerender() {
     if (!requireAuth(req, res)) return;
     try {
       const payload = await parseRequestBody(req);
-      const saved = db.addReview(payload);
+      const saved = db.saveReview(payload);
       try {
         const { exec } = require('child_process');
         exec('python3 scripts/generate-static-trips.py', { cwd: path.join(__dirname, '..') });
       } catch (err) {}
-      return sendJSON(res, 200, { success: true, message: 'Review added successfully', data: saved });
+      return sendJSON(res, 200, { success: true, message: 'Review saved successfully', data: saved });
     } catch (e) {
       return sendJSON(res, 500, { success: false, error: e.message });
     }
@@ -469,7 +469,7 @@ function triggerPrerender() {
   // =========================================================
   let reqPath = path.normalize(pathname);
   if (reqPath === '/') reqPath = '/index.html';
-  
+
   let filePath = path.join(PUBLIC_DIR, reqPath);
 
   // Prevent directory traversal
@@ -479,9 +479,19 @@ function triggerPrerender() {
   }
 
   fs.stat(filePath, (err, stats) => {
+    // Only fall back to index.html for extensionless routes (client-side style navigation,
+    // e.g. deep links into the SPA-ish pages). A missing path with a real extension
+    // (.jpg/.js/.css/.html/etc.) or any other unmatched route gets a genuine 404 instead of
+    // silently returning the homepage with a 200 status.
+    let statusCode = 200;
     if (err || !stats.isFile()) {
-      // Fallback to index.html for SPA/HTML routing
-      filePath = path.join(PUBLIC_DIR, 'index.html');
+      const looksLikeFile = path.extname(reqPath) !== '';
+      if (looksLikeFile) {
+        statusCode = 404;
+        filePath = path.join(PUBLIC_DIR, '404.html');
+      } else {
+        filePath = path.join(PUBLIC_DIR, 'index.html');
+      }
     }
 
     const ext = path.extname(filePath).toLowerCase();
@@ -492,7 +502,7 @@ function triggerPrerender() {
         res.writeHead(500);
         return res.end('Server File Error');
       }
-      res.writeHead(200, {
+      res.writeHead(statusCode, {
         'Content-Type': contentType,
         'Access-Control-Allow-Origin': '*'
       });

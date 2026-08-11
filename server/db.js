@@ -213,23 +213,32 @@ function getReviews() {
   return _db.reviews;
 }
 
-function addReview(reviewData) {
+function saveReview(reviewData) {
   if (!reviewData) return null;
-  const newReview = {
-    id: reviewData.id || `rev_${Date.now()}`,
-    customer_name: reviewData.customer_name || 'Happy Traveler',
-    trip_name: reviewData.trip_name || 'Himalayan Expedition',
-    trip_url: reviewData.trip_url || 'tour-packages.html',
-    rating: Number(reviewData.rating) || 5,
-    date_text: reviewData.date_text || 'Recently',
-    review_text: reviewData.review_text || '',
-    avatar_url: reviewData.avatar_url || '',
-    featured: reviewData.featured !== false,
-    created_at: new Date().toISOString()
-  };
-  _db.reviews.unshift(newReview);
+  const strId = String(reviewData.id || `rev_${Date.now()}`);
+  reviewData.id = strId;
+  reviewData.updated_at = new Date().toISOString();
+
+  const idx = _db.reviews.findIndex(r => String(r.id) === strId);
+  if (idx !== -1) {
+    // Update in place — previously every "edit" created a brand-new duplicate
+    // entry sharing the same id instead of replacing the original.
+    _db.reviews[idx] = { ..._db.reviews[idx], ...reviewData };
+    reviewData = _db.reviews[idx];
+  } else {
+    reviewData.customer_name = reviewData.customer_name || 'Happy Traveler';
+    reviewData.trip_name = reviewData.trip_name || 'Himalayan Expedition';
+    reviewData.trip_url = reviewData.trip_url || 'tour-packages.html';
+    reviewData.rating = Number(reviewData.rating) || 5;
+    reviewData.date_text = reviewData.date_text || 'Recently';
+    reviewData.review_text = reviewData.review_text || '';
+    reviewData.avatar_url = reviewData.avatar_url || '';
+    reviewData.featured = reviewData.featured !== false;
+    reviewData.created_at = reviewData.created_at || new Date().toISOString();
+    _db.reviews.unshift(reviewData);
+  }
   saveDatabase();
-  return newReview;
+  return reviewData;
 }
 
 // INQUIRIES OPERATIONS
@@ -399,7 +408,7 @@ module.exports = {
   saveDestination,
   deleteDestination,
   getReviews,
-  addReview,
+  saveReview,
   deleteReview,
   getInquiries,
   addInquiry,

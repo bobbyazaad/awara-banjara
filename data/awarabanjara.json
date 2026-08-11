@@ -789,8 +789,8 @@
       "exclusions": [],
       "package_options": [
         {
-          "price": "₹16,499",
-          "title": "Trek Package"
+          "title": "Trek Package",
+          "price": "₹16,499"
         }
       ],
       "sub_package_options": "",
@@ -829,37 +829,41 @@
       ],
       "faqs": [
         {
-          "answer": "The Kashmir Great Lakes trek covers roughly 65–75 km over 6 trekking days.",
-          "question": "WHAT IS THE TOTAL TREKKING DISTANCE?"
+          "question": "WHAT IS THE TOTAL TREKKING DISTANCE?",
+          "answer": "The Kashmir Great Lakes trek covers roughly 65–75 km over 6 trekking days."
         },
         {
-          "answer": "The highest point is Gadsar Pass at approximately 13,750 ft.",
-          "question": "WHAT IS THE MAXIMUM ALTITUDE OF THIS TREK?"
+          "question": "WHAT IS THE MAXIMUM ALTITUDE OF THIS TREK?",
+          "answer": "The highest point is Gadsar Pass at approximately 13,750 ft."
         },
         {
-          "answer": "Yes, high-altitude trekking tents, sleeping bags, and all vegetarian meals during the trek are included.",
-          "question": "ARE MEALS AND TENTS INCLUDED?"
+          "question": "ARE MEALS AND TENTS INCLUDED?",
+          "answer": "Yes, high-altitude trekking tents, sleeping bags, and all vegetarian meals during the trek are included."
         }
       ],
       "reviews": [
         {
           "name": "Aarav Sharma",
+          "location": "Delhi",
           "text": "The Kashmir Great Lakes trek was a dream come true. The views at Vishansar and Gadsar lakes were breathtaking!",
-          "avatar": "assets/images/reviews/pfp-aarav.jpg",
-          "location": "Delhi"
+          "avatar": "assets/images/reviews/pfp-aarav.jpg"
         },
         {
           "name": "Meera Patel",
+          "location": "Mumbai",
           "text": "Excellent trek leaders and support team. Awara Banjara managed camp setups and food perfectly high up in the mountains.",
-          "avatar": "assets/images/reviews/pfp-meera.jpg",
-          "location": "Mumbai"
+          "avatar": "assets/images/reviews/pfp-meera.jpg"
         }
       ],
       "reserve_banner_title": "",
       "reserve_banner_sub": null,
       "custom_quote_title": "",
       "custom_quote_sub": null,
-      "whatsapp_number": null
+      "whatsapp_number": null,
+      "is_featured_reels": true,
+      "is_featured_stack": true,
+      "is_featured_lemonade": true,
+      "updated_at": "2026-08-11T06:59:46.404Z"
     },
     {
       "id": 108,
@@ -3747,7 +3751,7 @@
     },
     {
       "id": "1786356247569",
-      "title": "test",
+      "title": "CLAUDETEST",
       "category": "domestic",
       "subtitle": "test",
       "display_order": 6,
@@ -3756,42 +3760,6 @@
     }
   ],
   "reviews": [
-    {
-      "id": "rev_1786356219853",
-      "customer_name": "test final",
-      "trip_name": "Kashmir Winter Realm Expedition",
-      "trip_url": "trips/kashmir-tours-kashmir-winter-realm-expedition-1786216631459.html",
-      "rating": 5,
-      "date_text": "Recently",
-      "review_text": "testtest final",
-      "avatar_url": "assets/images/placeholder-avatar.svg",
-      "featured": true,
-      "created_at": "2026-08-10T10:03:39.861Z"
-    },
-    {
-      "id": "rev_1786214097781",
-      "customer_name": "test",
-      "trip_name": "Escape to Zanskar - Group Trip",
-      "trip_url": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
-      "rating": 5,
-      "date_text": "Recently",
-      "review_text": "test",
-      "avatar_url": "assets/images/placeholder-avatar.svg",
-      "featured": true,
-      "created_at": "2026-08-08T18:34:57.798Z"
-    },
-    {
-      "id": "rev_1786203435729",
-      "customer_name": "test",
-      "trip_name": "Udaipur & Kumbhalgarh Expedition",
-      "trip_url": "trips/rajasthan-tours-udaipur-kumbhalgarh-expedition-104.html",
-      "rating": 5,
-      "date_text": "Recently",
-      "review_text": "test",
-      "avatar_url": "assets/images/placeholder-avatar.svg",
-      "featured": true,
-      "created_at": "2026-08-08T15:37:15.742Z"
-    },
     {
       "id": "rev_201",
       "customer_name": "Heli Shah",
@@ -3898,6 +3866,63 @@
     }
   ],
   "inquiries": [
+    {
+      "id": "INQ_1786429755205",
+      "inquiry_id": "INQ_1786429755205",
+      "name": "Claude test",
+      "customer_name": "Claude test",
+      "phone": "+91-9000000009",
+      "email": "test@gmail.com",
+      "travel_date": "2026-08-20",
+      "selected_date": "2026-08-20",
+      "selected_package": "Custom Package",
+      "selected_sub_package": "none",
+      "price": "On Request",
+      "travelers_count": 4,
+      "trip_title": "Escape the ordinary.",
+      "special_requests": "Claude TEst",
+      "message": "Claude TEst",
+      "created_at": "2026-08-11T06:29:15.209Z",
+      "status": "new"
+    },
+    {
+      "id": "INQ_1786427899146",
+      "inquiry_id": "INQ_1786427899146",
+      "name": "test",
+      "customer_name": "test",
+      "phone": "9000000009",
+      "email": "test@gmail.com",
+      "travel_date": "On Request Departure Date",
+      "selected_date": "On Request Departure Date",
+      "selected_package": "On Request",
+      "selected_sub_package": "N/A",
+      "price": "On Request (On Request)",
+      "travelers_count": 4,
+      "trip_title": "Buran Ghati: Where The Trail Ends",
+      "special_requests": "[Package: On Request] test",
+      "message": "[Package: On Request] test",
+      "created_at": "2026-08-11T05:58:19.151Z",
+      "status": "new"
+    },
+    {
+      "id": "INQ_1786380775565",
+      "inquiry_id": "INQ_1786380775565",
+      "name": "git_test",
+      "customer_name": "git_test",
+      "phone": "8000970000",
+      "email": "git_test@gmail.com",
+      "travel_date": "14th August",
+      "selected_date": "14th August",
+      "selected_package": "Group Tour(Min. 6 Pax)",
+      "selected_sub_package": "N/A",
+      "price": "₹17,600 (Group Tour(Min. 6 Pax))",
+      "travelers_count": 3,
+      "trip_title": "Ladakh: High Passes & Blue Waters Expedition",
+      "special_requests": "[Package: Group Tour(Min. 6 Pax)] git_Test",
+      "message": "[Package: Group Tour(Min. 6 Pax)] git_Test",
+      "created_at": "2026-08-10T16:52:55.572Z",
+      "status": "new"
+    },
     {
       "id": "INQ_1786367425930",
       "inquiry_id": "INQ_1786367425930",
@@ -4132,6 +4157,21 @@
     }
   ],
   "postcards": [
+    {
+      "id": "post_1786429682490",
+      "type": "reel",
+      "title": "test",
+      "subtitle": "Watch on Instagram",
+      "category": "Instagram Reel",
+      "author": "Awara Banjara",
+      "video_url": "https://www.instagram.com/reel/DbvjNaKTBn6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "embed_url": "https://www.instagram.com/reel/DbvjNaKTBn6/embed",
+      "image_url": "assets/images/trips/gonbo-rangjon.jpg",
+      "read_time": "1 min watch",
+      "featured_in_watch_read": true,
+      "updated_at": "2026-08-11T06:28:02.544Z",
+      "created_at": "2026-08-11T06:28:02.544Z"
+    },
     {
       "id": "post_1786367230415",
       "type": "blog",

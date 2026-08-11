@@ -9,6 +9,11 @@
 # (Render Dashboard -> service -> Disks, mounted at the repo root or a path your code writes
 # to). Without a Disk, any trip edits, image uploads, or customer inquiries submitted in
 # production will be lost the next time the service redeploys or restarts.
+#
+# Alternative to a paid Disk — server/git-sync.js: set GITHUB_SYNC_TOKEN + GITHUB_SYNC_REPO
+# below to have the server debounce-commit data/*.json to a dedicated branch (default
+# `live-data`, override with GIT_SYNC_BRANCH) after every CMS write, and pull the latest
+# from that branch on boot. Fully optional - leave GITHUB_SYNC_TOKEN unset to disable.
 services:
   - type: web
     name: awara-banjara-api
@@ -25,4 +30,10 @@ services:
       - key: SESSION_SECRET
         sync: false
       - key: ALLOWED_ORIGINS
+        sync: false
+      - key: GITHUB_SYNC_TOKEN
+        sync: false
+      - key: GITHUB_SYNC_REPO
+        sync: false
+      - key: GIT_SYNC_BRANCH
         sync: false

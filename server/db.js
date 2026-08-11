@@ -5,6 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const gitSync = require('./git-sync');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const DB_FILE = path.join(DATA_DIR, 'awarabanjara.json');
@@ -48,8 +49,13 @@ function saveJSONFile(filename, data) {
 }
 
 // Initialize database from disk or seed files
-function initDatabase() {
+async function initDatabase() {
   console.log('⚡ Initializing Awara Banjara Local Database Engine...');
+
+  // Pull the latest CMS data committed by git-sync (if enabled) before reading
+  // local disk, so a freshly rebuilt filesystem (e.g. after a redeploy) starts
+  // from the last live save instead of a stale deploy snapshot.
+  await gitSync.pullLatestOnBoot();
 
   if (fs.existsSync(DB_FILE)) {
     try {
@@ -122,6 +128,7 @@ function saveDatabase() {
   saveJSONFile('postcards.json', _db.postcards);
   saveJSONFile('site_config.json', _db.site_config);
   saveJSONFile('packages.json', _db.packages);
+  gitSync.scheduleSync();
 }
 
 // TRIPS OPERATIONS
@@ -397,9 +404,10 @@ function deletePostcard(id) {
 }
 
 // Boot on import
-initDatabase();
+const ready = initDatabase();
 
 module.exports = {
+  ready,
   getTrips,
   getTripById,
   saveTrip,

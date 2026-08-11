@@ -535,5 +535,13 @@ server.on('error', (err) => {
   }
 });
 
-startServer(currentPort);
+// Wait for the database (including any git-sync pull of the latest live CMS
+// data) to finish loading before accepting requests, so early requests never
+// race a still-loading dataset.
+db.ready
+  .then(() => startServer(currentPort))
+  .catch((err) => {
+    console.error('❌ Failed to initialize database:', err);
+    process.exit(1);
+  });
 

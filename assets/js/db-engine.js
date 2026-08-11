@@ -37,7 +37,11 @@
     return isSubfolder ? '../' : '';
   }
 
-  // Get API Base URL (relative for localhost, Render URL for remote/GitHub Pages)
+  // Get API Base URL. The site is deployed as a single Render service that serves both
+  // the static pages and the /api/* routes from the same origin, so a same-origin relative
+  // path always works and never goes stale if the Render service is ever renamed/redeployed
+  // under a different URL. window.AWARA_API_URL / localStorage overrides are still honored
+  // for local testing against a different backend.
   function getApiBaseUrl() {
     if (window.AWARA_API_URL) return window.AWARA_API_URL.replace(/\/$/, '');
     try {
@@ -45,14 +49,8 @@
       if (saved) return saved.replace(/\/$/, '');
     } catch (e) {}
 
-    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    if (isLocal) {
-      const basePath = getBasePath();
-      return `${basePath}api`;
-    }
-
-    // Default live Render backend service
-    return 'https://awara-banjara-api.onrender.com/api';
+    const basePath = getBasePath();
+    return `${basePath}api`;
   }
 
   function getApiUrl(endpoint) {
@@ -246,17 +244,20 @@
           headers: getAuthHeaders({ 'Content-Type': 'application/json' }),
           body: JSON.stringify(payload)
         });
-        if (res.ok) {
-          const json = await res.json();
-          if (json.success) {
-            localStorage.removeItem('awara_trips_modified');
-            await this.getTrips(true);
-            return json;
-          }
+        const json = await res.json().catch(() => null);
+        if (res.ok && json && json.success) {
+          localStorage.removeItem('awara_trips_modified');
+          await this.getTrips(true);
+          return json;
         }
-      } catch (err) {}
-
-      return { success: true, data: [payload] };
+        const error = (json && json.error) || (res.status === 401
+          ? 'Your admin session has expired. Please log out and log back in, then try saving again.'
+          : `Server rejected the save (HTTP ${res.status}).`);
+        return { success: false, error, localOnly: true, data: [payload] };
+      } catch (err) {
+        // Genuinely unreachable backend (offline / static hosting) — keep the optimistic local save
+        return { success: true, offline: true, data: [payload] };
+      }
     },
 
     /**
@@ -285,17 +286,19 @@
           method: 'DELETE',
           headers: getAuthHeaders()
         });
-        if (res.ok) {
-          const json = await res.json();
-          if (json.success) {
-            localStorage.removeItem('awara_trips_modified');
-            await this.getTrips(true);
-            return json;
-          }
+        const json = await res.json().catch(() => null);
+        if (res.ok && json && json.success) {
+          localStorage.removeItem('awara_trips_modified');
+          await this.getTrips(true);
+          return json;
         }
-      } catch (err) {}
-
-      return { success: true };
+        const error = (json && json.error) || (res.status === 401
+          ? 'Your admin session has expired. Please log out and log back in, then try deleting again.'
+          : `Server rejected the delete (HTTP ${res.status}).`);
+        return { success: false, error, localOnly: true };
+      } catch (err) {
+        return { success: true, offline: true };
+      }
     },
 
     /**
@@ -390,17 +393,19 @@
           headers: getAuthHeaders({ 'Content-Type': 'application/json' }),
           body: JSON.stringify(destPayload)
         });
-        if (res.ok) {
-          const json = await res.json();
-          if (json.success) {
-            localStorage.removeItem('awara_destinations_modified');
-            await this.getDestinations(true);
-            return json;
-          }
+        const json = await res.json().catch(() => null);
+        if (res.ok && json && json.success) {
+          localStorage.removeItem('awara_destinations_modified');
+          await this.getDestinations(true);
+          return json;
         }
-      } catch (err) {}
-
-      return { success: true, data: destPayload };
+        const error = (json && json.error) || (res.status === 401
+          ? 'Your admin session has expired. Please log out and log back in, then try saving again.'
+          : `Server rejected the save (HTTP ${res.status}).`);
+        return { success: false, error, localOnly: true, data: destPayload };
+      } catch (err) {
+        return { success: true, offline: true, data: destPayload };
+      }
     },
 
     /**
@@ -427,17 +432,19 @@
           method: 'DELETE',
           headers: getAuthHeaders()
         });
-        if (res.ok) {
-          const json = await res.json();
-          if (json.success) {
-            localStorage.removeItem('awara_destinations_modified');
-            await this.getDestinations(true);
-            return json;
-          }
+        const json = await res.json().catch(() => null);
+        if (res.ok && json && json.success) {
+          localStorage.removeItem('awara_destinations_modified');
+          await this.getDestinations(true);
+          return json;
         }
-      } catch (err) {}
-
-      return { success: true };
+        const error = (json && json.error) || (res.status === 401
+          ? 'Your admin session has expired. Please log out and log back in, then try deleting again.'
+          : `Server rejected the delete (HTTP ${res.status}).`);
+        return { success: false, error, localOnly: true };
+      } catch (err) {
+        return { success: true, offline: true };
+      }
     },
 
     /**
@@ -464,17 +471,19 @@
           method: 'DELETE',
           headers: getAuthHeaders()
         });
-        if (res.ok) {
-          const json = await res.json();
-          if (json.success) {
-            localStorage.removeItem('awara_reviews_modified');
-            await this.getReviews(true);
-            return json;
-          }
+        const json = await res.json().catch(() => null);
+        if (res.ok && json && json.success) {
+          localStorage.removeItem('awara_reviews_modified');
+          await this.getReviews(true);
+          return json;
         }
-      } catch (err) {}
-
-      return { success: true };
+        const error = (json && json.error) || (res.status === 401
+          ? 'Your admin session has expired. Please log out and log back in, then try deleting again.'
+          : `Server rejected the delete (HTTP ${res.status}).`);
+        return { success: false, error, localOnly: true };
+      } catch (err) {
+        return { success: true, offline: true };
+      }
     },
 
     /**
@@ -569,20 +578,29 @@
           headers: getAuthHeaders({ 'Content-Type': 'application/json' }),
           body: JSON.stringify(reviewData)
         });
-        if (res.ok) {
-          const json = await res.json();
-          if (json.success && Array.isArray(json.data)) {
-            inMemoryReviews = json.data;
-            try {
-              localStorage.setItem('awara_reviews_cache', JSON.stringify(json.data));
-              localStorage.removeItem('awara_reviews_modified');
-            } catch (e) {}
-            notifyCmsUpdate();
-          }
+        const json = await res.json().catch(() => null);
+        // The server returns the single saved review object (`data`), not the full
+        // list — a previous fix here incorrectly required Array.isArray(json.data),
+        // which is never true for this endpoint, so every save was misreported as failed.
+        if (res.ok && json && json.success && json.data) {
+          const savedReview = json.data;
+          const idx = reviews.findIndex(r => String(r.id) === String(savedReview.id));
+          if (idx >= 0) reviews[idx] = savedReview; else reviews.unshift(savedReview);
+          inMemoryReviews = reviews;
+          try {
+            localStorage.setItem('awara_reviews_cache', JSON.stringify(reviews));
+            localStorage.removeItem('awara_reviews_modified');
+          } catch (e) {}
+          notifyCmsUpdate();
+          return { success: true, data: savedReview };
         }
-      } catch (err) {}
-
-      return { success: true, data: reviewData };
+        const error = (json && json.error) || (res.status === 401
+          ? 'Your admin session has expired. Please log out and log back in, then try saving again.'
+          : `Server rejected the save (HTTP ${res.status}).`);
+        return { success: false, error, localOnly: true, data: reviewData };
+      } catch (err) {
+        return { success: true, offline: true, data: reviewData };
+      }
     },
 
     /**
@@ -663,17 +681,19 @@
           headers: getAuthHeaders({ 'Content-Type': 'application/json' }),
           body: JSON.stringify(postcardPayload)
         });
-        if (res.ok) {
-          const json = await res.json();
-          if (json.success) {
-            localStorage.removeItem('awara_postcards_modified');
-            await this.getPostcards(true);
-            return json;
-          }
+        const json = await res.json().catch(() => null);
+        if (res.ok && json && json.success) {
+          localStorage.removeItem('awara_postcards_modified');
+          await this.getPostcards(true);
+          return json;
         }
-      } catch (err) {}
-
-      return { success: true, data: postcardPayload };
+        const error = (json && json.error) || (res.status === 401
+          ? 'Your admin session has expired. Please log out and log back in, then try saving again.'
+          : `Server rejected the save (HTTP ${res.status}).`);
+        return { success: false, error, localOnly: true, data: postcardPayload };
+      } catch (err) {
+        return { success: true, offline: true, data: postcardPayload };
+      }
     },
 
     /**
@@ -697,17 +717,19 @@
           method: 'DELETE',
           headers: getAuthHeaders()
         });
-        if (res.ok) {
-          const json = await res.json();
-          if (json.success) {
-            localStorage.removeItem('awara_postcards_modified');
-            await this.getPostcards(true);
-            return json;
-          }
+        const json = await res.json().catch(() => null);
+        if (res.ok && json && json.success) {
+          localStorage.removeItem('awara_postcards_modified');
+          await this.getPostcards(true);
+          return json;
         }
-      } catch (err) {}
-
-      return { success: true };
+        const error = (json && json.error) || (res.status === 401
+          ? 'Your admin session has expired. Please log out and log back in, then try deleting again.'
+          : `Server rejected the delete (HTTP ${res.status}).`);
+        return { success: false, error, localOnly: true };
+      } catch (err) {
+        return { success: true, offline: true };
+      }
     },
 
     /**

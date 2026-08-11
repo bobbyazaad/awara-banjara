@@ -22,6 +22,7 @@ function loadEnv() {
     ALLOWED_ORIGINS: '*'
   };
 
+  // 1. Local dev convenience: load a physical .env file if present (gitignored, won't exist on most hosts)
   if (fs.existsSync(ENV_PATH)) {
     try {
       const content = fs.readFileSync(ENV_PATH, 'utf-8');
@@ -41,9 +42,23 @@ function loadEnv() {
     }
   }
 
-  // Generate SHA-256 hash if not provided
-  if (!env.ADMIN_PASSWORD_HASH && env.ADMIN_PASSWORD) {
+  // 2. Real deployments (Render, etc.) inject secrets via process.env, not a physical .env file.
+  //    These must win over both the hardcoded defaults above AND any .env file, otherwise
+  //    env vars set in the hosting dashboard are silently ignored.
+  Object.keys(env).forEach(key => {
+    if (process.env[key] !== undefined && process.env[key] !== '') {
+      env[key] = process.env[key];
+    }
+  });
+
+  // If ADMIN_PASSWORD was overridden via process.env/. env, the hash must be recomputed from it
+  // rather than reusing a stale/hardcoded ADMIN_PASSWORD_HASH.
+  if (!process.env.ADMIN_PASSWORD_HASH && env.ADMIN_PASSWORD) {
     env.ADMIN_PASSWORD_HASH = crypto.createHash('sha256').update(env.ADMIN_PASSWORD).digest('hex');
+  }
+
+  if (env.ADMIN_PASSWORD === 'AwaraBanjara@2026!') {
+    console.warn('⚠️ SECURITY: Using the default hardcoded admin password. Set ADMIN_USERNAME/ADMIN_PASSWORD as environment variables in your hosting dashboard before going live.');
   }
 
   return env;

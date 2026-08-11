@@ -253,7 +253,7 @@
         const error = (json && json.error) || (res.status === 401
           ? 'Your admin session has expired. Please log out and log back in, then try saving again.'
           : `Server rejected the save (HTTP ${res.status}).`);
-        return { success: false, error, localOnly: true, data: [payload] };
+        return { success: false, error, localOnly: true, authExpired: res.status === 401, data: [payload] };
       } catch (err) {
         // Genuinely unreachable backend (offline / static hosting) — keep the optimistic local save
         return { success: true, offline: true, data: [payload] };
@@ -295,7 +295,7 @@
         const error = (json && json.error) || (res.status === 401
           ? 'Your admin session has expired. Please log out and log back in, then try deleting again.'
           : `Server rejected the delete (HTTP ${res.status}).`);
-        return { success: false, error, localOnly: true };
+        return { success: false, error, localOnly: true, authExpired: res.status === 401 };
       } catch (err) {
         return { success: true, offline: true };
       }
@@ -402,7 +402,7 @@
         const error = (json && json.error) || (res.status === 401
           ? 'Your admin session has expired. Please log out and log back in, then try saving again.'
           : `Server rejected the save (HTTP ${res.status}).`);
-        return { success: false, error, localOnly: true, data: destPayload };
+        return { success: false, error, localOnly: true, authExpired: res.status === 401, data: destPayload };
       } catch (err) {
         return { success: true, offline: true, data: destPayload };
       }
@@ -441,7 +441,7 @@
         const error = (json && json.error) || (res.status === 401
           ? 'Your admin session has expired. Please log out and log back in, then try deleting again.'
           : `Server rejected the delete (HTTP ${res.status}).`);
-        return { success: false, error, localOnly: true };
+        return { success: false, error, localOnly: true, authExpired: res.status === 401 };
       } catch (err) {
         return { success: true, offline: true };
       }
@@ -480,7 +480,7 @@
         const error = (json && json.error) || (res.status === 401
           ? 'Your admin session has expired. Please log out and log back in, then try deleting again.'
           : `Server rejected the delete (HTTP ${res.status}).`);
-        return { success: false, error, localOnly: true };
+        return { success: false, error, localOnly: true, authExpired: res.status === 401 };
       } catch (err) {
         return { success: true, offline: true };
       }
@@ -597,7 +597,7 @@
         const error = (json && json.error) || (res.status === 401
           ? 'Your admin session has expired. Please log out and log back in, then try saving again.'
           : `Server rejected the save (HTTP ${res.status}).`);
-        return { success: false, error, localOnly: true, data: reviewData };
+        return { success: false, error, localOnly: true, authExpired: res.status === 401, data: reviewData };
       } catch (err) {
         return { success: true, offline: true, data: reviewData };
       }
@@ -690,7 +690,7 @@
         const error = (json && json.error) || (res.status === 401
           ? 'Your admin session has expired. Please log out and log back in, then try saving again.'
           : `Server rejected the save (HTTP ${res.status}).`);
-        return { success: false, error, localOnly: true, data: postcardPayload };
+        return { success: false, error, localOnly: true, authExpired: res.status === 401, data: postcardPayload };
       } catch (err) {
         return { success: true, offline: true, data: postcardPayload };
       }
@@ -726,7 +726,7 @@
         const error = (json && json.error) || (res.status === 401
           ? 'Your admin session has expired. Please log out and log back in, then try deleting again.'
           : `Server rejected the delete (HTTP ${res.status}).`);
-        return { success: false, error, localOnly: true };
+        return { success: false, error, localOnly: true, authExpired: res.status === 401 };
       } catch (err) {
         return { success: true, offline: true };
       }

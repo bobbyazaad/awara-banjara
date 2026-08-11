@@ -2141,6 +2141,10 @@ Travel Insurance"></textarea>
       if (typeof window.AwaraDB !== 'undefined') {
         const result = await window.AwaraDB.saveTrip(payload);
         if (result && result.success === false) {
+          if (result.authExpired) {
+            promptReloginAndRetry(() => handleSaveTrip(e));
+            return;
+          }
           alert(`❌ Trip was NOT saved to the server!\n\n${result.error || 'Unknown error.'}\n\nYour edits are only cached in this browser and will not appear on the live site until you fix this and save again.`);
           return;
         }
@@ -2172,6 +2176,10 @@ Travel Insurance"></textarea>
       if (typeof window.AwaraDB !== 'undefined') {
         const result = await window.AwaraDB.deleteTrip(id);
         if (result && result.success === false) {
+          if (result.authExpired) {
+            promptReloginAndRetry(() => deleteTrip(id));
+            return;
+          }
           alert(`❌ Trip was NOT deleted on the server!\n\n${result.error || 'Unknown error.'}`);
           return;
         }
@@ -2731,6 +2739,10 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
         if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.saveDestination) {
           const result = await window.AwaraDB.saveDestination(payload);
           if (result && result.success === false) {
+            if (result.authExpired) {
+              promptReloginAndRetry(() => handleSaveDestination(e));
+              return;
+            }
             alert(`❌ Destination was NOT saved to the server!\n\n${result.error || 'Unknown error.'}`);
             return;
           }
@@ -2782,6 +2794,10 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
         if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.deleteDestination) {
           const result = await window.AwaraDB.deleteDestination(id);
           if (result && result.success === false) {
+            if (result.authExpired) {
+              promptReloginAndRetry(() => deleteDestinationCard(id));
+              return;
+            }
             alert(`❌ Destination was NOT deleted on the server!\n\n${result.error || 'Unknown error.'}`);
             return;
           }
@@ -2949,6 +2965,10 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
         if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.saveReview) {
           const result = await window.AwaraDB.saveReview(payload);
           if (result && result.success === false) {
+            if (result.authExpired) {
+              promptReloginAndRetry(() => handleSaveReview(e));
+              return;
+            }
             alert(`❌ Review was NOT ${isEditing ? 'updated' : 'added'} on the server!\n\n${result.error || 'Unknown error.'}`);
             return;
           }
@@ -3007,6 +3027,10 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
         if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.deleteReview) {
           const result = await window.AwaraDB.deleteReview(id);
           if (result && result.success === false) {
+            if (result.authExpired) {
+              promptReloginAndRetry(() => deleteReviewCard(id));
+              return;
+            }
             alert(`❌ Review was NOT deleted on the server!\n\n${result.error || 'Unknown error.'}`);
             return;
           }
@@ -3177,6 +3201,10 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
         if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.savePostcard) {
           const result = await window.AwaraDB.savePostcard(payload);
           if (result && result.success === false) {
+            if (result.authExpired) {
+              promptReloginAndRetry(() => handleSaveReel(e));
+              return;
+            }
             alert(`❌ Reel was NOT saved to the server!\n\n${result.error || 'Unknown error.'}`);
             return;
           }
@@ -3266,6 +3294,10 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
         if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.savePostcard) {
           const result = await window.AwaraDB.savePostcard(payload);
           if (result && result.success === false) {
+            if (result.authExpired) {
+              promptReloginAndRetry(() => handleSaveBlog(e));
+              return;
+            }
             alert(`❌ Blog was NOT saved to the server!\n\n${result.error || 'Unknown error.'}`);
             return;
           }
@@ -3337,6 +3369,10 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
         if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.deletePostcard) {
           const result = await window.AwaraDB.deletePostcard(id);
           if (result && result.success === false) {
+            if (result.authExpired) {
+              promptReloginAndRetry(() => deletePostcardItem(id));
+              return;
+            }
             alert(`❌ Item was NOT deleted on the server!\n\n${result.error || 'Unknown error.'}`);
             return;
           }
@@ -3450,6 +3486,25 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
       if (userBadge) userBadge.style.display = 'inline-flex';
     }
 
+    // Session tokens can go invalid mid-edit (e.g. the Render free-tier server restarting
+    // after being idle wipes its in-memory session store). Rather than just showing an error
+    // and discarding the admin's in-progress work, re-prompt login as an overlay (the form
+    // underneath is untouched) and automatically retry the exact same save/delete once
+    // they're re-authenticated.
+    function promptReloginAndRetry(retryFn) {
+      const errorAlert = document.getElementById('loginErrorAlert');
+      if (errorAlert) {
+        errorAlert.textContent = 'Your session expired, but your edits are safe. Log back in to retry automatically.';
+        errorAlert.style.display = 'block';
+      }
+      showLoginModal();
+      const onReauth = () => {
+        window.removeEventListener('awaraReauthSuccess', onReauth);
+        retryFn();
+      };
+      window.addEventListener('awaraReauthSuccess', onReauth);
+    }
+
     async function handleAdminLogin(e) {
       if (e) e.preventDefault();
       const usernameInput = document.getElementById('loginUsername');
@@ -3490,6 +3545,7 @@ CREATE POLICY "Allow public delete" ON public.reviews FOR DELETE USING (true);
           if (typeof loadAdminTrips === 'function') loadAdminTrips();
           if (typeof loadAdminInquiries === 'function') loadAdminInquiries();
           if (typeof loadAdminReviews === 'function') loadAdminReviews();
+          window.dispatchEvent(new CustomEvent('awaraReauthSuccess'));
           if (submitBtn) {
             submitBtn.disabled = false;
             submitBtn.innerHTML = 'Unlock Control Center 🔐';

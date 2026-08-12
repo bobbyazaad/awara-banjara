@@ -25,101 +25,19 @@
       this.captionBtn = banner.querySelector('[data-role="cta"]');
 
       var self = this;
-
-      this.container.addEventListener('click', function (e) {
-        // A swipe that just completed also fires a synthetic click on touch
-        // devices - swallow that one so it doesn't double-advance.
-        if (self._justSwiped) { self._justSwiped = false; return; }
+      this.container.onclick = function (e) {
         if (e && e.preventDefault) e.preventDefault();
-        self.advance(1);
-      });
+        self.nextCard();
+      };
 
-      this.container.addEventListener('keydown', function (e) {
+      this.container.onkeydown = function (e) {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          self.advance(1);
+          self.nextCard();
         }
-      });
-
-      this.bindSwipe();
+      };
 
       console.log('✅ CardStackManager v5.0 initialized');
-    },
-
-    bindSwipe: function () {
-      var self = this;
-      var touch = null; // { startX, startY, dx, axis }
-      var SWIPE_THRESHOLD = 60;
-
-      function frontCard() {
-        return self.container.querySelector('.card-stack-item[data-pos="0"]');
-      }
-
-      this.container.addEventListener('touchstart', function (e) {
-        if (self.isAnimating) { touch = null; return; }
-        var t = e.touches[0];
-        touch = { startX: t.clientX, startY: t.clientY, dx: 0, axis: null };
-      }, { passive: true });
-
-      this.container.addEventListener('touchmove', function (e) {
-        if (!touch) return;
-        var t = e.touches[0];
-        var dx = t.clientX - touch.startX;
-        var dy = t.clientY - touch.startY;
-
-        if (touch.axis === null) {
-          if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return;
-          touch.axis = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
-        }
-        if (touch.axis !== 'x') return;
-
-        // Only once we know this is a horizontal drag do we take over the
-        // gesture - otherwise a vertical swipe here would still scroll it.
-        e.preventDefault();
-        touch.dx = dx;
-
-        var front = frontCard();
-        if (front) {
-          front.classList.add('dragging');
-          front.style.transform = 'translateX(' + dx + 'px) rotate(' + (dx / 18) + 'deg)';
-        }
-      }, { passive: false });
-
-      this.container.addEventListener('touchend', function () {
-        if (!touch) return;
-        var dx = touch.dx;
-        var wasHorizontal = touch.axis === 'x';
-        touch = null;
-
-        var front = frontCard();
-
-        if (wasHorizontal && Math.abs(dx) > SWIPE_THRESHOLD) {
-          // Mobile browsers usually suppress the synthetic click that would
-          // otherwise follow a touchend after a preventDefault()-ed drag, so
-          // don't rely on the click handler to clear this - self-clear on a
-          // timer, or a later genuine tap could get incorrectly swallowed.
-          self._justSwiped = true;
-          setTimeout(function () { self._justSwiped = false; }, 400);
-          if (front) {
-            front.classList.remove('dragging');
-            front.style.transform = '';
-          }
-          self.advance(dx < 0 ? -1 : 1);
-        } else if (front) {
-          front.classList.remove('dragging');
-          front.style.transform = '';
-        }
-      }, { passive: true });
-
-      this.container.addEventListener('touchcancel', function () {
-        if (!touch) return;
-        touch = null;
-        var front = frontCard();
-        if (front) {
-          front.classList.remove('dragging');
-          front.style.transform = '';
-        }
-      }, { passive: true });
     },
 
     setTrips: function (tripsData) {
@@ -212,54 +130,39 @@
       this.updateCaption();
     },
 
-    /**
-     * Advance the stack by one card. direction is 1 (flies off to the
-     * right - default for click/keyboard/right-swipe) or -1 (flies off to
-     * the left - left-swipe).
-     */
-    advance: function (direction) {
+    nextCard: function () {
       if (this.isAnimating || !this.container) return;
 
-      var dir = direction === -1 ? -1 : 1;
       var items = Array.from(this.container.querySelectorAll('.card-stack-item'));
       var total = items.length;
       if (total === 0) return;
 
       this.isAnimating = true;
 
-      var currentFront = items.filter(function (item) { return item.getAttribute('data-pos') === '0'; })[0] || items[0];
-      if (currentFront) {
-        currentFront.style.setProperty('--flip-dir', String(dir));
-        currentFront.classList.add('flip-animating');
+      // Pure CSS attribute rotation (Glitch-Free & Hardware Accelerated)
+      items.forEach(function (item) {
+        var pos = parseInt(item.getAttribute('data-pos'), 10);
+        if (isNaN(pos)) pos = 0;
+        var newPos = (pos - 1 + total) % total;
+        item.setAttribute('data-pos', String(newPos));
+      });
+
+      // Update front caption for new front card (data-pos="0")
+      var newFront = items.filter(function (item) { return item.getAttribute('data-pos') === '0'; })[0];
+      if (newFront) {
+        var title = newFront.getAttribute('data-title') || 'Himalayan Expedition';
+        var price = this.formatPrice(newFront.getAttribute('data-price'));
+        var href = newFront.getAttribute('data-href') || 'trip-detail.html';
+
+        if (this.captionTitle) this.captionTitle.textContent = title;
+        if (this.captionPrice) this.captionPrice.textContent = price;
+        if (this.captionBtn) this.captionBtn.setAttribute('href', href);
       }
 
       var self = this;
       setTimeout(function () {
-        // Pure CSS attribute rotation (glitch-free & hardware accelerated)
-        items.forEach(function (item) {
-          var pos = parseInt(item.getAttribute('data-pos'), 10);
-          if (isNaN(pos)) pos = 0;
-          var newPos = (pos - 1 + total) % total;
-          item.setAttribute('data-pos', String(newPos));
-          item.classList.remove('flip-animating');
-        });
-
-        // Update front caption for new front card (data-pos="0")
-        var newFront = items.filter(function (item) { return item.getAttribute('data-pos') === '0'; })[0];
-        if (newFront) {
-          var title = newFront.getAttribute('data-title') || 'Himalayan Expedition';
-          var price = self.formatPrice(newFront.getAttribute('data-price'));
-          var href = newFront.getAttribute('data-href') || 'trip-detail.html';
-
-          if (self.captionTitle) self.captionTitle.textContent = title;
-          if (self.captionPrice) self.captionPrice.textContent = price;
-          if (self.captionBtn) self.captionBtn.setAttribute('href', href);
-        }
-      }, 180);
-
-      setTimeout(function () {
         self.isAnimating = false;
-      }, 500);
+      }, 420);
     },
 
     updateCaption: function () {

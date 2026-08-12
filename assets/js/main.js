@@ -11,31 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
       toggle.innerHTML = MENU_SVG;
     }
 
-    var backdrop = document.createElement('div');
-    backdrop.className = 'nav-backdrop';
-    document.body.appendChild(backdrop);
-
-    var setOpen = function (isOpen) {
-      nav.classList.toggle('open', isOpen);
-      backdrop.classList.toggle('open', isOpen);
+    toggle.addEventListener('click', function () {
+      var isOpen = nav.classList.toggle('open');
       toggle.setAttribute('aria-expanded', String(isOpen));
       toggle.innerHTML = isOpen ? CLOSE_SVG : MENU_SVG;
-    };
-
-    toggle.addEventListener('click', function () {
-      setOpen(!nav.classList.contains('open'));
-    });
-
-    backdrop.addEventListener('click', function () {
-      setOpen(false);
-    });
-
-    nav.addEventListener('click', function (e) {
-      if (e.target.closest('a')) setOpen(false);
-    });
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') setOpen(false);
     });
   }
 
@@ -135,11 +114,63 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.initCarousels();
 
-  // Card-stack (flip-card) click/keyboard/swipe interaction lives in
-  // card-stack.js, owned by CardStackManager — this used to duplicate that
-  // logic here too, and since both attached via the `onclick` property on
-  // the same element, this one silently won and CardStackManager's own
-  // handlers never ran.
+  window.initCardStack = function () {
+    document.querySelectorAll('.card-stack').forEach(function (stack) {
+      var caption = stack.parentElement ? stack.parentElement.querySelector('.featured-caption') : null;
+      var isAnimating = false;
+
+      function advance(e) {
+        if (e && e.preventDefault) e.preventDefault();
+        if (isAnimating) return;
+
+        var items = Array.from(stack.querySelectorAll('.card-stack-item'));
+        var total = items.length;
+        if (total === 0) return;
+
+        var currentFront = items.filter(function (item) { return item.dataset.pos === '0'; })[0] || items[0];
+        if (currentFront) {
+          isAnimating = true;
+          currentFront.classList.add('flip-animating');
+        }
+
+        setTimeout(function() {
+          items.forEach(function (item) {
+            var pos = parseInt(item.dataset.pos, 10);
+            if (isNaN(pos)) pos = 0;
+            var newPos = (pos - 1 + total) % total;
+            item.dataset.pos = String(newPos);
+            item.setAttribute('data-pos', String(newPos));
+            item.classList.remove('flip-animating');
+          });
+
+          var newFront = items.filter(function (item) { return String(item.dataset.pos) === '0'; })[0];
+          if (newFront && caption) {
+            var titleNode = caption.querySelector('[data-role="title"]');
+            var priceNode = caption.querySelector('[data-role="price"]');
+            var ctaNode = caption.querySelector('[data-role="cta"]');
+            if (titleNode) titleNode.textContent = newFront.dataset.title || '';
+            if (priceNode) priceNode.textContent = newFront.dataset.price || '';
+            if (ctaNode) ctaNode.setAttribute('href', newFront.dataset.href || 'trip-detail.html');
+          }
+          isAnimating = false;
+        }, 180);
+      }
+
+      stack.onclick = advance;
+      stack.onkeydown = function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          advance();
+        }
+      };
+
+      stack.querySelectorAll('.card-stack-item').forEach(function (item) {
+        item.onclick = advance;
+      });
+    });
+  };
+
+  window.initCardStack();
 
   // Trip Planning Modal for International Destinations
   var tripModal = document.getElementById('tripModal');

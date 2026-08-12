@@ -288,26 +288,11 @@ button { font-family: inherit; cursor: pointer; }
     gap: 4px;
     padding: 12px 24px 20px;
     display: none;
-    z-index: 110;
-    box-shadow: 0 16px 32px rgba(20, 20, 15, 0.18);
   }
   .main-nav.open { display: flex; }
   .main-nav a { width: 100%; padding: 10px 0; border-bottom: 1px solid #f0f0ea; }
   .nav-toggle { display: inline-flex; }
   .header-contact span { display: none; }
-
-  .nav-backdrop {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(20, 20, 15, 0.4);
-    /* Below .site-header's z-index (100) — .site-header is itself a stacking
-       context (position: sticky + z-index), so anything above it here would
-       paint over the whole header, including the open nav, and swallow clicks
-       on the nav links even though the menu visually appears on top. */
-    z-index: 90;
-  }
-  .nav-backdrop.open { display: block; }
 }
 
 /* ---------- Hero ---------- */
@@ -630,32 +615,15 @@ button { font-family: inherit; cursor: pointer; }
   .carousel-stage { height: 444px; width: 100%; }
   .carousel-stage .trip-card { height: 384px; width: clamp(176px, 56vw, 260px); }
 
-  /* The peeking side cards' title/price/Book Now text sits right at the
-     card edge, so on wider phones (e.g. ~412-450px CSS width) it bleeds
-     past the screen and gets hard-clipped mid-button. Rather than chase a
-     peek width that fits every device, just hide the text on anything
-     that isn't the front card - the peek reads as a clean image preview
-     instead, and nothing is ever left half-visible. */
-  .carousel-stage .trip-card .body {
-    transition: opacity 0.3s ease;
-  }
-  .carousel-stage .trip-card:not([data-offset="0"]) .body {
-    opacity: 0;
-    pointer-events: none;
-  }
-
   .carousel-arrow {
     position: absolute;
-    /* Sits over the card's image area (top ~108px of the 444px stage), never
-       over the price/Book Now text lower in the card. */
-    top: 108px;
+    top: 50%;
     transform: translateY(-50%);
     width: 38px;
     height: 38px;
-    opacity: 0.88;
   }
-  .carousel-arrow[data-dir="prev"] { left: 4px; }
-  .carousel-arrow[data-dir="next"] { right: 4px; }
+  .carousel-arrow[data-dir="prev"] { left: 0; }
+  .carousel-arrow[data-dir="next"] { right: 0; }
   .carousel-arrow:hover { transform: translateY(-50%) scale(1.09); }
   .carousel-arrow:active { transform: translateY(-50%); }
 }
@@ -981,18 +949,11 @@ button { font-family: inherit; cursor: pointer; }
   width: min(680px, 94vw);
   aspect-ratio: 1.55 / 1;
   margin: 0 auto;
-  cursor: grab;
+  cursor: pointer;
   overflow: visible;
-  touch-action: pan-y;
 }
 
-.card-stack:active { cursor: grabbing; }
-
 @media (max-width: 640px) {
-  .featured-banner {
-    padding-block: 44px 16px;
-  }
-
   .card-stack {
     width: min(340px, 88vw);
     aspect-ratio: 3 / 4 !important;
@@ -1079,14 +1040,6 @@ button { font-family: inherit; cursor: pointer; }
   cursor: pointer;
 }
 
-/* Tighter fan spread than desktop so the peeking side cards stay inside
-   the viewport instead of bleeding past its edge and getting hard-clipped. */
-@media (max-width: 640px) {
-  .card-stack-item[data-pos="1"] { transform: translateY(-8px) translateX(12px) rotate(3deg) scale(0.95); }
-  .card-stack-item[data-pos="2"] { transform: translateY(-6px) translateX(-12px) rotate(-4deg) scale(0.91); }
-  .card-stack-item[data-pos="3"] { transform: translateY(8px) translateX(4px) rotate(6deg) scale(0.86); }
-}
-
 .card-stack:hover .card-stack-item[data-pos="0"] {
   transform: translateY(-6px) scale(1.015);
   box-shadow: 0 30px 60px rgba(20, 20, 15, 0.32);
@@ -1103,9 +1056,7 @@ button { font-family: inherit; cursor: pointer; }
     z-index: 10;
   }
   45% {
-    /* --flip-dir is 1 for a right-swipe/click, -1 for a left-swipe, so the
-       card flies off in the same direction the user dragged it. */
-    transform: translateX(calc(115% * var(--flip-dir, 1))) translateY(-30px) rotate(calc(24deg * var(--flip-dir, 1))) scale(0.92);
+    transform: translateX(115%) translateY(-30px) rotate(24deg) scale(0.92);
     opacity: 0.85;
     z-index: 10;
   }
@@ -1118,12 +1069,6 @@ button { font-family: inherit; cursor: pointer; }
 
 .card-stack-item.flip-animating {
   animation: cardFlipOut 0.5s cubic-bezier(0.2, 0.8, 0.25, 1) forwards !important;
-}
-
-/* While the user is actively dragging the front card, kill the transition
-   so it tracks the finger 1:1 instead of easing behind it. */
-.card-stack-item.dragging {
-  transition: none !important;
 }
 
 .featured-caption {

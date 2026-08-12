@@ -429,9 +429,32 @@ button { font-family: inherit; cursor: pointer; }
 
 .trip-card:hover .thumb img { transform: scale(1.06); }
 
-.trip-card .body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.trip-card .body {
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  /* flex items default to min-height:auto, which lets long content refuse to
+     shrink below its own natural size and overflow the card's fixed height
+     instead - invisible where it's clipped by .trip-card's overflow:hidden.
+     Different engines wrap the same title to different line counts (font
+     metrics aren't identical), so this could pass in one browser and clip
+     in another even with untouched card geometry. */
+  min-height: 0;
+}
 
-.trip-card h3 { font-size: 17px; min-height: 44px; }
+.trip-card h3 {
+  font-size: 17px;
+  line-height: 1.3;
+  min-height: 44px;
+  /* Cap at 2 lines instead of only setting a minimum - an unbounded title
+     is the main way body content could outgrow the card's fixed height. */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 .trip-card .meta {
   display: flex;

@@ -630,6 +630,20 @@ button { font-family: inherit; cursor: pointer; }
   .carousel-stage { height: 444px; width: 100%; }
   .carousel-stage .trip-card { height: 384px; width: clamp(176px, 56vw, 260px); }
 
+  /* The peeking side cards' title/price/Book Now text sits right at the
+     card edge, so on wider phones (e.g. ~412-450px CSS width) it bleeds
+     past the screen and gets hard-clipped mid-button. Rather than chase a
+     peek width that fits every device, just hide the text on anything
+     that isn't the front card - the peek reads as a clean image preview
+     instead, and nothing is ever left half-visible. */
+  .carousel-stage .trip-card .body {
+    transition: opacity 0.3s ease;
+  }
+  .carousel-stage .trip-card:not([data-offset="0"]) .body {
+    opacity: 0;
+    pointer-events: none;
+  }
+
   .carousel-arrow {
     position: absolute;
     /* Sits over the card's image area (top ~108px of the 444px stage), never

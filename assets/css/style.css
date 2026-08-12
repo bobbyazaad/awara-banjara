@@ -967,11 +967,18 @@ button { font-family: inherit; cursor: pointer; }
   width: min(680px, 94vw);
   aspect-ratio: 1.55 / 1;
   margin: 0 auto;
-  cursor: pointer;
+  cursor: grab;
   overflow: visible;
+  touch-action: pan-y;
 }
 
+.card-stack:active { cursor: grabbing; }
+
 @media (max-width: 640px) {
+  .featured-banner {
+    padding-block: 44px 16px;
+  }
+
   .card-stack {
     width: min(340px, 88vw);
     aspect-ratio: 3 / 4 !important;
@@ -1058,6 +1065,14 @@ button { font-family: inherit; cursor: pointer; }
   cursor: pointer;
 }
 
+/* Tighter fan spread than desktop so the peeking side cards stay inside
+   the viewport instead of bleeding past its edge and getting hard-clipped. */
+@media (max-width: 640px) {
+  .card-stack-item[data-pos="1"] { transform: translateY(-8px) translateX(12px) rotate(3deg) scale(0.95); }
+  .card-stack-item[data-pos="2"] { transform: translateY(-6px) translateX(-12px) rotate(-4deg) scale(0.91); }
+  .card-stack-item[data-pos="3"] { transform: translateY(8px) translateX(4px) rotate(6deg) scale(0.86); }
+}
+
 .card-stack:hover .card-stack-item[data-pos="0"] {
   transform: translateY(-6px) scale(1.015);
   box-shadow: 0 30px 60px rgba(20, 20, 15, 0.32);
@@ -1074,7 +1089,9 @@ button { font-family: inherit; cursor: pointer; }
     z-index: 10;
   }
   45% {
-    transform: translateX(115%) translateY(-30px) rotate(24deg) scale(0.92);
+    /* --flip-dir is 1 for a right-swipe/click, -1 for a left-swipe, so the
+       card flies off in the same direction the user dragged it. */
+    transform: translateX(calc(115% * var(--flip-dir, 1))) translateY(-30px) rotate(calc(24deg * var(--flip-dir, 1))) scale(0.92);
     opacity: 0.85;
     z-index: 10;
   }
@@ -1087,6 +1104,12 @@ button { font-family: inherit; cursor: pointer; }
 
 .card-stack-item.flip-animating {
   animation: cardFlipOut 0.5s cubic-bezier(0.2, 0.8, 0.25, 1) forwards !important;
+}
+
+/* While the user is actively dragging the front card, kill the transition
+   so it tracks the finger 1:1 instead of easing behind it. */
+.card-stack-item.dragging {
+  transition: none !important;
 }
 
 .featured-caption {

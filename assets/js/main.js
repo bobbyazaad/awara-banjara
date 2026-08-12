@@ -11,10 +11,31 @@ document.addEventListener('DOMContentLoaded', function () {
       toggle.innerHTML = MENU_SVG;
     }
 
-    toggle.addEventListener('click', function () {
-      var isOpen = nav.classList.toggle('open');
+    var backdrop = document.createElement('div');
+    backdrop.className = 'nav-backdrop';
+    document.body.appendChild(backdrop);
+
+    var setOpen = function (isOpen) {
+      nav.classList.toggle('open', isOpen);
+      backdrop.classList.toggle('open', isOpen);
       toggle.setAttribute('aria-expanded', String(isOpen));
       toggle.innerHTML = isOpen ? CLOSE_SVG : MENU_SVG;
+    };
+
+    toggle.addEventListener('click', function () {
+      setOpen(!nav.classList.contains('open'));
+    });
+
+    backdrop.addEventListener('click', function () {
+      setOpen(false);
+    });
+
+    nav.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setOpen(false);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setOpen(false);
     });
   }
 

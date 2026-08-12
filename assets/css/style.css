@@ -288,11 +288,26 @@ button { font-family: inherit; cursor: pointer; }
     gap: 4px;
     padding: 12px 24px 20px;
     display: none;
+    z-index: 110;
+    box-shadow: 0 16px 32px rgba(20, 20, 15, 0.18);
   }
   .main-nav.open { display: flex; }
   .main-nav a { width: 100%; padding: 10px 0; border-bottom: 1px solid #f0f0ea; }
   .nav-toggle { display: inline-flex; }
   .header-contact span { display: none; }
+
+  .nav-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 20, 15, 0.4);
+    /* Below .site-header's z-index (100) — .site-header is itself a stacking
+       context (position: sticky + z-index), so anything above it here would
+       paint over the whole header, including the open nav, and swallow clicks
+       on the nav links even though the menu visually appears on top. */
+    z-index: 90;
+  }
+  .nav-backdrop.open { display: block; }
 }
 
 /* ---------- Hero ---------- */
@@ -617,13 +632,16 @@ button { font-family: inherit; cursor: pointer; }
 
   .carousel-arrow {
     position: absolute;
-    top: 50%;
+    /* Sits over the card's image area (top ~108px of the 444px stage), never
+       over the price/Book Now text lower in the card. */
+    top: 108px;
     transform: translateY(-50%);
     width: 38px;
     height: 38px;
+    opacity: 0.88;
   }
-  .carousel-arrow[data-dir="prev"] { left: 0; }
-  .carousel-arrow[data-dir="next"] { right: 0; }
+  .carousel-arrow[data-dir="prev"] { left: 4px; }
+  .carousel-arrow[data-dir="next"] { right: 4px; }
   .carousel-arrow:hover { transform: translateY(-50%) scale(1.09); }
   .carousel-arrow:active { transform: translateY(-50%); }
 }

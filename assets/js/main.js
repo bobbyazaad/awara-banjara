@@ -114,63 +114,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.initCarousels();
 
-  window.initCardStack = function () {
-    document.querySelectorAll('.card-stack').forEach(function (stack) {
-      var caption = stack.parentElement ? stack.parentElement.querySelector('.featured-caption') : null;
-      var isAnimating = false;
-
-      function advance(e) {
-        if (e && e.preventDefault) e.preventDefault();
-        if (isAnimating) return;
-
-        var items = Array.from(stack.querySelectorAll('.card-stack-item'));
-        var total = items.length;
-        if (total === 0) return;
-
-        var currentFront = items.filter(function (item) { return item.dataset.pos === '0'; })[0] || items[0];
-        if (currentFront) {
-          isAnimating = true;
-          currentFront.classList.add('flip-animating');
-        }
-
-        setTimeout(function() {
-          items.forEach(function (item) {
-            var pos = parseInt(item.dataset.pos, 10);
-            if (isNaN(pos)) pos = 0;
-            var newPos = (pos - 1 + total) % total;
-            item.dataset.pos = String(newPos);
-            item.setAttribute('data-pos', String(newPos));
-            item.classList.remove('flip-animating');
-          });
-
-          var newFront = items.filter(function (item) { return String(item.dataset.pos) === '0'; })[0];
-          if (newFront && caption) {
-            var titleNode = caption.querySelector('[data-role="title"]');
-            var priceNode = caption.querySelector('[data-role="price"]');
-            var ctaNode = caption.querySelector('[data-role="cta"]');
-            if (titleNode) titleNode.textContent = newFront.dataset.title || '';
-            if (priceNode) priceNode.textContent = newFront.dataset.price || '';
-            if (ctaNode) ctaNode.setAttribute('href', newFront.dataset.href || 'trip-detail.html');
-          }
-          isAnimating = false;
-        }, 180);
-      }
-
-      stack.onclick = advance;
-      stack.onkeydown = function (e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          advance();
-        }
-      };
-
-      stack.querySelectorAll('.card-stack-item').forEach(function (item) {
-        item.onclick = advance;
-      });
-    });
-  };
-
-  window.initCardStack();
+  // Card-stack (featured escapes) click, keyboard, and swipe handling lives
+  // entirely in card-stack.js's CardStackManager — it owns the DOM there
+  // (rewrites it from live trip data), so a second controller here used to
+  // fight it for the container's onclick and silently win, which is why the
+  // stack could only ever be advanced by click, never swiped.
 
   // Trip Planning Modal for International Destinations
   var tripModal = document.getElementById('tripModal');

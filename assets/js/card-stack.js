@@ -27,6 +27,17 @@
       var self = this;
       this.container.onclick = function (e) {
         if (e && e.preventDefault) e.preventDefault();
+        // A drag that released past the swipe threshold already triggered its
+        // own flyOut in pointerup - don't double-advance on the click that
+        // usually follows a touch/mouse release. Gated on a time window
+        // rather than a plain flag: some input paths (e.g. a mouse drag that
+        // starts on the card's <img>) never fire that trailing click at all,
+        // which would otherwise leave the flag stuck and swallow the next
+        // real tap forever.
+        if (self._suppressClickUntil && Date.now() < self._suppressClickUntil) {
+          self._suppressClickUntil = 0;
+          return;
+        }
         self.nextCard();
       };
 
@@ -37,7 +48,59 @@
         }
       };
 
+      this.bindSwipe();
+
       console.log('✅ CardStackManager v5.0 initialized');
+    },
+
+    // Drag-to-follow-finger + directional fly-out on release. Uses Pointer
+    // Events so it behaves the same for real touch and a mouse drag.
+    bindSwipe: function () {
+      var self = this;
+      var drag = null;
+      var DRAG_ROTATE_DIVISOR = 16;
+      var FLING_THRESHOLD = 55;
+
+      this.container.addEventListener('pointerdown', function (e) {
+        if (self.isAnimating) return;
+        var front = self.container.querySelector('.card-stack-item[data-pos="0"]');
+        if (!front) return;
+        drag = { startX: e.clientX, startY: e.clientY, front: front, moved: false };
+        front.style.transition = 'none';
+      });
+
+      this.container.addEventListener('pointermove', function (e) {
+        if (!drag) return;
+        var dx = e.clientX - drag.startX;
+        var dy = e.clientY - drag.startY;
+        if (!drag.moved && Math.abs(dx) < 4 && Math.abs(dy) < 4) return;
+        drag.moved = true;
+        drag.dx = dx;
+        drag.front.style.transform = 'translateX(' + dx + 'px) translateY(' + (dy * 0.15) + 'px) rotate(' + (dx / DRAG_ROTATE_DIVISOR) + 'deg)';
+      });
+
+      var release = function () {
+        if (!drag) return;
+        var front = drag.front;
+        var dx = drag.dx || 0;
+        var wasDrag = drag.moved;
+        drag = null;
+
+        front.style.transition = '';
+
+        if (wasDrag && Math.abs(dx) > FLING_THRESHOLD) {
+          self._suppressClickUntil = Date.now() + 400;
+          self.flyOut(dx > 0 ? 'right' : 'left', front);
+        } else {
+          front.style.transform = '';
+        }
+      };
+
+      this.container.addEventListener('pointerup', release);
+      this.container.addEventListener('pointercancel', release);
+      this.container.addEventListener('pointerleave', function () {
+        if (drag && drag.moved) release();
+      });
     },
 
     setTrips: function (tripsData) {
@@ -130,16 +193,14 @@
       this.updateCaption();
     },
 
-    nextCard: function () {
-      if (this.isAnimating || !this.container) return;
-
+    // Pure CSS attribute rotation (Glitch-Free & Hardware Accelerated) -
+    // shared by a plain click/tap advance and the post-flyOut settle.
+    rotatePositions: function () {
+      if (!this.container) return;
       var items = Array.from(this.container.querySelectorAll('.card-stack-item'));
       var total = items.length;
       if (total === 0) return;
 
-      this.isAnimating = true;
-
-      // Pure CSS attribute rotation (Glitch-Free & Hardware Accelerated)
       items.forEach(function (item) {
         var pos = parseInt(item.getAttribute('data-pos'), 10);
         if (isNaN(pos)) pos = 0;
@@ -147,7 +208,6 @@
         item.setAttribute('data-pos', String(newPos));
       });
 
-      // Update front caption for new front card (data-pos="0")
       var newFront = items.filter(function (item) { return item.getAttribute('data-pos') === '0'; })[0];
       if (newFront) {
         var title = newFront.getAttribute('data-title') || 'Himalayan Expedition';
@@ -158,9 +218,50 @@
         if (this.captionPrice) this.captionPrice.textContent = price;
         if (this.captionBtn) this.captionBtn.setAttribute('href', href);
       }
+    },
+
+    nextCard: function () {
+      if (this.isAnimating || !this.container) return;
+      if (this.container.querySelectorAll('.card-stack-item').length === 0) return;
+
+      this.isAnimating = true;
+      this.rotatePositions();
 
       var self = this;
       setTimeout(function () {
+        self.isAnimating = false;
+      }, 420);
+    },
+
+    // Swiped release: the front card flies off screen in the swipe direction,
+    // then the stack rotates underneath it and the flown card is recycled
+    // back into the (now hidden) rear position with its transform cleared.
+    flyOut: function (direction, front) {
+      if (this.isAnimating || !this.container) return;
+      front = front || this.container.querySelector('.card-stack-item[data-pos="0"]');
+      if (!front) return;
+
+      this.isAnimating = true;
+      var flyX = direction === 'right' ? '170%' : '-170%';
+      var rot = direction === 'right' ? '28deg' : '-28deg';
+
+      front.style.transition = 'transform 0.42s cubic-bezier(0.2, 0.8, 0.25, 1), opacity 0.42s ease';
+      front.style.transform = 'translateX(' + flyX + ') translateY(-18px) rotate(' + rot + ')';
+      front.style.opacity = '0';
+
+      var self = this;
+      setTimeout(function () {
+        self.rotatePositions();
+        front.style.transition = 'none';
+        front.style.transform = '';
+        front.style.opacity = '';
+        // Next frame: restore the transition so the recycled card's move
+        // into its new stack position animates instead of snapping.
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            front.style.transition = '';
+          });
+        });
         self.isAnimating = false;
       }, 420);
     },

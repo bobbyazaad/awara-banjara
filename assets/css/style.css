@@ -951,9 +951,19 @@ button { font-family: inherit; cursor: pointer; }
   margin: 0 auto;
   cursor: pointer;
   overflow: visible;
+  /* Let vertical page scroll pass through untouched; horizontal drags are
+     handled by our own pointer events for the swipe-to-dismiss gesture. */
+  touch-action: pan-y;
 }
 
 @media (max-width: 640px) {
+  .featured-banner {
+    /* The rotated peeking cards reach a bit above the stack's own box
+       (translateY up to -14px) - extra top clearance keeps them from
+       crowding the sticky header on phones. */
+    padding-block: 44px 16px;
+  }
+
   .card-stack {
     width: min(340px, 88vw);
     aspect-ratio: 3 / 4 !important;
@@ -1047,28 +1057,6 @@ button { font-family: inherit; cursor: pointer; }
 
 .card-stack:hover .card-stack-item[data-pos="0"] img {
   transform: scale(1.03);
-}
-
-@keyframes cardFlipOut {
-  0% {
-    transform: translateY(0) scale(1) rotate(0deg);
-    opacity: 1;
-    z-index: 10;
-  }
-  45% {
-    transform: translateX(115%) translateY(-30px) rotate(24deg) scale(0.92);
-    opacity: 0.85;
-    z-index: 10;
-  }
-  100% {
-    transform: translateY(12px) translateX(8px) rotate(11deg) scale(0.85);
-    opacity: 0;
-    z-index: 1;
-  }
-}
-
-.card-stack-item.flip-animating {
-  animation: cardFlipOut 0.5s cubic-bezier(0.2, 0.8, 0.25, 1) forwards !important;
 }
 
 .featured-caption {

@@ -2034,7 +2034,7 @@
     "image_url": "assets/images/trips/trip_121_image_url.jpg",
     "link": "trips/ladakh-tours-ladakh-overland-srinagar-to-manali-via-umling-la-tso-moriri-121.html",
     "created_at": "2026-08-05T10:18:46.875073+00:00",
-    "category": "ladakh_tours, bike_tours",
+    "category": "ladakh_tours, women_only_tours, bike_tours, corporate_tours, educational_trips",
     "route": "Srinagar — Kargil — Leh — Khardung La — Nubra Valley — Pangong Tso — Hanle — Umling La — Tso Moriri — Sarchu — Manali",
     "tags": "Motorbike Expedition, High Altitude, Himalayan Circuit, Overland Odyssey, Group Tour",
     "bento_img_1": "assets/images/trips/trip_121_bento_img_1.jpg",
@@ -2123,57 +2123,61 @@
     ],
     "package_options": [
       {
-        "price": "On Request",
-        "title": "Dual Rider"
+        "title": "Dual Rider",
+        "price": "On Request"
       },
       {
-        "price": "On Request",
-        "title": "Solo Rider"
+        "title": "Solo Rider",
+        "price": "On Request"
       },
       {
-        "price": "On Request",
-        "title": "Tempo Traveler / SUV Seat"
+        "title": "Tempo Traveler / SUV Seat",
+        "price": "On Request"
       }
     ],
     "sub_package_options": "Himalayan 450, Himalayan 411,",
     "departure_dates": [],
     "faqs": [
       {
-        "answer": "June through September offers clear passes, open high-altitude lakes, and optimal riding conditions across the circuit.",
-        "question": "WHAT IS THE BEST TIME FOR THIS OVERLAND EXPEDITION?"
+        "question": "WHAT IS THE BEST TIME FOR THIS OVERLAND EXPEDITION?",
+        "answer": "June through September offers clear passes, open high-altitude lakes, and optimal riding conditions across the circuit."
       },
       {
-        "answer": "While not mandatory, comfortable riding posture and familiarity with long hours in the saddle are highly recommended due to high passes like Umling La.",
-        "question": "DO I NEED PREVIOUS HIGH ALTITUDE RIDING EXPERIENCE?"
+        "question": "DO I NEED PREVIOUS HIGH ALTITUDE RIDING EXPERIENCE?",
+        "answer": "While not mandatory, comfortable riding posture and familiarity with long hours in the saddle are highly recommended due to high passes like Umling La."
       },
       {
-        "answer": "All Inner Line Permits and frontier clearances are processed by our team prior to departure; you only need to carry valid government photo IDs.",
-        "question": "HOW ARE PERMITS HANDLED FOR FRONTIER AREAS LIKE HANLE & UMLING LA?"
+        "question": "HOW ARE PERMITS HANDLED FOR FRONTIER AREAS LIKE HANLE & UMLING LA?",
+        "answer": "All Inner Line Permits and frontier clearances are processed by our team prior to departure; you only need to carry valid government photo IDs."
       },
       {
-        "answer": "Expect comfortable hotel stays in Srinagar, Kargil, and Leh, paired with authentic Changthang homestays in Hanle and weather-proof wilderness camps in Pangong and Sarchu.",
-        "question": "WHAT IS THE ACCOMMODATION STYLE DURING THE EXPEDITION?"
+        "question": "WHAT IS THE ACCOMMODATION STYLE DURING THE EXPEDITION?",
+        "answer": "Expect comfortable hotel stays in Srinagar, Kargil, and Leh, paired with authentic Changthang homestays in Hanle and weather-proof wilderness camps in Pangong and Sarchu."
       }
     ],
     "reviews": [
       {
         "name": "Aarav Sharma",
+        "location": "Chandigarh",
         "text": "An unforgettable traverse across the highest pass on Earth. Awara Banjara curated the perfect balance of raw adventure and warm mountain stays.",
-        "avatar": "assets/images/reviews/pfp-aarav.jpg",
-        "location": "Chandigarh"
+        "avatar": "assets/images/reviews/pfp-aarav.jpg"
       },
       {
         "name": "Meera Sen",
+        "location": "Bengaluru",
         "text": "The Hanle night sky and Tso Moriri solitude were pure magic. Seamless execution and exceptional captain guidance throughout the circuit!",
-        "avatar": "assets/images/reviews/pfp-meera.jpg",
-        "location": "Bengaluru"
+        "avatar": "assets/images/reviews/pfp-meera.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:34:47.745Z"
   },
   {
     "id": 111,
@@ -2183,7 +2187,7 @@
     "image_url": "assets/images/trips/trip_111_image_url.jpg",
     "link": "trips/spiti-tours-spiti-the-highland-circuit-group-trip-111.html",
     "created_at": "2026-08-02T08:18:57.366181+00:00",
-    "category": "spiti_tours",
+    "category": "spiti_tours, women_only_tours, bike_tours, corporate_tours",
     "route": "Delhi — Manali — Kaza — Langza — Komic — Hikkim — Key Monastery — Chicham Bridge — Kunzum Pass — Chandratal — Manali — Delhi",
     "tags": "Spiti Valley, Highland Circuit, Shared Ride, Road Trip, Group Tour",
     "bento_img_1": "assets/images/trips/trip_111_bento_img_1.jpg",
@@ -2245,16 +2249,16 @@
     ],
     "package_options": [
       {
-        "price": "₹12,499",
-        "title": "Quad Sharing"
+        "title": "Quad Sharing",
+        "price": "₹12,499"
       },
       {
-        "price": "₹13,999",
-        "title": "Triple Sharing"
+        "title": "Triple Sharing",
+        "price": "₹13,999"
       },
       {
-        "price": "₹16,499",
-        "title": "Double Sharing"
+        "title": "Double Sharing",
+        "price": "₹16,499"
       }
     ],
     "sub_package_options": "",
@@ -2328,37 +2332,41 @@
     ],
     "faqs": [
       {
-        "answer": "The trip spans 7 Days / 6 Nights starting and ending in Delhi.",
-        "question": "WHAT IS THE TRIP DURATION?"
+        "question": "WHAT IS THE TRIP DURATION?",
+        "answer": "The trip spans 7 Days / 6 Nights starting and ending in Delhi."
       },
       {
-        "answer": "Yes, round-trip overnight AC Volvo bus transfers from Delhi to Manali are included.",
-        "question": "IS TRANSPORT INCLUDED FROM DELHI?"
+        "question": "IS TRANSPORT INCLUDED FROM DELHI?",
+        "answer": "Yes, round-trip overnight AC Volvo bus transfers from Delhi to Manali are included."
       },
       {
-        "answer": "Key Monastery, Chicham Bridge, Hikkim, Komic, Langza, and Chandratal Lake.",
-        "question": "WHAT ARE THE HIGHLIGHTS OF THIS CIRCUIT?"
+        "question": "WHAT ARE THE HIGHLIGHTS OF THIS CIRCUIT?",
+        "answer": "Key Monastery, Chicham Bridge, Hikkim, Komic, Langza, and Chandratal Lake."
       }
     ],
     "reviews": [
       {
         "name": "Karan Patel",
+        "location": "Delhi",
         "text": "The Spiti Highland Circuit was super well-organized. Visiting Hikkim and camping at Chandratal for ₹12,499 was incredible value!",
-        "avatar": "assets/images/reviews/pfp-karan.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-karan.jpg"
       },
       {
         "name": "Neha Gupta",
+        "location": "Chandigarh",
         "text": "Great group, comfortable stays, and an awesome driver who navigated the Spiti roads effortlessly. Highly recommend Awara Banjara!",
-        "avatar": "assets/images/reviews/pfp-neha.jpg",
-        "location": "Chandigarh"
+        "avatar": "assets/images/reviews/pfp-neha.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:35:02.979Z"
   },
   {
     "id": 112,
@@ -2549,7 +2557,7 @@
     "image_url": "assets/images/trips/trip_119_image_url.jpg",
     "link": "trips/uttarakhand-tours-uttarakhand-backpacking-odyssey-119.html",
     "created_at": "2026-08-05T08:16:24.162012+00:00",
-    "category": "uttarakhand_tours",
+    "category": "uttarakhand_tours, women_only_tours, treks, corporate_tours",
     "route": "Delhi — Joshimath — Auli — Chopta — Tungnath — Deoria Tal — Rishikesh — Delhi",
     "tags": "Uttarakhand, Trekking, Backpacking, Auli, Chopta, Rishikesh, River Rafting",
     "bento_img_1": "assets/images/trips/trip_119_bento_img_1.jpg",
@@ -2625,77 +2633,81 @@
     ],
     "package_options": [
       {
-        "price": "₹21,900",
-        "title": "Standard Sharing"
+        "title": "Standard Sharing",
+        "price": "₹21,900"
       },
       {
-        "price": "₹25,950",
-        "title": "Premium Sharing"
+        "title": "Premium Sharing",
+        "price": "₹25,950"
       }
     ],
     "sub_package_options": "",
     "departure_dates": [],
     "faqs": [
       {
-        "answer": "It is easy-to-moderate and perfect for first-timers! The trail to Tungnath is well-paved, with a steeper last 1.5 km to Chandrashila summit.",
-        "question": "How difficult is the Tungnath-Chandrashila trek?"
+        "question": "How difficult is the Tungnath-Chandrashila trek?",
+        "answer": "It is easy-to-moderate and perfect for first-timers! The trail to Tungnath is well-paved, with a steeper last 1.5 km to Chandrashila summit."
       },
       {
-        "answer": "Winter (Dec–Feb) for snow and skiing, Spring/Summer (Mar–Jun) for blooming meadows, and Autumn (Oct–Nov) for clear peak views.",
-        "question": "What is the best time for this trip?"
+        "question": "What is the best time for this trip?",
+        "answer": "Winter (Dec–Feb) for snow and skiing, Spring/Summer (Mar–Jun) for blooming meadows, and Autumn (Oct–Nov) for clear peak views."
       },
       {
-        "answer": "Yes, high-buoyancy life jackets and helmets are provided along with professional guide briefings.",
-        "question": "I don't know how to swim. Can I still do River Rafting in Rishikesh?"
+        "question": "I don't know how to swim. Can I still do River Rafting in Rishikesh?",
+        "answer": "Yes, high-buoyancy life jackets and helmets are provided along with professional guide briefings."
       },
       {
-        "answer": "Hostels/riverside camps in Rishikesh, Swiss tents/cottages in Chopta, and homestays/guesthouses in Auli/Joshimath.",
-        "question": "What kind of stays should I expect?"
+        "question": "What kind of stays should I expect?",
+        "answer": "Hostels/riverside camps in Rishikesh, Swiss tents/cottages in Chopta, and homestays/guesthouses in Auli/Joshimath."
       },
       {
-        "answer": "Network is patchy (Jio/BSNL work best) and electricity is solar-limited. Carrying a 20,000mAh power bank is recommended.",
-        "question": "Will I get mobile network and electricity in Chopta?"
+        "question": "Will I get mobile network and electricity in Chopta?",
+        "answer": "Network is patchy (Jio/BSNL work best) and electricity is solar-limited. Carrying a 20,000mAh power bank is recommended."
       },
       {
-        "answer": "3-layer clothing (thermal, fleece, waterproof jacket), sturdy trekking shoes, sunscreen, lip balm, and a reusable water bottle.",
-        "question": "What should I pack for Chopta/Auli?"
+        "question": "What should I pack for Chopta/Auli?",
+        "answer": "3-layer clothing (thermal, fleece, waterproof jacket), sturdy trekking shoes, sunscreen, lip balm, and a reusable water bottle."
       },
       {
-        "answer": "ATMs are available in Rishikesh and Joshimath, but NOT in Chopta or Auli. Carry sufficient cash.",
-        "question": "Is there an ATM available?"
+        "question": "Is there an ATM available?",
+        "answer": "ATMs are available in Rishikesh and Joshimath, but NOT in Chopta or Auli. Carry sufficient cash."
       },
       {
-        "answer": "Comfortable high-clearance vehicles like Bolero, Scorpio, or Tempo Traveler suited for mountain roads.",
-        "question": "How do we travel between these places?"
+        "question": "How do we travel between these places?",
+        "answer": "Comfortable high-clearance vehicles like Bolero, Scorpio, or Tempo Traveler suited for mountain roads."
       },
       {
-        "answer": "The itinerary is paced for acclimatization and Trip Captains carry first-aid kits. Stay hydrated and avoid heavy meals.",
-        "question": "What if I get Altitude Sickness (AMS)?"
+        "question": "What if I get Altitude Sickness (AMS)?",
+        "answer": "The itinerary is paced for acclimatization and Trip Captains carry first-aid kits. Stay hydrated and avoid heavy meals."
       },
       {
-        "answer": "Yes! Most travelers join solo and are paired with same-gender roommates/tentmates.",
-        "question": "Can I join solo?"
+        "question": "Can I join solo?",
+        "answer": "Yes! Most travelers join solo and are paired with same-gender roommates/tentmates."
       }
     ],
     "reviews": [
       {
         "name": "Ankit Sharma",
+        "location": "Delhi",
         "text": "The trek to Tungnath and river rafting in Rishikesh was an unforgettable experience!",
-        "avatar": "assets/images/reviews/pfp-ankit.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-ankit.jpg"
       },
       {
         "name": "Priya Patel",
+        "location": "Mumbai",
         "text": "Amazing Trip Captains and great stay arrangements in Chopta. Loved every bit of it!",
-        "avatar": "assets/images/reviews/pfp-priya.jpg",
-        "location": "Mumbai"
+        "avatar": "assets/images/reviews/pfp-priya.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:35:24.913Z"
   },
   {
     "id": 103,

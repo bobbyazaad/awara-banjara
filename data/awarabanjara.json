@@ -2035,7 +2035,7 @@
       "image_url": "assets/images/trips/trip_121_image_url.jpg",
       "link": "trips/ladakh-tours-ladakh-overland-srinagar-to-manali-via-umling-la-tso-moriri-121.html",
       "created_at": "2026-08-05T10:18:46.875073+00:00",
-      "category": "ladakh_tours, bike_tours",
+      "category": "ladakh_tours, women_only_tours, bike_tours, corporate_tours, educational_trips",
       "route": "Srinagar — Kargil — Leh — Khardung La — Nubra Valley — Pangong Tso — Hanle — Umling La — Tso Moriri — Sarchu — Manali",
       "tags": "Motorbike Expedition, High Altitude, Himalayan Circuit, Overland Odyssey, Group Tour",
       "bento_img_1": "assets/images/trips/trip_121_bento_img_1.jpg",
@@ -2124,57 +2124,61 @@
       ],
       "package_options": [
         {
-          "price": "On Request",
-          "title": "Dual Rider"
+          "title": "Dual Rider",
+          "price": "On Request"
         },
         {
-          "price": "On Request",
-          "title": "Solo Rider"
+          "title": "Solo Rider",
+          "price": "On Request"
         },
         {
-          "price": "On Request",
-          "title": "Tempo Traveler / SUV Seat"
+          "title": "Tempo Traveler / SUV Seat",
+          "price": "On Request"
         }
       ],
       "sub_package_options": "Himalayan 450, Himalayan 411,",
       "departure_dates": [],
       "faqs": [
         {
-          "answer": "June through September offers clear passes, open high-altitude lakes, and optimal riding conditions across the circuit.",
-          "question": "WHAT IS THE BEST TIME FOR THIS OVERLAND EXPEDITION?"
+          "question": "WHAT IS THE BEST TIME FOR THIS OVERLAND EXPEDITION?",
+          "answer": "June through September offers clear passes, open high-altitude lakes, and optimal riding conditions across the circuit."
         },
         {
-          "answer": "While not mandatory, comfortable riding posture and familiarity with long hours in the saddle are highly recommended due to high passes like Umling La.",
-          "question": "DO I NEED PREVIOUS HIGH ALTITUDE RIDING EXPERIENCE?"
+          "question": "DO I NEED PREVIOUS HIGH ALTITUDE RIDING EXPERIENCE?",
+          "answer": "While not mandatory, comfortable riding posture and familiarity with long hours in the saddle are highly recommended due to high passes like Umling La."
         },
         {
-          "answer": "All Inner Line Permits and frontier clearances are processed by our team prior to departure; you only need to carry valid government photo IDs.",
-          "question": "HOW ARE PERMITS HANDLED FOR FRONTIER AREAS LIKE HANLE & UMLING LA?"
+          "question": "HOW ARE PERMITS HANDLED FOR FRONTIER AREAS LIKE HANLE & UMLING LA?",
+          "answer": "All Inner Line Permits and frontier clearances are processed by our team prior to departure; you only need to carry valid government photo IDs."
         },
         {
-          "answer": "Expect comfortable hotel stays in Srinagar, Kargil, and Leh, paired with authentic Changthang homestays in Hanle and weather-proof wilderness camps in Pangong and Sarchu.",
-          "question": "WHAT IS THE ACCOMMODATION STYLE DURING THE EXPEDITION?"
+          "question": "WHAT IS THE ACCOMMODATION STYLE DURING THE EXPEDITION?",
+          "answer": "Expect comfortable hotel stays in Srinagar, Kargil, and Leh, paired with authentic Changthang homestays in Hanle and weather-proof wilderness camps in Pangong and Sarchu."
         }
       ],
       "reviews": [
         {
           "name": "Aarav Sharma",
+          "location": "Chandigarh",
           "text": "An unforgettable traverse across the highest pass on Earth. Awara Banjara curated the perfect balance of raw adventure and warm mountain stays.",
-          "avatar": "assets/images/reviews/pfp-aarav.jpg",
-          "location": "Chandigarh"
+          "avatar": "assets/images/reviews/pfp-aarav.jpg"
         },
         {
           "name": "Meera Sen",
+          "location": "Bengaluru",
           "text": "The Hanle night sky and Tso Moriri solitude were pure magic. Seamless execution and exceptional captain guidance throughout the circuit!",
-          "avatar": "assets/images/reviews/pfp-meera.jpg",
-          "location": "Bengaluru"
+          "avatar": "assets/images/reviews/pfp-meera.jpg"
         }
       ],
       "reserve_banner_title": "",
       "reserve_banner_sub": null,
       "custom_quote_title": "",
       "custom_quote_sub": null,
-      "whatsapp_number": null
+      "whatsapp_number": null,
+      "is_featured_reels": true,
+      "is_featured_stack": true,
+      "is_featured_lemonade": true,
+      "updated_at": "2026-08-13T08:34:47.745Z"
     },
     {
       "id": 111,
@@ -2184,7 +2188,7 @@
       "image_url": "assets/images/trips/trip_111_image_url.jpg",
       "link": "trips/spiti-tours-spiti-the-highland-circuit-group-trip-111.html",
       "created_at": "2026-08-02T08:18:57.366181+00:00",
-      "category": "spiti_tours",
+      "category": "spiti_tours, women_only_tours, bike_tours, corporate_tours",
       "route": "Delhi — Manali — Kaza — Langza — Komic — Hikkim — Key Monastery — Chicham Bridge — Kunzum Pass — Chandratal — Manali — Delhi",
       "tags": "Spiti Valley, Highland Circuit, Shared Ride, Road Trip, Group Tour",
       "bento_img_1": "assets/images/trips/trip_111_bento_img_1.jpg",
@@ -2246,16 +2250,16 @@
       ],
       "package_options": [
         {
-          "price": "₹12,499",
-          "title": "Quad Sharing"
+          "title": "Quad Sharing",
+          "price": "₹12,499"
         },
         {
-          "price": "₹13,999",
-          "title": "Triple Sharing"
+          "title": "Triple Sharing",
+          "price": "₹13,999"
         },
         {
-          "price": "₹16,499",
-          "title": "Double Sharing"
+          "title": "Double Sharing",
+          "price": "₹16,499"
         }
       ],
       "sub_package_options": "",
@@ -2329,37 +2333,41 @@
       ],
       "faqs": [
         {
-          "answer": "The trip spans 7 Days / 6 Nights starting and ending in Delhi.",
-          "question": "WHAT IS THE TRIP DURATION?"
+          "question": "WHAT IS THE TRIP DURATION?",
+          "answer": "The trip spans 7 Days / 6 Nights starting and ending in Delhi."
         },
         {
-          "answer": "Yes, round-trip overnight AC Volvo bus transfers from Delhi to Manali are included.",
-          "question": "IS TRANSPORT INCLUDED FROM DELHI?"
+          "question": "IS TRANSPORT INCLUDED FROM DELHI?",
+          "answer": "Yes, round-trip overnight AC Volvo bus transfers from Delhi to Manali are included."
         },
         {
-          "answer": "Key Monastery, Chicham Bridge, Hikkim, Komic, Langza, and Chandratal Lake.",
-          "question": "WHAT ARE THE HIGHLIGHTS OF THIS CIRCUIT?"
+          "question": "WHAT ARE THE HIGHLIGHTS OF THIS CIRCUIT?",
+          "answer": "Key Monastery, Chicham Bridge, Hikkim, Komic, Langza, and Chandratal Lake."
         }
       ],
       "reviews": [
         {
           "name": "Karan Patel",
+          "location": "Delhi",
           "text": "The Spiti Highland Circuit was super well-organized. Visiting Hikkim and camping at Chandratal for ₹12,499 was incredible value!",
-          "avatar": "assets/images/reviews/pfp-karan.jpg",
-          "location": "Delhi"
+          "avatar": "assets/images/reviews/pfp-karan.jpg"
         },
         {
           "name": "Neha Gupta",
+          "location": "Chandigarh",
           "text": "Great group, comfortable stays, and an awesome driver who navigated the Spiti roads effortlessly. Highly recommend Awara Banjara!",
-          "avatar": "assets/images/reviews/pfp-neha.jpg",
-          "location": "Chandigarh"
+          "avatar": "assets/images/reviews/pfp-neha.jpg"
         }
       ],
       "reserve_banner_title": "",
       "reserve_banner_sub": null,
       "custom_quote_title": "",
       "custom_quote_sub": null,
-      "whatsapp_number": null
+      "whatsapp_number": null,
+      "is_featured_reels": true,
+      "is_featured_stack": true,
+      "is_featured_lemonade": true,
+      "updated_at": "2026-08-13T08:35:02.979Z"
     },
     {
       "id": 112,

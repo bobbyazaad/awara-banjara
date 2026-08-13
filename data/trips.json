@@ -517,7 +517,7 @@
     "image_url": "assets/images/trips/trip_114_image_url.jpg",
     "link": "trips/northeast-india-tours-meghalaya-kaziranga-backpacking-trip-114.html",
     "created_at": "2026-08-02T10:56:13.24701+00:00",
-    "category": "northeast_india_tours",
+    "category": "northeast_india_tours, women_only_tours, treks, corporate_tours",
     "route": "Guwahati — Shillong — Shnongpdeng (Dawki) — Mawlynnong — Cherrapunji — Kaziranga — Guwahati",
     "tags": "Backpacking, Group Tour, Waterfall Trekking, Living Root Bridges, Wildlife Safari, Meghalaya, Kaziranga",
     "bento_img_1": "assets/images/trips/trip_114_bento_img_1.jpg",
@@ -593,8 +593,8 @@
     ],
     "package_options": [
       {
-        "price": "₹27,900",
-        "title": "Solo Traveler"
+        "title": "Solo Traveler",
+        "price": "₹27,900"
       }
     ],
     "sub_package_options": "",
@@ -668,71 +668,75 @@
     ],
     "faqs": [
       {
-        "answer": "Our journey begins and ends in Guwahati. Fly into Lokpriya Gopinath Bordoloi International Airport (GAU) or arrive at Guwahati Railway Station. We coordinate a common pickup point at the airport or Khanapara.",
-        "question": "How do I reach the starting point?"
+        "question": "How do I reach the starting point?",
+        "answer": "Our journey begins and ends in Guwahati. Fly into Lokpriya Gopinath Bordoloi International Airport (GAU) or arrive at Guwahati Railway Station. We coordinate a common pickup point at the airport or Khanapara."
       },
       {
-        "answer": "For Indian citizens, no Inner Line Permit (ILP) is required to visit Meghalaya or Assam. You just need to carry a valid Government-issued photo ID (Aadhaar, Voter ID, or Driving License).",
-        "question": "Is there a permit required for Meghalaya or Assam?"
+        "question": "Is there a permit required for Meghalaya or Assam?",
+        "answer": "For Indian citizens, no Inner Line Permit (ILP) is required to visit Meghalaya or Assam. You just need to carry a valid Government-issued photo ID (Aadhaar, Voter ID, or Driving License)."
       },
       {
-        "answer": "November to April is ideal for Kaziranga Safari (park closed May to October) and clear waters in Dawki. September to October is great for chasing massive waterfalls in Meghalaya.",
-        "question": "What is the best time for this \"Forests & Falls\" combo?"
+        "question": "What is the best time for this \"Forests & Falls\" combo?",
+        "answer": "November to April is ideal for Kaziranga Safari (park closed May to October) and clear waters in Dawki. September to October is great for chasing massive waterfalls in Meghalaya."
       },
       {
-        "answer": "It is a physically demanding trek involving approximately 3,500 steps one way (2–3 hours down, 3–4 hours back up). Basic fitness is recommended.",
-        "question": "How difficult is the Double Decker Root Bridge trek?"
+        "question": "How difficult is the Double Decker Root Bridge trek?",
+        "answer": "It is a physically demanding trek involving approximately 3,500 steps one way (2–3 hours down, 3–4 hours back up). Basic fitness is recommended."
       },
       {
-        "answer": "We offer an early morning Jeep Safari, which is great for covering more ground and spotting One-Horned Rhinos, wild buffaloes, and tigers.",
-        "question": "What kind of Safari happens in Kaziranga?"
+        "question": "What kind of Safari happens in Kaziranga?",
+        "answer": "We offer an early morning Jeep Safari, which is great for covering more ground and spotting One-Horned Rhinos, wild buffaloes, and tigers."
       },
       {
-        "answer": "Yes, in designated spots like Krang Suri (life jackets mandatory). Please dress modestly while walking through the local villages.",
-        "question": "Can I swim in the waterfalls?"
+        "question": "Can I swim in the waterfalls?",
+        "answer": "Yes, in designated spots like Krang Suri (life jackets mandatory). Please dress modestly while walking through the local villages."
       },
       {
-        "answer": "Meghalaya: Rain poncho, sturdy trekking shoes, quick-dry towel. Kaziranga: Earthy/dull-colored clothes (khaki, olive, brown). General: Power bank, insect repellent, motion sickness meds.",
-        "question": "What should I pack for this trip?"
+        "question": "What should I pack for this trip?",
+        "answer": "Meghalaya: Rain poncho, sturdy trekking shoes, quick-dry towel. Kaziranga: Earthy/dull-colored clothes (khaki, olive, brown). General: Power bank, insect repellent, motion sickness meds."
       },
       {
-        "answer": "Excellent 4G/5G in Shillong & Guwahati. Decent network in Cherrapunji & Kaziranga. Poor or no network in Dawki & Nongriat village.",
-        "question": "Will I have a mobile network?"
+        "question": "Will I have a mobile network?",
+        "answer": "Excellent 4G/5G in Shillong & Guwahati. Decent network in Cherrapunji & Kaziranga. Poor or no network in Dawki & Nongriat village."
       },
       {
-        "answer": "Expect a mix of Assamese and Khasi cuisine (rice, dal, local vegetables, Jadoh, Masor Tenga). Vegetarian and vegan options are always available.",
-        "question": "What is the food like?"
+        "question": "What is the food like?",
+        "answer": "Expect a mix of Assamese and Khasi cuisine (rice, dal, local vegetables, Jadoh, Masor Tenga). Vegetarian and vegan options are always available."
       },
       {
-        "answer": "We keep our groups small and intimate, usually between 10 to 16 travelers.",
-        "question": "How many people are in a typical group?"
+        "question": "How many people are in a typical group?",
+        "answer": "We keep our groups small and intimate, usually between 10 to 16 travelers."
       }
     ],
     "reviews": [
       {
         "name": "Ananya Sharma",
+        "location": "Delhi",
         "text": "The trip to Meghalaya and Kaziranga was pure magic! Walking on the living root bridges and catching the early morning safari in Kaziranga were huge highlights. Our trip captain was super organized and kept the energy high throughout.",
-        "avatar": "assets/images/reviews/pfp-ananya.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-ananya.jpg"
       },
       {
         "name": "Rahul Verma",
+        "location": "Bangalore",
         "text": "Awara Banjara truly delivers on raw and authentic travel experiences. Dawki river camping and cliff jumping were absolutely thrilling. Loved meeting an amazing group of solo travelers!",
-        "avatar": "assets/images/reviews/pfp-rahul.jpg",
-        "location": "Bangalore"
+        "avatar": "assets/images/reviews/pfp-rahul.jpg"
       },
       {
         "name": "Priya Nair",
+        "location": "Mumbai",
         "text": "Perfectly paced 7-day trip! From the mystical Mawsmai caves and Nohkalikai falls to spotting the One-Horned Rhino in Kaziranga, every single day had something incredible to offer. Highly recommend!",
-        "avatar": "assets/images/reviews/pfp-priya.jpg",
-        "location": "Mumbai"
+        "avatar": "assets/images/reviews/pfp-priya.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:31:03.784Z"
   },
   {
     "id": 107,

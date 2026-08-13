@@ -1061,7 +1061,7 @@
     "image_url": "assets/images/trips/trip_100_image_url.jpg",
     "link": "trips/ladakh-tours-zanskar-moto-passage-the-monolith-circuit-100.html",
     "created_at": "2026-08-01T10:33:21.680299+00:00",
-    "category": "ladakh_tours",
+    "category": "ladakh_tours, women_only_tours, treks, bike_tours, corporate_tours",
     "route": "Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa",
     "tags": "High Altitude, Zanskar, Monasteries, Valleys, Motorcycling, Expedition",
     "bento_img_1": "assets/images/trips/trip_100_bento_img_1.jpg",
@@ -1120,12 +1120,12 @@
     ],
     "package_options": [
       {
-        "price": "₹16,499",
-        "title": "Dual Rider"
+        "title": "Dual Rider",
+        "price": "₹16,499"
       },
       {
-        "price": "₹19,499",
-        "title": "Solo Rider"
+        "title": "Solo Rider",
+        "price": "₹19,499"
       }
     ],
     "sub_package_options": "Himalayan 411, Himalayan 450",
@@ -1239,51 +1239,55 @@
     ],
     "faqs": [
       {
-        "answer": "June to September is the best window as Shinku La Pass is open and weather conditions are favorable for riding.",
-        "question": "WHAT IS THE BEST TIME FOR THIS TRIP?"
+        "question": "WHAT IS THE BEST TIME FOR THIS TRIP?",
+        "answer": "June to September is the best window as Shinku La Pass is open and weather conditions are favorable for riding."
       },
       {
-        "answer": "Basic to intermediate riding experience is recommended, as the route includes off-road terrain, gravel, and high-altitude mountain passes.",
-        "question": "DO I NEED PRIOR OFF-ROAD RIDING EXPERIENCE?"
+        "question": "DO I NEED PRIOR OFF-ROAD RIDING EXPERIENCE?",
+        "answer": "Basic to intermediate riding experience is recommended, as the route includes off-road terrain, gravel, and high-altitude mountain passes."
       },
       {
-        "answer": "Yes, our backup vehicle carries emergency oxygen cylinders, a first-aid medical kit, and a trained road crew.",
-        "question": "IS OXYGEN/MEDICAL SUPPORT AVAILABLE?"
+        "question": "IS OXYGEN/MEDICAL SUPPORT AVAILABLE?",
+        "answer": "Yes, our backup vehicle carries emergency oxygen cylinders, a first-aid medical kit, and a trained road crew."
       },
       {
-        "answer": "The initial drive and stay in Jispa help you acclimatize before crossing Shinku La Pass (16,580 ft) into Zanskar.",
-        "question": "WHAT IS THE ACCLIMATIZATION REQUIREMENT?"
+        "question": "WHAT IS THE ACCLIMATIZATION REQUIREMENT?",
+        "answer": "The initial drive and stay in Jispa help you acclimatize before crossing Shinku La Pass (16,580 ft) into Zanskar."
       },
       {
-        "answer": "Yes, all inner line permits, environmental fees, and wildlife passes are arranged and included by the team.",
-        "question": "ARE INNER LINE PERMITS INCLUDED?"
+        "question": "ARE INNER LINE PERMITS INCLUDED?",
+        "answer": "Yes, all inner line permits, environmental fees, and wildlife passes are arranged and included by the team."
       }
     ],
     "reviews": [
       {
         "name": "Rohit Verma",
+        "location": "Delhi",
         "text": "Absolutely surreal experience riding through Shinku La to Gonbo Rangjon! The team managed oxygen, backup, and stays seamlessly.",
-        "avatar": "assets/images/reviews/pfp-rohit.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-rohit.jpg"
       },
       {
         "name": "Ananya Sharma",
+        "location": "Chandigarh",
         "text": "The trek to Phuktal Monastery was the highlight of my year. Super well-organized 6-day circuit from Delhi and back.",
-        "avatar": "assets/images/reviews/pfp-ananya.jpg",
-        "location": "Chandigarh"
+        "avatar": "assets/images/reviews/pfp-ananya.jpg"
       },
       {
         "name": "Vikramaditya Singh",
+        "location": "Jaipur",
         "text": "Flawless execution by Awara Banjara! The Himalayan bikes were in top condition and the road captain knew every corner of Zanskar.",
-        "avatar": "assets/images/reviews/pfp-vikram.jpg",
-        "location": "Jaipur"
+        "avatar": "assets/images/reviews/pfp-vikram.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:32:21.292Z"
   },
   {
     "id": 110,

@@ -1192,19 +1192,19 @@
     ],
     "package_options": [
       {
-        "price": "₹6,999",
-        "title": "Quad Sharing"
+        "title": "Quad Sharing",
+        "price": "₹6,999"
       },
       {
-        "price": "₹7,999",
-        "title": "Triple Sharing"
+        "title": "Triple Sharing",
+        "price": "₹7,999"
       },
       {
-        "price": "₹9,499",
-        "title": "Double Sharing"
+        "title": "Double Sharing",
+        "price": "₹9,499"
       }
     ],
-    "sub_package_options": "",
+    "sub_package_options": "Himalayan 411, Himalayan 450",
     "departure_dates": [
       {
         "dates": [
@@ -1242,20 +1242,6 @@
       {
         "dates": [
           {
-            "id": "b_1785656493131",
-            "price": "6,999",
-            "range": "4th September",
-            "status": "Available",
-            "startDate": "2026-09-04"
-          },
-          {
-            "id": "b_1785656495262",
-            "price": "6,999",
-            "range": "11th September",
-            "status": "Available",
-            "startDate": "2026-09-11"
-          },
-          {
             "id": "b_1785656514800",
             "price": "6,999",
             "range": "25th September",
@@ -1263,11 +1249,25 @@
             "startDate": "2026-09-25"
           },
           {
-            "id": "b_1785656525545",
-            "price": "6,999",
+            "id": "b_1786634817785",
+            "range": "11th September",
+            "startDate": "2026-09-11",
+            "status": "Sold Out",
+            "price": "16,000"
+          },
+          {
+            "id": "b_1786634821824",
+            "range": "4th September",
+            "startDate": "2026-09-04",
+            "status": "Sold Out",
+            "price": "16,000"
+          },
+          {
+            "id": "b_1786634827941",
             "range": "18th September",
-            "status": "Available",
-            "startDate": "2026-09-18"
+            "startDate": "2026-09-18",
+            "status": "Sold Out",
+            "price": "16,000"
           }
         ],
         "month": "September 2026"
@@ -1275,37 +1275,41 @@
     ],
     "faqs": [
       {
-        "answer": "Overnight AC Volvo transfers between Delhi & Manali/Kasol, plus private local vehicles for all sightseeing.",
-        "question": "WHAT IS INCLUDED IN THE TRANSPORTATION?"
+        "question": "WHAT IS INCLUDED IN THE TRANSPORTATION?",
+        "answer": "Overnight AC Volvo transfers between Delhi & Manali/Kasol, plus private local vehicles for all sightseeing."
       },
       {
-        "answer": "No, activities like rafting and paragliding are optional third-party services and payable directly at the activity site.",
-        "question": "ARE ADVENTURE ACTIVITIES IN KULLU & SOLANG INCLUDED?"
+        "question": "ARE ADVENTURE ACTIVITIES IN KULLU & SOLANG INCLUDED?",
+        "answer": "No, activities like rafting and paragliding are optional third-party services and payable directly at the activity site."
       },
       {
-        "answer": "Absolutely! Most of our travelers are solo or small group travelers looking for a community experience.",
-        "question": "CAN SOLO TRAVELERS JOIN THIS TRIP?"
+        "question": "CAN SOLO TRAVELERS JOIN THIS TRIP?",
+        "answer": "Absolutely! Most of our travelers are solo or small group travelers looking for a community experience."
       }
     ],
     "reviews": [
       {
         "name": "Aniket Sharma",
+        "location": "Delhi",
         "text": "Incredible 6-day trip! The visit to Sissu through Atal Tunnel and the vibes in Kasol were unmatched for ₹6,999.",
-        "avatar": "assets/images/reviews/pfp-aniket.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-aniket.jpg"
       },
       {
         "name": "Riya Kapoor",
+        "location": "Chandigarh",
         "text": "Super well-organized trip by Awara Banjara. Stays were clean, food was good, and the trip captain kept the energy high throughout!",
-        "avatar": "assets/images/reviews/pfp-riya.jpg",
-        "location": "Chandigarh"
+        "avatar": "assets/images/reviews/pfp-riya.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T15:27:10.718Z"
   },
   {
     "id": 100,

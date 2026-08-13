@@ -1907,7 +1907,7 @@
       "image_url": "assets/images/trips/trip_118_image_url.jpg",
       "link": "trips/himachal-tours-buran-ghati-where-the-trail-ends-118.html",
       "created_at": "2026-08-05T05:30:06.030748+00:00",
-      "category": "himachal_tours",
+      "category": "himachal_tours, women_only_tours, treks",
       "route": "Shimla — Janglik — Dayara Thachh — Litham — Chandernahan — Dhunda — Buran Pass — Barua — Shimla",
       "tags": "Himalayan Trek, High Altitude, Pass Crossing, Snow Rappelling, Shimla, Kinnaur, Adventure",
       "bento_img_1": "assets/images/trips/trip_118_bento_img_1.jpg",
@@ -1975,53 +1975,57 @@
       ],
       "package_options": [
         {
-          "price": "₹13,999",
-          "title": "On Request"
+          "title": "On Request",
+          "price": "₹13,999"
         }
       ],
       "sub_package_options": "",
       "departure_dates": [],
       "faqs": [
         {
-          "answer": "It is a Moderate to Difficult high-altitude crossover trek reaching 15,000 ft. Previous high-altitude trekking experience is recommended.",
-          "question": "HOW DIFFICULT IS THE BURAN GHATI TREK?"
+          "question": "HOW DIFFICULT IS THE BURAN GHATI TREK?",
+          "answer": "It is a Moderate to Difficult high-altitude crossover trek reaching 15,000 ft. Previous high-altitude trekking experience is recommended."
         },
         {
-          "answer": "Summer (May-June) offers dramatic snow walls and rappelling, while Autumn (September-October) offers clear skies and golden meadows.",
-          "question": "WHAT IS THE BEST TIME FOR THIS TREK?"
+          "question": "WHAT IS THE BEST TIME FOR THIS TREK?",
+          "answer": "Summer (May-June) offers dramatic snow walls and rappelling, while Autumn (September-October) offers clear skies and golden meadows."
         },
         {
-          "answer": "Network is completely unavailable once you leave Janglik. Plan to disconnect and carry a power bank for cameras.",
-          "question": "IS THERE MOBILE NETWORK ON THE TRAIL?"
+          "question": "IS THERE MOBILE NETWORK ON THE TRAIL?",
+          "answer": "Network is completely unavailable once you leave Janglik. Plan to disconnect and carry a power bank for cameras."
         },
         {
-          "answer": "On pass day, a near-vertical snow drop on the Kinnaur side requires technical ropes and harnesses managed by our certified guides.",
-          "question": "WHAT IS THE \"SNOW WALL\" RAPPEL?"
+          "question": "WHAT IS THE \"SNOW WALL\" RAPPEL?",
+          "answer": "On pass day, a near-vertical snow drop on the Kinnaur side requires technical ropes and harnesses managed by our certified guides."
         },
         {
-          "answer": "Pick-up is at 8:00 AM from Old Bus Stand Shimla on Day 1. It is recommended to reach Shimla on Day 0.",
-          "question": "HOW DO I REACH THE START POINT?"
+          "question": "HOW DO I REACH THE START POINT?",
+          "answer": "Pick-up is at 8:00 AM from Old Bus Stand Shimla on Day 1. It is recommended to reach Shimla on Day 0."
         }
       ],
       "reviews": [
         {
           "name": "Karan Malhotra",
+          "location": "Chandigarh",
           "text": "Rappelling down the snow wall at 15,000 feet was an incredible rush! Awara Banjara's safety team made us feel totally confident.",
-          "avatar": "assets/images/reviews/pfp-rohit.jpg",
-          "location": "Chandigarh"
+          "avatar": "assets/images/reviews/pfp-rohit.jpg"
         },
         {
           "name": "Ananya Sharma",
+          "location": "Delhi",
           "text": "The meadows at Dayara Thachh and the lakes at Chandernahan were out of this world. Highly recommend this trek!",
-          "avatar": "assets/images/reviews/pfp-rohit.jpg",
-          "location": "Delhi"
+          "avatar": "assets/images/reviews/pfp-rohit.jpg"
         }
       ],
       "reserve_banner_title": "",
       "reserve_banner_sub": null,
       "custom_quote_title": "",
       "custom_quote_sub": null,
-      "whatsapp_number": null
+      "whatsapp_number": null,
+      "is_featured_reels": true,
+      "is_featured_stack": true,
+      "is_featured_lemonade": true,
+      "updated_at": "2026-08-13T08:34:06.626Z"
     },
     {
       "id": 121,

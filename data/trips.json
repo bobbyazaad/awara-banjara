@@ -1297,7 +1297,7 @@
     "image_url": "assets/images/trips/trip_110_image_url.png",
     "link": "trips/himachal-tours-dev-roopa-trek-path-of-the-gods-expedition-110.html",
     "created_at": "2026-08-02T08:03:19.073626+00:00",
-    "category": "himachal_tours",
+    "category": "himachal_tours, women_only_tours, treks",
     "route": "Delhi — Manali — Malana Dam — Behali — Mota Grahan — Dev Roopa — Bhuntar — Delhi",
     "tags": "Dev Roopa, Parvati Valley, High Altitude Trek, Offbeat Trek, Himalayan Treks, Group Trek",
     "bento_img_1": "assets/images/trips/trip_110_bento_img_1.png",
@@ -1364,8 +1364,8 @@
     ],
     "package_options": [
       {
-        "price": "₹15,499",
-        "title": "Trek Package"
+        "title": "Trek Package",
+        "price": "₹15,499"
       }
     ],
     "sub_package_options": "",
@@ -1439,28 +1439,28 @@
     ],
     "faqs": [
       {
-        "answer": "",
-        "question": "Delhi to Manali & Bhuntar to Delhi AC Volvo Transfers"
+        "question": "Delhi to Manali & Bhuntar to Delhi AC Volvo Transfers",
+        "answer": ""
       },
       {
-        "answer": "",
-        "question": "Accommodation in Handpicked Stays & High-Altitude Dome Tents"
+        "question": "Accommodation in Handpicked Stays & High-Altitude Dome Tents",
+        "answer": ""
       },
       {
-        "answer": "",
-        "question": "All Meals during Trekking Days (Breakfast, Lunch, Dinner)"
+        "question": "All Meals during Trekking Days (Breakfast, Lunch, Dinner)",
+        "answer": ""
       },
       {
-        "answer": "",
-        "question": "Certified Trek Leaders, Support Staff & Porters"
+        "question": "Certified Trek Leaders, Support Staff & Porters",
+        "answer": ""
       },
       {
-        "answer": "",
-        "question": "Forest Permits & Environmental Fees"
+        "question": "Forest Permits & Environmental Fees",
+        "answer": ""
       },
       {
-        "answer": "",
-        "question": "First Aid Kit & Emergency Oxygen Support"
+        "question": "First Aid Kit & Emergency Oxygen Support",
+        "answer": ""
       }
     ],
     "reviews": [],
@@ -1468,7 +1468,11 @@
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:32:56.713Z"
   },
   {
     "id": 117,
@@ -1478,7 +1482,7 @@
     "image_url": "assets/images/trips/trip_117_image_url.jpg",
     "link": "trips/ladakh-tours-ladakh-high-passes-blue-waters-expedition-117.html",
     "created_at": "2026-08-04T11:07:11.287705+00:00",
-    "category": "ladakh_tours",
+    "category": "ladakh_tours, women_only_tours, bike_tours, corporate_tours",
     "route": "Leh — Khardung La — Nubra Valley (Hunder & Turtuk) — Shyok River — Pangong Tso — Chang La — Leh",
     "tags": "Group Tour, High Altitude, Ladakh, Pangong Lake, Khardung La, Himalayan Expedition",
     "bento_img_1": "assets/images/trips/trip_117_bento_img_1.jpg",
@@ -1538,8 +1542,8 @@
     ],
     "package_options": [
       {
-        "price": "₹17,499",
-        "title": "Group Tour(Min. 6 Pax)"
+        "title": "Group Tour(Min. 6 Pax)",
+        "price": "₹17,499"
       }
     ],
     "sub_package_options": "",
@@ -1613,41 +1617,45 @@
     ],
     "faqs": [
       {
-        "answer": "Yes, taking complete rest on Day 1 is crucial to prevent altitude sickness (AMS).",
-        "question": "IS ACCLIMATIZATION NECESSARY IN LEH?"
+        "question": "IS ACCLIMATIZATION NECESSARY IN LEH?",
+        "answer": "Yes, taking complete rest on Day 1 is crucial to prevent altitude sickness (AMS)."
       },
       {
-        "answer": "Inner Line Permits (ILP) are required and will be arranged by Awara Banjara.",
-        "question": "WHAT PERMITS ARE REQUIRED FOR TURTUK & PANGONG?"
+        "question": "WHAT PERMITS ARE REQUIRED FOR TURTUK & PANGONG?",
+        "answer": "Inner Line Permits (ILP) are required and will be arranged by Awara Banjara."
       },
       {
-        "answer": "Postpaid BSNL, Airtel, and Jio work in Leh, but network is very limited in Nubra and Pangong.",
-        "question": "IS MOBILE NETWORK AVAILABLE IN NUBRA & PANGONG?"
+        "question": "IS MOBILE NETWORK AVAILABLE IN NUBRA & PANGONG?",
+        "answer": "Postpaid BSNL, Airtel, and Jio work in Leh, but network is very limited in Nubra and Pangong."
       },
       {
-        "answer": "May to September offers clear roads, pleasant weather, and accessible passes.",
-        "question": "WHAT IS THE BEST TIME TO VISIT LADAKH?"
+        "question": "WHAT IS THE BEST TIME TO VISIT LADAKH?",
+        "answer": "May to September offers clear roads, pleasant weather, and accessible passes."
       }
     ],
     "reviews": [
       {
         "name": "Siddharth Joshi",
+        "location": "Mumbai",
         "text": "Unbelievable Ladakh trip! The Shyok river drive and night stay at Pangong Tso were surreal.",
-        "avatar": "assets/images/reviews/pfp-rohit.jpg",
-        "location": "Mumbai"
+        "avatar": "assets/images/reviews/pfp-rohit.jpg"
       },
       {
         "name": "Sneha Kapoor",
+        "location": "Delhi",
         "text": "Very well managed by Awara Banjara team. Proper guidance on acclimatization made the journey comfortable.",
-        "avatar": "assets/images/reviews/pfp-rohit.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-rohit.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:33:12.933Z"
   },
   {
     "id": 116,
@@ -1657,7 +1665,7 @@
     "image_url": "assets/images/trips/trip_116_image_url.jpg",
     "link": "trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116.html",
     "created_at": "2026-08-04T07:31:43.331308+00:00",
-    "category": "spiti_tours",
+    "category": "spiti_tours, women_only_tours, bike_tours, corporate_tours",
     "route": "Delhi — Manali — Jibhi — Sangla — Kalpa — Kaza — Chandratal — Manali — Delhi",
     "tags": "Group Tour, Motorbike Expedition, High Altitude, Spiti Circuit, Road Trip, Volvo Package",
     "bento_img_1": "assets/images/trips/trip_116_bento_img_1.jpg",
@@ -1738,12 +1746,12 @@
     ],
     "package_options": [
       {
-        "price": "₹22,499",
-        "title": "Dual Rider"
+        "title": "Dual Rider",
+        "price": "₹22,499"
       },
       {
-        "price": "₹28,499",
-        "title": "Solo Rider"
+        "title": "Solo Rider",
+        "price": "₹28,499"
       }
     ],
     "sub_package_options": "Himalayan 411, Himalayan 450",
@@ -1850,41 +1858,45 @@
     ],
     "faqs": [
       {
-        "answer": "June to September is ideal for the full circuit including Chandratal and Kunzum Pass.",
-        "question": "WHAT IS THE BEST TIME TO VISIT SPITI?"
+        "question": "WHAT IS THE BEST TIME TO VISIT SPITI?",
+        "answer": "June to September is ideal for the full circuit including Chandratal and Kunzum Pass."
       },
       {
-        "answer": "Network is limited beyond Kalpa; BSNL works best, Airtel/Jio have intermittent coverage in Kaza.",
-        "question": "IS MOBILE NETWORK AVAILABLE IN SPITI?"
+        "question": "IS MOBILE NETWORK AVAILABLE IN SPITI?",
+        "answer": "Network is limited beyond Kalpa; BSNL works best, Airtel/Jio have intermittent coverage in Kaza."
       },
       {
-        "answer": "Prior riding experience on hilly terrains is strongly recommended due to dirt tracks and water crossings.",
-        "question": "CAN BEGINNER RIDERS JOIN THIS TRIP?"
+        "question": "CAN BEGINNER RIDERS JOIN THIS TRIP?",
+        "answer": "Prior riding experience on hilly terrains is strongly recommended due to dirt tracks and water crossings."
       },
       {
-        "answer": "Heavy woolens, thermals, windproof jackets, and waterproof boots as night temperatures drop drastically.",
-        "question": "WHAT CLOTHING SHOULD I PACK?"
+        "question": "WHAT CLOTHING SHOULD I PACK?",
+        "answer": "Heavy woolens, thermals, windproof jackets, and waterproof boots as night temperatures drop drastically."
       }
     ],
     "reviews": [
       {
         "name": "Aman Sharma",
+        "location": "Delhi",
         "text": "The full circuit trip was unbelievable! Crossing Kunzum Pass and camping at Chandratal were unforgettable highlights.",
-        "avatar": "assets/images/reviews/pfp-rohit.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-rohit.jpg"
       },
       {
         "name": "Priya Rajput",
+        "location": "Jaipur",
         "text": "Amazingly managed group trip. The trip captain kept us safe and energetic throughout the high altitudes!",
-        "avatar": "assets/images/reviews/pfp-rohit.jpg",
-        "location": "Jaipur"
+        "avatar": "assets/images/reviews/pfp-rohit.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:33:31.623Z"
   },
   {
     "id": 118,

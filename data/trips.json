@@ -746,7 +746,7 @@
     "image_url": "assets/images/trips/trip_107_image_url.jpg",
     "link": "trips/kashmir-tours-kashmir-great-lakes-trek-107.html",
     "created_at": "2026-08-02T07:17:22.782784+00:00",
-    "category": "kashmir_tours",
+    "category": "kashmir_tours, treks",
     "route": "Srinagar — Sonamarg — Nichnai — Vishansar Lake — Gadsar Lake — Zaj Pass — Satsar Lake — Gangabal Lake — Naranag — Srinagar",
     "tags": "Kashmir Trek, Great Lakes, High Altitude Trek, Himalayan Trek, Group Trek",
     "bento_img_1": "assets/images/trips/trip_107_bento_img_1.jpg",
@@ -870,7 +870,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-11T16:53:33.420Z"
+    "updated_at": "2026-08-13T08:31:36.587Z"
   },
   {
     "id": 108,

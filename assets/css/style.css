@@ -1021,23 +1021,6 @@ button { font-family: inherit; cursor: pointer; }
   z-index: 2;
 }
 
-.card-tag {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  z-index: 5;
-  background: rgba(20, 20, 15, 0.85);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 6px 16px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  pointer-events: none;
-}
-
 .card-stack-item[data-pos="0"] {
   transform: translateY(0) scale(1) rotate(0deg);
   z-index: 4;

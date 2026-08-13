@@ -133,23 +133,6 @@
       }
     },
 
-    getLocationTag: function (trip) {
-      if (trip.route) {
-        var parts = trip.route.split('—').map(function (p) { return p.trim(); });
-        if (parts.length > 0 && parts[0]) return parts[0] + ', India';
-      }
-      var title = (trip.title || '').toLowerCase();
-      if (title.includes('spiti')) return 'Spiti Valley, India';
-      if (title.includes('ladakh') || title.includes('leh')) return 'Ladakh, India';
-      if (title.includes('zanskar') || title.includes('zaskar')) return 'Zanskar Valley, India';
-      if (title.includes('kashmir')) return 'Kashmir, India';
-      if (title.includes('meghalaya')) return 'Meghalaya, India';
-      if (title.includes('rajasthan') || title.includes('udaipur')) return 'Rajasthan, India';
-      if (title.includes('uttarakhand')) return 'Uttarakhand, India';
-      if (title.includes('himachal') || title.includes('kasol') || title.includes('manali')) return 'Himachal, India';
-      return 'Himalayas, India';
-    },
-
     formatPrice: function (val) {
       if (val === null || val === undefined) return 'On Request';
       var str = String(val).trim();
@@ -177,14 +160,12 @@
           ? window.AwaraDB.buildSeoTripUrl(trip)
           : (trip.id ? ('trip-detail.html?id=' + trip.id) : (trip.link || 'trip-detail.html'));
         var imgUrl = trip.image_url || trip.bento_img_1 || 'assets/images/placeholder-card-1.svg';
-        var locTag = this.getLocationTag(trip);
         var priceDisplay = this.formatPrice(trip.price);
 
         html += `
           <div class="card-stack-item" data-pos="${i}" data-trip-index="${tripIdx}" data-title="${trip.title}" data-price="${priceDisplay}" data-href="${detailUrl}">
             <img src="${encodeURI(imgUrl)}" alt="${trip.title}" onerror="this.onerror=null;this.src='assets/images/placeholder-card-1.svg'">
             <div class="card-gradient-overlay"></div>
-            <span class="card-tag">📍 ${locTag}</span>
           </div>
         `;
       }

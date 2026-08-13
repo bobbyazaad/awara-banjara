@@ -1,5 +1,24 @@
 [
   {
+    "id": "INQ_1786605804403",
+    "inquiry_id": "INQ_1786605804403",
+    "name": "NIRALI KALPESH THACKER",
+    "customer_name": "NIRALI KALPESH THACKER",
+    "phone": "+919408203820",
+    "email": "thackernk2997@gmail.com",
+    "travel_date": "2026-08-23",
+    "selected_date": "2026-08-23",
+    "selected_package": "Custom Package",
+    "selected_sub_package": "none",
+    "price": "On Request",
+    "travelers_count": 8,
+    "trip_title": "Bali",
+    "special_requests": "Need taxi",
+    "message": "Need taxi",
+    "created_at": "2026-08-13T07:23:24.643Z",
+    "status": "new"
+  },
+  {
     "id": "INQ_1786468751791",
     "inquiry_id": "INQ_1786468751791",
     "name": "MOBILE_Test",

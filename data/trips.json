@@ -3256,7 +3256,7 @@
     "image_url": "assets/images/trips/trip_120_image_url.jpg",
     "link": "trips/himachal-tours-bir-billing-escape-paragliding-rajgundha-valley-prashar-lake-120.html",
     "created_at": "2026-08-05T08:37:45.624959+00:00",
-    "category": "himachal_tours",
+    "category": "himachal_tours, women_only_tours, treks, corporate_tours",
     "route": "Delhi — Bir — Billing — Rajgundha Valley — Hanumangarh — Prashar Lake — Mandi — Delhi",
     "tags": "Himachal, Paragliding, Bir Billing, Prashar Lake, Rajgundha, Weekend Getaway, Trekking, Camping",
     "bento_img_1": "assets/images/trips/trip_120_bento_img_1.jpg",
@@ -3312,45 +3312,49 @@
     "departure_dates": [],
     "faqs": [
       {
-        "answer": "Delhi to Delhi (Overnight Volvo bus).",
-        "question": "What is the pickup and drop location?"
+        "question": "What is the pickup and drop location?",
+        "answer": "Delhi to Delhi (Overnight Volvo bus)."
       },
       {
-        "answer": "Yes, paragliding charges at Billing are included in the package.",
-        "question": "Is paragliding included in the cost?"
+        "question": "Is paragliding included in the cost?",
+        "answer": "Yes, paragliding charges at Billing are included in the package."
       },
       {
-        "answer": "1 night in Swiss Camps in Bir and 1 night in a local homestay/campsite in Rajgundha.",
-        "question": "What kind of accommodation is provided?"
+        "question": "What kind of accommodation is provided?",
+        "answer": "1 night in Swiss Camps in Bir and 1 night in a local homestay/campsite in Rajgundha."
       },
       {
-        "answer": "4 meals total: Breakfast on Day 1, Day 2, and Day 3, plus Dinner on Day 2.",
-        "question": "What meals are included?"
+        "question": "What meals are included?",
+        "answer": "4 meals total: Breakfast on Day 1, Day 2, and Day 3, plus Dinner on Day 2."
       },
       {
-        "answer": "It is an easy-to-moderate 3 km trek from Chinna Pass, suitable for beginners.",
-        "question": "How difficult is the Hanumangarh trek?"
+        "question": "How difficult is the Hanumangarh trek?",
+        "answer": "It is an easy-to-moderate 3 km trek from Chinna Pass, suitable for beginners."
       }
     ],
     "reviews": [
       {
         "name": "Yash",
+        "location": "Delhi",
         "text": "My trip to Himachal was truly unforgettable. Stunning mountain views, flawless planning, and great support from our captain throughout the journey!",
-        "avatar": "assets/images/reviews/pfp-yash.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-yash.jpg"
       },
       {
         "name": "Arpan Kapoor",
+        "location": "Delhi",
         "text": "It was a really good trip! Both captains were caring, enthusiastic, and kept the vibe high.",
-        "avatar": "assets/images/reviews/pfp-arpan.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-arpan.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:36:37.627Z"
   },
   {
     "id": 105,
@@ -3360,7 +3364,7 @@
     "image_url": "assets/images/trips/trip_105_image_url.jpg",
     "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
     "created_at": "2026-08-01T17:45:30.495451+00:00",
-    "category": "ladakh_tours",
+    "category": "ladakh_tours, treks, bike_tours, corporate_tours",
     "route": "Delhi — Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa — Delhi",
     "tags": "Zanskar Valley, High Altitude, Himalayan Expedition, Monolith Circuit, Group Tour",
     "bento_img_1": "assets/images/trips/trip_105_bento_img_1.jpg",
@@ -3421,16 +3425,16 @@
     ],
     "package_options": [
       {
-        "price": "₹11,499",
-        "title": "Quad Sharing"
+        "title": "Quad Sharing",
+        "price": "₹11,499"
       },
       {
-        "price": "₹12,499",
-        "title": "Triple Sharing"
+        "title": "Triple Sharing",
+        "price": "₹12,499"
       },
       {
-        "price": "₹14,999",
-        "title": "Double Sharing"
+        "title": "Double Sharing",
+        "price": "₹14,999"
       }
     ],
     "sub_package_options": "",
@@ -3471,47 +3475,51 @@
     ],
     "faqs": [
       {
-        "answer": "The trip starts and ends in Delhi with overnight Volvo transfers to Manali.",
-        "question": "WHAT IS THE STARTING AND ENDING POINT OF THE TRIP?"
+        "question": "WHAT IS THE STARTING AND ENDING POINT OF THE TRIP?",
+        "answer": "The trip starts and ends in Delhi with overnight Volvo transfers to Manali."
       },
       {
-        "answer": "Yes, a day trek is required to reach the cliffside Phuktal Gompa from the road head.",
-        "question": "IS TREKKING REQUIRED ON THIS TRIP?"
+        "question": "IS TREKKING REQUIRED ON THIS TRIP?",
+        "answer": "Yes, a day trek is required to reach the cliffside Phuktal Gompa from the road head."
       },
       {
-        "answer": "A mix of hotels/guesthouses in Manali & Jispa, along with high-altitude campsites near Gonbo Rangjon.",
-        "question": "WHAT KIND OF ACCOMMODATION IS PROVIDED?"
+        "question": "WHAT KIND OF ACCOMMODATION IS PROVIDED?",
+        "answer": "A mix of hotels/guesthouses in Manali & Jispa, along with high-altitude campsites near Gonbo Rangjon."
       },
       {
-        "answer": "Breakfast and Dinner (MAP Plan) are included starting from Day 2 dinner to Day 5 breakfast.",
-        "question": "WHAT MEALS ARE INCLUDED IN THE PACKAGE?"
+        "question": "WHAT MEALS ARE INCLUDED IN THE PACKAGE?",
+        "answer": "Breakfast and Dinner (MAP Plan) are included starting from Day 2 dinner to Day 5 breakfast."
       }
     ],
     "reviews": [
       {
         "name": "Abhishek Sharma",
+        "location": "Chandigarh",
         "text": "Camping near Gonbo Rangjon under the night sky was a spiritual experience. Outstanding trip!",
-        "avatar": "assets/images/reviews/pfp-abhishek.jpg",
-        "location": "Chandigarh"
+        "avatar": "assets/images/reviews/pfp-abhishek.jpg"
       },
       {
         "name": "Ritu Kapoor",
+        "location": "Delhi",
         "text": "The trek to Phuktal Monastery was challenging but completely worth it. Very well managed by Awara Banjara.",
-        "avatar": "assets/images/reviews/pfp-ritu.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-ritu.jpg"
       },
       {
         "name": "Vikramaditya Roy",
+        "location": "Kolkata",
         "text": "Zanskar is pure magic! Driving through Sissu and Darcha to Gonbo Rangjon was an unforgettable road trip.",
-        "avatar": "assets/images/reviews/pfp-vikram.jpg",
-        "location": "Kolkata"
+        "avatar": "assets/images/reviews/pfp-vikram.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:36:59.196Z"
   },
   {
     "id": 106,

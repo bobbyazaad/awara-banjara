@@ -16,6 +16,16 @@
 //      triggers a redeploy loop or conflicts with real code changes) a
 //      short debounce window after each CMS write, so rapid edits collapse
 //      into one commit instead of spamming history.
+//   3. Do the same for images uploaded through the CMS (assets/images/trips/)
+//      - these used to only ever be written to local disk, so they silently
+//      vanished on the very next redeploy even though the data referencing
+//      them (postcards.json, trips.json, ...) was safely synced. Pushed
+//      right after upload (no debounce - uploads are already a deliberate,
+//      infrequent action) and pulled down on boot like the JSON files, but
+//      *after* the server starts listening: the image set is unbounded and
+//      grows over time, unlike the fixed small set of data files, so it
+//      can't share their pre-listen() boot budget without risking the same
+//      "didn't call listen() in time" problem that budget was fixed for.
 //
 // Entirely opt-in: with no GITHUB_SYNC_TOKEN configured, every function
 // here is a silent no-op and the app behaves exactly as it did before.
@@ -34,6 +44,9 @@ const DATA_FILES = [
   'site_config.json',
   'packages.json'
 ];
+
+const IMAGE_REPO_DIR = 'assets/images/trips';
+const IMAGE_LOCAL_DIR = path.join(__dirname, '..', IMAGE_REPO_DIR);
 
 const GITHUB_TOKEN = process.env.GITHUB_SYNC_TOKEN || '';
 const GITHUB_REPO = process.env.GITHUB_SYNC_REPO || '';
@@ -119,6 +132,94 @@ async function putRemoteFile(filename, content, sha) {
   if (!res.ok) {
     const body = await res.text().catch(() => '');
     throw new Error(`PUT data/${filename} failed (HTTP ${res.status}): ${body.slice(0, 200)}`);
+  }
+}
+
+/**
+ * Push one CMS-uploaded image to GitHub right after it's written to local
+ * disk. Fire-and-forget from the /api/upload handler - a failure here just
+ * means that one image stays local-only (same as the old behavior) until
+ * the next successful sync, it never blocks the upload response.
+ */
+async function pushImage(filename) {
+  if (!enabled) return;
+  try {
+    const localPath = path.join(IMAGE_LOCAL_DIR, filename);
+    if (!fs.existsSync(localPath)) return;
+
+    const branchReady = await ensureBranchExists();
+    if (!branchReady) return;
+
+    const buffer = fs.readFileSync(localPath);
+    const repoPath = `${IMAGE_REPO_DIR}/${filename}`;
+    const res = await fetch(`${API_BASE}/repos/${GITHUB_REPO}/contents/${repoPath}`, {
+      method: 'PUT',
+      headers: { ...ghHeaders(), 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: `Auto-sync CMS upload: ${filename} — ${new Date().toISOString()}`,
+        content: buffer.toString('base64'),
+        branch: SYNC_BRANCH
+      })
+    });
+    if (!res.ok) {
+      const body = await res.text().catch(() => '');
+      throw new Error(`PUT ${repoPath} failed (HTTP ${res.status}): ${body.slice(0, 200)}`);
+    }
+    console.log(`✅ Git-sync: pushed uploaded image ${filename} to '${SYNC_BRANCH}' branch`);
+  } catch (e) {
+    console.warn(`⚠️ Git-sync: failed to push image ${filename} -`, e.message);
+  }
+}
+
+/**
+ * Pull down any CMS-uploaded images that exist on the 'live-data' branch but
+ * not on this (possibly freshly rebuilt) local disk. Deliberately not part
+ * of pullLatestOnBoot()/db.ready - call this after the server is already
+ * listening, since the image set is unbounded and this shouldn't gate
+ * request-serving readiness. A page whose image hasn't been pulled down yet
+ * just briefly 404s and falls back to its placeholder, same as any other
+ * still-loading image.
+ */
+async function pullMissingImagesOnBoot() {
+  if (!enabled) return;
+  try {
+    const res = await fetch(
+      `${API_BASE}/repos/${GITHUB_REPO}/contents/${IMAGE_REPO_DIR}?ref=${SYNC_BRANCH}`,
+      { headers: ghHeaders() }
+    );
+    if (res.status === 404) {
+      console.log('ℹ️ Git-sync: no synced images yet on GitHub');
+      return;
+    }
+    if (!res.ok) {
+      console.warn(`⚠️ Git-sync: could not list ${IMAGE_REPO_DIR} (HTTP ${res.status})`);
+      return;
+    }
+    const entries = await res.json();
+    if (!Array.isArray(entries)) return;
+
+    fs.mkdirSync(IMAGE_LOCAL_DIR, { recursive: true });
+    const missing = entries.filter((e) => e.type === 'file' && !fs.existsSync(path.join(IMAGE_LOCAL_DIR, e.name)));
+    if (missing.length === 0) {
+      console.log('✅ Git-sync: all synced images already present locally');
+      return;
+    }
+
+    const results = await Promise.allSettled(missing.map(async (entry) => {
+      const fileRes = await fetch(
+        `${API_BASE}/repos/${GITHUB_REPO}/contents/${IMAGE_REPO_DIR}/${entry.name}?ref=${SYNC_BRANCH}`,
+        { headers: ghHeaders() }
+      );
+      if (!fileRes.ok) throw new Error(`HTTP ${fileRes.status}`);
+      const json = await fileRes.json();
+      fs.writeFileSync(path.join(IMAGE_LOCAL_DIR, entry.name), Buffer.from(json.content, 'base64'));
+    }));
+
+    const pulled = results.filter((r) => r.status === 'fulfilled').length;
+    const failed = results.length - pulled;
+    console.log(`✅ Git-sync: pulled ${pulled} image(s) from GitHub${failed ? `, ${failed} failed` : ''}`);
+  } catch (e) {
+    console.warn('⚠️ Git-sync: image pull failed -', e.message);
   }
 }
 
@@ -225,4 +326,4 @@ if (!enabled) {
   console.log('ℹ️ Git-sync: disabled (set GITHUB_SYNC_TOKEN and GITHUB_SYNC_REPO to enable)');
 }
 
-module.exports = { pullLatestOnBoot, scheduleSync, enabled };
+module.exports = { pullLatestOnBoot, scheduleSync, pushImage, pullMissingImagesOnBoot, enabled };

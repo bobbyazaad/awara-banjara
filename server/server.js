@@ -11,6 +11,7 @@ const url = require('url');
 const db = require('./db');
 const auth = require('./auth');
 const prerender = require('./prerender');
+const gitSync = require('./git-sync');
 
 const PORT = process.env.PORT || auth.config.PORT || 8085;
 const HOST = process.env.HOST || auth.config.HOST || '0.0.0.0';
@@ -404,6 +405,13 @@ function triggerPrerender() {
       const relativePath = `assets/images/trips/${fileName}`;
       console.log(`📸 Image uploaded and saved to disk: ${relativePath} (${buffer.length} bytes)`);
 
+      // Local disk alone doesn't survive the next redeploy (the filesystem
+      // rebuilds from the last GitHub commit) - push it to the live-data
+      // branch too, same as CMS data. Fire-and-forget: don't make the
+      // uploader wait on a GitHub round-trip, and a sync failure shouldn't
+      // fail the upload itself.
+      gitSync.pushImage(fileName);
+
       return sendJSON(res, 200, {
         success: true,
         message: 'Image uploaded successfully',
@@ -516,6 +524,12 @@ function startServer(portToTry) {
     console.log(`⚙️ Admin CMS URL: http://${HOST}:${portToTry}/admin.html`);
     console.log(`📡 REST API Base: http://${HOST}:${portToTry}/api/trips`);
     console.log('=========================================================');
+
+    // Backfill any CMS-uploaded images missing from this (possibly freshly
+    // rebuilt) filesystem. Runs after listen() on purpose - the image set is
+    // unbounded, unlike the small fixed set of data/*.json files pulled
+    // before listen() in db.js, so it must not gate request-serving readiness.
+    gitSync.pullMissingImagesOnBoot();
   });
 }
 

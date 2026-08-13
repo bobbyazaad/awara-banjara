@@ -1,6 +1,146 @@
 {
   "trips": [
     {
+      "title": "Zanskar Valley Expedition with Padum & Drang Drung",
+      "duration": "8 Days / 7 Nights",
+      "price": "",
+      "category": "himachal_tours, ladakh_tours, treks, corporate_tours",
+      "route": "Delhi — Manali — Shinku La — Gombo Rangzan — Phuktal — Padum — Drang Drung Glacier — Jispa — Delhi",
+      "tags": "Zanskar Valley, Overland Expedition, High Altitude, Phuktal Monastery, Shinku La Pass, 4x4 Expedition",
+      "image_url": "assets/images/trips/img_1786620252781_Bringing_Medical_Care_to_Zanskar.jpg",
+      "bento_img_1": "assets/images/trips/img_1786620257287_Bringing_Medical_Care_to_Zanskar.jpg",
+      "bento_img_2": "assets/images/trips/img_1786620268315_Drang_Drung_Glacier_.jpg",
+      "bento_img_3": "assets/images/trips/img_1786620282429_Zanskar_Padum_City_in_Zanskar_valley.jpg",
+      "bento_img_4": "assets/images/trips/img_1786620289152_Phuktal_Monastery-Himalayas.jpg",
+      "bento_img_5": "assets/images/trips/img_1786620292309_The_Sacred_Mountain_Peak_Of_Gonbo_Rangjon__Altitude__Camping__Night_View__Location__And_More.jpg",
+      "about_text": "An 8-day overland high-altitude expedition covering ~1,450 km from Delhi to the remote Zanskar Valley. Experience crossing the high-altitude Shinku La Pass (16,580 ft), marvel at the sacred rock monolith Gombo Rangzan, trek to the 12th-century cliffside Phuktal Cave Monastery, and take in panoramic views of the massive Drang Drung Glacier and Karsha Monastery.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Delhi to Manali",
+          "details": "Overnight Journey in Volvo AC bus / private expedition vehicle. Assemble in Delhi by 5:00 PM for registration and briefing."
+        },
+        {
+          "day": 2,
+          "title": "Manali Arrival",
+          "details": "Local Exploration & Acclimatization. Check-in, visit Old Manali cafes, Hadimba Temple, Mall Road, and attend evening safety briefing."
+        },
+        {
+          "day": 3,
+          "title": "Manali to Gombo Rangzan via Shinku La Pass",
+          "details": "Drive through Atal Tunnel and climb Shinku La Pass (16,580 ft) to reach the holy monolith Gombo Rangzan. Stargazing stay at Kargyak/Purne."
+        },
+        {
+          "day": 4,
+          "title": "Purne to Padum via Phuktal Monastery Hike",
+          "details": "Cliffside trek to the ancient 12th-century Phuktal Cave Monastery over Tsarap River, then drive through Lungnak Valley to Padum."
+        },
+        {
+          "day": 5,
+          "title": "Padum Sightseeing",
+          "details": "Visit Karsha Monastery (largest in Zanskar) and drive to Pensi La Pass (14,400 ft) for views of Drang Drung Glacier. Overnight in Padum."
+        },
+        {
+          "day": 6,
+          "title": "Padum to Jispa",
+          "details": "Re-cross Shinku La Pass into Lahaul Valley and relax with a riverside bonfire in Jispa."
+        },
+        {
+          "day": 7,
+          "title": "Jispa to Manali & Overnight Journey to Delhi",
+          "details": "Pass Sissu Waterfall and Atal Tunnel to Manali. Free time for local shopping/cafes before 6:00 PM Volvo to Delhi."
+        },
+        {
+          "day": 8,
+          "title": "Arrival in Delhi",
+          "details": "Reach Delhi early morning (7:00 AM - 8:30 AM). Expedition concludes."
+        }
+      ],
+      "inclusions": [
+        "Delhi-Manali-Delhi Volvo / Dedicated 4x4 or Expedition Vehicle for Zanskar circuit",
+        "5 Nights hotel/homestay/camps + 2 Nights overnight journey",
+        "Nutritious breakfast & dinner during hotel/camp stays",
+        "All inner line permits, wildlife fees, and driver allowances",
+        "Experienced Banjara trip leader, first-aid kit with oxygen cylinder"
+      ],
+      "exclusions": [
+        "Lunch and personal beverages/snacks during transit",
+        "Personal Expenses (laundry, tips, entry fees to monuments, optional activities)",
+        "Personal travel or medical insurance",
+        "Any emergency costs arising from landslides, weather roadblocks, or medical evacuation"
+      ],
+      "package_options": [
+        {
+          "title": "Private Trip",
+          "price": "On Request"
+        },
+        {
+          "title": "Group Trip",
+          "price": "On Request"
+        }
+      ],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "month": "September 2026",
+          "dates": [
+            {
+              "id": "b_1786619936347",
+              "range": "4th September",
+              "startDate": "2026-09-04",
+              "status": "Sold Out",
+              "price": "₹16,499"
+            },
+            {
+              "id": "b_1786619940308",
+              "range": "11th September",
+              "startDate": "2026-09-11",
+              "status": "Sold Out",
+              "price": "₹16,499"
+            },
+            {
+              "id": "b_1786619943125",
+              "range": "18th September",
+              "startDate": "2026-09-18",
+              "status": "Sold Out",
+              "price": "₹16,499"
+            },
+            {
+              "id": "b_1786619952791",
+              "range": "25th September",
+              "startDate": "2026-09-25",
+              "status": "Available",
+              "price": "₹16,499"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "WHAT IS THE MAXIMUM ELEVATION REACHED?",
+          "answer": "The highest elevation is 16,580 ft at Shinku La Pass."
+        },
+        {
+          "question": "WHAT IS THE PAYMENT & BOOKING POLICY?",
+          "answer": "A mandatory 10% non-refundable token amount is required to confirm booking; the remaining balance is paid on Day 2 in Manali."
+        },
+        {
+          "question": "WHAT ESSENTIALS SHOULD I CARRY?",
+          "answer": "Thermal layers, sturdy trekking shoes, sunglasses, power bank, and personal medications."
+        }
+      ],
+      "reviews": [],
+      "reserve_banner_title": "",
+      "custom_quote_title": "",
+      "is_featured_reels": true,
+      "is_featured_stack": true,
+      "is_featured_lemonade": false,
+      "link": "trips/himachal-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781.html",
+      "id": 1786620306781,
+      "updated_at": "2026-08-13T11:25:06.969Z",
+      "created_at": "2026-08-13T11:25:06.969Z"
+    },
+    {
       "title": "Kashmir Winter Realm Expedition",
       "duration": "6 Days / 5 Nights",
       "price": "",

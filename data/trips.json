@@ -2717,7 +2717,7 @@
     "image_url": "assets/images/trips/trip_103_image_url.jpg",
     "link": "trips/spiti-tours-spiti-winter-4x4-expedition-103.html",
     "created_at": "2026-08-01T16:46:13.584415+00:00",
-    "category": "spiti_tours",
+    "category": "spiti_tours, women_only_tours, corporate_tours",
     "route": "Shimla — Kinnaur — Chitkul — Gue — Dhankar Monastery — Hikkim — Komic — Langza — Kibber — Key Monastery — Chicham Bridge — Kalpa",
     "tags": "Winter Expedition, 4x4 Expedition, Spiti Valley, High Altitude",
     "bento_img_1": "assets/images/trips/trip_103_bento_img_1.jpg",
@@ -2788,12 +2788,12 @@
     ],
     "package_options": [
       {
-        "price": "₹35,499",
-        "title": "Double Sharing"
+        "title": "Double Sharing",
+        "price": "₹35,499"
       },
       {
-        "price": "₹25,499",
-        "title": "Triple Sharing"
+        "title": "Triple Sharing",
+        "price": "₹25,499"
       }
     ],
     "sub_package_options": "",
@@ -2834,61 +2834,65 @@
     ],
     "faqs": [
       {
-        "answer": "The trip is 8 Days and 7 Nights starting and ending in Delhi.",
-        "question": "WHAT IS THE DURATION OF THE TRIP?"
+        "question": "WHAT IS THE DURATION OF THE TRIP?",
+        "answer": "The trip is 8 Days and 7 Nights starting and ending in Delhi."
       },
       {
-        "answer": "Transit from Delhi to Shimla and back is via Volvo Bus, and the entire Spiti circuit is covered in 4x4 vehicles.",
-        "question": "WHAT IS THE MODE OF TRANSPORTATION?"
+        "question": "WHAT IS THE MODE OF TRANSPORTATION?",
+        "answer": "Transit from Delhi to Shimla and back is via Volvo Bus, and the entire Spiti circuit is covered in 4x4 vehicles."
       },
       {
-        "answer": "MAP Meal Plan is included (Breakfast and Dinner), starting from Dinner on Day 2 to Breakfast on Day 8.",
-        "question": "WHAT MEALS ARE INCLUDED IN THE PACKAGE?"
+        "question": "WHAT MEALS ARE INCLUDED IN THE PACKAGE?",
+        "answer": "MAP Meal Plan is included (Breakfast and Dinner), starting from Dinner on Day 2 to Breakfast on Day 8."
       },
       {
-        "answer": "Key spots include Chitkul, Gue Monastery, Tabo, Dhankar, Kaza, Hikkim, Komic, Langza, Kibber, Key Monastery, Chicham Bridge, and Kalpa.",
-        "question": "WHAT ARE THE KEY ATTRACTIONS COVERED?"
+        "question": "WHAT ARE THE KEY ATTRACTIONS COVERED?",
+        "answer": "Key spots include Chitkul, Gue Monastery, Tabo, Dhankar, Kaza, Hikkim, Komic, Langza, Kibber, Key Monastery, Chicham Bridge, and Kalpa."
       },
       {
-        "answer": "Yes, a First Aid Medical Kit with Oxygen Cylinder support is carried throughout the expedition.",
-        "question": "IS MEDICAL AND OXYGEN SUPPORT AVAILABLE?"
+        "question": "IS MEDICAL AND OXYGEN SUPPORT AVAILABLE?",
+        "answer": "Yes, a First Aid Medical Kit with Oxygen Cylinder support is carried throughout the expedition."
       },
       {
-        "answer": "Lunches, personal expenses, entry fees to monasteries/monuments, travel insurance, and costs arising from unexpected road closures or natural events.",
-        "question": "WHAT IS NOT INCLUDED IN THE PRICE?"
+        "question": "WHAT IS NOT INCLUDED IN THE PRICE?",
+        "answer": "Lunches, personal expenses, entry fees to monasteries/monuments, travel insurance, and costs arising from unexpected road closures or natural events."
       }
     ],
     "reviews": [
       {
         "name": "Rohit Verma",
+        "location": "Delhi",
         "text": "Amazing winter expedition! The 4x4 drive made navigating the frozen Spiti roads super smooth and safe.",
-        "avatar": "assets/images/reviews/pfp-rohit.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-rohit.jpg"
       },
       {
         "name": "Ananya Sharma",
+        "location": "Chandigarh",
         "text": "Unforgettable experience! Seeing Key Monastery and Chicham Bridge covered in snow was absolute magic. Great team and execution.",
-        "avatar": "assets/images/reviews/pfp-ananya.jpg",
-        "location": "Chandigarh"
+        "avatar": "assets/images/reviews/pfp-ananya.jpg"
       },
       {
         "name": "Siddharth Nair",
+        "location": "Mumbai",
         "text": "Flawless itinerary and top-notch trip leadership. Handling the extreme cold was so much easier thanks to the cozy stays and support.",
-        "avatar": "assets/images/reviews/pfp-siddharth.jpg",
-        "location": "Mumbai"
+        "avatar": "assets/images/reviews/pfp-siddharth.jpg"
       },
       {
         "name": "Priya Patel",
+        "location": "Ahmedabad",
         "text": "The winter views of Kinnaur and Spiti are unmatched. Driving in a 4x4 through snow-covered landscapes was a dream come true!",
-        "avatar": "assets/images/reviews/pfp-priya.jpg",
-        "location": "Ahmedabad"
+        "avatar": "assets/images/reviews/pfp-priya.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:35:42.214Z"
   },
   {
     "id": 104,
@@ -2898,7 +2902,7 @@
     "image_url": "assets/images/trips/trip_104_image_url.jpg",
     "link": "trips/rajasthan-tours-udaipur-kumbhalgarh-expedition-104.html",
     "created_at": "2026-08-01T17:17:23.131272+00:00",
-    "category": "rajasthan_tours",
+    "category": "rajasthan_tours, women_only_tours, corporate_tours",
     "route": "Udaipur — Lake Pichola — City Palace — Kumbhalgarh Fort — Saheliyon Ki Bari — Fateh Sagar Lake",
     "tags": "Royal Rajasthan, Cultural Tour, Weekend Getaway, Forts & Palaces, Lake City",
     "bento_img_1": "assets/images/trips/trip_104_bento_img_1.jpg",
@@ -2951,16 +2955,16 @@
     ],
     "package_options": [
       {
-        "price": "₹6,999",
-        "title": "Triple Sharing"
+        "title": "Triple Sharing",
+        "price": "₹6,999"
       },
       {
-        "price": "₹7,499",
-        "title": "Double Sharing"
+        "title": "Double Sharing",
+        "price": "₹7,499"
       },
       {
-        "price": "₹7,999",
-        "title": "Single Occupancy"
+        "title": "Single Occupancy",
+        "price": "₹7,999"
       }
     ],
     "sub_package_options": "",
@@ -3001,47 +3005,51 @@
     ],
     "faqs": [
       {
-        "answer": "The trip starts and ends in Udaipur.",
-        "question": "WHAT IS THE STARTING AND ENDING POINT OF THE TRIP?"
+        "question": "WHAT IS THE STARTING AND ENDING POINT OF THE TRIP?",
+        "answer": "The trip starts and ends in Udaipur."
       },
       {
-        "answer": "No, entry fees for City Palace, Kumbhalgarh Fort, and Lake Pichola boat rides are to be paid directly.",
-        "question": "ARE MONUMENT ENTRY FEES AND BOATING INCLUDED?"
+        "question": "ARE MONUMENT ENTRY FEES AND BOATING INCLUDED?",
+        "answer": "No, entry fees for City Palace, Kumbhalgarh Fort, and Lake Pichola boat rides are to be paid directly."
       },
       {
-        "answer": "Clean, comfortable 3-star standard or heritage-style hotels with modern amenities.",
-        "question": "WHAT TYPE OF ACCOMMODATION IS PROVIDED?"
+        "question": "WHAT TYPE OF ACCOMMODATION IS PROVIDED?",
+        "answer": "Clean, comfortable 3-star standard or heritage-style hotels with modern amenities."
       },
       {
-        "answer": "Yes, this itinerary is fully guided and suitable for solo travelers, couples, friends, and families.",
-        "question": "IS THIS TRIP SUITABLE FOR FAMILIES AND SOLO TRAVELERS?"
+        "question": "IS THIS TRIP SUITABLE FOR FAMILIES AND SOLO TRAVELERS?",
+        "answer": "Yes, this itinerary is fully guided and suitable for solo travelers, couples, friends, and families."
       }
     ],
     "reviews": [
       {
         "name": "Harshvardhan Singh",
+        "location": "Jaipur",
         "text": "Kumbhalgarh Fort was breathtaking! The whole trip was well organized and smooth from day one.",
-        "avatar": "assets/images/reviews/pfp-harsh.jpg",
-        "location": "Jaipur"
+        "avatar": "assets/images/reviews/pfp-harsh.jpg"
       },
       {
         "name": "Neha Gupta",
+        "location": "Delhi",
         "text": "Loved the sunset at Fateh Sagar and the boat ride on Lake Pichola. Perfect weekend getaway!",
-        "avatar": "assets/images/reviews/pfp-neha.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-neha.jpg"
       },
       {
         "name": "Karan Mehta",
+        "location": "Ahmedabad",
         "text": "Great value for money. Hotels were super clean and the local guide gave us amazing historical insights.",
-        "avatar": "assets/images/reviews/pfp-karan.jpg",
-        "location": "Ahmedabad"
+        "avatar": "assets/images/reviews/pfp-karan.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:35:55.376Z"
   },
   {
     "id": 113,
@@ -3051,7 +3059,7 @@
     "image_url": "assets/images/trips/trip_113_image_url.jpg",
     "link": "trips/himachal-tours-hamta-pass-and-chandratal-trek-113.html",
     "created_at": "2026-08-02T10:30:28.098553+00:00",
-    "category": "himachal_tours",
+    "category": "himachal_tours, women_only_tours, treks",
     "route": "Manali — Jobra — Chika — Balu Ka Ghera — Hampta Pass — Shea Goru — Chatru — Chandratal — Manali",
     "tags": "Hamta Pass, Chandratal, High Altitude Trek, Crossover Trek, Himalayan Treks, Group Trek",
     "bento_img_1": "assets/images/trips/trip_113_bento_img_1.jpg",
@@ -3110,8 +3118,8 @@
     ],
     "package_options": [
       {
-        "price": "₹9,499",
-        "title": "Trek Package"
+        "title": "Trek Package",
+        "price": "₹9,499"
       }
     ],
     "sub_package_options": "",
@@ -3192,49 +3200,53 @@
     ],
     "faqs": [
       {
-        "answer": "June to September is the ideal window as the pass is accessible and Chandratal Lake is open.",
-        "question": "WHAT IS THE BEST TIME TO DO THE HAMTA PASS TREK?"
+        "question": "WHAT IS THE BEST TIME TO DO THE HAMTA PASS TREK?",
+        "answer": "June to September is the ideal window as the pass is accessible and Chandratal Lake is open."
       },
       {
-        "answer": "It is rated as a Moderate-level trek, suitable for fit beginners as well as experienced trekkers.",
-        "question": "WHAT IS THE DIFFICULTY LEVEL OF THE TREK?"
+        "question": "WHAT IS THE DIFFICULTY LEVEL OF THE TREK?",
+        "answer": "It is rated as a Moderate-level trek, suitable for fit beginners as well as experienced trekkers."
       },
       {
-        "answer": "Hamta Pass sits at an altitude of approximately 14,100 feet (4,270 meters) above sea level.",
-        "question": "HOW HIGH IS HAMTA PASS?"
+        "question": "HOW HIGH IS HAMTA PASS?",
+        "answer": "Hamta Pass sits at an altitude of approximately 14,100 feet (4,270 meters) above sea level."
       },
       {
-        "answer": "Yes, a drive and visit to Chandratal Lake from Chatru is included, subject to weather conditions.",
-        "question": "IS CHANDRATAL LAKE INCLUDED IN THIS TREK?"
+        "question": "IS CHANDRATAL LAKE INCLUDED IN THIS TREK?",
+        "answer": "Yes, a drive and visit to Chandratal Lake from Chatru is included, subject to weather conditions."
       },
       {
-        "answer": "No prior experience is required, but a basic level of physical fitness and regular stamina prep is recommended.",
-        "question": "IS PRIOR TREKKING EXPERIENCE MANDATORY?"
+        "question": "IS PRIOR TREKKING EXPERIENCE MANDATORY?",
+        "answer": "No prior experience is required, but a basic level of physical fitness and regular stamina prep is recommended."
       },
       {
-        "answer": "Camping in high-altitude dome tents with sleeping bags and mattresses at scenic locations like Chika and Balu Ka Ghera.",
-        "question": "WHAT TYPE OF ACCOMMODATION IS PROVIDED?"
+        "question": "WHAT TYPE OF ACCOMMODATION IS PROVIDED?",
+        "answer": "Camping in high-altitude dome tents with sleeping bags and mattresses at scenic locations like Chika and Balu Ka Ghera."
       }
     ],
     "reviews": [
       {
         "name": "Aakash Verma",
+        "location": "Delhi",
         "text": "Crossing Hamta Pass at 14,100 ft was an incredible experience! Awara Banjara's trek leaders and campsite arrangements were top class.",
-        "avatar": "assets/images/reviews/pfp-aakash.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-aakash.jpg"
       },
       {
         "name": "Divya Sharma",
+        "location": "Chandigarh",
         "text": "The shift from green Kullu valley to desert Spiti at Chandratal Lake blew my mind. Super well organized and safe trek for solo travelers!",
-        "avatar": "assets/images/reviews/pfp-divya.jpg",
-        "location": "Chandigarh"
+        "avatar": "assets/images/reviews/pfp-divya.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:36:12.355Z"
   },
   {
     "id": 120,

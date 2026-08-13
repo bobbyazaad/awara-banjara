@@ -1,6 +1,120 @@
 {
   "trips": [
     {
+      "title": "Kasol & Manali: Offbeat Himalayan Escape",
+      "duration": "6 Days / 5 Nights",
+      "price": "₹6,999",
+      "category": "himachal_tours, treks, corporate_tours",
+      "route": "Delhi — Manali — Atal Tunnel — Sissu — Solang Valley — Kullu — Naggar — Kasol — Manikaran — Delhi",
+      "tags": "",
+      "image_url": "assets/images/trips/img_1786631962564_manali_photos.jpg",
+      "bento_img_1": "assets/images/trips/img_1786631978566_manali_photos.jpg",
+      "bento_img_2": "assets/images/trips/img_1786632087781_hadimba.jpg",
+      "bento_img_3": "assets/images/trips/img_1786632222181_jogini_waterfall.jpg",
+      "bento_img_4": "assets/images/trips/img_1786632346173_mall_road.jpg",
+      "bento_img_5": "assets/images/trips/img_1786632384500_kasol.jpg",
+      "about_text": "Begin your journey into the heart of the Himalayas! Experience scenic overnight Volvo drives, explore snow-filled valleys, cross the iconic Atal Tunnel into Lahaul, trek to hidden waterfalls, indulge in adventure sports in Kullu, and soak in the peaceful café culture and hot springs of Parvati Valley.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Delhi to Manali (Overnight Journey)",
+          "details": "Board a comfortable AC Volvo bus from Delhi in the evening and settle in for an overnight journey through winding mountain roads."
+        },
+        {
+          "day": 2,
+          "title": "Day 2",
+          "details": ""
+        },
+        {
+          "day": 3,
+          "title": "Arrival in Manali & Local Sightseeing",
+          "details": "Arrive in Manali, pick-up and check-in to the hotel. Visit Hadimba Temple, explore Old Manali and Mall Road, and go on a scenic trek to Jogini Waterfall. Enjoy a bonfire evening with music and stories."
+        },
+        {
+          "day": 4,
+          "title": "Day 4",
+          "details": ""
+        },
+        {
+          "day": 5,
+          "title": "Solang Valley, Atal Tunnel & Sissu",
+          "details": "Drive through the magnificent Atal Tunnel into Lahaul Valley to explore Sissu. Stop at Solang Valley for lunch and optional snow adventure activities. Return to the hotel for dinner and bonfire."
+        },
+        {
+          "day": 6,
+          "title": "Day 6",
+          "details": ""
+        },
+        {
+          "day": 7,
+          "title": "Naggar Exploration & Drive to Parvati Valley",
+          "details": "Post breakfast, check out and drive towards Kullu Valley. Visit historic Naggar Castle and Roerich Art Gallery. Experience optional river rafting or paragliding in Kullu. Drive to Kasol for an overnight stay in camps."
+        },
+        {
+          "day": 8,
+          "title": "Day 8",
+          "details": ""
+        },
+        {
+          "day": 9,
+          "title": "Kasol, Chalal & Manikaran Sahib",
+          "details": "Departure"
+        },
+        {
+          "day": 10,
+          "title": "Day 10",
+          "details": ""
+        },
+        {
+          "day": 11,
+          "title": "Arrival in Delhi",
+          "details": "Reach Delhi in the morning with unforgettable mountain memories."
+        }
+      ],
+      "inclusions": [
+        "AC Volvo Bus Transfers (Delhi – Manali – Delhi)",
+        "2 Nights Stay in scenic Manali hotel & 1 Night Stay at Kasol Camps",
+        "3 Breakfasts & 3 Dinners",
+        "All local transfers and sightseeing via private vehicle",
+        "Campfire evenings (subject to weather)",
+        "Welcome drink on arrival at stay"
+      ],
+      "exclusions": [
+        "Lunch meals (to explore local cafes freely)",
+        "Personal expenses (shopping, snacks, tips)",
+        "Optional adventure activities (rafting, paragliding, skiing, zip-lining)",
+        "5% GST & Travel Insurance",
+        "Anything not mentioned in the inclusions list"
+      ],
+      "package_options": [],
+      "sub_package_options": "",
+      "departure_dates": [
+        {
+          "month": "September 2026",
+          "dates": [
+            {
+              "id": "b_1786631507395",
+              "range": "11th September",
+              "startDate": "2026-09-11",
+              "status": "Filling Fast",
+              "price": "₹6,999"
+            }
+          ]
+        }
+      ],
+      "faqs": [],
+      "reviews": [],
+      "reserve_banner_title": "",
+      "custom_quote_title": "",
+      "is_featured_reels": false,
+      "is_featured_stack": true,
+      "is_featured_lemonade": false,
+      "link": "trips/himachal-tours-kasol-manali-offbeat-himalayan-escape-1786632393846.html",
+      "id": 1786632393846,
+      "updated_at": "2026-08-13T14:46:29.517Z",
+      "created_at": "2026-08-13T14:46:29.517Z"
+    },
+    {
       "title": "Zanskar Valley Expedition with Padum & Drang Drung",
       "duration": "8 Days / 7 Nights",
       "price": "",

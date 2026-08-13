@@ -184,7 +184,7 @@
     "is_featured_lemonade": true,
     "link": "trips/kashmir-tours-kashmir-winter-realm-expedition-1786216631459.html",
     "id": 1786216631459,
-    "updated_at": "2026-08-08T19:17:11.478Z",
+    "updated_at": "2026-08-13T08:30:13.767Z",
     "created_at": "2026-08-08T19:17:11.478Z"
   },
   {
@@ -385,7 +385,7 @@
     "image_url": "assets/images/trips/trip_122_image_url.jpg",
     "link": "trips/northeast-india-tours-ziro-festival-rhythm-expedition-arunachal-pradesh-122.html",
     "created_at": "2026-08-05T15:28:43.312697+00:00",
-    "category": "northeast_india_tours, festival_tours",
+    "category": "northeast_india_tours, women_only_tours, festival_tours",
     "route": "Guwahati — Ziro Valley — Apatani Hamlets — Guwahati",
     "tags": "Festival Expedition, Music & Nature, Tribal Immersion, Wilderness Camping, North-East India",
     "bento_img_1": "assets/images/trips/trip_122_bento_img_1.jpg",
@@ -453,57 +453,61 @@
     ],
     "package_options": [
       {
-        "price": "On Request",
-        "title": "Double Occupancy"
+        "title": "Double Occupancy",
+        "price": "On Request"
       },
       {
-        "price": "On Request",
-        "title": "Triple Occupancy"
+        "title": "Triple Occupancy",
+        "price": "On Request"
       },
       {
-        "price": "On Request",
-        "title": "Quad Occupancy"
+        "title": "Quad Occupancy",
+        "price": "On Request"
       }
     ],
     "sub_package_options": "",
     "departure_dates": [],
     "faqs": [
       {
-        "answer": "Yes, domestic travelers require an Inner Line Permit (ILP), which will be completely processed by our team prior to departure.",
-        "question": "DO I NEED PERMITS TO ENTER ZIRO VALLEY?"
+        "question": "DO I NEED PERMITS TO ENTER ZIRO VALLEY?",
+        "answer": "Yes, domestic travelers require an Inner Line Permit (ILP), which will be completely processed by our team prior to departure."
       },
       {
-        "answer": "Expect comfortable hotel stays in Guwahati paired with secure, weather-proof alpine tented camping in the heart of Ziro Valley.",
-        "question": "WHAT IS THE ACCOMMODATION STYLE DURING THE FESTIVAL?"
+        "question": "WHAT IS THE ACCOMMODATION STYLE DURING THE FESTIVAL?",
+        "answer": "Expect comfortable hotel stays in Guwahati paired with secure, weather-proof alpine tented camping in the heart of Ziro Valley."
       },
       {
-        "answer": "Pack a warm fleece/jacket for cold valley nights, a sturdy raincoat or poncho for rain, power banks (20,000 mAh+), and a flashlight or headlamp for campsite navigation.",
-        "question": "WHAT PACKING ESSENTIALS ARE RECOMMENDED FOR ZIRO?"
+        "question": "WHAT PACKING ESSENTIALS ARE RECOMMENDED FOR ZIRO?",
+        "answer": "Pack a warm fleece/jacket for cold valley nights, a sturdy raincoat or poncho for rain, power banks (20,000 mAh+), and a flashlight or headlamp for campsite navigation."
       },
       {
-        "answer": "Absolutely; our expeditions are curated to offer a safe, inclusive, and community-driven space for both solo wanderers and small groups.",
-        "question": "IS THE TRIP SUITABLE FOR SOLO TRAVELERS AND GROUPS?"
+        "question": "IS THE TRIP SUITABLE FOR SOLO TRAVELERS AND GROUPS?",
+        "answer": "Absolutely; our expeditions are curated to offer a safe, inclusive, and community-driven space for both solo wanderers and small groups."
       }
     ],
     "reviews": [
       {
         "name": "Rohan Khetade",
+        "location": "Mumbai",
         "text": "An incredible blend of music, wilderness camping, and raw tribal culture. Awara Banjara executed the logistics effortlessly!",
-        "avatar": "assets/images/reviews/pfp-rohan.jpg",
-        "location": "Mumbai"
+        "avatar": "assets/images/reviews/pfp-rohan.jpg"
       },
       {
         "name": "Ananya Sharma",
+        "location": "Delhi",
         "text": "The campsite jam sessions and Apatani village walks were pure magic. A truly soul-stirring North-East experience!",
-        "avatar": "assets/images/reviews/pfp-ananya.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-ananya.jpg"
       }
     ],
     "reserve_banner_title": "",
     "reserve_banner_sub": null,
     "custom_quote_title": "",
     "custom_quote_sub": null,
-    "whatsapp_number": null
+    "whatsapp_number": null,
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "updated_at": "2026-08-13T08:30:32.723Z"
   },
   {
     "id": 114,

@@ -2870,7 +2870,48 @@
     "bento_img_4": "assets/images/trips/trip_103_bento_img_4.jpg",
     "bento_img_5": "assets/images/trips/trip_103_bento_img_5.jpg",
     "about_text": "Embark on an exhilarating 8-day winter expedition across the snow-draped landscapes of Spiti Valley in a 4x4 vehicle. Beginning with an overnight drive from Delhi to Shimla, the journey traverses through Kinnaur and Sangla Valley to Chitkul, the last village near the Indo-Tibetan border. Experience the frozen wonders of Spiti, including ancient monasteries at Gue, Tabo, and Dhankar, and explore iconic high-altitude villages like Hikkim, Komic, Langza, and Kibber. Cross the breathtaking Chicham Bridge and visit the iconic Key Monastery before returning via Kalpa with views of the majestic Kinner Kailash peak.",
-    "itinerary": [],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Delhi to Shimla",
+        "details": "Board your overnight Volvo bus or transit vehicle from Delhi to Shimla. Relax during the overnight drive as you leave the plains and ascend into the Himalayan foothills."
+      },
+      {
+        "day": 2,
+        "title": "Shimla to Chitkul via Sangla",
+        "details": "Arrive in Shimla and transition into your 4x4 expedition vehicle. Drive through the picturesque Kinnaur region and Sangla Valley to reach Chitkul, the last inhabited village near the Indo-Tibetan border. Overnight stay in Chitkul/Sangla."
+      },
+      {
+        "day": 3,
+        "title": "Chitkul to Tabo via Nako & Gue",
+        "details": "Exploration drive towards Tabo. Visit the serene Nako village and high-altitude lake, and stop at Gue village to see the famous 500-year-old preserved monk mummy at Gue Monastery. Overnight stay in Tabo."
+      },
+      {
+        "day": 4,
+        "title": "Tabo to Kaza via Dhankar",
+        "details": "Explore the ancient Tabo Monastery (\"Ajanta of the Himalayas\"), then drive towards Kaza with a detour to the cliffside Dhankar Monastery overlooking the Spiti and Pin river confluence. Overnight stay in Kaza."
+      },
+      {
+        "day": 5,
+        "title": "Kaza High-Altitude Sightseeing",
+        "details": "Visit Spiti’s highest villages: Hikkim (world's highest post office), Komic, and Langza (Buddha statue & fossils). Walk across the iconic Chicham Bridge and visit snow-covered Key Monastery. Overnight stay in Kaza."
+      },
+      {
+        "day": 6,
+        "title": "Kaza to Kalpa",
+        "details": "Return drive towards the Kinnaur region to Kalpa. Enjoy spectacular winter views of the sacred Kinner Kailash mountain range. Overnight stay in Kalpa."
+      },
+      {
+        "day": 7,
+        "title": "Kalpa to Shimla",
+        "details": "Drive from Kalpa back down through the winding mountain roads to Shimla. Board the evening overnight transit/bus back to Delhi."
+      },
+      {
+        "day": 8,
+        "title": "Arrival in Delhi",
+        "details": "Early morning arrival back in Delhi, concluding your 8-day 4x4 winter expedition."
+      }
+    ],
     "inclusions": [
       "Volvo Bus / Transit transfer from Delhi to Shimla & Return",
       "Transportation in 4x4 Vehicle for the entire Spiti circuit from Shimla to Shimla",
@@ -2995,7 +3036,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-14T08:32:43.377Z"
+    "updated_at": "2026-08-14T08:35:16.693Z"
   },
   {
     "id": 104,

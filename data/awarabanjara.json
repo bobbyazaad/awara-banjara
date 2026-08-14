@@ -2344,7 +2344,7 @@
       "itinerary": [
         {
           "day": 1,
-          "title": "Delhi or Chandigarh to Manali (Overnight Journey)",
+          "title": "Delhi or Chandigarh to Manali",
           "details": "Your incredible Himalayan adventure begins as you board your vehicle or comfortable overnight Volvo bus from Delhi or Chandigarh in the evening. Settle into your seat, leave the city hustle behind, and enjoy a smooth, relaxing night journey as you wind your way up towards the cool, fresh air and green hills of Himachal Pradesh."
         },
         {
@@ -2354,8 +2354,8 @@
         },
         {
           "day": 3,
-          "title": "Detailed Overview: The journey starts with a scenic overnight drive, gradually trading city lights for quiet mountain highways.",
-          "details": "Detailed Overview: The journey starts with a scenic overnight drive, gradually trading city lights for quiet mountain highways."
+          "title": "Welcome to Manali & Local Town Exploration",
+          "details": "Arrive in Manali by morning and check into your hotel. Take some time to freshen up, unpack, and let your body rest and adjust to the mountain weather. In the afternoon, head out to explore Manali's cultural heart. Visit the famous wooden Hadimba Temple nestled inside a dense pine forest, take a refreshing stroll around the natural Vashisht Hot Springs, and spend your evening shopping for souvenirs, eating local snacks, and enjoying the lively vibe of Mall Road."
         },
         {
           "day": 4,
@@ -2364,8 +2364,8 @@
         },
         {
           "day": 5,
-          "title": "Key Highlights: Comfortable night ride, relaxing overnight journey.",
-          "details": "Key Highlights: Comfortable night ride, relaxing overnight journey."
+          "title": "Manali to Kaza via Atal Tunnel & Kunzum Pass",
+          "details": "Wake up early for the most thrilling day of your trip! Leave green Manali behind and drive straight through the magnificent Atal Tunnel. The moment you exit the other side, the landscape changes dramatically from lush green valleys to a breathtaking, rugged cold desert. Drive along the wild riverbeds of Lahaul Valley and ascend the mighty Kunzum Pass, stopping at the sacred temple to seek blessings for a safe journey. By evening, arrive in Kaza, the vibrant and charming main town of Spiti Valley."
         },
         {
           "day": 6,
@@ -2374,8 +2374,8 @@
         },
         {
           "day": 7,
-          "title": "Meal Plan: None (Self-sponsored en route at roadside eateries).",
-          "details": "Meal Plan: None (Self-sponsored en route at roadside eateries)."
+          "title": "Exploring High Villages — Langza, Hikkim & Komik",
+          "details": "Today is all about visiting some of the highest human settlements on Earth! Your first stop is Langza, a picturesque village famous for its giant golden Buddha statue sitting peacefully against massive snow-capped mountains. Next, drive up to Hikkim to visit the World’s Highest Post Office—don't forget to write a real postcard to your family or friends from over 14,000 feet! Conclude your village tour at Komik, one of the highest motorable villages in the world, before returning to Kaza town for a cozy evening."
         },
         {
           "day": 8,
@@ -2384,8 +2384,28 @@
         },
         {
           "day": 9,
-          "title": "Night Stay: Overnight in the vehicle / Volvo bus.",
-          "details": "Night Stay: Overnight in the vehicle / Volvo bus."
+          "title": "Key Monastery, Kibber Village & Chicham Bridge",
+          "details": "After a hearty breakfast, head out to visit the iconic Key Monastery, a magnificent multi-tiered Tibetan Buddhist monastery perched dramatically on a steep hilltop. Step inside to explore peaceful prayer halls, ancient murals, and share a cup of warm tea with the resident monks. Afterward, drive up to Kibber, a historic village known for its traditional stone houses. The ultimate highlight of the day is driving across Chicham Bridge—the highest suspension bridge in Asia, hanging suspended over a jaw-dropping 1,000-foot-deep gorge! Return to Kaza by evening."
+        },
+        {
+          "day": 10,
+          "title": "Day 10",
+          "details": ""
+        },
+        {
+          "day": 11,
+          "title": "Kaza to Chandratal Lake",
+          "details": "Bid farewell to Kaza as you travel toward the magical Chandratal Lake (also known as the Moon Lake). After reaching the campsite area, take a short, easy walk along the trail to reach the shores of the lake. The crystal-clear blue water perfectly mirrors the towering surrounding peaks in a way that feels completely surreal. As evening falls, head back to your cozy campsite near the lake, enjoy hot, comforting food by the dining area, and spend hours looking up at a crystal-clear night sky filled with thousands of brilliant stars."
+        },
+        {
+          "day": 12,
+          "title": "Day 12",
+          "details": ""
+        },
+        {
+          "day": 13,
+          "title": "Chandratal Lake to Manali & Departure",
+          "details": "Wake up to a crisp, cold mountain morning and enjoy a warm breakfast surrounded by untouched nature. Pack your bags and begin your scenic drive back towards Manali, following the winding path of the Chandra River through the rugged mountain terrain. Pass back through the Atal Tunnel and return to the lush greenery of the Kullu Valley, arriving back in Manali by afternoon. From here, catch your evening transport or Volvo bus back home, carrying a camera full of memories and a heart full of Spiti stories!"
         }
       ],
       "inclusions": [
@@ -2521,7 +2541,7 @@
       "is_featured_reels": true,
       "is_featured_stack": true,
       "is_featured_lemonade": true,
-      "updated_at": "2026-08-14T11:29:18.686Z"
+      "updated_at": "2026-08-14T11:46:05.997Z"
     },
     {
       "id": 112,

@@ -74,15 +74,19 @@
   },
   {
     "id": "rev_207",
-    "customer_name": "Ananya Sharma",
-    "trip_tag": "bike",
-    "trip_name": "Zanskar Moto Passage",
-    "trip_url": "trips/ladakh-tours-zanskar-moto-passage-the-monolith-circuit-100.html",
+    "customer_name": "Ananya Chugh",
+    "trip_tag": "Joined Group Trip",
+    "trip_name": "Zanskar Valley Expedition with Padum & Drang Drung",
+    "trip_url": "trips/himachal-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781.html",
     "rating": 5,
     "date_text": "2 weeks ago",
     "review_text": "The whole Zanskar trip was handled beautifully — great riders, warm homestays and a trip leader who knew every turn of the route. Unforgettable Himalayan experience!",
-    "avatar_url": "assets/images/reviews/pfp-ananya.jpg",
+    "avatar_url": "assets/images/trips/img_1786712166688_Divya.jpg",
     "featured": true,
-    "created_at": "2026-07-25T14:00:34Z"
+    "created_at": "2026-08-14T12:56:08.756Z",
+    "trip_id": "1786620306781",
+    "cover_image": "",
+    "images": [],
+    "updated_at": "2026-08-14T12:56:08.893Z"
   }
 ]

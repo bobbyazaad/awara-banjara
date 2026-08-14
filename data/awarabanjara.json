@@ -4021,16 +4021,20 @@
     },
     {
       "id": "rev_204",
-      "customer_name": "Dhruvi Shah",
-      "trip_tag": "private",
-      "trip_name": "Spiti Winter 4x4 Expedition",
-      "trip_url": "trips/spiti-tours-spiti-winter-4x4-expedition-103.html",
+      "customer_name": "Dhruv Shergill",
+      "trip_tag": "Joined Solo Trip",
+      "trip_name": "Spiti : Full Summer Circuit",
+      "trip_url": "trips/spiti-tours-spiti-full-summer-circuit-106.html",
       "rating": 5,
       "date_text": "1 month ago",
       "review_text": "The spiti valley road trip with Awara Banjara was very good. It was my first ever solo trip but it did not feel like one as everyone in the group was very welcoming and hospitable...",
-      "avatar_url": "",
+      "avatar_url": "assets/images/trips/img_1786712213166____5_.jpg",
       "featured": true,
-      "created_at": "2026-07-15T16:00:00Z"
+      "created_at": "2026-08-14T12:56:56.334Z",
+      "trip_id": "106",
+      "cover_image": "",
+      "images": [],
+      "updated_at": "2026-08-14T12:56:56.398Z"
     },
     {
       "id": "rev_205",

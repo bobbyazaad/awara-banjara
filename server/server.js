@@ -407,10 +407,17 @@ function triggerPrerender() {
 
       // Local disk alone doesn't survive the next redeploy (the filesystem
       // rebuilds from the last GitHub commit) - push it to the live-data
-      // branch too, same as CMS data. Fire-and-forget: don't make the
-      // uploader wait on a GitHub round-trip, and a sync failure shouldn't
-      // fail the upload itself.
-      gitSync.pushImage(fileName);
+      // branch too, same as CMS data. Awaited, not fire-and-forget: a
+      // same-day redeploy (this app pushes to main fairly often) can kill
+      // the process mid-push if it isn't - the write to disk is real and
+      // synchronous, but the GitHub push is a separate async network call,
+      // and if the process restarts before it lands, the image silently
+      // never makes it to git even though the upload itself "succeeded".
+      // Waiting here keeps both outcomes tied to the same request instead
+      // of leaving a window where disk and git can disagree. pushImage()
+      // still swallows its own errors (logs and returns), so a sync
+      // failure still doesn't fail the upload response itself.
+      await gitSync.pushImage(fileName);
 
       return sendJSON(res, 200, {
         success: true,

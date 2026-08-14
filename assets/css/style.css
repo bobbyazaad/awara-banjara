@@ -2936,6 +2936,7 @@ button { font-family: inherit; cursor: pointer; }
 /* Departure Dates Table */
 .month-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
 }

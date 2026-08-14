@@ -3017,6 +3017,15 @@ button { font-family: inherit; cursor: pointer; }
   text-decoration: none;
   box-shadow: 0 6px 20px rgba(214, 255, 63, 0.45);
   transition: transform 0.2s ease, background 0.2s ease;
+  /* Overrides .btn's white-space:nowrap (sensible for short fixed labels
+     like "Book Now", but this button's text includes the live departure
+     date range, e.g. "BOOK NOW — On Request Departure Date"). Left as
+     nowrap, a long date range can't shrink to fit its own 100% width, and
+     that unbreakable min-content width was forcing the whole page wider on
+     narrow phones - not just this button, the entire .trip-main-content
+     grid column, since CSS grid sizes an "auto" track to its widest child's
+     min-content. */
+  white-space: normal;
 }
 
 .btn-neon-book-now:hover {

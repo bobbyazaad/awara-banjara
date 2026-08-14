@@ -3245,28 +3245,38 @@
     "itinerary": [
       {
         "day": 1,
-        "title": "Manali Arrival",
-        "details": "Drive to Jobra (45 mins drive)"
+        "title": "Delhi",
+        "details": ""
       },
       {
         "day": 2,
-        "title": "Chika to Balu Ka Ghera Trek (8.5 Kms",
-        "details": "6 hrs)"
+        "title": "Manali Arrival",
+        "details": ""
       },
       {
         "day": 3,
-        "title": "Balu Ka Ghera to Shea Goru Trek via Hampta Pass (7 Kms",
-        "details": "9 hrs)"
+        "title": "Chika to Balu Ka Ghera Trek",
+        "details": ""
       },
       {
         "day": 4,
-        "title": "Shea Goru to Chatru Trek (7 Kms",
-        "details": "5 hrs)"
+        "title": "Balu Ka Ghera to Shea Goru Trek via Hampta Pass",
+        "details": ""
       },
       {
         "day": 5,
-        "title": "Drive from Chatru to Manali (63 Kms",
-        "details": "2.5 Hrs)"
+        "title": "Shea Goru to Chatru Trek",
+        "details": ""
+      },
+      {
+        "day": 6,
+        "title": "Drive from Chatru to Manali",
+        "details": ""
+      },
+      {
+        "day": 7,
+        "title": "Drive from Chatru to Manali",
+        "details": ""
       }
     ],
     "inclusions": [
@@ -3420,7 +3430,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-13T08:36:12.355Z"
+    "updated_at": "2026-08-14T15:16:36.706Z"
   },
   {
     "id": 120,

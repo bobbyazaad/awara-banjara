@@ -4038,16 +4038,20 @@
     },
     {
       "id": "rev_205",
-      "customer_name": "Dabhi Mann",
-      "trip_tag": "private",
-      "trip_name": "Bir Billing Paragliding & Valley Escape",
-      "trip_url": "trips/himachal-tours-bir-billing-escape-paragliding-rajgundha-valley-prashar-lake-120.html",
+      "customer_name": "Devansh Singh",
+      "trip_tag": "Joined Bike Trip",
+      "trip_name": "Spiti Circuit & Chandratal Lake Moto-Expedition",
+      "trip_url": "trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116.html",
       "rating": 5,
       "date_text": "1 month ago",
       "review_text": "Bir was peaceful and the homestay felt like home-cooked comfort food after long days of paragliding and valley walks. Fantastic trip leads!",
-      "avatar_url": "",
+      "avatar_url": "assets/images/trips/img_1786712255808____4_.jpg",
       "featured": true,
-      "created_at": "2026-07-18T09:15:00Z"
+      "created_at": "2026-08-14T12:57:36.684Z",
+      "trip_id": "116",
+      "cover_image": "",
+      "images": [],
+      "updated_at": "2026-08-14T12:57:36.758Z"
     },
     {
       "id": "rev_206",

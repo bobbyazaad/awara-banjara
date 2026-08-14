@@ -2904,277 +2904,42 @@
       {
         "day": 1,
         "title": "Delhi to Shimla",
-        "details": "DAY 1: Delhi to Shimla"
+        "details": "Board your overnight Volvo bus or transit vehicle from Delhi to Shimla. Relax during the overnight drive as you leave the plains and ascend into the Himalayan foothills."
       },
       {
         "day": 2,
-        "title": "Board your overnight Volvo bus or transit vehicle from Delhi to Shimla.",
-        "details": "Board your overnight Volvo bus or transit vehicle from Delhi to Shimla."
+        "title": "Shimla to Chitkul via Sangla",
+        "details": "Arrive in Shimla and transition into your 4x4 expedition vehicle. Drive through the picturesque Kinnaur region and Sangla Valley to reach Chitkul, the last inhabited village near the Indo-Tibetan border. Overnight stay in Chitkul/Sangla."
       },
       {
         "day": 3,
-        "title": "Relax during the comfortable overnight drive as you leave the plains behind.",
-        "details": "Relax during the comfortable overnight drive as you leave the plains behind."
+        "title": "Chitkul to Tabo via Nako & Gue",
+        "details": "Exploration drive towards Tabo. Visit the serene Nako village and high-altitude lake, and stop at Gue village to see the famous 500-year-old preserved monk mummy at Gue Monastery. Overnight stay in Tabo."
       },
       {
         "day": 4,
-        "title": "Ascend gradually into the picturesque Himalayan foothills through the night.",
-        "details": "Ascend gradually into the picturesque Himalayan foothills through the night."
+        "title": "Tabo to Kaza via Dhankar",
+        "details": "Explore the ancient Tabo Monastery (\"Ajanta of the Himalayas\"), then drive towards Kaza with a detour to the cliffside Dhankar Monastery overlooking the Spiti and Pin river confluence. Overnight stay in Kaza."
       },
       {
         "day": 5,
-        "title": "Enjoy the changing scenery as you transition from urban highways to mountain roads.",
-        "details": "Enjoy the changing scenery as you transition from urban highways to mountain roads."
+        "title": "Kaza High-Altitude Sightseeing",
+        "details": "Visit Spiti’s highest villages: Hikkim (world's highest post office), Komic, and Langza (Buddha statue & fossils). Walk across the iconic Chicham Bridge and visit snow-covered Key Monastery. Overnight stay in Kaza."
       },
       {
         "day": 6,
-        "title": "Rest up to ensure you are fully energized for the 4x4 expedition ahead.",
-        "details": "Rest up to ensure you are fully energized for the 4x4 expedition ahead."
+        "title": "Kaza to Kalpa",
+        "details": "Return drive towards the Kinnaur region to Kalpa. Enjoy spectacular winter views of the sacred Kinner Kailash mountain range. Overnight stay in Kalpa."
       },
       {
         "day": 7,
-        "title": "Day 7",
-        "details": ""
+        "title": "Kalpa to Shimla",
+        "details": "Drive from Kalpa back down through the winding mountain roads to Shimla. Board the evening overnight transit/bus back to Delhi."
       },
       {
         "day": 8,
-        "title": "Shimla to Chitkul via Sangla",
-        "details": "DAY 2: Shimla to Chitkul via Sangla"
-      },
-      {
-        "day": 9,
-        "title": "Arrive in Shimla in the morning and transition into your 4x4 expedition vehicle.",
-        "details": "Arrive in Shimla in the morning and transition into your 4x4 expedition vehicle."
-      },
-      {
-        "day": 10,
-        "title": "Drive through the mesmerizing Kinnaur region and picturesque Sangla Valley.",
-        "details": "Drive through the mesmerizing Kinnaur region and picturesque Sangla Valley."
-      },
-      {
-        "day": 11,
-        "title": "Marvel at the steep gorge roads and snow-capped peaks along the route.",
-        "details": "Marvel at the steep gorge roads and snow-capped peaks along the route."
-      },
-      {
-        "day": 12,
-        "title": "Reach Chitkul, renowned as the last inhabited village near the Indo-Tibetan border.",
-        "details": "Reach Chitkul, renowned as the last inhabited village near the Indo-Tibetan border."
-      },
-      {
-        "day": 13,
-        "title": "Check in and enjoy an evening overnight stay in the serene atmosphere of Chitkul/Sangla.",
-        "details": "Check in and enjoy an evening overnight stay in the serene atmosphere of Chitkul/Sangla."
-      },
-      {
-        "day": 14,
-        "title": "Day 14",
-        "details": ""
-      },
-      {
-        "day": 15,
-        "title": "Chitkul to Tabo via Nako & Gue",
-        "details": "DAY 3: Chitkul to Tabo via Nako & Gue"
-      },
-      {
-        "day": 16,
-        "title": "Begin your exploration drive heading deeper into the high-altitude terrain towards Tabo.",
-        "details": "Begin your exploration drive heading deeper into the high-altitude terrain towards Tabo."
-      },
-      {
-        "day": 17,
-        "title": "Visit the serene Nako village and admire its tranquil, high-altitude frozen lake.",
-        "details": "Visit the serene Nako village and admire its tranquil, high-altitude frozen lake."
-      },
-      {
-        "day": 18,
-        "title": "Stop at Gue village to see the famous 500-year-old naturally preserved monk mummy.",
-        "details": "Stop at Gue village to see the famous 500-year-old naturally preserved monk mummy."
-      },
-      {
-        "day": 19,
-        "title": "Learn about the fascinating history and spiritual significance of the Gue Monastery.",
-        "details": "Learn about the fascinating history and spiritual significance of the Gue Monastery."
-      },
-      {
-        "day": 20,
-        "title": "Arrive in Tabo by evening for a restful overnight stay amidst the winter calm.",
-        "details": "Arrive in Tabo by evening for a restful overnight stay amidst the winter calm."
-      },
-      {
-        "day": 21,
-        "title": "Day 21",
-        "details": ""
-      },
-      {
-        "day": 22,
-        "title": "Tabo to Kaza via Dhankar",
-        "details": "DAY 4: Tabo to Kaza via Dhankar"
-      },
-      {
-        "day": 23,
-        "title": "Explore the historic Tabo Monastery, famously known as the \"Ajanta of the Himalayas\".",
-        "details": "Explore the historic Tabo Monastery, famously known as the \"Ajanta of the Himalayas\"."
-      },
-      {
-        "day": 24,
-        "title": "Admire ancient wall paintings, stupas, and centuries-old Buddhist heritage structures.",
-        "details": "Admire ancient wall paintings, stupas, and centuries-old Buddhist heritage structures."
-      },
-      {
-        "day": 25,
-        "title": "Drive towards Kaza, taking a breathtaking detour to the cliffside Dhankar Monastery.",
-        "details": "Drive towards Kaza, taking a breathtaking detour to the cliffside Dhankar Monastery."
-      },
-      {
-        "day": 26,
-        "title": "Take in panoramic views overlooking the dramatic confluence of the Spiti and Pin rivers.",
-        "details": "Take in panoramic views overlooking the dramatic confluence of the Spiti and Pin rivers."
-      },
-      {
-        "day": 27,
-        "title": "Arrive in Kaza, the main hub of Spiti Valley, for your overnight stay.",
-        "details": "Arrive in Kaza, the main hub of Spiti Valley, for your overnight stay."
-      },
-      {
-        "day": 28,
-        "title": "Day 28",
-        "details": ""
-      },
-      {
-        "day": 29,
-        "title": "Kaza High-Altitude Sightseeing",
-        "details": "DAY 5: Kaza High-Altitude Sightseeing"
-      },
-      {
-        "day": 30,
-        "title": "Visit Spiti’s highest inhabited villages including Hikkim, Komic, and Langza.",
-        "details": "Visit Spiti’s highest inhabited villages including Hikkim, Komic, and Langza."
-      },
-      {
-        "day": 31,
-        "title": "Post a postcard from Hikkim, home to the world's highest post office.",
-        "details": "Post a postcard from Hikkim, home to the world's highest post office."
-      },
-      {
-        "day": 32,
-        "title": "Spot ancient marine fossils and the iconic giant Buddha statue standing tall in Langza.",
-        "details": "Spot ancient marine fossils and the iconic giant Buddha statue standing tall in Langza."
-      },
-      {
-        "day": 33,
-        "title": "Walk across the thrilling, high-altitude engineering marvel of Chicham Bridge.",
-        "details": "Walk across the thrilling, high-altitude engineering marvel of Chicham Bridge."
-      },
-      {
-        "day": 34,
-        "title": "Visit the magnificent, snow-covered Key Monastery perched dramatically on a hill before Kaza stay.",
-        "details": "Visit the magnificent, snow-covered Key Monastery perched dramatically on a hill before Kaza stay."
-      },
-      {
-        "day": 35,
-        "title": "Day 35",
-        "details": ""
-      },
-      {
-        "day": 36,
-        "title": "Kaza to Kalpa",
-        "details": "DAY 6: Kaza to Kalpa"
-      },
-      {
-        "day": 37,
-        "title": "Begin your return drive from the high desert back towards the Kinnaur region.",
-        "details": "Begin your return drive from the high desert back towards the Kinnaur region."
-      },
-      {
-        "day": 38,
-        "title": "Traverse through winding snow-draped valleys as you head towards the scenic town of Kalpa.",
-        "details": "Traverse through winding snow-draped valleys as you head towards the scenic town of Kalpa."
-      },
-      {
-        "day": 39,
-        "title": "Enjoy spectacular, uninterrupted winter views of the sacred Kinner Kailash mountain range.",
-        "details": "Enjoy spectacular, uninterrupted winter views of the sacred Kinner Kailash mountain range."
-      },
-      {
-        "day": 40,
-        "title": "Witness the stunning sunset hues reflecting off the majestic snow-capped peaks.",
-        "details": "Witness the stunning sunset hues reflecting off the majestic snow-capped peaks."
-      },
-      {
-        "day": 41,
-        "title": "Relax and unwind with a cozy overnight stay in Kalpa.",
-        "details": "Relax and unwind with a cozy overnight stay in Kalpa."
-      },
-      {
-        "day": 42,
-        "title": "Day 42",
-        "details": ""
-      },
-      {
-        "day": 43,
-        "title": "Kalpa to Shimla",
-        "details": "DAY 7: Kalpa to Shimla"
-      },
-      {
-        "day": 44,
-        "title": "Drive from Kalpa back down through the winding Himalayan mountain roads.",
-        "details": "Drive from Kalpa back down through the winding Himalayan mountain roads."
-      },
-      {
-        "day": 45,
-        "title": "Descend through the valley back to the charming hill station of Shimla.",
-        "details": "Descend through the valley back to the charming hill station of Shimla."
-      },
-      {
-        "day": 46,
-        "title": "Transition back from your 4x4 expedition vehicle to your return transit transport.",
-        "details": "Transition back from your 4x4 expedition vehicle to your return transit transport."
-      },
-      {
-        "day": 47,
-        "title": "Board the evening overnight Volvo bus or transit vehicle bound for Delhi.",
-        "details": "Board the evening overnight Volvo bus or transit vehicle bound for Delhi."
-      },
-      {
-        "day": 48,
-        "title": "Reflect on the incredible winter landscapes and high-altitude adventures experienced.",
-        "details": "Reflect on the incredible winter landscapes and high-altitude adventures experienced."
-      },
-      {
-        "day": 49,
-        "title": "Day 49",
-        "details": ""
-      },
-      {
-        "day": 50,
         "title": "Arrival in Delhi",
-        "details": "DAY 8: Arrival in Delhi"
-      },
-      {
-        "day": 51,
-        "title": "Arrive early in the morning back at your destination in Delhi.",
-        "details": "Arrive early in the morning back at your destination in Delhi."
-      },
-      {
-        "day": 52,
-        "title": "Conclude your unforgettable 8-day 4x4 Spiti winter expedition.",
-        "details": "Conclude your unforgettable 8-day 4x4 Spiti winter expedition."
-      },
-      {
-        "day": 53,
-        "title": "Gather your luggage and bid farewell to your fellow expedition members.",
-        "details": "Gather your luggage and bid farewell to your fellow expedition members."
-      },
-      {
-        "day": 54,
-        "title": "Head home with cherished memories, dramatic landscape photos, and new friendships.",
-        "details": "Head home with cherished memories, dramatic landscape photos, and new friendships."
-      },
-      {
-        "day": 55,
-        "title": "Plan your next Himalayan adventure with Awara Banjara!",
-        "details": "Plan your next Himalayan adventure with Awara Banjara!"
+        "details": "Early morning arrival back in Delhi, concluding your 8-day 4x4 winter expedition."
       }
     ],
     "inclusions": [
@@ -3301,7 +3066,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-14T11:48:36.119Z"
+    "updated_at": "2026-08-14T11:50:40.011Z"
   },
   {
     "id": 104,

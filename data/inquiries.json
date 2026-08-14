@@ -1,5 +1,24 @@
 [
   {
+    "id": "INQ_1786712401688",
+    "inquiry_id": "INQ_1786712401688",
+    "name": "Jiya",
+    "customer_name": "Jiya",
+    "phone": "8800923553",
+    "email": "c4110727@gmail.com",
+    "travel_date": "28th August",
+    "selected_date": "28th August",
+    "selected_package": "Trek Package",
+    "selected_sub_package": "N/A",
+    "price": "₹16,499 (Trek Package)",
+    "travelers_count": 1,
+    "trip_title": "Kashmir Great Lakes Trek",
+    "special_requests": "[Package: Trek Package]",
+    "message": "[Package: Trek Package]",
+    "created_at": "2026-08-14T13:00:01.935Z",
+    "status": "new"
+  },
+  {
     "id": "INQ_1786605804403",
     "inquiry_id": "INQ_1786605804403",
     "name": "NIRALI KALPESH THACKER",

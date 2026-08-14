@@ -2339,7 +2339,7 @@
     "bento_img_3": "assets/images/trips/trip_111_bento_img_3.jpg",
     "bento_img_4": "assets/images/trips/trip_111_bento_img_4.jpg",
     "bento_img_5": "assets/images/trips/trip_111_bento_img_5.jpg",
-    "about_text": "",
+    "about_text": "This 7-day expedition takes travelers from the green pine valleys of Manali into the high-altitude cold desert of Spiti Valley. Experience driving through the engineering marvel of Atal Tunnel, crossing the high mountain passes of Kunzum, and exploring iconic high-altitude villages. Highlights include mailing a postcard from the World’s Highest Post Office in Hikkim, witnessing the giant golden Buddha of Langza, driving across Asia’s highest suspension bridge at Chicham, visiting the historic Key Monastery, and spending an unforgettable night camping under the stars near the crescent-shaped Chandratal Lake.",
     "itinerary": [
       {
         "day": 1,
@@ -2354,101 +2354,36 @@
       {
         "day": 3,
         "title": "Delhi or Chandigarh to Manali",
-        "details": "Day 1: Delhi or Chandigarh to Manali"
-      },
-      {
-        "day": 4,
-        "title": "Your incredible Himalayan adventure begins as you board your vehicle or comfortable overnight Volvo bus from Delhi or Chandigarh in the evening. Settle into your seat, leave the city hustle behind, and enjoy a smooth, relaxing night journey as you wind your way up towards the cool, fresh air and green hills of Himachal Pradesh.",
         "details": "Your incredible Himalayan adventure begins as you board your vehicle or comfortable overnight Volvo bus from Delhi or Chandigarh in the evening. Settle into your seat, leave the city hustle behind, and enjoy a smooth, relaxing night journey as you wind your way up towards the cool, fresh air and green hills of Himachal Pradesh."
       },
       {
-        "day": 5,
-        "title": "Day 5",
-        "details": ""
-      },
-      {
-        "day": 6,
+        "day": 4,
         "title": "Welcome to Manali & Local Town Exploration",
-        "details": "Day 2: Welcome to Manali & Local Town Exploration"
-      },
-      {
-        "day": 7,
-        "title": "Arrive in Manali by morning and check into your hotel. Take some time to freshen up, unpack, and let your body rest and adjust to the mountain weather. In the afternoon, head out to explore Manali's cultural heart. Visit the famous wooden Hadimba Temple nestled inside a dense pine forest, take a refreshing stroll around the natural Vashisht Hot Springs, and spend your evening shopping for souvenirs, eating local snacks, and enjoying the lively vibe of Mall Road.",
         "details": "Arrive in Manali by morning and check into your hotel. Take some time to freshen up, unpack, and let your body rest and adjust to the mountain weather. In the afternoon, head out to explore Manali's cultural heart. Visit the famous wooden Hadimba Temple nestled inside a dense pine forest, take a refreshing stroll around the natural Vashisht Hot Springs, and spend your evening shopping for souvenirs, eating local snacks, and enjoying the lively vibe of Mall Road."
       },
       {
-        "day": 8,
-        "title": "Day 8",
-        "details": ""
-      },
-      {
-        "day": 9,
+        "day": 5,
         "title": "Manali to Kaza via Atal Tunnel & Kunzum Pass",
-        "details": "Day 3: Manali to Kaza via Atal Tunnel & Kunzum Pass"
-      },
-      {
-        "day": 10,
-        "title": "Wake up early for the most thrilling day of your trip! Leave green Manali behind and drive straight through the magnificent Atal Tunnel. The moment you exit the other side, the landscape changes dramatically from lush green valleys to a breathtaking, rugged cold desert. Drive along the wild riverbeds of Lahaul Valley and ascend the mighty Kunzum Pass, stopping at the sacred temple to seek blessings for a safe journey. By evening, arrive in Kaza, the vibrant and charming main town of Spiti Valley.",
         "details": "Wake up early for the most thrilling day of your trip! Leave green Manali behind and drive straight through the magnificent Atal Tunnel. The moment you exit the other side, the landscape changes dramatically from lush green valleys to a breathtaking, rugged cold desert. Drive along the wild riverbeds of Lahaul Valley and ascend the mighty Kunzum Pass, stopping at the sacred temple to seek blessings for a safe journey. By evening, arrive in Kaza, the vibrant and charming main town of Spiti Valley."
       },
       {
-        "day": 11,
-        "title": "Day 11",
-        "details": ""
-      },
-      {
-        "day": 12,
+        "day": 6,
         "title": "Exploring High Villages — Langza, Hikkim & Komik",
-        "details": "Day 4: Exploring High Villages — Langza, Hikkim & Komik"
-      },
-      {
-        "day": 13,
-        "title": "Today is all about visiting some of the highest human settlements on Earth! Your first stop is Langza, a picturesque village famous for its giant golden Buddha statue sitting peacefully against massive snow-capped mountains. Next, drive up to Hikkim to visit the World’s Highest Post Office—don't forget to write a real postcard to your family or friends from over 14,000 feet! Conclude your village tour at Komik, one of the highest motorable villages in the world, before returning to Kaza town for a cozy evening.",
         "details": "Today is all about visiting some of the highest human settlements on Earth! Your first stop is Langza, a picturesque village famous for its giant golden Buddha statue sitting peacefully against massive snow-capped mountains. Next, drive up to Hikkim to visit the World’s Highest Post Office—don't forget to write a real postcard to your family or friends from over 14,000 feet! Conclude your village tour at Komik, one of the highest motorable villages in the world, before returning to Kaza town for a cozy evening."
       },
       {
-        "day": 14,
-        "title": "Day 14",
-        "details": ""
-      },
-      {
-        "day": 15,
+        "day": 7,
         "title": "Key Monastery, Kibber Village & Chicham Bridge",
-        "details": "Day 5: Key Monastery, Kibber Village & Chicham Bridge"
-      },
-      {
-        "day": 16,
-        "title": "After a hearty breakfast, head out to visit the iconic Key Monastery, a magnificent multi-tiered Tibetan Buddhist monastery perched dramatically on a steep hilltop. Step inside to explore peaceful prayer halls, ancient murals, and share a cup of warm tea with the resident monks. Afterward, drive up to Kibber, a historic village known for its traditional stone houses. The ultimate highlight of the day is driving across Chicham Bridge—the highest suspension bridge in Asia, hanging suspended over a jaw-dropping 1,000-foot-deep gorge! Return to Kaza by evening.",
         "details": "After a hearty breakfast, head out to visit the iconic Key Monastery, a magnificent multi-tiered Tibetan Buddhist monastery perched dramatically on a steep hilltop. Step inside to explore peaceful prayer halls, ancient murals, and share a cup of warm tea with the resident monks. Afterward, drive up to Kibber, a historic village known for its traditional stone houses. The ultimate highlight of the day is driving across Chicham Bridge—the highest suspension bridge in Asia, hanging suspended over a jaw-dropping 1,000-foot-deep gorge! Return to Kaza by evening."
       },
       {
-        "day": 17,
-        "title": "Day 17",
-        "details": ""
-      },
-      {
-        "day": 18,
+        "day": 8,
         "title": "Kaza to Chandratal Lake",
-        "details": "Day 6: Kaza to Chandratal Lake"
-      },
-      {
-        "day": 19,
-        "title": "Bid farewell to Kaza as you travel toward the magical Chandratal Lake (also known as the Moon Lake). After reaching the campsite area, take a short, easy walk along the trail to reach the shores of the lake. The crystal-clear blue water perfectly mirrors the towering surrounding peaks in a way that feels completely surreal. As evening falls, head back to your cozy campsite near the lake, enjoy hot, comforting food by the dining area, and spend hours looking up at a crystal-clear night sky filled with thousands of brilliant stars.",
         "details": "Bid farewell to Kaza as you travel toward the magical Chandratal Lake (also known as the Moon Lake). After reaching the campsite area, take a short, easy walk along the trail to reach the shores of the lake. The crystal-clear blue water perfectly mirrors the towering surrounding peaks in a way that feels completely surreal. As evening falls, head back to your cozy campsite near the lake, enjoy hot, comforting food by the dining area, and spend hours looking up at a crystal-clear night sky filled with thousands of brilliant stars."
       },
       {
-        "day": 20,
-        "title": "Day 20",
-        "details": ""
-      },
-      {
-        "day": 21,
+        "day": 9,
         "title": "Chandratal Lake to Manali & Departure",
-        "details": "Day 7: Chandratal Lake to Manali & Departure"
-      },
-      {
-        "day": 22,
-        "title": "Wake up to a crisp, cold mountain morning and enjoy a warm breakfast surrounded by untouched nature. Pack your bags and begin your scenic drive back towards Manali, following the winding path of the Chandra River through the rugged mountain terrain. Pass back through the Atal Tunnel and return to the lush greenery of the Kullu Valley, arriving back in Manali by afternoon. From here, catch your evening transport or Volvo bus back home, carrying a camera full of memories and a heart full of Spiti stories!",
         "details": "Wake up to a crisp, cold mountain morning and enjoy a warm breakfast surrounded by untouched nature. Pack your bags and begin your scenic drive back towards Manali, following the winding path of the Chandra River through the rugged mountain terrain. Pass back through the Atal Tunnel and return to the lush greenery of the Kullu Valley, arriving back in Manali by afternoon. From here, catch your evening transport or Volvo bus back home, carrying a camera full of memories and a heart full of Spiti stories!"
       }
     ],
@@ -2585,7 +2520,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-14T16:45:39.228Z"
+    "updated_at": "2026-08-14T16:53:14.873Z"
   },
   {
     "id": 112,

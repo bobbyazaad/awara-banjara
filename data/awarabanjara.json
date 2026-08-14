@@ -3994,26 +3994,30 @@
       "rating": 5,
       "date_text": "1 month ago",
       "review_text": "Best stay for anyone looking for a quiet, beautiful getaway — the whole crew knew the mountains and valleys inside out.",
-      "avatar_url": "assets/images/trips/img_1786711542758_WhatsApp_Image_2026-08-14_at_18.13.04.jpeg",
+      "avatar_url": "assets/images/trips/img_1786712111070_WhatsApp_Image_2026-08-14_at_18.13.04.jpg",
       "featured": true,
-      "created_at": "2026-08-14T12:52:01.244Z",
+      "created_at": "2026-08-14T12:55:11.869Z",
       "trip_id": "110",
       "cover_image": "",
       "images": [],
-      "updated_at": "2026-08-14T12:52:01.352Z"
+      "updated_at": "2026-08-14T12:55:11.944Z"
     },
     {
       "id": "rev_203",
-      "customer_name": "Divya mehta",
-      "trip_tag": "private",
-      "trip_name": "Escape to Zanskar Group Trip",
-      "trip_url": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
+      "customer_name": "Divya Sharma",
+      "trip_tag": "Joined Group Trip",
+      "trip_name": "Ladakh: High Passes & Blue Waters Expedition",
+      "trip_url": "trips/ladakh-tours-ladakh-high-passes-blue-waters-expedition-117.html",
       "rating": 5,
       "date_text": "1 month ago",
       "review_text": "I would like to express my sincere appreciation to the Awara Banjara team for their excellent support and guidance throughout the travel process. They were professional, responsive, supportive...",
-      "avatar_url": "",
+      "avatar_url": "assets/images/trips/img_1786712094274____3_.jpg",
       "featured": true,
-      "created_at": "2026-07-12T14:30:00Z"
+      "created_at": "2026-08-14T12:54:57.784Z",
+      "trip_id": "117",
+      "cover_image": "",
+      "images": [],
+      "updated_at": "2026-08-14T12:54:57.851Z"
     },
     {
       "id": "rev_204",
@@ -4066,19 +4070,6 @@
       "avatar_url": "assets/images/reviews/pfp-ananya.jpg",
       "featured": true,
       "created_at": "2026-07-25T14:00:34Z"
-    },
-    {
-      "id": "rev_208",
-      "customer_name": "Karan Mehta",
-      "trip_tag": "bike",
-      "trip_name": "Spiti Circuit Moto Expedition",
-      "trip_url": "trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116.html",
-      "rating": 5,
-      "date_text": "3 weeks ago",
-      "review_text": "Best stay for anyone looking for a quiet, beautiful getaway — the whole crew knew the mountains and valleys inside out.",
-      "avatar_url": "assets/images/reviews/pfp-karan.jpg",
-      "featured": true,
-      "created_at": "2026-07-22T14:01:27Z"
     }
   ],
   "inquiries": [

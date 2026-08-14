@@ -120,6 +120,135 @@ document.addEventListener('DOMContentLoaded', function () {
   // fight it for the container's onclick and silently win, which is why the
   // stack could only ever be advanced by click, never swiped.
 
+  // Trip detail photo gallery, phone-width only: same flip-card look and
+  // tap/swipe-to-dismiss interaction as the homepage's featured card stack,
+  // built from the same photos as the desktop bento grid (assets/css/
+  // style.css hides the grid and shows this in its place under 860px). A
+  // no-op on every page without a .trip-bento-gallery.
+  (function initGalleryFlipStack() {
+    var gallery = document.querySelector('.trip-bento-gallery');
+    if (!gallery) return;
+
+    var images = Array.prototype.slice.call(gallery.querySelectorAll('img'));
+    if (images.length < 2) return;
+
+    var stack = document.createElement('div');
+    stack.className = 'gallery-flip-stack';
+    stack.setAttribute('role', 'button');
+    stack.setAttribute('tabindex', '0');
+    stack.setAttribute('aria-label', 'Show next photo');
+
+    images.forEach(function (img, i) {
+      var item = document.createElement('div');
+      item.className = 'gallery-flip-item';
+      item.setAttribute('data-pos', String(i));
+      var clone = document.createElement('img');
+      clone.src = img.currentSrc || img.src;
+      clone.alt = img.alt || '';
+      clone.loading = i === 0 ? 'eager' : 'lazy';
+      clone.decoding = 'async';
+      item.appendChild(clone);
+      stack.appendChild(item);
+    });
+
+    gallery.insertAdjacentElement('afterend', stack);
+    gallery.classList.add('has-flip-stack');
+
+    var isAnimating = false;
+
+    function rotatePositions() {
+      var items = Array.prototype.slice.call(stack.querySelectorAll('.gallery-flip-item'));
+      var total = items.length;
+      items.forEach(function (item) {
+        var pos = parseInt(item.getAttribute('data-pos'), 10);
+        if (isNaN(pos)) pos = 0;
+        item.setAttribute('data-pos', String((pos - 1 + total) % total));
+      });
+    }
+
+    function nextPhoto() {
+      if (isAnimating) return;
+      isAnimating = true;
+      rotatePositions();
+      setTimeout(function () { isAnimating = false; }, 420);
+    }
+
+    function flyOut(direction, front) {
+      if (isAnimating || !front) return;
+      isAnimating = true;
+      var flyX = direction === 'right' ? '170%' : '-170%';
+      var rot = direction === 'right' ? '28deg' : '-28deg';
+
+      front.style.transition = 'transform 0.42s cubic-bezier(0.2, 0.8, 0.25, 1), opacity 0.42s ease';
+      front.style.transform = 'translateX(' + flyX + ') translateY(-18px) rotate(' + rot + ')';
+      front.style.opacity = '0';
+
+      setTimeout(function () {
+        rotatePositions();
+        front.style.transition = 'none';
+        front.style.transform = '';
+        front.style.opacity = '';
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () { front.style.transition = ''; });
+        });
+        isAnimating = false;
+      }, 420);
+    }
+
+    var suppressClickUntil = 0;
+    stack.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (suppressClickUntil && Date.now() < suppressClickUntil) {
+        suppressClickUntil = 0;
+        return;
+      }
+      nextPhoto();
+    });
+    stack.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        nextPhoto();
+      }
+    });
+
+    var drag = null;
+    stack.addEventListener('pointerdown', function (e) {
+      if (isAnimating) return;
+      var front = stack.querySelector('.gallery-flip-item[data-pos="0"]');
+      if (!front) return;
+      drag = { startX: e.clientX, startY: e.clientY, front: front, moved: false };
+      front.style.transition = 'none';
+    });
+    stack.addEventListener('pointermove', function (e) {
+      if (!drag) return;
+      var dx = e.clientX - drag.startX;
+      var dy = e.clientY - drag.startY;
+      if (!drag.moved && Math.abs(dx) < 4 && Math.abs(dy) < 4) return;
+      drag.moved = true;
+      drag.dx = dx;
+      drag.front.style.transform = 'translateX(' + dx + 'px) translateY(' + (dy * 0.15) + 'px) rotate(' + (dx / 16) + 'deg)';
+    });
+    var release = function () {
+      if (!drag) return;
+      var front = drag.front;
+      var dx = drag.dx || 0;
+      var wasDrag = drag.moved;
+      drag = null;
+      front.style.transition = '';
+      if (wasDrag && Math.abs(dx) > 55) {
+        suppressClickUntil = Date.now() + 400;
+        flyOut(dx > 0 ? 'right' : 'left', front);
+      } else {
+        front.style.transform = '';
+      }
+    };
+    stack.addEventListener('pointerup', release);
+    stack.addEventListener('pointercancel', release);
+    stack.addEventListener('pointerleave', function () {
+      if (drag && drag.moved) release();
+    });
+  })();
+
   // Trip Planning Modal for International Destinations
   var tripModal = document.getElementById('tripModal');
   var closeTripModal = document.getElementById('closeTripModal');

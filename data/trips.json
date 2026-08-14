@@ -2904,382 +2904,42 @@
       {
         "day": 1,
         "title": "Delhi to Shimla",
-        "details": "DAY 1: Delhi to Shimla"
+        "details": "Board your overnight Volvo bus or transit vehicle from Delhi to Shimla. Relax during the overnight drive as you leave the plains and ascend into the Himalayan foothills."
       },
       {
         "day": 2,
-        "title": "Board your overnight",
-        "details": "Board your overnight"
+        "title": "Shimla to Chitkul via Sangla",
+        "details": "Arrive in Shimla and transition into your 4x4 expedition vehicle. Drive through the picturesque Kinnaur region and Sangla Valley to reach Chitkul, the last inhabited village near the Indo-Tibetan border. Overnight stay in Chitkul/Sangla."
       },
       {
         "day": 3,
-        "title": "Volvo bus or transit",
-        "details": "Volvo bus or transit"
+        "title": "Chitkul to Tabo via Nako & Gue",
+        "details": "Exploration drive towards Tabo. Visit the serene Nako village and high-altitude lake, and stop at Gue village to see the famous 500-year-old preserved monk mummy at Gue Monastery. Overnight stay in Tabo."
       },
       {
         "day": 4,
-        "title": "vehicle from Delhi to",
-        "details": "vehicle from Delhi to"
+        "title": "Tabo to Kaza via Dhankar",
+        "details": "Explore the ancient Tabo Monastery (\"Ajanta of the Himalayas\"), then drive towards Kaza with a detour to the cliffside Dhankar Monastery overlooking the Spiti and Pin river confluence. Overnight stay in Kaza."
       },
       {
         "day": 5,
-        "title": "Shimla. Relax during",
-        "details": "Shimla. Relax during"
+        "title": "Kaza High-Altitude Sightseeing",
+        "details": "Visit Spiti’s highest villages: Hikkim (world's highest post office), Komic, and Langza (Buddha statue & fossils). Walk across the iconic Chicham Bridge and visit snow-covered Key Monastery. Overnight stay in Kaza."
       },
       {
         "day": 6,
-        "title": "the overnight drive as",
-        "details": "the overnight drive as"
+        "title": "Kaza to Kalpa",
+        "details": "Return drive towards the Kinnaur region to Kalpa. Enjoy spectacular winter views of the sacred Kinner Kailash mountain range. Overnight stay in Kalpa."
       },
       {
         "day": 7,
-        "title": "you leave the plains and",
-        "details": "you leave the plains and"
+        "title": "Kalpa to Shimla",
+        "details": "Drive from Kalpa back down through the winding mountain roads to Shimla. Board the evening overnight transit/bus back to Delhi."
       },
       {
         "day": 8,
-        "title": "ascend into the Himalayan",
-        "details": "ascend into the Himalayan"
-      },
-      {
-        "day": 9,
-        "title": "foothills.",
-        "details": "foothills."
-      },
-      {
-        "day": 10,
-        "title": "Day 10",
-        "details": ""
-      },
-      {
-        "day": 11,
-        "title": "Shimla to Chitkul",
-        "details": "DAY 2: Shimla to Chitkul"
-      },
-      {
-        "day": 12,
-        "title": "Arrive in Shimla and",
-        "details": "Arrive in Shimla and"
-      },
-      {
-        "day": 13,
-        "title": "transition into your",
-        "details": "transition into your"
-      },
-      {
-        "day": 14,
-        "title": "4x4 expedition vehicle.",
-        "details": "4x4 expedition vehicle."
-      },
-      {
-        "day": 15,
-        "title": "Drive through the",
-        "details": "Drive through the"
-      },
-      {
-        "day": 16,
-        "title": "picturesque Kinnaur",
-        "details": "picturesque Kinnaur"
-      },
-      {
-        "day": 17,
-        "title": "region and Sangla Valley",
-        "details": "region and Sangla Valley"
-      },
-      {
-        "day": 18,
-        "title": "to reach Chitkul, the",
-        "details": "to reach Chitkul, the"
-      },
-      {
-        "day": 19,
-        "title": "last inhabited village",
-        "details": "last inhabited village"
-      },
-      {
-        "day": 20,
-        "title": "near the Indo-Tibetan",
-        "details": "near the Indo-Tibetan"
-      },
-      {
-        "day": 21,
-        "title": "border. Overnight stay",
-        "details": "border. Overnight stay"
-      },
-      {
-        "day": 22,
-        "title": "in Chitkul/Sangla.",
-        "details": "in Chitkul/Sangla."
-      },
-      {
-        "day": 23,
-        "title": "Day 23",
-        "details": ""
-      },
-      {
-        "day": 24,
-        "title": "Chitkul to Tabo",
-        "details": "DAY 3: Chitkul to Tabo"
-      },
-      {
-        "day": 25,
-        "title": "Exploration drive towards",
-        "details": "Exploration drive towards"
-      },
-      {
-        "day": 26,
-        "title": "Tabo. Visit the serene",
-        "details": "Tabo. Visit the serene"
-      },
-      {
-        "day": 27,
-        "title": "Nako village and high-",
-        "details": "Nako village and high-"
-      },
-      {
-        "day": 28,
-        "title": "altitude lake, and stop",
-        "details": "altitude lake, and stop"
-      },
-      {
-        "day": 29,
-        "title": "at Gue village to see the",
-        "details": "at Gue village to see the"
-      },
-      {
-        "day": 30,
-        "title": "famous 500-year-old",
-        "details": "famous 500-year-old"
-      },
-      {
-        "day": 31,
-        "title": "preserved monk mummy at",
-        "details": "preserved monk mummy at"
-      },
-      {
-        "day": 32,
-        "title": "Gue Monastery. Overnight",
-        "details": "Gue Monastery. Overnight"
-      },
-      {
-        "day": 33,
-        "title": "stay in Tabo.",
-        "details": "stay in Tabo."
-      },
-      {
-        "day": 34,
-        "title": "Day 34",
-        "details": ""
-      },
-      {
-        "day": 35,
-        "title": "Tabo to Kaza",
-        "details": "DAY 4: Tabo to Kaza"
-      },
-      {
-        "day": 36,
-        "title": "Explore the ancient Tabo",
-        "details": "Explore the ancient Tabo"
-      },
-      {
-        "day": 37,
-        "title": "Monastery (\"Ajanta of the",
-        "details": "Monastery (\"Ajanta of the"
-      },
-      {
-        "day": 38,
-        "title": "Himalayas\"), then drive",
-        "details": "Himalayas\"), then drive"
-      },
-      {
-        "day": 39,
-        "title": "towards Kaza with a",
-        "details": "towards Kaza with a"
-      },
-      {
-        "day": 40,
-        "title": "detour to the cliffside",
-        "details": "detour to the cliffside"
-      },
-      {
-        "day": 41,
-        "title": "Dhankar Monastery",
-        "details": "Dhankar Monastery"
-      },
-      {
-        "day": 42,
-        "title": "overlooking the Spiti and",
-        "details": "overlooking the Spiti and"
-      },
-      {
-        "day": 43,
-        "title": "Pin river confluence.",
-        "details": "Pin river confluence."
-      },
-      {
-        "day": 44,
-        "title": "Overnight stay in Kaza.",
-        "details": "Overnight stay in Kaza."
-      },
-      {
-        "day": 45,
-        "title": "Day 45",
-        "details": ""
-      },
-      {
-        "day": 46,
-        "title": "Kaza Sightseeing",
-        "details": "DAY 5: Kaza Sightseeing"
-      },
-      {
-        "day": 47,
-        "title": "Visit Spiti’s highest",
-        "details": "Visit Spiti’s highest"
-      },
-      {
-        "day": 48,
-        "title": "villages: Hikkim (world's",
-        "details": "villages: Hikkim (world's"
-      },
-      {
-        "day": 49,
-        "title": "highest post office),",
-        "details": "highest post office),"
-      },
-      {
-        "day": 50,
-        "title": "Komic, and Langza (Buddha",
-        "details": "Komic, and Langza (Buddha"
-      },
-      {
-        "day": 51,
-        "title": "statue & fossils). Walk",
-        "details": "statue & fossils). Walk"
-      },
-      {
-        "day": 52,
-        "title": "across the iconic Chicham",
-        "details": "across the iconic Chicham"
-      },
-      {
-        "day": 53,
-        "title": "Bridge and visit snow-",
-        "details": "Bridge and visit snow-"
-      },
-      {
-        "day": 54,
-        "title": "covered Key Monastery.",
-        "details": "covered Key Monastery."
-      },
-      {
-        "day": 55,
-        "title": "Overnight stay in Kaza.",
-        "details": "Overnight stay in Kaza."
-      },
-      {
-        "day": 56,
-        "title": "Day 56",
-        "details": ""
-      },
-      {
-        "day": 57,
-        "title": "Kaza to Kalpa",
-        "details": "DAY 6: Kaza to Kalpa"
-      },
-      {
-        "day": 58,
-        "title": "Return drive towards the",
-        "details": "Return drive towards the"
-      },
-      {
-        "day": 59,
-        "title": "Kinnaur region to Kalpa.",
-        "details": "Kinnaur region to Kalpa."
-      },
-      {
-        "day": 60,
-        "title": "Enjoy spectacular winter",
-        "details": "Enjoy spectacular winter"
-      },
-      {
-        "day": 61,
-        "title": "views of the sacred",
-        "details": "views of the sacred"
-      },
-      {
-        "day": 62,
-        "title": "Kinner Kailash mountain",
-        "details": "Kinner Kailash mountain"
-      },
-      {
-        "day": 63,
-        "title": "range. Overnight stay in",
-        "details": "range. Overnight stay in"
-      },
-      {
-        "day": 64,
-        "title": "Kalpa.",
-        "details": "Kalpa."
-      },
-      {
-        "day": 65,
-        "title": "Day 65",
-        "details": ""
-      },
-      {
-        "day": 66,
-        "title": "Kalpa to Shimla",
-        "details": "DAY 7: Kalpa to Shimla"
-      },
-      {
-        "day": 67,
-        "title": "Drive from Kalpa back down",
-        "details": "Drive from Kalpa back down"
-      },
-      {
-        "day": 68,
-        "title": "through the winding mountain",
-        "details": "through the winding mountain"
-      },
-      {
-        "day": 69,
-        "title": "roads to Shimla. Board the",
-        "details": "roads to Shimla. Board the"
-      },
-      {
-        "day": 70,
-        "title": "evening overnight transit/",
-        "details": "evening overnight transit/"
-      },
-      {
-        "day": 71,
-        "title": "bus back to Delhi.",
-        "details": "bus back to Delhi."
-      },
-      {
-        "day": 72,
-        "title": "Day 72",
-        "details": ""
-      },
-      {
-        "day": 73,
         "title": "Arrival in Delhi",
-        "details": "DAY 8: Arrival in Delhi"
-      },
-      {
-        "day": 74,
-        "title": "Early morning arrival back",
-        "details": "Early morning arrival back"
-      },
-      {
-        "day": 75,
-        "title": "in Delhi, concluding your",
-        "details": "in Delhi, concluding your"
-      },
-      {
-        "day": 76,
-        "title": "8-day 4x4 winter expedition.",
-        "details": "8-day 4x4 winter expedition."
+        "details": "Early morning arrival back in Delhi, concluding your 8-day 4x4 winter expedition."
       }
     ],
     "inclusions": [
@@ -3406,7 +3066,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-14T11:56:23.062Z"
+    "updated_at": "2026-08-14T11:57:29.080Z"
   },
   {
     "id": 104,

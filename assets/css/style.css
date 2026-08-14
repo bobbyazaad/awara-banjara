@@ -2494,9 +2494,13 @@ button { font-family: inherit; cursor: pointer; }
   .gallery-flip-stack {
     display: block;
     position: relative;
-    width: min(340px, 88vw);
+    /* The peek offsets on .gallery-flip-item below are fixed px, not a % of
+       this width, so they don't auto-scale down with it - keep enough
+       margin here that card + peek + rotation still clears the viewport
+       edge on wide phones (~420-430px), not just a 375px baseline. */
+    width: min(280px, 74vw);
     aspect-ratio: 3 / 4;
-    margin: 0 auto 36px;
+    margin: 24px auto 36px;
     cursor: pointer;
     touch-action: pan-y;
   }

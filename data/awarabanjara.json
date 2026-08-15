@@ -2578,7 +2578,7 @@
         "Royal Enfield Motorbike (500cc / Himalayan 411 as per selection) with Fuel",
         "Backup Vehicle / Support Van with Mechanic & Spare Parts",
         "Riding Gears (Helmet, Knee Guards, Elbow Guards for Rider & Pillion)",
-        "Daily Breakfast & Dinner at Stays",
+        "5 Breakfast & 5 Dinner at Stays",
         "Inner Line Permits, Wildlife Fees & Environmental Charges",
         "Road Captain / Experienced Trip Captain leading the convoy"
       ],
@@ -2591,12 +2591,12 @@
       ],
       "package_options": [
         {
-          "price": "₹22,499",
-          "title": "Dual Rider"
+          "title": "Dual Rider",
+          "price": "₹22,499"
         },
         {
-          "price": "₹27,499",
-          "title": "Solo Rider"
+          "title": "Solo Rider",
+          "price": "₹27,499"
         }
       ],
       "sub_package_options": "Himalayan 411, Himalayan 450",
@@ -2663,41 +2663,45 @@
       ],
       "faqs": [
         {
-          "answer": "Yes, fuel for the entire itinerary route is included for both Dual Rider and Solo Rider packages.",
-          "question": "IS FUEL INCLUDED IN THE BIKE PACKAGE?"
+          "question": "IS FUEL INCLUDED IN THE BIKE PACKAGE?",
+          "answer": "Yes, fuel for the entire itinerary route is included for both Dual Rider and Solo Rider packages."
         },
         {
-          "answer": "Standard options include Royal Enfield Himalayan 411 / Scram 411, with Himalayan 450 upgrade options.",
-          "question": "WHAT BIKE MODELS ARE PROVIDED FOR THE EXPEDITION?"
+          "question": "WHAT BIKE MODELS ARE PROVIDED FOR THE EXPEDITION?",
+          "answer": "Standard options include Royal Enfield Himalayan 411 / Scram 411, with Himalayan 450 upgrade options."
         },
         {
-          "answer": "Yes, a valid Indian / International Driving License for 2-Wheelers is strictly mandatory.",
-          "question": "IS A DRIVING LICENSE REQUIRED?"
+          "question": "IS A DRIVING LICENSE REQUIRED?",
+          "answer": "Yes, a valid Indian / International Driving License for 2-Wheelers is strictly mandatory."
         },
         {
-          "answer": "A support backup vehicle carrying luggage, a professional mechanic, spare parts, and emergency oxygen is included throughout the ride.",
-          "question": "WHAT SUPPORT IS PROVIDED ON THE RIDE?"
+          "question": "WHAT SUPPORT IS PROVIDED ON THE RIDE?",
+          "answer": "A support backup vehicle carrying luggage, a professional mechanic, spare parts, and emergency oxygen is included throughout the ride."
         }
       ],
       "reviews": [
         {
           "name": "Vikramaditya Singh",
+          "location": "Jaipur",
           "text": "Riding through Kunzum Pass and Chicham Bridge with Awara Banjara was a dream come true! Backup support and bikes were in top condition.",
-          "avatar": "assets/images/reviews/pfp-vikram.jpg",
-          "location": "Jaipur"
+          "avatar": "assets/images/reviews/pfp-vikram.jpg"
         },
         {
           "name": "Sameer Khan",
+          "location": "Mumbai",
           "text": "Flawlessly organized moto expedition. The road captain made sure everyone stayed safe on the rough Spiti tracks.",
-          "avatar": "assets/images/reviews/pfp-sameer.jpg",
-          "location": "Mumbai"
+          "avatar": "assets/images/reviews/pfp-sameer.jpg"
         }
       ],
       "reserve_banner_title": "",
       "reserve_banner_sub": null,
       "custom_quote_title": "",
       "custom_quote_sub": null,
-      "whatsapp_number": null
+      "whatsapp_number": null,
+      "is_featured_reels": true,
+      "is_featured_stack": true,
+      "is_featured_lemonade": true,
+      "updated_at": "2026-08-15T12:41:39.405Z"
     },
     {
       "id": 119,

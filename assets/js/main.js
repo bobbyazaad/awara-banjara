@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (heroBookNowBtn) {
     heroBookNowBtn.addEventListener('click', function (e) {
       e.preventDefault();
-      openTripModal("Let's Plan Your Next Journey.", 'assets/images/trips/gonbo-rangjon.jpg');
+      openTripModal("Let's Plan Your Next Journey.", 'assets/images/trips/zanskar-monastery-gathering.jpg');
     });
   }
 
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // straight to the inquiry form) auto-opens the same modal as the hero
   // Book Now button.
   if (window.location.hash === '#book') {
-    openTripModal("Let's Plan Your Next Journey.", 'assets/images/trips/gonbo-rangjon.jpg');
+    openTripModal("Let's Plan Your Next Journey.", 'assets/images/trips/zanskar-monastery-gathering.jpg');
   }
 
   // Attach click handlers to all cards in Domestic & International Destinations sections

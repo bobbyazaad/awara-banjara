@@ -48,6 +48,16 @@ const DATA_FILES = [
 const IMAGE_REPO_DIR = 'assets/images/trips';
 const IMAGE_LOCAL_DIR = path.join(__dirname, '..', IMAGE_REPO_DIR);
 
+// Pre-rendered static trip pages (server/prerender.js) used to only ever be
+// written to local disk, same class of bug as the images one above: a trip
+// added/edited through the live CMS gets a working page in the moment, but
+// since it was never committed anywhere, the very next redeploy (which
+// rebuilds the filesystem from the last GitHub commit) silently wipes it and
+// the trip's link 404s - falling through to the site's catch-all redirect,
+// which looks like "clicking it just takes you back to the homepage".
+const TRIPS_REPO_DIR = 'trips';
+const TRIPS_LOCAL_DIR = path.join(__dirname, '..', TRIPS_REPO_DIR);
+
 const GITHUB_TOKEN = process.env.GITHUB_SYNC_TOKEN || '';
 const GITHUB_REPO = process.env.GITHUB_SYNC_REPO || '';
 const SYNC_BRANCH = process.env.GIT_SYNC_BRANCH || 'live-data';
@@ -223,6 +233,119 @@ async function pullMissingImagesOnBoot() {
   }
 }
 
+async function getRemoteTripPage(fileName) {
+  const res = await fetch(
+    `${API_BASE}/repos/${GITHUB_REPO}/contents/${TRIPS_REPO_DIR}/${fileName}?ref=${SYNC_BRANCH}`,
+    { headers: ghHeaders() }
+  );
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`GET ${TRIPS_REPO_DIR}/${fileName} failed (HTTP ${res.status})`);
+  const json = await res.json();
+  return { sha: json.sha, content: Buffer.from(json.content, 'base64').toString('utf-8') };
+}
+
+async function putRemoteTripPage(fileName, content, sha) {
+  const res = await fetch(`${API_BASE}/repos/${GITHUB_REPO}/contents/${TRIPS_REPO_DIR}/${fileName}`, {
+    method: 'PUT',
+    headers: { ...ghHeaders(), 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      message: `Auto-sync trip page: ${fileName} — ${new Date().toISOString()}`,
+      content: Buffer.from(content, 'utf-8').toString('base64'),
+      branch: SYNC_BRANCH,
+      ...(sha ? { sha } : {})
+    })
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`PUT ${TRIPS_REPO_DIR}/${fileName} failed (HTTP ${res.status}): ${body.slice(0, 200)}`);
+  }
+}
+
+/**
+ * Push one regenerated static trip page to GitHub right after prerender.js
+ * writes it to local disk. Unlike pushImage() (always a brand-new filename,
+ * so a blind PUT is safe) a trip's filename is stable across edits, so an
+ * update must supply the existing file's sha or GitHub rejects it - fetch it
+ * first, same 409/422-retry pattern as doSync() uses for the JSON files.
+ */
+async function pushTripPage(fileName) {
+  if (!enabled) return;
+  try {
+    const localPath = path.join(TRIPS_LOCAL_DIR, fileName);
+    if (!fs.existsSync(localPath)) return;
+
+    const branchReady = await ensureBranchExists();
+    if (!branchReady) return;
+
+    const content = fs.readFileSync(localPath, 'utf-8');
+    const remote = await getRemoteTripPage(fileName);
+    if (remote && remote.content === content) return; // unchanged
+
+    try {
+      await putRemoteTripPage(fileName, content, remote ? remote.sha : undefined);
+    } catch (e) {
+      if (/HTTP 409|HTTP 422/.test(e.message)) {
+        const latest = await getRemoteTripPage(fileName);
+        await putRemoteTripPage(fileName, content, latest ? latest.sha : undefined);
+      } else {
+        throw e;
+      }
+    }
+    console.log(`✅ Git-sync: pushed trip page ${fileName} to '${SYNC_BRANCH}' branch`);
+  } catch (e) {
+    console.warn(`⚠️ Git-sync: failed to push trip page ${fileName} -`, e.message);
+  }
+}
+
+/**
+ * Pull down any pre-rendered trip pages that exist on the 'live-data' branch
+ * but not on this (possibly freshly rebuilt) local disk. Same reasoning as
+ * pullMissingImagesOnBoot() - runs after listen() since the trip set is
+ * unbounded and shouldn't gate request-serving readiness.
+ */
+async function pullMissingTripPagesOnBoot() {
+  if (!enabled) return;
+  try {
+    const res = await fetch(
+      `${API_BASE}/repos/${GITHUB_REPO}/contents/${TRIPS_REPO_DIR}?ref=${SYNC_BRANCH}`,
+      { headers: ghHeaders() }
+    );
+    if (res.status === 404) {
+      console.log('ℹ️ Git-sync: no synced trip pages yet on GitHub');
+      return;
+    }
+    if (!res.ok) {
+      console.warn(`⚠️ Git-sync: could not list ${TRIPS_REPO_DIR} (HTTP ${res.status})`);
+      return;
+    }
+    const entries = await res.json();
+    if (!Array.isArray(entries)) return;
+
+    fs.mkdirSync(TRIPS_LOCAL_DIR, { recursive: true });
+    const missing = entries.filter((e) => e.type === 'file' && e.name.endsWith('.html') && !fs.existsSync(path.join(TRIPS_LOCAL_DIR, e.name)));
+    if (missing.length === 0) {
+      console.log('✅ Git-sync: all synced trip pages already present locally');
+      return;
+    }
+
+    const results = await Promise.allSettled(missing.map(async (entry) => {
+      const fileRes = await fetch(
+        `${API_BASE}/repos/${GITHUB_REPO}/contents/${TRIPS_REPO_DIR}/${entry.name}?ref=${SYNC_BRANCH}`,
+        { headers: ghHeaders() }
+      );
+      if (!fileRes.ok) throw new Error(`HTTP ${fileRes.status}`);
+      const json = await fileRes.json();
+      fs.writeFileSync(path.join(TRIPS_LOCAL_DIR, entry.name), Buffer.from(json.content, 'base64').toString('utf-8'));
+    }));
+
+    const pulled = results.filter((r) => r.status === 'fulfilled').length;
+    const failed = results.length - pulled;
+    console.log(`✅ Git-sync: pulled ${pulled} trip page(s) from GitHub${failed ? `, ${failed} failed` : ''}`);
+  } catch (e) {
+    console.warn('⚠️ Git-sync: trip page pull failed -', e.message);
+  }
+}
+
 /**
  * Pull the latest committed CMS data down into local data/*.json before the
  * local database loads. Call this once at server startup, before db.js reads
@@ -326,4 +449,4 @@ if (!enabled) {
   console.log('ℹ️ Git-sync: disabled (set GITHUB_SYNC_TOKEN and GITHUB_SYNC_REPO to enable)');
 }
 
-module.exports = { pullLatestOnBoot, scheduleSync, pushImage, pullMissingImagesOnBoot, enabled };
+module.exports = { pullLatestOnBoot, scheduleSync, pushImage, pullMissingImagesOnBoot, pushTripPage, pullMissingTripPagesOnBoot, enabled };

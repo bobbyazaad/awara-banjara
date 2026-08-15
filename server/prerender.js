@@ -160,6 +160,16 @@ function injectReviews(page, trip, allReviews, fileName) {
   return page;
 }
 
+// Compute a trip's canonical static-page filename. Shared by prerenderTrip
+// (which writes the file) and server.js (which needs the name to push that
+// exact file to git-sync right after a save, without regenerating every
+// trip's page just to find out one filename).
+function getTripFileName(trip) {
+  const catSlug = getCategorySlug(trip.category);
+  const titleSlug = slugify(trip.title) || 'himalayan-expedition';
+  return `${catSlug}-${titleSlug}-${trip.id}.html`;
+}
+
 // Pre-render a single trip static HTML page. `allReviews` is optional - pass it when
 // rendering many trips in a batch (prerenderAllTrips) to avoid re-reading reviews.json
 // once per trip; omitted, it's loaded fresh so standalone calls (e.g. right after a
@@ -181,9 +191,7 @@ function prerenderTrip(trip, allReviews) {
   page = page.replace(/href="tour-packages\.html"/g, 'href="../tour-packages.html"');
   page = page.replace(/href="tour-packages\.html#/g, 'href="../tour-packages.html#');
 
-  const catSlug = getCategorySlug(trip.category);
-  const titleSlug = slugify(trip.title) || 'himalayan-expedition';
-  const fileName = `${catSlug}-${titleSlug}-${trip.id}.html`;
+  const fileName = getTripFileName(trip);
   const filePath = path.join(TRIPS_DIR, fileName);
   const canonicalUrl = `https://awarabanjara.in/trips/${fileName}`;
   const catName = (trip.category || '').split(',')[0].replace(/_tours/gi, ' Tours').replace(/_/g, ' ').trim() || 'Himalayan Tours';
@@ -375,5 +383,6 @@ function prerenderAllTrips(tripsArr) {
 
 module.exports = {
   prerenderTrip,
-  prerenderAllTrips
+  prerenderAllTrips,
+  getTripFileName
 };

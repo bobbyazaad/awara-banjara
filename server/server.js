@@ -162,11 +162,20 @@ const server = http.createServer(async (req, res) => {
     return sendJSON(res, 404, { success: false, error: 'Trip not found' });
   }
 
-function triggerPrerender() {
+// `savedTrip` is optional - pass the trip that was just created/updated (not
+// just deleted, since there's no page left to push) so its exact static page
+// gets pushed to git-sync right away. Without this, prerender.js only ever
+// wrote to local disk, which a redeploy's filesystem rebuild silently wipes -
+// the trip's link then 404s and falls through to the site's catch-all
+// redirect to the homepage.
+function triggerPrerender(savedTrip) {
   try {
     const trips = db.getTrips(true);
     prerender.prerenderAllTrips(trips);
     console.log(`✨ Auto-regenerated ${trips.length} static trip HTML page(s) from CMS update`);
+    if (savedTrip && savedTrip.id) {
+      gitSync.pushTripPage(prerender.getTripFileName(savedTrip));
+    }
   } catch (err) {
     console.error('⚠️ Auto pre-render error:', err.message);
   }
@@ -177,7 +186,7 @@ function triggerPrerender() {
     try {
       const payload = await parseRequestBody(req);
       const saved = db.saveTrip(payload);
-      triggerPrerender();
+      triggerPrerender(saved);
       return sendJSON(res, 200, { success: true, message: 'Trip saved successfully', data: saved });
     } catch (e) {
       return sendJSON(res, 500, { success: false, error: e.message });
@@ -191,7 +200,7 @@ function triggerPrerender() {
       const payload = await parseRequestBody(req);
       payload.id = id;
       const saved = db.saveTrip(payload);
-      triggerPrerender();
+      triggerPrerender(saved);
       return sendJSON(res, 200, { success: true, message: 'Trip updated successfully', data: saved });
     } catch (e) {
       return sendJSON(res, 500, { success: false, error: e.message });
@@ -542,6 +551,7 @@ function startServer(portToTry) {
     // unbounded, unlike the small fixed set of data/*.json files pulled
     // before listen() in db.js, so it must not gate request-serving readiness.
     gitSync.pullMissingImagesOnBoot();
+    gitSync.pullMissingTripPagesOnBoot();
   });
 }
 

@@ -1725,6 +1725,19 @@ Travel Insurance"></textarea>
       });
     }
 
+    // Tracks in-flight dropzone uploads by target input id, so save handlers
+    // can wait for the real server filename instead of racing the guessed
+    // placeholder path that's shown the instant a file is picked (see
+    // waitForImageUpload below - this is what previously let a fast Save
+    // click persist a filename the server never actually wrote).
+    window.__dzUploadPromises = window.__dzUploadPromises || {};
+
+    async function waitForImageUpload(inputId) {
+      const p = inputId && window.__dzUploadPromises[inputId];
+      if (p) { await p; }
+    }
+    window.waitForImageUpload = waitForImageUpload;
+
     function handleFile(file, inputEl, previewImg, previewContainer, contentEl) {
       if (!file || !file.type || !file.type.startsWith('image/')) {
         alert('Please drop or select a valid image file!');
@@ -1743,42 +1756,55 @@ Travel Insurance"></textarea>
         inputEl.dispatchEvent(new Event('input'));
       }
 
-      // 2. Render local image preview
-      const reader = new FileReader();
-      reader.onload = async function(e) {
-        const dataUrl = e.target.result;
-        updateDzPreview(dataUrl, previewImg, previewContainer, contentEl);
+      // 2. Render local image preview + 3. upload to backend, tracked as a
+      // promise so save handlers can await the real filename before submitting.
+      const uploadPromise = new Promise((resolve) => {
+        const reader = new FileReader();
+        reader.onload = async function(e) {
+          const dataUrl = e.target.result;
+          updateDzPreview(dataUrl, previewImg, previewContainer, contentEl);
 
-        // 3. Upload file to backend server -> saves into assets/images/trips/
-        try {
-          let json = null;
-          if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.uploadImage) {
-            json = await window.AwaraDB.uploadImage(file.name, dataUrl);
-          } else {
-            const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/upload') : '/api/upload';
-            const res = await fetch(apiUrl, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ filename: file.name, dataUrl: dataUrl })
-            });
-            if (res.ok) json = await res.json();
-          }
-
-          if (json && json.success && json.relativePath) {
-            if (inputEl) {
-              inputEl.value = json.relativePath;
-              inputEl.dispatchEvent(new Event('input'));
+          try {
+            let json = null;
+            if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.uploadImage) {
+              json = await window.AwaraDB.uploadImage(file.name, dataUrl);
+            } else {
+              const apiUrl = typeof window.getAwaraApiUrl === 'function' ? window.getAwaraApiUrl('/upload') : '/api/upload';
+              const res = await fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: file.name, dataUrl: dataUrl })
+              });
+              if (res.ok) json = await res.json();
             }
-            showToast(`📸 Location updated: ${json.relativePath}`);
-            return;
-          }
-        } catch (err) {
-          console.warn('Backend upload endpoint unreachable, keeping instant path.', err);
-        }
 
-        showToast(`📸 Location updated: ${initialPath}`);
-      };
-      reader.readAsDataURL(file);
+            if (json && json.success && json.relativePath) {
+              if (inputEl) {
+                inputEl.value = json.relativePath;
+                inputEl.dispatchEvent(new Event('input'));
+              }
+              showToast(`📸 Location updated: ${json.relativePath}`);
+              resolve(json.relativePath);
+              return;
+            }
+          } catch (err) {
+            console.warn('Backend upload endpoint unreachable, keeping instant path.', err);
+          }
+
+          showToast(`📸 Location updated: ${initialPath}`);
+          resolve(initialPath);
+        };
+        reader.readAsDataURL(file);
+      });
+
+      if (inputEl && inputEl.id) {
+        window.__dzUploadPromises[inputEl.id] = uploadPromise;
+        uploadPromise.finally(() => {
+          if (window.__dzUploadPromises[inputEl.id] === uploadPromise) {
+            delete window.__dzUploadPromises[inputEl.id];
+          }
+        });
+      }
     }
 
     function updateDzPreview(url, previewImg, previewContainer, contentEl) {
@@ -2092,6 +2118,7 @@ Travel Insurance"></textarea>
 
     async function handleSaveTrip(e) {
       e.preventDefault();
+      await Promise.all(['tripImage', 'bentoImg1', 'bentoImg2', 'bentoImg3', 'bentoImg4', 'bentoImg5'].map(waitForImageUpload));
       const editId = document.getElementById('editTripId').value;
       const title = document.getElementById('tripTitle').value.trim();
       const duration = document.getElementById('tripDuration').value.trim();
@@ -2717,6 +2744,7 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
       e.preventDefault();
       const saveBtn = document.getElementById('saveDestBtn');
       if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = '💾 Saving...'; }
+      await waitForImageUpload('destImageUrlInput');
 
       const id = document.getElementById('editDestId').value;
       const title = document.getElementById('destTitleInput').value.trim();
@@ -2928,6 +2956,7 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
       e.preventDefault();
       const saveBtn = document.getElementById('saveReviewBtn');
       if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = '💾 Saving...'; }
+      await waitForImageUpload('revAvatarUrl');
 
       const id = document.getElementById('editReviewId').value;
       const customer_name = document.getElementById('revCustomerName').value.trim();
@@ -3173,6 +3202,7 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
       e.preventDefault();
       const saveBtn = document.getElementById('saveReelBtn');
       if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = '⏳ Saving Reel...'; }
+      await waitForImageUpload('reelImageUrlInput');
 
       const id = document.getElementById('editReelId').value || ('post_' + Date.now());
       const title = document.getElementById('reelTitleInput').value.trim();
@@ -3267,6 +3297,7 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
       e.preventDefault();
       const saveBtn = document.getElementById('saveBlogBtn');
       if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = '⏳ Saving Blog...'; }
+      await waitForImageUpload('blogImageUrlInput');
 
       const id = document.getElementById('editBlogId').value || ('post_' + Date.now());
       const title = document.getElementById('blogTitleInput').value.trim();

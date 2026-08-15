@@ -31,6 +31,7 @@ const ASSET_FILES = [
   'assets/js/card-stack.js',
   'assets/js/db-engine.js',
   'assets/js/main.js',
+  'assets/js/nav-search.js',
   'assets/js/postcards-loader.js',
   'assets/js/reviews-loader.js',
   'assets/js/site-config-loader.js',

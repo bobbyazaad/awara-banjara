@@ -31,7 +31,7 @@
 <link rel="preload" as="image" href="assets/images/hero/spiti-hero.jpg" fetchpriority="high">
 
 <link rel="icon" type="image/png" href="assets/images/logo/favicon.png?v=2.0">
-<link rel="stylesheet" href="assets/css/style.css?v=52fa808775">
+<link rel="stylesheet" href="assets/css/style.css?v=7fbc9ca627">
 
 <!-- JSON-LD Structured Data: TravelAgency & Organization -->
 <script type="application/ld+json">
@@ -104,14 +104,29 @@
       <a href="tour-packages.html#women-special">Women Trips</a>
     </nav>
 
-    <div class="header-contact">
-      <span class="icon-badge" style="color:#fff"><svg><use href="#icon-phone"/></svg></span>
-      <span>+91- 9103910523</span>
-    </div>
+    <div class="header-actions">
+      <a class="icon-badge" href="tel:+919103910523" aria-label="Call Awara Banjara" style="color:#fff; text-decoration:none;"><svg><use href="#icon-phone"/></svg></a>
 
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
-      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
-    </button>
+      <div class="nav-search" id="navSearch">
+        <button type="button" class="nav-search-toggle" id="navSearchToggle" aria-label="Search itineraries" aria-expanded="false" aria-controls="navSearchPanel">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <div class="nav-search-panel" id="navSearchPanel">
+          <div class="nav-search-field">
+            <input type="text" id="navSearchInput" placeholder="" aria-label="Search itineraries" autocomplete="off">
+            <div class="nav-search-flip-placeholder" id="navSearchFlipPlaceholder" aria-hidden="true">
+              <span>Search itineraries for</span>
+              <span class="nav-search-flip-word-outer"><span class="nav-search-flip-word" id="navSearchFlipWord">Spiti</span></span>
+            </div>
+          </div>
+          <div class="nav-search-results" id="navSearchResults"></div>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -777,6 +792,7 @@
 <script src="assets/js/card-stack.js?v=41f9a5ea5d"></script>
 <script src="assets/js/main.js?v=deb384d33b"></script>
 <script src="assets/js/trips-loader.js?v=0650d23512"></script>
+<script src="assets/js/nav-search.js?v=5808f04bec"></script>
 <script src="assets/js/reviews-loader.js?v=c2c8ec5dde"></script>
 <script src="assets/js/postcards-loader.js?v=23e733867c"></script>
 </body>

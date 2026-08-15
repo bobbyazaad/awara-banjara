@@ -125,6 +125,20 @@
     const sortSelect = document.getElementById('filterSort');
     const resetBtn = document.getElementById('resetFiltersBtn');
     const badgeEl = document.getElementById('filterResultsBadge');
+    const searchInput = document.getElementById('filterSearch');
+    const searchBtn = document.getElementById('filterSearchBtn');
+
+    function tripMatchesSearch(t, query) {
+      if (!query) return true;
+      const haystack = [
+        t.title || '',
+        t.route || '',
+        t.category || '',
+        Array.isArray(t.tags) ? t.tags.join(' ') : (t.tags || ''),
+        t.sub_package_options || ''
+      ].join(' ').toLowerCase();
+      return query.split(/\s+/).filter(Boolean).every(word => haystack.includes(word));
+    }
 
     // Categories map directly to the CMS values selected in admin panel
     // Supports multi-category trips (a trip appears in every matching section)
@@ -189,8 +203,9 @@
       const selectedCat = catSelect ? catSelect.value : 'all';
       const selectedPrice = priceSelect ? priceSelect.value : 'all';
       const selectedSort = sortSelect ? sortSelect.value : 'default';
+      const selectedSearch = searchInput ? searchInput.value.trim().toLowerCase() : '';
 
-      const isFilterActive = selectedCat !== 'all' || selectedPrice !== 'all' || selectedSort !== 'default';
+      const isFilterActive = selectedCat !== 'all' || selectedPrice !== 'all' || selectedSort !== 'default' || selectedSearch !== '';
 
       if (resetBtn) {
         resetBtn.style.display = isFilterActive ? 'inline-block' : 'none';
@@ -198,6 +213,9 @@
 
       // Filter trips
       let filtered = trips.filter(t => {
+        // Search Filter
+        if (!tripMatchesSearch(t, selectedSearch)) return false;
+
         // Category Filter
         if (selectedCat !== 'all') {
           const dbVals = [selectedCat];
@@ -289,7 +307,7 @@
           container.innerHTML = `
             <div style="text-align:center; padding: 60px 20px; background: #ffffff; border-radius: 16px; border: 1px solid #e0e0d8; margin-top: 10px;">
               <h3 style="font-size: 20px; font-weight: 800; color: #14140f; margin-bottom: 8px;">No packages found</h3>
-              <p style="color: #666; font-size: 14px; margin-bottom: 20px;">Try adjusting your category or price filters to see available itineraries.</p>
+              <p style="color: #666; font-size: 14px; margin-bottom: 20px;">Try adjusting your search or filters to see available itineraries.</p>
               <button id="emptyStateResetBtn" type="button" style="padding: 10px 20px; border-radius: 10px; border: none; background: #14140f; color: #b8ff00; font-size: 14px; font-weight: 800; cursor: pointer;">Reset All Filters</button>
             </div>
           `;
@@ -299,6 +317,7 @@
               if (catSelect) catSelect.value = 'all';
               if (priceSelect) priceSelect.value = 'all';
               if (sortSelect) sortSelect.value = 'default';
+              if (searchInput) searchInput.value = '';
               applyFiltersAndRender();
             });
           }
@@ -319,11 +338,30 @@
       if (el) el.addEventListener('change', applyFiltersAndRender);
     });
 
+    if (searchInput) {
+      let searchDebounce = null;
+      searchInput.addEventListener('input', () => {
+        clearTimeout(searchDebounce);
+        searchDebounce = setTimeout(applyFiltersAndRender, 250);
+      });
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          clearTimeout(searchDebounce);
+          applyFiltersAndRender();
+        }
+      });
+    }
+    if (searchBtn) {
+      searchBtn.addEventListener('click', applyFiltersAndRender);
+    }
+
     if (resetBtn) {
       resetBtn.addEventListener('click', () => {
         if (catSelect) catSelect.value = 'all';
         if (priceSelect) priceSelect.value = 'all';
         if (sortSelect) sortSelect.value = 'default';
+        if (searchInput) searchInput.value = '';
         applyFiltersAndRender();
       });
     }

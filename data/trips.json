@@ -3224,38 +3224,58 @@
     "itinerary": [
       {
         "day": 1,
-        "title": "Delhi",
-        "details": "Delhi"
+        "title": "Delhi to Manali (Overnight Journey)",
+        "details": "DAY 1:Delhi to Manali (Overnight Journey)"
       },
       {
         "day": 2,
-        "title": "Manali Arrival",
-        "details": "Manali Arrival"
+        "title": "Delhi se Manali ke liye overnight Volvo bus ya cab se journey shuru hoti hai. Yeh rasta Himachal ki scenic valleys aur Beas river ke kinare se guzarta hai. Raat bhar safar karne ke baad agli subah aap Manali pahunchte hain, jahan trek ki aage ki tayyari shuru hoti hai.",
+        "details": "Delhi se Manali ke liye overnight Volvo bus ya cab se journey shuru hoti hai. Yeh rasta Himachal ki scenic valleys aur Beas river ke kinare se guzarta hai. Raat bhar safar karne ke baad agli subah aap Manali pahunchte hain, jahan trek ki aage ki tayyari shuru hoti hai."
       },
       {
         "day": 3,
-        "title": "Chika to Balu Ka Ghera Trek",
-        "details": "Chika to Balu Ka Ghera Trek"
+        "title": "Manali Arrival & Base Camp Preparation",
+        "details": "DAY 2: Manali Arrival & Base Camp Preparation"
       },
       {
         "day": 4,
-        "title": "Balu Ka Ghera to Shea Goru Trek via Hampta Pass",
-        "details": "Balu Ka Ghera to Shea Goru Trek via Hampta Pass"
+        "title": "Manali pahunch kar hotel ya camp me check-in karein aur rest karein. Is din high altitude ke liye acclimatize hona zaroori hai. Shaam ko trek leader se briefing lein, apna equipment recheck karein, aur local Mall Road explore karke last-minute trekking essentials purchase kar sakte hain.",
+        "details": "Manali pahunch kar hotel ya camp me check-in karein aur rest karein. Is din high altitude ke liye acclimatize hona zaroori hai. Shaam ko trek leader se briefing lein, apna equipment recheck karein, aur local Mall Road explore karke last-minute trekking essentials purchase kar sakte hain."
       },
       {
         "day": 5,
-        "title": "Shea Goru to Chatru Trek",
-        "details": "Shea Goru to Chatru Trek"
+        "title": "Manali to Jobra Drive & Trek to Chika / Balu Ka Ghera",
+        "details": "DAY 3: Manali to Jobra Drive & Trek to Chika / Balu Ka Ghera"
       },
       {
         "day": 6,
-        "title": "Drive from Chatru to Manali",
-        "details": "Drive from Chatru to Manali"
+        "title": "Manali se Jobra tak scenic drive ke baad trekking trail shuru hoti hai. Pine forests, green meadows aur glacial streams ke beech se hote hue Chika se Balu Ka Ghera (approx. 11,900 ft) ki taraf aage badhte hain. Raat ko riverside campsite par tent me stay hota hai.",
+        "details": "Manali se Jobra tak scenic drive ke baad trekking trail shuru hoti hai. Pine forests, green meadows aur glacial streams ke beech se hote hue Chika se Balu Ka Ghera (approx. 11,900 ft) ki taraf aage badhte hain. Raat ko riverside campsite par tent me stay hota hai."
       },
       {
         "day": 7,
-        "title": "Drive from Chatru to Manali",
-        "details": "Drive from Chatru to Manali"
+        "title": "Balu Ka Ghera to Shea Goru via Hamta Pass",
+        "details": "DAY 4: Balu Ka Ghera to Shea Goru via Hamta Pass"
+      },
+      {
+        "day": 8,
+        "title": "Yeh trek ka sabse challenging aur exciting din hota hai. Balu Ka Ghera se climb karke Hamta Pass (14,100 ft) cross karte hain. Yahan Kullu ki lush green valley ekdum se Spiti ke barren desert landscape me badal jaati hai. Descent karke Shea Goru campsite pahuchein.",
+        "details": "Yeh trek ka sabse challenging aur exciting din hota hai. Balu Ka Ghera se climb karke Hamta Pass (14,100 ft) cross karte hain. Yahan Kullu ki lush green valley ekdum se Spiti ke barren desert landscape me badal jaati hai. Descent karke Shea Goru campsite pahuchein."
+      },
+      {
+        "day": 9,
+        "title": "Shea Goru to Chatru Trek, Chandratal Visit & Volvo to DelhiShea Goru se Chatru tak downhill trek karein. Phir Chatru se vehicle ke zariye famous Chandratal Lake explore karein. Lake visit ke baad wapas Manali drive karein aur shaam/raat me Delhi ke liye overnight Volvo bus board karein, jisse aapki adventurous trek journey complete hoti hai.",
+        "details": "DAY 5: Shea Goru to Chatru Trek, Chandratal Visit & Volvo to DelhiShea Goru se Chatru tak downhill trek karein. Phir Chatru se vehicle ke zariye famous Chandratal Lake explore karein. Lake visit ke baad wapas Manali drive karein aur shaam/raat me Delhi ke liye overnight Volvo bus board karein, jisse aapki adventurous trek journey complete hoti hai."
+      },
+      {
+        "day": 10,
+        "title": "Arrival in Delhi",
+        "details": "DAY 6: Arrival in Delhi"
+      },
+      {
+        "day": 11,
+        "title": "Subah-subah Volvo bus se Delhi (ISBT Kashmiri Gate / Majnu ka Tilla) arrival. Yahan aapki memorable Hamta Pass aur Chandratal Trek trip ka end hota hai.",
+        "details": "Subah-subah Volvo bus se Delhi (ISBT Kashmiri Gate / Majnu ka Tilla) arrival. Yahan aapki memorable Hamta Pass aur Chandratal Trek trip ka end hota hai."
       }
     ],
     "inclusions": [
@@ -3409,7 +3429,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-14T15:17:54.829Z"
+    "updated_at": "2026-08-15T16:09:15.383Z"
   },
   {
     "id": 120,

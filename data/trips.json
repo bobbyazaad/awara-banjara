@@ -3701,77 +3701,42 @@
       {
         "day": 1,
         "title": "Delhi to Shimla (340 km",
-        "details": "Board the evening AC Volvo bus or private vehicle from Delhi to Shimla. Enjoy an overnight journey through the scenic foothills of Himachal Pradesh."
+        "details": "8–9 hours)"
       },
       {
         "day": 2,
-        "title": "Day 2",
-        "details": ""
+        "title": "Shimla to Chitkul / Sangla Valley",
+        "details": "Drive via Kinnaur Valley along the Sutlej River towards Chitkul, the last inhabited village near the Indo-Tibet border."
       },
       {
         "day": 3,
-        "title": "Shimla to Chitkul / Sangla Valley",
-        "details": "Drive via Kinnaur Valley along the Sutlej River towards Chitkul—the last inhabited village near the Indo-Tibet border. Check in to your stay in Sangla/Chitkul."
+        "title": "Sangla to Tabo (via Nako & Gue)",
+        "details": "Visit Nako Lake, Nako Village, and the 500-year-old Mummy at Gue Monastery before entering Tabo."
       },
       {
         "day": 4,
-        "title": "Day 4",
-        "details": ""
-      },
-      {
-        "day": 5,
-        "title": "Sangla to Tabo (via Nako & Gue)",
-        "details": "Visit Nako Lake and Nako Village, followed by the 500-year-old Mummy at Gue Monastery before entering Tabo Valley."
-      },
-      {
-        "day": 6,
-        "title": "Day 6",
-        "details": ""
-      },
-      {
-        "day": 7,
         "title": "Tabo to Kaza (via Dhankar)",
         "details": "Explore 1,000-year-old Tabo Monastery, then drive to Dhankar Monastery perched on a cliff before heading to Kaza."
       },
       {
-        "day": 8,
-        "title": "Day 8",
-        "details": ""
-      },
-      {
-        "day": 9,
+        "day": 5,
         "title": "Kaza Local Sightseeing",
-        "details": "Visit the highest villages & iconic spots: Hikkim (World's Highest Post Office), Komic (Highest Village connected by motorable road), and Langza (Fossil Village)."
+        "details": "Visit iconic spots: Hikkim (World's Highest Post Office), Komic (Highest Village connected by motorable road), and Langza (Fossil Village)."
       },
       {
-        "day": 10,
-        "title": "Day 10",
-        "details": ""
-      },
-      {
-        "day": 11,
+        "day": 6,
         "title": "Kaza to Chandratal (via Key & Kibber)",
-        "details": "Visit the famous Key Monastery and Chicham Bridge (Asia's highest bridge). Ride/drive over Kunzum Pass to reach the crescent-shaped Chandratal Lake for high-altitude camping"
+        "details": "Visit iconic Key Monastery and Chicham Bridge. Drive over Kunzum Pass to reach the crescent-shaped Chandratal Lake for campsite stay."
       },
       {
-        "day": 12,
-        "title": "Day 12",
-        "details": ""
+        "day": 7,
+        "title": "Chandratal to Manali & Return to Delhi",
+        "details": "Drive via Batal, Chhatru, and Atal Tunnel to Manali. Free time in Manali before boarding the evening Volvo back to Delhi."
       },
       {
-        "day": 13,
-        "title": "Chandratal to Manali (via Batal, Chhatru & Atal Tunnel)",
-        "details": "Drive/ride from Chandratal Lake across the rugged tracks of Batal and Chhatru, pass through the Atal Tunnel, and arrive in Manali. boarding the evening AC Volvo bus back to Delhi."
-      },
-      {
-        "day": 14,
-        "title": "Day 14",
-        "details": ""
-      },
-      {
-        "day": 15,
+        "day": 8,
         "title": "Arrival in Delhi",
-        "details": "Reach Delhi early in the morning, ending your full Spiti circuit expedition with unforgettable mountain memories."
+        "details": "Arrive in Delhi early morning with unforgettable memories of the Spiti circuit expedition."
       }
     ],
     "inclusions": [
@@ -3898,6 +3863,6 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-15T11:45:57.832Z"
+    "updated_at": "2026-08-15T11:48:31.054Z"
   }
 ]

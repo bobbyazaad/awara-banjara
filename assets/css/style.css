@@ -988,7 +988,12 @@ button { font-family: inherit; cursor: pointer; }
   }
 
   .card-stack {
-    width: min(340px, 88vw);
+    /* The peek offsets on .card-stack-item below are fixed px, not a % of
+       this width, so they don't auto-scale down with it - at 340px this
+       bled 16px past the viewport edge on real phones (confirmed via
+       document.documentElement.scrollWidth, not just visual inspection).
+       Same fix already applied to .gallery-flip-stack on trip pages. */
+    width: min(280px, 74vw);
     aspect-ratio: 3 / 4 !important;
   }
 }

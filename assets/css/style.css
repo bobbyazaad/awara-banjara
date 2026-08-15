@@ -580,15 +580,22 @@ button { font-family: inherit; cursor: pointer; }
 
 @media (max-width: 640px) {
   .trust-bar-inner {
-    gap: 14px 28px;
-    padding-block: 16px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 22px;
+    padding-inline: 20px;
+    padding-block: 14px;
   }
   .trust-stat {
-    font-size: 13px;
+    gap: 6px;
+    font-size: 14px;
   }
   .trust-stat-icon {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
+  }
+  .trust-stat-label {
+    display: none;
   }
 }
 

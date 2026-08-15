@@ -1382,7 +1382,7 @@ Travel Insurance"></textarea>
 
             <div class="form-group">
               <label>Specific Trip Page URL (Destination Page)</label>
-              <input type="text" id="revTripUrl" placeholder="e.g. trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116.html">
+              <input type="text" id="revTripUrl" placeholder="e.g. trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116">
             </div>
 
             <div class="form-group">
@@ -1510,7 +1510,7 @@ Travel Insurance"></textarea>
   </main>
 
   <!-- LOCAL DATA ENGINE SCRIPTS -->
-  <script src="assets/js/db-engine.js?v=ce1c9704a3"></script>
+  <script src="assets/js/db-engine.js?v=3cd1c698bc"></script>
   <script src="assets/js/site-config-loader.js?v=11a073cee3"></script>
 
   <script>
@@ -2527,7 +2527,7 @@ Travel Insurance"></textarea>
     route text,
     tags text,
     image_url text NOT NULL,
-    link text DEFAULT 'trip-detail.html',
+    link text DEFAULT 'trip-detail',
     bento_img_1 text,
     bento_img_2 text,
     bento_img_3 text,
@@ -2917,7 +2917,7 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
       }
 
       selectEl.innerHTML = '<option value="">-- Choose From Active Trips --</option>' + trips.map(t => {
-        const url = window.AwaraDB ? window.AwaraDB.buildSeoTripUrl(t) : `trip-detail.html?id=${t.id}`;
+        const url = window.AwaraDB ? window.AwaraDB.buildSeoTripUrl(t) : `trip-detail?id=${t.id}`;
         return `<option value="${t.id}" data-url="${url}" data-title="${t.title}">${t.title} (ID: ${t.id})</option>`;
       }).join('');
     }

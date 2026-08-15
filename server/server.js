@@ -489,8 +489,19 @@ function triggerPrerender(savedTrip) {
   }
 
   // =========================================================
-  // STATIC WEBSITE FILE SERVING
+  // STATIC WEBSITE FILE SERVING (clean, extensionless URLs)
   // =========================================================
+  // Canonicalize: any request explicitly ending in .html 301-redirects to
+  // its extensionless equivalent, so old bookmarks/shared links/search
+  // results keep working but the URL bar (and what Google indexes) settles
+  // on the clean form. index.html maps to the site root "/".
+  if ((method === 'GET' || method === 'HEAD') && pathname.endsWith('.html')) {
+    const clean = pathname === '/index.html' ? '/' : pathname.slice(0, -'.html'.length);
+    const search = parsedUrl.search || '';
+    res.writeHead(301, { Location: clean + search });
+    return res.end();
+  }
+
   let reqPath = path.normalize(pathname);
   if (reqPath === '/') reqPath = '/index.html';
 
@@ -503,18 +514,26 @@ function triggerPrerender(savedTrip) {
   }
 
   fs.stat(filePath, (err, stats) => {
-    // Only fall back to index.html for extensionless routes (client-side style navigation,
-    // e.g. deep links into the SPA-ish pages). A missing path with a real extension
-    // (.jpg/.js/.css/.html/etc.) or any other unmatched route gets a genuine 404 instead of
-    // silently returning the homepage with a 200 status.
     let statusCode = 200;
     if (err || !stats.isFile()) {
       const looksLikeFile = path.extname(reqPath) !== '';
       if (looksLikeFile) {
+        // A missing path with a real, non-.html extension (.jpg/.js/.css/etc,
+        // since .html itself already redirected above) gets a genuine 404
+        // instead of silently returning the homepage with a 200 status.
         statusCode = 404;
         filePath = path.join(PUBLIC_DIR, '404.html');
       } else {
-        filePath = path.join(PUBLIC_DIR, 'index.html');
+        // Clean-URL page: /about -> about.html, /trips/some-trip -> trips/some-trip.html,
+        // served directly (not redirected) so the address bar stays extensionless.
+        const htmlCandidate = `${filePath}.html`;
+        if (fs.existsSync(htmlCandidate)) {
+          filePath = htmlCandidate;
+        } else {
+          // Genuinely unknown extensionless route - fall back to the homepage
+          // (pre-existing behavior, unchanged) rather than a hard 404.
+          filePath = path.join(PUBLIC_DIR, 'index.html');
+        }
       }
     }
 

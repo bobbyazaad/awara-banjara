@@ -2,181 +2,199 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://awarabanjara.in/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/tour-packages.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/tour-packages</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/about.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/about</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/contact.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/contact</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/postcards.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/postcards</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/careers.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/reviews</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://awarabanjara.in/careers</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=kashmir-tours&amp;trip=kashmir-winter-realm-expedition&amp;id=1786216631459</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/himachal-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=kashmir-tours&amp;trip=kashmir-slow-paced-expedition&amp;id=115</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/kashmir-tours-kashmir-winter-realm-expedition-1786216631459</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=northeast-india-tours&amp;trip=ziro-festival-rhythm-expedition-arunachal-pradesh&amp;id=122</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/kashmir-tours-kashmir-slow-paced-expedition-115</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=northeast-india-tours&amp;trip=meghalaya-kaziranga-backpacking-trip&amp;id=114</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/northeast-india-tours-ziro-festival-rhythm-expedition-arunachal-pradesh-122</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=kashmir-tours&amp;trip=kashmir-great-lakes-trek&amp;id=107</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/northeast-india-tours-meghalaya-kaziranga-backpacking-trip-114</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=himachal-tours&amp;trip=kasol-manali-offbeat-himalayan-escape&amp;id=108</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/kashmir-tours-kashmir-great-lakes-trek-107</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=ladakh-tours&amp;trip=zanskar-moto-passage-the-monolith-circuit&amp;id=100</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/himachal-tours-kasol-manali-offbeat-himalayan-escape-108</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=himachal-tours&amp;trip=dev-roopa-trek-path-of-the-gods-expedition&amp;id=110</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/ladakh-tours-zanskar-moto-passage-the-monolith-circuit-100</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=ladakh-tours&amp;trip=ladakh-high-passes-blue-waters-expedition&amp;id=117</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/himachal-tours-dev-roopa-trek-path-of-the-gods-expedition-110</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=spiti-tours&amp;trip=spiti-circuit-chandratal-lake-moto-expedition&amp;id=116</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/ladakh-tours-ladakh-high-passes-blue-waters-expedition-117</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=himachal-tours&amp;trip=buran-ghati-where-the-trail-ends&amp;id=118</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=ladakh-tours&amp;trip=ladakh-overland-srinagar-to-manali-via-umling-la-tso-moriri&amp;id=121</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/himachal-tours-buran-ghati-where-the-trail-ends-118</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=spiti-tours&amp;trip=spiti-the-highland-circuit-group-trip&amp;id=111</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/ladakh-tours-ladakh-overland-srinagar-to-manali-via-umling-la-tso-moriri-121</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=spiti-tours&amp;trip=spiti-the-highland-circuit-moto-expedition&amp;id=112</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/spiti-tours-spiti-the-highland-circuit-group-trip-111</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=uttarakhand-tours&amp;trip=uttarakhand-backpacking-odyssey&amp;id=119</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/spiti-tours-spiti-the-highland-circuit-moto-expedition-112</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=spiti-tours&amp;trip=spiti-winter-4x4-expedition&amp;id=103</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/uttarakhand-tours-uttarakhand-backpacking-odyssey-119</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=rajasthan-tours&amp;trip=udaipur-kumbhalgarh-expedition&amp;id=104</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/spiti-tours-spiti-winter-4x4-expedition-103</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=himachal-tours&amp;trip=hamta-pass-and-chandratal-trek&amp;id=113</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/rajasthan-tours-udaipur-kumbhalgarh-expedition-104</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=himachal-tours&amp;trip=bir-billing-escape-paragliding-rajgundha-valley-prashar-lake&amp;id=120</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/himachal-tours-hamta-pass-and-chandratal-trek-113</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=ladakh-tours&amp;trip=escape-to-zanskar-group-trip&amp;id=105</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/himachal-tours-bir-billing-escape-paragliding-rajgundha-valley-prashar-lake-120</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/trip-detail.html?category=spiti-tours&amp;trip=spiti-full-summer-circuit&amp;id=106</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/ladakh-tours-escape-to-zanskar-group-trip-105</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/booking-terms.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/trips/spiti-tours-spiti-full-summer-circuit-106</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://awarabanjara.in/booking-terms</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/cancellation-policy.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/cancellation-policy</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://awarabanjara.in/privacy-policy.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <loc>https://awarabanjara.in/privacy-policy</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://awarabanjara.in/payment-details</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

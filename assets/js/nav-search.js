@@ -94,7 +94,7 @@
     function tripDetailUrl(trip) {
       return (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.buildSeoTripUrl)
         ? window.AwaraDB.buildSeoTripUrl(trip)
-        : (trip.id ? 'trip-detail.html?id=' + trip.id : 'trip-detail.html');
+        : (trip.id ? 'trip-detail?id=' + trip.id : 'trip-detail');
     }
 
     function matchesQuery(t, query) {

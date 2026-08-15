@@ -129,7 +129,7 @@
       if (this.captionPrice) this.captionPrice.textContent = 'Curated trips arriving shortly';
       if (this.captionBtn) {
         this.captionBtn.textContent = 'Explore';
-        this.captionBtn.href = 'tour-packages.html';
+        this.captionBtn.href = 'tour-packages';
       }
     },
 
@@ -158,7 +158,7 @@
         var trip = this.trips[tripIdx];
         var detailUrl = (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.buildSeoTripUrl)
           ? window.AwaraDB.buildSeoTripUrl(trip)
-          : (trip.id ? ('trip-detail.html?id=' + trip.id) : (trip.link || 'trip-detail.html'));
+          : (trip.id ? ('trip-detail?id=' + trip.id) : (trip.link || 'trip-detail'));
         var imgUrl = trip.image_url || trip.bento_img_1 || 'assets/images/placeholder-card-1.svg';
         var priceDisplay = this.formatPrice(trip.price);
 
@@ -193,7 +193,7 @@
       if (newFront) {
         var title = newFront.getAttribute('data-title') || 'Himalayan Expedition';
         var price = this.formatPrice(newFront.getAttribute('data-price'));
-        var href = newFront.getAttribute('data-href') || 'trip-detail.html';
+        var href = newFront.getAttribute('data-href') || 'trip-detail';
 
         if (this.captionTitle) this.captionTitle.textContent = title;
         if (this.captionPrice) this.captionPrice.textContent = price;
@@ -253,7 +253,7 @@
       if (!activeTrip) return;
       var detailUrl = (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.buildSeoTripUrl)
         ? window.AwaraDB.buildSeoTripUrl(activeTrip)
-        : (activeTrip.id ? ('trip-detail.html?id=' + activeTrip.id) : (activeTrip.link || 'trip-detail.html'));
+        : (activeTrip.id ? ('trip-detail?id=' + activeTrip.id) : (activeTrip.link || 'trip-detail'));
 
       if (this.captionTitle) this.captionTitle.textContent = activeTrip.title || 'Himalayan Expedition';
       if (this.captionPrice) this.captionPrice.textContent = this.formatPrice(activeTrip.price);

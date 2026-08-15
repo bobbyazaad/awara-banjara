@@ -403,7 +403,7 @@
   function createTripCardHTML(trip) {
     const detailUrl = (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.buildSeoTripUrl) 
       ? window.AwaraDB.buildSeoTripUrl(trip) 
-      : (trip.id ? 'trip-detail.html?id=' + trip.id : (trip.link || 'trip-detail.html'));
+      : (trip.id ? 'trip-detail?id=' + trip.id : (trip.link || 'trip-detail'));
     const rawImg = trip.image_url || trip.image || 'assets/images/placeholder-card-1.svg';
     const imgUrl = rawImg;
     const priceDisplay = formatPrice(trip.price);

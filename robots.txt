@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Admin and Internal paths
-Disallow: /admin.html
+Disallow: /admin
 Disallow: /.tmp/
 Disallow: /scratch/
 

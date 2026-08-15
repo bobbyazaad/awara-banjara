@@ -183,17 +183,22 @@ function prerenderTrip(trip, allReviews) {
 
   const masterHtml = fs.readFileSync(MASTER_FILE, 'utf-8');
 
-  // Adjust master template relative paths for /trips/ subfolder
+  // Adjust master template relative paths for /trips/ subfolder. The
+  // template's own links are already extensionless (clean-URL scheme - the
+  // file on disk still ends in .html, only the public-facing links don't),
+  // so this just needs to prefix them with "../" for the one extra path
+  // segment. One general pattern covers every nav/footer link rather than
+  // an explicit list per page - a prior version only handled 3 of the ~15
+  // links here, leaving the rest resolving as trips/about (404s).
   let page = masterHtml;
   page = page.replace(/href="assets\//g, 'href="../assets/');
   page = page.replace(/src="assets\//g, 'src="../assets/');
-  page = page.replace(/href="index\.html"/g, 'href="../index.html"');
-  page = page.replace(/href="tour-packages\.html"/g, 'href="../tour-packages.html"');
-  page = page.replace(/href="tour-packages\.html#/g, 'href="../tour-packages.html#');
+  page = page.replace(/href="\/"/g, 'href="../"');
+  page = page.replace(/href="([a-z0-9-]+)(#[a-z0-9-]*)?"/gi, 'href="../$1$2"');
 
   const fileName = getTripFileName(trip);
   const filePath = path.join(TRIPS_DIR, fileName);
-  const canonicalUrl = `https://awarabanjara.in/trips/${fileName}`;
+  const canonicalUrl = `https://awarabanjara.in/trips/${fileName.replace(/\.html$/, '')}`;
   const catName = (trip.category || '').split(',')[0].replace(/_tours/gi, ' Tours').replace(/_/g, ' ').trim() || 'Himalayan Tours';
 
   // 1. Page Title & Meta
@@ -202,6 +207,10 @@ function prerenderTrip(trip, allReviews) {
   page = page.replace(/<link rel="canonical" href=".*?">/s, `<link rel="canonical" href="${canonicalUrl}">`);
   page = page.replace(/<meta property="og:url" content=".*?">/s, `<meta property="og:url" content="${canonicalUrl}">`);
   page = page.replace(/<meta property="og:title" content=".*?">/s, `<meta property="og:title" content="${trip.title || ''} — Awara Banjara">`);
+  // The template's own JSON-LD "url" is generic (points at trip-detail itself,
+  // not this specific trip) - make it trip-specific while we're already
+  // rewriting every other URL field on this page.
+  page = page.replace(/"url":\s*"https:\/\/awarabanjara\.in\/trip-detail\.html"/, `"url": "${canonicalUrl}"`);
 
   const aboutExcerpt = (trip.about_text || '').substring(0, 160);
   if (aboutExcerpt) {
@@ -365,8 +374,9 @@ function prerenderTrip(trip, allReviews) {
     `<div class="share-trip-info">\n          <h4>${trip.title || ''}</h4>\n          <p>${trip.route || ''}</p>\n        </div>`
   );
 
-  // 10. Customer reviews relevant to this trip
-  page = injectReviews(page, trip, allReviews || loadReviews(), fileName);
+  // 10. Customer reviews relevant to this trip (extensionless self-link,
+  // same clean-URL scheme as everywhere else on the page)
+  page = injectReviews(page, trip, allReviews || loadReviews(), fileName.replace(/\.html$/, ''));
 
   fs.writeFileSync(filePath, page, 'utf-8');
   console.log(`🖼️ Pre-rendered static trip page: trips/${fileName}`);

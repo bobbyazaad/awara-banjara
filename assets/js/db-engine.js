@@ -154,15 +154,15 @@
      * Construct SEO-optimized trip detail URL
      */
     buildSeoTripUrl(trip) {
-      if (!trip) return 'trip-detail.html';
+      if (!trip) return 'trip-detail';
       const tripId = trip.id;
       const catSlug = this.getCategorySlug(trip.category);
       const titleSlug = this.slugify(trip.title) || 'himalayan-expedition';
 
       if (tripId) {
-        return `trips/${catSlug}-${titleSlug}-${tripId}.html`;
+        return `trips/${catSlug}-${titleSlug}-${tripId}`;
       }
-      return `trip-detail.html?category=${encodeURIComponent(catSlug)}&trip=${encodeURIComponent(titleSlug)}`;
+      return `trip-detail?category=${encodeURIComponent(catSlug)}&trip=${encodeURIComponent(titleSlug)}`;
     },
 
     /**

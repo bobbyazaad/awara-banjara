@@ -57,7 +57,7 @@ async function loadTripDetails() {
   const urlParams = new URLSearchParams(window.location.search);
 
   let pathId = null;
-  const pathMatch = window.location.pathname.match(/-(\d+)\.html$/);
+  const pathMatch = window.location.pathname.match(/-(\d+)$/);
   if (pathMatch) {
     pathId = pathMatch[1];
   }
@@ -174,11 +174,11 @@ let _selectedSubPackage = 'N/A';
 
 function renderFullTripDetail(trip) {
   // 0. Update Address Bar to SEO Clean URL with Category & Trip Name
-  let seoRelativeUrl = 'trip-detail.html';
+  let seoRelativeUrl = 'trip-detail';
   if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.buildSeoTripUrl) {
     seoRelativeUrl = window.AwaraDB.buildSeoTripUrl(trip);
   } else if (trip.id) {
-    seoRelativeUrl = `trip-detail.html?id=${trip.id}`;
+    seoRelativeUrl = `trip-detail?id=${trip.id}`;
   }
 
   if (!window.location.pathname.includes('/trips/') && window.history && window.history.replaceState && window.location.protocol !== 'file:') {
@@ -950,9 +950,9 @@ function initBookingModalHandlers(trip) {
       const currentCategory = (trip.category || '').toLowerCase();
 
       // Current trip backlink URL
-      let currentBacklinkUrl = window.location.pathname.split('/').pop() || 'index.html';
-      if (currentBacklinkUrl.includes('trip-detail.html') && trip.id) {
-        currentBacklinkUrl = `trip-detail.html?id=${trip.id}`;
+      let currentBacklinkUrl = window.location.pathname.split('/').pop() || '/';
+      if (currentBacklinkUrl.includes('trip-detail') && trip.id) {
+        currentBacklinkUrl = `trip-detail?id=${trip.id}`;
       }
 
       // Step A: Find reviews directly matching this trip ID / Title / URL
@@ -963,7 +963,7 @@ function initBookingModalHandlers(trip) {
         const revTripName = rev.trip_name || '';
 
         if (revTripId && revTripId === currentTripId) return true;
-        if (revTripUrl && (revTripUrl.includes(`-${currentTripId}.html`) || revTripUrl.includes(`id=${currentTripId}`))) return true;
+        if (revTripUrl && (revTripUrl.includes(`-${currentTripId}`) || revTripUrl.includes(`id=${currentTripId}`))) return true;
         const rClean = clean(revTripName);
         if (rClean && currentCleanTitle && (rClean === currentCleanTitle || rClean.includes(currentCleanTitle) || currentCleanTitle.includes(rClean))) return true;
         return false;

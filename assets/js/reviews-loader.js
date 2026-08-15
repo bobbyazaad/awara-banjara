@@ -16,7 +16,7 @@ let _allReviews = [
     "customer_name": "Heli Shah",
     "trip_tag": "private",
     "trip_name": "Spiti Full Summer Circuit",
-    "trip_url": "trips/spiti-tours-spiti-full-summer-circuit-106.html",
+    "trip_url": "trips/spiti-tours-spiti-full-summer-circuit-106",
     "rating": 5,
     "date_text": "1 month ago",
     "review_text": "",
@@ -28,7 +28,7 @@ let _allReviews = [
     "customer_name": "Jainy Gandhi",
     "trip_tag": "private",
     "trip_name": "Spiti Highland Circuit Group Trip",
-    "trip_url": "trips/spiti-tours-spiti-the-highland-circuit-group-trip-111.html",
+    "trip_url": "trips/spiti-tours-spiti-the-highland-circuit-group-trip-111",
     "rating": 5,
     "date_text": "1 month ago",
     "review_text": "My bucketlist trip just got ticked. So happy to complete it with Awara Banjara experiences, everything was very well managed and the views from homestays were 10/10. Chandra Taal lake was breathtaking!",
@@ -40,7 +40,7 @@ let _allReviews = [
     "customer_name": "Divya mehta",
     "trip_tag": "private",
     "trip_name": "Escape to Zanskar Group Trip",
-    "trip_url": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
+    "trip_url": "trips/ladakh-tours-escape-to-zanskar-group-trip-105",
     "rating": 5,
     "date_text": "1 month ago",
     "review_text": "I would like to express my sincere appreciation to the Awara Banjara team for their excellent support and guidance throughout the travel process. They were professional, responsive, supportive...",
@@ -52,7 +52,7 @@ let _allReviews = [
     "customer_name": "Dhruvi Shah",
     "trip_tag": "private",
     "trip_name": "Spiti Winter 4x4 Expedition",
-    "trip_url": "trips/spiti-tours-spiti-winter-4x4-expedition-103.html",
+    "trip_url": "trips/spiti-tours-spiti-winter-4x4-expedition-103",
     "rating": 5,
     "date_text": "1 month ago",
     "review_text": "The spiti valley road trip with Awara Banjara was very good. It was my first ever solo trip but it did not feel like one as everyone in the group was very welcoming and hospitable...",
@@ -64,7 +64,7 @@ let _allReviews = [
     "customer_name": "Dabhi Mann",
     "trip_tag": "private",
     "trip_name": "Bir Billing Paragliding & Valley Escape",
-    "trip_url": "trips/himachal-tours-bir-billing-escape-paragliding-rajgundha-valley-prashar-lake-120.html",
+    "trip_url": "trips/himachal-tours-bir-billing-escape-paragliding-rajgundha-valley-prashar-lake-120",
     "rating": 5,
     "date_text": "1 month ago",
     "review_text": "Bir was peaceful and the homestay felt like home-cooked comfort food after long days of paragliding and valley walks. Fantastic trip leads!",
@@ -76,7 +76,7 @@ let _allReviews = [
     "customer_name": "RIYA JAYESH GADA",
     "trip_tag": "private",
     "trip_name": "Kashmir Great Lakes Trek",
-    "trip_url": "trips/kashmir-tours-kashmir-great-lakes-trek-107.html",
+    "trip_url": "trips/kashmir-tours-kashmir-great-lakes-trek-107",
     "rating": 5,
     "date_text": "1 month ago",
     "review_text": "Trekking through the 7 alpine lakes in Kashmir was pure magic! Everything was seamless, safe, and exceptionally organized.",
@@ -88,7 +88,7 @@ let _allReviews = [
     "customer_name": "Ananya Sharma",
     "trip_tag": "bike",
     "trip_name": "Zanskar Moto Passage",
-    "trip_url": "trips/ladakh-tours-zanskar-moto-passage-the-monolith-circuit-100.html",
+    "trip_url": "trips/ladakh-tours-zanskar-moto-passage-the-monolith-circuit-100",
     "rating": 5,
     "date_text": "2 weeks ago",
     "review_text": "The whole Zanskar trip was handled beautifully — great riders, warm homestays and a trip leader who knew every turn of the route. Unforgettable Himalayan experience!",
@@ -100,7 +100,7 @@ let _allReviews = [
     "customer_name": "Karan Mehta",
     "trip_tag": "bike",
     "trip_name": "Spiti Circuit Moto Expedition",
-    "trip_url": "trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116.html",
+    "trip_url": "trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116",
     "rating": 5,
     "date_text": "3 weeks ago",
     "review_text": "Best stay for anyone looking for a quiet, beautiful getaway — the whole crew knew the mountains and valleys inside out.",
@@ -252,7 +252,7 @@ function resolveReviewTripUrl(rev) {
     }
   }
 
-  return 'tour-packages.html';
+  return 'tour-packages';
 }
 
 function getInitialAvatar(name) {

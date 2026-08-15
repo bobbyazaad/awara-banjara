@@ -5,22 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redirecting... | Awara Banjara</title>
   <script>
-    (function() {
-      var path = window.location.pathname;
-      // Handle trailing /admin -> admin.html
-      if (path.endsWith('/admin') || path.endsWith('/admin/')) {
-        window.location.replace(window.location.origin + path.replace(/\/admin\/?$/, '/admin.html'));
-        return;
-      }
-      // Handle extensionless HTML pages
-      if (!path.includes('.')) {
-        var cleanPath = path.endsWith('/') ? path.slice(0, -1) : path;
-        window.location.replace(window.location.origin + cleanPath + '.html' + window.location.search);
-        return;
-      }
-      // Default fallback to home
-      window.location.replace(window.location.origin + '/index.html');
-    })();
+    // server.js now handles clean-URL routing and .html->extensionless
+    // redirects itself, so this only ever fires for a genuinely missing
+    // asset (image/script/etc) - just send the visitor home.
+    window.location.replace(window.location.origin + '/');
   </script>
 </head>
 <body style="background:#0b0f0e; color:#fff; font-family:sans-serif; text-align:center; padding-top:100px;">

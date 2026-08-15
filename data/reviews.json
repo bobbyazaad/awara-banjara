@@ -42,13 +42,13 @@
     "rating": 5,
     "date_text": "1 month ago",
     "review_text": "The spiti valley road trip with Awara Banjara was very good. It was my first ever solo trip but it did not feel like one as everyone in the group was very welcoming and hospitable...",
-    "avatar_url": "assets/images/trips/img_1786712213166____5_.jpg",
+    "avatar_url": "assets/images/trips/img_1786785624020____5_.jpg",
     "featured": true,
-    "created_at": "2026-08-14T12:56:56.334Z",
+    "created_at": "2026-08-15T09:20:27.479Z",
     "trip_id": "106",
     "cover_image": "",
     "images": [],
-    "updated_at": "2026-08-14T12:56:56.398Z"
+    "updated_at": "2026-08-15T09:20:27.562Z"
   },
   {
     "id": "rev_205",
@@ -59,13 +59,13 @@
     "rating": 5,
     "date_text": "1 month ago",
     "review_text": "Bir was peaceful and the homestay felt like home-cooked comfort food after long days of paragliding and valley walks. Fantastic trip leads!",
-    "avatar_url": "assets/images/trips/img_1786712255808____4_.jpg",
+    "avatar_url": "assets/images/trips/img_1786785639730____4_.jpg",
     "featured": true,
-    "created_at": "2026-08-14T12:57:36.684Z",
+    "created_at": "2026-08-15T09:20:41.983Z",
     "trip_id": "116",
     "cover_image": "",
     "images": [],
-    "updated_at": "2026-08-14T12:57:36.758Z"
+    "updated_at": "2026-08-15T09:20:42.054Z"
   },
   {
     "id": "rev_206",
@@ -76,13 +76,13 @@
     "rating": 5,
     "date_text": "1 month ago",
     "review_text": "Trekking through the 7 alpine lakes in Kashmir was pure magic! Everything was seamless, safe, and exceptionally organized.",
-    "avatar_url": "assets/images/trips/img_1786712334711_Divya.jpg",
+    "avatar_url": "assets/images/trips/img_1786785655773_Divya.jpg",
     "featured": true,
-    "created_at": "2026-08-14T12:59:00.133Z",
+    "created_at": "2026-08-15T09:20:57.693Z",
     "trip_id": "105",
     "cover_image": "",
     "images": [],
-    "updated_at": "2026-08-14T12:59:00.206Z"
+    "updated_at": "2026-08-15T09:20:57.765Z"
   },
   {
     "id": "rev_207",
@@ -93,12 +93,12 @@
     "rating": 5,
     "date_text": "2 weeks ago",
     "review_text": "The whole Zanskar trip was handled beautifully — great riders, warm homestays and a trip leader who knew every turn of the route. Unforgettable Himalayan experience!",
-    "avatar_url": "assets/images/trips/img_1786712349995_Anjali.jpg",
+    "avatar_url": "assets/images/trips/img_1786785667932_Anjali.jpg",
     "featured": true,
-    "created_at": "2026-08-14T12:59:11.150Z",
+    "created_at": "2026-08-15T09:21:10.226Z",
     "trip_id": "1786620306781",
     "cover_image": "",
     "images": [],
-    "updated_at": "2026-08-14T12:59:11.222Z"
+    "updated_at": "2026-08-15T09:21:10.307Z"
   }
 ]

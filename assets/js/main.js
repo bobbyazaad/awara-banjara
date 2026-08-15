@@ -306,6 +306,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Deep link: opening the site at #book (e.g. for sharing a direct link
+  // straight to the inquiry form) auto-opens the same modal as the hero
+  // Book Now button.
+  if (window.location.hash === '#book') {
+    openTripModal("Let's Plan Your Next Journey.", 'assets/images/trips/gonbo-rangjon.jpg');
+  }
+
   // Attach click handlers to all cards in Domestic & International Destinations sections
   var destSections = document.querySelectorAll('#domestic-dest-section, #intl-dest-section');
   destSections.forEach(function (section) {

@@ -1804,7 +1804,7 @@
   {
     "id": 116,
     "title": "Spiti Circuit & Chandratal Lake Moto-Expedition",
-    "duration": "10 Days / 9 Nights",
+    "duration": "11 Days / 10 Nights",
     "price": "₹22,499",
     "image_url": "assets/images/trips/trip_116_image_url.jpg",
     "link": "trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116.html",
@@ -1868,12 +1868,17 @@
         "day": 10,
         "title": "Manali to Delhi Departure",
         "details": "Self-exploration in Manali during the day. Board the overnight Volvo bus back to Delhi in the evening. Enjoy a free day in Manali—visit Old Manali cafes, Hadimba Temple, or shop on Mall Road. Board the evening Volvo bus back to Delhi, arriving the following morning"
+      },
+      {
+        "day": 11,
+        "title": "Arrival in Delhi",
+        "details": "Arrive at the Delhi pickup point early in the morning. Disembark with unforgettable memories of your Spiti circuit expedition."
       }
     ],
     "inclusions": [
       "Delhi to Manali & Manali to Delhi Volvo Bus Tickets",
-      "Accommodation for 9 Nights (Hotels & Campsite on sharing basis)",
-      "Breakfast and Dinner at all stay locations",
+      "Accommodation for 8 Nights (Hotels & Campsite on sharing basis)",
+      "8 Breakfast and  8 Dinner at all stay locations",
       "Royal Enfield Bike with Fuel / SUV Transfer (as per chosen package)",
       "Experienced Trip Captain & Support Staff / Mechanic",
       "Permits and Inner Line Clearance for Spiti Region",
@@ -2040,7 +2045,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-15T09:28:18.061Z"
+    "updated_at": "2026-08-15T09:49:41.871Z"
   },
   {
     "id": 118,

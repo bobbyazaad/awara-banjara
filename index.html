@@ -31,7 +31,7 @@
 <link rel="preload" as="image" href="assets/images/hero/spiti-hero.jpg" fetchpriority="high">
 
 <link rel="icon" type="image/png" href="assets/images/logo/favicon.png?v=2.0">
-<link rel="stylesheet" href="assets/css/style.css?v=ee08d2039f">
+<link rel="stylesheet" href="assets/css/style.css?v=297160fb37">
 
 <!-- JSON-LD Structured Data: TravelAgency & Organization -->
 <script type="application/ld+json">
@@ -695,7 +695,7 @@
 
 <!-- ============ TRIP PLANNING MODAL POPUP ============ -->
 <div class="trip-modal-overlay" id="tripModal" aria-hidden="true">
-  <div class="trip-modal-container" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="trip-modal-container" role="dialog" aria-modal="true" aria-labelledby="modalDestTitle">
     <button class="trip-modal-close" id="closeTripModal" aria-label="Close modal">&times;</button>
 
     <div class="trip-modal-grid">
@@ -703,18 +703,45 @@
       <div class="trip-modal-visual">
         <img id="modalDestImg" src="assets/images/trips/gonbo-rangjon.jpg" alt="Escape the ordinary.">
         <h2 id="modalDestTitle" class="modal-dest-heading">Escape the ordinary.</h2>
-        <div class="modal-dest-subtitle">Plan your next trip</div>
+        <div class="modal-dest-subtitle">Don't just dream travel! 🔥</div>
+        <p class="modal-dest-tagline">Tell us where you'd like to go. We will take care of the rest!</p>
       </div>
 
       <!-- Right Side: Trip Planning Form -->
       <div class="trip-modal-content">
-        <h2 id="modalTitle" class="modal-form-title">Plan Your Next Trip</h2>
-
         <form class="trip-modal-form" id="tripModalForm">
           <div class="form-group">
             <input type="text" id="tripModalName" class="modal-input" placeholder="Your Name" required>
           </div>
 
+          <div class="form-group">
+            <input type="text" id="tripModalCity" class="modal-input" placeholder="Your City">
+          </div>
+
+          <div class="form-group">
+            <select id="tripModalDestination" class="modal-input modal-select" required>
+              <option value="" disabled selected>Preferred Destination</option>
+              <option value="spiti_tours">Spiti</option>
+              <option value="himachal_tours">Himachal</option>
+              <option value="kashmir_tours">Kashmir</option>
+              <option value="ladakh_tours">Ladakh</option>
+              <option value="heart_of_india_tours">Heart of India</option>
+              <option value="northeast_india_tours">North-East India</option>
+              <option value="south_india_tours">South India</option>
+              <option value="goa_tours">Goa</option>
+              <option value="rajasthan_tours">Rajasthan</option>
+              <option value="uttarakhand_tours">Uttarakhand</option>
+              <option value="international_tours">International</option>
+              <option value="women_only_tours">Women Only</option>
+              <option value="treks">Treks</option>
+              <option value="bike_tours">Bike</option>
+              <option value="festival_tours">Festival</option>
+              <option value="corporate_tours">Corporate</option>
+              <option value="educational_trips">Educational</option>
+            </select>
+          </div>
+
+          <label class="modal-callback-label">Allow us to call you back!</label>
           <div class="form-group phone-group">
             <span class="phone-prefix">+91</span>
             <input type="tel" id="tripModalPhone" class="modal-input" placeholder="Mobile No." required>
@@ -722,19 +749,6 @@
 
           <div class="form-group">
             <input type="email" id="tripModalEmail" class="modal-input" placeholder="Email (optional)">
-          </div>
-
-          <div class="form-row-2">
-            <div class="form-group">
-              <input type="text" id="tripModalDate" class="modal-input" placeholder="Date of Travel" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
-            </div>
-            <div class="form-group">
-              <input type="number" id="tripModalTravelers" class="modal-input" placeholder="Traveller Count" min="1" value="1">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <textarea id="tripModalMessage" class="modal-textarea" placeholder="Message (optional)" rows="3"></textarea>
           </div>
 
           <button type="submit" id="tripModalSubmitBtn" class="btn-connect-expert">Connect with Expert</button>
@@ -761,7 +775,7 @@
 <script src="assets/js/db-engine.js?v=ce1c9704a3"></script>
 <script src="assets/js/site-config-loader.js?v=11a073cee3"></script>
 <script src="assets/js/card-stack.js?v=41f9a5ea5d"></script>
-<script src="assets/js/main.js?v=d10f92f64a"></script>
+<script src="assets/js/main.js?v=cd6119a6cf"></script>
 <script src="assets/js/trips-loader.js?v=5243d4a2de"></script>
 <script src="assets/js/reviews-loader.js?v=c2c8ec5dde"></script>
 <script src="assets/js/postcards-loader.js?v=23e733867c"></script>

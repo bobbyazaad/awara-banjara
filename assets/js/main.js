@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (heroBookNowBtn) {
     heroBookNowBtn.addEventListener('click', function (e) {
       e.preventDefault();
-      openTripModal('Escape the ordinary.', 'assets/images/trips/gonbo-rangjon.jpg');
+      openTripModal("Let's Plan Your Next Journey.", 'assets/images/trips/gonbo-rangjon.jpg');
     });
   }
 
@@ -422,52 +422,92 @@ document.addEventListener('DOMContentLoaded', function () {
   // Handle Trip Modal Form Submission (Stores lead in Supabase trip_inquiries table)
   var tripModalForm = document.getElementById('tripModalForm');
   if (tripModalForm) {
-    tripModalForm.addEventListener('submit', function (e) {
+    tripModalForm.addEventListener('submit', async function (e) {
       e.preventDefault();
       if (e.stopPropagation) e.stopPropagation();
 
       var modalDestTitleEl = document.getElementById('modalDestTitle');
       var destTitle = modalDestTitleEl ? modalDestTitleEl.textContent.trim() : 'Destination';
 
+      var destSelect = document.getElementById('tripModalDestination');
+      var selectedDestLabel = (destSelect && destSelect.selectedIndex > 0)
+        ? destSelect.options[destSelect.selectedIndex].textContent.trim()
+        : '';
+      // Prefer the destination the visitor actually picked over the modal's
+      // own (generic marketing) heading, which no longer names a specific
+      // trip/destination now that it reads "Let's Plan Your Next Journey."
+      var effectiveTitle = selectedDestLabel || destTitle;
+
       var custName = (document.getElementById('tripModalName')?.value || '').trim();
       var custPhone = (document.getElementById('tripModalPhone')?.value || '').trim();
       var custEmail = (document.getElementById('tripModalEmail')?.value || '').trim();
-      var travelDate = (document.getElementById('tripModalDate')?.value || '').trim();
-      var travelersInput = document.getElementById('tripModalTravelers')?.value;
-      var travelers = parseInt(travelersInput || '1', 10);
-      var userMsg = (document.getElementById('tripModalMessage')?.value || '').trim();
+      var custCity = (document.getElementById('tripModalCity')?.value || '').trim();
 
       if (custPhone && !custPhone.startsWith('+')) {
         custPhone = '+91-' + custPhone.replace(/[^0-9]/g, '');
       }
 
+      // The admin inquiries view only renders name/phone/email/message (no
+      // dedicated city column), so fold both bits of context into message
+      // to make sure they're actually visible there rather than silently
+      // sitting in fields nothing displays.
+      var messageParts = [];
+      messageParts.push(selectedDestLabel ? ('Interested in: ' + selectedDestLabel) : 'Destination inquiry from website modal');
+      if (custCity) messageParts.push('Contacting from: ' + custCity);
+
       var inquiryPayload = {
         inquiry_id: 'INQ_' + Date.now(),
-        trip_id: 'dest_' + destTitle.toLowerCase().replace(/[^a-z0-9]/g, '_'),
-        trip_title: destTitle,
+        trip_id: 'dest_' + effectiveTitle.toLowerCase().replace(/[^a-z0-9]/g, '_'),
+        trip_title: effectiveTitle,
         price: 'On Request',
-        selected_date: travelDate || 'To be decided',
+        selected_date: 'To be decided',
         selected_package: 'Custom Package',
         selected_sub_package: 'none',
         customer_name: custName,
         phone: custPhone,
         email: custEmail || 'N/A',
-        travelers_count: isNaN(travelers) || travelers < 1 ? 1 : travelers,
-        message: userMsg || 'Destination inquiry from website modal',
+        customer_city: custCity || 'N/A',
+        travelers_count: 1,
+        message: messageParts.join('. '),
         status: 'new'
       };
 
-      // Asynchronous insert via AwaraDB Local Engine
-      if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.submitInquiry) {
-        window.AwaraDB.submitInquiry(inquiryPayload);
+      // Insert via AwaraDB Local Engine, and actually wait for + check the
+      // result before telling the visitor it worked. submitInquiry() has a
+      // local-storage fallback for when the server can't be reached, and
+      // that fallback used to get reported as success too - the CMS admin
+      // panel only ever reads from the server, never from that local
+      // buffer, so a submission that silently fell back was invisible in
+      // the CMS while the visitor still saw "success" and had no reason to
+      // try again.
+      var submitBtn = document.getElementById('tripModalSubmitBtn');
+      var originalBtnText = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
       }
 
-      // Instantly close the input modal
-      closeTripModalFunc();
-      tripModalForm.reset();
+      var result = { success: false };
+      try {
+        if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.submitInquiry) {
+          result = await window.AwaraDB.submitInquiry(inquiryPayload);
+        }
+      } catch (err) {
+        result = { success: false, error: err.message };
+      }
 
-      // Instantly show success confirmation modal card
-      showInquirySuccessModal();
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+      }
+
+      if (result && result.serverSynced) {
+        closeTripModalFunc();
+        tripModalForm.reset();
+        showInquirySuccessModal();
+      } else {
+        alert("Sorry, we couldn't reach our server just now - your details were not saved. Please check your connection and try again, or message us directly on WhatsApp.");
+      }
     });
   }
 

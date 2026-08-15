@@ -2239,9 +2239,10 @@ button { font-family: inherit; cursor: pointer; }
 @media (max-width: 768px) {
   .trip-modal-grid {
     grid-template-columns: 1fr;
-    max-height: 85vh;
+    max-height: 92vh;
+    max-height: 92dvh;
     overflow-y: auto;
-    gap: 16px;
+    gap: 10px;
   }
 }
 
@@ -2256,8 +2257,8 @@ button { font-family: inherit; cursor: pointer; }
 
 @media (max-width: 768px) {
   .trip-modal-visual {
-    min-height: 220px;
-    max-height: 240px;
+    min-height: 190px;
+    max-height: 190px;
   }
 }
 
@@ -2306,6 +2307,41 @@ button { font-family: inherit; cursor: pointer; }
   text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
+.modal-dest-tagline {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .modal-dest-heading {
+    top: 16px;
+    font-size: 18px;
+    line-height: 1.25;
+    letter-spacing: -0.2px;
+  }
+
+  .modal-dest-subtitle {
+    bottom: 46px;
+    left: 14px;
+    font-size: 12px;
+  }
+
+  .modal-dest-tagline {
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    left: 14px;
+    z-index: 3;
+    width: 80%;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: left;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    margin: 0;
+  }
+}
+
 /* Right Form Side */
 .trip-modal-content {
   padding: 16px 16px 12px 8px;
@@ -2320,12 +2356,17 @@ button { font-family: inherit; cursor: pointer; }
   }
 }
 
-.modal-form-title {
-  font-size: 22px;
-  font-weight: 700;
+.modal-callback-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
   color: #14140f;
-  margin-bottom: 20px;
-  text-align: left;
+  /* Was negative margins to pull this tighter against its neighbors, but
+     that's exactly the kind of thing that clips/overlaps on real devices
+     where font-box metrics differ from this browser's (seen repeatedly
+     elsewhere in this project) - a positive/zero margin plus the flex
+     gap on .trip-modal-form is a few px less tight but can't clip. */
+  margin: 0;
 }
 
 .trip-modal-form {
@@ -2339,8 +2380,7 @@ button { font-family: inherit; cursor: pointer; }
   width: 100%;
 }
 
-.trip-modal-form .modal-input,
-.trip-modal-form .modal-textarea {
+.trip-modal-form .modal-input {
   width: 100%;
   border: 1.5px solid #e2e2dc;
   border-radius: 10px;
@@ -2353,16 +2393,26 @@ button { font-family: inherit; cursor: pointer; }
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.trip-modal-form .modal-input::placeholder,
-.trip-modal-form .modal-textarea::placeholder {
+.trip-modal-form .modal-input::placeholder {
   color: #a0a098;
   font-weight: 400;
 }
 
-.trip-modal-form .modal-input:focus,
-.trip-modal-form .modal-textarea:focus {
+.trip-modal-form .modal-input:focus {
   border-color: #14140f;
   box-shadow: 0 0 0 3px rgba(214, 255, 63, 0.4);
+}
+
+.trip-modal-form .modal-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666660' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 38px;
 }
 
 .phone-group {
@@ -2387,12 +2437,6 @@ button { font-family: inherit; cursor: pointer; }
   border-bottom-left-radius: 0;
 }
 
-.form-row-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
 .btn-connect-expert {
   width: 100%;
   background: #d6ff3f;
@@ -2413,6 +2457,58 @@ button { font-family: inherit; cursor: pointer; }
   color: #000000;
   transform: translateY(-2px) scale(1.01);
   box-shadow: 0 10px 28px rgba(214, 255, 63, 0.65);
+}
+
+/* Placed after the base rules above (not next to the other trip-modal-*
+   mobile blocks further up) so these overrides actually win the cascade -
+   a same-specificity unconditional rule appearing later in the file beats
+   an earlier media-scoped one regardless of viewport, so this must come
+   after .trip-modal-form/.modal-input/.btn-connect-expert etc., not before.
+   Sized to fit the whole form on one phone screen with minimal/no
+   scrolling - the bigger image (headline + tagline + caption all live
+   there now) leaves less room, so spacing here stays tight. */
+@media (max-width: 768px) {
+  .modal-callback-label {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .trip-modal-form {
+    gap: 6px;
+  }
+
+  .trip-modal-form .modal-input {
+    padding: 8px 12px;
+    font-size: 13px;
+    /* Matches .phone-prefix's line-height below - <input>/<select> and
+       <span> use different default line-height algorithms ("normal"
+       resolves differently per element type) even with identical padding/
+       font-size/border, which is what caused the height mismatch here. */
+    line-height: 18px;
+  }
+
+  .trip-modal-form .modal-select {
+    background-position: right 10px center;
+    background-size: 14px;
+    padding-right: 32px;
+  }
+
+  /* .modal-input's padding shrank above, but .phone-prefix sits next to it
+     in the same flex row with its own separate padding rule that never got
+     a matching mobile override - kept its bigger desktop padding while the
+     input beside it got smaller, so the two boxes ended up different
+     heights. */
+  .phone-prefix {
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .btn-connect-expert {
+    padding: 11px;
+    font-size: 14px;
+    margin-top: 2px;
+  }
 }
 
 .job-card .job-arrow {

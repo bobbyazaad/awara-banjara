@@ -389,7 +389,12 @@ function triggerPrerender() {
       }
 
       const rawName = (payload.filename || 'uploaded_image').replace(/[^a-zA-Z0-9.\-_]/g, '_');
-      const baseNameWithoutExt = rawName.includes('.') ? rawName.substring(0, rawName.lastIndexOf('.')) : rawName;
+      const baseNameWithoutExtRaw = rawName.includes('.') ? rawName.substring(0, rawName.lastIndexOf('.')) : rawName;
+      // Some sources (e.g. images saved from Instagram) use their whole
+      // caption as the filename. Left uncapped, "img_<timestamp>_<name>.ext"
+      // can exceed the 255-byte filename limit most filesystems enforce,
+      // which throws ENAMETOOLONG and fails the upload outright.
+      const baseNameWithoutExt = baseNameWithoutExtRaw.slice(0, 80);
       const timeStamp = Date.now();
       const fileName = `img_${timeStamp}_${baseNameWithoutExt}.${ext}`;
       

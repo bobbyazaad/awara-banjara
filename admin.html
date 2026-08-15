@@ -1731,10 +1731,15 @@ Travel Insurance"></textarea>
     // waitForImageUpload below - this is what previously let a fast Save
     // click persist a filename the server never actually wrote).
     window.__dzUploadPromises = window.__dzUploadPromises || {};
+    // Set to true for an inputId when its most recent upload failed - the
+    // field still holds the guessed placeholder path in that case (never a
+    // real file), so save handlers must check this and refuse to save it.
+    window.__dzUploadFailed = window.__dzUploadFailed || {};
 
     async function waitForImageUpload(inputId) {
       const p = inputId && window.__dzUploadPromises[inputId];
       if (p) { await p; }
+      return !!(inputId && window.__dzUploadFailed[inputId]);
     }
     window.waitForImageUpload = waitForImageUpload;
 
@@ -1746,7 +1751,8 @@ Travel Insurance"></textarea>
 
       // 1. INSTANTLY update location input field under dropzone
       const rawName = (file.name || 'uploaded_image').replace(/[^a-zA-Z0-9.\-_]/g, '_');
-      const baseName = rawName.includes('.') ? rawName.substring(0, rawName.lastIndexOf('.')) : rawName;
+      const baseNameRaw = rawName.includes('.') ? rawName.substring(0, rawName.lastIndexOf('.')) : rawName;
+      const baseName = baseNameRaw.slice(0, 80);
       const ext = (rawName.includes('.') ? rawName.substring(rawName.lastIndexOf('.') + 1) : 'jpg').toLowerCase();
       const timeStamp = Date.now();
       const initialPath = `assets/images/trips/img_${timeStamp}_${baseName}.${ext}`;
@@ -1754,6 +1760,7 @@ Travel Insurance"></textarea>
       if (inputEl) {
         inputEl.value = initialPath;
         inputEl.dispatchEvent(new Event('input'));
+        if (inputEl.id) window.__dzUploadFailed[inputEl.id] = false;
       }
 
       // 2. Render local image preview + 3. upload to backend, tracked as a
@@ -1787,11 +1794,16 @@ Travel Insurance"></textarea>
               resolve(json.relativePath);
               return;
             }
+
+            if (inputEl && inputEl.id) window.__dzUploadFailed[inputEl.id] = true;
+            alert(`❌ Image upload failed: ${(json && json.error) || 'the server did not confirm the file was saved'}.\n\nDo not click Save yet - remove this image and try uploading it again.`);
           } catch (err) {
-            console.warn('Backend upload endpoint unreachable, keeping instant path.', err);
+            console.warn('Image upload failed.', err);
+            if (inputEl && inputEl.id) window.__dzUploadFailed[inputEl.id] = true;
+            alert('❌ Image upload failed - could not reach the server.\n\nDo not click Save yet - check your connection and try uploading again.');
           }
 
-          showToast(`📸 Location updated: ${initialPath}`);
+          showToast(`⚠️ Upload failed, showing unsaved preview only.`);
           resolve(initialPath);
         };
         reader.readAsDataURL(file);
@@ -2118,7 +2130,11 @@ Travel Insurance"></textarea>
 
     async function handleSaveTrip(e) {
       e.preventDefault();
-      await Promise.all(['tripImage', 'bentoImg1', 'bentoImg2', 'bentoImg3', 'bentoImg4', 'bentoImg5'].map(waitForImageUpload));
+      const imageFailures = await Promise.all(['tripImage', 'bentoImg1', 'bentoImg2', 'bentoImg3', 'bentoImg4', 'bentoImg5'].map(waitForImageUpload));
+      if (imageFailures.some(Boolean)) {
+        alert('❌ One of the images failed to upload. Please remove and re-upload it before saving.');
+        return;
+      }
       const editId = document.getElementById('editTripId').value;
       const title = document.getElementById('tripTitle').value.trim();
       const duration = document.getElementById('tripDuration').value.trim();
@@ -2744,7 +2760,11 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
       e.preventDefault();
       const saveBtn = document.getElementById('saveDestBtn');
       if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = '💾 Saving...'; }
-      await waitForImageUpload('destImageUrlInput');
+      if (await waitForImageUpload('destImageUrlInput')) {
+        alert('❌ The image failed to upload. Please remove and re-upload it before saving.');
+        if (saveBtn) { saveBtn.disabled = false; saveBtn.textContent = '💾 Save Destination Card'; }
+        return;
+      }
 
       const id = document.getElementById('editDestId').value;
       const title = document.getElementById('destTitleInput').value.trim();
@@ -2956,7 +2976,11 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
       e.preventDefault();
       const saveBtn = document.getElementById('saveReviewBtn');
       if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = '💾 Saving...'; }
-      await waitForImageUpload('revAvatarUrl');
+      if (await waitForImageUpload('revAvatarUrl')) {
+        alert('❌ The profile picture failed to upload. Please remove and re-upload it before saving.');
+        if (saveBtn) { saveBtn.disabled = false; saveBtn.textContent = '💾 Save Customer Review'; }
+        return;
+      }
 
       const id = document.getElementById('editReviewId').value;
       const customer_name = document.getElementById('revCustomerName').value.trim();
@@ -3202,7 +3226,11 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
       e.preventDefault();
       const saveBtn = document.getElementById('saveReelBtn');
       if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = '⏳ Saving Reel...'; }
-      await waitForImageUpload('reelImageUrlInput');
+      if (await waitForImageUpload('reelImageUrlInput')) {
+        alert('❌ The cover image failed to upload. Please remove and re-upload it before saving.');
+        if (saveBtn) { saveBtn.disabled = false; saveBtn.textContent = '💾 Save Instagram Reel'; }
+        return;
+      }
 
       const id = document.getElementById('editReelId').value || ('post_' + Date.now());
       const title = document.getElementById('reelTitleInput').value.trim();
@@ -3297,7 +3325,11 @@ CREATE POLICY "Allow public delete on destinations" ON public.destinations FOR D
       e.preventDefault();
       const saveBtn = document.getElementById('saveBlogBtn');
       if (saveBtn) { saveBtn.disabled = true; saveBtn.textContent = '⏳ Saving Blog...'; }
-      await waitForImageUpload('blogImageUrlInput');
+      if (await waitForImageUpload('blogImageUrlInput')) {
+        alert('❌ The cover image failed to upload. Please remove and re-upload it before saving.');
+        if (saveBtn) { saveBtn.disabled = false; saveBtn.textContent = '💾 Save Travel Blog'; }
+        return;
+      }
 
       const id = document.getElementById('editBlogId').value || ('post_' + Date.now());
       const title = document.getElementById('blogTitleInput').value.trim();

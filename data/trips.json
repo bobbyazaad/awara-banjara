@@ -3210,7 +3210,7 @@
     "duration": "5 Days / 4 Nights",
     "price": "₹9,499",
     "image_url": "assets/images/trips/trip_113_image_url.jpg",
-    "link": "trips/himachal-tours-hamta-pass-and-chandratal-trek-113.html",
+    "link": "trips/himachal-tours-hamta-pass-and-chandratal-trek-113",
     "created_at": "2026-08-02T10:30:28.098553+00:00",
     "category": "himachal_tours, women_only_tours, treks",
     "route": "Manali — Jobra — Chika — Balu Ka Ghera — Hampta Pass — Shea Goru — Chatru — Chandratal — Manali",
@@ -3225,57 +3225,97 @@
       {
         "day": 1,
         "title": "Delhi to Manali (Overnight Journey)",
-        "details": "DAY 1:Delhi to Manali (Overnight Journey)"
+        "details": "DAY 1: Delhi to Manali (Overnight Journey)"
       },
       {
         "day": 2,
-        "title": "Delhi se Manali ke liye overnight Volvo bus ya cab se journey shuru hoti hai. Yeh rasta Himachal ki scenic valleys aur Beas river ke kinare se guzarta hai. Raat bhar safar karne ke baad agli subah aap Manali pahunchte hain, jahan trek ki aage ki tayyari shuru hoti hai.",
-        "details": "Delhi se Manali ke liye overnight Volvo bus ya cab se journey shuru hoti hai. Yeh rasta Himachal ki scenic valleys aur Beas river ke kinare se guzarta hai. Raat bhar safar karne ke baad agli subah aap Manali pahunchte hain, jahan trek ki aage ki tayyari shuru hoti hai."
+        "title": "Delhi se Manali ke liye overnight Volvo bus ya cab se journey shuru hoti hai.",
+        "details": "Delhi se Manali ke liye overnight Volvo bus ya cab se journey shuru hoti hai."
       },
       {
         "day": 3,
-        "title": "Manali Arrival & Base Camp Preparation",
-        "details": "DAY 2: Manali Arrival & Base Camp Preparation"
+        "title": "Day 3",
+        "details": ""
       },
       {
         "day": 4,
-        "title": "Manali pahunch kar hotel ya camp me check-in karein aur rest karein. Is din high altitude ke liye acclimatize hona zaroori hai. Shaam ko trek leader se briefing lein, apna equipment recheck karein, aur local Mall Road explore karke last-minute trekking essentials purchase kar sakte hain.",
-        "details": "Manali pahunch kar hotel ya camp me check-in karein aur rest karein. Is din high altitude ke liye acclimatize hona zaroori hai. Shaam ko trek leader se briefing lein, apna equipment recheck karein, aur local Mall Road explore karke last-minute trekking essentials purchase kar sakte hain."
+        "title": "Manali Arrival & Base Camp Preparation Manali arrival, hotel/camp me check-in aur acclimatization. Evening briefing aur local Mall Road explore kar sakte hain.",
+        "details": "DAY 2: Manali Arrival & Base Camp Preparation Manali arrival, hotel/camp me check-in aur acclimatization. Evening briefing aur local Mall Road explore kar sakte hain."
       },
       {
         "day": 5,
-        "title": "Manali to Jobra Drive & Trek to Chika / Balu Ka Ghera",
-        "details": "DAY 3: Manali to Jobra Drive & Trek to Chika / Balu Ka Ghera"
+        "title": "Day 5",
+        "details": ""
       },
       {
         "day": 6,
-        "title": "Manali se Jobra tak scenic drive ke baad trekking trail shuru hoti hai. Pine forests, green meadows aur glacial streams ke beech se hote hue Chika se Balu Ka Ghera (approx. 11,900 ft) ki taraf aage badhte hain. Raat ko riverside campsite par tent me stay hota hai.",
-        "details": "Manali se Jobra tak scenic drive ke baad trekking trail shuru hoti hai. Pine forests, green meadows aur glacial streams ke beech se hote hue Chika se Balu Ka Ghera (approx. 11,900 ft) ki taraf aage badhte hain. Raat ko riverside campsite par tent me stay hota hai."
+        "title": "Manali to Jobra Drive & Trek to Chika / Balu Ka Ghera (11,900 ft)",
+        "details": "DAY 3:Manali to Jobra Drive & Trek to Chika / Balu Ka Ghera (11,900 ft)"
       },
       {
         "day": 7,
-        "title": "Balu Ka Ghera to Shea Goru via Hamta Pass",
-        "details": "DAY 4: Balu Ka Ghera to Shea Goru via Hamta Pass"
+        "title": "Day 7",
+        "details": ""
       },
       {
         "day": 8,
-        "title": "Yeh trek ka sabse challenging aur exciting din hota hai. Balu Ka Ghera se climb karke Hamta Pass (14,100 ft) cross karte hain. Yahan Kullu ki lush green valley ekdum se Spiti ke barren desert landscape me badal jaati hai. Descent karke Shea Goru campsite pahuchein.",
-        "details": "Yeh trek ka sabse challenging aur exciting din hota hai. Balu Ka Ghera se climb karke Hamta Pass (14,100 ft) cross karte hain. Yahan Kullu ki lush green valley ekdum se Spiti ke barren desert landscape me badal jaati hai. Descent karke Shea Goru campsite pahuchein."
+        "title": "Jobra tak scenic drive ke baad trekking trail shuru hoti hai. Pine forests aur glacial streams ke beech se hotey hue Balu Ka Ghera campsite pahuchein.",
+        "details": "Jobra tak scenic drive ke baad trekking trail shuru hoti hai. Pine forests aur glacial streams ke beech se hotey hue Balu Ka Ghera campsite pahuchein."
       },
       {
         "day": 9,
-        "title": "Shea Goru to Chatru Trek, Chandratal Visit & Volvo to DelhiShea Goru se Chatru tak downhill trek karein. Phir Chatru se vehicle ke zariye famous Chandratal Lake explore karein. Lake visit ke baad wapas Manali drive karein aur shaam/raat me Delhi ke liye overnight Volvo bus board karein, jisse aapki adventurous trek journey complete hoti hai.",
-        "details": "DAY 5: Shea Goru to Chatru Trek, Chandratal Visit & Volvo to DelhiShea Goru se Chatru tak downhill trek karein. Phir Chatru se vehicle ke zariye famous Chandratal Lake explore karein. Lake visit ke baad wapas Manali drive karein aur shaam/raat me Delhi ke liye overnight Volvo bus board karein, jisse aapki adventurous trek journey complete hoti hai."
+        "title": "Day 9",
+        "details": ""
       },
       {
         "day": 10,
-        "title": "Arrival in Delhi",
-        "details": "DAY 6: Arrival in Delhi"
+        "title": "Balu Ka Ghera to Shea Goru via Hamta Pass (14,100 ft)",
+        "details": "DAY 4: Balu Ka Ghera to Shea Goru via Hamta Pass (14,100 ft)"
       },
       {
         "day": 11,
-        "title": "Subah-subah Volvo bus se Delhi (ISBT Kashmiri Gate / Majnu ka Tilla) arrival. Yahan aapki memorable Hamta Pass aur Chandratal Trek trip ka end hota hai.",
-        "details": "Subah-subah Volvo bus se Delhi (ISBT Kashmiri Gate / Majnu ka Tilla) arrival. Yahan aapki memorable Hamta Pass aur Chandratal Trek trip ka end hota hai."
+        "title": "Day 11",
+        "details": ""
+      },
+      {
+        "day": 12,
+        "title": "Trek ka sabse exciting din! Hamta Pass cross karte hi lush green Kullu valley ekdum se Spiti ke barren desert landscape me badal jaati hai.",
+        "details": "Trek ka sabse exciting din! Hamta Pass cross karte hi lush green Kullu valley ekdum se Spiti ke barren desert landscape me badal jaati hai."
+      },
+      {
+        "day": 13,
+        "title": "Day 13",
+        "details": ""
+      },
+      {
+        "day": 14,
+        "title": "Shea Goru to Chatru, Chandratal Visit & Return Journey",
+        "details": "DAY 5: Shea Goru to Chatru, Chandratal Visit & Return Journey"
+      },
+      {
+        "day": 15,
+        "title": "Day 15",
+        "details": ""
+      },
+      {
+        "day": 16,
+        "title": "Chatru downhill trek ke baad vehicle se famous Chandratal Lake visit karein, fir Manali drive karke Delhi ke liye overnight bus board karein.",
+        "details": "Chatru downhill trek ke baad vehicle se famous Chandratal Lake visit karein, fir Manali drive karke Delhi ke liye overnight bus board karein."
+      },
+      {
+        "day": 17,
+        "title": "Day 17",
+        "details": ""
+      },
+      {
+        "day": 18,
+        "title": "DAY 06 : Subah-subah Volvo bus se Delhi (ISBT Kashmiri Gate / Majnu ka Tilla) arrival.",
+        "details": "DAY 06 : Subah-subah Volvo bus se Delhi (ISBT Kashmiri Gate / Majnu ka Tilla) arrival."
+      },
+      {
+        "day": 19,
+        "title": "Yahan aapki memorable Hamta Pass aur Chandratal Trek trip ka end hota hai.",
+        "details": ""
       }
     ],
     "inclusions": [
@@ -3429,7 +3469,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-15T16:09:15.383Z"
+    "updated_at": "2026-08-16T14:33:25.173Z"
   },
   {
     "id": 120,

@@ -85,32 +85,32 @@
           "month": "September 2026",
           "dates": [
             {
-              "id": "b_1786619936347",
+              "id": "b_1786952740375",
               "range": "4th September",
               "startDate": "2026-09-04",
               "status": "Sold Out",
-              "price": "₹16,499"
+              "price": "18,400"
             },
             {
-              "id": "b_1786619940308",
+              "id": "b_1786952769598",
               "range": "11th September",
               "startDate": "2026-09-11",
               "status": "Sold Out",
-              "price": "₹16,499"
+              "price": "18,400"
             },
             {
-              "id": "b_1786619943125",
+              "id": "b_1786952778059",
               "range": "18th September",
               "startDate": "2026-09-18",
               "status": "Sold Out",
-              "price": "₹16,499"
+              "price": "18,400"
             },
             {
-              "id": "b_1786620696931",
+              "id": "b_1786952789407",
               "range": "25th September",
               "startDate": "2026-09-25",
-              "status": "Filling Fast",
-              "price": "On Request"
+              "status": "Sold Out",
+              "price": "18,400"
             }
           ]
         }
@@ -118,15 +118,15 @@
       "faqs": [
         {
           "question": "WHAT IS THE MAXIMUM ELEVATION REACHED?",
-          "answer": "The highest elevation is 16,580 ft at Shinku La Pass."
+          "answer": "The highest point is Shinku La Pass, sitting at an altitude of 16,580 ft. You will also cross Pensi La Pass at 14,400 ft."
         },
         {
-          "question": "WHAT IS THE PAYMENT & BOOKING POLICY?",
-          "answer": "A mandatory 10% non-refundable token amount is required to confirm booking; the remaining balance is paid on Day 2 in Manali."
+          "question": "How physically demanding is this expedition?",
+          "answer": "It is a moderate-to-challenging high-altitude overland expedition. While most travel is via 4x4 or expedition vehicle, day 4 includes a multi-hour trek to Phuktal Cave Monastery, requiring good physical stamina and basic fitness"
         },
         {
-          "question": "WHAT ESSENTIALS SHOULD I CARRY?",
-          "answer": "Thermal layers, sturdy trekking shoes, sunglasses, power bank, and personal medications."
+          "question": "What is the acclimatization plan?",
+          "answer": "Day 2 is dedicated to gentle acclimatization in Manali (2,050 m) before driving over high passes. Drink plenty of water, avoid heavy exertion early on, and follow the expedition leader's safety guidelines."
         }
       ],
       "reviews": [],
@@ -137,7 +137,7 @@
       "is_featured_lemonade": false,
       "link": "trips/himachal-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781",
       "id": 1786620306781,
-      "updated_at": "2026-08-17T07:24:22.774Z",
+      "updated_at": "2026-08-17T08:15:14.545Z",
       "created_at": "2026-08-13T11:25:06.969Z"
     },
     {

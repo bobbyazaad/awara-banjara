@@ -3211,7 +3211,7 @@
       "duration": "5 Days / 4 Nights",
       "price": "₹9,499",
       "image_url": "assets/images/trips/trip_113_image_url.jpg",
-      "link": "trips/himachal-tours-hamta-pass-and-chandratal-trek-113.html",
+      "link": "trips/himachal-tours-hamta-pass-and-chandratal-trek-113",
       "created_at": "2026-08-02T10:30:28.098553+00:00",
       "category": "himachal_tours, women_only_tours, treks",
       "route": "Manali — Jobra — Chika — Balu Ka Ghera — Hampta Pass — Shea Goru — Chatru — Chandratal — Manali",
@@ -3221,12 +3221,32 @@
       "bento_img_3": "assets/images/trips/trip_113_bento_img_3.jpg",
       "bento_img_4": "assets/images/trips/trip_113_bento_img_4.jpg",
       "bento_img_5": "assets/images/trips/trip_113_bento_img_5.jpg",
-      "about_text": "Experience one of the most dramatic crossover treks in the Indian Himalayas—the breathtaking Hamta Pass & Chandratal Trek with Awara Banjara. This adventure takes you from the lush green valleys of Kullu to the stark, desert-like landscapes of Spiti, offering a complete Himalayan transformation in just a few days. Starting from Manali, trek through thick pine forests, flower-filled meadows, glacier streams, and tower over the landscape at Hamta Pass (14,100 ft) before concluding at the magical crescent-shaped Chandratal Lake.",
+      "about_text": "The Ultimate Himalayan Crossover: Hamta Pass & Chandratal Lake Trek\n🌲 Beyond Trails, Into the Soul of the Himalayas with Awara Banjara\nThere are treks that test your stamina, and then there are journeys that transform who you are. The Hamta Pass and Chandratal Lake Trek is not merely a high-altitude trail; it is a sacred crossover between two entirely different worlds, designed for those who carry the restless spirit of a wanderer—a true Awara Banjara.\n\nNestled at an elevation of 14,100 ft, Hamta Pass stands as a dramatic natural bridge connecting the lush, whispering pine forests and emerald meadows of Kullu Valley with the stark, moon-like, and mystical desert landscapes of Lahaul & Spiti. Over the course of 5 unforgettable days, you don’t just walk; you immerse yourself in the raw, untamed rhythm of the Himalayas.\n\n✨ The Crossover Experience: Two Worlds in One Journey\nFrom Pine Forests to Floral Valleys (Jobra to Chika): Your adventure begins where the paved roads surrender to nature. Walking alongside the roaring Rani Nallah, you cross wooden bridges, alpine clearings, and birch groves, entering a secluded paradise where the air feels lighter and the silence speaks volumes.\n\nThe Valley of Boulders & Glacial Streams (Balu Ka Ghera): Trek through vast sandy riverbeds, cross bone-chilling glacial streams that awaken every nerve, and set up camp surrounded by towering peaks. This is where the magic truly begins under a blanket of a million stars.\n\nThe High Summit at 14,100 ft (Hampta Pass to Shea Goru): Push your boundaries on the summit day. Standing atop Hamta Pass, you witness a panoramic spectacle unlike any other—one side draped in lush green clouds, and the other revealing the rugged, snow-crowned, barren ridges of Spiti. Descending into the tranquil valley of Shea Goru feels like landing on another planet.\n\nThe Sacred Crescent (Chandratal Lake): Culminate your expedition with an adrenaline-pumping drive through the rocky terrain of Chatru to the legendary Chandratal (The Moon Lake). Sitting at over 14,000 ft, its mystical, shifting turquoise waters reflect the vast Himalayan sky, leaving you in pure awe.\n\nThe Legendary Return via Atal Tunnel: Wind down with an iconic mountain drive, crossing the engineering marvel of Atal Tunnel back into the warm embrace of Manali.\n\n🎸 The Awara Banjara Tribe: Why Travel With Us?\nAt Awara Banjara, we don’t believe in mechanical tour packages or rigid schedules. We believe in connections, storytelling, and authentic mountain brotherhood.\n\nCamaraderie & Campfire Vibes: Our campsites aren't just for resting; they are spaces where strangers turn into lifelong friends. Picture sitting around a crackling campfire, gazing at the Milky Way, sharing deep stories, and singing along to raw acoustic guitar tunes in the heart of the wilderness.\n\nTrek Leaders Who Feel Like Family: Led by seasoned, passionate mountain souls and certified leaders who prioritize your safety, comfort, and mountain ethos above all else.\n\nHigh-End Nomadic Comfort: We balance raw adventure with seamless hospitality—from cozy, alpine-grade dome tents and warm sleeping bags to hot, delicious mountain meals made with pure love.\n\nTravel with a Soul: We tread lightly, respecting the mountains, local culture, and nature, leaving only footprints and taking back memories that outlive the journey.\n\n🏔️ Quick Trip Summary\nTrip Duration: 5 Days / 4 Nights\n\nHighest Altitude: 14,100 ft (Hamta Pass)\n\nTrek Grade: Moderate (Perfect for fit beginners & adventure enthusiasts)\n\nBase Camp / Starting Point: Manali, Himachal Pradesh\n\nRoute: Manali → Jobra → Chika → Balu Ka Ghera → Hampta Pass → Shea Goru → Chatru → Chandratal → Manali",
       "itinerary": [
         {
           "day": 1,
-          "title": "Day 1 : xyz",
-          "details": "aqaertyuiop[poiujhkjmnbvcxzawertyu"
+          "title": "Drive from Manali to Jobra Village (40min); Trek to Chikka (3-4 Hours)",
+          "details": "Once you arrive at Manali, you’ll be given a packed lunch followed by an introduction to our seasoned trek guides. They’ll brief you about the trail and clear all your doubts. The trek from Jobra to Chikka offers stunning transitions through lush green pine forests and the pristine beauty of Kullu Valley. After a 2-4 hour scenic hike, reach the riverside Chikka campsite, settle into your tents, and relax."
+        },
+        {
+          "day": 2,
+          "title": "Chikka to Balu Ka Ghera (4-5 Hours Trek)",
+          "details": "Experience the vibrant Chikka valley on a 9 km scenic trek taking 4-5 hours to Balu Ka Ghera. The trail unfolds with cascading waterfalls, rocky riverbanks, and towering snow peaks. Cross icy glacial streams and arrive at the picturesque campsite of Balu Ka Ghera. Unwind in your alpine tents, stargaze under clear night skies, and enjoy an evening acoustic guitar session."
+        },
+        {
+          "day": 3,
+          "title": "Balu Ka Ghera to Shea Goru via Hampta Pass Summit (7-8 Hours Trek)",
+          "details": "Summit day! Embark on a thrilling climb from Balu Ka Ghera to the mighty Hampta Pass at 14,100 ft. Witness the dramatic crossover from the green valleys of Kullu to the stark, rugged cold desert of Lahaul & Spiti. After celebrating at the pass, take a gradual descent down to the serene, riverside campsite of Shea Goru."
+        },
+        {
+          "day": 4,
+          "title": "Shea Goru to Chatru (3-4 Hours Trek) & Drive to Chandratal Lake",
+          "details": "Savor a warm mountain breakfast before descending from Shea Goru to Chatru. From Chatru, board the rugged 4x4 vehicles for a scenic drive to the legendary, crescent-shaped Chandratal Lake (Moon Lake). Spend time soaking in the magical turquoise waters reflecting the Himalayan skies before driving back to Chatru basecamp for dinner and overnight tent stay."
+        },
+        {
+          "day": 5,
+          "title": "Drive from Chatru to Manali via Atal Tunnel",
+          "details": "Post breakfast, depart from Chatru at 8:00 AM for an adventurous road trip back to Manali. Drive through the rugged mountain terrain and cross the engineering marvel of Atal Tunnel. Arrive back at Manali base camp by afternoon with a heart full of unforgettable Banjara memories and lifelong friendships."
         }
       ],
       "inclusions": [
@@ -3380,7 +3400,7 @@
       "is_featured_reels": true,
       "is_featured_stack": true,
       "is_featured_lemonade": true,
-      "updated_at": "2026-08-17T08:18:01.559Z"
+      "updated_at": "2026-08-17T08:23:40.525Z"
     },
     {
       "id": 120,
@@ -3496,7 +3516,7 @@
       "duration": "6 Days / 5 Nights",
       "price": "₹11,499",
       "image_url": "assets/images/trips/trip_105_image_url.jpg",
-      "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105",
+      "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
       "created_at": "2026-08-01T17:45:30.495451+00:00",
       "category": "ladakh_tours, treks, bike_tours, corporate_tours",
       "route": "Delhi — Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa — Delhi",

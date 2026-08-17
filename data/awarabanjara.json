@@ -3965,6 +3965,23 @@
   ],
   "reviews": [
     {
+      "id": "rev_1786958542074",
+      "customer_name": "Samarth Rana",
+      "trip_id": "1786620306781",
+      "trip_tag": "Joined Group Trip",
+      "trip_name": "Zanskar Valley Expedition with Padum & Drang Drung",
+      "trip_url": "trips/himachal-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781",
+      "rating": 5,
+      "avatar_url": "assets/images/trips/img_1786958533515_download__1_.jpg",
+      "cover_image": "",
+      "images": [],
+      "review_text": "Honestly, Zanskar felt like another world! Standing in front of Gombo Rangzan and doing the hike to Phuktal Monastery were absolute highlights. The roads are rugged, but our trip lead and drivers handled everything so smoothly. Warm homestays, great food, and amazing group vibes throughout. Truly grateful to the Awara Banjara team!",
+      "featured": true,
+      "created_at": "2026-08-17T09:22:22.074Z",
+      "updated_at": "2026-08-17T09:22:23.470Z",
+      "date_text": "Recently"
+    },
+    {
       "id": "rev_201",
       "customer_name": "Sachin Kumar",
       "trip_tag": "Joined Group Trip",

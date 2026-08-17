@@ -18,42 +18,42 @@
         {
           "day": 1,
           "title": "Delhi to Manali",
-          "details": "Overnight Journey in Volvo AC bus / private expedition vehicle. Assemble in Delhi by 5:00 PM for registration and briefing."
+          "details": "Assemble in Delhi by 5:00 PM for registration, roll call, and a short pre-departure orientation with your expedition coordinators. Board a premium AC Volvo coach (or dedicated expedition vehicle) and set off on an overnight journey towards Himachal Pradesh. Sit back, relax, and transition from the urban bustle to the crisp air of the Himalayan foothills."
         },
         {
           "day": 2,
           "title": "Manali Arrival",
-          "details": "Local Exploration & Acclimatization. Check-in, visit Old Manali cafes, Hadimba Temple, Mall Road, and attend evening safety briefing."
+          "details": "Arrive in Manali by morning and check into your hotel. Dedicate the afternoon to gentle acclimatization—explore the historic Hadimba Temple, wander through the vibrant culture and cafes of Old Manali, and stroll down Mall Road. In the evening, gather for a comprehensive safety briefing, route orientation, and mandatory high-altitude gear inspection led by your expedition leader."
         },
         {
           "day": 3,
           "title": "Manali to Gombo Rangzan via Shinku La Pass",
-          "details": "Drive through Atal Tunnel and climb Shinku La Pass (16,580 ft) to reach the holy monolith Gombo Rangzan. Stargazing stay at Kargyak/Purne."
+          "details": "Begin the high-altitude journey driving through the engineering marvel of the Atal Tunnel into Lahaul Valley. Ascend the formidable Shinku La Pass ($16,580\\text{ ft}$), crossing from Himachal into the rugged wilderness of Zanskar. Arrive at the foot of Gombo Rangzan, the sacred and solitary rock monolith. Enjoy an unforgettable evening of high-altitude stargazing and an overnight stay at Kargyak or Purne."
         },
         {
           "day": 4,
           "title": "Purne to Padum via Phuktal Monastery Hike",
-          "details": "Cliffside trek to the ancient 12th-century Phuktal Cave Monastery over Tsarap River, then drive through Lungnak Valley to Padum."
+          "details": "Embark on an iconic day trek to the 12th-century Phuktal Cave Monastery, a spectacular architectural wonder built into a sheer cliff face high above the turquoise Tsarap River. Interact with local monks and experience the tranquil sanctuary of the cave complex. Return to the trail head and continue the overland drive through the striking landscapes of Lungnak Valley to reach Padum, the administrative heart of Zanskar."
         },
         {
           "day": 5,
           "title": "Padum Sightseeing",
-          "details": "Visit Karsha Monastery (largest in Zanskar) and drive to Pensi La Pass (14,400 ft) for views of Drang Drung Glacier. Overnight in Padum."
+          "details": "Spend the day exploring the highlights of central Zanskar. Visit Karsha Monastery, the largest and most prominent Gelugpa monastery in the region, offering panoramic valley views. Later, drive up to Pensi La Pass ($14,400\\text{ ft}$) to witness the jaw-dropping expanse of the Drang Drung Glacier, one of the largest glaciers in the Indian Himalayas. Return to Padum for an overnight stay."
         },
         {
           "day": 6,
           "title": "Padum to Jispa",
-          "details": "Re-cross Shinku La Pass into Lahaul Valley and relax with a riverside bonfire in Jispa."
+          "details": "Bid farewell to central Zanskar and trace your route back across Shinku La Pass, descending into the lush green valley of Lahaul. Arrive at the scenic village of Jispa by late afternoon. Unwind by the Bhaga River with a warm group bonfire, sharing stories from the trail under the stars."
         },
         {
           "day": 7,
           "title": "Jispa to Manali & Overnight Journey to Delhi",
-          "details": "Pass Sissu Waterfall and Atal Tunnel to Manali. Free time for local shopping/cafes before 6:00 PM Volvo to Delhi."
+          "details": "After breakfast, drive from Jispa back toward Manali, passing the picturesque Sissu Waterfall and re-transiting the Atal Tunnel. Arrive in Manali with free time for souvenir shopping, exploring local markets, or grabbing an early dinner. Re-group by 6:00 PM to board your overnight Volvo coach back to Delhi."
         },
         {
           "day": 8,
           "title": "Arrival in Delhi",
-          "details": "Reach Delhi early morning (7:00 AM - 8:30 AM). Expedition concludes."
+          "details": "Reach Delhi early in the morning (between 7:00 AM and 8:30 AM). Disembark at the drop-off point, marking the end of an extraordinary high-altitude Zanskar wilderness expedition with lifelong memories."
         }
       ],
       "inclusions": [
@@ -135,9 +135,9 @@
       "is_featured_reels": true,
       "is_featured_stack": true,
       "is_featured_lemonade": false,
-      "link": "trips/himachal-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781.html",
+      "link": "trips/himachal-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781",
       "id": 1786620306781,
-      "updated_at": "2026-08-15T16:26:37.850Z",
+      "updated_at": "2026-08-17T07:24:22.774Z",
       "created_at": "2026-08-13T11:25:06.969Z"
     },
     {
@@ -3586,7 +3586,7 @@
       "duration": "6 Days / 5 Nights",
       "price": "₹11,499",
       "image_url": "assets/images/trips/trip_105_image_url.jpg",
-      "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105",
+      "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
       "created_at": "2026-08-01T17:45:30.495451+00:00",
       "category": "ladakh_tours, treks, bike_tours, corporate_tours",
       "route": "Delhi — Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa — Delhi",

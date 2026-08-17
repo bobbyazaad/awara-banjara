@@ -3211,7 +3211,7 @@
       "duration": "5 Days / 4 Nights",
       "price": "₹9,499",
       "image_url": "assets/images/trips/trip_113_image_url.jpg",
-      "link": "trips/himachal-tours-hamta-pass-and-chandratal-trek-113",
+      "link": "trips/himachal-tours-hamta-pass-and-chandratal-trek-113.html",
       "created_at": "2026-08-02T10:30:28.098553+00:00",
       "category": "himachal_tours, women_only_tours, treks",
       "route": "Manali — Jobra — Chika — Balu Ka Ghera — Hampta Pass — Shea Goru — Chatru — Chandratal — Manali",
@@ -3496,7 +3496,7 @@
       "duration": "6 Days / 5 Nights",
       "price": "₹11,499",
       "image_url": "assets/images/trips/trip_105_image_url.jpg",
-      "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
+      "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105",
       "created_at": "2026-08-01T17:45:30.495451+00:00",
       "category": "ladakh_tours, treks, bike_tours, corporate_tours",
       "route": "Delhi — Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa — Delhi",
@@ -3574,55 +3574,55 @@
       "sub_package_options": "",
       "departure_dates": [
         {
+          "month": "September 2026",
           "dates": [
             {
-              "id": "b_1785606206286",
-              "price": "11,499",
-              "range": "7th August",
-              "status": "Available",
-              "startDate": "2026-08-07"
-            },
-            {
-              "id": "b_1785606211053",
-              "price": "11,499",
-              "range": "14th August",
-              "status": "Available",
-              "startDate": "2026-08-14"
-            },
-            {
-              "id": "b_1785606215803",
-              "price": "11,499",
-              "range": "21th August",
-              "status": "Available",
-              "startDate": "2026-08-21"
-            },
-            {
-              "id": "b_1785606224135",
-              "price": "11,499",
-              "range": "28th August",
+              "id": "b_1786954703327",
+              "range": "4th September",
+              "startDate": "2026-09-04",
               "status": "Sold Out",
-              "startDate": "2026-08-28"
+              "price": "11,499"
+            },
+            {
+              "id": "b_1786954719019",
+              "range": "11th September",
+              "startDate": "2026-09-11",
+              "status": "Filling Fast",
+              "price": "11,499"
+            },
+            {
+              "id": "b_1786954730672",
+              "range": "18th September",
+              "startDate": "2026-09-18",
+              "status": "Sold Out",
+              "price": "11,499"
+            },
+            {
+              "id": "b_1786954742462",
+              "range": "25th September",
+              "startDate": "2026-09-25",
+              "status": "Sold Out",
+              "price": "11,499"
             }
-          ],
-          "month": "August 2026"
+          ]
         }
       ],
       "faqs": [
         {
-          "question": "WHAT IS THE STARTING AND ENDING POINT OF THE TRIP?",
-          "answer": "The trip starts and ends in Delhi with overnight Volvo transfers to Manali."
+          "question": "What route does this itinerary follow?",
+          "answer": "The circuit covers Delhi — Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa — Delhi, taking you past the Atal Tunnel and deep into the pristine Lahaul and Zanskar valleys."
         },
         {
           "question": "IS TREKKING REQUIRED ON THIS TRIP?",
-          "answer": "Yes, a day trek is required to reach the cliffside Phuktal Gompa from the road head."
+          "answer": "Yes, Day 4 includes a day trek along river trails to reach the cliffside Phuktal Gompa (a monastery built directly into a natural cave) from the road head. Good basic fitness and comfortable trekking boots are recommended."
         },
         {
           "question": "WHAT KIND OF ACCOMMODATION IS PROVIDED?",
           "answer": "A mix of hotels/guesthouses in Manali & Jispa, along with high-altitude campsites near Gonbo Rangjon."
         },
         {
-          "question": "WHAT MEALS ARE INCLUDED IN THE PACKAGE?",
-          "answer": "Breakfast and Dinner (MAP Plan) are included starting from Day 2 dinner to Day 5 breakfast."
+          "question": "What medical safety measures are in place for high altitude?",
+          "answer": "What medical safety measures are in place for high altitude?"
         }
       ],
       "reviews": [
@@ -3653,7 +3653,7 @@
       "is_featured_reels": true,
       "is_featured_stack": true,
       "is_featured_lemonade": true,
-      "updated_at": "2026-08-17T07:18:52.560Z"
+      "updated_at": "2026-08-17T08:23:14.549Z"
     },
     {
       "id": 106,

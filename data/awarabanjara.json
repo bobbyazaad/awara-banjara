@@ -117,28 +117,44 @@
       ],
       "faqs": [
         {
-          "question": "WHAT IS THE MAXIMUM ELEVATION REACHED?",
-          "answer": "The highest point is Shinku La Pass, sitting at an altitude of 16,580 ft. You will also cross Pensi La Pass at 14,400 ft."
+          "question": "WHAT ARE THE MAXIMUM ELEVATIONS REACHED ALONG THIS CIRCUIT AND HOW ARE HIGH-ALTITUDE PASSES HANDLED?",
+          "answer": "The highest point encountered on this trip is Shinku La Pass, sitting at a formidable altitude of 16,580 ft (5,053 m), which serves as the gateway into the Zanskar Valley. You will also navigate through Pensi La Pass at 14,400 ft (4,390 m) while heading toward the Drang Drung Glacier. To manage altitude comfortably, the itinerary includes gradual ascents, adequate resting periods, and continuous hydration monitoring."
         },
         {
-          "question": "How physically demanding is this expedition?",
-          "answer": "It is a moderate-to-challenging high-altitude overland expedition. While most travel is via 4x4 or expedition vehicle, day 4 includes a multi-hour trek to Phuktal Cave Monastery, requiring good physical stamina and basic fitness"
+          "question": "HOW PHYSICALLY DEMANDING IS THIS EXPEDITION AND WHAT FITNESS LEVEL IS REQUIRED TO PARTICIPATE?",
+          "answer": "This trip is categorized as a moderate-to-challenging high-altitude overland expedition. While primary travel takes place in 4x4 or expedition vehicles, Day 4 features a multi-hour round-trip trek to the cliffside Phuktal Cave Monastery across rugged mountain terrain. Participants should possess good physical stamina, cardiovascular endurance, and basic hiking fitness to comfortably handle the trails and variable weather conditions."
         },
         {
-          "question": "WHAT PACKING ESSENTIALS ARE REQUIRED?",
-          "answer": "Pack heavy thermal layers, a fleece jacket, a heavy down jacket, waterproof windbreakers, sturdy trekking boots with good grip, UV-protection sunglasses, high-SPF sunscreen, lip balm, a thermal water bottle, power banks, and a personal first-aid kit with prescribed medication."
+          "question": "WHAT IS THE ACCLIMATIZATION STRATEGY TO PREVENT HIGH-ALTITUDE SICKNESS (AMS) DURING THE JOURNEY?",
+          "answer": "Day 2 is fully dedicated to gentle acclimatization and rest in Manali (2,050 m) before driving toward the higher mountain passes. Our team enforces a structured routine: maintaining high fluid intake, avoiding heavy physical exertion during the initial days, prohibiting alcohol consumption at high altitudes, and monitoring daily oxygen levels with pulse oximeters."
         },
         {
-          "question": "IS MOBILE NETWORK CONNECTIVITY AVAILABLE DURING THE TRIP?",
-          "answer": "Connectivity is very limited. BSNL and Jio work reasonably well in Padum, but expect zero network coverage across Shinku La Pass, Gombo Rangzan, Phuktal, and Pensi La Pass."
+          "question": "WHAT TYPE AND QUALITY OF ACCOMMODATIONS ARE PROVIDED THROUGHOUT THE ENTIRE EXPEDITION?",
+          "answer": "Accommodations are tailored to the rugged geography of Zanskar and comprise a mix of comfortable standard hotels in Manali and Padum, combined with authentic, basic homestays and scenic high-altitude campsites near Gombo Rangzan and Jispa. While clean bedding and basic sanitary facilities are provided everywhere, luxury hotel amenities should not be expected in offbeat remote wilderness zones."
         },
         {
-          "question": "ARE PERMITS INCLUDED IN THE PACKAGE COST?",
-          "answer": "Yes, all required inner line permits, wildlife entry fees, environmental taxes, and local driver allowances are fully covered under the package cost with no hidden charges."
+          "question": "WHAT SHOULD WE EXPECT REGARDING MOBILE NETWORK COVERAGE AND INTERNET CONNECTIVITY ALONG THE ROUTE?",
+          "answer": "Mobile network connectivity is extremely sparse and intermittent once you leave the main valley hubs. Postpaid connections from BSNL and Jio offer decent signals in Padum town, but you should expect total network blackouts across Shinku La Pass, Gombo Rangzan, Phuktal Monastery, and Pensi La Pass. Travelers are strongly advised to complete urgent communications and notify family before departing Manali."
         },
         {
-          "question": "WHAT IS THE MEAL PLAN DURING THE TRIP?",
-          "answer": "Nutritious veg/egg breakfasts and dinners are provided during hotel, homestay, and camp stays to keep you energized. Lunch and personal snacks during transit are not included to allow complete flexibility along the remote route stops."
+          "question": "WHAT VEHICLES ARE DEPLOYED FOR TRANSIT AND HOW ARE OFF-ROAD RIVER CROSSINGS HANDLED?",
+          "answer": "We utilize rugged 4x4 vehicles and high-clearance expedition vehicles (such as Force Urbania, Toyota Innova, Mahindra Thar, or Tempo Travelers) specifically chosen for their durability on raw off-road terrains. Our drivers are seasoned Himalayan veterans highly experienced in navigating unpaved mountain trails, gravel tracks, mudslides, and high-altitude water crossings."
+        },
+        {
+          "question": "WHAT ARE THE ESSENTIAL CLOTHING AND PERSONAL GEAR REQUIRED FOR THIS HIGH-ALTITUDE OVERLAND EXPEDITION?",
+          "answer": "Essential gear includes dynamic multi-layered winter clothing, thermal base layers, a fleece jacket, a heavy down jacket rated for sub-zero temperatures, windproof/waterproof outerwear, sturdy ankle-support trekking boots, UV-blocking sunglasses, high-SPF sunscreen, lip balm, personal toiletries, a thermal flask, power banks, and a personal medical kit containing prescribed medications."
+        },
+        {
+          "question": "ARE ALL INNER LINE PERMITS, ENVIRONMENTAL FEES, AND LOCAL TOLLS INCLUDED IN THE FINAL PACKAGE COST?",
+          "answer": "Yes, the package cost comprehensively includes all required Inner Line Permits (ILP), wildlife entry charges, green/environmental taxes, parking fees, and local driver allowances. There are no hidden charges or unexpected mandatory entry costs required from travelers during the trip."
+        },
+        {
+          "question": "WHAT EMERGENCY MEDICAL SUPPORT AND FIRST-AID INFRASTRUCTURE ARE CARRIED DURING THE TRIP?",
+          "answer": "Every departure is led by an experienced expedition captain trained in emergency response and basic high-altitude first aid. The support vehicle carries a fully stocked medical kit, pulse oximeters, and portable emergency oxygen cylinders at all times to handle mild AMS symptoms or sudden altitude issues."
+        },
+        {
+          "question": "WHAT IS THE MEAL PLAN STRUCTURE AND HOW ARE DIETARY PREFERENCES ACCOMMODATED IN REMOTE AREAS?",
+          "answer": "The package includes nutritious, freshly prepared vegetarian/egg breakfasts and dinners served at designated hotels, homestays, and camp locations. Lunches and roadside snacks during transit hours are intentionally kept flexible so travelers can sample authentic local dhabas along the route at their own pace."
         }
       ],
       "reviews": [],
@@ -149,7 +165,7 @@
       "is_featured_lemonade": false,
       "link": "trips/himachal-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781",
       "id": 1786620306781,
-      "updated_at": "2026-08-17T10:22:30.234Z",
+      "updated_at": "2026-08-17T10:24:47.855Z",
       "created_at": "2026-08-13T11:25:06.969Z"
     },
     {

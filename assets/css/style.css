@@ -3041,6 +3041,32 @@ button { font-family: inherit; cursor: pointer; }
   color: #44443d;
 }
 
+.about-trip-text.clamped {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+.about-trip-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.about-trip-toggle:hover {
+  color: var(--color-accent-dark);
+}
+
 /* Accordion Itinerary */
 .itinerary-accordion {
   display: flex;

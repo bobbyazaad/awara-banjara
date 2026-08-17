@@ -265,7 +265,7 @@ function prerenderTrip(trip, allReviews) {
 
   // 4. About Text
   if (trip.about_text) {
-    page = page.replace(/<p class="about-trip-text">.*?<\/p>/s, `<p class="about-trip-text">${trip.about_text}</p>`);
+    page = page.replace(/(<p class="about-trip-text[^>]*>).*?(<\/p>)/s, `$1${trip.about_text}$2`);
   }
 
   // 5. Day-by-Day Accordion Itinerary

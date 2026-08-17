@@ -16,30 +16,6 @@ function formatPrice(val) {
   return `₹${num.toLocaleString('en-IN')}`;
 }
 
-// Clamps "About This Trip" to 5 lines with a Read More/Less toggle, shown
-// only when the text actually overflows that clamp (short overviews get no
-// toggle at all). Re-run whenever the text content is (re)populated, since
-// the clamped/full-height comparison depends on the final text being in place.
-function setupAboutTripToggle() {
-  const textEl = document.getElementById('aboutTripText') || document.querySelector('.about-trip-text');
-  const toggleBtn = document.getElementById('aboutTripToggle');
-  if (!textEl || !toggleBtn) return;
-
-  textEl.classList.add('clamped');
-  const isOverflowing = textEl.scrollHeight > textEl.clientHeight + 1;
-  toggleBtn.style.display = isOverflowing ? 'inline-flex' : 'none';
-  toggleBtn.textContent = 'Read More';
-
-  if (isOverflowing && !toggleBtn.dataset.bound) {
-    toggleBtn.dataset.bound = 'true';
-    toggleBtn.addEventListener('click', () => {
-      const expanded = !textEl.classList.contains('clamped');
-      textEl.classList.toggle('clamped', expanded);
-      toggleBtn.textContent = expanded ? 'Read More' : 'Read Less';
-    });
-  }
-}
-
 function toOrdinalDay(day) {
   const d = parseInt(day, 10);
   if (isNaN(d)) return day;
@@ -101,7 +77,6 @@ async function loadTripDetails() {
   // If on static page and tripData is not found, preserve pre-rendered static HTML!
   if (!tripData && isStaticPage) {
     console.log('ℹ️ [trip-detail-loader] Preserving pre-rendered static HTML for', window.location.pathname);
-    setupAboutTripToggle();
     return;
   }
 
@@ -341,7 +316,6 @@ function fixAssetPath(path) {
   if (aboutTextEl && trip.about_text) {
     aboutTextEl.textContent = trip.about_text;
   }
-  setupAboutTripToggle();
 
   // 4. Day-by-Day Accordion Itinerary
   const accordionContainer = document.querySelector('.itinerary-accordion');

@@ -162,7 +162,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": false,
-    "link": "trips/himachal-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781",
+    "link": "trips/himachal-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781.html",
     "id": 1786620306781,
     "updated_at": "2026-08-17T10:24:47.855Z",
     "created_at": "2026-08-13T11:25:06.969Z"
@@ -3543,7 +3543,7 @@
     "duration": "6 Days / 5 Nights",
     "price": "₹11,499",
     "image_url": "assets/images/trips/trip_105_image_url.jpg",
-    "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
+    "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105",
     "created_at": "2026-08-01T17:45:30.495451+00:00",
     "category": "ladakh_tours, treks, bike_tours, corporate_tours",
     "route": "Delhi — Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa — Delhi",
@@ -3656,20 +3656,16 @@
     ],
     "faqs": [
       {
-        "question": "What route does this itinerary follow?",
-        "answer": "The circuit covers Delhi — Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa — Delhi, taking you past the Atal Tunnel and deep into the pristine Lahaul and Zanskar valleys."
+        "question": "WHAT ARE THE EXACT PICKUP AND DROP-OFF DETAILS FOR THE OVERNIGHT VOLVO TRANSIT FROM DELHI?",
+        "answer": "Boarding usually takes place in the late evening (around 6:00 PM – 8:00 PM) at major transit hubs in Delhi, such as ISBT Kashmiri Gate or Majnu ka Tilla. Return coaches from Manali drop passengers back at the same locations early in the morning on Day 6. Detailed vehicle numbers and driver contact information are shared 6 to 8 hours prior to departure.CAN SOLO TRAVELERS JOIN THIS GROUP EXPEDITION AND HOW IS ROOM ALLOCATION HANDLED?"
       },
       {
-        "question": "IS TREKKING REQUIRED ON THIS TRIP?",
-        "answer": "Yes, Day 4 includes a day trek along river trails to reach the cliffside Phuktal Gompa (a monastery built directly into a natural cave) from the road head. Good basic fitness and comfortable trekking boots are recommended."
+        "question": "WHAT IS THE BEST TIME OF YEAR TO UNDERTAKE THIS HIGH-ALTITUDE ZANSKAR EXPEDITION?",
+        "answer": "The ideal operational window for this expedition is from late May through early October when the mountain passes, including Shinku La, are free of heavy snow and road connectivity is stable. During these months, daytime temperatures are pleasant for driving and trekking, though high-altitude campsite nights near Gonbo Rangjon remain crisp and cold."
       },
       {
-        "question": "WHAT KIND OF ACCOMMODATION IS PROVIDED?",
-        "answer": "A mix of hotels/guesthouses in Manali & Jispa, along with high-altitude campsites near Gonbo Rangjon."
-      },
-      {
-        "question": "What medical safety measures are in place for high altitude?",
-        "answer": "The journey includes an experienced trip leader and drivers accustomed to terrain up to high passes. A comprehensive first-aid medical kit along with oxygen cylinder support is carried throughout the expedition."
+        "question": "ARE THERE ANY SPECIFIC HEALTH CONDITIONS OR AGE RESTRICTIONS FOR PARTICIPATING IN THIS TRIP?",
+        "answer": "Participants should be between 12 and 60 years of age with reasonable overall physical health and no severe pre-existing cardiovascular, chronic respiratory, or severe hypertension issues. Given the rapid transition to extreme high altitudes, anyone with relevant medical history must consult a physician prior to booking and disclose relevant details to the expedition team during briefing."
       }
     ],
     "reviews": [
@@ -3700,7 +3696,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-17T08:27:53.658Z"
+    "updated_at": "2026-08-17T10:28:53.151Z"
   },
   {
     "id": 106,

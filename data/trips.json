@@ -3666,6 +3666,14 @@
       {
         "question": "ARE THERE ANY SPECIFIC HEALTH CONDITIONS OR AGE RESTRICTIONS FOR PARTICIPATING IN THIS TRIP?",
         "answer": "Participants should be between 12 and 60 years of age with reasonable overall physical health and no severe pre-existing cardiovascular, chronic respiratory, or severe hypertension issues. Given the rapid transition to extreme high altitudes, anyone with relevant medical history must consult a physician prior to booking and disclose relevant details to the expedition team during briefing."
+      },
+      {
+        "question": "WHAT HAPPENS IN CASE OF UNEXPECTED ROAD CLOSURES, LANDSLIDES, OR SEVERE WEATHER DELAYS?",
+        "answer": "Mountain weather in the Himalayas is unpredictable. If landslides or river swells temporarily block mountain tracks, the expedition leader will modify the route in real-time to prioritize safety. Any extended stays or extra logistics arising from natural events are settled directly based on actual costs."
+      },
+      {
+        "question": "WHAT DRINKING WATER SOURCES ARE USED AND IS IT SAFE TO DRINK ALONG THE ROUTE?",
+        "answer": "Bottled mineral water or boiled/filtered mountain water is made available at stays. During remote transits and treks, carrying a reusable thermal flask with water purification tablets or fill-ups from verified clean natural springs is standard practice."
       }
     ],
     "reviews": [
@@ -3696,7 +3704,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-17T10:28:53.151Z"
+    "updated_at": "2026-08-17T10:32:04.475Z"
   },
   {
     "id": 106,

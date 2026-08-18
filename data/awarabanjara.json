@@ -1047,7 +1047,7 @@
       "duration": "6 Days / 5 Nights",
       "price": "₹6,999",
       "image_url": "assets/images/trips/trip_108_image_url.jpg",
-      "link": "trips/himachal-tours-kasol-manali-offbeat-himalayan-escape-108.html",
+      "link": "trips/himachal-tours-kasol-manali-offbeat-himalayan-escape-108",
       "created_at": "2026-08-02T07:47:22.8632+00:00",
       "category": "himachal_tours",
       "route": "Delhi — Manali — Atal Tunnel — Sissu — Solang Valley — Kullu — Kasol — Manikaran — Delhi",
@@ -1133,27 +1133,6 @@
       "departure_dates": [
         {
           "dates": [
-            {
-              "id": "b_1785656463114",
-              "price": "6,999",
-              "range": "7th August",
-              "status": "Sold Out",
-              "startDate": "2026-08-07"
-            },
-            {
-              "id": "b_1785656471479",
-              "price": "6,999",
-              "range": "14th August",
-              "status": "Filling Fast",
-              "startDate": "2026-08-14"
-            },
-            {
-              "id": "b_1785656479729",
-              "price": "6,999",
-              "range": "21th August",
-              "status": "Filling Fast",
-              "startDate": "2026-08-21"
-            },
             {
               "id": "b_1785656484479",
               "price": "6,999",
@@ -1270,7 +1249,7 @@
       "is_featured_reels": true,
       "is_featured_stack": true,
       "is_featured_lemonade": true,
-      "updated_at": "2026-08-18T11:27:04.750Z"
+      "updated_at": "2026-08-18T13:18:03.351Z"
     },
     {
       "id": 100,
@@ -3590,7 +3569,7 @@
       "duration": "6 Days / 5 Nights",
       "price": "₹11,499",
       "image_url": "assets/images/trips/trip_105_image_url.jpg",
-      "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105",
+      "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
       "created_at": "2026-08-01T17:45:30.495451+00:00",
       "category": "ladakh_tours, treks, bike_tours, corporate_tours",
       "route": "Delhi — Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa — Delhi",

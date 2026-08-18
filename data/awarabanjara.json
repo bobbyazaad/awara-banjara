@@ -3896,32 +3896,52 @@
       ],
       "faqs": [
         {
-          "question": "WHAT IS THE BOOKING AMOUNT TO CONFIRM A SLOT?",
-          "answer": "₹1000/- advance per head is required to confirm your booking, and the remaining balance is to be paid upon check-in at the hotel."
+          "question": "WHAT EXACTLY IS THE \"BANJARA STYLE\" OF EXPERIENCING SPITI?",
+          "answer": "Unlike commercial, rigid group tours, our Banjara style means traveling like a nomadic tribe—embracing raw mountain rhythms, staying in handpicked soulful homestays rather than sterile hotels, sharing local food stories around bonfire embers, and deeply connecting with local culture instead of just checking off tourist spots."
         },
         {
-          "question": "IS THE ADVANCE BOOKING AMOUNT REFUNDABLE?",
-          "answer": "No, the advance token amount is strictly non-refundable as it is used to pre-book your stays and transport."
+          "question": "WHY DO WE ENTER VIA SHIMLA AND EXIT VIA MANALI IN THIS CLOCKWISE CIRCUIT?",
+          "answer": "This is our secret to high-altitude survival! Entering via Kinnaur (gradual altitude climb) and exiting via Manali allows your body to naturally acclimatize to thin mountain air, drastically reducing the risk of Acute Mountain Sickness (AMS) compared to direct sudden-climb routes."
         },
         {
-          "question": "CAN I TRANSFER MY BOOKING TO SOMEONE ELSE?",
-          "answer": "Yes, if you cannot travel, you may transfer your seat to a friend or family member at no extra cost, provided you inform us at least 7 days before the departure date."
+          "question": "CAN SOLO TRAVELERS AND WOMEN JOIN THIS EXPEDITION SAFELY?",
+          "answer": "Absolutely! More than 60% of our tribe members are solo travelers and women. With verified local homestays, trusted expedition captains, and a tight-knit community vibe, Spiti with Awara Banjara feels like traveling with an extended family."
         },
         {
-          "question": "WHAT HAPPENS IN CASE OF ROADBLOCKS OR BAD WEATHER?",
-          "answer": "Mountains are unpredictable. In case of landslides, heavy snowfall, or roadblocks (e.g., Atal Tunnel or Rohtang Pass closure), Awara Banjara reserves the right to change the itinerary for group safety. Any additional costs arising from unplanned stay extensions will be borne by the traveler."
+          "question": "HOW COLD DOES IT GET AT CHANDRATAL LAKE AT NIGHT?",
+          "answer": "Chandratal sits at a staggering 14,100 ft, meaning night temperatures can drop sharply below zero even in peak summer. However, our alpine dome camps come equipped with heavy, warm fleece-lined sleeping bags and extra bedding to keep you cozy under the Milky Way."
         },
         {
-          "question": "ARE ADVENTURE ACTIVITIES INCLUDED IN THE PACKAGE?",
-          "answer": "Adventure activities like rafting, paragliding, zip-lining, or skiing are optional third-party services and are payable on-site if you choose to participate."
+          "question": "WHAT IS THE VIBE OF THE HOMESTAYS WE STAY IN?",
+          "answer": "We skip luxury commercial hotels in favor of authentic, family-run Spitian homestays and scenic riverside properties. You’ll experience traditional mud-brick architecture, warm wooden interiors, local hospitality, and home-cooked meals straight from local kitchens."
         },
         {
-          "question": "ARE LUNCH MEALS INCLUDED IN THE PACKAGE?",
-          "answer": "Lunch meals are not included to give you the freedom to explore local cafes and regional flavors during daytime travel."
+          "question": "DO I NEED ANY PREVIOUS OFF-ROAD DRIVING OR TREKKING EXPERIENCE FOR THIS TRIP?",
+          "answer": "None at all! Whether you are choosing our expedition vehicle or booking a bike option, our expert road captains and support crew handle all the technical terrain, water crossings (pagal nalas), and high-pass navigation while you soak in the raw views."
         },
         {
-          "question": "WHAT IS THE NO-SHOW POLICY?",
-          "answer": "If a traveler fails to arrive at the designated pickup point at the scheduled time, it will be treated as a \"No-Show,\" and no refund will be provided."
+          "question": "ARE THERE NETWORK OR INTERNET CONNECTIVITY ISSUES IN SPITI VALLEY?",
+          "answer": "Yes, Spiti is a digital detox zone. Postpaid BSNL and Jio sims work intermittently in major pockets like Kaza, while Kinnaur and upper Spiti have little to no network. Embrace the disconnect—the mountains are your real Wi-Fi here!"
+        },
+        {
+          "question": "WHAT KIND OF FOOD CAN WE EXPECT DURING THE HIGH-ALTITUDE JOURNEY?",
+          "answer": "Expect hearty, freshly prepared North Indian meals along with authentic Spitian delicacies like Thukpa, Momos, Tingmo, and butter tea. We also keep lunch stops open in local village cafes so you can explore regional flavors at your own pace."
+        },
+        {
+          "question": "WHAT SHOULD I PACK TO HANDLE RAPID WEATHER CHANGES IN SPITI?",
+          "answer": "Spiti is famous for four seasons in a single day—intense high-altitude sun, biting mountain winds, and sudden evening chills. Layering is your best friend: pack thermal innerwear, windproof/waterproof jackets, UV sunglasses, sunscreen, sturdy trekking shoes, and a woolen beanie."
+        },
+        {
+          "question": "HOW DO WE MANAGE MEDICAL EMERGENCIES OR HIGH ALTITUDE SICKNESS?",
+          "answer": "Safety is our absolute priority. Every Awara Banjara vehicle is equipped with a comprehensive first-aid kit, a portable medical oxygen cylinder, and an oximeter. Our trip captains are trained to monitor oxygen levels and handle high-altitude transitions smoothly."
+        },
+        {
+          "question": "CAN I CHARGE MY PHONES AND CAMERA BATTERIES REGULARLY?",
+          "answer": "Electricity is available at most homestays in Sangla, Tabo, and Kaza during evening supply hours. However, remote sectors like Chandratal camping have limited or solar-powered charging. We strongly recommend carrying a high-capacity power bank."
+        },
+        {
+          "question": "WHY IS THE BOOKING TOKEN NON-REFUNDABLE IN THE AWARA BANJARA POLICY?",
+          "answer": "Our token amount is immediately utilized to secure high-demand permits, advance bookings in remote boutique homestays, and dedicated expedition transport months in advance. Since Spiti operates on a very short seasonal window, this ensures your slot and logistics are 100% locked in."
         }
       ],
       "reviews": [
@@ -3958,7 +3978,7 @@
       "is_featured_reels": true,
       "is_featured_stack": true,
       "is_featured_lemonade": true,
-      "updated_at": "2026-08-18T14:10:30.508Z"
+      "updated_at": "2026-08-18T14:15:18.273Z"
     }
   ],
   "destinations": [

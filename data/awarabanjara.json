@@ -13,7 +13,7 @@
       "bento_img_3": "assets/images/destinations/hadimba-cedar-forest.jpg",
       "bento_img_4": "assets/images/destinations/shimla-ridge-heritage.jpg",
       "bento_img_5": "assets/images/destinations/kufri-mountain-panoramas.jpg",
-      "about_text": "",
+      "about_text": "Leave behind the chaotic rhythm of the plains and surrender to the timeless call of the Western Himalayas with Awara Banjara’s Himachal Odyssey. Crafted specifically for slow travelers, families, and couples seeking seamless comfort paired with untamed mountain charm, this 7-Day / 6-Night customized circuit seamlessly connects two of Himachal Pradesh's most iconic alpine realms—the bohemian deodar valleys of Manali and the colonial ridge heritage of Shimla.\n\nYour expedition begins with a smooth overnight AC Volvo ride from Delhi, winding past foothills into the pine-scented embrace of the upper Beas Valley. Waking up in Manali, you are welcomed by crisp Himalayan breezes and towering peaks. Over the next two days, immerse yourself in the soul of the valley: walk beneath the ancient, moss-laden deodar canopy surrounding the historic Hadimba Devi Temple, find quiet mindfulness at serene Tibetan monasteries, and stroll through the lively, vibrant lanes of the Mall Road. \n\nThe journey ascends into raw alpine drama as you drive past Solang Valley and cross the engineering marvel of the Atal Tunnel. Emerging onto the other side reveals the stark, windswept wonderland of Lahaul Valley and the glacial cascades of Sissu village by the Chandra River—a surreal contrast of trans-Himalayan landscapes and rushing mountain streams.\n\nTransitioning from the raw valleys to colonial nostalgia, your private dedicated cab charts a scenic overland drive through the apple orchards and river gorges of Kullu Valley. Stop along the Beas River to capture the rush of white-water rapids before ascending toward Shimla, the historic 'Queen of Hills.' \n\nIn Shimla, experience the elegance of a bygone era. Wander across the open expanse of the heritage Ridge, admire the neo-Gothic silhouette of Christ Church, and take in panoramic mountain vistas from the sacred heights of Jakhoo Temple. A dedicated day excursion takes you higher into Kufri’s alpine ridges, nestled amidst dense cedar forests and panoramic Himalayan viewpoints.\n\nDesigned with complete flexibility and unhurried pacing, this private Himachal tour package includes 2 nights in Manali and 2 nights in Shimla at handpicked mountain retreats, wholesome MAP meals (4 breakfasts and 4 dinners), overnight Volvo connectivity from Delhi, and a private cab for all intercity and local sightseeing. Experience Himachal Pradesh not just as a tourist checking off spots, but as a wanderer embracing the genuine warmth, high-altitude air, and nomadic freedom of the mountains.",
       "itinerary": [
         {
           "day": 1,
@@ -78,20 +78,52 @@
       "departure_dates": [],
       "faqs": [
         {
-          "question": "WHAT IS THE BEST TIME TO JOIN THIS TRIP?",
-          "answer": "This circuit is beautiful year-round. March to June offers pleasant weather and lush greenery, while November to February is ideal for snow seekers."
+          "question": "IS THIS HIMACHAL ODYSSEY A GROUP TOUR OR A PRIVATE CUSTOMIZED TRIP?",
+          "answer": "This is a 100% private and customizable tour. You will have a dedicated private cab (Dzire/Etios or SUV) exclusively for your travel party for all local sightseeing and intercity transfers between Manali and Shimla, along with premium semi-sleeper AC Volvo connectivity from Delhi."
         },
         {
-          "question": "WHAT TYPE OF CLOTHING SHOULD I PACK?",
-          "answer": "Pack light layers for daytime and warm fleeces/down jackets for evenings and high-altitude areas like Sissu and Kufri."
+          "question": "WHAT IS THE BEST TIME TO VISIT MANALI AND SHIMLA?",
+          "answer": "March to June is ideal for pleasant weather, lush greenery, and blooming apple orchards. October to February is best for winter landscapes and snow experiences in Sissu, Solang Valley, and Kufri. The monsoon months (July to August) are generally avoided due to heavy rains."
         },
         {
-          "question": "ARE ROADS OPEN FOR SISSU AND ATAL TUNNEL?",
-          "answer": "The Atal Tunnel route to Sissu remains open for most of the year, subject to weather clearance by local administration during heavy winter snowfall."
+          "question": "ARE 4 BREAKFASTS AND 4 DINNERS INCLUDED IN THE PACKAGE?",
+          "answer": "Yes, the package operates on a Modified American Plan (MAP). It includes 4 wholesome breakfasts and 4 delicious dinners prepared at your handpicked boutique hotels (2 nights stay in Manali and 2 nights stay in Shimla). Lunches and highway transit meals are not included."
         },
         {
-          "question": "HOW CAN I BOOK A SEAT?",
-          "answer": "You can confirm your seat with a 10% non-refundable advance token payment, with the remaining balance due upon arrival."
+          "question": "HOW DO WE TRAVEL FROM DELHI TO MANALI AND SHIMLA TO DELHI?",
+          "answer": "Your journey begins with an overnight AC semi-sleeper Volvo bus from Delhi (Majnu Ka Tilla / Kashmere Gate) to Manali. On Day 6 evening, you board an overnight AC Volvo from Shimla back to Delhi, reaching by Day 7 morning."
+        },
+        {
+          "question": "IS THE ATAL TUNNEL AND SISSU EXCURSION INCLUDED IN THIS PACKAGE?",
+          "answer": "Yes, a full-day excursion covering Solang Valley, the engineering marvel Atal Tunnel (9.02 km), and Sissu village in Lahaul Valley is fully included in your private cab itinerary, subject to local weather and road clearance."
+        },
+        {
+          "question": "IS ROHTANG PASS INCLUDED IN THIS ITINERARY?",
+          "answer": "No, this itinerary covers Solang Valley, Atal Tunnel, and Sissu. Rohtang Pass is not included by default because it requires special NGT permits and dedicated local union vehicles, but it can be added as an optional upgrade upon prior request."
+        },
+        {
+          "question": "WHAT SIGHTSEEING IS COVERED IN SHIMLA AND KUFRI?",
+          "answer": "In Shimla, you will explore the heritage Ridge, Mall Road, Christ Church, Lakkar Bazaar, and Jakhoo Temple point. The package also includes a dedicated excursion to Kufri for panoramic Himalayan views, cedar walking trails, and Mahasu Peak."
+        },
+        {
+          "question": "CAN SENIOR CITIZENS AND FAMILIES COMFORTABLY JOIN THIS TRIP?",
+          "answer": "Absolutely. Because this is a private cab tour, the pace is completely relaxed and customizable. There are no strenuous treks required, making it comfortable and safe for families, couples, and senior citizens."
+        },
+        {
+          "question": "WHAT ADVENTURE ACTIVITIES CAN BE DONE EN ROUTE IN KULLU?",
+          "answer": "During the drive from Manali to Shimla through Kullu Valley, you can experience white-water river rafting in the Beas River, paragliding, and river crossing on a direct self-payment basis."
+        },
+        {
+          "question": "ARE DRIVER CHARGES, TOLLS, AND FUEL EXPENSES INCLUDED?",
+          "answer": "Yes, all driver allowances, fuel costs, state border entry permits, toll taxes, and designated parking fees are fully covered with zero hidden driving charges."
+        },
+        {
+          "question": "WHAT KIND OF CLOTHES AND ESSENTIALS SHOULD I PACK?",
+          "answer": "We recommend layered clothing: light woolens or t-shirts for sunny daytime sightseeing, and warm jackets/fleeces for chilly evenings and high-altitude locations like Sissu and Kufri. Carry comfortable walking shoes and basic personal medications."
+        },
+        {
+          "question": "WHAT IS THE BOOKING AND CANCELLATION PAYMENT POLICY?",
+          "answer": "You can easily secure your booking with a 10% non-refundable advance token payment. The remaining balance amount is payable upon your arrival in Himachal."
         }
       ],
       "reviews": [],
@@ -102,7 +134,7 @@
       "is_featured_lemonade": true,
       "link": "trips/himachal-tours-himachal-odyssey-pine-trails-high-valleys-colonial-charms-1787070629076",
       "id": 1787070629076,
-      "updated_at": "2026-08-18T16:47:50.026Z",
+      "updated_at": "2026-08-18T17:02:45.846Z",
       "created_at": "2026-08-18T16:30:32.059Z"
     },
     {

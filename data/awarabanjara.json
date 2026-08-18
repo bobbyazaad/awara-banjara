@@ -1,6 +1,106 @@
 {
   "trips": [
     {
+      "title": "Himachal Odyssey: Pine Trails, High Valleys & Colonial Charms",
+      "duration": "7 Days / 6 Nights",
+      "price": "",
+      "category": "himachal_tours, women_only_tours, corporate_tours",
+      "route": "Delhi — Manali — Solang — Atal Tunnel — Sissu — Kullu — Shimla — Kufri — Delhi",
+      "tags": "Himalayan Backpacking, Group Tour, Scenic Escapes, Manali Shimla Circuit, Mountain Vibe",
+      "image_url": "assets/images/destinations/himachal-odyssey.jpg",
+      "bento_img_1": "assets/images/destinations/manali-sissu-tall.jpg",
+      "bento_img_2": "assets/images/destinations/atal-tunnel-drive.jpg",
+      "bento_img_3": "assets/images/destinations/hadimba-cedar-forest.jpg",
+      "bento_img_4": "assets/images/destinations/shimla-ridge-heritage.jpg",
+      "bento_img_5": "assets/images/destinations/kufri-mountain-panoramas.jpg",
+      "about_text": "",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Over The Foothills",
+          "details": "Evening Departure from Delhi"
+        },
+        {
+          "day": 2,
+          "title": "Pine Aromas & Ancient Cedar Groves",
+          "details": "Arrival in Manali"
+        },
+        {
+          "day": 3,
+          "title": "Crossing Into Lahaul",
+          "details": "Solang Valley, Atal Tunnel & Sissu"
+        },
+        {
+          "day": 4,
+          "title": "Through River Gorges to The Queen of Hills",
+          "details": "Manali to Shimla via Kullu"
+        },
+        {
+          "day": 5,
+          "title": "Alpine Ridges & Whispering Pines",
+          "details": "Full-Day Kufri Excursion"
+        },
+        {
+          "day": 6,
+          "title": "Colonial Footsteps & The Ridge Walk",
+          "details": "Shimla Local & Departure"
+        },
+        {
+          "day": 7,
+          "title": "Homeward Bound",
+          "details": "Morning Arrival in Delhi"
+        }
+      ],
+      "inclusions": [
+        "Overnight semi-sleeper AC Volvo transfers (Delhi to Manali & Shimla to Delhi)",
+        "Inter-city transfers (Manali to Shimla) and day sightseeing in private SUV / Tempo Traveller",
+        "4 Nights accommodation in boutique mountain stays / handpicked hotels (Twin / Triple sharing)",
+        "MAP Meal Plan (Breakfast & Dinner at stays)",
+        "All driver allowances, fuel, tolls, parking, and state border permits",
+        "Dedicated trip captain / local mountain coordinator for smooth operations"
+      ],
+      "exclusions": [
+        "Personal expenses, laundry, tips, and room heater charges",
+        "Meals and snacks not mentioned in inclusions (Lunch & highway transit meals)",
+        "Adventure activity charges (Paragliding, River Rafting, Horse Riding in Solang/Kullu/Kufri)",
+        "Entry tickets to monuments, monastery passes, or camera fees",
+        "Ropeway charges to Jakhoo Temple / Solang",
+        "5% GST and Travel Insurance",
+        "Any unforeseen expenses due to landslides, roadblocks, or weather disruptions"
+      ],
+      "package_options": [],
+      "sub_package_options": "",
+      "departure_dates": [],
+      "faqs": [
+        {
+          "question": "WHAT IS THE BEST TIME TO JOIN THIS TRIP?",
+          "answer": "This circuit is beautiful year-round. March to June offers pleasant weather and lush greenery, while November to February is ideal for snow seekers."
+        },
+        {
+          "question": "WHAT TYPE OF CLOTHING SHOULD I PACK?",
+          "answer": "Pack light layers for daytime and warm fleeces/down jackets for evenings and high-altitude areas like Sissu and Kufri."
+        },
+        {
+          "question": "ARE ROADS OPEN FOR SISSU AND ATAL TUNNEL?",
+          "answer": "The Atal Tunnel route to Sissu remains open for most of the year, subject to weather clearance by local administration during heavy winter snowfall."
+        },
+        {
+          "question": "HOW CAN I BOOK A SEAT?",
+          "answer": "You can confirm your seat with a 10% non-refundable advance token payment, with the remaining balance due upon arrival."
+        }
+      ],
+      "reviews": [],
+      "reserve_banner_title": "",
+      "custom_quote_title": "",
+      "is_featured_reels": true,
+      "is_featured_stack": true,
+      "is_featured_lemonade": true,
+      "link": "trips/himachal-tours-himachal-odyssey-pine-trails-high-valleys-colonial-charms-1787070629076",
+      "id": 1787070629076,
+      "updated_at": "2026-08-18T16:30:32.059Z",
+      "created_at": "2026-08-18T16:30:32.059Z"
+    },
+    {
       "title": "Zanskar Valley Expedition with Padum & Drang Drung",
       "duration": "8 Days / 7 Nights",
       "price": "18,400",
@@ -3772,7 +3872,7 @@
       "duration": "8 Days / 7 Nights",
       "price": "₹16,499",
       "image_url": "assets/images/trips/trip_106_image_url.jpg",
-      "link": "trips/spiti-tours-spiti-full-summer-circuit-106",
+      "link": "trips/spiti-tours-spiti-full-summer-circuit-106.html",
       "created_at": "2026-08-02T04:35:18.715013+00:00",
       "category": "spiti_tours, himachal_tours, women_only_tours, corporate_tours, educational_trips",
       "route": "Delhi — Shimla — Sangla — Chitkul — Nako — Gue — Tabo — Dhankar — Kaza — Key — Kibber — Chandratal — Batal — Chhatru — Atal Tunnel — Manali — Delhi",

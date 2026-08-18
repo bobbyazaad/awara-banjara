@@ -1047,7 +1047,7 @@
       "duration": "6 Days / 5 Nights",
       "price": "₹6,999",
       "image_url": "assets/images/trips/trip_108_image_url.jpg",
-      "link": "trips/himachal-tours-kasol-manali-offbeat-himalayan-escape-108",
+      "link": "trips/himachal-tours-kasol-manali-offbeat-himalayan-escape-108.html",
       "created_at": "2026-08-02T07:47:22.8632+00:00",
       "category": "himachal_tours",
       "route": "Delhi — Manali — Atal Tunnel — Sissu — Solang Valley — Kullu — Kasol — Manikaran — Delhi",
@@ -3772,9 +3772,9 @@
       "duration": "8 Days / 7 Nights",
       "price": "₹16,499",
       "image_url": "assets/images/trips/trip_106_image_url.jpg",
-      "link": "trips/spiti-tours-spiti-full-summer-circuit-106.html",
+      "link": "trips/spiti-tours-spiti-full-summer-circuit-106",
       "created_at": "2026-08-02T04:35:18.715013+00:00",
-      "category": "spiti_tours, bike_tours, corporate_tours",
+      "category": "spiti_tours, himachal_tours, women_only_tours, corporate_tours, educational_trips",
       "route": "Delhi — Shimla — Sangla — Chitkul — Nako — Gue — Tabo — Dhankar — Kaza — Key — Kibber — Chandratal — Batal — Chhatru — Atal Tunnel — Manali — Delhi",
       "tags": "Spiti Valley, Summer Expedition, Circuit Tour, Road Trip, Group Tour",
       "bento_img_1": "assets/images/trips/trip_106_bento_img_1.jpg",
@@ -3786,43 +3786,43 @@
       "itinerary": [
         {
           "day": 1,
-          "title": "Delhi to Shimla (340 km",
-          "details": "8–9 hours)"
+          "title": "Delhi to Shimla",
+          "details": "The Nomad's Escape"
         },
         {
           "day": 2,
-          "title": "Shimla to Chitkul / Sangla Valley",
-          "details": "Drive via Kinnaur Valley along the Sutlej River towards Chitkul, the last inhabited village near the Indo-Tibet border."
+          "title": "Shimla to Sangla / Chitkul",
+          "details": "Gateway to Kinnaur"
         },
         {
           "day": 3,
           "title": "Sangla to Tabo (via Nako & Gue)",
-          "details": "Visit Nako Lake, Nako Village, and the 500-year-old Mummy at Gue Monastery before entering Tabo."
+          "details": "The Land of Lamas & Legends"
         },
         {
           "day": 4,
           "title": "Tabo to Kaza (via Dhankar)",
-          "details": "Explore 1,000-year-old Tabo Monastery, then drive to Dhankar Monastery perched on a cliff before heading to Kaza."
+          "details": "Ancient Caves & Monasteries"
         },
         {
           "day": 5,
-          "title": "Kaza Local Sightseeing",
-          "details": "Visit iconic spots: Hikkim (World's Highest Post Office), Komic (Highest Village connected by motorable road), and Langza (Fossil Village)."
+          "title": "Kaza Highest Villages Tour",
+          "details": "Postcards from the Edge of the World"
         },
         {
           "day": 6,
-          "title": "Kaza to Chandratal (via Key & Kibber)",
-          "details": "Visit iconic Key Monastery and Chicham Bridge. Drive over Kunzum Pass to reach the crescent-shaped Chandratal Lake for campsite stay."
+          "title": "Kaza to Chandratal (via Key, Chicham & Kunzum Pass)",
+          "details": "Over the High Passes to Moon Lake"
         },
         {
           "day": 7,
           "title": "Chandratal to Manali & Return to Delhi",
-          "details": "Drive via Batal, Chhatru, and Atal Tunnel to Manali. Free time in Manali before boarding the evening Volvo back to Delhi."
+          "details": "The Wild Off-Road Trail"
         },
         {
           "day": 8,
           "title": "Arrival in Delhi",
-          "details": "Arrive in Delhi early morning with unforgettable memories of the Spiti circuit expedition."
+          "details": "The Banjara Legacy Continues"
         }
       ],
       "inclusions": [
@@ -3949,7 +3949,7 @@
       "is_featured_reels": true,
       "is_featured_stack": true,
       "is_featured_lemonade": true,
-      "updated_at": "2026-08-15T12:16:46.018Z"
+      "updated_at": "2026-08-18T13:32:08.821Z"
     }
   ],
   "destinations": [

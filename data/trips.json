@@ -1046,7 +1046,7 @@
     "duration": "6 Days / 5 Nights",
     "price": "₹6,999",
     "image_url": "assets/images/trips/trip_108_image_url.jpg",
-    "link": "trips/himachal-tours-kasol-manali-offbeat-himalayan-escape-108",
+    "link": "trips/himachal-tours-kasol-manali-offbeat-himalayan-escape-108.html",
     "created_at": "2026-08-02T07:47:22.8632+00:00",
     "category": "himachal_tours",
     "route": "Delhi — Manali — Atal Tunnel — Sissu — Solang Valley — Kullu — Kasol — Manikaran — Delhi",
@@ -3589,7 +3589,7 @@
     "duration": "6 Days / 5 Nights",
     "price": "₹11,499",
     "image_url": "assets/images/trips/trip_105_image_url.jpg",
-    "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105.html",
+    "link": "trips/ladakh-tours-escape-to-zanskar-group-trip-105",
     "created_at": "2026-08-01T17:45:30.495451+00:00",
     "category": "ladakh_tours, treks, bike_tours, corporate_tours",
     "route": "Delhi — Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa — Delhi",
@@ -3603,33 +3603,33 @@
     "itinerary": [
       {
         "day": 1,
-        "title": "Delhi to Manali",
-        "details": "Board a premium AC Volvo coach from Delhi in the late evening. Settle into your comfortable semi-sleeper seats for an overnight journey across the Northern plains. As you leave the bustling city behind, unwind and enjoy a smooth ride toward the mountain foothills of Himachal Pradesh."
+        "title": "Overnight Transit from Delhi to Manali",
+        "details": "The Mountain Call"
       },
       {
         "day": 2,
-        "title": "Manali Local Exploration",
-        "details": "Arrive in Manali by morning and transfer to your hotel. After checking in and relaxing, spend the afternoon exploring iconic local sights—visit Hadimba Temple, stroll through the vibrant lanes of Old Manali, and relax at local mountain cafes. In the evening, gather for a comprehensive expedition briefing. The trip leader will cover safety protocols, high-altitude precautions, route details, and conduct a mandatory gear check."
+        "title": "Manali Arrival, Acclimatization & Expedition Briefing",
+        "details": "Wake up to crisp deodar breezes in Manali. Check in at your stay, freshen up, and unwind. Spend the afternoon exploring Old Manali’s rustic cafes, Hadimba Temple, or strolling along the Beas river for essential high-altitude acclimatization. Evening brings our mandatory Expedition Briefing—covering AMS guidelines, high-altitude gear check, and route protocols over a warm group dinner."
       },
       {
         "day": 3,
-        "title": "Manali to Gonbo Rangjon",
-        "details": "After an early breakfast, set off on a thrilling high-altitude drive crossing the engineering marvel of the Atal Tunnel into the pristine Lahaul Valley. Pass picturesque hamlets like Sissu and Darcha, traversing high-mountain roads towards the remote wilderness of Zanskar. Arrive at the foot of Gonbo Rangjon, the sacred and majestic stand-alone monolith peak. Spend the night under a clear sky in high-altitude campsites surrounded by massive Himalayan landscapes."
+        "title": "Manali to Gonbo Rangjon via Atal Tunnel & Shinku La Pass (16,580 ft)",
+        "details": "An early morning start through the Atal Tunnel into the dramatic landscapes of Lahaul Valley. Pass Sissu and Darcha before taking on the mighty Shinku La Pass (16,580 ft)—the gateway to Zanskar. Descend into the untouched Lungnak Valley to reach the base of Gonbo Rangjon, the sacred, monolithic stand-alone peak. Settle into eco-camps beneath a jaw-dropping canopy of a million stars and the Milky Way."
       },
       {
         "day": 4,
-        "title": "Gonbo Rangjon to Phuktal Gompa & Jispa",
-        "details": "Begin the morning with a day trek to the iconic Phuktal Monastery, one of the most remarkable architectural wonders of the Himalayas, built directly into the face of a massive natural cave. Walk along the river trails, explore ancient prayer halls, and experience the serene lifestyle of the local monks. After returning to the road head, hop back into the vehicles for a scenic drive back to the tranquil valley of Jispa for dinner and an overnight hotel or camp stay."
+        "title": "The Cliffside Phuktal Gompa Trek & Scenic Drive to Jispa",
+        "details": "Wake up to golden sunrise hues hitting the holy monolith. Drive to the road-head and embark on an unforgettable trek along the turquoise Tsarap River to Phuktal Gompa—a 12th-century cave monastery clinging dramatically to a vertical cliff face. Absorb the mystical monastic calm, trek back to our vehicles, and cross back over Shinku La to reach the riverside solace of Jispa for a cozy bonfire and hearty dinner."
       },
       {
         "day": 5,
-        "title": "Jispa to Manali & Delhi",
-        "details": "Enjoy a morning breakfast in Jispa before embarking on the scenic return drive towards Manali. Upon arrival in Manali, take advantage of free time to shop for local souvenirs, pick up handicrafts, or grab an early dinner. Board your evening overnight Volvo coach back to Delhi, taking with you extraordinary memories of the Zanskar wilderness."
+        "title": "Jispa to Manali & Evening Volvo Boarding to Delhi",
+        "details": "Savor morning breakfast alongside the Bhaga river in Jispa. Begin our scenic return drive through Lahaul, stopping for final valley views before crossing Atal Tunnel back into Manali. Enjoy free time in Manali for local shopping, authentic Himachali souvenirs, and a relaxed dinner. In the late evening, board your overnight Volvo coach back to Delhi."
       },
       {
         "day": 6,
         "title": "Arrival in Delhi",
-        "details": "Reach Delhi early in the morning. Disembark at the drop-off point with unforgettable memories, incredible photos, and new friendships from your high-altitude Himalayan expedition."
+        "details": "Morning Drop-off"
       }
     ],
     "inclusions": [
@@ -3750,7 +3750,7 @@
     "is_featured_reels": false,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-17T10:58:19.962Z"
+    "updated_at": "2026-08-18T12:06:58.390Z"
   },
   {
     "id": 106,

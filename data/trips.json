@@ -1091,7 +1091,7 @@
     ],
     "inclusions": [
       "Delhi to Manali & Kasol/Bhuntar to Delhi AC Semi-Sleeper Volvo Bus Tickets",
-      "3 Nights Total Accommodation (2 Nights in Scenic Manali Hotel + 1 Night in Riverside Kasol Camps/Stay)",
+      "3 Nights Total Accommodation (2 Nights in Scenic Manali Hotel + 1 Night in Kasol Camps/Stay)",
       "Room Sharing as per Opted Package (Double / Triple / Quad Sharing)",
       "Total 6 Curated Meals (3 Fresh Breakfasts & 3 Warm Dinners during the Stays)",
       "Entire Local Transfers & Sightseeing via Dedicated Tempo Traveller / Private Cab as per Itinerary",
@@ -1103,11 +1103,16 @@
       "Nomadic Community Vibes, Group Storytelling & Unfiltered Awara Banjara Experience"
     ],
     "exclusions": [
-      "Lunch Meals & Personal Cafe Expenses",
-      "Adventure Activities (River Rafting, Paragliding, Zip-lining)",
-      "5% GST & Travel Insurance",
-      "Any Personal Expenses, Shopping, or Tips",
-      "Costs arising from Unforeseen Weather or Roadblocks"
+      "Any Lunch Meals, Extra Snacks, Mineral Water & Personal Cafe Hopping Expenses",
+      "Dinner on Day 1 & Day 5 during Volvo Transit Journey (Delhi–Manali & Kasol–Delhi)",
+      "Adventure Activities in Kullu/Solang (White-Water Rafting, Paragliding, Zip-line, Zorbing, Skiing, etc.)",
+      "Monument, Museum, Temple Entry Passes, Parking or Camera Fees (if applicable)",
+      "Room Heater / Blower Charges at Hotels or Campsites (Directly payable to stay)",
+      "5% Mandatory Government GST & Personal Travel Insurance",
+      "Cost Arising from Natural Calamities, Landslides, Heavy Snowfall, Roadblocks, or Volvo Delays",
+      "Emergency Medical Evacuation, Medication, or Doctor-on-call Expenses",
+      "Any Extra Cab Hires, Detours, or Sightseeing not mentioned in the Core Itinerary",
+      "Personal Expenses like Laundry, Tips, Porter Charges, Souvenirs & Alcoholic Beverages"
     ],
     "package_options": [
       {
@@ -1123,7 +1128,7 @@
         "price": "₹9,499"
       }
     ],
-    "sub_package_options": "Himalayan 411, Himalayan 450",
+    "sub_package_options": "",
     "departure_dates": [
       {
         "dates": [
@@ -1228,7 +1233,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-18T11:01:15.698Z"
+    "updated_at": "2026-08-18T11:15:18.988Z"
   },
   {
     "id": 100,

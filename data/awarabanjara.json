@@ -1047,7 +1047,7 @@
       "duration": "6 Days / 5 Nights",
       "price": "₹6,999",
       "image_url": "assets/images/trips/trip_108_image_url.jpg",
-      "link": "trips/himachal-tours-kasol-manali-offbeat-himalayan-escape-108.html",
+      "link": "trips/himachal-tours-kasol-manali-offbeat-himalayan-escape-108",
       "created_at": "2026-08-02T07:47:22.8632+00:00",
       "category": "himachal_tours",
       "route": "Delhi — Manali — Atal Tunnel — Sissu — Solang Valley — Kullu — Kasol — Manikaran — Delhi",
@@ -1061,33 +1061,58 @@
       "itinerary": [
         {
           "day": 1,
-          "title": "Delhi to Manali (Overnight Volvo)",
-          "details": "Evening departure from Delhi by comfortable AC Volvo bus. Overnight journey through winding Himalayan roads under starlit skies."
+          "title": "Overnight Journey from Delhi to Manali (Chasing the High Pines)",
+          "details": "The mountain calling begins. Board the comfortable AC Volvo from Delhi in the evening, leave the city chaos behind, and tune into your road-trip playlist. As the urban lights fade into winding mountain roads under starlit skies, bond with fellow travelers and let the cool Himalayan breeze set the vibe for the days ahead. Overnight journey."
         },
         {
           "day": 2,
-          "title": "Arrival in Manali & Local Sightseeing",
-          "details": "Arrive in Manali, check-in to your stay, and explore local spots including Hadimba Temple, Jogini Waterfall hike, Mall Road, and Old Manali cafes."
+          "title": "Day 2",
+          "details": ""
         },
         {
           "day": 3,
-          "title": "Manali to Sissu & Solang Valley (via Atal Tunnel)",
-          "details": "Drive through the world-famous Atal Tunnel to Sissu in Lahaul Valley. Enjoy snowy vistas and head to Solang Valley for adventure activities."
+          "title": "Welcome to Manali & Old Town Vibes (Cafes, Cedar Forests & Sunset)",
+          "details": "Wake up to crisp pine-scented air and towering snow-capped peaks. Reach Manali, check in to our handpicked scenic stay, freshen up, and take it slow. Post lunch, wander through the serene giant deodars to Hadimba Temple, dive into the bohemian charm of Old Manali’s rustic wooden cafes with warm hot chocolate, and catch a relaxed sunset walk around Mall Road. Evening circle with warm conversations and dinner at the stay."
         },
         {
           "day": 4,
-          "title": "Kullu Valley Exploration & Adventure Sports",
-          "details": "Head towards Kullu Valley for thrilling white-water rafting, paragliding, and visiting local handloom factories."
+          "title": "Day 4",
+          "details": ""
         },
         {
           "day": 5,
-          "title": "Kasol & Manikaran Sahib Exploration → Overnight Departure",
-          "details": "Drive to Kasol, visit the famous Manikaran Sahib Gurudwara & Hot Springs, explore Kasol Market/cafes, and board the overnight Volvo back to Delhi."
+          "title": "Atal Tunnel to Lahaul (Sissu Waterfall & Solang Adventure Vistas)",
+          "details": "A day of breathtaking geographic shifts. Drive across the iconic Atal Tunnel to enter the rugged, dramatic landscapes of Lahaul Valley. Stand before the roaring Sissu Waterfall against barren Himalayan cliffs and soak in the raw serenity. While returning, stop by Solang Valley to witness snow-capped peaks and vibrant mountain energy. Later in the evening, take a tranquil nature walk around Vashisht / Jogini pine trails before settling down for a hearty dinner under the starlit sky."
         },
         {
           "day": 6,
-          "title": "Arrival in Delhi",
-          "details": "Reach Delhi in the morning with unforgettable Himalayan memories."
+          "title": "Day 6",
+          "details": ""
+        },
+        {
+          "day": 7,
+          "title": "Kullu Thrills to Mystic Parvati Valley (Riverside Cafes & Bonfire Night)",
+          "details": "Bid farewell to Manali and head down the valley towards adventure hubs in Kullu. Feel the adrenaline rush with high-speed white-water river rafting on the Beas River and catch sweeping valley views with paragliding (optional). By late afternoon, enter the mystic, hippie trails of Parvati Valley. Check into our cozy Kasol stay, listen to the roaring Parvati River, explore the vibrant local cafe culture, and gather around a warm acoustic bonfire under the mountain stars."
+        },
+        {
+          "day": 8,
+          "title": "Day 8",
+          "details": ""
+        },
+        {
+          "day": 9,
+          "title": "Kasol Soul Trail, Manikaran Springs & Overnight Departure",
+          "details": "Wake up to the soothing sound of the river and mountain birds. Take an easy, peaceful riverside nature hike towards the bohemian hamlet of Chalal. Later, visit the spiritually charged Manikaran Sahib Gurudwara and take a dip in the natural therapeutic hot springs. Spend your afternoon picking up bohemian woolens, incense, and silver treasures in Kasol Market or sipping herbal tea at a riverside cafe. In the evening, head to the boarding point for your overnight Volvo journey back home."
+        },
+        {
+          "day": 10,
+          "title": "Day 10",
+          "details": ""
+        },
+        {
+          "day": 11,
+          "title": "Delhi Arrival (Carry the Banjara Soul Home)",
+          "details": "Roll back into Delhi early morning with a soul full of high-altitude memories, new lifelong friendships, river tunes, and raw mountain stories to tell. Until the next valley calls!"
         }
       ],
       "inclusions": [
@@ -1224,7 +1249,7 @@
       "is_featured_reels": true,
       "is_featured_stack": true,
       "is_featured_lemonade": true,
-      "updated_at": "2026-08-15T09:09:05.665Z"
+      "updated_at": "2026-08-18T10:14:59.761Z"
     },
     {
       "id": 100,

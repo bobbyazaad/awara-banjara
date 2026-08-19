@@ -72,7 +72,20 @@
       "5% GST and Personal Travel / Medical Insurance",
       "Any cost arising due to unforeseen circumstances (Landslides, heavy snowfall, roadblocks, strikes, or route diversions)"
     ],
-    "package_options": [],
+    "package_options": [
+      {
+        "title": "Couple (1 Room / 2 Pax)",
+        "price": "₹18,499 per person"
+      },
+      {
+        "title": "Triple Sharing (1 Room / 3 Pax)",
+        "price": "₹16,499 per person"
+      },
+      {
+        "title": "4 Pax (2 Rooms / Dzire/Etios)",
+        "price": "₹14,499 per person"
+      }
+    ],
     "sub_package_options": "",
     "departure_dates": [],
     "faqs": [
@@ -133,7 +146,7 @@
     "is_featured_lemonade": true,
     "link": "trips/himachal-tours-shimla-manali-with-sissu-the-himachal-odyssey-1787070629076",
     "id": 1787070629076,
-    "updated_at": "2026-08-19T07:01:27.731Z",
+    "updated_at": "2026-08-19T07:13:49.980Z",
     "created_at": "2026-08-18T16:30:32.059Z"
   },
   {

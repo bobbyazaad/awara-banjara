@@ -2626,39 +2626,6 @@
         {
           "dates": [
             {
-              "id": "b_1785658289763",
-              "price": "12,499",
-              "range": "7th August",
-              "status": "Available",
-              "startDate": "2026-08-07"
-            },
-            {
-              "id": "b_1785658300995",
-              "price": "12,499",
-              "range": "14th August",
-              "status": "Filling Fast",
-              "startDate": "2026-08-14"
-            },
-            {
-              "id": "b_1785658304981",
-              "price": "12,499",
-              "range": "21th August",
-              "status": "Filling Fast",
-              "startDate": "2026-08-21"
-            },
-            {
-              "id": "b_1785658310030",
-              "price": "12,499",
-              "range": "28th August",
-              "status": "Filling Fast",
-              "startDate": "2026-08-28"
-            }
-          ],
-          "month": "August 2026"
-        },
-        {
-          "dates": [
-            {
               "id": "b_1785658319680",
               "price": "12,499",
               "range": "4th September",
@@ -2754,7 +2721,7 @@
       "is_featured_reels": true,
       "is_featured_stack": true,
       "is_featured_lemonade": true,
-      "updated_at": "2026-08-22T15:39:31.400Z"
+      "updated_at": "2026-08-22T16:05:25.979Z"
     },
     {
       "id": 112,

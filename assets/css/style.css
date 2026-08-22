@@ -4415,11 +4415,11 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(150deg, #ffffff 0%, #f4f5f2 45%, #dfe2dc 100%);
+  background: linear-gradient(150deg, #2b2b24 0%, #14140f 45%, #050504 100%);
   border-radius: 15px;
   box-shadow:
-    0 10px 22px rgba(60, 65, 55, 0.28),
-    0 2px 6px rgba(60, 65, 55, 0.16);
+    0 10px 22px rgba(20, 20, 15, 0.32),
+    0 2px 6px rgba(20, 20, 15, 0.2);
   z-index: 9000;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   -webkit-tap-highlight-color: transparent;
@@ -4431,23 +4431,23 @@ button { font-family: inherit; cursor: pointer; }
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: #000000;
+  background: linear-gradient(150deg, #d7ff33 0%, #ccff00 55%, #b8e600 100%);
   border-radius: 10px;
-  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.45);
 }
 
 .whatsapp-float__icon {
   width: 58%;
   height: 58%;
-  color: #ffffff;
+  color: #14140f;
   display: block;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.06);
   box-shadow:
-    0 14px 28px rgba(60, 65, 55, 0.34),
-    0 3px 8px rgba(60, 65, 55, 0.2);
+    0 14px 28px rgba(20, 20, 15, 0.4),
+    0 3px 8px rgba(20, 20, 15, 0.24);
 }
 
 @media (max-width: 640px) {

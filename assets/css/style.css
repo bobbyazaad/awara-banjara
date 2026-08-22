@@ -4415,11 +4415,11 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(150deg, #2b2b24 0%, #14140f 45%, #050504 100%);
+  background: linear-gradient(150deg, #ffffff 0%, #fbfbf8 45%, #eceee6 100%);
   border-radius: 15px;
   box-shadow:
-    0 10px 22px rgba(20, 20, 15, 0.32),
-    0 2px 6px rgba(20, 20, 15, 0.2);
+    0 10px 22px rgba(20, 20, 15, 0.26),
+    0 2px 6px rgba(20, 20, 15, 0.14);
   z-index: 9000;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   -webkit-tap-highlight-color: transparent;
@@ -4439,15 +4439,15 @@ button { font-family: inherit; cursor: pointer; }
 .whatsapp-float__icon {
   width: 58%;
   height: 58%;
-  color: #14140f;
+  color: #ffffff;
   display: block;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.06);
   box-shadow:
-    0 14px 28px rgba(20, 20, 15, 0.4),
-    0 3px 8px rgba(20, 20, 15, 0.24);
+    0 14px 28px rgba(20, 20, 15, 0.32),
+    0 3px 8px rgba(20, 20, 15, 0.18);
 }
 
 @media (max-width: 640px) {

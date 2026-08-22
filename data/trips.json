@@ -2541,12 +2541,12 @@
   {
     "id": 111,
     "title": "Spiti : The Highland Circuit (Group Trip)",
-    "duration": "7 Days / 6 Nights",
+    "duration": "7Days / 6Nights",
     "price": "₹12,499",
     "image_url": "assets/images/trips/trip_111_image_url.jpg",
-    "link": "trips/spiti-tours-spiti-the-highland-circuit-group-trip-111.html",
+    "link": "trips/spiti-tours-spiti-the-highland-circuit-group-trip-111",
     "created_at": "2026-08-02T08:18:57.366181+00:00",
-    "category": "spiti_tours, women_only_tours, bike_tours, corporate_tours",
+    "category": "spiti_tours, himachal_tours, women_only_tours, corporate_tours",
     "route": "Delhi — Manali — Kaza — Langza — Komic — Hikkim — Key Monastery — Chicham Bridge — Kunzum Pass — Chandratal — Manali — Delhi",
     "tags": "Spiti Valley, Highland Circuit, Shared Ride, Road Trip, Group Tour",
     "bento_img_1": "assets/images/trips/trip_111_bento_img_1.jpg",
@@ -2554,57 +2554,57 @@
     "bento_img_3": "assets/images/trips/trip_111_bento_img_3.jpg",
     "bento_img_4": "assets/images/trips/trip_111_bento_img_4.jpg",
     "bento_img_5": "assets/images/trips/trip_111_bento_img_5.jpg",
-    "about_text": "This 7-day expedition takes travelers from the green pine valleys of Manali into the high-altitude cold desert of Spiti Valley. Experience driving through the engineering marvel of Atal Tunnel, crossing the high mountain passes of Kunzum, and exploring iconic high-altitude villages. Highlights include mailing a postcard from the World’s Highest Post Office in Hikkim, witnessing the giant golden Buddha of Langza, driving across Asia’s highest suspension bridge at Chicham, visiting the historic Key Monastery, and spending an unforgettable night camping under the stars near the crescent-shaped Chandratal Lake.",
+    "about_text": "Step away from the ordinary city chaos and answer the raw, wild call of the mountains with Awara Banjara signature Spiti: The Highland Circuit. This immersive 7-day soulful expedition takes you from the green, pine-scented valleys of Manali straight into the stark, breathtaking cold desert of Spiti Valley. Feel the nomadic energy as you cross the engineering marvel of the Atal Tunnel, navigate through wild riverbeds, and ascend the mighty windswept heights of Kunzum Pass. \n\nLive the true Banjara life as you touch the skies in some of the highest human settlements on earth—mail a postcard from the World’s Highest Post Office in Hikkim, gaze at the majestic snow-clad peaks from the giant golden Buddha statue in Langza, and cross Asia’s highest suspension bridge at Chicham. Seek timeless tranquility at the historic cliffside Key Monastery before trading concrete walls for a blanket of million stars during an unforgettable night of alpine camping near the mystical, crescent-shaped Chandratal Lake (Moon Lake). \n\nDesigned for true wanderers and mountain souls, this journey blends rugged thrills with deep local exploration. Come back with a camera full of raw memories, dusty trails, and a heart forever anchored in the high Himalayas.",
     "itinerary": [
       {
         "day": 1,
-        "title": "Delhi or Chandigarh to Manali",
-        "details": "Your incredible Himalayan adventure begins as you board your vehicle or comfortable overnight Volvo bus from Delhi or Chandigarh in the evening. Settle into your seat, leave the city hustle behind, and enjoy a smooth, relaxing night journey as you wind your way up towards the cool, fresh air and green hills of Himachal Pradesh."
+        "title": "Delhi to Manali — Overnight Volvo Journey",
+        "details": "Your Himalayan journey begins as you board a comfortable overnight Volvo bus from Delhi in the evening. Leave the city chaos behind and enjoy a smooth, scenic overnight ride through winding mountain roads as you head toward the cool air of Himachal Pradesh."
       },
       {
         "day": 2,
         "title": "Welcome to Manali & Local Town Exploration",
-        "details": "Arrive in Manali by morning and check into your hotel. Take some time to freshen up, unpack, and let your body rest and adjust to the mountain weather. In the afternoon, head out to explore Manali's cultural heart. Visit the famous wooden Hadimba Temple nestled inside a dense pine forest, take a refreshing stroll around the natural Vashisht Hot Springs, and spend your evening shopping for souvenirs, eating local snacks, and enjoying the lively vibe of Mall Road."
+        "details": "Arrive in Manali by morning and check into your stay to shake off the travel fatigue. Spend the afternoon soaking in local mountain culture—wander through the towering pine trees of the sacred Hadimba Devi Temple, explore the rustic lanes of Old Manali, or take a peaceful stroll through Van Vihar. Spend your evening soaking up the vibrant vibe of Mall Road. Stay overnight in Manali."
       },
       {
         "day": 3,
         "title": "Manali to Kaza via Atal Tunnel & Kunzum Pass",
-        "details": "Wake up early for the most thrilling day of your trip! Leave green Manali behind and drive straight through the magnificent Atal Tunnel. The moment you exit the other side, the landscape changes dramatically from lush green valleys to a breathtaking, rugged cold desert. Drive along the wild riverbeds of Lahaul Valley and ascend the mighty Kunzum Pass, stopping at the sacred temple to seek blessings for a safe journey. By evening, arrive in Kaza, the vibrant and charming main town of Spiti Valley."
+        "details": "Wake up to an early, thrilling start as you leave green Manali behind. Drive straight through the engineering marvel of the Atal Tunnel and step directly into the stark, breathtaking cold desert of Spiti Valley. Journey along the wild riverbeds, ascend the mighty Kunzum Pass, and seek blessings at the sacred mountain shrine before arriving in Kaza by evening. Stay overnight in Kaza."
       },
       {
         "day": 4,
         "title": "Exploring High Villages — Langza, Hikkim & Komik",
-        "details": "Today is all about visiting some of the highest human settlements on Earth! Your first stop is Langza, a picturesque village famous for its giant golden Buddha statue sitting peacefully against massive snow-capped mountains. Next, drive up to Hikkim to visit the World’s Highest Post Office—don't forget to write a real postcard to your family or friends from over 14,000 feet! Conclude your village tour at Komik, one of the highest motorable villages in the world, before returning to Kaza town for a cozy evening."
+        "details": "Today is all about touching the skies in some of the world's highest human settlements. Visit Langza to witness the giant golden Buddha statue gazing over snow-clad peaks, head up to Hikkim to mail a postcard from the World’s Highest Post Office, and explore Komik, one of the highest motorable villages on earth. Return to Kaza by evening for a cozy night. Stay overnight in Kaza."
       },
       {
         "day": 5,
-        "title": "Key Monastery, Kibber Village & Chicham Bridge",
-        "details": "After a hearty breakfast, head out to visit the iconic Key Monastery, a magnificent multi-tiered Tibetan Buddhist monastery perched dramatically on a steep hilltop. Step inside to explore peaceful prayer halls, ancient murals, and share a cup of warm tea with the resident monks. Afterward, drive up to Kibber, a historic village known for its traditional stone houses. The ultimate highlight of the day is driving across Chicham Bridge—the highest suspension bridge in Asia, hanging suspended over a jaw-dropping 1,000-foot-deep gorge! Return to Kaza by evening."
+        "title": "Kaza to Chandratal Lake via Key Monastery & Chicham Bridge",
+        "details": "After a hearty breakfast, head out to explore the magnificent Key Monastery perched dramatically on a hilltop. Drive across Chicham Bridge, Asia's highest suspension bridge hanging over a massive gorge, and make your way toward the mystical Chandratal Lake (Moon Lake). Experience the surreal beauty of the crystal-clear crescent lake before cozying up for the night at the campsite. Stay overnight at the Chandratal campsite."
       },
       {
         "day": 6,
-        "title": "Kaza to Chandratal Lake",
-        "details": "Bid farewell to Kaza as you travel toward the magical Chandratal Lake (also known as the Moon Lake). After reaching the campsite area, take a short, easy walk along the trail to reach the shores of the lake. The crystal-clear blue water perfectly mirrors the towering surrounding peaks in a way that feels completely surreal. As evening falls, head back to your cozy campsite near the lake, enjoy hot, comforting food by the dining area, and spend hours looking up at a crystal-clear night sky filled with thousands of brilliant stars."
+        "title": "Chandratal Lake to Manali & Departure to Delhi",
+        "details": "Wake up to a crisp, raw mountain morning surrounded by untouched nature. Pack your bags and begin your scenic drive back through the Lahaul Valley and Atal Tunnel, returning to Manali by afternoon. In the evening, board your overnight Volvo bus back to Delhi."
       },
       {
         "day": 7,
-        "title": "Chandratal Lake to Manali & Departure",
-        "details": "Wake up to a crisp, cold mountain morning and enjoy a warm breakfast surrounded by untouched nature. Pack your bags and begin your scenic drive back towards Manali, following the winding path of the Chandra River through the rugged mountain terrain. Pass back through the Atal Tunnel and return to the lush greenery of the Kullu Valley, arriving back in Manali by afternoon. From here, catch your evening transport or Volvo bus back home, carrying a camera full of memories and a heart full of Spiti stories!"
+        "title": "Morning Arrival in Delhi",
+        "details": "Arrive back in Delhi by early morning, carrying a camera full of raw memories, rugged trails, and a heart forever anchored in the Himalayas."
       }
     ],
     "inclusions": [
       "Delhi to Manali & Return AC Volvo Bus Tickets",
-      "5 Nights Accommodation (Hotels / Homestays in Kaza & Alpine Camps at Chandratal)",
-      "5 Breakfast &  5  Dinner at Stays",
+      "4 Nights Accommodation (Hotels / Homestays in Manali & Kaza, and Alpine Camps at Chandratal)",
+      "4 Breakfast & 4 Dinner at Stays",
       "Shared Local Vehicle (Tempo Traveller / SUV) for Spiti Circuit Transfers & Sightseeing",
-      "Trip Captain / Experienced Driver for High-Altitude Terrain",
-      "Inner Line Permits / Environmental Fees"
+      "Experienced Trip Captain & Professional Mountain Driver for High-Altitude Terrain",
+      "Inner Line Permits / Environmental Fees & Toll Charges"
     ],
     "exclusions": [
       "Lunch Meals & Personal Expenses at Cafes",
-      "Personal Shopping, Tips, Portages & Bottled Water",
+      "Personal Shopping, Tips, Portages & Mineral Water Bottles",
       "5% GST & Travel Insurance",
-      "Costs arising from roadblocks, landslides, or extreme weather stay extensions"
+      "Any additional costs arising from roadblocks, landslides, vehicle breakdowns, or extreme weather stay extensions"
     ],
     "package_options": [
       {
@@ -2691,16 +2691,44 @@
     ],
     "faqs": [
       {
-        "question": "WHAT IS THE TRIP DURATION?",
-        "answer": "The trip spans 7 Days / 6 Nights starting and ending in Delhi."
+        "question": "HOW DO I MANAGE ACUTE MOUNTAIN SICKNESS (AMS) ON THE SPITI HIGHLAND CIRCUIT?",
+        "answer": "Acclimatization is key; since you cross Kunzum Pass and stay in high-altitude towns like Kaza (12,500 ft) and Langza, staying hydrated, avoiding heavy exertion on Day 3 and Day 4, and carrying personal prescribed medicines helps your body adjust smoothly."
       },
       {
-        "question": "IS TRANSPORT INCLUDED FROM DELHI?",
-        "answer": "Yes, round-trip overnight AC Volvo bus transfers from Delhi to Manali are included."
+        "question": "WHAT IS THE TYPICAL MOBILE NETWORK AND INTERNET CONNECTIVITY DURING THIS SPITI TRIP?",
+        "answer": "Postpaid connections like Jio and BSNL work intermittently in Manali and Kaza, but expect complete digital disconnection once you head toward Chandratal Lake or remote high-altitude mountain passes."
       },
       {
-        "question": "WHAT ARE THE HIGHLIGHTS OF THIS CIRCUIT?",
-        "answer": "Key Monastery, Chicham Bridge, Hikkim, Komic, Langza, and Chandratal Lake."
+        "question": "CAN SOLO TRAVELERS OR WOMEN TRAVEL SAFELY ON THIS GROUP TRIP?",
+        "answer": "Absolutely. Awara Banjara groups are led by experienced trip captains, featuring verified mountain homestays and secure shared transport, making it exceptionally safe and welcoming for solo travelers and women explorers."
+      },
+      {
+        "question": "DO I NEED ANY SPECIAL PHYSICAL PREPARATION OR FITNESS LEVEL FOR THIS CIRCUIT?",
+        "answer": "While this is a relaxed-pace group road trip rather than a grueling trek, high-altitude regions like Komic and Chandratal involve walking at low-oxygen levels, so light cardio a few weeks prior is recommended."
+      },
+      {
+        "question": "WHAT TYPE OF VEHICLES ARE USED FOR TRANSFERS ACROSS THE ROUGH SPITI TERRAIN?",
+        "answer": "We use comfortable, experienced commercial mountain vehicles such as Tempo Travellers or reliable 4x4/SUV options driven by local drivers who specialize in handling unpredictable Himalayan terrain."
+      },
+      {
+        "question": "ARE THERE PROPER WASHROOM FACILITIES AVAILABLE DURING THE REMOTE ROAD JOURNEYS?",
+        "answer": "Basic western or Indian-style restrooms are available at your stays in Manali and Kaza, though remote transit stretches and Chandratal campsite feature more rustic or eco-friendly facilities."
+      },
+      {
+        "question": "WHAT KIND OF WEATHER AND TEMPERATURE FLUCTUATIONS SHOULD I EXPECT IN SPITI?",
+        "answer": "Days are comfortably warm and sunny under the mountain sun, but temperatures can drop sharply below freezing after sunset, especially at high-altitude locations like Chandratal and Kunzum Pass."
+      },
+      {
+        "question": "IS IT PERMITTED TO SMOKE OR CONSUME ALCOHOL DURING THE HIGH-ALTITUDE EXPEDITION?",
+        "answer": "Consuming alcohol or smoking is strictly discouraged during transit across high-altitude passes like Kunzum and near sacred or eco-sensitive zones like Chandratal Lake to prevent severe altitude sickness."
+      },
+      {
+        "question": "WHAT HAPPENS IN CASE OF UNFORESEEN ROADBLOCKS OR LANDSLIDES DUE TO WEATHER?",
+        "answer": "Safety comes first; if routes are blocked by unexpected weather, your trip captain coordinates alternative shelter options, though any extended stays or extra transit costs are excluded from the package price."
+      },
+      {
+        "question": "WHAT SHOULD I PACK IN MY BACKPACK FOR THIS SPECIFIC 7-DAY CIRCUIT?",
+        "answer": "Pack in layers including thermal inners, a heavy windproof/waterproof jacket, UV-protection sunglasses, sturdy trekking shoes, a reusable water bottle, and essential personal medications."
       }
     ],
     "reviews": [
@@ -2725,7 +2753,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-15T12:29:34.419Z"
+    "updated_at": "2026-08-22T15:39:31.400Z"
   },
   {
     "id": 112,

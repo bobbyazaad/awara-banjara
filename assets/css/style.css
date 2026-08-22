@@ -4414,17 +4414,18 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-whatsapp);
+  background: #14140f;
   color: #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  border-radius: 18px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 6px 20px rgba(20, 20, 15, 0.35);
   z-index: 9000;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.08);
-  box-shadow: 0 8px 26px rgba(37, 211, 102, 0.55);
+  box-shadow: 0 8px 26px rgba(20, 20, 15, 0.45);
 }
 
 @media (max-width: 640px) {
@@ -4433,6 +4434,8 @@ button { font-family: inherit; cursor: pointer; }
     height: 50px;
     right: 16px;
     bottom: 16px;
+    border-radius: 16px;
+    border-width: 2px;
   }
   .whatsapp-float svg {
     width: 26px;

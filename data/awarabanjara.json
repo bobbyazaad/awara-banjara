@@ -163,7 +163,7 @@
       "bento_img_3": "assets/images/trips/img_1786811173623_Zanskar_Padum_City_in_Zanskar_valley.jpg",
       "bento_img_4": "assets/images/trips/img_1786811181398_Phuktal_Monastery-Himalayas.jpg",
       "bento_img_5": "assets/images/trips/img_1786811193248_The_Sacred_Mountain_Peak_Of_Gonbo_Rangjon__Altitude__Camping__Night_View__Locati.jpg",
-      "about_text": "An 8-day overland high-altitude expedition covering ~1,450 km from Delhi to the remote Zanskar Valley. Experience crossing the high-altitude Shinku La Pass (16,580 ft), marvel at the sacred rock monolith Gombo Rangzan, trek to the 12th-century cliffside Phuktal Cave Monastery, and take in panoramic views of the massive Drang Drung Glacier and Karsha Monastery.",
+      "about_text": "Awaken your inner nomad with the **Zanskar Valley Expedition**—an 8-day, high-altitude overland odyssey designed for the true offbeat explorer. Traversing roughly 1,450 km from Delhi into the raw wilderness of Ladakh and Lahaul-Zanskar, this immersive journey takes you far beyond the ordinary tourist trails.\n\nFeel the thrill of scaling the formidable **Shinku La Pass ($16,580\\text{ ft}$)** and stand in awe before the solitary, sacred rock monolith of **Gombo Rangzan**. Trek deep into the rugged Lungnak Valley to discover the breathtaking 12th-century **Phuktal Cave Monastery**, carved directly into a sheer cliff face. Unwind under a canopy of brilliant Himalayan stars by the riverbanks of Jispa, and witness the sprawling ice vistas of the **Drang Drung Glacier** from Pensi La Pass.\n\nCurated by Himalayan veterans, this expedition blends raw 4x4 off-road exploration with soulful campfires, local homestays, and professional safety protocols—including continuous oxygen monitoring. If your soul craves silence, sweeping horizons, and untamed mountain magic, answer the call of the high Himalayas. **Book your Zanskar passage with Awara Banjara today!**",
       "itinerary": [
         {
           "day": 1,
@@ -178,11 +178,11 @@
         {
           "day": 3,
           "title": "Manali to Gombo Rangzan via Shinku La Pass",
-          "details": "Begin the high-altitude journey driving through the engineering marvel of the Atal Tunnel into Lahaul Valley. Ascend the formidable Shinku La Pass ($16,580\\text{ ft}$), crossing from Himachal into the rugged wilderness of Zanskar. Arrive at the foot of Gombo Rangzan, the sacred and solitary rock monolith. Enjoy an unforgettable evening of high-altitude stargazing and an overnight stay at Kargyak or Purne."
+          "details": "Begin the high-altitude journey driving through the engineering marvel of the Atal Tunnel into Lahaul Valley. Ascend the formidable Shinku La Pass ($16,580\\text{ ft}$), crossing from Himachal into the rugged wilderness of Zanskar. Arrive at the foot of Gombo Rangzan, the sacred and solitary rock monolith. Enjoy an unforgettable evening of high-altitude stargazing and an overnight stay at Gombo Rangzan."
         },
         {
           "day": 4,
-          "title": "Purne to Padum via Phuktal Monastery Hike",
+          "title": "Gombo Rangzan to Padum via Phuktal Monastery Hike",
           "details": "Embark on an iconic day trek to the 12th-century Phuktal Cave Monastery, a spectacular architectural wonder built into a sheer cliff face high above the turquoise Tsarap River. Interact with local monks and experience the tranquil sanctuary of the cave complex. Return to the trail head and continue the overland drive through the striking landscapes of Lungnak Valley to reach Padum, the administrative heart of Zanskar."
         },
         {
@@ -207,26 +207,33 @@
         }
       ],
       "inclusions": [
-        "Delhi-Manali-Delhi Volvo / Dedicated 4x4 or Expedition Vehicle for Zanskar circuit",
-        "5 Nights hotel/homestay/camps + 2 Nights overnight journey",
-        "Nutritious breakfast & dinner during hotel/camp stays",
-        "All inner line permits, wildlife fees, and driver allowances",
-        "Experienced Banjara trip leader, first-aid kit with oxygen cylinder"
+        "Delhi to Manali and Manali to Delhi AC Volvo Bus transfers",
+        "Dedicated Tempo Traveller / comfortable group transport for the entire Zanskar sightseeing circuit",
+        "5 Nights comfortable stays across hotels, homestays, and high-altitude camps",
+        "5 Nutritious breakfasts and 5 delicious dinners during the stay",
+        "Experienced and certified Awara Banjara trip leader/coordinator throughout the journey",
+        "Safety equipment including portable emergency oxygen cylinders and first-aid medical kit",
+        "All required Inner Line Permits (ILP), wildlife fees, environmental/green taxes, and driver allowances"
       ],
       "exclusions": [
-        "Lunch and personal beverages/snacks during transit",
-        "Personal Expenses (laundry, tips, entry fees to monuments, optional activities)",
-        "Personal travel or medical insurance",
-        "Any emergency costs arising from landslides, weather roadblocks, or medical evacuation"
+        "Lunches and any meals, snacks, or personal beverages during transit days and sightseeing",
+        "Personal expenses such as laundry, phone calls, tips, camera/monument entry fees, and optional activities",
+        "Travel insurance, medical insurance, or personal accident coverage",
+        "Any additional costs arising from unexpected roadblocks, landslides, bad weather, or forced route diversions",
+        "Any emergency medical evacuation costs or expenses incurred due to personal illness or medical emergencies"
       ],
       "package_options": [
         {
-          "title": "Triple Sharing",
+          "title": "Quad Sharing",
           "price": "₹18,400"
         },
         {
-          "title": "Double Sharing",
+          "title": "Triple Sharing",
           "price": "₹20,400"
+        },
+        {
+          "title": "Double Sharing",
+          "price": "₹22,400"
         }
       ],
       "sub_package_options": "",
@@ -312,10 +319,10 @@
       "custom_quote_title": "",
       "is_featured_reels": true,
       "is_featured_stack": true,
-      "is_featured_lemonade": false,
-      "link": "trips/himachal-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781.html",
+      "is_featured_lemonade": true,
+      "link": "trips/himachal-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781",
       "id": 1786620306781,
-      "updated_at": "2026-08-17T10:24:47.855Z",
+      "updated_at": "2026-08-22T14:39:22.858Z",
       "created_at": "2026-08-13T11:25:06.969Z"
     },
     {

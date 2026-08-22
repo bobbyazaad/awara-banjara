@@ -22,8 +22,11 @@ function formatPrice(val) {
 // inline clickable span), rather than a separate button on its own line.
 const ABOUT_TRIP_TRUNCATE_AT = 320;
 
+const ABOUT_TRIP_MOBILE_QUERY = '(max-width: 768px)';
+
 function renderAboutTripText(textEl, fullText, expanded) {
   textEl.setAttribute('data-full', fullText);
+  textEl.setAttribute('data-expanded', expanded ? 'true' : 'false');
   if (fullText.length <= ABOUT_TRIP_TRUNCATE_AT) {
     textEl.textContent = fullText;
     return;
@@ -34,7 +37,10 @@ function renderAboutTripText(textEl, fullText, expanded) {
   const link = document.createElement('span');
   link.className = 'read-more-toggle';
   link.textContent = expanded ? 'Read Less' : 'Read More';
-  link.addEventListener('click', () => renderAboutTripText(textEl, fullText, !expanded));
+  link.addEventListener('click', (e) => {
+    e.stopPropagation();
+    renderAboutTripText(textEl, fullText, !expanded);
+  });
   textEl.appendChild(link);
 }
 
@@ -49,6 +55,21 @@ function setupAboutTripToggle(fullTextOverride) {
   const fullText = (fullTextOverride || textEl.getAttribute('data-full') || textEl.textContent || '').trim();
   if (!fullText) return;
   renderAboutTripText(textEl, fullText, false);
+
+  // On mobile, tapping anywhere in the text (not just the "Read More" link
+  // itself) expands it - the link's own click handler already stopped
+  // propagation, so this only fires for taps elsewhere in the paragraph.
+  if (!textEl.dataset.sectionTapBound) {
+    textEl.dataset.sectionTapBound = 'true';
+    textEl.addEventListener('click', () => {
+      if (!window.matchMedia(ABOUT_TRIP_MOBILE_QUERY).matches) return;
+      if (textEl.getAttribute('data-expanded') === 'true') return;
+      const currentFull = textEl.getAttribute('data-full') || '';
+      if (currentFull.length > ABOUT_TRIP_TRUNCATE_AT) {
+        renderAboutTripText(textEl, currentFull, true);
+      }
+    });
+  }
 }
 
 function toOrdinalDay(day) {

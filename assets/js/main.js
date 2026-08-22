@@ -28,6 +28,19 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', updateHeaderShadow, { passive: true });
   }
 
+  // Floating WhatsApp button: stays off-screen while the hero sits untouched,
+  // then slides in from the right as soon as the visitor starts scrolling.
+  var whatsappFloat = document.querySelector('.whatsapp-float');
+  if (whatsappFloat) {
+    var REVEAL_AT = 120; // px of scroll before the button slides in
+
+    var updateWhatsappFloat = function () {
+      whatsappFloat.classList.toggle('is-visible', window.scrollY > REVEAL_AT);
+    };
+    updateWhatsappFloat();
+    window.addEventListener('scroll', updateWhatsappFloat, { passive: true });
+  }
+
   // Center-mode carousels: the middle card is largest, neighbours scale down.
   // Arrows (or swipe, or clicking a side card) move a different card into the centre.
   window.initCarousels = function () {

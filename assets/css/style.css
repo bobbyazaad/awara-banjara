@@ -4404,36 +4404,44 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* ---------- Floating WhatsApp button ---------- */
+/* Hidden while the hero is at rest; JS adds .is-visible on first scroll and
+   the button slides in from the right edge, then stays put. */
 
 .whatsapp-float {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  width: 62px;
-  height: 62px;
-  padding: 5px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(150deg, #ffffff 0%, #fbfbf8 45%, #eceee6 100%);
-  border-radius: 15px;
+  background: var(--color-whatsapp);
+  border-radius: 12px;
   box-shadow:
-    0 10px 22px rgba(20, 20, 15, 0.26),
+    0 8px 20px rgba(20, 20, 15, 0.24),
     0 2px 6px rgba(20, 20, 15, 0.14);
   z-index: 9000;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(calc(100% + 24px));
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.3s ease,
+    visibility 0s linear 0.45s,
+    box-shadow 0.2s ease;
   -webkit-tap-highlight-color: transparent;
 }
 
-.whatsapp-float__badge {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(150deg, #d7ff33 0%, #ccff00 55%, #b8e600 100%);
-  border-radius: 10px;
-  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.45);
+.whatsapp-float.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.3s ease,
+    visibility 0s,
+    box-shadow 0.2s ease;
 }
 
 .whatsapp-float__icon {
@@ -4443,23 +4451,30 @@ button { font-family: inherit; cursor: pointer; }
   display: block;
 }
 
-.whatsapp-float:hover {
-  transform: scale(1.06);
+.whatsapp-float.is-visible:hover {
+  transform: translateX(0) scale(1.06);
   box-shadow:
-    0 14px 28px rgba(20, 20, 15, 0.32),
+    0 12px 26px rgba(20, 20, 15, 0.3),
     0 3px 8px rgba(20, 20, 15, 0.18);
 }
 
 @media (max-width: 640px) {
   .whatsapp-float {
-    width: 54px;
-    height: 54px;
+    width: 50px;
+    height: 50px;
     right: 16px;
     bottom: 16px;
-    padding: 4px;
-    border-radius: 13px;
+    border-radius: 11px;
   }
-  .whatsapp-float__badge {
-    border-radius: 9px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float,
+  .whatsapp-float.is-visible {
+    transform: none;
+    transition: opacity 0.2s ease, visibility 0s;
+  }
+  .whatsapp-float.is-visible:hover {
+    transform: none;
   }
 }

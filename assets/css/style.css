@@ -3044,7 +3044,7 @@ button { font-family: inherit; cursor: pointer; }
 .about-trip-text .read-more-toggle {
   font-weight: 700;
   color: var(--color-black);
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
 }

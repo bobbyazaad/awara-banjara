@@ -96,12 +96,12 @@
 
       <!-- Right Card: Interactive Contact Form -->
       <div class="contact-card">
-        <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for reaching out to Awara Banjara! We will contact you shortly.');">
-          <input type="text" class="form-input" placeholder="Name" required>
-          <input type="tel" class="form-input" placeholder="Mobile No." required>
-          <input type="email" class="form-input" placeholder="Email" required>
-          <textarea class="form-textarea" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn-send-message">SEND MESSAGE</button>
+        <form class="contact-form" id="contactForm" action="#" method="POST" onsubmit="handleContactFormSubmit(event)">
+          <input type="text" class="form-input" id="contactName" placeholder="Name" required>
+          <input type="tel" class="form-input" id="contactPhone" placeholder="Mobile No." required>
+          <input type="email" class="form-input" id="contactEmail" placeholder="Email" required>
+          <textarea class="form-textarea" id="contactMessage" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn-send-message" id="contactSubmitBtn">SEND MESSAGE</button>
         </form>
       </div>
 
@@ -174,6 +174,66 @@
   </div>
 </footer>
 
+<script src="assets/js/db-engine.js?v=3cd1c698bc"></script>
 <script src="assets/js/main.js?v=deb384d33b"></script>
+<script>
+  // Submits into the same Customer Inquiries CMS tab as the hero modal.
+  // Awaits the real result and only shows success once the server actually
+  // confirms it - a fallback that only saved locally would otherwise be
+  // invisible in the CMS while the visitor still saw "success".
+  async function handleContactFormSubmit(e) {
+    e.preventDefault();
+
+    const nameEl = document.getElementById('contactName');
+    const phoneEl = document.getElementById('contactPhone');
+    const emailEl = document.getElementById('contactEmail');
+    const messageEl = document.getElementById('contactMessage');
+    const submitBtn = document.getElementById('contactSubmitBtn');
+
+    let phone = (phoneEl.value || '').trim();
+    if (phone && !phone.startsWith('+')) {
+      phone = '+91-' + phone.replace(/[^0-9]/g, '');
+    }
+
+    const inquiryPayload = {
+      inquiry_id: 'INQ_' + Date.now(),
+      trip_id: 'contact_form',
+      trip_title: 'Contact Page Inquiry',
+      price: 'On Request',
+      selected_date: 'Flexible',
+      selected_package: 'General Inquiry',
+      selected_sub_package: 'none',
+      customer_name: (nameEl.value || '').trim(),
+      phone: phone,
+      email: (emailEl.value || '').trim(),
+      travelers_count: 1,
+      message: (messageEl.value || '').trim(),
+      status: 'new'
+    };
+
+    const originalBtnText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+
+    let result = { success: false };
+    try {
+      if (typeof window.AwaraDB !== 'undefined' && window.AwaraDB.submitInquiry) {
+        result = await window.AwaraDB.submitInquiry(inquiryPayload);
+      }
+    } catch (err) {
+      result = { success: false, error: err.message };
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalBtnText;
+
+    if (result && result.serverSynced) {
+      document.getElementById('contactForm').reset();
+      alert('Thank you for reaching out to Awara Banjara! We will contact you shortly.');
+    } else {
+      alert("Sorry, we couldn't reach our server just now - your details were not saved. Please check your connection and try again, or message us directly on WhatsApp.");
+    }
+  }
+</script>
 </body>
 </html>

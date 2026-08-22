@@ -263,9 +263,23 @@ function prerenderTrip(trip, allReviews) {
     page = page.replace(/<div class="trip-tags-row">.*?<\/div>/s, tagsRowHtml);
   }
 
-  // 4. About Text
+  // 4. About Text - truncated to ~4 lines with an inline "... Read More"
+  // toggle baked in at build time (same character-count technique the
+  // review cards already use), so a static page shows the truncated view
+  // from first paint instead of flashing the full text before JS runs.
+  // trip-detail-loader.js's setupAboutTripToggle() reads the data-full
+  // attribute to bind the click-to-expand behavior on top of this.
   if (trip.about_text) {
-    page = page.replace(/(<p class="about-trip-text[^>]*>).*?(<\/p>)/s, `$1${trip.about_text}$2`);
+    const ABOUT_TRUNCATE_AT = 320;
+    const fullAbout = trip.about_text;
+    const escapedFull = fullAbout.replace(/"/g, '&quot;');
+    const aboutHtml = fullAbout.length > ABOUT_TRUNCATE_AT
+      ? `${fullAbout.slice(0, ABOUT_TRUNCATE_AT).trimEnd()}... <span class="read-more-toggle">Read More</span>`
+      : fullAbout;
+    page = page.replace(
+      /<p class="about-trip-text([^>]*)>.*?<\/p>/s,
+      (m, existingAttrs) => `<p class="about-trip-text${existingAttrs} data-full="${escapedFull}">${aboutHtml}</p>`
+    );
   }
 
   // 5. Day-by-Day Accordion Itinerary

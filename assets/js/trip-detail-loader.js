@@ -16,28 +16,39 @@ function formatPrice(val) {
   return `₹${num.toLocaleString('en-IN')}`;
 }
 
-// Clamps "About This Trip" to 4 lines with a Read More/Less toggle, shown
-// only when the text actually overflows that clamp (short overviews get no
-// toggle at all). Re-run whenever the text content is (re)populated, since
-// the clamped/full-height comparison depends on the final text being in place.
-function setupAboutTripToggle() {
-  const textEl = document.getElementById('aboutTripText') || document.querySelector('.about-trip-text');
-  const toggleBtn = document.getElementById('aboutTripToggle');
-  if (!textEl || !toggleBtn) return;
+// "About This Trip" truncates to ~4 lines' worth of characters with an
+// inline "... Read More" toggle at the end of the text, matching the same
+// pattern the review cards already use (character-count truncation + an
+// inline clickable span), rather than a separate button on its own line.
+const ABOUT_TRIP_TRUNCATE_AT = 320;
 
-  textEl.classList.add('clamped');
-  const isOverflowing = textEl.scrollHeight > textEl.clientHeight + 1;
-  toggleBtn.style.display = isOverflowing ? 'inline-flex' : 'none';
-  toggleBtn.textContent = 'Read More';
-
-  if (isOverflowing && !toggleBtn.dataset.bound) {
-    toggleBtn.dataset.bound = 'true';
-    toggleBtn.addEventListener('click', () => {
-      const expanded = !textEl.classList.contains('clamped');
-      textEl.classList.toggle('clamped', expanded);
-      toggleBtn.textContent = expanded ? 'Read More' : 'Read Less';
-    });
+function renderAboutTripText(textEl, fullText, expanded) {
+  textEl.setAttribute('data-full', fullText);
+  if (fullText.length <= ABOUT_TRIP_TRUNCATE_AT) {
+    textEl.textContent = fullText;
+    return;
   }
+  textEl.textContent = '';
+  const shown = expanded ? fullText : fullText.slice(0, ABOUT_TRIP_TRUNCATE_AT).trimEnd();
+  textEl.appendChild(document.createTextNode(shown + (expanded ? ' ' : '... ')));
+  const link = document.createElement('span');
+  link.className = 'read-more-toggle';
+  link.textContent = expanded ? 'Read Less' : 'Read More';
+  link.addEventListener('click', () => renderAboutTripText(textEl, fullText, !expanded));
+  textEl.appendChild(link);
+}
+
+// Re-run whenever the text content is (re)populated. Pass fullTextOverride
+// when fresh trip data was just fetched; omit it to (re)bind the click
+// handler on top of what prerender.js already baked into a static page
+// (read back from the data-full attribute it wrote), so there's no flash of
+// untruncated content before JS runs.
+function setupAboutTripToggle(fullTextOverride) {
+  const textEl = document.getElementById('aboutTripText') || document.querySelector('.about-trip-text');
+  if (!textEl) return;
+  const fullText = (fullTextOverride || textEl.getAttribute('data-full') || textEl.textContent || '').trim();
+  if (!fullText) return;
+  renderAboutTripText(textEl, fullText, false);
 }
 
 function toOrdinalDay(day) {
@@ -337,11 +348,9 @@ function fixAssetPath(path) {
   }
 
   // 3. About This Trip Text
-  const aboutTextEl = document.querySelector('.about-trip-text');
-  if (aboutTextEl && trip.about_text) {
-    aboutTextEl.textContent = trip.about_text;
+  if (trip.about_text) {
+    setupAboutTripToggle(trip.about_text);
   }
-  setupAboutTripToggle();
 
   // 4. Day-by-Day Accordion Itinerary
   const accordionContainer = document.querySelector('.itinerary-accordion');

@@ -3041,29 +3041,15 @@ button { font-family: inherit; cursor: pointer; }
   color: #44443d;
 }
 
-.about-trip-text.clamped {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
-}
-
-.about-trip-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  margin-top: 10px;
-  padding: 0;
-  background: none;
-  border: none;
-  color: var(--color-black);
+.about-trip-text .read-more-toggle {
   font-weight: 700;
-  font-size: 14px;
+  color: var(--color-black);
   text-decoration: underline;
   cursor: pointer;
+  white-space: nowrap;
 }
 
-.about-trip-toggle:hover {
+.about-trip-text .read-more-toggle:hover {
   color: var(--color-accent-dark);
 }
 

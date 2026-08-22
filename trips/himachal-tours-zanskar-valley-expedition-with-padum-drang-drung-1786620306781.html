@@ -28,7 +28,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="icon" type="image/png" href="../assets/images/logo/favicon.png?v=2.0">
-<link rel="stylesheet" href="../assets/css/style.css?v=522b873435">
+<link rel="stylesheet" href="../assets/css/style.css?v=013e55e60f">
 
 <!-- JSON-LD Structured Data: TouristTrip & FAQPage -->
 <script type="application/ld+json">
@@ -164,7 +164,8 @@
         <!-- 2. About This Trip Card -->
         <div class="detail-card">
           <h2 class="card-heading">About This Trip</h2>
-          <p class="about-trip-text">An 8-day overland high-altitude expedition covering ~1,450 km from Delhi to the remote Zanskar Valley. Experience crossing the high-altitude Shinku La Pass (16,580 ft), marvel at the sacred rock monolith Gombo Rangzan, trek to the 12th-century cliffside Phuktal Cave Monastery, and take in panoramic views of the massive Drang Drung Glacier and Karsha Monastery.</p>
+          <p class="about-trip-text clamped" id="aboutTripText">An 8-day overland high-altitude expedition covering ~1,450 km from Delhi to the remote Zanskar Valley. Experience crossing the high-altitude Shinku La Pass (16,580 ft), marvel at the sacred rock monolith Gombo Rangzan, trek to the 12th-century cliffside Phuktal Cave Monastery, and take in panoramic views of the massive Drang Drung Glacier and Karsha Monastery.</p>
+          <button type="button" class="about-trip-toggle" id="aboutTripToggle" style="display:none;">Read More</button>
         </div>
 
         <!-- 3. Day-by-Day Accordion Itinerary Card -->
@@ -180,7 +181,7 @@
     <span class="acc-icon">−</span>
   </button>
   <div class="acc-content" style="padding: 16px 20px;">
-    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Overnight Journey in Volvo AC bus / private expedition vehicle. Assemble in Delhi by 5:00 PM for registration and briefing.</p>
+    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Assemble in Delhi by 5:00 PM for registration, roll call, and a short pre-departure orientation with your expedition coordinators. Board a premium AC Volvo coach (or dedicated expedition vehicle) and set off on an overnight journey towards Himachal Pradesh. Sit back, relax, and transition from the urban bustle to the crisp air of the Himalayan foothills.</p>
   </div>
 </div>
 <div class="acc-item ">
@@ -189,7 +190,7 @@
     <span class="acc-icon">+</span>
   </button>
   <div class="acc-content" style="padding: 16px 20px;">
-    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Local Exploration & Acclimatization. Check-in, visit Old Manali cafes, Hadimba Temple, Mall Road, and attend evening safety briefing.</p>
+    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Arrive in Manali by morning and check into your hotel. Dedicate the afternoon to gentle acclimatization—explore the historic Hadimba Temple, wander through the vibrant culture and cafes of Old Manali, and stroll down Mall Road. In the evening, gather for a comprehensive safety briefing, route orientation, and mandatory high-altitude gear inspection led by your expedition leader.</p>
   </div>
 </div>
 <div class="acc-item ">
@@ -198,7 +199,7 @@
     <span class="acc-icon">+</span>
   </button>
   <div class="acc-content" style="padding: 16px 20px;">
-    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Drive through Atal Tunnel and climb Shinku La Pass (16,580 ft) to reach the holy monolith Gombo Rangzan. Stargazing stay at Kargyak/Purne.</p>
+    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Begin the high-altitude journey driving through the engineering marvel of the Atal Tunnel into Lahaul Valley. Ascend the formidable Shinku La Pass ($16,580\text{ ft}$), crossing from Himachal into the rugged wilderness of Zanskar. Arrive at the foot of Gombo Rangzan, the sacred and solitary rock monolith. Enjoy an unforgettable evening of high-altitude stargazing and an overnight stay at Kargyak or Purne.</p>
   </div>
 </div>
 <div class="acc-item ">
@@ -207,7 +208,7 @@
     <span class="acc-icon">+</span>
   </button>
   <div class="acc-content" style="padding: 16px 20px;">
-    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Cliffside trek to the ancient 12th-century Phuktal Cave Monastery over Tsarap River, then drive through Lungnak Valley to Padum.</p>
+    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Embark on an iconic day trek to the 12th-century Phuktal Cave Monastery, a spectacular architectural wonder built into a sheer cliff face high above the turquoise Tsarap River. Interact with local monks and experience the tranquil sanctuary of the cave complex. Return to the trail head and continue the overland drive through the striking landscapes of Lungnak Valley to reach Padum, the administrative heart of Zanskar.</p>
   </div>
 </div>
 <div class="acc-item ">
@@ -216,7 +217,7 @@
     <span class="acc-icon">+</span>
   </button>
   <div class="acc-content" style="padding: 16px 20px;">
-    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Visit Karsha Monastery (largest in Zanskar) and drive to Pensi La Pass (14,400 ft) for views of Drang Drung Glacier. Overnight in Padum.</p>
+    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Spend the day exploring the highlights of central Zanskar. Visit Karsha Monastery, the largest and most prominent Gelugpa monastery in the region, offering panoramic valley views. Later, drive up to Pensi La Pass ($14,400\text{ ft}$) to witness the jaw-dropping expanse of the Drang Drung Glacier, one of the largest glaciers in the Indian Himalayas. Return to Padum for an overnight stay.</p>
   </div>
 </div>
 <div class="acc-item ">
@@ -225,7 +226,7 @@
     <span class="acc-icon">+</span>
   </button>
   <div class="acc-content" style="padding: 16px 20px;">
-    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Re-cross Shinku La Pass into Lahaul Valley and relax with a riverside bonfire in Jispa.</p>
+    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Bid farewell to central Zanskar and trace your route back across Shinku La Pass, descending into the lush green valley of Lahaul. Arrive at the scenic village of Jispa by late afternoon. Unwind by the Bhaga River with a warm group bonfire, sharing stories from the trail under the stars.</p>
   </div>
 </div>
 <div class="acc-item ">
@@ -234,7 +235,7 @@
     <span class="acc-icon">+</span>
   </button>
   <div class="acc-content" style="padding: 16px 20px;">
-    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Pass Sissu Waterfall and Atal Tunnel to Manali. Free time for local shopping/cafes before 6:00 PM Volvo to Delhi.</p>
+    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">After breakfast, drive from Jispa back toward Manali, passing the picturesque Sissu Waterfall and re-transiting the Atal Tunnel. Arrive in Manali with free time for souvenir shopping, exploring local markets, or grabbing an early dinner. Re-group by 6:00 PM to board your overnight Volvo coach back to Delhi.</p>
   </div>
 </div>
 <div class="acc-item ">
@@ -243,7 +244,7 @@
     <span class="acc-icon">+</span>
   </button>
   <div class="acc-content" style="padding: 16px 20px;">
-    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Reach Delhi early morning (7:00 AM - 8:30 AM). Expedition concludes.</p>
+    <p style="font-size: 14px; line-height: 1.6; color: #444; margin: 0;">Reach Delhi early in the morning (between 7:00 AM and 8:30 AM). Disembark at the drop-off point, marking the end of an extraordinary high-altitude Zanskar wilderness expedition with lifelong memories.</p>
   </div>
 </div>
 </div>
@@ -305,11 +306,11 @@
           <div class="reviews-grid">
 <article class="review-card-modern">
   <div class="rev-card-header">
-    <div class="avatar-circle-initial" style="background-color: #0284c7;">D</div>
+    <img src="../assets/images/trips/img_1786958533515_download__1_.jpg" alt="Samarth Rana" class="rev-avatar-img">
     <div class="rev-header-info">
       <div class="rev-author-name-row">
-        <strong class="rev-author-name">Divya mehta</strong>
-        <span class="rev-trip-tag">private</span>
+        <strong class="rev-author-name">Samarth Rana</strong>
+        <span class="rev-trip-tag">Joined Group Trip</span>
       </div>
       <div class="rev-booked-row">
         <span class="booked-label">Booked:</span>
@@ -319,17 +320,17 @@
   </div>
   <div class="rev-rating-date-row">
     <div class="stars"><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-    <span class="rev-date-text">1 month ago</span>
+    <span class="rev-date-text">Recently</span>
   </div>
-  <p class="rev-quote-body">"I would like to express my sincere appreciation to the Awara Banjara team for their excellent support and guidance throughout the travel process. They were professional, responsive, supportive..." <span class="read-more">Read More</span></p>
+  <p class="rev-quote-body">"Honestly, Zanskar felt like another world! Standing in front of Gombo Rangzan and doing the hike to Phuktal Monastery were absolute highlights. The roads are rugged, but our trip lead and drivers handled everything so smoothly. Warm homestays, great food, and amazing group vibes throughout. Truly grateful to the Awara Banjara team!" <span class="read-more">Read More</span></p>
 </article>
 <article class="review-card-modern">
   <div class="rev-card-header">
-    <img src="../assets/images/reviews/pfp-ananya.jpg" alt="Ananya Sharma" class="rev-avatar-img">
+    <img src="../assets/images/trips/img_1786785667932_Anjali.jpg" alt="Ananya Chugh" class="rev-avatar-img">
     <div class="rev-header-info">
       <div class="rev-author-name-row">
-        <strong class="rev-author-name">Ananya Sharma</strong>
-        <span class="rev-trip-tag">bike</span>
+        <strong class="rev-author-name">Ananya Chugh</strong>
+        <span class="rev-trip-tag">Joined Group Trip</span>
       </div>
       <div class="rev-booked-row">
         <span class="booked-label">Booked:</span>
@@ -660,6 +661,6 @@
   </script>
   <script src="../assets/js/db-engine.js?v=3cd1c698bc"></script>
   <script src="../assets/js/site-config-loader.js?v=11a073cee3"></script>
-  <script src="../assets/js/trip-detail-loader.js?v=55cf5a0de7"></script>
+  <script src="../assets/js/trip-detail-loader.js?v=de80560a94"></script>
 </body>
 </html>

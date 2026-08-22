@@ -28,7 +28,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="icon" type="image/png" href="../assets/images/logo/favicon.png?v=2.0">
-<link rel="stylesheet" href="../assets/css/style.css?v=522b873435">
+<link rel="stylesheet" href="../assets/css/style.css?v=013e55e60f">
 
 <!-- JSON-LD Structured Data: TouristTrip & FAQPage -->
 <script type="application/ld+json">
@@ -164,7 +164,8 @@
         <!-- 2. About This Trip Card -->
         <div class="detail-card">
           <h2 class="card-heading">About This Trip</h2>
-          <p class="about-trip-text">Embark on a magical winter journey through the heart of Kashmir. Experience the perfect blend of tranquility and snow-filled adventure, featuring an iconic houseboat stay on Dal Lake, thrilling rides on Asia’s highest Gondola in Gulmarg, frozen wonders at Drung Waterfall, and scenic exploration of Pahalgam's valleys alongside a trek to Yusmarg.</p>
+          <p class="about-trip-text clamped" id="aboutTripText">Embark on a magical winter journey through the heart of Kashmir. Experience the perfect blend of tranquility and snow-filled adventure, featuring an iconic houseboat stay on Dal Lake, thrilling rides on Asia’s highest Gondola in Gulmarg, frozen wonders at Drung Waterfall, and scenic exploration of Pahalgam's valleys alongside a trek to Yusmarg.</p>
+          <button type="button" class="about-trip-toggle" id="aboutTripToggle" style="display:none;">Read More</button>
         </div>
 
         <!-- 3. Day-by-Day Accordion Itinerary Card -->
@@ -287,11 +288,31 @@
           <div class="reviews-grid">
 <article class="review-card-modern">
   <div class="rev-card-header">
-    <div class="avatar-circle-initial" style="background-color: #0284c7;">R</div>
+    <img src="../assets/images/trips/img_1786958533515_download__1_.jpg" alt="Samarth Rana" class="rev-avatar-img">
     <div class="rev-header-info">
       <div class="rev-author-name-row">
-        <strong class="rev-author-name">RIYA JAYESH GADA</strong>
-        <span class="rev-trip-tag">private</span>
+        <strong class="rev-author-name">Samarth Rana</strong>
+        <span class="rev-trip-tag">Joined Group Trip</span>
+      </div>
+      <div class="rev-booked-row">
+        <span class="booked-label">Booked:</span>
+        <a href="kashmir-tours-kashmir-winter-realm-expedition-1786216631459" class="booked-trip-link"><strong>Kashmir Winter Realm Expedition</strong> <span class="arrow">↗</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="rev-rating-date-row">
+    <div class="stars"><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+    <span class="rev-date-text">Recently</span>
+  </div>
+  <p class="rev-quote-body">"Honestly, Zanskar felt like another world! Standing in front of Gombo Rangzan and doing the hike to Phuktal Monastery were absolute highlights. The roads are rugged, but our trip lead and drivers handled everything so smoothly. Warm homestays, great food, and amazing group vibes throughout. Truly grateful to the Awara Banjara team!" <span class="read-more">Read More</span></p>
+</article>
+<article class="review-card-modern">
+  <div class="rev-card-header">
+    <img src="../assets/images/trips/img_1786712111070_WhatsApp_Image_2026-08-14_at_18.13.04.jpg" alt="Sachin Kumar" class="rev-avatar-img">
+    <div class="rev-header-info">
+      <div class="rev-author-name-row">
+        <strong class="rev-author-name">Sachin Kumar</strong>
+        <span class="rev-trip-tag">Joined Group Trip</span>
       </div>
       <div class="rev-booked-row">
         <span class="booked-label">Booked:</span>
@@ -303,7 +324,47 @@
     <div class="stars"><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
     <span class="rev-date-text">1 month ago</span>
   </div>
-  <p class="rev-quote-body">"Trekking through the 7 alpine lakes in Kashmir was pure magic! Everything was seamless, safe, and exceptionally organized." <span class="read-more">Read More</span></p>
+  <p class="rev-quote-body">"Best stay for anyone looking for a quiet, beautiful getaway — the whole crew knew the mountains and valleys inside out." <span class="read-more">Read More</span></p>
+</article>
+<article class="review-card-modern">
+  <div class="rev-card-header">
+    <img src="../assets/images/trips/img_1786712094274____3_.jpg" alt="Divya Sharma" class="rev-avatar-img">
+    <div class="rev-header-info">
+      <div class="rev-author-name-row">
+        <strong class="rev-author-name">Divya Sharma</strong>
+        <span class="rev-trip-tag">Joined Group Trip</span>
+      </div>
+      <div class="rev-booked-row">
+        <span class="booked-label">Booked:</span>
+        <a href="kashmir-tours-kashmir-winter-realm-expedition-1786216631459" class="booked-trip-link"><strong>Kashmir Winter Realm Expedition</strong> <span class="arrow">↗</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="rev-rating-date-row">
+    <div class="stars"><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+    <span class="rev-date-text">1 month ago</span>
+  </div>
+  <p class="rev-quote-body">"I would like to express my sincere appreciation to the Awara Banjara team for their excellent support and guidance throughout the travel process. They were professional, responsive, supportive..." <span class="read-more">Read More</span></p>
+</article>
+<article class="review-card-modern">
+  <div class="rev-card-header">
+    <img src="../assets/images/trips/img_1786785624020____5_.jpg" alt="Dhruv Shergill" class="rev-avatar-img">
+    <div class="rev-header-info">
+      <div class="rev-author-name-row">
+        <strong class="rev-author-name">Dhruv Shergill</strong>
+        <span class="rev-trip-tag">Joined Solo Trip</span>
+      </div>
+      <div class="rev-booked-row">
+        <span class="booked-label">Booked:</span>
+        <a href="kashmir-tours-kashmir-winter-realm-expedition-1786216631459" class="booked-trip-link"><strong>Kashmir Winter Realm Expedition</strong> <span class="arrow">↗</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="rev-rating-date-row">
+    <div class="stars"><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" width="16" height="16" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+    <span class="rev-date-text">1 month ago</span>
+  </div>
+  <p class="rev-quote-body">"The spiti valley road trip with Awara Banjara was very good. It was my first ever solo trip but it did not feel like one as everyone in the group was very welcoming and hospitable..." <span class="read-more">Read More</span></p>
 </article>
 </div>
 </section>
@@ -622,6 +683,6 @@
   </script>
   <script src="../assets/js/db-engine.js?v=3cd1c698bc"></script>
   <script src="../assets/js/site-config-loader.js?v=11a073cee3"></script>
-  <script src="../assets/js/trip-detail-loader.js?v=55cf5a0de7"></script>
+  <script src="../assets/js/trip-detail-loader.js?v=de80560a94"></script>
 </body>
 </html>

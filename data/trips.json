@@ -531,7 +531,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "link": "trips/kashmir-tours-kashmir-winter-realm-expedition-1786216631459",
+    "link": "trips/kashmir-tours-kashmir-winter-realm-expedition-1786216631459.html",
     "id": 1786216631459,
     "updated_at": "2026-08-23T07:03:46.407Z",
     "created_at": "2026-08-08T19:17:11.478Z"
@@ -542,7 +542,7 @@
     "duration": "8 Days / 7 Nights",
     "price": "₹30,800",
     "image_url": "assets/images/trips/trip_115_image_url.jpg",
-    "link": "trips/kashmir-tours-kashmir-slow-paced-expedition-115.html",
+    "link": "trips/kashmir-tours-kashmir-slow-paced-expedition-115",
     "created_at": "2026-08-02T11:40:47.807763+00:00",
     "category": "kashmir_tours",
     "route": "Srinagar – Doodhpathri – Pahalgam – Gulmarg – Sonmarg – Srinagar",
@@ -552,7 +552,7 @@
     "bento_img_3": "assets/images/trips/trip_115_bento_img_3.jpg",
     "bento_img_4": "assets/images/trips/trip_115_bento_img_4.jpg",
     "bento_img_5": "assets/images/trips/trip_115_bento_img_5.jpg",
-    "about_text": "Embark on a slow-paced, immersive journey through the untamed beauty of Kashmir with Awara Banjara Adventure. Moving away from rushed, \"check-list\" tourism, this expedition focuses on offbeat trails, soulful local interactions, and raw Himalayan landscapes. From exploring Srinagar's historical monuments, vibrant floating markets, and iconic Dal Lake houseboats to witnessing the pristine meadows of Doodhpathri, Pahalgam's valleys, Gulmarg's high-altitude snow peaks via Gondola, and Sonmarg's gleaming Thajiwas Glacier—this trip brings you closer to the soul of Kashmir alongside a like-minded community of travelers.",
+    "about_text": "Step away from the rushed tourist trails and embrace the true nomadic spirit with the Awara Banjara Kashmir Slow-Paced Expedition (8 Days / 7 Nights). Designed for free-spirited explorers who believe that the magic of the mountains lies in lingering, this immersive journey lets you experience the soul of paradise at your own pace.\n\nFrom the historic, willow-shaded banks of Dal Lake in Srinagar to the lush, milk-fed meadows of Doodhpathri, every stop is crafted for deep connection rather than checklist tourism. Wander through the fragrant apple orchards of Pahalgam, stand in awe before the dramatic peaks of Aru and Betaab valleys, and glide through the snowy realms of Gulmarg on a thrilling Gondola ride. Feel the raw energy of the alpine winds at the golden meadows of Sonmarg, and slow down your heartbeat with cozy evenings under starlit skies.\n\nTrue to our Banjara philosophy, this isn’t just a group tour; it’s a journey where strangers become a tight-knit mountain tribe and local stories replace guidebooks. Your experience includes comfortable stays in handpicked hotels and a traditional wooden houseboat, private transport with expert local drivers, and a dedicated Trip Captain who serves as your storyteller and resident photographer.",
     "itinerary": [
       {
         "day": 1,
@@ -596,29 +596,35 @@
       }
     ],
     "inclusions": [
-      "Stay in 3/4 Star Hotel & Houseboat",
+      "Stay in 3 Star Hotel & Houseboat",
       "Breakfast & Dinner at the Property",
       "Airport Transfers from Srinagar",
       "Complementary 1hr Shikara Ride",
       "Sightseeing & Activities as per Itinerary",
-      "Private Vehicle for Sightseeing",
-      "Experienced Driver cum Guide",
-      "Toll, Parking Charges & Permits",
+      "Private Vehicle for Sightseeing (Excluding Local Union Areas)",
+      "Experienced Trip Captain cum Local Guide",
+      "Toll, Parking Charges & Inter-state Permits",
       "24x7 Support throughout the Journey"
     ],
     "exclusions": [
       "5% GST",
-      "Anything not Specified in Inclusions",
-      "Additional Arrangement Cost During Road Blockages",
-      "Any Paid Activities",
-      "Entry Fees of Any",
-      "Union Taxi Cost for Pahalgam & Zero Point (Sonmarg) Visit",
-      "Extra costs due to emergencies or unforeseen circumstances"
+      "Airfares or Train Tickets to and from Srinagar",
+      "Any Entry Fees to Monuments, Gardens, or Parks",
+      "Local Union Taxi Cost for Pahalgam (Aru, Betaab, Chandanwari) & Sonmarg Zero Point Visit",
+      "Gondola Ride Tickets in Gulmarg & Pony/Horse Riding Charges",
+      "Any Personal Expenses, Shopping, or Tips",
+      "Any Paid Adventure Activities (Skiing, Sledging, Rafting, ATV, etc.)",
+      "Extra costs arising due to road blockages, landslides, political unrest, or flight cancellations",
+      "Anything not explicitly mentioned in the inclusions list"
     ],
     "package_options": [
       {
-        "price": "₹30,800",
-        "title": "Tour Package"
+        "title": "Double Sharing",
+        "price": "₹30,800"
+      },
+      {
+        "title": "Triple Sharing",
+        "price": "₹26,499"
       }
     ],
     "sub_package_options": "",
@@ -659,64 +665,64 @@
     ],
     "faqs": [
       {
-        "answer": "We aren't a traditional travel agency; we are a community. Our trips focus on slow travel, local stories, and building a \"hype squad\" on the road. Expect raw beauty, offbeat trails, and a group of strangers who leave as family.",
-        "question": "What is the \"Awara Banjara\" experience all about?"
+        "question": "What is the \"Awara Banjara\" experience all about?",
+        "answer": "We aren't a traditional travel agency; we are a community. Our trips focus on slow travel, local stories, and building a \"hype squad\" on the road. Expect raw beauty, offbeat trails, and a group of strangers who leave as family."
       },
       {
-        "answer": "Our typical tribe consists of travelers aged 18 to 35. We curate our itineraries for those who enjoy high-energy exploration, shared stays, and a bit of adventure.",
-        "question": "Is there an age limit for the trips?"
+        "question": "Is there an age limit for the trips?",
+        "answer": "Our typical tribe consists of travelers aged 18 to 35. We curate our itineraries for those who enjoy high-energy exploration, shared stays, and a bit of adventure."
       },
       {
-        "answer": "Absolutely! A large percentage of our banjaras join solo. Safety—especially for solo female travelers—is our top priority. Our Trip Captains are trained to ensure a secure and inclusive environment for everyone.",
-        "question": "I’m a solo traveler. Is it safe for me?"
+        "question": "I’m a solo traveler. Is it safe for me?",
+        "answer": "Absolutely! A large percentage of our banjaras join solo. Safety—especially for solo female travelers—is our top priority. Our Trip Captains are trained to ensure a secure and inclusive environment for everyone."
       },
       {
-        "answer": "To lock your seat, you only need to pay a 10% non-refundable token amount. The remaining balance can be settled comfortably upon your arrival at the starting point of the trip.",
-        "question": "How do I book my spot?"
+        "question": "How do I book my spot?",
+        "answer": "To lock your seat, you only need to pay a 10% non-refundable token amount. The remaining balance can be settled comfortably upon your arrival at the starting point of the trip."
       },
       {
-        "answer": "The 10% booking token is non-refundable as it goes toward securing your permits and stay. For cancellations of the remaining amount, please refer to our detailed Terms & Conditions page.",
-        "question": "What is the cancellation policy?"
+        "question": "What is the cancellation policy?",
+        "answer": "The 10% booking token is non-refundable as it goes toward securing your permits and stay. For cancellations of the remaining amount, please refer to our detailed Terms & Conditions page."
       },
       {
-        "answer": "Your Trip Captain is your storyteller, logistics manager, and resident photographer. They aren’t just guides; they are part of the group, ensuring everything runs smoothly while keeping the energy high.",
-        "question": "What is the role of a Trip Captain?"
+        "question": "What is the role of a Trip Captain?",
+        "answer": "Your Trip Captain is your storyteller, logistics manager, and resident photographer. They aren’t just guides; they are part of the group, ensuring everything runs smoothly while keeping the energy high."
       },
       {
-        "answer": "While we help facilitate these experiences at the best local rates, adventure activities are typically not included in the base package price. This allows you the flexibility to choose only the thrills you want!",
-        "question": "Are adventure activities (Paragliding, Rafting, ATV) included?"
+        "question": "Are adventure activities (Paragliding, Rafting, ATV) included?",
+        "answer": "While we help facilitate these experiences at the best local rates, adventure activities are typically not included in the base package price. This allows you the flexibility to choose only the thrills you want!"
       },
       {
-        "answer": "In the mountains, nature calls the shots. In case of Force Majeure (landslides, heavy snow, or government restrictions), we will try our best to provide an alternative plan. However, any additional costs arising from such situations are to be borne by the traveler.",
-        "question": "What happens in case of bad weather or roadblocks?"
+        "question": "What happens in case of bad weather or roadblocks?",
+        "answer": "In the mountains, nature calls the shots. In case of Force Majeure (landslides, heavy snow, or government restrictions), we will try our best to provide an alternative plan. However, any additional costs arising from such situations are to be borne by the traveler."
       },
       {
-        "answer": "Layers are your best friend! Even in summer, nights can be chilly. For winter trips, heavy woolens, thermal wear, and waterproof shoes are a must. We will send a detailed packing checklist to your WhatsApp group before the trip.",
-        "question": "What should I pack for Kashmir?"
+        "question": "What should I pack for Kashmir?",
+        "answer": "Layers are your best friend! Even in summer, nights can be chilly. For winter trips, heavy woolens, thermal wear, and waterproof shoes are a must. We will send a detailed packing checklist to your WhatsApp group before the trip."
       },
       {
-        "answer": "In remote areas like parts of Kashmir, connectivity can be patchy. We recommend carrying a postpaid SIM (BSNL or Airtel usually work best). Think of it as a \"digital detox\"—the best connections are the ones made with people, not towers!",
-        "question": "Will I have network connectivity?"
+        "question": "Will I have network connectivity?",
+        "answer": "In remote areas like parts of Kashmir, connectivity can be patchy. We recommend carrying a postpaid SIM (BSNL or Airtel usually work best). Think of it as a \"digital detox\"—the best connections are the ones made with people, not towers!"
       }
     ],
     "reviews": [
       {
         "name": "Aarav Sharma",
+        "location": "Delhi",
         "text": "The Kashmir expedition was absolute magic! From staying on Dal Lake to riding the Gondola in Gulmarg, everything was executed flawlessly by Awara Banjara.",
-        "avatar": "assets/images/reviews/pfp-aarav.jpg",
-        "location": "Delhi"
+        "avatar": "assets/images/reviews/pfp-aarav.jpg"
       },
       {
         "name": "Meera Patel",
+        "location": "Mumbai",
         "text": "Traveling solo to Kashmir felt daunting at first, but the group and Trip Captain became family instantly. Best week of my life!",
-        "avatar": "assets/images/reviews/pfp-meera.jpg",
-        "location": "Mumbai"
+        "avatar": "assets/images/reviews/pfp-meera.jpg"
       },
       {
         "name": "Rohan Iyer",
+        "location": "Bangalore",
         "text": "Slow-paced travel at its finest. Doodhpathri and Sonmarg were stunning beyond words. Highly recommend Awara Banjara to everyone!",
-        "avatar": "assets/images/reviews/pfp-rohan.jpg",
-        "location": "Bangalore"
+        "avatar": "assets/images/reviews/pfp-rohan.jpg"
       }
     ],
     "reserve_banner_title": "",
@@ -724,7 +730,10 @@
     "custom_quote_title": "",
     "custom_quote_sub": null,
     "whatsapp_number": null,
-    "updated_at": "2026-08-08T15:18:47.910Z"
+    "updated_at": "2026-08-23T07:34:08.539Z",
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true
   },
   {
     "id": 122,

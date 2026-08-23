@@ -330,7 +330,7 @@
     "price": "",
     "category": "kashmir_tours",
     "route": "Srinagar — Gulmarg — Drung — Pahalgam — Aru Valley — Betaab Valley — Chandanwari — Yusmarg / Doodhpathri — Srinagar",
-    "tags": "Winter Expedition, Snow Experience, Houseboat Stay, Valley Exploration, Group Tour",
+    "tags": "Winter Expedition, Snow Experience, Houseboat Stay, Valley Exploration",
     "image_url": "assets/images/trips/img_1786216504243_img_1786216398063_Gulmarg__A_delight_for_travelers_on_a_wanderlust_.jpg",
     "bento_img_1": "assets/images/trips/img_1786216511109_img_1786216398063_Gulmarg__A_delight_for_travelers_on_a_wanderlust_.jpg",
     "bento_img_2": "assets/images/trips/img_1786216513677_img_1786216421857_Gulmarg__Kashmir.jpg",
@@ -476,16 +476,40 @@
     ],
     "faqs": [
       {
-        "question": "WHAT IS THE AGE LIMIT FOR THIS TRIP?",
-        "answer": "The recommended age group for our winter group departure is 18 to 42 years due to the active pacing."
+        "question": "WHAT IS THE AGE LIMIT FOR THIS EXPEDITION?",
+        "answer": "The recommended age group for our winter group departure is 18 to 42 years due to the active pacing, snow trails, and nomadic mountain vibe."
       },
       {
         "question": "WHAT HAPPENS IN CASE OF HEAVY SNOWFALL ON ROADWAYS?",
-        "answer": "In case of heavy snow blockage between Tanmarg and Gulmarg, local 4x4 snow-chained vehicles will be arranged."
+        "answer": "In case of heavy snow blockage between Tanmarg and Gulmarg or valley routes, local 4x4 snow-chained vehicles will be arranged (additional sharing cost applies as per local union norms)."
       },
       {
         "question": "IS DRUNG WATERFALL GUARANTEED TO BE FROZEN?",
-        "answer": "Visits to Drung Waterfall depend on local freezing conditions and local authority ATV access permissions."
+        "answer": "Drung Waterfall's frozen crystal cascade state depends entirely on sub-zero winter temperatures and local accessibility by ATVs or walking trails."
+      },
+      {
+        "question": "ARE GONDOLA TICKETS INCLUDED IN THE PACKAGE?",
+        "answer": "Yes, Gulmarg Gondola Phase 1 cable car tickets are fully included in your package inclusions."
+      },
+      {
+        "question": "WHAT KIND OF STAY CAN WE EXPECT ON DAL LAKE?",
+        "answer": "You will stay in a traditional, heated wooden heritage houseboat on Dal Lake, offering authentic Kashmiri hospitality right on the water."
+      },
+      {
+        "question": "WHAT IS THE PAYMENT & BOOKING POLICY?",
+        "answer": "Bookings are confirmed with a 10% non-refundable token amount, and the remaining balance is due upon arrival at the base camp."
+      },
+      {
+        "question": "HOW DO WE REACH SRINAGAR ON DAY 1?",
+        "answer": "The trip starts with a complimentary Srinagar Airport pickup on Day 1, from where our team will transfer you to the houseboat."
+      },
+      {
+        "question": "WHAT SHOULD WE PACK FOR A WINTER KASHMIR TRIP?",
+        "answer": "Pack heavy woolens, thermal innerwear, waterproof snow boots, windproof outer jackets, gloves, beanies, sunglasses, and personal toiletries."
+      },
+      {
+        "question": "CAN SOLO TRAVELERS OR GROUPS JOIN THIS TRIP?",
+        "answer": "Absolutely! Whether you are traveling solo, with a partner, or in a group of friends, this expedition is built for like-minded mountain souls."
       }
     ],
     "reviews": [
@@ -509,7 +533,7 @@
     "is_featured_lemonade": true,
     "link": "trips/kashmir-tours-kashmir-winter-realm-expedition-1786216631459",
     "id": 1786216631459,
-    "updated_at": "2026-08-22T16:59:30.106Z",
+    "updated_at": "2026-08-23T07:03:46.407Z",
     "created_at": "2026-08-08T19:17:11.478Z"
   },
   {

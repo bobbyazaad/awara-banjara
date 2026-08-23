@@ -741,7 +741,7 @@
     "duration": "7 Days / 6 Nights",
     "price": "On Request",
     "image_url": "assets/images/trips/trip_122_image_url.jpg",
-    "link": "trips/northeast-india-tours-ziro-festival-rhythm-expedition-arunachal-pradesh-122",
+    "link": "trips/northeast-india-tours-ziro-festival-rhythm-expedition-arunachal-pradesh-122.html",
     "created_at": "2026-08-05T15:28:43.312697+00:00",
     "category": "northeast_india_tours, women_only_tours, festival_tours",
     "route": "Guwahati — Ziro Valley — Apatani Hamlets — Guwahati",
@@ -1462,64 +1462,66 @@
     "duration": "6 Days / 5 Nights",
     "price": "₹16,499",
     "image_url": "assets/images/trips/trip_100_image_url.jpg",
-    "link": "trips/ladakh-tours-zanskar-moto-passage-the-monolith-circuit-100.html",
+    "link": "trips/ladakh-tours-zanskar-moto-passage-the-monolith-circuit-100",
     "created_at": "2026-08-01T10:33:21.680299+00:00",
     "category": "ladakh_tours, women_only_tours, treks, bike_tours, corporate_tours",
-    "route": "Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa",
+    "route": "Manali — Sissu — Gonbo Rangjon — Phuktal Gompa — Jispa - Manali",
     "tags": "High Altitude, Zanskar, Monasteries, Valleys, Motorcycling, Expedition",
     "bento_img_1": "assets/images/trips/trip_100_bento_img_1.jpg",
     "bento_img_2": "assets/images/trips/trip_100_bento_img_2.jpg",
     "bento_img_3": "assets/images/trips/trip_100_bento_img_3.jpg",
     "bento_img_4": "assets/images/trips/trip_100_bento_img_4.jpg",
     "bento_img_5": "assets/images/trips/trip_100_bento_img_5.jpg",
-    "about_text": "Embark on an exhilarating high-altitude adventure into the heart of the raw and mystical Zanskar Valley. Starting from Manali, this 4-day motorcycle expedition takes you through the world-famous Atal Tunnel, across the towering Shinku La Pass (16,580 ft), and deep into one of the most remote corners of the Himalayas.\n\nOn this journey, you'll ride past the legendary monolith peak of Gonbo Rangjon—revered as the sacred mountain of Zanskar—and trek to the breathtaking cliffside Phuktal Monastery, built directly into a massive natural cave. Designed for thrill-seekers and culture enthusiasts alike, this route blends rugged mountain passes, serene Himalayan valleys, and rich Tibetan Buddhist heritage into an unforgettable motorcycling circuit.",
+    "about_text": "Embark on a raw, soul-stirring motorcycling odyssey into the high-altitude wilderness of the Zanskar Valley with Awara Banjara. Designed for true nomads and riders, this 6-day expedition kicks off with an overnight transit from Delhi into the heart of Manali, where your machine waits. Roar through the engineering marvel of the Atal Tunnel, cross the dramatic Lahaul Valley via Sissu, and conquer the towering Shinku La Pass at 16,580 feet to enter the uncharted realms of Zanskar. Feel the nomadic pulse as you pitch camp under a star-lit sky right beside the sacred monolith peak of Gonbo Rangjon, standing tall like a giant guardian of the mountains. Ride across rugged off-road tracks toward Purne, park your machine, and trek up to the breathtaking cliffside Phuktal Cave Monastery, carved raw into ancient rock faces. Blending high-altitude biking thrills, soulful campfire nights under mountain stars, local homestay warmth, and deep Himalayan exploration, this circuit is crafted for riders seeking the ultimate offbeat escape from the ordinary.",
     "itinerary": [
       {
         "day": 1,
         "title": "Overnight Journey from Delhi to Manali",
-        "details": "Board the evening Volvo / private transport from Delhi and travel overnight to Manali."
+        "details": "Board the evening Volvo or private transport from Delhi and set off on an overnight journey through winding mountain highways, watching the city lights fade into the cool Himalayan breeze."
       },
       {
         "day": 2,
-        "title": "Arrival in Manali to Sissu & Jispa",
-        "details": "Arrive in Manali, collect bikes, and ride through the Atal Tunnel into Lahaul Valley via Sissu to Jispa."
+        "title": "Arrival in Manali & Local Exploration",
+        "details": "Arrive in Manali, check into your stay, and soak in the raw mountain vibes as you explore the hidden Jogini Waterfall, seek blessings at the ancient wooden Hadimba Temple, and spend the evening wandering through the vibrant, bohemian lanes of Old Manali. overnight stay in Manali."
       },
       {
         "day": 3,
-        "title": "Jispa to Gonbo Rangjon via Shinku La Pass",
-        "details": "Conquer Shinku La Pass (16,580 ft) entring Zanskar and camp near the sacred monolith peak of Gonbo Rangjon."
+        "title": "Manali to Gonbo Rangjon via Atal Tunnel & Shinku La",
+        "details": "After an early breakfast, collect your expedition motorcycles, rev up through the engineering marvel of the Atal Tunnel into the pristine Lahaul Valley via Sissu, conquer the towering Shinku La Pass (16,580 ft) into Zanskar, and pitch your tents under a star-lit sky near the sacred monolith peak of Gonbo Rangjon. stay in Gonbo camp"
       },
       {
         "day": 4,
         "title": "Gonbo Rangjon to Phuktal Monastery & Back to Jispa",
-        "details": "Ride toward Purne, trek to the cliffside Phuktal Cave Monastery, and return over Shinku La Pass to Jispa."
+        "details": "Ride across rugged off-road riverbeds toward Purne, park your machines to trek up to the breathtaking cliffside Phuktal Cave Monastery nestled raw into the sheer rock face, and ride back over Shinku La Pass to rest for the night at a cozy Home stay & campsite in Jispa."
       },
       {
         "day": 5,
         "title": "Jispa to Manali & Overnight Travel to Delhi",
-        "details": "Ride back through Lahaul Valley and Atal Tunnel to Manali; board the evening Volvo back to Delhi."
+        "details": "Fire up your engines for the final leg, riding back through the dramatic landscapes of Lahaul Valley and the Atal Tunnel back to Manali, drop off your bikes, and board the evening Volvo for an overnight journey back to Delhi."
       },
       {
         "day": 6,
         "title": "Arrival in Delhi",
-        "details": "Arrive back in Delhi early morning with unforgettable Himalayan memories."
+        "details": "Arrive back in Delhi early morning, carrying the eternal dust of high-altitude passes, unforgettable campfire stories, and raw nomadic memories of the Zanskar wilderness."
       }
     ],
     "inclusions": [
-      "Volvo / Transit Transport between Delhi and Manali",
-      "Royal Enfield Himalayan / Expedition Bike (Manali to Manali)",
-      "Accommodation on twin/triple sharing in Guesthouses/Camps",
-      "Daily Breakfast & Dinner",
+      "3 Days Expedition Motorcycle (Manali to Manali) with Fuel Included",
+      "Volvo Bus Transfers (Delhi to Manali & Manali to Delhi) as per itinerary",
+      "3 Nights Accommodation (1 Night in Manali Hotel, 1 Night in Gonbo Camp, 1 Night in Jispa Camp & Homestay)",
+      "3 Breakfasts & 3 Dinners included as per itinerary",
+      "Experienced Trip Road Captain to lead the group",
+      "Professional Mechanic with spare parts support",
       "Inner Line Permits & Environmental Fees",
-      "Experienced Road Captain & Technical Support Crew",
-      "Support Vehicle with First Aid & Emergency Oxygen Cylinder"
+      "Emergency Oxygen Cylinder & First Aid Medical Kit"
     ],
     "exclusions": [
-      "Fuel for motorcycles",
-      "Meals during Delhi-Manali transit & lunches on all days",
-      "Personal travel & medical insurance",
-      "Refundable security deposit for rental bike",
-      "Anything not mentioned in inclusions"
+      "Backup Vehicle / Luggage Vehicle is NOT included",
+      "Lunches on all days and meals during Delhi-Manali transit",
+      "Refundable security deposit for rental motorcycles",
+      "Personal travel, accidental, or medical insurance",
+      "Any expenses due to unexpected roadblocks, weather delays, or mechanical breakdown outside support scope",
+      "Anything and everything not specifically mentioned in the inclusions section"
     ],
     "package_options": [
       {
@@ -1533,39 +1535,6 @@
     ],
     "sub_package_options": "Himalayan 411, Himalayan 450",
     "departure_dates": [
-      {
-        "dates": [
-          {
-            "id": "b_1785580249696",
-            "price": "16,499",
-            "range": "7th August",
-            "status": "Sold Out",
-            "startDate": "2026-08-07"
-          },
-          {
-            "id": "b_1785580255593",
-            "price": "16,499",
-            "range": "14th August",
-            "status": "Filling Fast",
-            "startDate": "2026-08-14"
-          },
-          {
-            "id": "b_1785580262610",
-            "price": "16,499",
-            "range": "21th August",
-            "status": "Sold Out",
-            "startDate": "2026-08-21"
-          },
-          {
-            "id": "b_1785580266778",
-            "price": "16,499",
-            "range": "28th August",
-            "status": "Sold Out",
-            "startDate": "2026-08-28"
-          }
-        ],
-        "month": "August 2026"
-      },
       {
         "dates": [
           {
@@ -1642,24 +1611,44 @@
     ],
     "faqs": [
       {
-        "question": "WHAT IS THE BEST TIME FOR THIS TRIP?",
-        "answer": "June to September is the best window as Shinku La Pass is open and weather conditions are favorable for riding."
+        "question": "CAN I RIDE MY OWN MOTORCYCLE FOR THIS CIRCUIT OR IS RENTAL MANDATORY?",
+        "answer": "You can either ride our expedition motorcycles included in the package or bring your own well-maintained 350cc+ motorcycle, provided it undergoes a safety check by our lead mechanic."
       },
       {
-        "question": "DO I NEED PRIOR OFF-ROAD RIDING EXPERIENCE?",
-        "answer": "Basic to intermediate riding experience is recommended, as the route includes off-road terrain, gravel, and high-altitude mountain passes."
+        "question": "HOW DO WE HANDLE LUGGAGE SINCE THERE IS NO BACKUP VEHICLE?",
+        "answer": "Riders carry their gear in saddlebags or a secure backpack on their own bikes, allowing complete riding freedom on narrow off-road Zanskar tracks."
       },
       {
-        "question": "IS OXYGEN/MEDICAL SUPPORT AVAILABLE?",
-        "answer": "Yes, our backup vehicle carries emergency oxygen cylinders, a first-aid medical kit, and a trained road crew."
+        "question": "WHAT KIND OF TERRAIN AND ROAD CONDITIONS CAN WE EXPECT AFTER SHINKU LA?",
+        "answer": "Expect a raw mix of loose gravel, dirt tracks, water crossings, and high-altitude mountain passes where throttle and clutch control are key."
       },
       {
-        "question": "WHAT IS THE ACCLIMATIZATION REQUIREMENT?",
-        "answer": "The initial drive and stay in Jispa help you acclimatize before crossing Shinku La Pass (16,580 ft) into Zanskar."
+        "question": "ARE PHONE NETWORK AND MOBILE CONNECTIVITY AVAILABLE IN ZANSKAR?",
+        "answer": "Postpaid connections (primarily BSNAL and limited Jio/Airtel) work up to Sissu and Jispa, but expect absolute digital blackout deeper into the Zanskar wilderness."
       },
       {
-        "question": "ARE INNER LINE PERMITS INCLUDED?",
-        "answer": "Yes, all inner line permits, environmental fees, and wildlife passes are arranged and included by the team."
+        "question": "WHAT IS THE ARRANGEMENT FOR BIKE FUEL DURING THE ZANSkar RIDE?",
+        "answer": "Fuel is included for the 3 riding days, and we carry extra fuel supplies at strategic check-points since high-altitude fuel stations are sparse."
+      },
+      {
+        "question": "HOW SHOULD I PACK TO HANDLE RAPID TEMPERATURE DROPS IN GONBO RANGJON?",
+        "answer": "Pack in strict layers including a thermal base, windproof-waterproof riding jacket, high-altitude gloves, and sturdy riding boots as night temperatures near the monolith drop sharply."
+      },
+      {
+        "question": "IS FUEL CONSUMPTION OR REPAIR FOR MINOR FALLS CHARGED EXTRA?",
+        "answer": "Fuel for the designated itinerary is included, but any intentional damage, major parts breakage, or careless handling resulting in mechanical failure is chargeable."
+      },
+      {
+        "question": "WHAT IS THE SLEEPING ARRANGEMENT AT GONBO RANGJON AND JISPA CAMPS?",
+        "answer": "Sturdy high-altitude camping tents equipped with thick insulating mattresses and heavy comfort sleeping bags are provided for a cozy, warm night."
+      },
+      {
+        "question": "CAN VEGETARIAN AND HIGH-ALTITUDE ENERGY MEALS BE CUSTOMIZED?",
+        "answer": "Yes, hot, freshly cooked, nutritious vegetarian meals and hot beverages are served regularly to keep your energy levels soaring at high altitudes."
+      },
+      {
+        "question": "WHAT HAPPENS IN CASE OF SUDDEN ROADBLOCKS OR EXTREME WEATHER DELAYS?",
+        "answer": "Our experienced Road Captain assesses the situation on the ground, and alternate safety protocols or extended stay arrangements are coordinated as per local mountain conditions."
       }
     ],
     "reviews": [
@@ -1690,7 +1679,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-13T08:32:21.292Z"
+    "updated_at": "2026-08-23T11:09:53.740Z"
   },
   {
     "id": 110,

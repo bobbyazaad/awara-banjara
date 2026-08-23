@@ -542,7 +542,7 @@
     "duration": "8 Days / 7 Nights",
     "price": "₹30,800",
     "image_url": "assets/images/trips/trip_115_image_url.jpg",
-    "link": "trips/kashmir-tours-kashmir-slow-paced-expedition-115",
+    "link": "trips/kashmir-tours-kashmir-slow-paced-expedition-115.html",
     "created_at": "2026-08-02T11:40:47.807763+00:00",
     "category": "kashmir_tours",
     "route": "Srinagar – Doodhpathri – Pahalgam – Gulmarg – Sonmarg – Srinagar",
@@ -741,7 +741,7 @@
     "duration": "7 Days / 6 Nights",
     "price": "On Request",
     "image_url": "assets/images/trips/trip_122_image_url.jpg",
-    "link": "trips/northeast-india-tours-ziro-festival-rhythm-expedition-arunachal-pradesh-122.html",
+    "link": "trips/northeast-india-tours-ziro-festival-rhythm-expedition-arunachal-pradesh-122",
     "created_at": "2026-08-05T15:28:43.312697+00:00",
     "category": "northeast_india_tours, women_only_tours, festival_tours",
     "route": "Guwahati — Ziro Valley — Apatani Hamlets — Guwahati",
@@ -751,42 +751,42 @@
     "bento_img_3": "assets/images/trips/trip_122_bento_img_3.jpg",
     "bento_img_4": "assets/images/trips/trip_122_bento_img_4.jpg",
     "bento_img_5": "assets/images/trips/trip_122_bento_img_5.jpg",
-    "about_text": "Journey into the misty, pine-scented sanctuaries of Ziro Valley, where golden paddy fields meet the raw, soul-stirring rhythms of independent music. Nestled at 5,500 feet, this 7-day overland odyssey immerses you in the heart of Arunachal Pradesh during its harvest season. \nLive under starlit skies in wilderness camps, experience the sustainable heritage of the ancient Apatani tribe, and gather around late-night bonfires amidst bamboo groves and indie melodies. Crafted for wanderers seeking genuine cultural depth and high-altitude harmony, this expedition seamlessly blends raw nomadic energy with curated Banjara hospitality.",
+    "about_text": "Immerse yourself in the ultimate fusion of global indie music, raw Himalayan wilderness, and indigenous tribal heritage with Awara Banjara’s Ziro Festival Rhythm Expedition. Designed for free-spirited wanderers, music lovers, and cultural explorers, this 7-day immersive journey takes you deep into the breathtaking, pine-clad landscapes of Ziro Valley in Arunachal Pradesh. \n\nBeginning from Guwahati, the expedition winds through lush Himalayan foothills before descending into the tranquil, golden rice terraces of the Apatani plateau. Experience authentic tribal warmth by staying in our curated alpine campsites set right amidst nature, complemented by comfortable stays in Guwahati. Witness world-class sustainable bamboo architecture and soulful indie performances at the iconic Donyi-Polo stages of the Ziro Music Festival. \n\nBeyond the festival grooves, this journey offers a profound cultural immersion. Wander through ancient bamboo hamlets alongside local tribal guides, explore traditional stilt houses, learn about indigenous farming and paddy fishing techniques, and savor regional delicacies paired with local kiwi wine. Gather around crackling campfires under a starlit mountain sky for intimate acoustic jam sessions that capture the true nomadic energy of the mountains. \n\nWhether you are traveling solo or with a community of like-minded explorers, Awara Banjara ensures seamless logistics, expert expedition captains, and an eco-conscious travel philosophy. Book your seat for this once-in-a-lifetime North-East adventure and discover the harmonious blend of high-altitude melody and soulful tribal hospitality.",
     "itinerary": [
       {
         "day": 1,
         "title": "Overland Passage from Guwahati to Ziro",
-        "details": "Meet your Banjara trip captains in Guwahati and embark on a scenic overland drive across winding Himalayan foothills, arriving at our serene valley gateway by dusk."
+        "details": "Meet your Banjara trip captains in Guwahati early in the morning, complete a short briefing, and embark on a scenic overland drive across the winding Himalayan foothills of Assam and Arunachal Pradesh, witnessing lush tea gardens and cascading waterfalls before arriving at our serene valley gateway by dusk."
       },
       {
         "day": 2,
         "title": "Descent into Ziro Valley & Festival Twilight",
-        "details": "Settle into our curated alpine campsite amidst golden rice terraces, soak in the warm Apatani hospitality, and enter the festival grounds as dusk sets over the Donyi-Polo bamboo stages."
+        "details": "Descend deep into the heart of Ziro Valley, settle into our curated alpine campsite set amidst golden rice terraces, soak in the warm Apatani hospitality with local tea, and head out to the festival grounds as dusk sets over the iconic Donyi-Polo bamboo stages for opening night sets."
       },
       {
         "day": 3,
         "title": "Apatani Heritage Walk & Festival Grooves",
-        "details": "Wander through ancient bamboo hamlets and pine groves with local tribal guides, explore sacred sights, and immerse yourself in an evening of global indie soundscapes."
+        "details": "Embark on a guided morning walk through ancient bamboo hamlets, pine groves, and traditional stilt houses with local tribal guides to explore unique tattoo traditions and sacred heritage sites, followed by an evening immersed in global indie soundscapes at the festival."
       },
       {
         "day": 4,
         "title": "High-Altitude Melody & Starlit Solitude",
-        "details": "Spend a soul-stirring day at the festival grounds, witnessing world-class sustainable bamboo architecture, before gathering for intimate acoustic campsite jamming under the stars."
+        "details": "Spend a soul-stirring day exploring the festival grounds, witnessing world-class sustainable bamboo architecture and indie music performances, before gathering with fellow travelers for an intimate, acoustic campsite jamming session under a starlit mountain sky."
       },
       {
         "day": 5,
         "title": "Tribal Paddy Fishing & Local Flavors",
-        "details": "Try traditional Apatani paddy field fishing, savor authentic regional delicacies and kiwi wine, and celebrate your final evening under the golden canopy of Ziro Valley."
+        "details": "Experience traditional Apatani paddy field fishing and local agricultural systems firsthand, savor authentic tribal delicacies paired with local kiwi wine at a village feast, and celebrate your final evening under the golden canopy of Ziro Valley."
       },
       {
         "day": 6,
         "title": "Return Traverse to Guwahati",
-        "details": "Bid farewell to the valley of music and trace the winding roads back toward Guwahati, unwinding at a curated hotel stay for a restful evening."
+        "details": "Bid farewell to the valley of music and tribal warmth, trace the winding mountain roads back toward Guwahati through breathtaking valley views, and unwind during a comfortable overnight hotel stay for a restful evening."
       },
       {
         "day": 7,
-        "title": "Homeward Journey from Guwahati",
-        "details": "Enjoy a relaxed morning breakfast with the group before departing with unforgettable memories of mountain rhythms and tribal warmth."
+        "title": "Enjoy a relaxed morning breakfast with the group at the hotel, share final memories and contact details with your fellow travelers, and depart for your onward journey with unforgettable stories of mountain rhythms and nomadic exploration.",
+        "details": "DAY 7: Enjoy a relaxed morning breakfast with the group at the hotel, share final memories and contact details with your fellow travelers, and depart for your onward journey with unforgettable stories of mountain rhythms and nomadic exploration."
       }
     ],
     "inclusions": [
@@ -813,14 +813,6 @@
       {
         "title": "Double Occupancy",
         "price": "On Request"
-      },
-      {
-        "title": "Triple Occupancy",
-        "price": "On Request"
-      },
-      {
-        "title": "Quad Occupancy",
-        "price": "On Request"
       }
     ],
     "sub_package_options": "",
@@ -828,19 +820,43 @@
     "faqs": [
       {
         "question": "DO I NEED PERMITS TO ENTER ZIRO VALLEY?",
-        "answer": "Yes, domestic travelers require an Inner Line Permit (ILP), which will be completely processed by our team prior to departure."
+        "answer": "Yes, domestic travelers require an Inner Line Permit (ILP) for Arunachal Pradesh, which is completely processed by our team prior to departure."
       },
       {
-        "question": "WHAT IS THE ACCOMMODATION STYLE DURING THE FESTIVAL?",
-        "answer": "Expect comfortable hotel stays in Guwahati paired with secure, weather-proof alpine tented camping in the heart of Ziro Valley."
+        "question": "WHAT IS THE ACCOMMODATION STYLE DURING THE EXPEDITION?",
+        "answer": "Expect comfortable hotel stays in Guwahati paired with secure, weather-proof alpine tented camping set amidst the scenic golden rice terraces of Ziro Valley."
       },
       {
         "question": "WHAT PACKING ESSENTIALS ARE RECOMMENDED FOR ZIRO?",
-        "answer": "Pack a warm fleece/jacket for cold valley nights, a sturdy raincoat or poncho for rain, power banks (20,000 mAh+), and a flashlight or headlamp for campsite navigation."
+        "answer": "Pack a warm fleece or jacket for chilly valley nights, a sturdy raincoat or poncho, a high-capacity power bank (20,000 mAh+), comfortable trekking shoes, and a flashlight or headlamp."
       },
       {
         "question": "IS THE TRIP SUITABLE FOR SOLO TRAVELERS AND GROUPS?",
-        "answer": "Absolutely; our expeditions are curated to offer a safe, inclusive, and community-driven space for both solo wanderers and small groups."
+        "answer": "Absolutely; our expeditions are curated to offer a safe, inclusive, and community-driven space, making it perfect for solo wanderers, friends, and small groups alike."
+      },
+      {
+        "question": "ARE MEALS INCLUDED IN THE PACKAGE?",
+        "answer": "Yes, a MAP meal plan is included, covering 14 curated meals (breakfasts, lunches, and dinners) throughout the trip transit and stay."
+      },
+      {
+        "question": "HOW DO WE COMMUTE FROM GUWAHATI TO ZIRO VALLEY?",
+        "answer": "All overland transfers and local sightseeing are conducted in comfortable, air-conditioned Tempo Travelers or SUVs driven by experienced hill drivers."
+      },
+      {
+        "question": "ARE FESTIVAL ENTRY PASSES INCLUDED IN THE PACKAGE?",
+        "answer": "Festival entry passes are excluded from the base package and need to be purchased separately so guests can pick passes according to their preferred days or full-event access."
+      },
+      {
+        "question": "WHAT IS THE CANCELLATION AND REFUND POLICY?",
+        "answer": "Bookings require a 10% non-refundable token amount, with the remaining balance due upon arrival, ensuring flexible and transparent planning."
+      },
+      {
+        "question": "CAN WE VISIT LOCAL VINEYARDS OR ATTRACTIONS NOT LISTED?",
+        "answer": "Yes, optional visits like the Nara Abba Kiwi Winery tasting session can be planned locally with your expedition captain during free hours."
+      },
+      {
+        "question": "WHAT HAPPENS IN CASE OF WEATHER DELAYS OR ROADBLOCKS?",
+        "answer": "Our experienced expedition captains handle route diversions efficiently; however, any extra expenses incurred due to unexpected landslides, roadblocks, or weather delays are excluded from the package."
       }
     ],
     "reviews": [
@@ -865,7 +881,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-13T08:30:32.723Z"
+    "updated_at": "2026-08-23T08:34:49.836Z"
   },
   {
     "id": 114,

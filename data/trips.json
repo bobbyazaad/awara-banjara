@@ -2055,7 +2055,7 @@
     "duration": "10 Days / 9 Nights",
     "price": "₹30,499",
     "image_url": "assets/images/trips/trip_116_image_url.jpg",
-    "link": "trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116",
+    "link": "trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116.html",
     "created_at": "2026-08-04T07:31:43.331308+00:00",
     "category": "spiti_tours, bike_tours, corporate_tours",
     "route": "Delhi — Manali — Jibhi — Sangla — Kalpa — Kaza — Chandratal — Manali — Delhi",
@@ -2731,13 +2731,13 @@
   },
   {
     "id": 112,
-    "title": "Spiti : The Highland Circuit (Moto Expedition)",
+    "title": "Spiti : Manali Spiti (Moto Expedition)",
     "duration": "7 Days / 6 Nights",
     "price": "₹22,499",
     "image_url": "assets/images/trips/trip_112_image_url.jpg",
-    "link": "trips/spiti-tours-spiti-the-highland-circuit-moto-expedition-112.html",
+    "link": "trips/spiti-tours-spiti-manali-spiti-moto-expedition-112",
     "created_at": "2026-08-02T08:50:14.758486+00:00",
-    "category": "spiti_tours",
+    "category": "spiti_tours, himachal_tours, bike_tours",
     "route": "Delhi — Manali — Kaza — Langza — Komic — Hikkim — Key Monastery — Chicham Bridge — Kunzum Pass — Chandratal — Manali — Delhi",
     "tags": "Spiti Valley, Motorbike Expedition, Highland Circuit, Road Trip, Group Tour, Bike Tour",
     "bento_img_1": "assets/images/trips/trip_112_bento_img_1.jpg",
@@ -2745,51 +2745,51 @@
     "bento_img_3": "assets/images/trips/trip_112_bento_img_3.jpg",
     "bento_img_4": "assets/images/trips/trip_112_bento_img_4.jpg",
     "bento_img_5": "assets/images/trips/trip_112_bento_img_5.jpg",
-    "about_text": "Gear up for the ultimate Himalayan ride with Awara Banjara's Spiti Highland Circuit Motorbike Expedition. Starting with an overnight AC Volvo journey from Delhi to Manali, take the handlebars across treacherous passes, high-altitude alpine terrain, and remote Spiti villages including Langza, Komic, and Hikkim. Visit the magnificent Key Monastery, ride across Asia's highest bridge at Chicham, and camp near the mystical Chandratal Lake before riding back into Manali. Designed for passionate riders seeking high-octane adventure and iconic mountain landscapes.",
+    "about_text": "Awaken your inner nomad with the ultimate Himalayan ride on Awara Banjara's Spiti Highland Circuit Motorbike Expedition. Designed for true wanderers and soulful petrolheads, this 7-day high-octane journey takes you deep into the raw, wind-swept cold deserts of Spiti Valley. Kick off your engines from Manali, cross engineering marvels like the Atal Tunnel, and conquer legendary high-altitude passes including Kunzum Pass. \n\nLive the true Banjara philosophy as you ride across the roof of the world, exploring remote highland hamlets like Langza (The Fossil Village), Komic, and Hikkim—home to the world's highest post office. Marvel at the ancient architectural brilliance of Key Monastery and cross Asia’s highest suspension bridge at Chicham. After riding through rugged, untamed terrain, unwind under a blanket of sparkling stars at our alpine campsite near the mystical, crescent-shaped Chandratal Lake. \n\nBacked by professional mechanics, support vehicles, and expert lead captains, this expedition blends heart-pounding adventure with soulful campfire stories. Whether you ride solo or grab a dual-rider beast, answer the call of the mountains and let the open road redefine your soul. Secure your spot on the ultimate Spiti motorcycle tour today!",
     "itinerary": [
       {
         "day": 1,
         "title": "Delhi to Manali (Overnight Volvo)",
-        "details": "Board a premium overnight Volvo coach departing from Delhi in the late evening. Relax in executive reclining seats on the overnight highway journey to Manali."
+        "details": "Embrace the call of the mountains as you board a premium AC Volvo coach from Delhi in the late evening. Drift into nomadic dreams with an overnight highway journey towards the lap of the Himalayas."
       },
       {
         "day": 2,
-        "title": "Manali Arrival, Bike Allocation & Test Ride",
-        "details": "Arrive in Manali, check-in, meet your ride captain, receive your motorbike allocation, and go on a short local test ride for briefing."
+        "title": "Manali Arrival, Bike Allocation & Test Ride (Approx. 0 KM)",
+        "details": "Arrive in Manali and check-in to your basecamp. Meet your lead Ride Captain, receive your beast (Royal Enfield), and gear up for a short test ride and safety briefing through the winding mountain tracks."
       },
       {
         "day": 3,
-        "title": "Ride Manali to Kaza",
-        "details": "Ride out from Manali across Atal Tunnel / Kunzum Pass into the rugged high-altitude desert terrain of Spiti Valley to reach Kaza."
+        "title": "Ride Manali to Kaza via Atal Tunnel & Kunzum Pass (Approx. 200 KM)",
+        "details": "Fire up your engines and kick off the ultimate expedition. Ride out from Manali through the engineering marvel Atal Tunnel, cross high-altitude rugged terrain, and ascend the majestic Kunzum Pass into the cold desert heart of Spiti Valley to reach Kaza."
       },
       {
         "day": 4,
-        "title": "Langza, Komic & Hikkim Highland Ride",
-        "details": "Ride through high-altitude circuit routes visiting Langza (Fossil Village), Komic (highest motorable village), Hikkim (world's highest post office), Key Monastery, and Chicham Bridge."
+        "title": "Langza, Komic & Hikkim Highland Circuit Ride (Approx. 80 KM)",
+        "details": "A high-octane day exploring the roof of the world. Ride across the treacherous yet breathtaking highland loop visiting Langza (The Fossil Village), Komic (one of the highest motorable villages), Hikkim (world's highest post office), the ancient Key Monastery, and the stunning engineering feat of Chicham Bridge."
       },
       {
         "day": 5,
-        "title": "Kaza to Chandratal Lake",
-        "details": "Ride from Kaza over Kunzum Pass to reach the crescent-shaped Chandratal Lake for an overnight campsite stay under the stars."
+        "title": "Kaza to Chandratal Lake via Kunzum Pass (Approx. 100 KM)",
+        "details": "Leave Kaza behind and navigate raw, unpaved Himalayan trails back across Kunzum Pass towards the mystical, crescent-shaped Chandratal Lake. Park your bikes and settle down for a soul-stirring night under a blanket of stars at our alpine campsite."
       },
       {
         "day": 6,
-        "title": "Chandratal to Manali Ride → Overnight Volvo to Delhi",
-        "details": "Ride back from Chandratal to Manali, drop off your motorbikes, and board the evening overnight Volvo coach back to Delhi."
+        "title": "Chandratal to Manali Return Ride → Overnight Volvo to Delhi (Approx. 130 KM)",
+        "details": "Conquer the final leg of your mountain ride back from Chandratal to Manali. Drop off your motorbikes, share epic stories around the debrief, and board the evening overnight AC Volvo bus back to Delhi."
       },
       {
         "day": 7,
         "title": "Arrival in Delhi",
-        "details": "Reach Delhi in the morning with lifelong memories of your Spiti Moto Expedition."
+        "details": "Wake up to city life in Delhi by morning, carrying endless dust on your boots, memories around the campfire, and the true free-spirited Banjara soul within you."
       }
     ],
     "inclusions": [
       "Delhi to Manali & Return AC Volvo Bus Tickets",
-      "5 Nights Accommodation (Hotels / Homestays in Kaza & Alpine Camps at Chandratal)",
+      "4 Nights Accommodation (Hotels / Homestays in Kaza & Alpine Camps at Chandratal)",
       "Royal Enfield Motorbike (500cc / Himalayan 411 as per selection) with Fuel",
-      "Backup Vehicle / Support Van with Mechanic & Spare Parts",
+      "Backup Vehicle / Support Van with Mechanic Spare Parts (Personal Expense)",
       "Riding Gears (Helmet, Knee Guards, Elbow Guards for Rider & Pillion)",
-      "5 Breakfast & 5 Dinner at Stays",
+      "4 Breakfast & 4 Dinner at Stays",
       "Inner Line Permits, Wildlife Fees & Environmental Charges",
       "Road Captain / Experienced Trip Captain leading the convoy"
     ],
@@ -2797,8 +2797,15 @@
       "Lunch Meals & Personal Cafe Expenses",
       "Refundable Security Deposit for Motorbike",
       "Personal Riding Apparel (Jackets, Gloves, Riding Boots)",
-      "5% GST & Travel Insurance",
-      "Costs arising from personal damages to motorbikes, roadblocks, landslides, or weather delays"
+      "5% GST",
+      "Early check-in (Before 1:00 PM) & Late Check-out (After 11:00 AM) at the hotel.",
+      "Any additional expenses such as of personal nature.",
+      "Additional accommodation/food costs incurred due to any delayed travel.",
+      "Any Airfare / Rail fare other than what is mentioned in “Inclusions” or any type of transportation.",
+      "Parking and monument entry fees during sightseeing.",
+      "Additional Costs due to Flight Cancellations, Landslides, Roadblocks, and other natural calamities.",
+      "Any other services not specified above in inclusions",
+      "Vehicle servicing or maintenance cost and security deposit per motorbike of Rs. 5,000/-. As per the deposit policy (This is refundable at the end of the trip if there is no damage or spare parts required. The refund would be credited after 7 business days)"
     ],
     "package_options": [
       {
@@ -2812,32 +2819,6 @@
     ],
     "sub_package_options": "Himalayan 411, Himalayan 450",
     "departure_dates": [
-      {
-        "dates": [
-          {
-            "id": "b_1785660080040",
-            "price": "22,499",
-            "range": "14th August",
-            "status": "Filling Fast",
-            "startDate": "2026-08-14"
-          },
-          {
-            "id": "b_1785660087448",
-            "price": "22,499",
-            "range": "21th August",
-            "status": "Available",
-            "startDate": "2026-08-21"
-          },
-          {
-            "id": "b_1785660090347",
-            "price": "22,499",
-            "range": "28th August",
-            "status": "Available",
-            "startDate": "2026-08-28"
-          }
-        ],
-        "month": "August 2026"
-      },
       {
         "dates": [
           {
@@ -2912,7 +2893,7 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-08-15T12:41:39.405Z"
+    "updated_at": "2026-08-24T12:06:00.801Z"
   },
   {
     "id": 119,

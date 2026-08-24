@@ -2056,9 +2056,9 @@
       "duration": "11 Days / 10 Nights",
       "price": "₹22,499",
       "image_url": "assets/images/trips/trip_116_image_url.jpg",
-      "link": "trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116.html",
+      "link": "trips/spiti-tours-spiti-circuit-chandratal-lake-moto-expedition-116",
       "created_at": "2026-08-04T07:31:43.331308+00:00",
-      "category": "spiti_tours, women_only_tours, bike_tours, corporate_tours",
+      "category": "spiti_tours, bike_tours, corporate_tours",
       "route": "Delhi — Manali — Jibhi — Sangla — Kalpa — Kaza — Chandratal — Manali — Delhi",
       "tags": "Group Tour, Motorbike Expedition, High Altitude, Spiti Circuit, Road Trip, Volvo Package",
       "bento_img_1": "assets/images/trips/trip_116_bento_img_1.jpg",
@@ -2066,68 +2066,63 @@
       "bento_img_3": "assets/images/trips/trip_116_bento_img_3.jpg",
       "bento_img_4": "assets/images/trips/trip_116_bento_img_4.jpg",
       "bento_img_5": "assets/images/trips/trip_116_bento_img_5.jpg",
-      "about_text": "Embark on an iconic 11-Day / 10-Night Himalayan Moto-Expedition starting with an overnight Volvo journey from Delhi to Manali. Ride through the scenic, lush valleys of Jibhi and Sangla, venture to Chitkul—the last inhabited village near the Indo-China border—and climb to Kalpa for stunning sunset views over the Kinner Kailash range. As you cross into the rugged, high-altitude landscapes of Spiti Valley along the Hindustan-Tibet Highway, explore historic sites like Gue and key highland hamlets including Hikkim, Komic, and Langza. Conquer the challenging Kunzum Pass (14,931 ft), experience high-altitude camping under the stars near the crescent-shaped Chandratal Lake, and ride back to Manali via the famous Atal Tunnel, accompanied by experienced trip captains, mechanics, inner line permits, and full safety support.",
+      "about_text": "Answer the call of the high Himalayas with Awara Banjara's signature Spiti Circuit & Chandratal Lake Moto-Expedition—a soul-stirring 10-Day / 9-Night motorcycle journey designed for true nomads. Starting with an overnight Volvo ride from Delhi to Manali, fire up your Royal Enfield machines and ride through the lush pine trails of Jibhi, cross the challenging Jalori Pass, and descend into the breathtaking Kinnaur Valley. Explore Chitkul—the last inhabited village near the Indo-China border—and witness a mesmerizing sunset over the Kinner Kailash range in Kalpa. Push deeper into the rugged, cold desert of Spiti along the Hindustan-Tibet Highway, uncovering ancient wonders like the 500-year-old mummy at Gue, the world's highest post office at Hikkim, the highest motorable village at Komic, and the serene Buddha statue at Langza. Conquer the mighty Kunzum Pass (14,931 ft), camp under a blanket of stars beside the crescent-shaped sacred Chandratal Lake, and zoom back through the legendary Atal Tunnel. Packed with raw mountain energy, bonfire stories, expert mechanics, inner line permits, and complete backup support, this is the ultimate Himalayan road trip engineered in true Awara Banjara style.",
       "itinerary": [
         {
           "day": 1,
           "title": "Delhi to Manali (Volvo Transfer)",
-          "details": "Board an overnight Volvo bus from Delhi to Manali. Settle in for a comfortable journey towards the mountains. Report at the Delhi pickup point in the evening. Meet your group, board the AC semi-sleeper Volvo, and relax on the overnight drive through the northern plains towards Himachal Pradesh."
+          "details": "Report at the Delhi pickup point in the evening. Board the comfortable AC semi-sleeper Volvo bus for an overnight journey towards the mountains, passing through the northern plains into Himachal Pradesh."
         },
         {
           "day": 2,
-          "title": "Manali to Jibhi",
-          "details": "Arrive in Manali, collect and test-ride bikes for riders, and transfer to Jibhi/Gushaini. Check in, explore the valley, dinner, and overnight stay. Reach Manali in the morning, complete bike handovers/test rides for riders, and start driving towards Jibhi. Check into your cozy stay, explore the peaceful valley trails, and enjoy dinner by the bonfire."
+          "title": "Manali to Jibhi (Approx. 75 KM)",
+          "details": "Arrive in Manali early morning and head to the assembly point. Collect your Royal Enfield machines, complete your bike handover and safety test rides, and attend an exclusive Awara Banjara tour briefing. Afterward, hit the winding mountain roads and ride towards Jibhi. Check into your cozy stay, explore the peaceful valley trails, and gather around a warm campfire under the mountain stars. Stay overnight in Jibhi."
         },
         {
           "day": 3,
-          "title": "Jibhi Local Exploration",
-          "details": "Enjoy a relaxed morning exploring Jibhi's waterfalls and local cafes before preparing for the high-altitude leg ahead. Take a short woodland walk to Jibhi Waterfall and relax at charming local cafes. In the afternoon, attend a trip and safety briefing with your ride captain to prepare for the high-altitude terrain ahead."
+          "title": "Jibhi to Sangla Valley (Approx. 165 KM)",
+          "details": "After a hearty breakfast, fire up your engines and leave Jibhi for Sangla Valley. Ride through the scenic and challenging Jalori Pass, pass through Aani, and descend along the roaring Sutlej River into the breathtaking Kinnaur Valley. Arrive and check in for an overnight stay in Sangla."
         },
         {
           "day": 4,
-          "title": "Jibhi to Sangla Valley",
-          "details": "Drive 8 hours via Rampur to Sangla Valley. Visit Chitkul, the last inhabited village of India near the Indo-China border. Drive along the scenic Sutlej River into Kinnaur Valley. Head straight to Chitkul—the last village on the Indo-China border—to walk along the pristine Baspa River before checking in for an overnight stay in Sangla."
+          "title": "Sangla Valley to Kalpa (Approx. 40 KM)",
+          "details": "Ride from Sangla Valley to Kalpa via Chitkul—the last inhabited village of India near the Indo-China border. Cruise along the pristine Baspa River, explore Chitkul, and ride up to Kalpa. Witness a stunning, soul-stirring sunset over the majestic Kinner Kailash range. Stay overnight in Kalpa."
         },
         {
           "day": 5,
-          "title": "Sangla Valley to Kalpa",
-          "details": "Ride 4-5 hours to Kalpa. Visit the famous Suicide Point, witness the breathtaking sunset over the Kinner Kailash range, and stay overnight. Take a short, scenic drive up to Kalpa. Stop at the thrilling Suicide Point cliff for panoramic valley views, and catch a stunning sunset over the sacred Kinner Kailash peak."
+          "title": "Kalpa to Kaza (Spiti Valley) (Approx. 200 KM)",
+          "details": "Ride along the majestic Hindustan-Tibet Highway deeper into the cold, dramatic desert of Spiti. Stop to witness the surreal Khab river confluence, view the towering Reo Purgyil peak, navigate the rugged tracks of Malling Nallah, and explore the 500-year-old mummy at Gue village. Arrive and stay overnight in Kaza."
         },
         {
           "day": 6,
-          "title": "Kalpa to Kaza (Spiti Valley)",
-          "details": "Drive along the Hindustan-Tibet Highway. See Khab confluence, Reo Purgyil view, Malling Nallah, and the 500-year-old mummy at Gue. Overnight in Kaza. Enter the cold desert of Spiti via the Hindustan-Tibet Highway. Stop at the Khab river confluence, cross Malling Nallah, visit the 500-year-old mummy in Gue village, and arrive in Kaza for the night."
+          "title": "Kaza High Altitude Villages Exploration (Approx. 60 KM)",
+          "details": "Hit the high-altitude tracks to explore the crown jewels of Spiti. Ride up to visit the world's highest post office at Hikkim, the highest motorable village at Komic, and stand before the giant golden Buddha statue in Langza against snow-capped peaks. Return to Kaza by evening for an overnight stay."
         },
         {
           "day": 7,
-          "title": "Kaza High Altitude Villages Exploration",
-          "details": "Visit the world's highest post office at Hikkim, highest motorable village at Komic, and Langza Buddha statue under Chau Chau Kang Nelda peak. Send a postcard from Hikkim's world-highest post office, visit Komic's iconic monastery, and see the giant golden Buddha statue in Langza set against snow-capped peaks. Return to Kaza by evening."
+          "title": "Kaza to Chandratal Lake (Approx. 95 KM)",
+          "details": "Ride from Kaza towards Chandratal Lake via Kee and Chicham, conquering the mighty Kunzum Pass (14,931 ft). Navigate rugged off-road terrain and water streams to reach our exclusive campsite near the crescent-shaped sacred lake. Enjoy an evening trek to the lake and spend the night stargazing with the Awara Banjara crew. Stay in Chandratal campsite."
         },
         {
           "day": 8,
-          "title": "Kaza to Chandratal Lake",
-          "details": "Ride from Kaza towards Chandratal Lake via Lossar and the majestic Kunzum Pass (14,931 ft). Cross rugged terrains and water streams to reach the campsite. Check in at the high-altitude camp near Chandratal, enjoy a trek to the crescent-shaped sacred lake, and spend the night stargazing under clear mountain skies."
+          "title": "Chandratal to Manali via Atal Tunnel (Approx. 125 KM)",
+          "details": "Ride back from Chandratal to Manali, tackling the raw off-road tracks through Batal and Chattru, crossing into Lahaul Valley, and zooming through the iconic 9-km Atal Tunnel. Hand back your trusty machines and relax at the hotel. Stay overnight in Manali."
         },
         {
           "day": 9,
-          "title": "Chandratal to Manali",
-          "details": "Ride 7-8 hours from Chandratal to Manali passing Batal, Chattru, and through the iconic Atal Tunnel. Overnight in Manali. Navigate rugged dirt tracks and water streams through Batal and Chattru. Cross into Lahaul Valley and drive through the famous 9-km Atal Tunnel back into green Manali. Hand back bikes and rest at the hotel."
+          "title": "Manali to Delhi Departure",
+          "details": "Enjoy a free leisure day in Manali—soak in the bohemian café culture of Old Manali, visit Hadimba Temple, or pick up local souvenirs on Mall Road. Board the evening Volvo bus back to Delhi."
         },
         {
           "day": 10,
-          "title": "Manali to Delhi Departure",
-          "details": "Self-exploration in Manali during the day. Board the overnight Volvo bus back to Delhi in the evening. Enjoy a free day in Manali—visit Old Manali cafes, Hadimba Temple, or shop on Mall Road. Board the evening Volvo bus back to Delhi, arriving the following morning"
-        },
-        {
-          "day": 11,
           "title": "Arrival in Delhi",
-          "details": "Arrive at the Delhi pickup point early in the morning. Disembark with unforgettable memories of your Spiti circuit expedition."
+          "details": "Arrive at the Delhi pickup point early in the morning, carrying back unforgettable memories of the Himalayas and the Awara Banjara trail."
         }
       ],
       "inclusions": [
         "Delhi to Manali & Manali to Delhi Volvo Bus Tickets",
-        "Accommodation for 8 Nights (Hotels & Campsite on sharing basis)",
-        "8 Breakfast and  8 Dinner at all stay locations",
+        "Accommodation for 7 Nights (Hotels & Campsite on sharing basis)",
+        "7 Breakfast and  7 Dinner at all stay locations",
         "Royal Enfield Bike with Fuel / SUV Transfer (as per chosen package)",
         "Experienced Trip Captain & Support Staff / Mechanic",
         "Permits and Inner Line Clearance for Spiti Region",
@@ -2154,32 +2149,6 @@
       ],
       "sub_package_options": "Himalayan 411, Himalayan 450",
       "departure_dates": [
-        {
-          "dates": [
-            {
-              "id": "b_1785828114832",
-              "price": "22,499",
-              "range": "14th August",
-              "status": "Available",
-              "startDate": "2026-08-14"
-            },
-            {
-              "id": "b_1785828121779",
-              "price": "22,499",
-              "range": "21th August",
-              "status": "Available",
-              "startDate": "2026-08-21"
-            },
-            {
-              "id": "b_1785828125094",
-              "price": "22,499",
-              "range": "28th August",
-              "status": "Available",
-              "startDate": "2026-08-28"
-            }
-          ],
-          "month": "August 2026"
-        },
         {
           "dates": [
             {
@@ -2294,7 +2263,7 @@
       "is_featured_reels": true,
       "is_featured_stack": true,
       "is_featured_lemonade": true,
-      "updated_at": "2026-08-15T09:51:25.475Z"
+      "updated_at": "2026-08-24T10:12:32.411Z"
     },
     {
       "id": 118,

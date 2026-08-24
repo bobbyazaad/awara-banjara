@@ -242,30 +242,16 @@
           "month": "September 2026",
           "dates": [
             {
-              "id": "b_1786952740375",
-              "range": "4th September",
-              "startDate": "2026-09-04",
-              "status": "Sold Out",
-              "price": "18,400"
-            },
-            {
-              "id": "b_1786952778059",
-              "range": "18th September",
-              "startDate": "2026-09-18",
-              "status": "Sold Out",
-              "price": "18,400"
-            },
-            {
-              "id": "b_1786952789407",
-              "range": "25th September",
-              "startDate": "2026-09-25",
-              "status": "Sold Out",
-              "price": "18,400"
-            },
-            {
               "id": "b_1787574684123",
               "range": "11th September",
               "startDate": "2026-09-11",
+              "status": "Available",
+              "price": "18400"
+            },
+            {
+              "id": "b_1787574869158",
+              "range": "25th September",
+              "startDate": "2026-09-25",
               "status": "Available",
               "price": "18400"
             }
@@ -322,7 +308,7 @@
       "is_featured_lemonade": true,
       "link": "trips/ladakh-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781",
       "id": 1786620306781,
-      "updated_at": "2026-08-24T12:32:25.419Z",
+      "updated_at": "2026-08-24T12:34:38.826Z",
       "created_at": "2026-08-13T11:25:06.969Z"
     },
     {

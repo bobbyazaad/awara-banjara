@@ -248,13 +248,6 @@
             "price": "18,400"
           },
           {
-            "id": "b_1786952769598",
-            "range": "11th September",
-            "startDate": "2026-09-11",
-            "status": "Sold Out",
-            "price": "18,400"
-          },
-          {
             "id": "b_1786952778059",
             "range": "18th September",
             "startDate": "2026-09-18",
@@ -267,6 +260,13 @@
             "startDate": "2026-09-25",
             "status": "Sold Out",
             "price": "18,400"
+          },
+          {
+            "id": "b_1787574684123",
+            "range": "11th September",
+            "startDate": "2026-09-11",
+            "status": "Available",
+            "price": "18400"
           }
         ]
       }
@@ -321,7 +321,7 @@
     "is_featured_lemonade": true,
     "link": "trips/ladakh-tours-zanskar-valley-expedition-with-padum-drang-drung-1786620306781",
     "id": 1786620306781,
-    "updated_at": "2026-08-22T14:43:10.347Z",
+    "updated_at": "2026-08-24T12:32:25.419Z",
     "created_at": "2026-08-13T11:25:06.969Z"
   },
   {
@@ -2735,7 +2735,7 @@
     "duration": "7 Days / 6 Nights",
     "price": "₹22,499",
     "image_url": "assets/images/trips/trip_112_image_url.jpg",
-    "link": "trips/spiti-tours-spiti-manali-spiti-moto-expedition-112",
+    "link": "trips/spiti-tours-spiti-manali-spiti-moto-expedition-112.html",
     "created_at": "2026-08-02T08:50:14.758486+00:00",
     "category": "spiti_tours, himachal_tours, bike_tours",
     "route": "Delhi — Manali — Kaza — Langza — Komic — Hikkim — Key Monastery — Chicham Bridge — Kunzum Pass — Chandratal — Manali — Delhi",

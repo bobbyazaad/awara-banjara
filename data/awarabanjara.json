@@ -3045,13 +3045,13 @@
     {
       "id": 103,
       "title": "Spiti : Winter 4X4 Expedition",
-      "duration": "8 Days / 7 Nights",
+      "duration": "9 Days / 8Nights",
       "price": "₹25,499",
       "image_url": "assets/images/trips/trip_103_image_url.jpg",
       "link": "trips/spiti-tours-spiti-winter-4x4-expedition-103",
       "created_at": "2026-08-01T16:46:13.584415+00:00",
       "category": "spiti_tours, himachal_tours, women_only_tours, corporate_tours",
-      "route": "Delhi - Shimla — Chitkul — Nako — Tabo — Hikkim — Komic — Langza  — Key Monastery — Chicham Bridge — Kalpa - Shimla",
+      "route": "Delhi - Shimla — Chitkul — Nako — Tabo — Hikkim — Komic — Langza  — Key Monastery — Chicham Bridge — Kalpa - Shimla - Delhi",
       "tags": "Winter Expedition, 4x4 Expedition, Spiti Valley, High Altitude",
       "bento_img_1": "assets/images/trips/trip_103_bento_img_1.jpg",
       "bento_img_2": "assets/images/trips/trip_103_bento_img_2.jpg",
@@ -3230,7 +3230,7 @@
       "is_featured_reels": true,
       "is_featured_stack": false,
       "is_featured_lemonade": true,
-      "updated_at": "2026-08-31T17:35:39.871Z"
+      "updated_at": "2026-08-31T17:38:08.408Z"
     },
     {
       "id": 104,

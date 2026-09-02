@@ -4317,6 +4317,25 @@
   ],
   "inquiries": [
     {
+      "id": "INQ_1788370548355",
+      "inquiry_id": "INQ_1788370548355",
+      "name": "Vaishnavi",
+      "customer_name": "Vaishnavi",
+      "phone": "+91-9980618854",
+      "email": "vaibhavinadiger26@gmail.com",
+      "travel_date": "To be decided",
+      "selected_date": "To be decided",
+      "selected_package": "Custom Package",
+      "selected_sub_package": "none",
+      "price": "On Request",
+      "travelers_count": 1,
+      "trip_title": "Kashmir",
+      "special_requests": "Interested in: Kashmir. Contacting from: Bangalore",
+      "message": "Interested in: Kashmir. Contacting from: Bangalore",
+      "created_at": "2026-09-02T17:35:48.402Z",
+      "status": "new"
+    },
+    {
       "id": "INQ_1787991765540",
       "inquiry_id": "INQ_1787991765540",
       "name": "Sujal",

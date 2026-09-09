@@ -1860,7 +1860,7 @@
       "duration": "6 Days / 5 Nights",
       "price": "₹17,600",
       "image_url": "assets/images/trips/trip_117_image_url.jpg",
-      "link": "trips/ladakh-tours-ladakh-high-passes-blue-waters-expedition-117.html",
+      "link": "trips/ladakh-tours-ladakh-high-passes-blue-waters-expedition-117",
       "created_at": "2026-08-04T11:07:11.287705+00:00",
       "category": "ladakh_tours, women_only_tours, bike_tours, corporate_tours",
       "route": "Leh — Khardung La — Nubra Valley (Hunder & Turtuk) — Shyok River — Pangong Tso — Chang La — Leh",
@@ -1912,87 +1912,64 @@
         "First Aid Kit & Oxygen Cylinder Support during high-pass travel"
       ],
       "exclusions": [
-        "Airfare or Train tickets to/from Leh",
+        "Airfare tickets to/from Leh",
         "Lunch on all days and personal snacks/beverages",
         "Camel ride in Hunder sand dunes or ATV ride charges",
         "Entry fees to monasteries, palaces, and monuments",
         "Personal expenses such as laundry, phone calls, tips",
         "Travel or Health Insurance",
-        "Expenses caused by sudden weather changes, landslides, or road closures"
+        "Expenses caused by sudden weather changes, landslides, or road closures",
+        "5% GST & Travel Insurance."
       ],
       "package_options": [
         {
           "title": "Group Tour(Min. 6 Pax)",
-          "price": "₹17,499"
+          "price": "₹17,600"
+        },
+        {
+          "title": "Group Tour(Min. 4 Pax)",
+          "price": "₹20,400"
         }
       ],
       "sub_package_options": "",
       "departure_dates": [
         {
+          "month": "September 2026",
           "dates": [
             {
-              "id": "b_1785840903041",
-              "price": "17,600",
-              "range": "14th August",
+              "id": "b_1788959064332",
+              "range": "25th September",
+              "startDate": "2026-09-25",
               "status": "Available",
-              "startDate": "2026-08-14"
-            },
-            {
-              "id": "b_1785840908922",
-              "price": "17,600",
-              "range": "21th August",
-              "status": "Available",
-              "startDate": "2026-08-21"
-            },
-            {
-              "id": "b_1785840912404",
-              "price": "17,600",
-              "range": "28th August",
-              "status": "Available",
-              "startDate": "2026-08-28"
+              "price": "17,600"
             }
-          ],
-          "month": "August 2026"
+          ]
         },
         {
+          "month": "October 2026",
           "dates": [
             {
-              "id": "b_1785840952988",
-              "price": "17,600",
-              "range": "4th September",
+              "id": "b_1788959079561",
+              "range": "2th October",
+              "startDate": "2026-10-02",
               "status": "Available",
-              "startDate": "2026-09-04"
+              "price": "17,600"
             },
             {
-              "id": "b_1785840956437",
-              "price": "17,600",
-              "range": "11th September",
+              "id": "b_1788959083294",
+              "range": "9th October",
+              "startDate": "2026-10-09",
               "status": "Available",
-              "startDate": "2026-09-11"
+              "price": "17,600"
             },
             {
-              "id": "b_1785840958805",
-              "price": "17,600",
-              "range": "18th September",
+              "id": "b_1788959086378",
+              "range": "16th October",
+              "startDate": "2026-10-16",
               "status": "Available",
-              "startDate": "2026-09-18"
-            },
-            {
-              "id": "b_1785840961155",
-              "price": "17,600",
-              "range": "25th September",
-              "status": "Available",
-              "startDate": "2026-09-25"
-            },
-            {
-              "id": "b_1785840966005",
-              "price": "17,600",
-              "range": "25th September",
-              "status": "Available",
-              "startDate": "2026-09-25"
+              "price": "17,600"
             }
-          ],
-          "month": "September 2026"
+          ]
         }
       ],
       "faqs": [
@@ -2035,7 +2012,7 @@
       "is_featured_reels": true,
       "is_featured_stack": true,
       "is_featured_lemonade": true,
-      "updated_at": "2026-08-14T03:57:15.818Z"
+      "updated_at": "2026-09-09T13:04:57.678Z"
     },
     {
       "id": 116,

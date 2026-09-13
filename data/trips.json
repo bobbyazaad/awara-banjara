@@ -1,5 +1,91 @@
 [
   {
+    "title": "Manali Weekend Escape",
+    "duration": "5 Days / 4 Nights",
+    "price": "₹5,499",
+    "category": "spiti_tours",
+    "route": "Delhi — Manali — Solang Valley — Old Manali — Delhi",
+    "tags": "Weekend Getaway, Cafe Hopping, Snow Adventure, Group Trip",
+    "image_url": "assets/images/trips/img_1789221098595_POV__Your_Manali_Trip_Deserves_Better_Than_Just_Solang_Valley______.jpg",
+    "bento_img_1": "assets/images/trips/img_1789221185417_Manali_weather___.jpg",
+    "bento_img_2": "assets/images/trips/img_1789221158264_Nowhere_Bound.jpg",
+    "bento_img_3": "assets/images/trips/img_1789221175080_img_1789221147056_img_1789221130444_mall_road__manali.webp",
+    "bento_img_4": "assets/images/trips/img_1789221117106_img_1789221107098_manali-solan_valley__india.webp",
+    "bento_img_5": "assets/images/trips/img_1789221166995_img_1789221141305_img_1789221089007_download.webp",
+    "about_text": "Nestled in the heart of Himachal Pradesh, Manali is a timeless Himalayan destination that perfectly blends scenic beauty, culture, and adventure. Surrounded by snow-capped peaks, dense pine forests, gushing rivers, and charming villages, Manali is a paradise for honeymooners, families, backpackers, and thrill-seekers alike. From peaceful temples and vibrant local markets to breathtaking mountain views, every corner of Manali offers an unforgettable experience.\nJust 13 km from Manali lies the adventure capital of the region — Solang Valley. Famous for its open meadows and dramatic mountain backdrop, Solang Valley transforms with the seasons. In winter, it becomes a snow wonderland ideal for skiing, snowboarding, snow tubing, and snow scooter rides. During summer, the valley comes alive with adrenaline-filled activities like paragliding, zorbing, ATV rides, ropeway cable car experiences, and camping.\nAt Awara Banjara, we curate immersive Manali–Solang experiences that go beyond sightseeing. Whether you want to chase snow, fly high above the valley, relax amidst nature, or explore local culture, our thoughtfully designed trips ensure comfort, safety, and unforgettable memories. From cozy stays and seamless transfers to expert-guided adventures, we take care of every detail so you can truly live the mountains.\n Discover Manali. Feel the thrill of Solang. Travel the Awara Banjara way.\nHighlights\nExplore the best of the Himalayas with our exciting Manali – Solang Valley Tour, designed for nature lovers and adventure seekers.\n\n\nTop Highlights\n\n\nScenic Manali Local Sightseeing\nVisit Hadimba Temple, Old Manali charm, Vashisht hot springs, and vibrant Mall Road.\n\n\nSolang Valley Adventure\nEnjoy paragliding, ATV rides, zorbing, skiing (winter), and ropeway cable car views.\n\n\nSnow & Mountain Experiences\nPlay in fresh snow during winter and capture stunning Himalayan landscapes.\n\n\nComfortable Stays\nHandpicked hotels with beautiful mountain views and modern amenities.\n\n\nPrivate Transfers\nSmooth and safe travel with experienced local drivers.\n\n\nPerfect for All Travelers\nIdeal for couples, families, solo travelers, and groups.\n\n\nCustomizable Packages\nFlexible itineraries to match your time, budget, and travel style.\n\n\nManali + Solang = Nature, Adventure & Memories for a Lifetime\nTravel with Awara Banjara and experience the mountains like never before",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Departure from Delhi",
+        "details": "Start your journey from Delhi in the evening and travel overnight to Manali."
+      },
+      {
+        "day": 2,
+        "title": "Manali Arrival, Jogini Falls Trek & Sightseeing",
+        "details": "Check in to the hotel, freshen up, and head for the Jogini Falls trek. Later, visit Hadimba Temple and explore the vibrant Mall Road. Overnight stay in Manali."
+      },
+      {
+        "day": 3,
+        "title": "Solang Valley, Atal Tunnel & Sissu",
+        "details": "Head out to explore the scenic Solang Valley, drive through the iconic Atal Tunnel, and visit the beautiful waterfall village of Sissu. Overnight stay in Manali."
+      },
+      {
+        "day": 4,
+        "title": "Checkout, Adventure Activities & Departure",
+        "details": "Check out from the hotel, enjoy paragliding and river rafting, pay a visit to Bijli Mahdev (as per time), and board your evening bus back to Delhi with an overnight journey."
+      },
+      {
+        "day": 5,
+        "title": "Arrival in Delhi",
+        "details": "Reach Delhi by morning with amazing trip memories, marking the end of the journey."
+      }
+    ],
+    "inclusions": [
+      "Semi-sleeper AC Volvo transport from Delhi to Manali and return",
+      "Accommodation for 2 nights in a comfortable hotel at Manali on twin/triple and Quad sharing basis",
+      "Meals: 2 Breakfasts and 2 Dinners (as per itinerary)",
+      "Internal transfers and sightseeing by Sumo / Tempo Traveller as per the itinerary",
+      "Bonfire night with music during the stay",
+      "Dedicated and experienced Team Captain to assist throughout the trip"
+    ],
+    "exclusions": [
+      "Any personal expenses, shopping, or tips",
+      "Lunch, snacks, and beverages during the trip",
+      "Adventure activity charges (such as skiing, zorbing, ATV rides, paragliding, etc. at Solang Valley)",
+      "Entry tickets to monuments, temples, or sightseeing spots (if any)",
+      "5% GST extra on the total package amount",
+      "Travel insurance, medical expenses, or emergency evacuations",
+      "Any other services or expenses not explicitly mentioned in the inclusions list"
+    ],
+    "package_options": [
+      {
+        "title": "Standard Quad Sharing",
+        "price": "₹4,999"
+      },
+      {
+        "title": "Triple Sharing",
+        "price": "₹5,999"
+      },
+      {
+        "title": "Twin Sharing",
+        "price": "₹6,999"
+      }
+    ],
+    "sub_package_options": "",
+    "departure_dates": [],
+    "faqs": [],
+    "reviews": [],
+    "reserve_banner_title": "",
+    "custom_quote_title": "",
+    "is_featured_reels": true,
+    "is_featured_stack": true,
+    "is_featured_lemonade": true,
+    "link": "trips/spiti-tours-manali-weekend-escape-1789277670644",
+    "id": 1789277670644,
+    "updated_at": "2026-09-13T05:34:31.726Z",
+    "created_at": "2026-09-13T05:34:31.726Z"
+  },
+  {
     "title": "Shimla-Manali with Sissu : The Himachal Odyssey",
     "duration": "7 Days / 6 Nights",
     "price": "",

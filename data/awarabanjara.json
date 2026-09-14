@@ -7,7 +7,7 @@
       "category": "himachal_tours, women_only_tours, corporate_tours",
       "route": "Delhi — Manali — Solang Valley — Old Manali — Delhi",
       "tags": "Weekend Getaway, Cafe Hopping, Snow Adventure, Group Trip",
-      "image_url": "assets/images/trips/img_1789221098595_POV__Your_Manali_Trip_Deserves_Better_Than_Just_Solang_Valley______.jpg",
+      "image_url": "assets/images/trips/img_1789393701594_Manali_weather___.jpg",
       "bento_img_1": "assets/images/trips/img_1789221185417_Manali_weather___.jpg",
       "bento_img_2": "assets/images/trips/img_1789221158264_Nowhere_Bound.jpg",
       "bento_img_3": "assets/images/trips/img_1789221175080_img_1789221147056_img_1789221130444_mall_road__manali.webp",
@@ -22,41 +22,21 @@
         },
         {
           "day": 2,
-          "title": "Day 2",
-          "details": ""
-        },
-        {
-          "day": 3,
           "title": "Manali Arrival, Jogini Falls Trek & Sightseeing",
           "details": "Check into your hotel to freshen up before embarking on a refreshing trek through pine forests to the cascading Jogini Falls. Spend your afternoon soaking in the local heritage at the historic Hadimba Temple and lose yourself in the bohemian, vibrant energy of Old Manali cafes and Mall Road by evening. Overnight stay in cozy Manali accommodations."
         },
         {
-          "day": 4,
-          "title": "Day 4",
-          "details": ""
-        },
-        {
-          "day": 5,
+          "day": 3,
           "title": "Solang Valley, Atal Tunnel & Sissu",
           "details": "Gear up for high-altitude thrills as you head to the scenic expanses of Solang Valley for breathtaking views and snow activities. Drive through the engineering marvel of the Atal Tunnel to cross over into Lahaul Valley, where the dramatic waterfall village of Sissu awaits. Return to Manali for an unforgettable night of music, storytelling, and bonding around a crackling bonfire under the Himalayan stars. Overnight stay in Manali."
         },
         {
-          "day": 6,
-          "title": "Day 6",
-          "details": ""
-        },
-        {
-          "day": 7,
+          "day": 4,
           "title": "Checkout, Adventure Activities & Departure",
           "details": "Check out from your hotel after breakfast and get your adrenaline pumping with high-flying paragliding and thrilling river rafting on the Beas River. Depending on available time, take a scenic detour to the sacred heights of Bijli Mahdev for panoramic valley views before boarding your evening Volvo back to Delhi with a chest full of wild mountain memories."
         },
         {
-          "day": 8,
-          "title": "Day 8",
-          "details": ""
-        },
-        {
-          "day": 9,
+          "day": 5,
           "title": "Arrival in Delhi",
           "details": "Wake up to the city sights as you arrive back in Delhi by morning, marking the perfect end of your nomadic Himalayan escape with Awara Banjara."
         }
@@ -205,7 +185,7 @@
       "is_featured_lemonade": true,
       "link": "trips/himachal-tours-manali-weekend-escape-1789277670644",
       "id": 1789277670644,
-      "updated_at": "2026-09-14T13:47:17.671Z",
+      "updated_at": "2026-09-14T13:49:23.508Z",
       "created_at": "2026-09-13T05:34:31.726Z"
     },
     {

@@ -12,32 +12,52 @@
     "bento_img_3": "assets/images/trips/img_1789221175080_img_1789221147056_img_1789221130444_mall_road__manali.webp",
     "bento_img_4": "assets/images/trips/img_1789221117106_img_1789221107098_manali-solan_valley__india.webp",
     "bento_img_5": "assets/images/trips/img_1789221166995_img_1789221141305_img_1789221089007_download.webp",
-    "about_text": "Nestled in the heart of Himachal Pradesh, Manali is a timeless Himalayan destination that perfectly blends scenic beauty, culture, and adventure. Surrounded by snow-capped peaks, dense pine forests, gushing rivers, and charming villages, Manali is a paradise for honeymooners, families, backpackers, and thrill-seekers alike. From peaceful temples and vibrant local markets to breathtaking mountain views, every corner of Manali offers an unforgettable experience.\nJust 13 km from Manali lies the adventure capital of the region — Solang Valley. Famous for its open meadows and dramatic mountain backdrop, Solang Valley transforms with the seasons. In winter, it becomes a snow wonderland ideal for skiing, snowboarding, snow tubing, and snow scooter rides. During summer, the valley comes alive with adrenaline-filled activities like paragliding, zorbing, ATV rides, ropeway cable car experiences, and camping.\nAt Awara Banjara, we curate immersive Manali–Solang experiences that go beyond sightseeing. Whether you want to chase snow, fly high above the valley, relax amidst nature, or explore local culture, our thoughtfully designed trips ensure comfort, safety, and unforgettable memories. From cozy stays and seamless transfers to expert-guided adventures, we take care of every detail so you can truly live the mountains.\n Discover Manali. Feel the thrill of Solang. Travel the Awara Banjara way.\nHighlights\nExplore the best of the Himalayas with our exciting Manali – Solang Valley Tour, designed for nature lovers and adventure seekers.\n\n\nTop Highlights\n\n\nScenic Manali Local Sightseeing\nVisit Hadimba Temple, Old Manali charm, Vashisht hot springs, and vibrant Mall Road.\n\n\nSolang Valley Adventure\nEnjoy paragliding, ATV rides, zorbing, skiing (winter), and ropeway cable car views.\n\n\nSnow & Mountain Experiences\nPlay in fresh snow during winter and capture stunning Himalayan landscapes.\n\n\nComfortable Stays\nHandpicked hotels with beautiful mountain views and modern amenities.\n\n\nPrivate Transfers\nSmooth and safe travel with experienced local drivers.\n\n\nPerfect for All Travelers\nIdeal for couples, families, solo travelers, and groups.\n\n\nCustomizable Packages\nFlexible itineraries to match your time, budget, and travel style.\n\n\nManali + Solang = Nature, Adventure & Memories for a Lifetime\nTravel with Awara Banjara and experience the mountains like never before",
+    "about_text": "",
     "itinerary": [
       {
         "day": 1,
         "title": "Departure from Delhi",
-        "details": "Start your journey from Delhi in the evening and travel overnight to Manali."
+        "details": "Hop on your overnight AC Volvo from Delhi as the city lights fade away, setting the stage for an epic mountain journey through winding roads straight into the heart of Manali."
       },
       {
         "day": 2,
-        "title": "Manali Arrival, Jogini Falls Trek & Sightseeing",
-        "details": "Check in to the hotel, freshen up, and head for the Jogini Falls trek. Later, visit Hadimba Temple and explore the vibrant Mall Road. Overnight stay in Manali."
+        "title": "Day 2",
+        "details": ""
       },
       {
         "day": 3,
-        "title": "Solang Valley, Atal Tunnel & Sissu",
-        "details": "Head out to explore the scenic Solang Valley, drive through the iconic Atal Tunnel, and visit the beautiful waterfall village of Sissu. Overnight stay in Manali."
+        "title": "Manali Arrival, Jogini Falls Trek & Sightseeing",
+        "details": "Check into your hotel to freshen up before embarking on a refreshing trek through pine forests to the cascading Jogini Falls. Spend your afternoon soaking in the local heritage at the historic Hadimba Temple and lose yourself in the bohemian, vibrant energy of Old Manali cafes and Mall Road by evening. Overnight stay in cozy Manali accommodations."
       },
       {
         "day": 4,
-        "title": "Checkout, Adventure Activities & Departure",
-        "details": "Check out from the hotel, enjoy paragliding and river rafting, pay a visit to Bijli Mahdev (as per time), and board your evening bus back to Delhi with an overnight journey."
+        "title": "Day 4",
+        "details": ""
       },
       {
         "day": 5,
+        "title": "Solang Valley, Atal Tunnel & Sissu",
+        "details": "Gear up for high-altitude thrills as you head to the scenic expanses of Solang Valley for breathtaking views and snow activities. Drive through the engineering marvel of the Atal Tunnel to cross over into Lahaul Valley, where the dramatic waterfall village of Sissu awaits. Return to Manali for an unforgettable night of music, storytelling, and bonding around a crackling bonfire under the Himalayan stars. Overnight stay in Manali."
+      },
+      {
+        "day": 6,
+        "title": "Day 6",
+        "details": ""
+      },
+      {
+        "day": 7,
+        "title": "Checkout, Adventure Activities & Departure",
+        "details": "Check out from your hotel after breakfast and get your adrenaline pumping with high-flying paragliding and thrilling river rafting on the Beas River. Depending on available time, take a scenic detour to the sacred heights of Bijli Mahdev for panoramic valley views before boarding your evening Volvo back to Delhi with a chest full of wild mountain memories."
+      },
+      {
+        "day": 8,
+        "title": "Day 8",
+        "details": ""
+      },
+      {
+        "day": 9,
         "title": "Arrival in Delhi",
-        "details": "Reach Delhi by morning with amazing trip memories, marking the end of the journey."
+        "details": "Wake up to the city sights as you arrive back in Delhi by morning, marking the perfect end of your nomadic Himalayan escape with Awara Banjara."
       }
     ],
     "inclusions": [
@@ -51,15 +71,16 @@
     "exclusions": [
       "Any personal expenses, shopping, or tips",
       "Lunch, snacks, and beverages during the trip",
-      "Adventure activity charges (such as skiing, zorbing, ATV rides, paragliding, etc. at Solang Valley)",
+      "Adventure activity charges (such as skiing, zorbing, ATV rides, paragliding, river rafting, etc.)",
       "Entry tickets to monuments, temples, or sightseeing spots (if any)",
+      "Local transport or extra 4x4 vehicle charges for offbeat spots/snow points not covered in the standard itinerary",
       "5% GST extra on the total package amount",
       "Travel insurance, medical expenses, or emergency evacuations",
       "Any other services or expenses not explicitly mentioned in the inclusions list"
     ],
     "package_options": [
       {
-        "title": "Standard Quad Sharing",
+        "title": "Quad Sharing",
         "price": "₹4,999"
       },
       {
@@ -133,7 +154,48 @@
         ]
       }
     ],
-    "faqs": [],
+    "faqs": [
+      {
+        "question": "WHAT IS THE BEST TIME TO VISIT MANALI FOR THIS TRIP?",
+        "answer": "June to September is ideal for lush green valleys and waterfalls, while October offers crisp autumn air and clear mountain views with a true nomadic vibe."
+      },
+      {
+        "question": "WHAT KIND OF ACCOMMODATION IS PROVIDED?",
+        "answer": "You’ll stay in cozy, handpicked hotels or mountain camps on a twin, triple, or quad-sharing basis, carefully curated to keep that authentic Awara Banjara community warmth alive."
+      },
+      {
+        "question": "IS TRANSPORTATION INCLUDED FROM DELHI?",
+        "answer": "Yes! Semi-sleeper AC Volvo bus transport from Delhi to Manali and return is fully included, setting the rhythm for your road trip from the very first mile."
+      },
+      {
+        "question": "CAN SOLO TRAVELERS OR GROUPS JOIN THIS TRIP?",
+        "answer": "Absolutely. Whether you're rolling solo to find your tribe or coming with a crew of friends, our group trips are built for effortless bonding, shared campfires, and lifelong connections."
+      },
+      {
+        "question": "WHAT IS THE BOOKING AND REFUND POLICY?",
+        "answer": "We operate on a transparent policy requiring a 10% non-refundable token deposit to secure your spot, with the remaining balance due upon arrival at the base camp."
+      },
+      {
+        "question": "ARE ADVENTURE ACTIVITIES LIKE PARAGLIDING INCLUDED IN THE PACKAGE?",
+        "answer": "Adventure activity charges (such as paragliding, river rafting, skiing, or zorbing) are kept in the exclusions so you can pick and choose your adrenaline hits based on your personal mood and budget."
+      },
+      {
+        "question": "HOW MUCH LUGGAGE SHOULD I CARRY?",
+        "answer": "Pack light and smart! Bring a comfortable backpack, sturdy trekking shoes, warm layers for chilly mountain nights, personal medications, and your adventurous Banjara spirit."
+      },
+      {
+        "question": "WILL THERE BE A TRIP CAPTAIN WITH US?",
+        "answer": "Yes, a dedicated and experienced Awara Banjara Team Captain will ride along with your crew from day one to handle logistics, keep the safety in check, and make sure the vibe never drops."
+      },
+      {
+        "question": "WHAT ABOUT OFFBEAT EXPLORATION AND 4X4 VEHICLE CHARGES?",
+        "answer": "Standard sightseeing is covered by Sumo or Tempo Traveller, but any extra local 4x4 vehicle charges required for remote offbeat trails or extreme snow points are excluded to give you the flexibility to decide on the go."
+      },
+      {
+        "question": "IS FOOD INCLUDED IN THE PACKAGE?",
+        "answer": "Yes, the package includes hygienic, wholesome meals (specifically 2 breakfasts and 2 dinners as per the itinerary) to fuel up your days of exploration and late-night storytelling."
+      }
+    ],
     "reviews": [],
     "reserve_banner_title": "",
     "custom_quote_title": "",
@@ -142,7 +204,7 @@
     "is_featured_lemonade": true,
     "link": "trips/himachal-tours-manali-weekend-escape-1789277670644",
     "id": 1789277670644,
-    "updated_at": "2026-09-13T05:53:08.257Z",
+    "updated_at": "2026-09-14T13:47:17.671Z",
     "created_at": "2026-09-13T05:34:31.726Z"
   },
   {

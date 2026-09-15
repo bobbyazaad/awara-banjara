@@ -4155,8 +4155,54 @@
           "price": "₹18,499"
         }
       ],
-      "sub_package_options": "",
-      "departure_dates": [],
+      "sub_package_options": "Himalayan 411, Himalayan 450",
+      "departure_dates": [
+        {
+          "month": "September 2026",
+          "dates": [
+            {
+              "id": "b_1789462660677",
+              "range": "25th September",
+              "startDate": "2026-09-25",
+              "status": "Available",
+              "price": "16,499/-"
+            },
+            {
+              "id": "b_1789462682295",
+              "range": "28th September",
+              "startDate": "2026-09-28",
+              "status": "Available",
+              "price": "16,499/-"
+            }
+          ]
+        },
+        {
+          "month": "October 2026",
+          "dates": [
+            {
+              "id": "b_1789462686645",
+              "range": "9th October",
+              "startDate": "2026-10-09",
+              "status": "Available",
+              "price": "16,499/-"
+            },
+            {
+              "id": "b_1789462690362",
+              "range": "23th October",
+              "startDate": "2026-10-23",
+              "status": "Available",
+              "price": "16,499/-"
+            },
+            {
+              "id": "b_1789462696161",
+              "range": "30th October",
+              "startDate": "2026-10-30",
+              "status": "Available",
+              "price": "16,499/-"
+            }
+          ]
+        }
+      ],
       "faqs": [
         {
           "question": "WHAT EXACTLY IS THE \"BANJARA STYLE\" OF EXPERIENCING SPITI?",
@@ -4241,7 +4287,7 @@
       "is_featured_reels": true,
       "is_featured_stack": true,
       "is_featured_lemonade": true,
-      "updated_at": "2026-09-15T08:56:48.601Z"
+      "updated_at": "2026-09-15T08:58:22.697Z"
     }
   ],
   "destinations": [

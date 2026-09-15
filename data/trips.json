@@ -4146,15 +4146,19 @@
     ],
     "package_options": [
       {
-        "title": "Triple Sharing",
+        "title": "Quad Sharing",
         "price": "₹16,499"
+      },
+      {
+        "title": "Triple Sharing",
+        "price": "₹17,499"
       },
       {
         "title": "Double Sharing",
         "price": "₹18,499"
       }
     ],
-    "sub_package_options": "Himalayan 411, Himalayan 450",
+    "sub_package_options": "",
     "departure_dates": [
       {
         "month": "September 2026",
@@ -4286,6 +4290,6 @@
     "is_featured_reels": true,
     "is_featured_stack": true,
     "is_featured_lemonade": true,
-    "updated_at": "2026-09-15T08:58:22.697Z"
+    "updated_at": "2026-09-15T09:00:12.628Z"
   }
 ]
